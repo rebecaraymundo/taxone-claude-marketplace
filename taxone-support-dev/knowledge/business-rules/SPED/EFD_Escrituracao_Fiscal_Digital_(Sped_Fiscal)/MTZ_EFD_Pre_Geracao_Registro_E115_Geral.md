@@ -1,0 +1,970 @@
+# MTZ_EFD_Pre_Geracao_Registro_E115_Geral
+
+- **Fonte:** MTZ_EFD_Pre_Geracao_Registro_E115_Geral.docx
+- **Modificado:** 2026-03-13
+- **Tamanho:** 154 KB
+
+---
+
+THOMSON REUTERS
+
+Módulo EFD\-Escrituração Fiscal Digital 
+
+Pré\-Geração do Registro E115 \(Geral\)
+
+__Localização__: Menu Sped, Módulo EFD \- Escrituração Fiscal Digital, item Pré\-Geração à Registro E115 \(Geral\)
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+__Data__
+
+MFS23415
+
+Pré\-Geração do E115 \(Geral\)
+
+Essa MFS tem como objetivo criar a rotina de pré\-geração do Registro E115 \(Geral\), para atender as Unidades das Federações exceto Rio Grande do Sul\.
+
+26/02/2018 
+
+MFS26565
+
+Andréa Rocha
+
+Alteração da geração para tratar os novos valores do campo Recuperação de Valores\.
+
+03/05/2019
+
+MFS28993
+
+Andréa Rocha
+
+Alteração da geração para utilizar a parametrização de CST
+
+10/09/2019
+
+MFS30407
+
+Andréa Rocha
+
+Alteração da geração para verificar se o código da informação adicional está parametrizado para a geração específica do registro E115 e retirar a validação do campo estabelecimento para o estado igual a RS
+
+26/09/2019
+
+__MFS32389__
+
+Vânia Mattos
+
+Alteração da X272\_PAR\_PROD\_E115 para inclusão do COD\_INF\_ADIC na PK\. Este alteração permitirá que o mesmo produto seja parametrizado para diferentes COD\_INF\_ADIC\.
+
+27/08/2020
+
+__MFS58897__
+
+Rogério Ohashi
+
+Alteração na Regra para utilizar o Parâmetro “Considerar campo Código do Benefício” para considerar ou não o Campo 255 – Código do Benefício da Tabela SAFX08 na geração do Registro E115\. Esse ajuste se faz necessário para os clientes que utilizaram esse campo como critério de geração, conforme informação do campo no Manual Layout\. 
+
+04/02/2021
+
+[__MFS59764__](https://jira.thomsonreuters.com/browse/MFS-59764)
+
+Rogério Ohashi
+
+Alteração da Regra de preenchimento do Campo 04 \- DESCR\_COMPL\_AJ, Descrição complementar do ajuste, para os Estabelecimento do Estado do Rio de Janeiro, que conforme manual da Secretaria de Fazenda, o campo não deve ser preenchido\.
+
+04/02/2021
+
+__MFS67999__
+
+Rogério Ohashi
+
+Inclusão de Regra de tratamento para Geração de Estabelecimentos com Inscrição Estadual Única\.
+
+13/07/2021
+
+__MFS32568__
+
+Liliane Assaf
+
+Alteração na regra que utiliza o Parâmetro “Considerar campo Código do Benefício da SAFX08 \(campo 255\)” para desobrigar o uso da parametrização do Produto\. Usando esse parâmetro, Código da Informação Adicional virá do item de mercadoria\. Sendo assim não há necessidade do produto estar parametrizado para o Código da Informação Adicional\. Sem o uso da parametrização do produto, a Descrição Complementar será a descrição do próprio Código da Informação Adicional\.
+
+02/09/2021
+
+__MFS87559__
+
+Aline Melo
+
+Inclusão de campo de pesquisa UF
+
+08/06/2022
+
+__MFS571174__
+
+Andréa Rocha
+
+Alteração da geração para verificar o parâmetro incluído na tela de Dados Iniciais, para desconsiderar a parametrização de produtos\.
+
+03/10/2023
+
+__MFS693829__
+
+Andréa Rocha
+
+Alteração na regra de geração do registro E115, para utilizar um parâmetro que vai definir se o campo 04\-DESCR\_COMPL\_AJ deve ser preenchido ou não\. Foi feita uma alteração na regra pela MFS59764\. para os Estabelecimento do Estado do Rio de Janeiro, que conforme manual da Secretaria de Fazenda, o campo não devia ser preenchido\. A partir de julho 2024,  Resolução SEFAZ Nº 684, o campo deve ser preenchido para algumas situações para o RJ, por isso o parâmetro está sendo criado\.
+
+10/10/2024
+
+__MFS1019580__
+
+Rogério Ohashi
+
+Alteração na regra de geração do registro E115, para utilizar um parâmetro que vai definir se o campo 03\-VL\_INF\_ADIC deve ser preenchido com zero ou não, conforme manual da Secretaria de Fazenda, o campo não deve ser preenchido com zero\. A partir de julho 2024,  Resolução SEFAZ Nº 684, o campo deve ser preenchido para algumas situações para o RJ, por isso o parâmetro está sendo criado\.
+
+13/01/2026
+
+MFS1051812
+
+Liliane Assaf
+
+Alteração na pré‑geração do E115 \(Geral\) para considerar a parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação\.
+
+13/03/2026
+
+Sumário
+
+[1\.	Introdução:	3](#_Toc147248019)
+
+[2\.	Parâmetros da Tela	7](#_Toc147248020)
+
+[3\.	Recuperação dos Dados e Processamento	10](#_Toc147248021)
+
+[4\.	Gravação dos Dados na Tabela dos Registros E115/1925 \(Valores Declaratórios\)	16](#_Toc147248022)
+
+[5\.	Geração de Críticas no Log da Geração:	18](#_Toc147248023)
+
+[6\.	Relatório de Conferência:	18](#_Toc147248024)
+
+# <a id="_Toc147248019"></a><a id="_Toc350763252"></a>
+
+# Introdução:
+
+Objetivo: fazer a geração dos dados do Registro E115 para todas as UF’s\. 
+
+Esta funcionalidade calcula os valores dos benefícios de isenção, imunidade, não incidência, redução de base de cálculo concedidos em por cada legislação estadual para serem demonstrados no registro E115 do Sped Fiscal\. 
+
+O registro E115 do Sped Fiscal não é obrigatório, fica a critério de cada Unidade Federativa solicitar sua apresentação\.
+
+Cada Unidade Federativa que solicita o E115, publica uma lista de códigos de benefício \(tabela 5\.2 – Informações Adicionais da Apuração – Valores Declaratórios\)\. 
+
+A base regra obter os valores dos benefícios de isenção, imunidade, não incidência, redução de base de cálculo deve ser baseada no __Livro de Apuração do ICMS \(P9\)__, onde essas informações são apresentadas no Resumo por CFOP\.
+
+Como solução no DW para atendimento ao E115, criamos duas pré\-gerações: a do E115 para o Rio Grande do Sul \(opção de menu Registro E115 \(Específico RS\)\) e a do E115 para todos os estados \(opção Registro E115 \(Geral\)\), sendo esta última a foco dessa documentação\.
+
+O resultado da pré\-geração do E115 pode ser consultado no menu Geração à Manutenção à Registro E115/1925 \(Valores Declaratórios\)\.
+
+__Considerações quanto a tabela 5\.2 – Informações Adicionais da Apuração – Valores Declaratórios:__
+
+- A lista de códigos de benefício \(tabela 5\.2 – Informações Adicionais da Apuração – Valores Declaratórios\), que deve ser cadastrada no menu Parâmetro à Registros E115/1925à Informações Adicionais da Apuração \(Registros E115/1925\)\. Essa tabela não é carregada por TACES/TFIX\. A ideia é o usuário cadastrar os códigos que tem necessidade de declarar\.
+- No momento da criação desta funcionalidade tomamos como base o estado do __Paraná__, cuja tabela 5\.2 possui mais de 50 códigos\. Veja:
+
+__Código__
+
+__Benefício__
+
+__Descrição__
+
+__Dt Início__
+
+__Dt Final__
+
+__Ajuste \- EFD__
+
+__PR810057__
+
+Isenção
+
+Isenção prevista no item 57 do Anexo V do RICMS/2017
+
+01/08/2018
+
+Gerar o registro E115, informando no campo 02 \(COD\_INF\_ADIC\) o código da informação; no campo 03 \(VL\_INF\_ADIC\) o valor do imposto do item destacado no documento fiscal \- se não houver imposto, preencher com "0" \(zero\); e no campo 04 \(DESCR\_COMPL\_AJ\) a descrição do ajuste\.
+
+__PR810058__
+
+Isenção
+
+Isenção prevista no item 58 do Anexo V do RICMS/2017
+
+01/08/2018
+
+Gerar o registro E115, informando no campo 02 \(COD\_INF\_ADIC\) o código da informação; no campo 03
+
+\(VL\_INF\_ADIC\) o valor do imposto do item destacado no documento fiscal \- se não houver imposto, preencher
+
+com "0" \(zero\); e no campo 04 \(DESCR\_COMPL\_AJ\) a descrição do ajuste\.
+
+__PR820043__
+
+Redução de base de cálculo
+
+Redução de base de cálculo prevista no item 36\-A do Anexo VI do
+
+RICMS/2017
+
+01/08/2018
+
+Gerar o registro E115, informando no campo 02 \(COD\_INF\_ADIC\) o código da informação; no campo 03
+
+\(VL\_INF\_ADIC\) o valor do imposto do item destacado no documento fiscal \- se não houver imposto, preencher
+
+com "0" \(zero\); e no campo 04 \(DESCR\_COMPL\_AJ\) a descrição do ajuste\.
+
+__PR840007__
+
+Suspensão
+
+Suspensão prevista no inciso VII do “caput” do art\. 1º do Anexo VIII
+
+do RICMS/2017
+
+01/08/2018
+
+Gerar o registro E115, informando no campo 02 \(COD\_INF\_ADIC\) o código da informação; no campo 03
+
+\(VL\_INF\_ADIC\) o valor do imposto do item destacado no documento fiscal \- se não houver imposto, preencher
+
+com "0" \(zero\); e no campo 04 \(DESCR\_COMPL\_AJ\) a descrição do ajuste\.
+
+- Regra de formação dos códigos da tabela 5\.2 do Paraná:
+
+![](data:image/png;base64,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)
+
+[httpps://www\.sped\.fazenda\.pr\.gov\.br/modules/conteudo/conteudo\.php?conteudo=146](http://www.sped.fazenda.pr.gov.br/modules/conteudo/conteudo.php?conteudo=146)
+
+- Futuramente outros estados podem lançar suas tabelas 5\.2\. E com isso pode haver necessidade de algumas modificações na forma de geração valores dos benefícios para o E115\.
+
+__Considerações Gerais:__
+
+             Esse processamento só atende a Geração Normal do Sped Fiscal, não atendendo ao PIM\.
+
+- __\[MFS30407\] __Especificamente o Rio Grande do Sul é atendido por uma geração apartada, no menu “Pré\-Geração à Registro E115 \(Específico RS\)”, mas também poderá ser gerado pela opção Geral\.  Quando o Código da Informação Adicional estiver parametrizado para as duas pré\-gerações \(geral e específica\), o código só será gerado pela pré\-geração específica\.  Na opção de pré\-geração geral, ele será desconsiderado\.
+- Esta geração só contempla o Registro E115\. O registro 1925 não é gerado automaticamente, já que trabalha com sub\-apurações do ICMS\.
+- __\[MFS32389\] __A chave da tabela da parametrização dos produtos \(X272\_PAR\_PROD\_E115\) foi alterada para permitir que o mesmo produto, seja parametrizado para diferentes Códigos de Informação Adicional\. Para isso o COD\_INF\_ADIC foi incluído na chave \(e*sta tabela é específica da pré\-geração do E115 da opção “Geral”, assim, não terá impacto em nenhuma outra geração\);*
+- Ao parametrizar um CFOP para determinado Código de Informação Adicional, liberamos uma lista de valores que serão considerados para gerar o valor do benefício, por exemplo Valor da Base Isenta\. Os valores disponíveis foram definidos com base no Livro de Apuração do ICMS – Resumo por CFOP\. 
+- Apesar de nos basearmos na regra do Paraná, vamos deixar a rotina de Pré\-Geração aberta para todas as UFs, pois há uma tendência de outros estados seguirem na mesma linha de solicitação;
+- Vale a pena frisar que nos baseamos em regras do __Livro de Apuração do ICMS__, especificamente o __Resumo por CFOP__\. Sendo assim os critérios de recuperação dos documentos fiscais e valores foram definidos conforme o livro P9\.
+
+__\[MFS28993\]__
+
+- A parametrização do CST somente será considerada para a geração, se houver ao menos um CST parametrizado\.  Se não houver CST’s parametrizados, somente serão consideradas as parametrizações de produto e CFOP/Natureza de Operação para a geração\.
+- A parametrização do CST originalmente foi criada para trabalhar em conjunto com a parametrização do CFOP e CFO/Natureza de Operação\. Com a MFS1051812 criamos a possibilidade de considerar exclusivamente a parametrização do CST sem uso das parametrizações do CFOP e CFO/Natureza de Operação\.
+
+__\[ALTERAÇÃO\-MFS\-67999\]__ __Tratamento p/ Geração por Inscrição Estadual Única\.__
+
+__*Tratamento:*__
+
+*Foi disponibilizado o Parâmetro “*Geração p/Inscrição Estadual Única” na tela de Pré\-Geração do Registro E115 – Geral, para tratamento de* *__*Geração para Estabelecimentos por Inscrição Estadual Única,*__ sendo assim deverá seguir a seguinte regra:
+
+__Se a opção selecionada for__* “*__*Sim”: *__S*erão consideradas as Notas Fiscais de todos os estabelecimentos envolvidos, o centralizador \(estabelecimento selecionado em tela\), e os centralizados \(conforme parametrização do módulo de controle das obrigações estaduais, menu  “Obrigações >  Empresas/Estabelecimentos com Ins\. Estadual Única”\), onde:*
+
+__     __
+
+         Selecionar todas as Notas Fiscais dos Estabelecimentos envolvidos na centralização, identificados a partir do campo “COD\_ESTAB” da tabela “ICP\_INSC\_EST\_CENTR”, do Estabelecimento Centralizador\.
+
+Tabela ICP\_INSC\_EST\_CENTR:
+
+Campo COD\_ESTAB: Estabelecimentos Centralizados;
+
+Campo COD\_ESTAB\_CENTR: Estabelecimento Centralizador\.    
+
+__Se a opção selecionada for* “Não”:  *__Será considerado somente as Notas Fiscais do estabelecimento selecionado em tela\.__     __
+
+# <a id="_Toc147248020"></a>Parâmetros da Tela 
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAx4AAAJCCAYAAABOAREGAAAgAElEQVR4Ae3d+7c1V13v+fWv9A8HHImcMQ6RARl2D3rE2+nuRzzaoIIejZDOGCE54djn9FEbxGjT6JOgj5cWlYuJyqNojJcDhhNC4oOKCEgUBOTmBbkowUC4CMgxzB6z1vrWnqt21dpr7b3W3nPN/coYlVk1a9asqu/3Xd+an/mttZ/Z//A/Py991Vd9Vbp06VL6yEc+kn7+tX9uYQMMYAADGMAABjCAAQxgYKsMzLLwuO666zrR8QuvfUeysAEGMIABDGAAAxjAAAYwsG0GZjnbcd9996Vf+L13WNgAAxjAAAYwgAEMYAADGNgJA53w+PCHP5xedu87LWyAAQxgAAMYwAAGMIABDOyEgU54fOELX0gvf91fWNgAAxjAAAYwgAEMYAADGNgJA53wSCmlV/63d1nYAAMYwAAGMIABDGAAAxjYCQO98PjF+96VLGyAAQxgAAMYwAAGMIABDOyCgV543Pn69yQLG2AAAxjAAAYwgAEMYAADu2CA8CC4CE4MYAADGMAABjCAAQzsnIFeePzS/X+ZLGyAAQxgAAMYwAAGMIABDOyCgV54/PIb3ptWLT/8oh9Lx1l++q7fTb90/3tW9r3qvPat9gv7sA8GMIABDGAAAxjAwD4wsLbwePNb3pZWLW9565+mt/7p29Nb3vb29Cdv/dO+bRYrL3/tnxEeRwi7fYDFNQpqGMAABjCAAQxgAAPHZaAXHq968H1p1fL5f/7v6ThLFh6veO1DK/tedV77VvuFfdgHAxjAAAYwgAEMYGAfGOiFx+Xff39atfzLv/xLesMD70jPeOHd6dt+5NfTM3/01ek7fvxy+q6f+eX09x/7WPrnL35hafkfn3tXt52Fxyt/789G+n5Fum42S7N++Tfp379q9TV01/dj35ZmVz8//cQR13v5Vc9P/6rve7beMUf1edT+xTmv+7H3p8s/9vz17ueoPvv9Q3vNUneefv8ativbdte6ps3L4zZeP+K6sz9n35b+y7DfkfqfuPnfFLyMHLPoo2t34RUHzO2MhXxvcxv+lwuz9K9uvv/gnMP7sc02GMAABjCAAQyccwZ64fFrVz6YVi2PLYTHrT/72vS9L3tN+k93/k76v171W+n7f/3uI4XHL977jpG+X5m+ZvbE9F2X5+e9dMsT0+zqF6RLK6/jlelrjmzzwfRrl1+QHlf0ne/r+y58e/q+lX2vvv9Vtol9l255QXeO77uQBdW2z7dsr1+7+O07OEdpg8H5jm27qX4eSN919SzNLnx7+polW03VZx/O0tdcLK9xZD37vmRkpyyU95av+4DnYEI54qNjs6QvPGEAAxjAAAb2mYFeeLz6jX+VVi2f+dznu4zHD12+L33Tj708/a+3/3T6xp+8lL75pXf0wuOLX/xC+uIXPt9lOr755+7oMx53vu6dI32/Mn3t7Inpu381zjvcjvqi/NUH008dcZ2vfuOD6bu/cpa+9vbiuCOP2Ye2Q/sMt7d9D9vq/6h+8v5npu8/5KPD9d//jSUv4/f7U//hielx/+HBBW+7ZmFwb7c/M82+8ZUjrI9f66rnzT42wwAGMIABDGCgNQZ64fHrf/hXadXy2YXw+Lcv/v/S//bjP5W+6Wd+In3Lz9+envGLL+6Exxe/+MWlT61uuvfWXnjcdd87R/peDNpeHectt+frX/u0J6bZ7JnpB/K1vfoH0+P6T6cWdWPX3LVbsX+yr8Pn/IGnFZ+CPe2VxT3MB7TxmdjX3jG/h8n2S9c+S9F+lb0P7yvt81fp1+94Zpp95Q+mnwobLJ2juP+i/nG3/uBc7HU2L/sb3k/eN7z3w/ZZ9snUfZXnCV+XZd5fXG/czx8O65ev8XG3Plj4I/rLbZ6YvjuY2jkLg3vL5yt90t9LXJ/yMNdswiYYwAAGMICB88JALzzu/qO/SauWz/7TF7qMxzde+sn07372Jel/f9nF9G13vSg96/JtnfD40j8vC4/4zUf+jccvv/5dI33fmb5u9sR0/avn5/2ZW5+YZl/5wvQz3XXkfbP0uFuvLI5bbnv3S55Z7Btc96tfmB7X9/M3qeu3G0THuab6Gp6z7Lc85kq6/ivLayvbxXrZft7v171ksS9fX3Hfq2y+vG/eT4id2dPuLGxanu9v0oF9ls89t8WIHV7yzLTcX77WQZ/ddnnfy33fPXlf83b9dc+emf7vJdby/mFdnH+sPvbFfSzs2nNTHLNzFsZsVJx/6T7L67S+zDZ7sAcGMIABDGDgPDDQC4/ffNPfplVLCI/8CdUzXvGj6dt/+f9J3/mrL0zX3/0D80+tFp9YheCIMguPX7n/3SN9Dwekz0rP769hPqD7nl9fXNOvvzA9vpyBz+tPuzP95lL94viuruwr91H0t3TMYlY/91W2iev48WcVP2Z+YuquZ7T/xXWu2f75T5ulr/vxgb2Xrmt4/WP3ULRZOra4p1yfRVjcz9I9HrbJ45/3xsJPxf7u+MH2iB1G72vpnIN77vst7mXpWsfq533kcy1fb9ioOGbkGpf8PGW3sWse8+2hdm9M3/OVC076+xi7Z3WrYo19+MAABjCAAQy0yUAvPH7rzR9Kq5YQHt965/+bnvWqH07//tUvSN9zz/enG373P3fC421ve1uK5Ytf+EL69KcfTY9+6pPdPzp4+YH3jPR9V/r62TXp2b8xdt7Bvt/4ofT42bPSC464xvn1D47tjinqJvsq2uRjltq9MT37CYtrXaovrn2pfnX7F/y7Wfr6nyiOPcZ9/ex/vCY9/j++cW7XpXMX/eb6J/xQ+tm+//Iey/X5MbnPnJmYX9tw/2B75Jzj9zU4rr+WuM68f8y3U/Xz46bPVfY1du6ibuQeRhlaalf49s1FX919rb7mVc+XfcGDEgsYwAAGMICBVhnohcfv/MnfpVXLP33+i+mXf+W3us+t8p/VLZf853RDdOTynz73ufTJT34yffKRRzrh8WsPvmek71/qhMdzfnPsvMN9eXuWHv+9fzDSz+Hjf+578wD6O9IL+3sq+5vqq2zzd+l3Ln1Hmj3htvRzuY/fvC09fnZNml/rH6TnPGHkWibbz8/39ZcW19n1VV7b4esf98Pg+v6k3J6f47B9ls89t0vcR3n8wTXkNvN+hvvHtmfp6PsaHndwrvl95v1j9piqH/qj7C/7Ju5vXr9bFgb3ln0bzPTslddnfZxtdmEXDGAAAxjAwHlgoBcev/uWj6RVy6c+84WUHvvnlNKX0r/88z+l9NgXU0qPddtf/u+f7/6a1Rc+//n02c9+Jj366Ue7jMdnP/PpTni8+vffO9L3r6RvmF2Tbrhn7Lwj++65LX1F+bnVN//KSJ9FXz/5HcVnUrP0Fd/7RwftR/sanvOP0g1PWHy29ITvSN/whPJac9uDH19/w0/m865ov3S+sp/ieo+w/+++ZXh9H0k/nwXWE25LP5+PXTrHLM3CPoUdvuJ7bytsXvRXtMmC7YcW1/JD37y4x66von1c69I5p+5r2VY5o7Lki+6+Ds55wGA+rqxf7mdu88P2yzZZ7v8j6XeX7m9w/qV7CLsN73XKt4N2+Txh97CR8uC5Ywu2wAAGMIABDJxrBnrh8V/f9tG0arntR360ExH5Nxtjy4svviT96O2X0o8M9v/4z/9q+o0/+MDKvledt9p9vz0XQl/xf75pf+6tu+bvTLcd4etqbb7Oded7fMJt6RfWabvVNm9KN2Rx+turn6O9tu1W7cVOWMAABjCAAQycNwZ64fGaP/1YWrX89ps/lH7jD96/8XL3H34w/de3fmRl36vOW/e+V6V/+y2v2pt7u+1bZmn2r384vewIX9dt89Wc5mt/2X/6qjQ7Zb90tj3lc+67n1z/0SyzERthAAMYwEBLDPTC47Vv/1iyrG+DbqA5m6V/+9PrH3P69n1T+j/+9cEnYbPZd6bb+BnnGMAABjCAAQxgAANnwEAvPH7vob9PFjbAAAYwgAEMYAADGMAABnbBQC88Xvdn/5AsbIABDGAAAxjAAAYwgAEM7IKBXnj8tz//eLKwAQYwgAEMYAADGMAABjCwCwZ64XHfOx5OFjbAAAYwgAEMYAADGMAABnbBwCz/uwr5v6nO3/e+9yVLHTa4cuVKsrABBjCAAQxgAAMYwMA+MrCW8OiUif+dqQWy+NtHwFyzwIgBDGAAAxjAAAYwkBkgPM5UTqx/clmn3WedBEVBEQMYwAAGMIABDOyOAcJj/bH/mbbMwuPRRx+17MgGMkq7CzICONtiAAMYwAAGMJAZIDzOVE6sf3LCY7eii/AQEL0UMYABDGAAAxjYLQNbEx4veeA96VnPf8Vay7XPesX6I24tOwsQHoSHYLjbYMi+7IsBDGAAAxjYLQNbEx5ZdOT/nvWKB46UCoTHkSY61GBMeJz04fDp1oGYkfHYbaA5KauO5x8MYAADGMDA/jOwVeFx+aEvdMLjj//6j1NeH1ue/8AD6VSEx7035u/I0o33HhrD72XFKuHx2p/8n1Is+aGM9bIce1gJD8JjjAt1+x/Y+ZAPMYABDGCgRgYqEh73phtns04sZMGQl2tvvJQ+cCyZkPu6Nl26dCldO7sxbVt7fODeS+nGS9vudfWNHiU8/vZPLnWCI0OWBUdsRzkGH+FBeIxxoc7LCgMYwAAGMICBXTBQnfC49tJCanwgi4ZZ6rdXj8tPce8H0qVrZ2l2yqmUo4RHZDcyJLH+/P/8Tf36GDyEB+ExxoU6LxsMYAADGMAABnbBwE6Fx1AN5E+vpj+1mmc8DoTGIgOyGODfe+O1fTbkIBOyOObGGzuRMltkN0bbLoTMjX3beUblUt/vtenGED35wu+NPnP25dp0471ZEC1ER2Rmrs0ZmfFrSPdeStdmgdK1jePnFvnApaLva29M5WmHNovtVcLjuGD0wuOhF6cnxT115ZPSix86GJT37Xb0p2xr6D/b97h2dJzgjAEMYAADGMAABo5mYKfCI//QvFw2Eh5lxiP/XqMb5M8FQRYC88H6QpzEvoVgGG276C9nKjoJcWkuZELozMXK4rOsECmd2EjpA93vReKcw4zHyDWU157lyuJcnYYa7Lv3xtnBvYXKGCnXFR6R7SjL/CAMt3NdP+DPwuNJL04PhbC4+/o0K7ejvuGS8Dg6WAiobIQBDGAAAxjAwEkY2KnwGP64/Ku/+qvnv90Y/XO6iwF8MfN+7UIk5HF497uKG69dZDbiR+OLYwafPY227cXEYlQ/+PH5XBzMxUUIhfitSZTz00wIj+Ia5seXvy2ZX+dc5JT3eW33O5aFvhmRGwdV6wqPl73o67qDcln+viMLj3I7QzMpPEKIdOX16fon5czN9enuRx9ND734SX3m6Ukvfmi5j95387Zd/1nERP31dy/aP5Re3PU5zwgd9DNVP3Xe6fb9va0plggPgfQkgdSx+MEABjCAAQwczcCpCo8XvWg+0Bz/q1bl4PxgwJ3XQhTkz53m2Ydl4RFZi5VtR4VHZDEOzpEzKXG+8U+gxoXH4WuYEh7dVc6F1LXx+djBdSzf+cHWKuFx6YX/S5fRKH/TkddjyaIj1nMZD0Y/OA+hEYP0yHjk+lnx2VW3HaLi7nR9v69cX4iELDIG/d59/Sxdf/ej6dHcfy9C8rGLPqfqp8471T7uY4OS8Dg6WAQ3SrbCAAYwgAEMYOA4DJyK8JjNXnQw672Y/X7ooYe6uoOh9bTw6D5HWvx+I7IR8wTD4WMm224gPFJ8DrXIYixnMI4WHv3xC+WyJGSi735f/rO/JxceOZsRWY4y65Htm7fH4FgSHpGV6MqF2BgIh2XB8GjqhcSwXQz4szBY6neWuuxGJyQWv3/pBcijc6ES7cv6JYExOO9Y+zj/BiXhIYCOPSPqcIEBDGAAAxjYHgM7FR75XzPPn1vlweeLXhTi40X9eq47+O+wiOj3LQbruZ9rFz8OLz9bKrMNMeg/1HYT4dF92lX8AHwgDEL8zH9LMn7d+XOvyR+XD3+4Pp5a6W8/rxyV8cjiolyyEMnZjbIur+fsSDxAS8Jj7DcdQ0GxSgCMHT9o358vBEEhQLpMyFT9oJ9e8Ey1j/oNSsJje0El+FKyKQYwgAEMYAADJQM7FR7xG4/77rtveeZ7SXAsja9tTFjgKOGRD8vCoiyz8Ij/Yt+JhEcnFI7+1KrLjGQh0rWPT7Xmv8fIAqP7nUiR0chCImdCpuq7T7bic6xHDz7rmmy/geAIMUR4CIxlYLSOBwxgAAMYwMD2GdiJ8AjBMSwPPrt5UZoRH6EJ1irXER7l7zhypyE28nrsO5HwGPy4fCpLET9E7wb1OVsx8jlUFht9fZEtmaovf9RenneqfQiKdUvCY/vBRcBmUwxgAAMYwAAGSga2JjzyD8bzv9HxrOfPy7wey1ffdVeK33nk33bktnnbf+tbYB3hcVRvVz54ZfxTq2NkCNYd0O9LO8JDYCwDo3U8YAADGMAABrbPwNaEx/Nf8kAnKLKoGC5ZZHz0ox9dqp//aV3i4yixEPsJj93+g4aEx/aDi4DNphjAAAYwgAEMlAxsTXjEAFm5GwscJTx+9a2PpnWW0U+tZDy6H++XD4Z1gRIDGMAABjCAAQxslwHCYzc6Yeu9rhIe8fuNdct4iPblM6jTuE4Zj+0GlmBMya4YwAAGMIABDAQDhMfWJcJuOhwTHqcxID8v5yA8BMUIikosYAADGMAABnbDQC88Xv+Oh9Nwue8dD3efoOxmKK3XTSxAePiNhyC4myDIruyKAQxgAAMYOB0GCI9NRv9n2JbwIDwExdMJiuzMzhjAAAYwgIHdMHAgPN75cHr9YJHxOEOlMTg14UF4CIK7CYLsyq4YwAAGMICB02GA8BgM8GvdzMLDwgYYwAAGMIABDGAAA/vKAOFRq9JwXSzAAizAAizAAizAAizQkAU2Fh533XVXsrABBjCAAQxgAAMYwAAGMLAJA73wuP+dD6fhMvYbj9z5TTfdZGEDDGAAAxjAAAYwgAEMYGBtBgrh8Yl0/zuXl1XCw49wTudHOOzMzhjAAAYwgAEMYAADLTBAeFwBcgsguwccYwADGMAABjCAgboZOBAef/GJdP9gkfGo23keLv7BAAYwgAEMYAADGNgXBnrh8Ya/+EQqlyxCCA8g7wvIrhOrGMAABjCAAQxgoG4GJoVHFiGER93O83DxDwYwgAEMYAADGMDAvjBAePiNR9oXWF2nwIoBDGAAAxjAAAb2l4FeeDzwF59Iw0XGY38d66HkOwxgAAOnx8Dd97wmWXZjAxyfHsdszda7ZuBAeLzrE+mBwUJ4tA/gU5/61C7jUWu56wdA/+0zzsd8fBoMZNFxGuc5b+dgV8/veWO+9fslPBr61OrOO+9Mz3nOc9J1112XnvzkJ3dl3s71YyCH2BjbV0PdWV3fpnaswVauwcsZA2fLgAHybuzPrruxq3jBrmfFQC88HnzXJ9JwkfHYMZgXL6TZ7Op0y+XL6ZarL6SLxxRBDz74YLr11ls70fG6170uffzjH09f+tKXujJvZ/GR9z/wwAOjAuSs4KvtvOy4Y96PyXdtnLgenIwxYIC8Gy7YdTd2HWNYHVufBgOF8PjH9OC7lpfjCI+rZ7M0O7RcnW65eEu6+upb0uWtDT7yYH2WLlxcE5RukF9eWx7wr3ns1q55+XwXL4TomKXZhYvHFgXPfe5z0+23356+/OUvp7H/cv0dd9yRcrsSqrPKKJTXsGr9tK/vuHZcdQ/2LTPPHuxRJQNbmATqB8gXX5pms9u6Zen9NFV/5ffSLVe/ZP4+mmozVX+SY6f6nKov34NTbabqT3Bsb9eyD+tL7/Iqnyk+4qMJBnrh8fvv/seUlweL5TjCIx6Ay7dcna6+5fIODX8M4XGCwX3cV23lXXfdlZ797Gf3euP1r399esYznpGe8pSndGXejv9yu9x+6R4u/1K6+upf2pIgzC/Q2+Zi8Mh+704Xtnbekw/mhnYMm42Vk3ZcDDbmg47FQGLiwVvyQTVtCv9Vc00n9201tj7W5MfFdGGtCZscD0cmeC5ve8JnzB/HiMVLk1NtTALNB8h3pwuzxbOfY+DspYtM9lT9lXSlj5VTbabqT3LsVJ9T9aXfp9pM1Z/sWMKjtJ/1auK5d+TyWHIDexwSHiFAcrlV4REvwK68kC5cvcg+FGIgi5XIlkyJlr7N1fM++hml8qVe9NlDmveP1F+8MEuz/sU+f4H2557qM99D/+JcfCIV99cZfzEIiIzKWPsrV1J/L7mv4trK+v5arlxMF2aHP8e64YYb0r333tuNj9/whjeka6655tAS4iO3y59dhU26jEL/0ttGQNtg4LrGeU8z41HacUxslHVDO3b2HN5PnvmrSFiFz1eXG/hvgyCz+pzb4G5P+hjGoC4uHH6ml+y1FFdW3Ge0izL8M9yO+q2WxxAeRbxbut+tXtcKe+3gPN0AeSkO5OepECF9PCjqu/fAS9LVt/xeIUDydRdtpvo8ybFTfU7Vl/aaajNVfyULkoUAm2ozVX/lSveXwlphxH2c7jPJ3nXauxceV979j2m47Ex4dL9ryAYpXlj5BdkPrPMge2QWrGzTrS8+tRq8XLOY6AVJBMxSROSBfi82rqTcPg/wOxESL8TJPpevrRMJ+Zil9qXwWKd9ISq6+4rByPKxYw9RHpw/8sgj3bg4ZzrGhEeuz/89/PDD3Q/Ol/qJgN+VL00Xrp5/InD1LXd32Ys8e9+9FLMdizT67MLdvYC5fMtL5p8WXD0/vrN99Lt4OcanB/Pj5gPcrm7xMu77yFmDou+law1f7qAs7ViKjLH1lXaMa4v7X7Lr/OVb3mtv2yX7vjTdcstLisxR+OXw8b2tls6TfXbYf+V5++NK/5T+K+vPyCen5ftTO89QeFyZx56IVeWEw3wiYh4fu8mYRbw63Gb+Ysn13STFUhzKM+LLGY/y+H5So2sTk0Hz2FO2KydFSlv1bUwCdbGwEx45Rhbx6+KFRQZ4qr5joPjM6rSOnbqeqfqIaxGnNrzOnpup/qfqCY/+PdvbsPSFdfbZQwYOhMd7/jFdGSw7Ex7FoL9/YQ5eymPioW+7MHTfZigqZnMhsfSgDvpf2rcQQKUYuTLV5+BF3vezVF8Ij6X6gfrM+/rMyUJoDa6zv8cJuLLQiP/y51VjwiPX5//yD87zX7uKa17KeOSB69InAoOZuhhI97YvPqkqZ7NmRX0WFUvHTcx8TbQ5zYxHacew51Q5tGNnz6V7WIi0uP+wa7Zdbhf26mYCF3Y+tF7YcXh8P3M6sGe0686xyn/D44rZyKH/On8X7Sc4DKaUg2e8tNfg2c626mPaUpwYTEREvJxq0w1eF/FjKaYsssrl8WOTO90xxUTPivP0/u2OWUyQLM45n3BYFjqj8WsYW+P6FkJsXyeBjic8imdravA9VV9mEqbabKt+iePNxVXPzabXQ3j07+vehqUvrLPPHjKwJDze+J5/TOWyV8IjMhVTThh56fcP8uLFOf8LU4uBw1T7pZdyMchYqi8yFUv1Rfvu5TuS2Ricd/TFXdxjOVN/8ozH4rce5SA61vMLY+k3DPNMSJ5FL2ft+xm+OC5fazcQnmdSZuXguB9AT7Qp7rP31Y7qSjtOCY6on8x4LNlnMPCP65568Zb26gZghfAo7bSOPcu+huv9Nc6vb9J/U+eJ+1Bu/sIbPNuZ6V54dPYemYgYxo+8PZysKD/DHGsfA/vB+fvYMjxm6loKny9d90IwdMKji2vlH/E4P5NAx/rUqowH5bO6zqdWJzl203MVvj/4TUp+n633SVgfv49x3s6u5fmtbx572IzNKmKgFx6l4Ij1nQmP/jOqE3xq1b1si0+txvosDT146faBsPzcK7eJl3T3go9ZwOI6u/NGfZ7ZXhzTtS9nAKNNIULy9UT78nryelx/2c/wXOX9LNbzbzbyn8zN/91///2jGY/77ruv2x9/Wjfu/VDGIwa45csh1suXXHEdkwPX8rixGf7Y39kki5rFrHsx83+aGY/SjiEwpsqhHTt7lvdT2Gf5Jb3IhIx9pjA4flTArbDV0nnKvmI9+2/ExpP+m2gf7CiLSYTS36vWy2d+0a4f/HcxYGQiohQFU23Kfsv2+RzldtmuFAtlm3zM1HmKe1spPM7pJNB8gJwzGMWkw8gzN5+Imce7/jnvbHt6x14p4mx5PdP1Je+bXedyrNj8WMKjtL31ZZ7YYx/t0QuPP/jLR9Jw2ZnwWHwT3H27XLyk8sssflwe3z0PjXrQ5up0dfnndLuX5eEfrPfHl/sXM4YXLi6+oS6uIQ8E+m+ay2OKNt3LvJ91jMHC/Hvt+ffY+XvpEB6Ll/+h9lmQxPVe6Nbjng/usfytSvH5RTEAiH/s7rHHHuvGyVlkPP3pT+8+qcpliI68Pw+uD/1jgjEwjTL3Pbae6+KF2s1yFTPySy/Xoj4LmVKwdIPZ4qUcQmeqTXGfvR93VDe045ToONKOw+srbRm2XbLXwh7lQKBbH9gx+p2yVXmesfVVxy1dz+K8U+3jOpSbz6DleHIojiziR7mvizuL+FGKgok2vXjp+Fr+1GlJeOS+pj61igmX3MfEeZaewUN9mQTqB8j52VlkFiOmd7Y7VF9kC+J5OtRmMbA6VH+SY6f6PKI+rrFjZN17zH1msRETS4vJl7XsM7+e3q7l+a1vHn/YjM0qYWBnwmPpJVXebPkiLetbX798S7qwoz8v/LznPa/7dzqO+nc8crvSLxtlPLJ/ipdf+QPKPGs+f9G+JF196M/p5pfO4jOrCy/t1ucv40V9Jz7G25xmxiPb5bh27GxaDvZLlkfqD+y1GORH+96+L00X4keph44ft9WoWMz99sdPHLf0I/LCfwvx0/l1yW+LwUlcs3LpmSqfr0PrnaAoP0MqJicWGdz5ZEw5EbGYoOiEwdhkRfF7ss7fK4TH4tOuQ5M7h2Ly2HkO+/1ggsQkUPa1AfJhRg49A8eIF+y6G7tuwzf64JvjMNALjwueOkYAACAASURBVD/8y0fScDlJxmPyYg695M6P4/KLuv9LMscIwFM2zf8iefkvl+ffIOQfQOcyPgvyL5cfzVk9dhyZzdwiL1McqT+aETZqwEY7mgQyQN4NG+y6G7uKZex6VgwcCI/3PpL+cLDsRHicywHU4pOu+B3HjmwQnwtdd9113adWuRz9vGpx/tPOKGwK+Vld36Z23PS+xtsXGYnyTxjviJXxaxCI2eV8MLCLSSAD5N2ww667satYx65nxUAvPP7ovY+k4UJ4APOswHRe7GEAA9tnYHeTQAbIu+GVXXdj1+0/W66TTddjoBceb3rfI2m4EB7rGXFfYYuMQu3lvtrXdbf9/PAv/5YM5AGyZTc2KO1s3XOHgf1moBAen0xvet/yQnjst3M9nPyHAQxgAAMYwAAGMFALA73w+OP3fTINF8IDqLWA6jqwiAEMYAADGMAABvabgV54vPn9n0zDhfDYb+d6OPkPAxjAAAYwgAEMYKAWBggPfzVo/X+HgK3YCgMYwAAGMIABDGDgmAz0wuNPPvCpNFxkPCjkWhSy68AiBjCAAQxgAAMY2G8GeuHxlg98Kg0XwmO/nevh5D8MYAADGMAABjCAgVoY6IXHWz/4qTRcCA+g1gKq68AiBjCAAQxgAAMY2G8GeuHxtr/6VBouU8Ljwx/+cLKwAQYwgAEMYAADGMAABjCwLgOF8Hg0ve2vlpcx4ZH8xwIswAIswAIswAIswAIswAIbWqAXHn/614+m4TImPKS49jvFxX/8hwEMYAADGMAABjBwFgz0wuPtf/1oGi5jwuOuu+5KFjbAAAYwgAEMYAADGMAABjZhoBceD/3No2m4TAmPm266KVnYAAMYwAAGMIABDGAAAxhYl4FeePzZ33w6DZdVwuMs0jPOKS2IAQxgAAMYwAAGMICB/WSgFx5//refTsOF8NhPp3oY+Q0DGMAABjCAAQxgoDYGCI9j/pPvtTnS9QguGMAABjCAAQxgAAM1M9ALj3d86NNpuMh4gLdmeF0bPjGAAQxgAAMYwMD+MNALj3d+6NNpuBAe++NIDx1fYQADGMAABjCAAQzUzEAvPP7i7z6ThgvhAd6a4XVt+MQABjCAAQxgAAP7w0AvPN71d59Jw4Xw2B9Heuj4CgMYwAAGMIABDGCgZgYOhMeHP5PeNVgID/DWDO++X9vd97wmWaZtsO/+df3iJwYwgAEMYGCZgV54vPsjn0nDhfBYNhZ42GObDGTR4b9xC2TbbNPW+vLsYgADGMAABs6egV54vOcjn03DhfA4ewd5SNr1AeExLjpyLeHRLvdiGt9iAAMYOL8M9MLjLz/y2dQtH12UH/lsIjzOLxinGRRms1kql12dO5/jqL6PanPS/eX51xEes9ltKZZymB51uRz7r6yfajtVH/2dpI+pvqfq45xREh5iT/msWMcDBjCAgTYYOBAeWXAMFsKjDSfX/rAOB/PD7anrX7ddHL9p+zhuk3KTcxwlPMqBfx6Qx3aUMUgfbq/TdnjMcPskfQz7iu0oV1137CM8xJ5Nnjtt8YIBDGBgPxjohcd7P/rZNFwIj/1w4r4/bGOD9bG64X2u06Y8ZtP25bHrrm9yDsJjPFuTxQfhIfas+8xphxUMYAAD+8NALzze97HPpry8t1gIj/1x5D4/dGOD9WFd3o4l7nVqe3hs2X64PtZH2ea4+6euIfrO5a6ER5lZKNfXyWJExqE8rlxfp49N28c5y5LwEHvKZ8U6HjCAAQy0wUAhPD6X3vex5YXwaMPJtT+sY4P0sbq4j9gXZdSX5di+si6vD7fz8VEXZfQZ21FGfZRRH2XUryoJDxmPVXzYJ/5iAAMYwEBrDPTC4/1//7n0/o8tL4QH4E8D+LHB+rAub5dLvq512pTXX7Yv18u+oj7K8viyXazndrFE3fCYqe1dCI+pbENkE2J/lMP6vL1qX7l/qt2m9XENZSnjIfZMPTfqsYEBDGBgfxlYFh5ZfBQL4bG/jt2nh3JskF/Wlev5vmI7yrIu7rvcN1Y33B/bwzKOjXJq/1R9HDdWEh4yHmNcqBN3MYABDGCgVQZ64fGBv/9cGi6EB/BPA/wYtMe51t0u25XruZ/h9rBuuD+2h+XwmtbdH8etKrctPIaZhjI7EdmEaBPlUfXb6CPOFeXwnLFdljIeYs+qZ8c+fGAAAxjYTwYIjyv76biWHrg8mC+XsXsr98fgP7cbrpfthv0M25b7Y1+U0Xf0F22n9kf9sIzjxsqjhEcM+vOAfWzQPqwftomBfLQb7h+rH7Y5Th+bXnecoywJD3Fp7JlRhwsMYAAD+81ALzw++A+fS8NFxmO/nevhrNt/6wiPcjB+ntYJj7rZFVv4BwMYwAAGjsMA4SHjceS/5n0csBxzdEAiPKalFOFxND+eMTbCAAYwgIF9Y4DwIDwIjzNigPAgPPbtheF6DXIwgAEMYOAkDBTC45/SB/8hL/mTq/m6T63AdRK4HLuaH8KD8PCMrH5G2Id9MIABDLTFQC88hn/RKm8THm0528Nblz+z8LBM2wCvdfHKH/yBAQxgAAMnZaAXHu/5yGfTcCE8AHZSwByPIQxgAAMYwAAGMICBzEAvPP74/Z9M5fLm939SxuOMvv33cHo4MYABDGAAAxjAAAZaY6AXHq9/x8Pp9e9cXmQ8AN8a8O4H0xjAAAYwgAEMYOBsGCA8ZDX8VSsMYAADGMAABjCAAQzsnAHCA2Q7h8yswtnMKrA7u2MAAxjAAAYwUBMDhAfhQXicEQP+otX0X7TKtqkpULoWL24MYAADGMDAyRkgPM5o0Anek8O77zbMg2v/jVuA8PB87Pvz7foxjAEMYOAwA4QH4WFm+YwYIDzGRUeuJTwOB2svMDbBAAYwgIF9Z4DwOKNB576Ds+vrn81m+W8998uuzleeI9bzufL6cc65yXHrCI/Z7LYUSzlMj7pcjv1X1k+1naqP/k7Sx1TfU/VxzigJDy/X4zx/jsENBjCAgboZIDwIj2MNsHf9YA8H8MPtqfOv2y6O37R9HDdVbtLfUcKjHPjnAXlsRxmD9OH2Om2Hxwy3T9LHsK/YjnLVdcc+wqPuF8cU/+r5DQMYwAAGVjFAeBAeeyE8MsTrDOrXaVM+EJu2L48dW9+kP8JjPFuTxQfh4cU19nypwwUGMICB/WaA8CA89lZ45EF+LBGIpranBMFR9bF/2G8+X9RFm6gry7iusXJXwqPMLJTr62QxIuNQHleur9PHpu3jnGVJeOz3i2WMd3V8igEMYAADhAfhsbfCowxgMfiPstwX62P7cl25DNvGvmF9bEcZfUcZ9atKwkPGYxUf9nlBYwADGMBAawwQHoTH3gqPEAVR5odzOPCPfVEOH+Bh+9gf9VEO6+Nc0W+0izLaryp3ITymsg2RTYj9UQ7r8/aqfeX+qXab1sc1lKWMh5ftqmfHPnxgAAMY2E8GCA/CYy+Fx3CAH9tR5oBUro9tT9WV9VN9rFuf+5paCA8Zjyk21E8/N2zDNhjAAAb2lwHCY8XAENhnB/bUwD58MrW/rC/X83HD7am6sn54TGxHObyeYX3sHyu3LTyGmYYyOxHZhGgT5VH12+gjzhXl8JyxXZYyHmf37I2xqo4/MIABDGBgGwwQHoTH5Iz8NgA7bh95AF8uY/2U+8sB/3C9bDfsp2xb7ov6KGNfuZ3XyyW3if1RxnFj5VHCIwb9ecA+Nmgf1g/bxEA+2g33j9UP2xynj02vO85RloSHF9zYM6MOFxjAAAb2mwHCg/CoUnich8CyjvAoB+PnaZ3w2O8Xy3l4ft0jRjGAAQxszgDhQXgQHmfEAOExLaUIj82DuRcgm2EAAxjAQO0MEB5nNOisHQzXt/vgRXgQHp6z3T9nbMzGGMAABuphgPAgPGQ8zogBwoPw8DKs52XIF3yBAQxgYPcMEB5nNOgE9+7hrt3GWXhYpm1Qu/9cn2cYAxjAAAYwsBkDhAfhIeOBAQxgAAMYwAAGMICBnTNAeIBs55CZDdhsNoC92AsDGMAABjCAgRYZIDwID8IDAxjAAAYwgAEMYAADO2eA8ADZziFrUbG7JzNRGMAABjCAAQxgYDMGCA/Cg/DAAAYwgAEMYAADGMDAzhkgPEC2c8jMBmw2G8Be7IUBDGAAAxjAQIsMEB6EB+GBAQxgAAMYwAAGMICBnTNAeIBs55DVpthns9m5u+fafOB6zORhAAMYwAAGzh8DhAfhca4G4UTH+QtyXmx8jgEMYAADGKiDgb0RHnnAWC6nAVCcL59r2wPW6C/KXdzPOn3nNtEuynWuJY4ry3WO26TNJtdT9jt23Lp1ZT95fey4YZtdbN95553pOc95TrruuuvSk5/85K7M27l+F+fTZx0BmR/4AQMYwAAGWmZgL4TH2OBvrG6bjor+cxnru+p/m/1u0lfc13HuMY5d93ybts/9HueYqePG+hqrW/d+dtXuwQcfTLfeemsnOl73utelj3/84+lLX/pSV+btLD7y/gceeIAAka3EAAYwgAEMYGCvGNhb4bGrgd9p9RuD3ihP67zbOs+m171p+3ydxzlm6rixvsbqtmWf4/bz3Oc+N91+++3py1/+chr7L9ffcccdKbebOke+r1jKNjXeb3l91s3yYQADGMAABtpmoBnhEQOtcnAVdQFxbJdt8r5t1Y+dZ3iuOF/Zdrge1xP1ccywr2hX1kddHBN9RH3ZNtrEvmi7qj7aDPuJ+iiHfU5tD/uJdlHGtUS/w+1oV/ZTrsdxR9XF/lzG+jrnijarjotrOKq866670rOf/ewxvXGoLrfL7Yd9ltce1zZsY7vtoM6//IsBDGAAA7UysHfCIwZ45QCrXM+Gju0ox4wf+6KMNsPtYf1w/3C7PP/w2LHt8vi8Ptwe9hf7oxz2WdbHepTDtrEdZbSLclgf27nMbcpluC+2o68oo74sY1+UsS+2oxzWx3aU0S7KqM/lUXV5f9km1odl9Bn1sR3lVH3sX1XecMMN6d577z0kMsYqcrv82dWwv5Ocf9iXbS8uDGAAAxjAAAa2ycDeCY+4+XKAldeHS25Xtontsl3URZ/DsmwbfUUZbYfbY32Wbcr1Ydvj7otrmepv2O+wfd4fy7CPse2pumG/R23HOeP6oozjYjvKYX3ezvvKJeqibZTDPobthvtje1hGf2WZ25RLuW+T9ac+9anpkUceGdMZh+oefvjh7gfnw/7jeof1eTv2Da81tseOUeeFgwEMYAADGMDAthhoRniMGSQGWnlfuV5uD+ujn2F9bEc51a7se6zNquNX7Rv2O2y76lzrtC37H7Yfbpdt47xjZXnc1HrZV9lmm/VlX+V1lucr18v2UR9leXzZLuqn2sX+VeU111xzSGBMVeQfnOe/djXWX76GWMr9cW1R5n1T6+Vx1r1wMIABDGAAAxjYBgN7KTyGg6py8JSNEttRlnVhtNgX5Unr4/hNzjVsu861RJso47yxHWXZd1l3kvo4V9lHWRfr5fliPcqxY2NflMN+yvq8HttRrmo/3BfbuSyPL9fLfVEfZRwf21EO62N7k3IbGY/h+crri/Uoc9up9WE/tr1wMIABDGAAAxg4KQN7ITzyTeYBUiyxXd587Fs1kCrbDNvFvqk+12kfx0ZfUZb1sR7lsN+oz+VwX7kd+1edo2wf7cq6YR/lvqn2cX3l/liPfWW/w7rYjmOiXLc++l7VPvcZ+8syzhXlcN/YdtlXHFfW5WPK+tgXZdnnUev5Nxv5T+au81/8ad2j+iyvI9ajjGuPPsr6qFN6yWAAAxjAAAYwsC0G9kZ4bOuGp/rZ5qBrm31NXe9x6mu9ruPcS4vHxD8a+Nhjj63UHnn/1D8mOPRxuR3rUWYbTq23aF/35MWJAQxgAAMYOFsGCI9ixnpbMJaDuW31edJ+8jXVeF0nva/Wjn/e857X/TsdR/07Hrnd1L2Hr4f+ju0o8/FT61N9qz/bgM3+7I8BDGAAA/vMAOHhX7ycHMDuM9j7eu35XyQv/+Xy/Ner8g/JcxmfV/mXy7109pVv141dDGAAA+ebAcKD8CA8KmQgPru67rrrur9elcupz6sE8fMdxPmf/zGAAQxgYF8YIDwqHHTuCzyuU6DDAAYwgAEMYAADGFiXAcKD8JDxwAAGMIABDGAAAxjAwM4ZIDxAtnPI1lXB2pkxwQAGMIABDGAAA+0yQHgQHoQHBjCAAQxgAAMYwAAGds4A4QGynUNm5mLzmQs/Lt/cZjhjMwxgAAMYwEDdDBAehAfhUREDDz744NKf0/34xz/e/TndXPpzunUHUy87/sEABjCAAQysZoDwqGjQCdbVsJ4H+zz3uc9Nt99+ezrqHxDM7cbsUf6DgLF/WJe3oy7KaKvEIAYwgAEMYAADu2KA8CA8RgewuwJOv9PB7K677krPfvazU/z3+te/Pj3jGc9IT3nKU7oyb8d/uV1uP7RnKSpiXykuYn2sXbRXTvuIbdgGAxjAAAYwcHwGCA/C49Dg1QN1/AfqJLa74YYb0r333ttpize84Q3pmmuuObSE+Mjt8j8oODzfmKAIsTFsa/ts/Mzu7I4BDGAAA+eVAcKD8Dg0eD2vD8NZ3/dTn/rU9Mgjj3TCI2c6xoRHrs//Pfzwwyn/a+bDaw6REWXeX67Hdq5bt354DttemBjAAAYwgAEMHIcBwoPwODR4PQ5Ijjl5AMpCI/7Ln1eNCY9cn//70pe+lJ785Ccf8l2IiSizX8r1oZ9iX5Sxf7gd9cqT+5kN2RADGMAABs4rA4QH4XFo8HpeH4azvu9tZjzyvYR4iDLuL2+XS9m2bBPrSi9IDGAAAxjAAAa2wQDhQXgQHpUwkH+zkf9kbv7v/vvvH8143Hfffd3++NO6wyAwJTKi3dj+vG+qPo5TeuFgAAMYwAAGMHBSBgiPSgadJ3Wk4/c/GMQ/GvjYY4914iKLjKc//endJ1W5DNGR92eRktsP/T4mIMq6cj0fG9tRRn/D7ahX7j9nfMiHGMAABjBwVgwQHoTHocHrWcHovFfS8573vHTHHXcc+e945HZj9hoTDMO6vF0u0c9YXexTeklhAAMYwAAGMHBSBggPwmN0AHtSsBx/vOD0wAMPLP3L5fmvV+UfkucyPq+69dZbU27HxsezMbuxGwYwgAEMYOBsGCA8CA8D2AoZiM+u8p/MzX+9KpdTn1cJnmcTPNmd3TGAAQxgAAObMUB4VDjoBPFmELMXe2EAAxjAAAYwgIH6GSA8CA8ZDwxgAAMYwAAGMIABDOycAcIDZDuHzAxE/TMQfMRHGMAABjCAAQzsmgHCg/AgPDCAAQxgAAMYwAAGMLBzBggPkO0csl2rZ/2bocEABjCAAQxgAAP1M0B4EB6EBwYwgAEMYAADGMAABnbOAOEBsp1DZgai/hkIPuIjDGAAAxjAAAZ2zQDhQXgQHhjAAAYwgAEMYAADGNg5A4QHyHYO2a7Vs/7N0GAAAxjAAAYwgIH6GSA8CA/C44wYuPue1yQLG2AAAxjAQGsMEAD1C4Cz8hHhcUaDzrNyuPPWEwzyi8Z/LMACLMACLFCDBfL44J577jnxkt9txhr1jDVq8wXhQXgIEGfEAOFRw6vWNbAAC7AAC2QLhPD40Ic+lI67ZOFCeBAdq8QO4XFGg85VTrGvnod2NpsdEmZlXV4fLuv6j/DwsmcBFmABFqjFAvndlYXDcUVHPo7wqGf8su5Y5LTbER6Ex6GB9WlDWPP5SpER11nWleuxf92S8Kjldes6WIAFWIAF8ruL8CAc1h3DHLcd4UF4EB4rGBgTFmVdub7pQ0h4eNGzAAuwAAvUYgHCg+jYdBxznPaEx4pB53EM6pi2HtwxYVHWleul76fqyzaERy2vW9fBAizAAiyQ308yHm2NYcoxRy3rhAfhIeOxgoExAVHW5fVy2eTBJjy86FmABViABWqxAOFBdGwyhjluW8JjxaDzuEZ1XDsPbykywq9lXbke+9ctCY9aXreugwVYgAVYIL+7hhmP17zmNZM/Nh/b58fl7Yx/1h3LbNqO8CA8ZDxWMDAmLMq6cn3Th4/w8KJnARZgARaoxQJD4fHud787feu3fmt6+ctffkh85Lq8L7cp/woW4UF4HDUWIjxWDDqPMp797T9gY8KirCvXN+WB8Kjldes6WIAFWIAF8jtsmPEYEx9TosOf021/TLTpOGesPeFBeMh4HMFAFhflUj5IU8Jjqr48lvDwomcBFmABFqjFAvn9NBQeWUyU4mOV6CA8CI9yjDO1TngcMeicMpx6D9hJGSA8anndug4WYAEWYIH8ThsTHqX4GPu8Ku+PxadWxkZHjY0ID8JDxuOMGCA8vOhZgAVYgAVqscAq4RHiY/ibjhAcURIehAfhcUaDyqMMb7+Hk/Co5XXrOliABViABY4SHiEuVpWEh7HNUeNbGQ/CRMbjjBggPLzoWYAFWIAFarFACI8sHk6y5HfbUYNP+8+vQCE8zmjQ6aE7vw9d+D4HZwsbYAADGMBAawzEe05prDNkgPAgPMxMYAADGMAABjCAAQxgYOcMEB4g2zlkQ7Vr2wwIBjCAAQxgAAMYOH8MEB6EB+GBAQxgAAMYwAAGMICBnTNAeIBs55CZ0Th/Mxp8zucYwAAGMIABDAwZIDwID8IDAxjAAAYwgAEMYAADO2eA8ADZziEbql3bZkAwgAEMYAADGMDA+WOA8CA8CA8MYAADGMAABjCAAQzsnAHCA2Q7h8yMxvmb0eBzPscABjCAAQxgYMgA4UF4EB4YwAAGMIABDGAAAxjYOQOEB8h2DtlQ7do2A4IBDGAAAxjAAAbOHwOEB+FBeGAAAxjAAAYwgAEMYGDnDBAeINs5ZGY0zt+MBp/zOQYwgAEMYAADQwYID8KD8MAABjCAgVNi4J577knbXIYvddsGehjAQM0MEB6n9LKpGQLXJkhhAAMYOB0Gsuj40Ic+tJUl98Vvp+M3dmZnDGyHAcKD8PDiwgAGMICBU2KA8NjO4GVsEHjNNdekTZexftTtzkdsy7anLzwu35yums3S7NByVbr58jYdcjFdyOe46uZ0+VgvlMvp5qvydV5IF491fHkv2+yr7Ne6IIYBDGBgnxgohcfwusv3YuzLdbEeZWRMZDyW2c+iY5P/cvuwqXLZluzBHrti4OyEx4WLGz/wly/enC7cvO5xhEcJzWa288CVtrOOBwxgYFsMHCU85gPnw5Nz5fmPFB4XLyxN7l24eIT/8oTgcSbpjnvciSfzxu+H8Bi3S8mOdTY6awb2R3hEpmRtwVKT8Dhj0De23Rlf745eSmf9sDk/rjCAgVXCI/MRWY+UZp0Gydt5vcx8rBQeXbwvMvXd9hFfFOQ2xxEelcXqEwmPxXuyFGmXb75qS189HIP7xfUEDwflEb7sfDL/yqK8F7HnGD6ojO9WfFih8Licbr6QH/Z5oL2qExrxqVLMAi2C6uWb04Xuc6hF/VUXis+1QnhcKPq7Ki09iJcvppuvKs9VfpYV5ywD+Kr2V9KVwfXMrz3DPugrAsqFmwfXdrG4n02uddW9xrmHtrtYnHvWvXQubvVTNw95K0HCfWAZA9tjYEp4hNAoy3gP5rLMhBwpPFaJiDIbEhN5pfAY258HYPHe6t7NB+/gECzzQfrivX3z5fkXDfmYCxfmnz3n4+J8V66ksn1f313HhcV7sHj3rjkAPLHwuOqqtPzevipdddXm17Ht5yXb6qqw6Vq2mL/3l8Y7ax23Pc63bQP9teObsxMeC2HRB9ZFoIxglB+Ycr0Pen3gWgy2L1xc/IYjBt8hHhbbsxjAxwA8ZgsO2ncD7ssH2/PfhET7CDoH+8fbL/YvrufyInjPg8Wgrz6AX0jzvuJ3L/lac8AOAbLhuWeH7627lzjf0Hb59ytZbHQCLL8w4nztAC5Y8SUGMFATA1PCo38XLt6NITSiDPGRy5XC48qVdPHCYKIpBp3dwD7ekfN23eA06qNctM/9zAev+f0W75fFuzm/T6J9Lvv3R9H2UP3iHRPHdefJ7Yv64jyb+u3kwuPmdPPNYZ+L6UKeHCyER4xJOl/F+7S7l4FY6u77sA/WPj78tSjzcaXwKPsZrb9qfj0hPMbbx7hkIBYH597UB9qLt0cxcGzh8cEPfjCtWiZPHA9kPLQDyPsH5Kr5ILz/YfjEcZcv5pn7C+mqPvMRg+eFEChnfhZioHsYl4TBHJT5uSO4xkO56O+o9mXfg3uaznjE71WG17rhubNQyS+r/l4Hxw9tN3IvV8bqBvexyt/2rX4e2Id9MICB/F6cEh5531xcHHxiFdvzMkuQ+b6jhMfB+3fxboiB/SLOdwPnhcDpBq75HZHfH0ftH7wTeuGRjyve6b1giX674/J7Kd6vwwzKon6p/eEB3FHP0DaEx8WbF19OXLyQrro5f+VQiKL+HZvtWtQviaW87+A+u3FFKdI6W6w6/vB95z56gdG9z8txTmG7pWtaiMap9ks+K65n6ONi+yj773L/AdOH7WPfftnkRMLjWM7uHoLllOtyPzHbv5gtiM+nDh0X7a7qfnB+OTIW8eAdGoxfSeXguhc4w8zLLGZ4lgfvR7WP/THDsHxPy31NZm/6oLbcPvouXxaxfjAbtb7wiP6WrnXxwumDWxFslu9lvwB37fyFAQzUxEApPCKORxnCoizzvsh6RLm+8Jj7Psf8LrYvDTYLLvL7NYRHISB6u8X+4Xsh6gf9Hik8uvfNxOC5fw8W1zc878T2NoRHFl/53Xi5EyD5XRzXuaZYCpuMXWPe1485CsFwxD33/st9Tth6qc0i69W94yfa9+OQfD1jPh+7/jOqy4KmZ/GMrsH5N38ep2xWofBYBMr8+U/81iNmC8oHpAtcIRLyMVmxl4Pv4faB8OgfxtnsYBbhEMzLg/9StIwa89D1lE4a9BXBp3/Yh9c6aL/oe1oUHHH88Hxj/Y3VHbJJeU/WRzlgMy8IDGBgBQOl8FgoiiVhMS5ClsXHSuHRxfJisLz4jWH33uveb+VS/QAAIABJREFUBTEbP3/P9PV58Du1v3u/xnGLd2m0j3Jp0m9sUJ3Pt6jP1xjvv+56x9pv/o7ZivDI99p/YpWveWHLJbvmd+7ENWcbjgmJdY8fYWdJVJS2KwTGUpuifkqo9O+vGB/0k66b273va+Tat7GP8KjPJyfxa3XCIz88s/KB7sXBYnC9FKwOlPr8uJwliYC7aN89TPl3E4PBfCFUut85HNq/afvB4L8LMiFsBn3Fgx73UlzLWr8vOXStg3NP7R+eL9vKbzwMknb0sjhJYHJsWy8a/jzwZyk8DrIZi1xG8W92zPeF4Mj7Y/3o33gcvA9Hvt9fvJs6gRPvhHKwPLY/x4h4b3Uz9ov3bHFcec5OzMQx/SA8vwcXg/V453WTifMfny8JoGPGpO0Ij/kfuDn4wzaF8Ah7dTaaEB7dvcV9FiItH7PW8QesxHOTbdtPPHZ+KMc5xXUMxj+9TZfq5+07f8X1LIRKf45j2j+ud9sl4XGYiW3b+DT7Ozvh0QWvxedUi/V5sBr+Vav4oVf+IVz8Bar5gPlgO2c64q9XxQMfg/Goz+eKH5ovnJg/z+p/GzLvYy5C8v6BWOiC6Kr288Bc9pcD16iQiADeP/RxrXGvm5776OMPbFWIjd6e/qrVaT50ztVWEOVP/tyEgVJ4lBmPg0zHgQhZrC2Jjly3MuNR2aBxE9uctO12hMf8x/PzQXh+F5eD/MWYZfGXuvqBfS+uYmxRflJ1jOMHPlwSHoO/CDYfN83PeyD+8l/jOvgi5KD+oC7b+uCPEJRfi9T3PBMe9fnkJM/q6QuPwQN1kot3bFsw8id/YgADrTOwSngcCI28dpDhWF4nPKYYOZHwMDapNvtPeLT1XiA8BJtqg83Uy0V9W0GIP/nzPDFQCo/41Kos5+ul6JjLkVJ8yHiMPzNZeGy6nCf29vVeCY9x3vfVn4QH4UF4YAADGMDAKTFQCo+QFFEOBUjeHlsIj7YGYvs6gDyt6yY82uKd8Dill81pPaDO09YDyp/8iYG2GCiFx3F9S3i0xcRxOTgvxxEebfFOeBAeZjoxgAEMYOCUGCiFRwiI45a5r/My+HSfbQ0+N/En4dGW7wmPU3rZbPKQadvWQ8af/IkBDAQDhAcWggXleiwQHuvZaV94IjwIDzNmGMAABjBwSgxk4bHNZV8GG66zrcHjafqT8GiLHcLjlF42p/mQOldbDyl/8icGMIABDJxXBgiPttgnPAgPM50YwAAGMIABDGCgSgYID8Ij3XTTTQkIbYFwXmdS3DeOMYABDGAAA/UyYLxZr2+O89zIeJjhqHKG4zgwO6at4MSf/IkBDGAAA4RHWwwQHoQH4YEBDGAAAxjAAAaqZIDwIDx8aiU4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GJDxICKICAxgAAMYwAAGMFAlA4QH4SHjIThVGZzMjLUVnPiTPzGAAQxggPBoiwEZDyKCiMAABjCAAQxgAANVMkB4EB4yHoJTlcHJzFhbwYk/+RMDGMAABgiPthiQ8SAiiAgMYAADGMAABjBQJQOEB+Eh4yE4VRmczIy1FZz4kz8xgAEMYIDwaIsBGQ8igojAAAYwgAEMYAADVTJAeBAeMh6CU5XBycxYW8GJP/kTAxjAAAYIj7YYkPEgIogIDGAAAxjAAAYwUCUDhAfhIeMhOFUZnMyMtRWc+JM/MYABDGCA8GiLARkPIoKIwAAGMIABDGAAA1UyQHgQHjIeglOVwcnMWFvBiT/5EwMYwAAGCI+2GGg645H8xwIswAIswAIswAIsUJ0F1hWVhAfhsTcZj0cffTSddHn729+eLGyAAQxgAAPnjYGTvj8df/IxSMs2JDzaEhTr+rPpjMc2Htjz9qJxvwZXGMAABjCQGdjGO1QfxMcUA+sOVGU82hIohMcRWREvYC9gDGAAAxg4jwxMDRjVExPbYIDwaEtQrOtPwoPw8CmZz+kwgAEMYOAQA9sYXOqDSJliYN2BqoxHWwLlXAuP66+/PsUy9WCcx1ku92x2FwMYwAAGpt6L6omJKQZiTJXLqTZRT3i0JSjW9ee5FR7rPhxevl6+GMAABjBwHhmIAaKS0NiEgXXHV+sOVGU82hIo51J4rPtQ5AftPL5s3LNBFgYwgAEMbDLY1JY4KRlYZ5xFeLQlKNb157kTHus8DOXD4+Xr5YsBDGAAA+eRgfJdaJ2w2JSBo8Zb6w5UZTzaEijnTnjkB+eoh6F8uM7jy8Y9G2RhAAMYwED5LrROeGzCwDrjLMKjLUGxrj/PpfDID886D0Vu5+Xr5YsBDGAAA+eRgU0GmtoSJsHAuuOrdQeqMh5tCZRzKzzyA7LOw3EeXzbu2SALAxjAAAZiIKkkKtZlYJ1xVfRFeLQlKNb157kWHgH/qtLL18sXAxjAAAbOIwOr3o32ESMnZWDdgaqMR1sChfDwDwj6nMw/HIYBDGAAA4cYOOnA0vHEySoGCI+2BMW6/iQ8CI9DL5vzOLPnns1oYwADGFhmYNWg0T6i4qQMrDtQlfFoS6AQHoQH4WGmEwMYwAAGDjFw0oGl44mTVQwQHm0JinX9SXgcITxWPTT2CaoYwAAGMIABDGBgcwbWHajKeLQlUJoWHutCrV1bUPMnf2IAAxjAAAbaYIDwaMOP8TwSHlfacmg4VsmvGMAABjCAAQzsOwOER1sMEx6ER9r3oOT62wpK/MmfGMAABjAQDBAebbFAeBAehAcGMIABDGAAAxiokgHCg/BIN910UwJCWyAI4j8AAAAC7ElEQVTEzIKSXzGAAQxgAAMYqIUB4822WJTxMMNR5QxHLQHPdbQV8PiTPzGAAQzsFwOEx37566jn60TCI8NgYQMMYAADGMAABjCAgV0xcNRg1v79ESfHFh6cvD9O5iu+wgAGMIABDGAAAxg4awYID59a+dQKAxjAAAYwgAEMYAADO2eA8ADZziE7a3Xt/GZ4MIABDGAAAxjAwNkzQHgQHoQHBjCAAQxgAAMYwAAGds4A4QGynUNmhuHsZxj4gA8wgAEMYAADGDhrBggPwoPwwAAGMIABDGAAAxjAwM4ZIDxAtnPIzlpdO78ZHgxgAAMYwAAGMHD2DBAehAfhgQEMYAADGMAABjCAgZ0zQHiAbOeQmWE4+xkGPuADDGAAAxjAAAbOmgHCg/AgPDCAAQxgAAMYwAAGMLBzBggPkO0csrNW185vhgcDGMAABjCAAQycPQOEB+FBeGAAAxjAAAYwgAEMYGDnDBAeINs5ZGYYzn6GgQ/4AAMYwAAGMICBs2aA8CA8CA8MYAADGMAABjCAAQzsnAHCA2Q7h+ys1bXzm+HBAAYwgAEMYAADZ88A4UF4EB4YwAAGMIABDGAAAxjYOQOEB8h2DpkZhrOfYeADPsAABjCAAQxg4KwZIDwID8IDAxjAAAYwgAEMYAADO2eA8ADZziE7a3Xt/GZ4MIABDGAAAxjAwNkzQHgQHoQHBjCAAQxgAAMYwAAGds4A4QGynUNmhuHsZxj4gA8wgAEMYAADGDhrBggPwoPwwAAGMIABDGAAAxjAwM4ZIDxAtnPIzlpdO78ZHgxgAAMYwAAGMHD2DBAehAfhgQEMYAADGMAABjCAgZ0zQHiAbOeQmWE4+xkGPuADDGAAAxjAAAbOmgHCg/AgPDCAAQxgAAMYwAAGMLBzBggPkO0csrNW185vhgcDGMAABjCAAQycPQOEB+FBeGAAAxjAAAYwgAEMYGDnDBAeINs5ZGYYzn6GgQ/4AAMYwAAGMICBs2bg/wd2n87i19QtXgAAAABJRU5ErkJggg==)
+
+Funcionamento dos campos:
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/__
+
+__Default__
+
+__Regra__
+
+<a id="_Hlk517437550"></a>Data Inicial
+
+Data 
+
+__S__
+
+S
+
+DD/MM/AAAA
+
+Neste campo o usuário informa a data inicial do período para a recuperação dos movimentos\.
+
+Deve ser uma data válida\.
+
+Data Final
+
+Data 
+
+__S__
+
+S
+
+DD/MM/AAAA
+
+Neste campo o usuário informa a data final do período para a recuperação dos movimentos\.
+
+__Consistências:__
+
+Deve ser uma data válida\.
+
+Caso a Data Final informada seja menor que a Data Inicial, gravar no log a seguinte mensagem:
+
+“A Data Inicial deve ser menor ou igual a Data Final informada\.”
+
+Caso a Data Inicial e a Data Final excedam o período de um mês, gravar no log a seguinte mensagem:
+
+“Data Inicial e Final deverão pertencer a um mesmo mês\.”
+
+Geração p/Inscrição Estadual Única
+
+Texto
+
+N
+
+S
+
+Formato:
+
+Radio Button Group
+
+Default:
+
+Habilitado
+
+Desmarcado 
+
+Este campo apresenta duas opções: 
+
+\- Sim
+
+\- Não
+
+As opções são alternativas\.
+
+A opção informada interfere no campo “Estabelecimentos”, conforme descrito na regra específica\.
+
+UF
+
+__S__
+
+S
+
+Formato:
+
+ListBox
+
+Default:
+
+Em branco
+
+<a id="_Hlk105587338"></a>Neste campo é exibida a lista de todas as UF’s\. O usuário deve selecionar a UF do estabelecimento que será informado para a geração\. __MFS87559__
+
+Estabelecimentos
+
+Alfanumérico 
+
+__S__
+
+S
+
+Neste campo é exibida a lista dos estabelecimentos da Empresa do login para seleção do usuário\.
+
+O campo deve ser apresentado sem listar nenhum estabelecimento\.
+
+Após selecionar a UF, devem ser listados somente os estabelecimentos que sejam da UF selecionada\. __MFS87559__
+
+Selecionar
+
+N
+
+N
+
+Esta opção é um facilitador que permite ao usuário selecionar um ou mais estabelecimentos através de uma janela de seleção da tabela de estabelecimentos\.
+
+O filtro dos estabelecimentos disponibilizados para seleção segue a mesma regra descrita para o campo “Estabelecimento”:
+
+\- Somente Estabelecimentos da empresa do login;
+
+Quando esta opção é utilizada, após escolher os estabelecimentos e clicar no botão <OK> da janela de seleção, os estabelecimentos selecionados pelo usuário serão demonstrados no campo “Estabelecimentos” já marcados\. 
+
+   
+
+Marcar todos
+
+N
+
+N
+
+Através desta opção o usuário poderá marcar e desmarcar simultaneamente todos os estabelecimentos demonstrados no campo “Estabelecimentos”\.
+
+__\[MFS571174\] __Alteração da geração para verificar o parâmetro relativo à utilização da parametrização de produto, incluído na tela de Dados Iniciais 
+
+# <a id="_Toc147248021"></a>Recuperação dos Dados e Processamento
+
+__Origem dos dados__:  \- Manutenção das Informações Adicionais da Apuração \(Registros E115/1925\);
+
+                                  \- Parametrização do Produto para Informação Adicional da Apuração \(opção do menu Registro E115 \(Geral\)\); \*\*
+
+                                  \- Parametrização de CFOP para Informação Adicional da Apuração \(opção do menu Registro E115 \(Geral\)\);
+
+                                  \- Parametrização de CFOP / Natureza de Operação para Informações Adicionais da Apuração \(menu Registro E115 \(Geral\)\);
+
+          \- Parametrização de CST para Informação Adicional da Apuração \(opção do menu Registro E115 \(Geral\)\); __\[MFS28993\]__
+
+                                  \- SAFX07 / SAFX08 \- Tabelas dos Documentos Fiscais;
+
+\*\* Verificar o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” na tela de Dados Iniciais do SPED\-EFD\.
+
+__Critérios da recuperação das Notas Fiscais \(SAFX07 / SAFX08\): __
+
+\- Empresa – código da empresa do login;
+
+\- Estabelecimento – código do estabelecimento selecionado para geração;
+
+\- Data Fiscal – data enquadrada no período informado em tela;
+
+\- Somente notas *não canceladas*;
+
+\- Somente notas *com itens de mercadoria*;
+
+\- Situação Especial \(*SAFX07, item 125 \-  IND\_SITUACAO\_ESP*\) – caso esteja preenchido, deve ser diferente de:
+
+1 \- Nota Fiscal de Venda Globalizada de acordo com o Protocolo ICMS 52/2000 \(Cláusula Quarta\);
+
+2 \- Nota Fiscal de Acompanhamento de ECF;
+
+8 \- NF de Remessa por Conta e Ordem;
+
+\(critério baseado no P9\)
+
+\- Classificação do Documento Fiscal \(*SAFX07, item 12 \- COD\_CLASS\_DOC\_FIS*\):
+
+Se a nota é de saída \(*SAFX07, item 03 \-  MOVTO\_E\_S = ‘9’*\), então
+
+Considerar COD\_CLASS\_DOC\_FIS = ‘1’, ‘3’ ou ‘4’;
+
+Se a nota é de entrada \(*SAFX07, item 03 \-  MOVTO\_E\_S <> ‘9’*\), então:
+
+Considerar COD\_CLASS\_DOC\_FIS =  ‘1’ ou ‘3’;
+
+\(critério baseado no P9\)
+
+\- Nota Fiscal Transferência de Crédito/Débito \(*SAFX07, item 74 \- IND\_TRANSF\_CRED*\) – caso esteja preenchido, deve ser = 0 – “NF que não seja de Transferência’;
+
+\(critério baseado no P9\)
+
+__\[MFS\-58897\]__: Criado o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” na tela dos Dados Iniciais do Sped Fiscal:
+
+\- Quanto ao __Código do Benefício__ do Item de Mercadoria \(SAFX08, Campo 255 – COD\_BENEFICIO\):
+
+Essa regra depende do parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” da tela dos Dados Iniciais do Sped Fiscal:
+
+Se o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” estiver desmarcado:
+
+A informação do campo 255 – Código do Benefício do item de mercadoria será desconsiderada\.
+
+Se o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” estiver marcado:
+
+A informação do campo 255 – Código do Benefício do item de mercadoria será considerada para recuperação dos itens de mercadoria, conforme regra abaixo\.
+
+__SE__ o Campo 255 – COD\_BENEFICIO da tabela DWT\_ITENS\_MERC estiver preenchido __E__ 
+
+         Código do benefício estiver cadastrado no módulo EFD\-Escrituração Fiscal Digital >> Informações Adicionais da Apuração \(Registro E115/1925\)
+
+__*Então *__
+
+       Seguir com a sequência das próximas regras;
+
+__Senão __
+
+__       __Desconsiderar o item na geração do Registro E115\.
+
+\(Tabela/Campo do Parâmetro: Tabela EFD\_INF\_ADIC\_APUR, Campo COD\_INF\_ADIC\)
+
+\(*Relacionamento entre as tabelas:  DWT\_ITENS\_MERC\.COD\_BENEFICIO *__*=*__* EFD\_INF\_ADIC\_APUR\.COD\_INF\_ADIC\);*
+
+\- Quanto ao __Produto__ do Item de Mercadoria:
+
+Essa regra depende de dois parâmetros da tela dos Dados Iniciais do Sped Fiscal:
+
+ \- “Desconsiderar a parametrização de Produto para a Pré\-geração”
+
+\- “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)”
+
+Se o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” estiver marcado:
+
+      Não será verificada a parametrização de produto, ou seja, serão considerados todos os produtos\.
+
+Se o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” estiver desmarcado:
+
+     Aqui temos duas possibilidades, que dependem do parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)”\.
+
+     Se parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” marcado:
+
+          O produto do item de mercadoria pode ou não constar na Parametrização do Produto \(SAFX272\)\.
+
+     Se parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” desmarcado:      
+
+          O produto do item de mercadoria deve obrigatoriamente pertencer a Parametrização do Produto \(SAFX272\)\.
+
+ Para verificar se o produto do item consta na parametrização do menu “<a id="_Hlk2094036"></a>*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à Produtos*”, fazer uma 
+
+ consulta na __Parametrização do Produto \(SAFX272\)__, com os critérios:
+
+\- Empresa de login
+
+\- Estabelecimento selecionado na Tela de geração
+
+\- Produto \(Grupo, Indicador e Código\) = referenciado no item de mercadoria
+
+\- Data Início Validade <= Data Fiscal da nota
+
+\- Data Fim Validade quando preenchida, deve ser >= Data Fiscal da nota
+
+Obs: se o critério acima atender a mais de uma Parametrização, recuperar a de maior Data Início Validade dentre essas\.
+
+Recuperar o *Código da Informação Adicional* e a Descrição Complementar\.
+
+__MFS\-32568__: Alteração na regra de aplicação do parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” na tela dos Dados Iniciais do Sped Fiscal:
+
+Se o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” estiver marcado, o produto do item de mercadoria pode ou não constar na Parametrização do Produto \(SAFX272\)\.
+
+Caso o produto esteja parametrizado, manter a recuperação do Código da Informação Adicional e a Descrição Complementar da Parametrização do Produto 
+
+\(SAFX272\)\.
+
+Caso o produto não esteja parametrizado, considerar:
+
+ 	\- Código da Informação Adicional do item de mercadoria \(campo 255\) 
+
+ 	\- Descrição Complementar : descrição do próprio Código da Informação Adicional \(Tabela EFD\_INF\_ADIC\_APUR \- Manutenção das Informações Adicionais da 
+
+                                                          Apuração \(Registros E115/1925\)\)\.
+
+Se o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” estiver desmarcado, obrigatoriamente o produto do item de mercadoria deve pertencer a Parametrização do Produto \(SAFX272\), se o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” estiver desmarcado\.
+
+__\[MFS30407\]__
+
+__\[MFS1051812\]__: Criação do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação”
+
+\- Quanto ao __CFOP e Natureza de Operação__ do Item de Mercadoria:
+
+Essa regra depende do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” da tela dos Dados Iniciais do Sped Fiscal:
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver marcado:
+
+      Não serão verificadas a parametrizações de CFOP e CFOP/Natureza de Operação, ou seja, serão considerados todos os CFOPs e Natureza de Operação\.
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver desmarcado:
+
+O CFOP ou CFOP/Natureza Operação do item de mercadoria deve obrigatoriamente pertencer a Parametrização do CFOP ou CFOP/Natureza de Operação, conforme regra abaixo\.
+
+Para verificar se o CFOP/Natureza Operação do item consta na parametrização do menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CFOP/Natureza de Operação*”, fazer uma consulta na __*Parametrização do CFOP/Natureza da Operação*__, com os critérios:
+
+\- Empresa de login
+
+\- Estabelecimento selecionado na Tela de geração
+
+\- CFOP referenciado no item de mercadoria
+
+\- Natureza da Operação referenciado no item de mercadoria
+
+Recuperar os campos *Código da Informação Adicional* e *Recuperação de Valores* da parametrização\.
+
+Caso o item de mercadoria não possua Natureza da Operação, ou a relação do CFOP/Natureza do item não estejam parametrizados, verificar se o CFOP do item consta na parametrização do menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CFOP*”\. Para isso, fazer a consulta na __Parametrização do CFOP__, com os critérios:
+
+\- Empresa de login
+
+\- Estabelecimento selecionado na Tela de geração
+
+\- CFOP = referenciado no item de mercadoria
+
+Recuperar os campos *Código da Informação Adicional* e *Recuperação de Valores* da parametrização\.
+
+Observação:
+
+O CFOP ou CFOP/Natureza do item deve constar na parametrização do menu “<a id="_Hlk2094423"></a>*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CFOP ou CFOP/Natureza de Operação*” e __NÃO __deve constar na parametrização do menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Específico RS\) à CFOP ou CFOP/Natureza de Operação”*, para qualquer código de anexo da GIA\-RS informado nas telas\.
+
+__\[MFS28993\]__
+
+__\[MFS1051812\]__: Criação do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação”
+
+\- Quanto ao __CST__ do Item de Mercadoria:
+
+Essa regra depende do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” da tela dos Dados Iniciais do Sped Fiscal:
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver marcado:
+
+O CST do item de mercadoria deve obrigatoriamente pertencer a __Parametrização do CST__ com campo *Recuperação de Valores* preenchido\.
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver desmarcado:
+
+	Verificar se existe parametrização de algum CST para o estabelecimento no menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CST*”\.
+
+Se existir Parametrização de CST para o estabelecimento, então:
+
+O CST do item de mercadoria deve obrigatoriamente pertencer a __Parametrização do CST__\.
+
+Se não existir Parametrização de CST para o estabelecimento, então:
+
+	Não será verificada a parametrização do CST, ou seja, serão considerados todos os CST’s\.
+
+Para verificar se o CST do item consta na parametrização do menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CST*”, fazer uma 
+
+ consulta na __Parametrização do CST__, com os critérios:
+
+\- Empresa de login
+
+\- Estabelecimento selecionado na Tela de geração
+
+\- CST \(Situação Tributária Estadual – B\) = referenciado no item de mercadoria
+
+Recuperar os campos *Código da Informação Adicional* e *Recuperação de Valores* da parametrização\.* *
+
+<a id="OLE_LINK1"></a>__Consolidação:__
+
+Os itens de documento fiscal que atendam os critérios acima são consolidados por:
+
+- Código da Informação Adicional 
+- Produto \(Grupo, Indicador e Código\) *\(ver OBS abaixo sobre a Descrição Complementar\)*
+
+__\[MFS32389\]__ Com a alteração na chave da parametrização dos produtos, a geração foi ajustada para prever a situação de um mesmo produto, parametrizado para diferentes Códigos de Informação Adicional\.
+
+Exemplo: O produto ABC poderá ser parametrizado para o código PR810057 e também para o PR820043\.
+
+A lógica da geração não se altera, e os itens recuperados das notas fiscais continuarão a ser consolidados por Código da Informação Adicional e Produto, conforme o funcionamento original\. 
+
+__\(\*\*\*\) Sobre a Descrição Complementar__: 
+
+Na verdade, a consolidação é feita pela Descrição Complementar parametrizada para o produto\. E para cada consolidação, é gravada uma linha na tabela\. Conforme teste realizados __\(MFS32389\)__, a geração funciona da seguinte forma:
+
+O campo é de preenchimento não obrigatório na parametrização dos produtos\.
+
+Quando preenchido, a geração dos dados do E115 consolida as informações por Código da Informação Adicional e Descrição Complementar, e grava um registro E115 para cada consolidação, onde os valores apurados são totalizados\.
+
+Se para cada Produto for informada uma descrição complementar diferente, o registro E115 será demonstrado separadamente por Produto, exibindo a descrição parametrizada\. 
+
+Se forem informadas descrições iguais para vários Produtos, as informações destes Produtos serão consolidadas num único registro E115, para o Código da Informação Adicional\.
+
+Todos os Produtos com descrição complementar não informada, são consolidados, e no E115 será demonstrada a descrição do próprio Código da Informação Adicional\. 
+
+ 
+
+__\[MFS32389\]__ Com a alteração na chave da parametrização dos produtos, para permitir que um produto seja parametrizado para diferentes Códigos de Informação Adicional, a geração foi ajustada para prever esta situação\.
+
+Exemplo: O Produto 01 poderá ser parametrizado para o código PR810057 e também para o PR820043\. 
+
+__\[MFS26565\]\- Inclusão de novos valores__
+
+__\[MFS1051812\]__: Criação do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação”
+
+<a id="OLE_LINK_rec_valor"></a>__Recuperação de Valores:__
+
+Os valores dos itens de documento fiscal são recuperados de acordo o campo “Recuperação de Valores” da __Parametrização do CFOP ou CFOP/Natureza da Operação ou __da __Parametrização do CST\.__
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver marcado:
+
+Considerar o campo “Recuperação de Valores da __Parametrização do CST__\.
+
+Senão:
+
+Considerar o campo “Recuperação de Valores da __Parametrização do CFOP ou CFO/Natureza Operação\.__
+
+<a id="_Hlk2007461"></a>__Campo “Recuperação de Valores” da __
+
+__Parametrização por CFOP, CFOP/Natureza da Operação, CST__
+
+__Campo da SAFX08__
+
+1 – Base Isenta ICMS
+
+Valor da Base Isenta do ICMS 
+
+\(*SAFX08, item 56 \- BASE\_ICMS quando item 55 \- TRIB\_ICMS = 2*\)
+
+2 – Base Outras ICMS
+
+Valor da Base Outras do ICMS
+
+\(*SAFX08, item 56 \- BASE\_ICMS quando item 55 \- TRIB\_ICMS = 3*\)
+
+3 – Base Reduzida ICMS
+
+Valor da Base Reduzida do ICMS
+
+\(*SAFX08, item 57 \- BASE\_REDU\_ICMS*\)
+
+4 – Base Isenta ICMS \+ Base Reduzida ICMS
+
+\(baseado no P9\)
+
+Soma dos campos: Valor da Base Isenta do ICMS e Valor da Base Reduzida do ICMS
+
+\(*SAFX08, item 56 \- BASE\_ICMS quando item 55 \- TRIB\_ICMS = 2\) \+ *
+
+\(*SAFX08, item 57 \- BASE\_REDU\_ICMS*\)
+
+5 \- Base Outras ICMS \+ Valor do ICMS\-S
+
+\(baseado no P9\)
+
+Soma dos campos: Valor da Base Outras do ICMS e Valor do Tributo ICMSS
+
+\(*SAFX08, item 56 \- BASE\_ICMS quando item 55 \- TRIB\_ICMS = 3*\) \+ 
+
+\(*SAFX08, item 52 \- *VLR\_SUBST\_ICMS\)
+
+6 \- Valor Desonerado ICMS
+
+Valor Desonerado ICMS
+
+*\(SAFX08, item 258 \- VLR\_DESONERADO\_ICMS\) *
+
+7 \- Valor Diferido ICMS
+
+Valor Diferido ICMS
+
+*\(SAFX08, item 259 \- VLR\_DIFERIDO\_ICMS\)*
+
+# <a id="_Toc147248022"></a>G<a id="_Hlk278074"></a>ravação dos Dados na Tabela dos Registros E115/1925 \(Valores Declaratórios\)
+
+<a id="_Hlk508706613"></a>
+
+Os documentos fiscais recuperados da SAX07 / SAFX08 __serão gravados na tabela de forma consolidada__ \(vide tópico [Consolidação](#OLE_LINK1)\), com as seguintes informações:
+
+__PK__
+
+__Campo__
+
+__Regra de Preenchimento__
+
+S
+
+Código da empresa
+
+Código da empresa \(SAFX07\)
+
+S
+
+Código do estabelecimento
+
+Será preenchido com o estabelecimento informado na pré\-geração\.
+
+S
+
+Período 
+
+Será preenchido com a Data Inicial e Final informada na pré\-geração\.
+
+S
+
+Sequencial
+
+<a id="OLE_LINK22"></a>Sequência única por Empresa, Estabelecimento e Período\.Exemplo:
+
+Cód\. Inf\. Adicional\.  Apuração                            Sequencial
+
+PRXXXXXX             01/01/2017 a 31/01/2017   1
+
+PRXXXXXX             01/01/2017 a 31/01/2017   2
+
+PRYYYYYY             01/01/2017 a 31/01/2017   3
+
+PRYYYYYY             01/01/2017 a 31/01/2017   4 
+
+PRXXXXXX             01/02/2017 a 28/02/2017   1
+
+PRXXXXXX             01/02/2017 a 28/02/2017   2 
+
+Código da Informação Adicional
+
+__\[MFS571174\] __Alteração da geração para verificar o parâmetro relativo à utilização da parametrização de produto, incluído na tela de Dados Iniciais
+
+Se o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” estiver desmarcado
+
+      Será preenchido com a informação do Código da Informação Adicional parametrizado para o Produto e CFOP \(ou 
+
+      Produto e CFOP/ Natureza de Operação\)
+
+Senão
+
+      Será preenchido com a informação do Código da Informação Adicional parametrizado para o CFOP \(CFOP/ 
+
+      Natureza de Operação\)\.
+
+Valor da Informação Adicional
+
+Será preenchido com a soma dos valores dos itens de mercadoria de acordo o campo “Recuperação de Valores” da __Parametrização do CFOP ou CFOP/Natureza da Operação ou__ __CST__
+
+Vide tópico [Recuperação de Valores](#OLE_LINK_rec_valor)\.  
+__\[MFS1019580\] __Regra geral de preenchimento do campo “Valor Informação Adicional”\.
+
+Se o parâmetro “Não Preencher Valor da Informação Adicional” do cadastro das Informações Adicionais da    
+
+     Apuração \- Registro E115/1925 \(\*\) estiver marcado
+
+__    NÂO__ preencher o Campo 03 \- VL\_INF\_ADIC
+
+  
+    __Senão__ o campo deverá ser preenchido\.
+
+Descrição Complementar 
+
+Preencher este campo conforme regra:
+
+1. \[[__MFS\-59764__](https://jira.thomsonreuters.com/browse/MFS-59764)\] Regra Específica para o Rio de Janeiro – __Não preencher __o campo “Descrição Complementar\.
+2. \[__MFS693829__\] Regra geral de preenchimento do campo “Descrição Complementar”\. Retirada da regra criada pela MFS59764\.
+
+Se o parâmetro “Não Preencher Descrição Complementar do Ajuste” do cadastro das Informações Adicionais da    
+
+     Apuração \- Registro E115/1925 \(\*\) estiver marcado
+
+__    NÂO__ preencher o Campo 04 \- DESCR\_COMPL\_AJ
+
+Senão Se o campo Descrição Complementar da __Parametrização do Produto__ __\(SAFX272\)__ estiver preenchido, então:
+
+    Considerar a Descrição Complementar da Parametrização do Produto\.
+
+           Senão
+
+   Considerar a Descrição do Código da Informação Adicional \(\*\)\.
+
+\* Vide: Parâmetro à Registros E115/1925à Informações Adicionais da Apuração \(Registros E115/1925\)\.
+
+1.    
+
+Sub\-Apuração do Sped Fiscal
+
+Não será preenchido\.
+
+A pré\-Geração só atende ao registro E115\. Portanto não teremos a geração da informação da sub\-apuração utilizada apenas no registro 1925\.
+
+Usuário
+
+Gravar o usuário que efetuou a pré\-geração desse Registro\.
+
+Data Operação
+
+Gravar com a data que foi efetuada a pré\-geração desse Registro\.
+
+Número do Processo
+
+Gravar o número do processo da  pré\-geração desse Registro\.
+
+Obs: Os documentos fiscais são consolidados \(vide tópico [Consolidação](#OLE_LINK1)\) de forma a permitir que N registros E115 sejam gerados para um mesmo Código da Informação Adicional \(pode haver variação de produtos\)\. Esses registros poderão ser diferenciados pela Descrição Complementar\.
+
+# <a id="_Toc147248023"></a>Geração de Críticas no Log da Geração:
+
+__\[MFS571174\] __Alteração da geração para verificar o parâmetro relativo à utilização da parametrização de produto, incluído na tela de Dados Iniciais 
+
+__\[MFS1051812\]__: Criação do parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação”
+
+Vamos gerar críticas para notas fiscais que não atendam às parametrizações de Produto, Cfop e Cfop/Natureza da Operação\.
+
+Se o parâmetro “Desconsiderar a parametrização de Produto para a Pré\-geração” estiver marcado
+
+      Não serão dadas as mensagens de erro abaixo porque não vai ter produto parametrizado
+
+Se o parâmetro “Considerar campo de Código do Benefício \- SAFX08 \(campo 255\)” estiver marcado
+
+Não serão dadas as mensagens de erro abaixo porque a parametrização do produto não é obrigatória\.
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver marcado:
+
+Não serão dadas as mensagens de erro abaixo porque as parametrizações por CFOP ou CFOP/Natureza de Operação não serão utilizadas\.
+
+Senão
+
+      Serão dadas as mensagens de erro porque vai ter produto parametrizado:
+
+1. Gerar crítica para Nota fiscal atenda aos oito primeiros critérios definidos no tópico 3, cujo CFOP ou CFOP/Natureza de Operação esteja parametrizado para algum Código de Informação Adicional da UF do Estabelecimento, mas que o produto não exista na Parametrização de Produto para o Estabelecimento foco\.
+
+__*Mensagem*__*: Item do documento fiscal não foi considerado na pré\-geração do E115, pois o Produto não foi parametrizado\.*
+
+__*Solução*__*: Criar parametrização na opção de menu Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à Produtos*
+
+__*Chave de Identificação*__*: Num Doc\.Fis xxxx \+ Serie xxxx \+ Subsérie xx \+ Data Fiscal \+ Pessoa Fis/Jur \(gr/ind/cod\): xx/x/xxxx \+ Item xxx \+ Produto \(gr/ind/cod\): xx/x/xxxx *
+
+1. Gerar crítica para Nota fiscal atenda aos oito primeiros critérios definidos no tópico 3, cujo produto exista na Parametrização de Produto para o Estabelecimento foco, mas o CFOP \(ou CFOP/Natureza Operação\) do item, não esteja parametrizada para o Código da Informação Adicional relacionada ao produto\.
+
+__*Mensagem*__*: Item do documento fiscal não foi considerado na pré\-geração do E115, pois o CFOP \(ou CFOP/Natureza Operação\) não foi parametrizado\.*
+
+__*Solução*__*: Criar parametrização em uma das opções de menu Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CFOP ou CFOP/Natureza de Operação*
+
+__*Chave de Identificação*__*: Num Doc\.Fis xxxx \+ Serie xxxx \+ Subsérie xx \+ Data Fiscal \+ Pessoa Fis/Jur \(gr/ind/cod\): xx/x/xxxx \+ Item xxx \+ CFOP: xxxx \+ Natureza da Operação\(gr/cod\): xx/xxxx*
+
+Se o parâmetro “Considerar parametrização por CST, sem utilização conjunta das parametrizações por CFOP ou CFOP/Natureza de Operação” estiver marcado:
+
+1 \- Verificar se existe __Parametrização do CST__ para o estabelecimento em foco no menu “*Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CST*”\. 
+
+Caso não exista, exibir mensagem de erro:
+
+__*Mensagem*__*: Nenhum do documento fiscal foi considerado na pré\-geração do E115, pois o CST não foi parametrizado\.*
+
+__*Solução*__*: Criar parametrização acessando a opção de menu Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CST*
+
+__*Chave de Identificação*__*: Estabelecimento*
+
+2 \- Gerar crítica para Nota fiscal atenda a todos os critérios definidos no tópico 3, mas que o campo *Recuperação de Valores* não está preenchido na Parametrização do CST para o Estabelecimento foco\.
+
+__*Mensagem*__*: Item do documento fiscal gerado sem valor na pré\-geração do E115, pois faltou definição do campo Recuperação de Valor na Parametrização do CST\.*
+
+__*Solução*__*: Completar parametrização acessando a opção de menu Parâmetros à Registro E115/1925 à Registro E115 \(Geral\) à CST*
+
+__*Chave de Identificação*__*: Num Doc\.Fis xxxx \+ Serie xxxx \+ Subsérie xx \+ Data Fiscal \+ Pessoa Fis/Jur \(gr/ind/cod\): xx/x/xxxx \+ Item xxx \+ CST: xxx*
+
+# <a id="_Toc2012765"></a><a id="_Toc2012766"></a><a id="_Toc2012767"></a><a id="_Toc2012768"></a><a id="_Toc2012769"></a><a id="_Toc2012770"></a><a id="_Toc2012842"></a><a id="_Toc2012846"></a><a id="_Toc2012857"></a><a id="_Toc2012861"></a><a id="_Toc2012868"></a><a id="_Toc2012872"></a><a id="_Toc2012876"></a><a id="_Toc2012900"></a><a id="_Toc2012904"></a><a id="_Toc2012976"></a><a id="_Toc2012980"></a><a id="_Toc2012984"></a><a id="_Toc2012988"></a><a id="_Toc2013000"></a><a id="_Toc2013007"></a><a id="_Toc2013017"></a><a id="_Toc2013021"></a><a id="_Toc2013025"></a><a id="_Toc2013029"></a><a id="_Toc2013033"></a><a id="_Toc2013037"></a><a id="_Toc147248024"></a>Relatório de Conferência:
+
+As notas fiscais que foram consideradas na geração devem ser apresentadas neste relatório\.
+
+As seguintes informações devem ser demonstradas:
+
+- Data Fiscal
+- Núm/Serie/Subsérie 
+- Entrada/Saída
+- Código da Informação Adicional \(código\)
+- Item de Mercadoria
+- Produto \(ind/cod\)
+- CFOP
+- Natureza de Operação
+- Indicador Recuperação dos Valores \(descrição\)
+- Valor da Informação Adicional \(resultante da aplicação do Indicador da Recuperação de Valor aos valores da SAFX08:
+
+Valor da Base Isenta do ICMS
+
+Valor da Base Outras do ICMS
+
+Valor da Base Reduzida do ICMS
+
+Valor do Tributo ICMSS
+
+ 
+

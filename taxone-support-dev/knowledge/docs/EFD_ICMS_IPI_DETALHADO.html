@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFD ICMS/IPI (SPED Fiscal) - Documentacao Visual Detalhada</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #1a5276;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        nav .title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+        nav a {
+            color: #aed6f1;
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 4px 10px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            white-space: nowrap;
+        }
+        nav a:hover { background: rgba(255,255,255,0.15); color: #fff; }
+        nav .actions { margin-left: auto; display: flex; gap: 8px; }
+        nav button {
+            background: #2e86c1;
+            color: #fff;
+            border: none;
+            padding: 5px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+        }
+        nav button:hover { background: #3498db; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        h1 {
+            text-align: center;
+            color: #1a5276;
+            margin: 30px 0 10px;
+            font-size: 2em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-left: 5px solid #2e86c1;
+        }
+        section:nth-child(odd) { border-left-color: #27ae60; }
+        section:nth-child(3n) { border-left-color: #e74c3c; }
+        section:nth-child(4n) { border-left-color: #f39c12; }
+        section h2 {
+            color: #1a5276;
+            margin-bottom: 8px;
+            font-size: 1.4em;
+        }
+        section .desc {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th {
+            background: #1a5276;
+            color: #fff;
+            padding: 10px 14px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        td {
+            padding: 8px 14px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9em;
+        }
+        tr:nth-child(even) { background: #f8f9fa; }
+        tr:hover { background: #eaf2f8; }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 0.85em;
+        }
+        @media print {
+            nav { display: none; }
+            section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <span class="title">EFD ICMS/IPI Detalhado</span>
+    <a href="#fluxo">1. Fluxo Geracao</a>
+    <a href="#blocos">2. Blocos/Registros</a>
+    <a href="#ciap">3. CIAP</a>
+    <a href="#apuracao">4. Apuracao ICMS</a>
+    <a href="#packages">5. Packages PL/SQL</a>
+    <a href="#config">6. Configuracao</a>
+    <a href="#er">7. Modelo Dados</a>
+    <a href="#estados">8. Regimes Especiais</a>
+    <a href="#volumetria">9. Volumetria</a>
+    <div class="actions">
+        <button onclick="window.print()">Imprimir</button>
+    </div>
+</nav>
+
+<div class="container">
+
+<h1>EFD ICMS/IPI (SPED Fiscal)</h1>
+<p class="subtitle">Documentacao Visual Detalhada - TAX ONE Knowledge Base</p>
+
+<div class="legend">
+    <div class="legend-item"><div class="legend-color" style="background:#fef9e7"></div> Fontes/Entrada</div>
+    <div class="legend-item"><div class="legend-color" style="background:#fdedec"></div> DWT/Debitos</div>
+    <div class="legend-item"><div class="legend-color" style="background:#eafaf1"></div> Cadastros/Creditos</div>
+    <div class="legend-item"><div class="legend-color" style="background:#ebf5fb"></div> Processamento</div>
+    <div class="legend-item"><div class="legend-color" style="background:#fdf2e9"></div> Temporarias</div>
+    <div class="legend-item"><div class="legend-color" style="background:#f4ecf7"></div> Saida/Arquivo</div>
+</div>
+
+<!-- 1. Fluxo Completo -->
+<section id="fluxo">
+<h2>1. Fluxo Completo de Geracao do Arquivo SPED Fiscal</h2>
+<p class="desc">Da entrada de documentos fiscais ate a geracao do arquivo .txt — todas as camadas envolvidas.</p>
+<div class="mermaid">
+flowchart TB
+    subgraph FONTES ["FONTES DE DADOS"]
+        direction LR
+        NF["NF-e / NF\nX07 / SAFX07"]
+        CT["CT-e\nX46"]
+        ECF_F["Cupom Fiscal\nECF / SAT"]
+        SERV["Energia / Telecom\nX08"]
+        INV["Inventario\nSAFX35"]
+        ATIVO["Ativo Imobilizado\nX13_BEM_ATIVO"]
+    end
+    subgraph DWT ["DATA WAREHOUSE FISCAL"]
+        direction TB
+        DWT_DOC["DWT_DOCTO_FISCAL\n355 colunas - Header"]
+        DWT_ITEM["DWT_ITEM_DOCTO_FISCAL\nItens Mercadoria"]
+        DWT_IMP["DWT_IMPOSTO_DOCTO_FISCAL\nImpostos por Item"]
+        DWT_SERV["DWT_ITEM_DOCTO_FISCAL_SERV\nItens Servico"]
+        DWT_DOC --> DWT_ITEM
+        DWT_DOC --> DWT_IMP
+        DWT_DOC --> DWT_SERV
+    end
+    subgraph PARAM ["PARAMETRIZACAO"]
+        direction TB
+        EFD_INI["EFD_DADOS_INICIAIS_ESTAB\n75 colunas - Switches"]
+        EFD_PAR["EFD_PAR_*\n50+ tabelas\nCST, CFO, NBM, Bloco H"]
+        EFD_CAD["EFD_CAD_*\nParticipantes, Produtos\nContas, C.Custo, Obs"]
+        EFD_AJUST["EFD_AJUSTES_AUTO_REGRAS\nRegras Ajuste por\nCFOP/CST/Aliquota"]
+        APT_EST["APT_ESTAB\n72 cols - Config CIAP\nModelo A/C"]
+    end
+    subgraph PROC ["PROCESSAMENTO PL/SQL"]
+        direction TB
+        ORCH["EFD_SPED_FPROC\nOrquestrador\n32 procedures"]
+        subgraph BLOCOS_GEN ["Geradores por Bloco"]
+            direction LR
+            G71["EFD71_GERA\nBloco E/G Init"]
+            G72["EFD72_GERA\nAjustes E"]
+            G73["EFD73_GERA\nDetalhes E"]
+            G79["EFD79_GERA\nBloco H"]
+            G82["EFD82_GERA\nBloco K"]
+            G88["EFD88_GERA\nBloco 1"]
+        end
+        subgraph ESP ["Especializados"]
+            direction LR
+            ESP_F["EFD_SPED_ESP_FPROC\nSimples Nacional"]
+            IES_F["EFD_SPED_IES_FPROC\nInsc. Estadual"]
+            CONV_F["EFD_SPED_CONV_FPROC\nConversao"]
+            RESS["EFD_CALC_RESSARC_MG_FPROC\nRessarcimento MG"]
+        end
+        ORCH --> BLOCOS_GEN
+        ORCH --> ESP
+    end
+    subgraph TEMP ["TABELAS TEMPORARIAS"]
+        direction LR
+        C197T["EFD_C197_TEMP\nAjustes ST"]
+        C597T["EFD_C597_TEMP\nServicos ST"]
+        D737T["EFD_D737_TEMP\nTransporte ST"]
+        PROD_T["EFD_PROD_TEMP"]
+        IDENT_T["EFD_IDENT_CAPA\nEFD_IDENT_ITENS"]
+    end
+    subgraph ARQUIVO ["ARQUIVO SPED FISCAL (.txt)"]
+        direction TB
+        B0["Bloco 0 - Cadastros"]
+        BC["Bloco C - Docs Mercadoria"]
+        BD["Bloco D - Docs Servico"]
+        BE["Bloco E - Apuracao ICMS/IPI"]
+        BG["Bloco G - CIAP"]
+        BH["Bloco H - Inventario"]
+        BK["Bloco K - Producao/Estoque"]
+        B1["Bloco 1 - Complementar"]
+        B9["Bloco 9 - Encerramento"]
+    end
+    FONTES --> DWT
+    DWT --> PROC
+    PARAM --> PROC
+    PROC --> TEMP
+    TEMP --> ARQUIVO
+    style FONTES fill:#fef9e7,stroke:#f39c12
+    style DWT fill:#fdedec,stroke:#e74c3c
+    style PARAM fill:#eafaf1,stroke:#27ae60
+    style PROC fill:#ebf5fb,stroke:#2e86c1
+    style TEMP fill:#fdf2e9,stroke:#e67e22
+    style ARQUIVO fill:#f4ecf7,stroke:#8e44ad
+</div>
+</section>
+
+<!-- 2. Blocos e Registros -->
+<section id="blocos">
+<h2>2. Blocos e Registros — Mapa Detalhado</h2>
+<p class="desc">Todos os registros do SPED Fiscal com as tabelas-fonte no TAX ONE.</p>
+<div class="mermaid">
+graph TB
+    subgraph BLOCO_0 ["BLOCO 0 — Abertura e Cadastros"]
+        R0000["0000 Abertura"]
+        R0005["0005 Dados Compl."]
+        R0150["0150 Participantes\nEFD_CAD_PARTIC"]
+        R0190["0190 Unid. Medida\nEFD_CAD_MED"]
+        R0200["0200 Produtos\nEFD_CAD_PROD_SERV"]
+        R0300["0300 Bens CIAP\nEFD_CAD_BEM_CIAP"]
+        R0400["0400 Nat. Operacao\nEFD_CAD_NAT_OP"]
+        R0450["0450 Info Compl.\nEFD_CAD_OBS"]
+        R0500["0500 Plano Contas\nEFD_CAD_CONTA"]
+        R0600["0600 C. Custo\nEFD_CAD_CCUSTO"]
+    end
+    subgraph BLOCO_C ["BLOCO C — Docs Mercadorias"]
+        RC100["C100 NF/NF-e Header\nEFD_CAPA_DOCFIS"]
+        RC170["C170 Itens\nDWT_ITEM_DOCTO_FISCAL"]
+        RC176["C176 Ressarcimento ST\nEFD_PAR_PROD_C176"]
+        RC190["C190 Consolidacao\npor CFOP/CST/Aliq"]
+        RC197["C197 Ajustes ICMS\nEFD_C197_TEMP"]
+        RC500["C500 Energia/Telecom"]
+        RC100 --> RC170
+        RC170 --> RC176
+        RC170 --> RC190
+        RC190 --> RC197
+    end
+    subgraph BLOCO_D ["BLOCO D — Servico Transporte"]
+        RD100["D100 CT-e Header"]
+        RD190["D190 Consolidacao"]
+        RD737["D737 Ajustes ST\nEFD_D737_TEMP"]
+    end
+    subgraph BLOCO_E ["BLOCO E — Apuracao ICMS/IPI"]
+        RE110["E110 Apuracao ICMS"]
+        RE111["E111 Ajustes\nEFD_APURACAO_ASSISTIDA"]
+        RE115["E115 Detalhe\nEFD_REG_E115"]
+        RE116["E116 Obrigacoes"]
+        RE200["E200 Apuracao ST"]
+        RE500["E500 Apuracao IPI"]
+        RE110 --> RE111
+        RE110 --> RE115
+        RE110 --> RE116
+    end
+    subgraph BLOCO_G ["BLOCO G — CIAP"]
+        RG110["G110 CIAP Periodo"]
+        RG125["G125 Movimentacao\nAPT_AQUISICAO"]
+        RG126["G126 Parcelas ICMS\nEFD_BEM_CIAP"]
+        RG110 --> RG125 --> RG126
+    end
+    subgraph BLOCO_H ["BLOCO H — Inventario"]
+        RH005["H005 Inventario"]
+        RH010["H010 Itens\nSAFX35"]
+        RH005 --> RH010
+    end
+    subgraph BLOCO_K ["BLOCO K — Producao/Estoque"]
+        RK100["K100 Periodo"]
+        RK200["K200 Estoque"]
+        RK220["K220 Produzidos"]
+        RK230["K230 Insumos"]
+        RK100 --> RK200
+        RK100 --> RK220
+        RK100 --> RK230
+    end
+    subgraph BLOCO_1 ["BLOCO 1 — Complementar"]
+        R1200["1200 Ctrl Creditos\nEFD_REG_1200"]
+        R1210["1210 Util. Creditos\nEFD_REG_1210"]
+        R1400["1400 Valor Adicionado\nEFD_REG_1400"]
+    end
+    style BLOCO_0 fill:#eafaf1,stroke:#27ae60
+    style BLOCO_C fill:#fef9e7,stroke:#f39c12
+    style BLOCO_D fill:#fef9e7,stroke:#f39c12
+    style BLOCO_E fill:#fdedec,stroke:#e74c3c
+    style BLOCO_G fill:#ebf5fb,stroke:#2e86c1
+    style BLOCO_H fill:#f4ecf7,stroke:#8e44ad
+    style BLOCO_K fill:#fdf2e9,stroke:#e67e22
+    style BLOCO_1 fill:#f2f4f4,stroke:#566573
+</div>
+</section>
+
+<!-- 3. CIAP -->
+<section id="ciap">
+<h2>3. Ciclo de Vida do CIAP (Bloco G) — Detalhado</h2>
+<p class="desc">Aquisicao do ativo imobilizado, calculo de credito ICMS em 48 parcelas, ate a geracao do Bloco G.</p>
+<div class="mermaid">
+flowchart TB
+    subgraph ENTRADA_G ["ENTRADA - Aquisicao do Bem"]
+        NF_ATIVO["NF-e de Compra\nAtivo Imobilizado"]
+        X13["X13_BEM_ATIVO\nCadastro do Bem"]
+        DWT_A["DWT_DOCTO_FISCAL\nNUM_CHAVE_NFE"]
+    end
+    subgraph CIAP_CAD ["CADASTRO CIAP"]
+        APT_AQ["APT_AQUISICAO\n68 colunas\nNUM_CIAP PK\nVLR_CRED_ICMS"]
+        APT_BEM["APT_CIAP_BEM\nVinculo CIAP - Bem"]
+        EFD_BEM_CAD["EFD_CAD_BEM_CIAP\n18 cols - Reg 0300"]
+        APT_AQ --> APT_BEM
+        APT_AQ --> EFD_BEM_CAD
+    end
+    subgraph CONFIG_G ["CONFIGURACAO"]
+        APT_ESTAB2["APT_ESTAB\n72 cols\nMODELO A ou C"]
+        APT_CFO["APT_CFO_ESTAB_MSAF\nCFOPs aplicaveis"]
+    end
+    subgraph CALCULO ["CALCULO DE CREDITO"]
+        APT_BASE["APT_BASE_REF_CALC\nBase Referencia"]
+        APT_DEM_BASE["APT_DEM_BASE_CR\n24 cols - Base por Bem"]
+        APT_DEM_MENSAL["APT_DEM_CR_MENSAL\n16 cols\nVLR_TOT_CREDITO"]
+        APT_EST_S["APT_EST_SAIDA\n16 cols\n1/48 por mes"]
+        APT_CALC["APT_CALC_CRED_EXT\n16 cols\nNUM_PARCELA"]
+        APT_BASE --> APT_DEM_BASE
+        APT_DEM_BASE --> APT_DEM_MENSAL
+        APT_DEM_MENSAL --> APT_EST_S
+        APT_EST_S --> APT_CALC
+    end
+    subgraph SAIDA_G ["MOVIMENTACAO / BAIXA"]
+        APT_ALIEN["APT_ALIENACAO\n36 cols\nVLR_ALIENACAO"]
+        APT_CTRL["APT_CONTROLE_CIAP\nWorkflow Estado"]
+    end
+    subgraph GERACAO_G ["GERACAO BLOCO G"]
+        EFD_BEM["EFD_BEM_CIAP\n11 cols"]
+        G110["Reg G110 Saldo"]
+        G125["Reg G125 Movimentacao"]
+        G126["Reg G126 Parcelas"]
+        EFD_BEM --> G110
+        EFD_BEM --> G125
+        EFD_BEM --> G126
+    end
+    ENTRADA_G --> CIAP_CAD
+    CONFIG_G --> CALCULO
+    CIAP_CAD --> CALCULO
+    CALCULO --> SAIDA_G
+    CALCULO --> GERACAO_G
+    SAIDA_G --> GERACAO_G
+    style ENTRADA_G fill:#fef9e7,stroke:#f39c12
+    style CIAP_CAD fill:#eafaf1,stroke:#27ae60
+    style CONFIG_G fill:#ebf5fb,stroke:#2e86c1
+    style CALCULO fill:#fdedec,stroke:#e74c3c
+    style SAIDA_G fill:#fdf2e9,stroke:#e67e22
+    style GERACAO_G fill:#f4ecf7,stroke:#8e44ad
+</div>
+</section>
+
+<!-- 4. Apuracao ICMS -->
+<section id="apuracao">
+<h2>4. Apuracao ICMS (Bloco E) — Fluxo de Calculo</h2>
+<p class="desc">Composicao de debitos e creditos ICMS, ajustes por UF, apuracao ST e IPI.</p>
+<div class="mermaid">
+flowchart TB
+    subgraph DEBITOS ["DEBITOS"]
+        DEB_OP["Debitos por Operacao\nDWT_ITEM: VLR_ICMS\npor CFOP Saida"]
+        DEB_ST["Debitos ICMS-ST\nSubstituicao Tributaria"]
+        DEB_DIF["Debitos DIFAL\nDiferencial Aliquota\nEC 87/2015"]
+        DEB_EST["Estorno de Creditos\nEST_REGUL_ICMS"]
+        DEB_OUT["Outros Debitos\nEFD_AJUSTES_AUTO_REGRAS"]
+    end
+    subgraph CREDITOS ["CREDITOS"]
+        CRED_OP["Creditos por Operacao\nDWT_ITEM: VLR_ICMS\npor CFOP Entrada"]
+        CRED_ST["Creditos ICMS-ST\nRessarcimento"]
+        CRED_CIAP["Creditos CIAP\nAPT_DEM_CR_MENSAL\n1/48 por mes"]
+        CRED_EST["Estorno de Debitos"]
+        CRED_OUT["Outros Creditos\nEFD_AJUSTES_AUTO_REGRAS"]
+    end
+    subgraph CALCULO_E ["CALCULO - EFD71_GERA + EFD72_GERA"]
+        E110_CALC["E110 - Apuracao\nDebitos - Creditos\n= Saldo"]
+        E111_ADJ["E111 - Ajustes\nEFD_APURACAO_ASSISTIDA"]
+        E115_DET["E115 - Detalhe\nEFD_REG_E115"]
+        E116_REC["E116 - Obrigacoes\nICMS a Recolher"]
+    end
+    subgraph ST_APUR ["APURACAO ICMS-ST"]
+        E200_ST["E200 - Periodo ST por UF"]
+        E210_ST["E210 - Apuracao ST"]
+        E220_ADJ["E220 - Ajustes ST"]
+    end
+    subgraph IPI_APUR ["APURACAO IPI"]
+        E500_IPI["E500 - Periodo IPI"]
+        E510_IPI["E510 - Consolidacao"]
+        E520_IPI["E520 - Apuracao IPI"]
+    end
+    subgraph SAIDA_E ["RESULTADO"]
+        REG_1200["Reg 1200 - Ctrl Creditos\nEFD_REG_1200"]
+        REG_1210["Reg 1210 - Utilizacao\nEFD_REG_1210"]
+        REG_E116["E116 - Guias Recolhimento"]
+    end
+    DEBITOS --> CALCULO_E
+    CREDITOS --> CALCULO_E
+    CALCULO_E --> SAIDA_E
+    CALCULO_E --> ST_APUR
+    CALCULO_E --> IPI_APUR
+    ST_APUR --> SAIDA_E
+    IPI_APUR --> SAIDA_E
+    style DEBITOS fill:#fdedec,stroke:#e74c3c
+    style CREDITOS fill:#eafaf1,stroke:#27ae60
+    style CALCULO_E fill:#ebf5fb,stroke:#2e86c1
+    style ST_APUR fill:#fef9e7,stroke:#f39c12
+    style IPI_APUR fill:#fdf2e9,stroke:#e67e22
+    style SAIDA_E fill:#f4ecf7,stroke:#8e44ad
+</div>
+</section>
+
+<!-- 5. Packages PL/SQL -->
+<section id="packages">
+<h2>5. Packages PL/SQL — Dependencias Detalhadas</h2>
+<p class="desc">Arvore de dependencias dos 30+ packages envolvidos na geracao do EFD ICMS/IPI.</p>
+<div class="mermaid">
+graph TD
+    subgraph ORCH ["ORQUESTRADOR"]
+        EFD_FPROC["EFD_SPED_FPROC\n32 procedures\n150+ tabelas"]
+    end
+    subgraph GERADORES ["GERADORES POR BLOCO"]
+        EFD71["EFD71_GERA\n40 refs - Bloco E/G Init"]
+        EFD72["EFD72_GERA\n47 refs - Ajustes E111/E220"]
+        EFD73["EFD73_GERA\nDetalhes E115"]
+        EFD79["EFD79_GERA\nBloco H - Inventario"]
+        EFD82["EFD82_GERA\nBloco K - Producao"]
+        EFD88["EFD88_GERA\nBloco 1 - 1010/1200/1400"]
+    end
+    subgraph ESTADUAIS ["REGIMES ESPECIAIS"]
+        ESP["EFD_SPED_ESP_FPROC\n34 refs - Simples Nacional"]
+        IES["EFD_SPED_IES_FPROC\n31 refs - Multi-UF"]
+        CONV["EFD_SPED_CONV_FPROC\n23 refs - Conversao"]
+    end
+    subgraph RESSARC ["RESSARCIMENTO MG"]
+        RESS_MAIN["EFD_CALC_RESSARC_MG_FPROC\n53 refs"]
+        RESS_C430["MG_C430 - 35 refs"]
+        RESS_C185["MG_C185_C330 - 33 refs"]
+        RESS_C195["MG_C195_C197 - 20 refs"]
+        RESS_MPOND["MG_MPOND - 24 refs"]
+        RESS_MAIN --> RESS_C430
+        RESS_MAIN --> RESS_C185
+        RESS_MAIN --> RESS_C195
+        RESS_MAIN --> RESS_MPOND
+    end
+    subgraph APOIO ["APOIO"]
+        LAYOUT["EFD_LAYOUT\nFormatacao Arquivo"]
+        APUR_REL["EFD_APUR_REL_ANALITICO_FPROC\nRelatorio Analitico"]
+        EFD01["EFD01_DADOS\nConsultas Gerais"]
+    end
+    EFD_FPROC --> EFD71
+    EFD_FPROC --> EFD72
+    EFD_FPROC --> EFD73
+    EFD_FPROC --> EFD79
+    EFD_FPROC --> EFD82
+    EFD_FPROC --> EFD88
+    EFD_FPROC --> ESP
+    EFD_FPROC --> IES
+    EFD_FPROC --> CONV
+    EFD_FPROC --> RESS_MAIN
+    EFD_FPROC --> LAYOUT
+    EFD_FPROC --> APUR_REL
+    EFD_FPROC --> EFD01
+    style ORCH fill:#1a5276,color:#fff,stroke:#1a5276
+    style GERADORES fill:#ebf5fb,stroke:#2e86c1
+    style ESTADUAIS fill:#eafaf1,stroke:#27ae60
+    style RESSARC fill:#fef9e7,stroke:#f39c12
+    style APOIO fill:#f2f4f4,stroke:#566573
+</div>
+</section>
+
+<!-- 6. Configuracao -->
+<section id="config">
+<h2>6. Tabela de Configuracao — EFD_DADOS_INICIAIS_ESTAB (75 switches)</h2>
+<p class="desc">Flags que controlam quais blocos e registros sao gerados para cada estabelecimento.</p>
+<div class="mermaid">
+graph LR
+    subgraph SWITCHES ["EFD_DADOS_INICIAIS_ESTAB — 75 colunas"]
+        direction TB
+        subgraph BLOCO_C_SW ["Bloco C"]
+            SC1["IND_GER_C110_C120\nComplemento NF"]
+            SC2["IND_GER_C500_C600\nEnergia/Telecom"]
+            SC3["IND_GER_C176\nRessarcimento ST"]
+        end
+        subgraph BLOCO_E_SW ["Bloco E"]
+            SE1["IND_LVR_APUR_INC_E110\nInclusao Livro"]
+            SE2["IND_GER_E115\nDetalhe por CFOP"]
+            SE3["IND_GER_E200\nApuracao ST"]
+        end
+        subgraph BLOCO_G_SW ["Bloco G"]
+            SG1["IND_GER_CIAP\nGerar CIAP"]
+            SG2["IND_GER_BEM\nCadastro Bem"]
+            SG3["IND_GER_PER_ANT_BL_G\nPeriodos Anteriores"]
+        end
+        subgraph BLOCO_H_SW ["Bloco H"]
+            SH1["IND_GER_BLOCO_H\nGerar Inventario"]
+            SH2["IND_MOT_INV\nMotivo Inventario"]
+        end
+        subgraph BLOCO_K_SW ["Bloco K"]
+            SK1["IND_ORD_OP_K200\nEstoque"]
+            SK2["IND_ORD_OP_K220\nProducao"]
+            SK3["IND_ORD_OP_K230\nInsumos"]
+        end
+        subgraph BLOCO_1_SW ["Bloco 1"]
+            S11["IND_GER_1400\nValor Adicionado"]
+            S12["IND_GER_1391\nAnalise Producao"]
+        end
+        subgraph GERAL_SW ["Geral"]
+            SX1["IND_COD_PFJ\nFormato Codigo"]
+            SX2["IND_PERFIL\nPerfil A/B/C"]
+            SX3["IND_ATIVIDADE\nIndustrial/Outros"]
+        end
+    end
+    style SWITCHES fill:#fff,stroke:#2e86c1
+    style BLOCO_C_SW fill:#fef9e7,stroke:#f39c12
+    style BLOCO_E_SW fill:#fdedec,stroke:#e74c3c
+    style BLOCO_G_SW fill:#ebf5fb,stroke:#2e86c1
+    style BLOCO_H_SW fill:#f4ecf7,stroke:#8e44ad
+    style BLOCO_K_SW fill:#fdf2e9,stroke:#e67e22
+    style BLOCO_1_SW fill:#f2f4f4,stroke:#566573
+    style GERAL_SW fill:#eafaf1,stroke:#27ae60
+</div>
+</section>
+
+<!-- 7. ER Diagram -->
+<section id="er">
+<h2>7. Modelo de Dados — Relacionamentos Principais</h2>
+<p class="desc">Diagrama ER com as relacoes entre DWT, EFD, APT e tabelas de apoio.</p>
+<div class="mermaid">
+erDiagram
+    DWT_DOCTO_FISCAL ||--o{ DWT_ITEM_DOCTO_FISCAL : "contem itens"
+    DWT_ITEM_DOCTO_FISCAL ||--o{ DWT_IMPOSTO_DOCTO_FISCAL : "tem impostos"
+    DWT_DOCTO_FISCAL ||--|| EFD_CAPA_DOCFIS : "mapeado em"
+    EFD_CAPA_DOCFIS ||--o{ EFD_C197_TEMP : "ajustes ST"
+    EFD_CAD_PARTIC ||--o{ EFD_CAPA_DOCFIS : "participante"
+    EFD_CAD_PROD_SERV ||--o{ DWT_ITEM_DOCTO_FISCAL : "produto"
+    EFD_CAD_NAT_OP ||--o{ EFD_CAPA_DOCFIS : "natureza op"
+    EFD_DADOS_INICIAIS_ESTAB ||--o{ EFD_CAPA_DOCFIS : "config estab"
+    EFD_AJUSTES_AUTO_REGRAS ||--o{ EFD_APURACAO_ASSISTIDA : "regras"
+    EFD_APURACAO_ASSISTIDA ||--o{ EFD_REG_E115 : "apuracao"
+    APT_AQUISICAO ||--o{ APT_CIAP_BEM : "vinculo"
+    APT_AQUISICAO ||--o{ APT_CALC_CRED_EXT : "credito"
+    APT_AQUISICAO ||--o{ EFD_BEM_CIAP : "gera G126"
+    APT_ALIENACAO ||--o{ EFD_BEM_CIAP : "baixa G126"
+    EFD_CAD_BEM_CIAP ||--o{ EFD_BEM_CIAP : "cadastro 0300"
+    APT_ESTAB ||--|| APT_AQUISICAO : "config CIAP"
+    APT_DEM_CR_MENSAL ||--o{ APT_EST_SAIDA : "credito mensal"
+    APT_DEM_BASE_CR ||--o{ APT_DEM_CR_MENSAL : "base credito"
+    EFD_REG_1200 }o--|| EFD_REG_E115 : "consolidacao"
+    EFD_REG_1210 }o--|| EFD_REG_1200 : "utilizacao"
+    EFD_REG_1400 }o--|| DWT_ITEM_DOCTO_FISCAL : "valor adicionado"
+</div>
+</section>
+
+<!-- 8. Regimes Especiais -->
+<section id="estados">
+<h2>8. Processamento por Estado — Regimes Especiais</h2>
+<p class="desc">Tratamentos especificos por UF: Ressarcimento MG, GO, Multi-UF, Simples Nacional.</p>
+<div class="mermaid">
+graph TB
+    subgraph PADRAO ["PROCESSAMENTO PADRAO"]
+        STD["EFD_SPED_FPROC\nTodos os Estados\nRegime Normal"]
+    end
+    subgraph MG ["MINAS GERAIS"]
+        MG_RESS["EFD_CALC_RESSARC_MG_FPROC\nRessarcimento ICMS-ST"]
+        MG_C430["C430 - Base Recovery"]
+        MG_C185["C185/C330 - Servico"]
+        MG_C195["C195/C197 - ST"]
+        MG_MPOND["Media Ponderada"]
+        MG_RESS --> MG_C430
+        MG_RESS --> MG_C185
+        MG_RESS --> MG_C195
+        MG_RESS --> MG_MPOND
+    end
+    subgraph GO ["GOIAS"]
+        GO_RESS["EFD_DOCFIS_RESSARC_GV\n90 colunas\nRessarcimento GO"]
+        GO_DEV["EFD_DOCFIS_RESSARC_DEV_GV\n64 cols - Devolucoes"]
+    end
+    subgraph IES_UF ["MULTI-UF"]
+        IES_P["EFD_SPED_IES_FPROC\nApuracao por IE"]
+        IES_E115["EFD_REG_E115_IES\nE115 por Inscricao"]
+        IES_1200["EFD_REG_1200_IES\n1200 por Inscricao"]
+        IES_P --> IES_E115
+        IES_P --> IES_1200
+    end
+    subgraph SIMPLES ["SIMPLES NACIONAL"]
+        SN["EFD_SPED_ESP_FPROC\nMicroempresa"]
+        SN_PAR["EFD_PAR_MICRO_GER\nRegras Simplificadas"]
+        SN --> SN_PAR
+    end
+    STD --> MG
+    STD --> GO
+    STD --> IES_UF
+    STD --> SIMPLES
+    style PADRAO fill:#1a5276,color:#fff,stroke:#1a5276
+    style MG fill:#fef9e7,stroke:#f39c12
+    style GO fill:#fdedec,stroke:#e74c3c
+    style IES_UF fill:#ebf5fb,stroke:#2e86c1
+    style SIMPLES fill:#eafaf1,stroke:#27ae60
+</div>
+</section>
+
+<!-- 9. Volumetria -->
+<section id="volumetria">
+<h2>9. Volumetria Detalhada</h2>
+<p class="desc">Numeros consolidados do submodulo EFD ICMS/IPI no TAX ONE.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Componente</th>
+            <th>Quantidade</th>
+            <th>Maior Tabela</th>
+            <th>Colunas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Tabelas EFD</strong></td><td>73</td><td>EFD_DADOS_INICIAIS_ESTAB</td><td>75</td></tr>
+        <tr><td><strong>Tabelas APT (CIAP)</strong></td><td>35</td><td>APT_CRED_NF_102_CIAP</td><td>108</td></tr>
+        <tr><td><strong>Tabelas EST (Estadual)</strong></td><td>~450</td><td>EST_CALC_LANC_ICMS</td><td>91</td></tr>
+        <tr><td><strong>Tabelas DWT (Warehouse)</strong></td><td>68</td><td>DWT_DOCTO_FISCAL</td><td>355</td></tr>
+        <tr><td><strong>Tabelas COTEPE</strong></td><td>20</td><td>COTEPE_APUR_ICMS</td><td>5</td></tr>
+        <tr><td><strong>Tabelas Temporarias</strong></td><td>~10</td><td>EFD_DOCFIS_RESSARC_GV</td><td>90</td></tr>
+        <tr><td><strong>Packages PL/SQL</strong></td><td>30+</td><td>EFD_SPED_FPROC</td><td>32 procs</td></tr>
+        <tr><td><strong>Registros SPED</strong></td><td>50+</td><td>—</td><td>—</td></tr>
+        <tr><td><strong>Params (EFD_PAR_*)</strong></td><td>50+</td><td>EFD_PAR_GER_C176</td><td>9</td></tr>
+        <tr><td><strong>Estados c/ regime especial</strong></td><td>5+</td><td>MG, GO, SP, SC, PR</td><td>—</td></tr>
+    </tbody>
+</table>
+</section>
+
+</div>
+
+<footer>
+    Gerado a partir do knowledge base TAX ONE — knowledge/schema/ (EFD.md, APT.md, EST.md, DWT.md, COTEPE.md, PLSQL_MAP.md)<br>
+    Documentacao Visual Detalhada - EFD ICMS/IPI (SPED Fiscal)
+</footer>
+
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        securityLevel: 'loose',
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' },
+        er: { useMaxWidth: true }
+    });
+</script>
+
+</body>
+</html>

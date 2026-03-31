@@ -1,0 +1,82 @@
+# MTZ-Exportacao_SAFX190
+
+- **Fonte:** MTZ-Exportacao_SAFX190.docx
+- **Modificado:** 2021-05-21
+- **Tamanho:** 30 KB
+
+---
+
+__         __
+
+# Módulo Job Servidor – Exportação SAFX190 \(Fornecimento de Energia Elétrica, Água Canalizada e Gás \- Consolidados\)
+
+__Módulo__: Básicos 🡪 Job Servidor\.
+
+__Menu__: Exportação 🡪 Programação – Execução
+
+              Exportação Batch 🡪 Programação \- Execução
+
+##### DOCUMENTO DE REQUISITO
+
+###### DR
+
+###### Nome
+
+__Descrição__
+
+OS4316
+
+Criação de Campos
+
+Criação dos campos Código e Descrição da SCP
+
+## REGRAS DE NEGÓCIO
+
+#### Cód\.
+
+### DR
+
+__RN00__
+
+__Regras gerais__
+
+*\(espaço reservado para regras genéricas, que não dizem respeito a campos específicos\)*
+
+__RN01__
+
+__Campo Código da SCP__
+
+Alterar a rotina de exportação para que seja considerado o novo campo:
+
+Tabela: SAFX190
+
+Item: A ser reservado pelo A&D
+
+Nome do Campo: Código da SCP
+
+Tipo: A
+
+Tamanho: 014
+
+Comentário: Código da Sociedade em Conta de Participação
+
+__OS4316__
+
+Considerações deste modelo:
+
+__Quando uma Regra de Negócio for Excluída, deverá ser indicada, em sua posição original, uma observação conforme exemplo abaixo descrito abaixo:__
+
+__RN01__
+
+__\[EXCLUÍDA – OSXPTO\]__ Descrição da Regra de Negócio 01
+
+OSNNNN
+
+__Quando uma Regra de Negócio for Alterada, deverá ser indicada, em sua posição original, uma observação conforme exemplo abaixo descrito abaixo:__
+
+__RN01__
+
+__\[ALTERADA – OSXPTO\]__ Descrição da Regra de Negócio 01
+
+OSNNNN
+

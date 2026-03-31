@@ -1,0 +1,164 @@
+{
+  "_version": "1.0",
+  "_description": "Mapa de modulo/vertical para caminhos de knowledge. Usado pelo taxone-pm na fase pre-flight obrigatoria.",
+  "_generated": "2026-03-11",
+
+  "Basicos": {
+    "business_rules_dir": "Basicos/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos", "onesource_tax_one"],
+    "features_keywords": ["importacao", "cadastro", "parametro", "dashboard", "safx", "administracao", "seguranca", "licenca"]
+  },
+  "Estadual": {
+    "business_rules_dir": "Estadual/",
+    "zendesk_vertical": "estadual",
+    "webhelp_modules": ["estadual", "apuracao_de_impostos_indiretos", "obrigacoes_estaduais"],
+    "features_keywords": ["icms", "icms-st", "difal", "ciap", "ativo permanente", "gia", "dime", "sub apuracao", "gnre", "fci", "ressarcimento"]
+  },
+  "Federal": {
+    "business_rules_dir": "Federal/",
+    "zendesk_vertical": "federal",
+    "webhelp_modules": ["federal", "apuracao_de_impostos_indiretos", "obrigacoes_federais"],
+    "features_keywords": ["pis", "cofins", "ipi", "irpj", "csll", "irrf", "funrural", "credpis", "dctf", "dirf", "perdcomp"]
+  },
+  "Municipal": {
+    "business_rules_dir": "Municipal/",
+    "zendesk_vertical": "municpal",
+    "webhelp_modules": ["municipal", "apuracao_de_impostos_retidos", "obrigacoes_municipais", "giss_online"],
+    "features_keywords": ["iss", "nfs-e", "servico", "municipal", "nota carioca", "des", "desif", "retencao"]
+  },
+  "SPED": {
+    "business_rules_dir": "SPED/",
+    "zendesk_vertical": "sped",
+    "webhelp_modules": ["sped", "speds", "conexao_onesource_br"],
+    "features_keywords": ["efd", "sped fiscal", "sped contribuicoes", "ecd", "ecf", "reinf", "bloco", "registro"]
+  },
+  "Especificos": {
+    "business_rules_dir": "Especificos/",
+    "zendesk_vertical": "especificos",
+    "webhelp_modules": ["especificos", "oil_e_gas", "tr_scanc_agent"],
+    "features_keywords": ["combustivel", "petroleo", "scanc", "pim", "substancia controlada", "i-simp"]
+  },
+  "Ferramentas": {
+    "business_rules_dir": "Ferramentas/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["ferramentas"],
+    "features_keywords": ["ferramenta", "utilitario", "atualizacao", "patch", "script"]
+  },
+  "Job_Servidor": {
+    "business_rules_dir": "Job_Servidor/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["job_servidor"],
+    "features_keywords": ["job", "servidor", "agendamento", "schedule", "execucao automatica"]
+  },
+  "Parametros": {
+    "business_rules_dir": "Parametros/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["parametros"],
+    "features_keywords": ["parametro", "configuracao", "setup", "habilitacao"]
+  },
+  "Report_Fiscal": {
+    "business_rules_dir": "Report_Fiscal/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["report_fiscal"],
+    "features_keywords": ["relatorio", "report", "livro fiscal", "demonstrativo", "impressao"]
+  },
+  "Seguranca": {
+    "business_rules_dir": "Seguranca/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["seguranca"],
+    "features_keywords": ["seguranca", "permissao", "usuario", "perfil", "acesso", "login"]
+  },
+  "Manager": {
+    "business_rules_dir": "Manager/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["gerencial"],
+    "features_keywords": ["manager", "gerencial", "dashboard", "workflow", "gestao"]
+  },
+  "Gestao_Estrategica": {
+    "business_rules_dir": "Gestao_Estrategica/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["gerencial"],
+    "features_keywords": ["gestao estrategica", "planejamento", "indicador", "kpi"]
+  },
+  "Conexao_com_Onesource_BR": {
+    "business_rules_dir": "Conexao_com_Onesource_BR/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["conexao_onesource_br", "integracao"],
+    "features_keywords": ["onesource", "conexao", "integracao br", "ecf", "ecd"]
+  },
+  "MasterSAF_DW": {
+    "business_rules_dir": "MasterSAF_DW/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["data_warehouse", "migracao_dw_para_tax_one"],
+    "features_keywords": ["mastersaf", "dw", "data warehouse", "migracao", "legado"]
+  },
+  "Contabilizacao_Apuracao": {
+    "business_rules_dir": "Contabilização_-Apuração/",
+    "zendesk_vertical": "estadual",
+    "webhelp_modules": ["gestao_de_dados"],
+    "webhelp_submodules": ["contabilizacao_automatica"],
+    "features_keywords": ["contabilizacao", "apuracao", "lancamento contabil", "documento arrecadacao"]
+  },
+  "Processos_Customizados": {
+    "business_rules_dir": "Processos_Customizados/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["basicos"],
+    "webhelp_submodules": ["processos_customizados"],
+    "features_keywords": ["customizado", "processo custom", "extensao", "personalizado"]
+  },
+  "Reforma_Tributaria": {
+    "business_rules_dir": "Reforma_Tributaria/",
+    "zendesk_vertical": "federal",
+    "webhelp_modules": ["federal", "estadual"],
+    "features_keywords": ["reforma tributaria", "ibs", "cbs", "split payment", "nota tecnica reforma"]
+  },
+  "Tax_Payments": {
+    "business_rules_dir": "Tax_Payments/",
+    "zendesk_vertical": "basicos",
+    "webhelp_modules": ["gestao_de_dados"],
+    "webhelp_submodules": ["documento_de_arrecadacao"],
+    "features_keywords": ["pagamento", "guia", "arrecadacao", "darf", "gare", "gnre pagamento"]
+  },
+
+  "_module_aliases": {
+    "ICMS": "Estadual",
+    "ICMS-ST": "Estadual",
+    "DIFAL": "Estadual",
+    "GIA": "Estadual",
+    "DIME": "Estadual",
+    "CIAP": "Estadual",
+    "PIS": "Federal",
+    "COFINS": "Federal",
+    "IPI": "Federal",
+    "IRPJ": "Federal",
+    "CSLL": "Federal",
+    "IRRF": "Federal",
+    "ISS": "Municipal",
+    "NFS-e": "Municipal",
+    "EFD": "SPED",
+    "ECD": "SPED",
+    "ECF": "SPED",
+    "REINF": "SPED",
+    "SCANC": "Especificos",
+    "SAFX": "Basicos",
+    "Data Warehouse": "MasterSAF_DW",
+    "DW": "MasterSAF_DW",
+    "Relatorio": "Report_Fiscal",
+    "Livro Fiscal": "Report_Fiscal",
+    "Job": "Job_Servidor",
+    "Servidor": "Job_Servidor",
+    "Seguranca": "Seguranca",
+    "Permissao": "Seguranca",
+    "Contabilizacao": "Contabilizacao_Apuracao",
+    "Reforma": "Reforma_Tributaria",
+    "IBS": "Reforma_Tributaria",
+    "CBS": "Reforma_Tributaria"
+  }
+}

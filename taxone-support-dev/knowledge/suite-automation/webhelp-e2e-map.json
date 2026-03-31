@@ -1,0 +1,3174 @@
+{
+  "version": "1.0.0",
+  "description": "Mapeamento de paths funcionais do WebHelp para cenarios E2E existentes (Playwright + SuiteAutomation). Gerado por webhelp_e2e_map_builder.py. Entries com status 'gap' indicam cenarios sem cobertura de teste.",
+  "scoring": {
+    "exact_path_match": 10,
+    "partial_path_match": 5,
+    "keyword_overlap": 3,
+    "min_score_to_include": 9
+  },
+  "stats": {
+    "total_mappings": 196,
+    "covered": 35,
+    "partial": 80,
+    "gap": 81
+  },
+  "mappings": [
+    {
+      "webhelp_path": "apoio_interno",
+      "webhelp_display": "Apoio Interno",
+      "menu_path_normalized": "APOIO INTERNO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APOIO INTERNO"
+      ],
+      "article_count": 5,
+      "id": "WH_APOIO_INTERNO__GERAL"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_indiretos/icms",
+      "webhelp_display": "ApuraÃ§Ã£o de impostos indiretos > ICMS",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS INDIRETOS > ICMS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS INDIRETOS",
+        "ICMS"
+      ],
+      "article_count": 26,
+      "id": "WH_APURACAO_DE_IMPOSTOS_INDIRETOS_ICMS"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_indiretos/icms_st",
+      "webhelp_display": "ApuraÃ§Ã£o de impostos indiretos > ICMS-ST",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS INDIRETOS > ICMS-ST",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "GIA_ST"
+      ],
+      "status": "partial",
+      "keywords": [
+        "APURACAO DE IMPOSTOS INDIRETOS",
+        "FECOEP-SP",
+        "ICMS-ST"
+      ],
+      "article_count": 7,
+      "id": "WH_APURACAO_DE_IMPOSTOS_INDIRETOS_ICMS_ST"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_indiretos/ipi",
+      "webhelp_display": "ApuraÃ§Ã£o de impostos indiretos > IPI",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS INDIRETOS > IPI",
+      "playwright_mapping_ids": [
+        "E2E_IPI_APURACAO"
+      ],
+      "suite_automation_ids": [
+        "APURACAO_IPI"
+      ],
+      "status": "covered",
+      "keywords": [
+        "APURACAO DE IMPOSTOS INDIRETOS",
+        "IPI"
+      ],
+      "article_count": 2,
+      "id": "WH_APURACAO_DE_IMPOSTOS_INDIRETOS_IPI"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_indiretos/pis__cofins",
+      "webhelp_display": "ApuraÃ§Ã£o de impostos indiretos > PIS / COFINS",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS INDIRETOS > PIS / COFINS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS INDIRETOS",
+        "PIS / COFINS"
+      ],
+      "article_count": 11,
+      "id": "WH_APURACAO_DE_IMPOSTOS_INDIRETOS_PIS__COFINS"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_indiretos/pis_cofins",
+      "webhelp_display": "ApuraÃ§Ã£o de impostos indiretos > PIS_COFINS",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS INDIRETOS > PIS_COFINS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS INDIRETOS",
+        "PIS_COFINS"
+      ],
+      "article_count": 1,
+      "id": "WH_APURACAO_DE_IMPOSTOS_INDIRETOS_PIS_COFINS"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_retidos",
+      "webhelp_display": "ApuraÃ§Ã£o de Impostos Retidos",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS RETIDOS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS RETIDOS"
+      ],
+      "article_count": 16,
+      "id": "WH_APURACAO_DE_IMPOSTOS_RETIDOS__GERAL"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_retidos/inss",
+      "webhelp_display": "ApuraÃ§Ã£o de Impostos Retidos > INSS",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS RETIDOS > INSS",
+      "playwright_mapping_ids": [
+        "E2E_OBRIG_TRIBUTOS_FED_OUTRAS"
+      ],
+      "suite_automation_ids": [
+        "INSS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "APURACAO DE IMPOSTOS RETIDOS",
+        "INSS"
+      ],
+      "article_count": 1,
+      "id": "WH_APURACAO_DE_IMPOSTOS_RETIDOS_INSS"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_retidos/irrf",
+      "webhelp_display": "ApuraÃ§Ã£o de Impostos Retidos > IRRF",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS RETIDOS > IRRF",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS RETIDOS",
+        "IRRF"
+      ],
+      "article_count": 1,
+      "id": "WH_APURACAO_DE_IMPOSTOS_RETIDOS_IRRF"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_retidos/iss",
+      "webhelp_display": "ApuraÃ§Ã£o de Impostos Retidos > ISS",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS RETIDOS > ISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "APURACAO DE IMPOSTOS RETIDOS",
+        "ISS"
+      ],
+      "article_count": 3,
+      "id": "WH_APURACAO_DE_IMPOSTOS_RETIDOS_ISS"
+    },
+    {
+      "webhelp_path": "apuracao_de_impostos_retidos/pcc",
+      "webhelp_display": "ApuraÃ§Ã£o de Impostos Retidos > PCC",
+      "menu_path_normalized": "APURACAO DE IMPOSTOS RETIDOS > PCC",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "APURACAO DE IMPOSTOS RETIDOS",
+        "PCC"
+      ],
+      "article_count": 1,
+      "id": "WH_APURACAO_DE_IMPOSTOS_RETIDOS_PCC"
+    },
+    {
+      "webhelp_path": "basicos/administration",
+      "webhelp_display": "BÃ¡sicos > Administration",
+      "menu_path_normalized": "BASICOS > ADMINISTRATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ADMINISTRATION",
+        "BASICOS"
+      ],
+      "article_count": 30,
+      "id": "WH_BASICOS_ADMINISTRATION"
+    },
+    {
+      "webhelp_path": "basicos/artigos_basicos",
+      "webhelp_display": "BÃ¡sicos > Artigos BÃ¡sicos",
+      "menu_path_normalized": "BASICOS > ARTIGOS BASICOS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ARTIGOS BASICOS",
+        "BASICOS"
+      ],
+      "article_count": 1,
+      "id": "WH_BASICOS_ARTIGOS_BASICOS"
+    },
+    {
+      "webhelp_path": "basicos/automation",
+      "webhelp_display": "BÃ¡sicos > Automation",
+      "menu_path_normalized": "BASICOS > AUTOMATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "AUTOMATION",
+        "BASICOS"
+      ],
+      "article_count": 12,
+      "id": "WH_BASICOS_AUTOMATION"
+    },
+    {
+      "webhelp_path": "basicos/data_warehouse",
+      "webhelp_display": "BÃ¡sicos > Data Warehouse",
+      "menu_path_normalized": "BASICOS > DATA WAREHOUSE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "DATA WAREHOUSE"
+      ],
+      "article_count": 74,
+      "id": "WH_BASICOS_DATA_WAREHOUSE"
+    },
+    {
+      "webhelp_path": "basicos/ferramentas",
+      "webhelp_display": "BÃ¡sicos > Ferramentas",
+      "menu_path_normalized": "BASICOS > FERRAMENTAS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "FERRAMENTAS"
+      ],
+      "status": "partial",
+      "keywords": [
+        "BASICOS",
+        "FERRAMENTAS"
+      ],
+      "article_count": 32,
+      "id": "WH_BASICOS_FERRAMENTAS"
+    },
+    {
+      "webhelp_path": "basicos/gerais",
+      "webhelp_display": "BÃ¡sicos > Gerais",
+      "menu_path_normalized": "BASICOS > GERAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "GERAIS"
+      ],
+      "article_count": 86,
+      "id": "WH_BASICOS_GERAIS"
+    },
+    {
+      "webhelp_path": "basicos/job_servidor",
+      "webhelp_display": "BÃ¡sicos > Job Servidor",
+      "menu_path_normalized": "BASICOS > JOB SERVIDOR",
+      "playwright_mapping_ids": [
+        "E2E_JOB_SERVIDOR_CONTROLE",
+        "E2E_JOB_SERVIDOR_IMPORTACAO"
+      ],
+      "suite_automation_ids": [
+        "JOB_SERVIDOR_BAT",
+        "JOB_SERVIDOR_EXPORTA_SAFX_CSV",
+        "JOB_SERVIDOR_OL",
+        "JOB_SERVIDOR_REINF"
+      ],
+      "status": "covered",
+      "keywords": [
+        "BASICOS",
+        "JOB SERVIDOR",
+        "SAFX07",
+        "SAFX119",
+        "SAFX13",
+        "SAFX2013",
+        "SAFX218",
+        "SAFX48"
+      ],
+      "article_count": 506,
+      "id": "WH_BASICOS_JOB_SERVIDOR"
+    },
+    {
+      "webhelp_path": "basicos/licenciamento",
+      "webhelp_display": "BÃ¡sicos > Licenciamento",
+      "menu_path_normalized": "BASICOS > LICENCIAMENTO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "LICENCIAMENTO"
+      ],
+      "article_count": 1,
+      "id": "WH_BASICOS_LICENCIAMENTO"
+    },
+    {
+      "webhelp_path": "basicos/migracao_dw_para_tax_one",
+      "webhelp_display": "BÃ¡sicos > MigraÃ§Ã£o DW para Tax One",
+      "menu_path_normalized": "BASICOS > MIGRACAO DW PARA TAX ONE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "MIGRACAO DW PARA TAX ONE"
+      ],
+      "article_count": 4,
+      "id": "WH_BASICOS_MIGRACAO_DW_PARA_TAX_ONE"
+    },
+    {
+      "webhelp_path": "basicos/obi_onesource_brasil_integration",
+      "webhelp_display": "BÃ¡sicos > OBI - OneSource Brasil Integration",
+      "menu_path_normalized": "BASICOS > OBI - ONESOURCE BRASIL INTEGRATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "OBI - ONESOURCE BRASIL INTEGRATION"
+      ],
+      "article_count": 37,
+      "id": "WH_BASICOS_OBI_ONESOURCE_BRASIL_INTEGRATION"
+    },
+    {
+      "webhelp_path": "basicos/parametros",
+      "webhelp_display": "BÃ¡sicos > ParÃ¢metros",
+      "menu_path_normalized": "BASICOS > PARAMETROS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "PARAMETROS"
+      ],
+      "status": "partial",
+      "keywords": [
+        "BASICOS",
+        "PARAMETROS"
+      ],
+      "article_count": 24,
+      "id": "WH_BASICOS_PARAMETROS"
+    },
+    {
+      "webhelp_path": "basicos/processos_customizados",
+      "webhelp_display": "BÃ¡sicos > Processos Customizados",
+      "menu_path_normalized": "BASICOS > PROCESSOS CUSTOMIZADOS",
+      "playwright_mapping_ids": [
+        "E2E_PROCESSOS_CUSTOMIZADOS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "BASICOS",
+        "PROCESSOS CUSTOMIZADOS"
+      ],
+      "article_count": 1,
+      "id": "WH_BASICOS_PROCESSOS_CUSTOMIZADOS"
+    },
+    {
+      "webhelp_path": "basicos/report_fiscal",
+      "webhelp_display": "BÃ¡sicos > Report Fiscal",
+      "menu_path_normalized": "BASICOS > REPORT FISCAL",
+      "playwright_mapping_ids": [
+        "E2E_REPORT_FISCAL_GERENCIAIS",
+        "E2E_REPORT_FISCAL_OBRIG_ACESSORIAS",
+        "E2E_REPORT_FISCAL_OPERACIONAIS",
+        "E2E_REPORT_FISCAL_RELATORIOS"
+      ],
+      "suite_automation_ids": [
+        "REPORT_FISCAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "BASICOS",
+        "REPORT FISCAL"
+      ],
+      "article_count": 85,
+      "id": "WH_BASICOS_REPORT_FISCAL"
+    },
+    {
+      "webhelp_path": "basicos/seguranca",
+      "webhelp_display": "BÃ¡sicos > SeguranÃ§a",
+      "menu_path_normalized": "BASICOS > SEGURANCA",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "SEGURANCA"
+      ],
+      "article_count": 23,
+      "id": "WH_BASICOS_SEGURANCA"
+    },
+    {
+      "webhelp_path": "basicos/sftp",
+      "webhelp_display": "BÃ¡sicos > SFTP",
+      "menu_path_normalized": "BASICOS > SFTP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "SFTP"
+      ],
+      "article_count": 2,
+      "id": "WH_BASICOS_SFTP"
+    },
+    {
+      "webhelp_path": "basicos/tax_automation",
+      "webhelp_display": "BÃ¡sicos > Tax Automation",
+      "menu_path_normalized": "BASICOS > TAX AUTOMATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "TAX AUTOMATION"
+      ],
+      "article_count": 28,
+      "id": "WH_BASICOS_TAX_AUTOMATION"
+    },
+    {
+      "webhelp_path": "basicos/tax_data_management_tdm",
+      "webhelp_display": "BÃ¡sicos > Tax Data Management - TDM",
+      "menu_path_normalized": "BASICOS > TAX DATA MANAGEMENT - TDM",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "TAX DATA MANAGEMENT - TDM"
+      ],
+      "article_count": 4,
+      "id": "WH_BASICOS_TAX_DATA_MANAGEMENT_TDM"
+    },
+    {
+      "webhelp_path": "basicos/tr_transfer_files",
+      "webhelp_display": "BÃ¡sicos > TR Transfer Files",
+      "menu_path_normalized": "BASICOS > TR TRANSFER FILES",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BASICOS",
+        "TR TRANSFER FILES"
+      ],
+      "article_count": 1,
+      "id": "WH_BASICOS_TR_TRANSFER_FILES"
+    },
+    {
+      "webhelp_path": "certificado_digital",
+      "webhelp_display": "Certificado digital",
+      "menu_path_normalized": "CERTIFICADO DIGITAL",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CERTIFICADO DIGITAL"
+      ],
+      "article_count": 1,
+      "id": "WH_CERTIFICADO_DIGITAL__GERAL"
+    },
+    {
+      "webhelp_path": "conexao_onesource_br/ecf_escrituracao_contabil",
+      "webhelp_display": "ConexÃ£o Onesource BR > ECF - EscrituraÃ§Ã£o ContÃ¡bil",
+      "menu_path_normalized": "CONEXAO ONESOURCE BR > ECF - ESCRITURACAO CONTABIL",
+      "playwright_mapping_ids": [
+        "E2E_CONEXAO_ONESOURCE_BR"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CONEXAO ONESOURCE BR",
+        "ECF - ESCRITURACAO CONTABIL"
+      ],
+      "article_count": 9,
+      "id": "WH_CONEXAO_ONESOURCE_BR_ECF_ESCRITURACAO_CONTABIL"
+    },
+    {
+      "webhelp_path": "conexao_onesource_br/ecf_escrituracao_contabil_fiscal",
+      "webhelp_display": "ConexÃ£o Onesource BR > ECF - EscrituraÃ§Ã£o ContÃ¡bil Fiscal",
+      "menu_path_normalized": "CONEXAO ONESOURCE BR > ECF - ESCRITURACAO CONTABIL FISCAL",
+      "playwright_mapping_ids": [
+        "E2E_CONEXAO_ONESOURCE_BR"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CONEXAO ONESOURCE BR",
+        "ECF - ESCRITURACAO CONTABIL FISCAL"
+      ],
+      "article_count": 8,
+      "id": "WH_CONEXAO_ONESOURCE_BR_ECF_ESCRITURACAO_CONTABIL_FISCAL"
+    },
+    {
+      "webhelp_path": "equipe_de_atendimento",
+      "webhelp_display": "Equipe de Atendimento",
+      "menu_path_normalized": "EQUIPE DE ATENDIMENTO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "EQUIPE DE ATENDIMENTO"
+      ],
+      "article_count": 5,
+      "id": "WH_EQUIPE_DE_ATENDIMENTO__GERAL"
+    },
+    {
+      "webhelp_path": "especificos/combustiveis_e_derivados_de_petroleo",
+      "webhelp_display": "EspecÃ­ficos > CombustÃ­veis e Derivados de PetrÃ³leo",
+      "menu_path_normalized": "ESPECIFICOS > COMBUSTIVEIS E DERIVADOS DE PETROLEO",
+      "playwright_mapping_ids": [
+        "E2E_COMBUSTIVEIS_DISTRIBUIDORA",
+        "E2E_COMBUSTIVEIS_REFINARIA",
+        "E2E_COMBUSTIVEIS_RELATORIOS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "COMBUSTIVEIS E DERIVADOS DE PETROLEO",
+        "ESPECIFICOS"
+      ],
+      "article_count": 11,
+      "id": "WH_ESPECIFICOS_COMBUSTIVEIS_E_DERIVADOS_DE_PETROLEO"
+    },
+    {
+      "webhelp_path": "especificos/i_simp",
+      "webhelp_display": "EspecÃ­ficos > I-SIMP",
+      "menu_path_normalized": "ESPECIFICOS > I-SIMP",
+      "playwright_mapping_ids": [
+        "E2E_ISIMP"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESPECIFICOS",
+        "I-SIMP"
+      ],
+      "article_count": 26,
+      "id": "WH_ESPECIFICOS_I_SIMP"
+    },
+    {
+      "webhelp_path": "especificos/pim",
+      "webhelp_display": "EspecÃ­ficos > PIM",
+      "menu_path_normalized": "ESPECIFICOS > PIM",
+      "playwright_mapping_ids": [
+        "E2E_PIM_GESTAO",
+        "E2E_PIN_SINAL"
+      ],
+      "suite_automation_ids": [
+        "PIM_AM"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESPECIFICOS",
+        "PIM"
+      ],
+      "article_count": 20,
+      "id": "WH_ESPECIFICOS_PIM"
+    },
+    {
+      "webhelp_path": "especificos/substancia_controladas",
+      "webhelp_display": "EspecÃ­ficos > SubstÃ¢ncia Controladas",
+      "menu_path_normalized": "ESPECIFICOS > SUBSTANCIA CONTROLADAS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESPECIFICOS",
+        "SUBSTANCIA CONTROLADAS"
+      ],
+      "article_count": 3,
+      "id": "WH_ESPECIFICOS_SUBSTANCIA_CONTROLADAS"
+    },
+    {
+      "webhelp_path": "especificos/substancias_controladas",
+      "webhelp_display": "EspecÃ­ficos > SubstÃ¢ncias Controladas",
+      "menu_path_normalized": "ESPECIFICOS > SUBSTANCIAS CONTROLADAS",
+      "playwright_mapping_ids": [
+        "E2E_SUBSTANCIAS_CONTROLADAS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESPECIFICOS",
+        "SUBSTANCIAS CONTROLADAS"
+      ],
+      "article_count": 3,
+      "id": "WH_ESPECIFICOS_SUBSTANCIAS_CONTROLADAS"
+    },
+    {
+      "webhelp_path": "estadual",
+      "webhelp_display": "Estadual",
+      "menu_path_normalized": "ESTADUAL",
+      "playwright_mapping_ids": [
+        "E2E_ARQUIVO_INJECAO_ENERGIA",
+        "E2E_ATIVO_PERMANENTE",
+        "E2E_CONTROLE_MERCADORIAS",
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_DAC_AL",
+        "E2E_DECLAN_IPM_RJ",
+        "E2E_DIAP_AP",
+        "E2E_DIA_AM",
+        "E2E_DIEF_ES",
+        "E2E_DIEF_PA",
+        "E2E_DIF_TO",
+        "E2E_DIME_SC",
+        "E2E_DIMP",
+        "E2E_DMD_BA",
+        "E2E_DOT_ES",
+        "E2E_ESTORNO_DEBITOS",
+        "E2E_FCI",
+        "E2E_FOMENTAR_PRODUZIR_GO",
+        "E2E_GIAM_TO",
+        "E2E_GIA_BA",
+        "E2E_GIA_MG",
+        "E2E_GIA_SP",
+        "E2E_GIM_RR",
+        "E2E_ICMS_APURACAO",
+        "E2E_ICMS_DATAMART",
+        "E2E_ICMS_LIVROS_BATCH",
+        "E2E_ICMS_MANUTENCAO",
+        "E2E_ICMS_OPERACIONAL",
+        "E2E_ICMS_RELATORIOS",
+        "E2E_INFORMATIVO_FISCAL_RN",
+        "E2E_LANCAMENTOS_AUTO_ICMS",
+        "E2E_MEIO_MAGNETICO",
+        "E2E_MEIO_MAGNETICO_ATO_COTEPE",
+        "E2E_PORTARIA_CAT_156",
+        "E2E_PORTARIA_CAT_5504",
+        "E2E_PORTARIA_CAT_8706",
+        "E2E_PRODEPE",
+        "E2E_REGIME_ESPECIAL",
+        "E2E_RESSARCIMENTO_ICMS_ST_PR",
+        "E2E_RESSARCIMENTO_ICMS_ST_RS",
+        "E2E_RESSARCIMENTO_ICMS_ST_SC",
+        "E2E_RESSARCIMENTO_ICMS_ST_SP",
+        "E2E_SEF_II_PE",
+        "E2E_SISCRED_PR",
+        "E2E_VAF_MG"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL"
+      ],
+      "article_count": 1,
+      "id": "WH_ESTADUAL__GERAL"
+    },
+    {
+      "webhelp_path": "estadual/arquivo_de_injecao_de_energia_eletrica",
+      "webhelp_display": "Estadual > Arquivo de InjeÃ§Ã£o de Energia ElÃ©trica",
+      "menu_path_normalized": "ESTADUAL > ARQUIVO DE INJECAO DE ENERGIA ELETRICA",
+      "playwright_mapping_ids": [
+        "E2E_ARQUIVO_INJECAO_ENERGIA"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ARQUIVO DE INJECAO DE ENERGIA ELETRICA",
+        "ESTADUAL"
+      ],
+      "article_count": 2,
+      "id": "WH_ESTADUAL_ARQUIVO_DE_INJECAO_DE_ENERGIA_ELETRICA"
+    },
+    {
+      "webhelp_path": "estadual/ativo_permanente",
+      "webhelp_display": "Estadual > Ativo Permanente",
+      "menu_path_normalized": "ESTADUAL > ATIVO PERMANENTE",
+      "playwright_mapping_ids": [
+        "E2E_ATIVO_PERMANENTE"
+      ],
+      "suite_automation_ids": [
+        "CIAP"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ATIVO PERMANENTE",
+        "ESTADUAL"
+      ],
+      "article_count": 58,
+      "id": "WH_ESTADUAL_ATIVO_PERMANENTE"
+    },
+    {
+      "webhelp_path": "estadual/controle_de_mercadorias_remessaretorno",
+      "webhelp_display": "Estadual > Controle de Mercadorias Remessa/Retorno",
+      "menu_path_normalized": "ESTADUAL > CONTROLE DE MERCADORIAS REMESSA/RETORNO",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_MERCADORIAS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CONTROLE DE MERCADORIAS REMESSA/RETORNO",
+        "ESTADUAL"
+      ],
+      "article_count": 12,
+      "id": "WH_ESTADUAL_CONTROLE_DE_MERCADORIAS_REMESSARETORNO"
+    },
+    {
+      "webhelp_path": "estadual/controle_de_obrigacoes_estaduais",
+      "webhelp_display": "Estadual > Controle de ObrigaÃ§Ãµes Estaduais",
+      "menu_path_normalized": "ESTADUAL > CONTROLE DE OBRIGACOES ESTADUAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONTROLE DE OBRIGACOES ESTADUAIS",
+        "ESTADUAL"
+      ],
+      "article_count": 6,
+      "id": "WH_ESTADUAL_CONTROLE_DE_OBRIGACOES_ESTADUAIS"
+    },
+    {
+      "webhelp_path": "estadual/convenio_115",
+      "webhelp_display": "Estadual > ConvÃªnio 115",
+      "menu_path_normalized": "ESTADUAL > CONVENIO 115",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONVENIO 115",
+        "ESTADUAL"
+      ],
+      "article_count": 5,
+      "id": "WH_ESTADUAL_CONVENIO_115"
+    },
+    {
+      "webhelp_path": "estadual/dac_al",
+      "webhelp_display": "Estadual > DAC AL",
+      "menu_path_normalized": "ESTADUAL > DAC AL",
+      "playwright_mapping_ids": [
+        "E2E_DAC_AL"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DAC AL",
+        "ESTADUAL"
+      ],
+      "article_count": 7,
+      "id": "WH_ESTADUAL_DAC_AL"
+    },
+    {
+      "webhelp_path": "estadual/declan_ipm_rj",
+      "webhelp_display": "Estadual > DECLAN IPM - RJ",
+      "menu_path_normalized": "ESTADUAL > DECLAN IPM - RJ",
+      "playwright_mapping_ids": [
+        "E2E_DECLAN_IPM_RJ"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DECLAN IPM - RJ",
+        "ESTADUAL"
+      ],
+      "article_count": 28,
+      "id": "WH_ESTADUAL_DECLAN_IPM_RJ"
+    },
+    {
+      "webhelp_path": "estadual/dia_am",
+      "webhelp_display": "Estadual > DIA-AM",
+      "menu_path_normalized": "ESTADUAL > DIA-AM",
+      "playwright_mapping_ids": [
+        "E2E_DIA_AM"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIA-AM",
+        "ESTADUAL"
+      ],
+      "article_count": 8,
+      "id": "WH_ESTADUAL_DIA_AM"
+    },
+    {
+      "webhelp_path": "estadual/dief_ma",
+      "webhelp_display": "Estadual > DIEF MA",
+      "menu_path_normalized": "ESTADUAL > DIEF MA",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "DIEF MA",
+        "ESTADUAL"
+      ],
+      "article_count": 1,
+      "id": "WH_ESTADUAL_DIEF_MA"
+    },
+    {
+      "webhelp_path": "estadual/dief_pa",
+      "webhelp_display": "Estadual > DIEF PA",
+      "menu_path_normalized": "ESTADUAL > DIEF PA",
+      "playwright_mapping_ids": [
+        "E2E_DIEF_PA"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIEF PA",
+        "ESTADUAL"
+      ],
+      "article_count": 15,
+      "id": "WH_ESTADUAL_DIEF_PA"
+    },
+    {
+      "webhelp_path": "estadual/dif_to",
+      "webhelp_display": "Estadual > DIF-TO",
+      "menu_path_normalized": "ESTADUAL > DIF-TO",
+      "playwright_mapping_ids": [
+        "E2E_DIF_TO"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIF-TO",
+        "ESTADUAL"
+      ],
+      "article_count": 13,
+      "id": "WH_ESTADUAL_DIF_TO"
+    },
+    {
+      "webhelp_path": "estadual/dime_sc",
+      "webhelp_display": "Estadual > DIME-SC",
+      "menu_path_normalized": "ESTADUAL > DIME-SC",
+      "playwright_mapping_ids": [
+        "E2E_DIME_SC"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIME-SC",
+        "ESTADUAL"
+      ],
+      "article_count": 45,
+      "id": "WH_ESTADUAL_DIME_SC"
+    },
+    {
+      "webhelp_path": "estadual/dimp",
+      "webhelp_display": "Estadual > DIMP",
+      "menu_path_normalized": "ESTADUAL > DIMP",
+      "playwright_mapping_ids": [
+        "E2E_DIMP"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIMP",
+        "ESTADUAL"
+      ],
+      "article_count": 12,
+      "id": "WH_ESTADUAL_DIMP"
+    },
+    {
+      "webhelp_path": "estadual/dot_es",
+      "webhelp_display": "Estadual > DOT ES",
+      "menu_path_normalized": "ESTADUAL > DOT ES",
+      "playwright_mapping_ids": [
+        "E2E_DOT_ES"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DOT ES",
+        "ESTADUAL"
+      ],
+      "article_count": 3,
+      "id": "WH_ESTADUAL_DOT_ES"
+    },
+    {
+      "webhelp_path": "estadual/fci_ficha_de_conteudo_de_importacao",
+      "webhelp_display": "Estadual > FCI - Ficha de ConteÃºdo de ImportaÃ§Ã£o",
+      "menu_path_normalized": "ESTADUAL > FCI - FICHA DE CONTEUDO DE IMPORTACAO",
+      "playwright_mapping_ids": [
+        "E2E_FCI"
+      ],
+      "suite_automation_ids": [
+        "FCI"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "FCI - FICHA DE CONTEUDO DE IMPORTACAO"
+      ],
+      "article_count": 21,
+      "id": "WH_ESTADUAL_FCI_FICHA_DE_CONTEUDO_DE_IMPORTACAO"
+    },
+    {
+      "webhelp_path": "estadual/gia_ba",
+      "webhelp_display": "Estadual > GIA BA",
+      "menu_path_normalized": "ESTADUAL > GIA BA",
+      "playwright_mapping_ids": [
+        "E2E_GIA_BA"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "GIA BA"
+      ],
+      "article_count": 6,
+      "id": "WH_ESTADUAL_GIA_BA"
+    },
+    {
+      "webhelp_path": "estadual/gia_mg",
+      "webhelp_display": "Estadual > GIA MG",
+      "menu_path_normalized": "ESTADUAL > GIA MG",
+      "playwright_mapping_ids": [
+        "E2E_GIA_MG"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "GIA MG"
+      ],
+      "article_count": 48,
+      "id": "WH_ESTADUAL_GIA_MG"
+    },
+    {
+      "webhelp_path": "estadual/gia_rs",
+      "webhelp_display": "Estadual > GIA RS",
+      "menu_path_normalized": "ESTADUAL > GIA RS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "GIA RS"
+      ],
+      "article_count": 1,
+      "id": "WH_ESTADUAL_GIA_RS"
+    },
+    {
+      "webhelp_path": "estadual/gia_sp",
+      "webhelp_display": "Estadual > GIA SP",
+      "menu_path_normalized": "ESTADUAL > GIA SP",
+      "playwright_mapping_ids": [
+        "E2E_GIA_SP"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "GIA SP"
+      ],
+      "article_count": 51,
+      "id": "WH_ESTADUAL_GIA_SP"
+    },
+    {
+      "webhelp_path": "estadual/gia_st",
+      "webhelp_display": "Estadual > GIA ST",
+      "menu_path_normalized": "ESTADUAL > GIA ST",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "GIA_ST"
+      ],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "GIA ST"
+      ],
+      "article_count": 14,
+      "id": "WH_ESTADUAL_GIA_ST"
+    },
+    {
+      "webhelp_path": "estadual/gia_sttax_automation",
+      "webhelp_display": "Estadual > GIA ST/TAX AUTOMATION",
+      "menu_path_normalized": "ESTADUAL > GIA ST/TAX AUTOMATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "GIA ST/TAX AUTOMATION"
+      ],
+      "article_count": 2,
+      "id": "WH_ESTADUAL_GIA_STTAX_AUTOMATION"
+    },
+    {
+      "webhelp_path": "estadual/giam_rr",
+      "webhelp_display": "Estadual > GIAM RR",
+      "menu_path_normalized": "ESTADUAL > GIAM RR",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "GIAM RR"
+      ],
+      "article_count": 1,
+      "id": "WH_ESTADUAL_GIAM_RR"
+    },
+    {
+      "webhelp_path": "estadual/giam_to",
+      "webhelp_display": "Estadual > GIAM TO",
+      "menu_path_normalized": "ESTADUAL > GIAM TO",
+      "playwright_mapping_ids": [
+        "E2E_GIAM_TO"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "GIAM TO"
+      ],
+      "article_count": 10,
+      "id": "WH_ESTADUAL_GIAM_TO"
+    },
+    {
+      "webhelp_path": "estadual/gnre",
+      "webhelp_display": "Estadual > GNRE",
+      "menu_path_normalized": "ESTADUAL > GNRE",
+      "playwright_mapping_ids": [
+        "E2E_ICMS_APURACAO"
+      ],
+      "suite_automation_ids": [
+        "GNRE"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "GNRE"
+      ],
+      "article_count": 12,
+      "id": "WH_ESTADUAL_GNRE"
+    },
+    {
+      "webhelp_path": "estadual/gnre__tax_automation",
+      "webhelp_display": "Estadual > GNRE / TAX AUTOMATION",
+      "menu_path_normalized": "ESTADUAL > GNRE / TAX AUTOMATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "GNRE / TAX AUTOMATION"
+      ],
+      "article_count": 3,
+      "id": "WH_ESTADUAL_GNRE__TAX_AUTOMATION"
+    },
+    {
+      "webhelp_path": "estadual/icms",
+      "webhelp_display": "Estadual > ICMS",
+      "menu_path_normalized": "ESTADUAL > ICMS",
+      "playwright_mapping_ids": [
+        "E2E_ICMS_APURACAO",
+        "E2E_ICMS_DATAMART",
+        "E2E_ICMS_LIVROS_BATCH",
+        "E2E_ICMS_MANUTENCAO",
+        "E2E_ICMS_OPERACIONAL",
+        "E2E_ICMS_RELATORIOS"
+      ],
+      "suite_automation_ids": [
+        "DIME_SC",
+        "GIA_ST",
+        "ICMS_LIVRO_P3",
+        "ICMS_LIVRO_P9",
+        "LANC_AUT_ICMS",
+        "RESS_MG",
+        "RESS_PR",
+        "RESS_RS",
+        "RESS_SC"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "ICMS"
+      ],
+      "article_count": 75,
+      "id": "WH_ESTADUAL_ICMS"
+    },
+    {
+      "webhelp_path": "estadual/livros",
+      "webhelp_display": "Estadual > Livros",
+      "menu_path_normalized": "ESTADUAL > LIVROS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "LIVROS"
+      ],
+      "article_count": 26,
+      "id": "WH_ESTADUAL_LIVROS"
+    },
+    {
+      "webhelp_path": "estadual/meio_magnetico",
+      "webhelp_display": "Estadual > Meio MagnÃ©tico",
+      "menu_path_normalized": "ESTADUAL > MEIO MAGNETICO",
+      "playwright_mapping_ids": [
+        "E2E_MEIO_MAGNETICO",
+        "E2E_MEIO_MAGNETICO_ATO_COTEPE"
+      ],
+      "suite_automation_ids": [
+        "MEIO_MAG"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "MEIO MAGNETICO"
+      ],
+      "article_count": 3,
+      "id": "WH_ESTADUAL_MEIO_MAGNETICO"
+    },
+    {
+      "webhelp_path": "estadual/meio_magnetico_ato_cotepe_no70_05",
+      "webhelp_display": "Estadual > Meio MagnÃ©tico - Ato Cotepe NÂº70 05",
+      "menu_path_normalized": "ESTADUAL > MEIO MAGNETICO - ATO COTEPE NO70 05",
+      "playwright_mapping_ids": [
+        "E2E_MEIO_MAGNETICO"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "MEIO MAGNETICO - ATO COTEPE NO70 05"
+      ],
+      "article_count": 2,
+      "id": "WH_ESTADUAL_MEIO_MAGNETICO_ATO_COTEPE_NO70_05"
+    },
+    {
+      "webhelp_path": "estadual/pin_sinal",
+      "webhelp_display": "Estadual > PIN SINAL",
+      "menu_path_normalized": "ESTADUAL > PIN SINAL",
+      "playwright_mapping_ids": [
+        "E2E_PIN_SINAL"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "PIN SINAL"
+      ],
+      "article_count": 2,
+      "id": "WH_ESTADUAL_PIN_SINAL"
+    },
+    {
+      "webhelp_path": "estadual/prodepe",
+      "webhelp_display": "Estadual > Prodepe",
+      "menu_path_normalized": "ESTADUAL > PRODEPE",
+      "playwright_mapping_ids": [
+        "E2E_PRODEPE"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "PRODEPE"
+      ],
+      "article_count": 23,
+      "id": "WH_ESTADUAL_PRODEPE"
+    },
+    {
+      "webhelp_path": "estadual/ressarcimento_icms_st_pr",
+      "webhelp_display": "Estadual > Ressarcimento ICMS-ST PR",
+      "menu_path_normalized": "ESTADUAL > RESSARCIMENTO ICMS-ST PR",
+      "playwright_mapping_ids": [
+        "E2E_RESSARCIMENTO_ICMS_ST_PR"
+      ],
+      "suite_automation_ids": [
+        "RESS_PR"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "RESSARCIMENTO ICMS ST PR",
+        "RESSARCIMENTO ICMS-ST PR"
+      ],
+      "article_count": 28,
+      "id": "WH_ESTADUAL_RESSARCIMENTO_ICMS_ST_PR"
+    },
+    {
+      "webhelp_path": "estadual/ressarcimento_icms_st_rs",
+      "webhelp_display": "Estadual > Ressarcimento ICMS-ST RS",
+      "menu_path_normalized": "ESTADUAL > RESSARCIMENTO ICMS-ST RS",
+      "playwright_mapping_ids": [
+        "E2E_RESSARCIMENTO_ICMS_ST_RS"
+      ],
+      "suite_automation_ids": [
+        "RESS_RS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "RESSARCIMENTO ICMS-ST RS"
+      ],
+      "article_count": 14,
+      "id": "WH_ESTADUAL_RESSARCIMENTO_ICMS_ST_RS"
+    },
+    {
+      "webhelp_path": "estadual/ressarcimento_icms_st_sc",
+      "webhelp_display": "Estadual > Ressarcimento ICMS-ST SC",
+      "menu_path_normalized": "ESTADUAL > RESSARCIMENTO ICMS-ST SC",
+      "playwright_mapping_ids": [
+        "E2E_RESSARCIMENTO_ICMS_ST_SC"
+      ],
+      "suite_automation_ids": [
+        "RESS_SC"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ESTADUAL",
+        "RESSARCIMENTO ICMS-ST SC"
+      ],
+      "article_count": 11,
+      "id": "WH_ESTADUAL_RESSARCIMENTO_ICMS_ST_SC"
+    },
+    {
+      "webhelp_path": "estadual/ressarcimento_icms_st_sp",
+      "webhelp_display": "Estadual > Ressarcimento ICMS-ST SP",
+      "menu_path_normalized": "ESTADUAL > RESSARCIMENTO ICMS-ST SP",
+      "playwright_mapping_ids": [
+        "E2E_RESSARCIMENTO_ICMS_ST_SP"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "RESSARCIMENTO ICMS ST SP",
+        "RESSARCIMENTO ICMS-ST SP"
+      ],
+      "article_count": 14,
+      "id": "WH_ESTADUAL_RESSARCIMENTO_ICMS_ST_SP"
+    },
+    {
+      "webhelp_path": "estadual/saics",
+      "webhelp_display": "Estadual > SAICS",
+      "menu_path_normalized": "ESTADUAL > SAICS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "SAICS"
+      ],
+      "article_count": 5,
+      "id": "WH_ESTADUAL_SAICS"
+    },
+    {
+      "webhelp_path": "estadual/sub_apuracao",
+      "webhelp_display": "Estadual > Sub ApuraÃ§Ã£o",
+      "menu_path_normalized": "ESTADUAL > SUB APURACAO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "SUB APURACAO"
+      ],
+      "article_count": 8,
+      "id": "WH_ESTADUAL_SUB_APURACAO"
+    },
+    {
+      "webhelp_path": "estadual/tax_automation",
+      "webhelp_display": "Estadual > TAX AUTOMATION",
+      "menu_path_normalized": "ESTADUAL > TAX AUTOMATION",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ESTADUAL",
+        "TAX AUTOMATION"
+      ],
+      "article_count": 1,
+      "id": "WH_ESTADUAL_TAX_AUTOMATION"
+    },
+    {
+      "webhelp_path": "estadual/vaf_valor_adicionado_fiscal_mg",
+      "webhelp_display": "Estadual > VAF - Valor Adicionado Fiscal - MG",
+      "menu_path_normalized": "ESTADUAL > VAF - VALOR ADICIONADO FISCAL - MG",
+      "playwright_mapping_ids": [
+        "E2E_VAF_MG"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ESTADUAL",
+        "VAF - VALOR ADICIONADO FISCAL - MG"
+      ],
+      "article_count": 4,
+      "id": "WH_ESTADUAL_VAF_VALOR_ADICIONADO_FISCAL_MG"
+    },
+    {
+      "webhelp_path": "federal/controle_de_obrigacoes_federais",
+      "webhelp_display": "Federal > Controle de ObrigaÃ§Ãµes Federais",
+      "menu_path_normalized": "FEDERAL > CONTROLE DE OBRIGACOES FEDERAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONTROLE DE OBRIGACOES FEDERAIS",
+        "FEDERAL"
+      ],
+      "article_count": 2,
+      "id": "WH_FEDERAL_CONTROLE_DE_OBRIGACOES_FEDERAIS"
+    },
+    {
+      "webhelp_path": "federal/credpis",
+      "webhelp_display": "Federal > CREDPIS",
+      "menu_path_normalized": "FEDERAL > CREDPIS",
+      "playwright_mapping_ids": [
+        "E2E_CREDPIS"
+      ],
+      "suite_automation_ids": [
+        "CREDPIS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "CREDPIS",
+        "FEDERAL"
+      ],
+      "article_count": 14,
+      "id": "WH_FEDERAL_CREDPIS"
+    },
+    {
+      "webhelp_path": "federal/dimob",
+      "webhelp_display": "Federal > DIMOB",
+      "menu_path_normalized": "FEDERAL > DIMOB",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "DIMOB"
+      ],
+      "status": "partial",
+      "keywords": [
+        "DIMOB",
+        "FEDERAL"
+      ],
+      "article_count": 1,
+      "id": "WH_FEDERAL_DIMOB"
+    },
+    {
+      "webhelp_path": "federal/funrural",
+      "webhelp_display": "Federal > FUNRURAL",
+      "menu_path_normalized": "FEDERAL > FUNRURAL",
+      "playwright_mapping_ids": [
+        "E2E_FUNRURAL"
+      ],
+      "suite_automation_ids": [
+        "FUNRURAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "FEDERAL",
+        "FUNRURAL"
+      ],
+      "article_count": 1,
+      "id": "WH_FEDERAL_FUNRURAL"
+    },
+    {
+      "webhelp_path": "federal/ipi",
+      "webhelp_display": "Federal > IPI",
+      "menu_path_normalized": "FEDERAL > IPI",
+      "playwright_mapping_ids": [
+        "E2E_IPI_APURACAO",
+        "E2E_IPI_DATAMART",
+        "E2E_IPI_MEIO_MAGNETICO",
+        "E2E_IPI_PARAMETROS",
+        "E2E_IPI_RELATORIO"
+      ],
+      "suite_automation_ids": [
+        "APURACAO_IPI",
+        "LANC_AUT_IPI"
+      ],
+      "status": "covered",
+      "keywords": [
+        "FEDERAL",
+        "IPI"
+      ],
+      "article_count": 15,
+      "id": "WH_FEDERAL_IPI"
+    },
+    {
+      "webhelp_path": "federal/obrigacoes_tributos_federais",
+      "webhelp_display": "Federal > OBRIGAÃ‡Ã•ES TRIBUTOS FEDERAIS",
+      "menu_path_normalized": "FEDERAL > OBRIGACOES TRIBUTOS FEDERAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "FEDERAL",
+        "OBRIGACOES TRIBUTOS FEDERAIS"
+      ],
+      "article_count": 75,
+      "id": "WH_FEDERAL_OBRIGACOES_TRIBUTOS_FEDERAIS"
+    },
+    {
+      "webhelp_path": "federal/portaria_63",
+      "webhelp_display": "Federal > Portaria 63",
+      "menu_path_normalized": "FEDERAL > PORTARIA 63",
+      "playwright_mapping_ids": [
+        "E2E_PORTARIA_63"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "FEDERAL",
+        "PORTARIA 63"
+      ],
+      "article_count": 1,
+      "id": "WH_FEDERAL_PORTARIA_63"
+    },
+    {
+      "webhelp_path": "filezila",
+      "webhelp_display": "FileZila",
+      "menu_path_normalized": "FILEZILA",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "FILEZILA"
+      ],
+      "article_count": 1,
+      "id": "WH_FILEZILA__GERAL"
+    },
+    {
+      "webhelp_path": "gerais",
+      "webhelp_display": "Gerais",
+      "menu_path_normalized": "GERAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAIS"
+      ],
+      "article_count": 3,
+      "id": "WH_GERAIS__GERAL"
+    },
+    {
+      "webhelp_path": "geral",
+      "webhelp_display": "Geral",
+      "menu_path_normalized": "GERAL",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL"
+      ],
+      "article_count": 13,
+      "id": "WH_GERAL__GERAL"
+    },
+    {
+      "webhelp_path": "gerencial",
+      "webhelp_display": "Gerencial",
+      "menu_path_normalized": "GERENCIAL",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERENCIAL"
+      ],
+      "article_count": 5,
+      "id": "WH_GERENCIAL__GERAL"
+    },
+    {
+      "webhelp_path": "gerencial/licencas",
+      "webhelp_display": "Gerencial > LicenÃ§as",
+      "menu_path_normalized": "GERENCIAL > LICENCAS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERENCIAL",
+        "LICENCAS"
+      ],
+      "article_count": 1,
+      "id": "WH_GERENCIAL_LICENCAS"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/contabilizacao_automatica",
+      "webhelp_display": "GestÃ£o de Dados > ContabilizaÃ§Ã£o AutomÃ¡tica",
+      "menu_path_normalized": "GESTAO DE DADOS > CONTABILIZACAO AUTOMATICA",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONTABILIZACAO AUTOMATICA",
+        "GESTAO DE DADOS"
+      ],
+      "article_count": 9,
+      "id": "WH_GESTAO_DE_DADOS_CONTABILIZACAO_AUTOMATICA"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/controle_de_remessa_e_retorno",
+      "webhelp_display": "GestÃ£o de Dados > Controle de Remessa e Retorno",
+      "menu_path_normalized": "GESTAO DE DADOS > CONTROLE DE REMESSA E RETORNO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONTROLE DE REMESSA E RETORNO",
+        "GESTAO DE DADOS"
+      ],
+      "article_count": 3,
+      "id": "WH_GESTAO_DE_DADOS_CONTROLE_DE_REMESSA_E_RETORNO"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/copia_de_configuracoes",
+      "webhelp_display": "GestÃ£o de Dados > CÃ³pia de ConfiguraÃ§Ãµes",
+      "menu_path_normalized": "GESTAO DE DADOS > COPIA DE CONFIGURACOES",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "COPIA DE CONFIGURACOES",
+        "GESTAO DE DADOS"
+      ],
+      "article_count": 2,
+      "id": "WH_GESTAO_DE_DADOS_COPIA_DE_CONFIGURACOES"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/documento_de_arrecadacao",
+      "webhelp_display": "GestÃ£o de Dados > Documento de arrecadaÃ§Ã£o",
+      "menu_path_normalized": "GESTAO DE DADOS > DOCUMENTO DE ARRECADACAO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "DOCUMENTO DE ARRECADACAO",
+        "GESTAO DE DADOS"
+      ],
+      "article_count": 1,
+      "id": "WH_GESTAO_DE_DADOS_DOCUMENTO_DE_ARRECADACAO"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/download_e_upload",
+      "webhelp_display": "GestÃ£o de Dados > Download e Upload",
+      "menu_path_normalized": "GESTAO DE DADOS > DOWNLOAD E UPLOAD",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "DOWNLOAD E UPLOAD",
+        "GESTAO DE DADOS"
+      ],
+      "article_count": 2,
+      "id": "WH_GESTAO_DE_DADOS_DOWNLOAD_E_UPLOAD"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/nota_fiscal",
+      "webhelp_display": "GestÃ£o de Dados > Nota Fiscal",
+      "menu_path_normalized": "GESTAO DE DADOS > NOTA FISCAL",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GESTAO DE DADOS",
+        "NOTA FISCAL"
+      ],
+      "article_count": 5,
+      "id": "WH_GESTAO_DE_DADOS_NOTA_FISCAL"
+    },
+    {
+      "webhelp_path": "gestao_de_dados/relatorios",
+      "webhelp_display": "GestÃ£o de Dados > RelatÃ³rios",
+      "menu_path_normalized": "GESTAO DE DADOS > RELATORIOS",
+      "playwright_mapping_ids": [
+        "E2E_REPORT_FISCAL_RELATORIOS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "GESTAO DE DADOS",
+        "RELATORIOS"
+      ],
+      "article_count": 5,
+      "id": "WH_GESTAO_DE_DADOS_RELATORIOS"
+    },
+    {
+      "webhelp_path": "giss_online",
+      "webhelp_display": "Giss Online",
+      "menu_path_normalized": "GISS ONLINE",
+      "playwright_mapping_ids": [
+        "E2E_GISS_ONLINE"
+      ],
+      "suite_automation_ids": [
+        "GISS_ONLINE"
+      ],
+      "status": "covered",
+      "keywords": [
+        "GISS ONLINE"
+      ],
+      "article_count": 9,
+      "id": "WH_GISS_ONLINE__GERAL"
+    },
+    {
+      "webhelp_path": "integracao/geral",
+      "webhelp_display": "IntegraÃ§Ã£o > Geral",
+      "menu_path_normalized": "INTEGRACAO > GERAL",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL",
+        "INTEGRACAO"
+      ],
+      "article_count": 1,
+      "id": "WH_INTEGRACAO_GERAL"
+    },
+    {
+      "webhelp_path": "interface_infor",
+      "webhelp_display": "Interface INFOR",
+      "menu_path_normalized": "INTERFACE INFOR",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERFACE INFOR"
+      ],
+      "article_count": 1,
+      "id": "WH_INTERFACE_INFOR__GERAL"
+    },
+    {
+      "webhelp_path": "interface_oracle",
+      "webhelp_display": "Interface Oracle",
+      "menu_path_normalized": "INTERFACE ORACLE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERFACE ORACLE"
+      ],
+      "article_count": 3,
+      "id": "WH_INTERFACE_ORACLE__GERAL"
+    },
+    {
+      "webhelp_path": "interface_oracle/interdados_v11r01_ebs",
+      "webhelp_display": "Interface Oracle > Interdados V11R01 - EBS",
+      "menu_path_normalized": "INTERFACE ORACLE > INTERDADOS V11R01 - EBS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERDADOS V11R01 - EBS",
+        "INTERFACE ORACLE"
+      ],
+      "article_count": 1,
+      "id": "WH_INTERFACE_ORACLE_INTERDADOS_V11R01_EBS"
+    },
+    {
+      "webhelp_path": "interface_oracle/interdados_v17r01_cloud",
+      "webhelp_display": "Interface Oracle > Interdados V17R01 - Cloud",
+      "menu_path_normalized": "INTERFACE ORACLE > INTERDADOS V17R01 - CLOUD",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERDADOS V17R01 - CLOUD",
+        "INTERFACE ORACLE"
+      ],
+      "article_count": 1,
+      "id": "WH_INTERFACE_ORACLE_INTERDADOS_V17R01_CLOUD"
+    },
+    {
+      "webhelp_path": "interface_sap",
+      "webhelp_display": "Interface SAP",
+      "menu_path_normalized": "INTERFACE SAP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERFACE SAP"
+      ],
+      "article_count": 3,
+      "id": "WH_INTERFACE_SAP__GERAL"
+    },
+    {
+      "webhelp_path": "interfaces",
+      "webhelp_display": "Interfaces",
+      "menu_path_normalized": "INTERFACES",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERFACES"
+      ],
+      "article_count": 4,
+      "id": "WH_INTERFACES__GERAL"
+    },
+    {
+      "webhelp_path": "interfaces/oracle_interdados_v11",
+      "webhelp_display": "Interfaces > Oracle Interdados V11",
+      "menu_path_normalized": "INTERFACES > ORACLE INTERDADOS V11",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL",
+        "INTERFACES",
+        "ORACLE INTERDADOS V11"
+      ],
+      "article_count": 2,
+      "id": "WH_INTERFACES_ORACLE_INTERDADOS_V11"
+    },
+    {
+      "webhelp_path": "interfaces/oracle_interdados_v11r01_ebs",
+      "webhelp_display": "Interfaces > ORACLE Interdados - V11R01 EBS",
+      "menu_path_normalized": "INTERFACES > ORACLE INTERDADOS - V11R01 EBS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL",
+        "INTERFACES",
+        "ORACLE INTERDADOS - V11R01 EBS",
+        "WEB SERVICE"
+      ],
+      "article_count": 30,
+      "id": "WH_INTERFACES_ORACLE_INTERDADOS_V11R01_EBS"
+    },
+    {
+      "webhelp_path": "interfaces/oracle_interdados_v17r01",
+      "webhelp_display": "Interfaces > ORACLE Interdados - V17R01",
+      "menu_path_normalized": "INTERFACES > ORACLE INTERDADOS - V17R01",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL",
+        "INTERFACES",
+        "ORACLE INTERDADOS - V17R01"
+      ],
+      "article_count": 1,
+      "id": "WH_INTERFACES_ORACLE_INTERDADOS_V17R01"
+    },
+    {
+      "webhelp_path": "interfaces/oracle_interdados_v17r01_cloud",
+      "webhelp_display": "Interfaces > ORACLE Interdados - V17R01 Cloud",
+      "menu_path_normalized": "INTERFACES > ORACLE INTERDADOS - V17R01 CLOUD",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CADASTROS",
+        "CONTABIL",
+        "DOCUMENTARIO FISCAL",
+        "GERAL",
+        "IMOBILIZADO",
+        "INTERFACES",
+        "ORACLE INTERDADOS - V17R01 CLOUD",
+        "OUTROS DOCUMENTOS",
+        "RETENCAO",
+        "WEB SERVICE"
+      ],
+      "article_count": 140,
+      "id": "WH_INTERFACES_ORACLE_INTERDADOS_V17R01_CLOUD"
+    },
+    {
+      "webhelp_path": "interfaces/oracle_interdados_v17r01_on_premise",
+      "webhelp_display": "Interfaces > ORACLE Interdados - V17R01 - ON PREMISE",
+      "menu_path_normalized": "INTERFACES > ORACLE INTERDADOS - V17R01 - ON PREMISE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "GERAL",
+        "INTERFACES",
+        "ORACLE INTERDADOS - V17R01 - ON PREMISE"
+      ],
+      "article_count": 1,
+      "id": "WH_INTERFACES_ORACLE_INTERDADOS_V17R01_ON_PREMISE"
+    },
+    {
+      "webhelp_path": "interfaces/sap__namespaceobti",
+      "webhelp_display": "Interfaces > SAP â€“ Namespace/OBTI",
+      "menu_path_normalized": "INTERFACES > SAP â€“ NAMESPACE/OBTI",
+      "playwright_mapping_ids": [
+        "E2E_SPED_FISCAL_GERACAO"
+      ],
+      "suite_automation_ids": [
+        "SPED_FISCAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ATUALIZACAO DE PATCH",
+        "BLOCO K",
+        "CADASTROS",
+        "CONTABIL",
+        "DOCUMENTARIO FISCAL",
+        "DUMP",
+        "GERAL",
+        "INTERFACES",
+        "INVENTARIO",
+        "LISTA TECNICA"
+      ],
+      "article_count": 243,
+      "id": "WH_INTERFACES_SAP__NAMESPACEOBTI"
+    },
+    {
+      "webhelp_path": "manuais/interface_infor",
+      "webhelp_display": "Manuais > Interface INFOR",
+      "menu_path_normalized": "MANUAIS > INTERFACE INFOR",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERFACE INFOR",
+        "MANUAIS"
+      ],
+      "article_count": 1,
+      "id": "WH_MANUAIS_INTERFACE_INFOR"
+    },
+    {
+      "webhelp_path": "manuais/interface_oracle",
+      "webhelp_display": "Manuais > Interface Oracle",
+      "menu_path_normalized": "MANUAIS > INTERFACE ORACLE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "INTERDADOS V11R01 - EBS",
+        "INTERDADOS V17R01 - CLOUD",
+        "INTERFACE ORACLE",
+        "MANUAIS"
+      ],
+      "article_count": 2,
+      "id": "WH_MANUAIS_INTERFACE_ORACLE"
+    },
+    {
+      "webhelp_path": "manuais/interface_sap",
+      "webhelp_display": "Manuais > Interface SAP",
+      "menu_path_normalized": "MANUAIS > INTERFACE SAP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "BUSINESS ONE",
+        "INTERFACE SAP",
+        "MANUAIS",
+        "OBTI"
+      ],
+      "article_count": 2,
+      "id": "WH_MANUAIS_INTERFACE_SAP"
+    },
+    {
+      "webhelp_path": "manuais/microsoft_dynamics_365",
+      "webhelp_display": "Manuais > Microsoft Dynamics 365",
+      "menu_path_normalized": "MANUAIS > MICROSOFT DYNAMICS 365",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "MANUAIS",
+        "MICROSOFT DYNAMICS 365"
+      ],
+      "article_count": 1,
+      "id": "WH_MANUAIS_MICROSOFT_DYNAMICS_365"
+    },
+    {
+      "webhelp_path": "microsoft_dynamics_365",
+      "webhelp_display": "Microsoft Dynamics 365",
+      "menu_path_normalized": "MICROSOFT DYNAMICS 365",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "MICROSOFT DYNAMICS 365"
+      ],
+      "article_count": 1,
+      "id": "WH_MICROSOFT_DYNAMICS_365__GERAL"
+    },
+    {
+      "webhelp_path": "migracao",
+      "webhelp_display": "Migracao",
+      "menu_path_normalized": "MIGRACAO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [],
+      "article_count": 2,
+      "id": "WH_MIGRACAO__GERAL"
+    },
+    {
+      "webhelp_path": "municipal",
+      "webhelp_display": "Municipal",
+      "menu_path_normalized": "MUNICIPAL",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL"
+      ],
+      "article_count": 35,
+      "id": "WH_MUNICIPAL__GERAL"
+    },
+    {
+      "webhelp_path": "municipal/atende_net",
+      "webhelp_display": "Municipal > Atende-Net",
+      "menu_path_normalized": "MUNICIPAL > ATENDE-NET",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ATENDE-NET",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ATENDE_NET"
+    },
+    {
+      "webhelp_path": "municipal/atendenet",
+      "webhelp_display": "Municipal > AtendeNet",
+      "menu_path_normalized": "MUNICIPAL > ATENDENET",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ATENDENET",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_ATENDENET"
+    },
+    {
+      "webhelp_path": "municipal/barcarena",
+      "webhelp_display": "Municipal > BARCARENA",
+      "menu_path_normalized": "MUNICIPAL > BARCARENA",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "BARCARENA",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_BARCARENA"
+    },
+    {
+      "webhelp_path": "municipal/betha",
+      "webhelp_display": "Municipal > BETHA",
+      "menu_path_normalized": "MUNICIPAL > BETHA",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "BETHA",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_BETHA"
+    },
+    {
+      "webhelp_path": "municipal/castro",
+      "webhelp_display": "Municipal > Castro",
+      "menu_path_normalized": "MUNICIPAL > CASTRO",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CASTRO",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_CASTRO"
+    },
+    {
+      "webhelp_path": "municipal/controle_das_obrigacoes_municipais",
+      "webhelp_display": "Municipal > Controle das ObrigaÃ§Ãµes Municipais",
+      "menu_path_normalized": "MUNICIPAL > CONTROLE DAS OBRIGACOES MUNICIPAIS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CONTROLE DAS OBRIGACOES MUNICIPAIS",
+        "MUNICIPAL"
+      ],
+      "article_count": 3,
+      "id": "WH_MUNICIPAL_CONTROLE_DAS_OBRIGACOES_MUNICIPAIS"
+    },
+    {
+      "webhelp_path": "municipal/curitiba_iss",
+      "webhelp_display": "Municipal > Curitiba -ISS",
+      "menu_path_normalized": "MUNICIPAL > CURITIBA -ISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "CURITIBA -ISS",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_CURITIBA_ISS"
+    },
+    {
+      "webhelp_path": "municipal/des_belo_horizonte",
+      "webhelp_display": "Municipal > DES-BELO HORIZONTE",
+      "menu_path_normalized": "MUNICIPAL > DES-BELO HORIZONTE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DES-BELO HORIZONTE",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_DES_BELO_HORIZONTE"
+    },
+    {
+      "webhelp_path": "municipal/des_online",
+      "webhelp_display": "Municipal > DES ONLINE",
+      "menu_path_normalized": "MUNICIPAL > DES ONLINE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DES ONLINE",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_DES_ONLINE"
+    },
+    {
+      "webhelp_path": "municipal/des_xml",
+      "webhelp_display": "Municipal > DES XML",
+      "menu_path_normalized": "MUNICIPAL > DES XML",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "DESXML"
+      ],
+      "status": "covered",
+      "keywords": [
+        "DES XML",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_DES_XML"
+    },
+    {
+      "webhelp_path": "municipal/desbh",
+      "webhelp_display": "Municipal > DESBH",
+      "menu_path_normalized": "MUNICIPAL > DESBH",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DESBH",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_DESBH"
+    },
+    {
+      "webhelp_path": "municipal/desif",
+      "webhelp_display": "Municipal > DESIF",
+      "menu_path_normalized": "MUNICIPAL > DESIF",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DESIF",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_DESIF"
+    },
+    {
+      "webhelp_path": "municipal/dmste",
+      "webhelp_display": "Municipal > DMSTE",
+      "menu_path_normalized": "MUNICIPAL > DMSTE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DMSTE",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_DMSTE"
+    },
+    {
+      "webhelp_path": "municipal/dsfnet",
+      "webhelp_display": "Municipal > DSFNET",
+      "menu_path_normalized": "MUNICIPAL > DSFNET",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DSFNET",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_DSFNET"
+    },
+    {
+      "webhelp_path": "municipal/dsre_recife",
+      "webhelp_display": "Municipal > DSRE Recife",
+      "menu_path_normalized": "MUNICIPAL > DSRE RECIFE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DSRE RECIFE",
+        "MUNICIPAL"
+      ],
+      "article_count": 4,
+      "id": "WH_MUNICIPAL_DSRE_RECIFE"
+    },
+    {
+      "webhelp_path": "municipal/egoverno",
+      "webhelp_display": "Municipal > EGOVERNO",
+      "menu_path_normalized": "MUNICIPAL > EGOVERNO",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "EGOVERNO",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_EGOVERNO"
+    },
+    {
+      "webhelp_path": "municipal/finteliss",
+      "webhelp_display": "Municipal > FINTELISS",
+      "menu_path_normalized": "MUNICIPAL > FINTELISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "FINTELISS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "FINTELISS",
+        "FINTELISS- JUIZ DE FORA",
+        "FINTELISS- PONTA GROSSA",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_FINTELISS"
+    },
+    {
+      "webhelp_path": "municipal/fortaleza_ef_e",
+      "webhelp_display": "Municipal > Fortaleza - EF-E",
+      "menu_path_normalized": "MUNICIPAL > FORTALEZA - EF-E",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "FORTALEZA - EF-E",
+        "MUNICIPAL"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_FORTALEZA_EF_E"
+    },
+    {
+      "webhelp_path": "municipal/giss_online",
+      "webhelp_display": "Municipal > GISS ONLINE",
+      "menu_path_normalized": "MUNICIPAL > GISS ONLINE",
+      "playwright_mapping_ids": [
+        "E2E_GISS_ONLINE",
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "GISS_ONLINE"
+      ],
+      "status": "covered",
+      "keywords": [
+        "DIADEMA",
+        "GISS ONLINE",
+        "ITU",
+        "MUNICIPAL",
+        "PAULINIA",
+        "SANTO ANDRE",
+        "SANTOS",
+        "SAO BERNARDO DO CAMPO",
+        "SUZANO",
+        "TODOS OS MUNICIPIOS"
+      ],
+      "article_count": 24,
+      "id": "WH_MUNICIPAL_GISS_ONLINE"
+    },
+    {
+      "webhelp_path": "municipal/iss",
+      "webhelp_display": "Municipal > ISS",
+      "menu_path_normalized": "MUNICIPAL > ISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "FINTELISS",
+        "GISS_ONLINE",
+        "ISS_CURITIBA",
+        "ISS_DIGITAL",
+        "NOTA_CARIOCA",
+        "SIMPLISS",
+        "WEBISS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ISS",
+        "MUNICIPAL"
+      ],
+      "article_count": 3,
+      "id": "WH_MUNICIPAL_ISS"
+    },
+    {
+      "webhelp_path": "municipal/iss_digital",
+      "webhelp_display": "Municipal > ISS DIGITAL",
+      "menu_path_normalized": "MUNICIPAL > ISS DIGITAL",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "ISS_DIGITAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ISS DIGITAL",
+        "MUNICIPAL"
+      ],
+      "article_count": 6,
+      "id": "WH_MUNICIPAL_ISS_DIGITAL"
+    },
+    {
+      "webhelp_path": "municipal/iss_digital_bh",
+      "webhelp_display": "Municipal > ISS DIGITAL BH",
+      "menu_path_normalized": "MUNICIPAL > ISS DIGITAL BH",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "ISS_DIGITAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ISS DIGITAL BH",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ISS_DIGITAL_BH"
+    },
+    {
+      "webhelp_path": "municipal/iss_online",
+      "webhelp_display": "Municipal > ISS Online",
+      "menu_path_normalized": "MUNICIPAL > ISS ONLINE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "GISS_ONLINE"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ISS ONLINE",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ISS_ONLINE"
+    },
+    {
+      "webhelp_path": "municipal/iss_online_4r",
+      "webhelp_display": "Municipal > ISS ONLINE 4R",
+      "menu_path_normalized": "MUNICIPAL > ISS ONLINE 4R",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ISS ONLINE 4R",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ISS_ONLINE_4R"
+    },
+    {
+      "webhelp_path": "municipal/iss_rj",
+      "webhelp_display": "Municipal > ISS RJ",
+      "menu_path_normalized": "MUNICIPAL > ISS RJ",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "NOTA_CARIOCA"
+      ],
+      "status": "covered",
+      "keywords": [
+        "ISS RJ",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ISS_RJ"
+    },
+    {
+      "webhelp_path": "municipal/iss_wb_cecam",
+      "webhelp_display": "Municipal > ISS WB CECAM",
+      "menu_path_normalized": "MUNICIPAL > ISS WB CECAM",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ISS WB CECAM",
+        "MUNICIPAL"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_ISS_WB_CECAM"
+    },
+    {
+      "webhelp_path": "municipal/issweb",
+      "webhelp_display": "Municipal > ISS.WEB",
+      "menu_path_normalized": "MUNICIPAL > ISS.WEB",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "ISS.WEB",
+        "MUNICIPAL"
+      ],
+      "article_count": 11,
+      "id": "WH_MUNICIPAL_ISSWEB"
+    },
+    {
+      "webhelp_path": "municipal/nfe_cidades",
+      "webhelp_display": "Municipal > NFE-CIDADES",
+      "menu_path_normalized": "MUNICIPAL > NFE-CIDADES",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "NFE-CIDADES"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_NFE_CIDADES"
+    },
+    {
+      "webhelp_path": "municipal/nota_carioca",
+      "webhelp_display": "Municipal > NOTA CARIOCA",
+      "menu_path_normalized": "MUNICIPAL > NOTA CARIOCA",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "NOTA_CARIOCA"
+      ],
+      "status": "covered",
+      "keywords": [
+        "MUNICIPAL",
+        "NOTA CARIOCA"
+      ],
+      "article_count": 8,
+      "id": "WH_MUNICIPAL_NOTA_CARIOCA"
+    },
+    {
+      "webhelp_path": "municipal/nota_joseense",
+      "webhelp_display": "Municipal > NOTA JOSEENSE",
+      "menu_path_normalized": "MUNICIPAL > NOTA JOSEENSE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "NOTA JOSEENSE"
+      ],
+      "article_count": 6,
+      "id": "WH_MUNICIPAL_NOTA_JOSEENSE"
+    },
+    {
+      "webhelp_path": "municipal/outros",
+      "webhelp_display": "Municipal > outros",
+      "menu_path_normalized": "MUNICIPAL > OUTROS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "OUTROS"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_OUTROS"
+    },
+    {
+      "webhelp_path": "municipal/parametro_para_municipio",
+      "webhelp_display": "Municipal > ParÃ¢metro para MunicÃ­pio",
+      "menu_path_normalized": "MUNICIPAL > PARAMETRO PARA MUNICIPIO",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "PARAMETRO PARA MUNICIPIO"
+      ],
+      "article_count": 7,
+      "id": "WH_MUNICIPAL_PARAMETRO_PARA_MUNICIPIO"
+    },
+    {
+      "webhelp_path": "municipal/remessa_xml",
+      "webhelp_display": "Municipal > REMESSA XML",
+      "menu_path_normalized": "MUNICIPAL > REMESSA XML",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "REMESSA XML"
+      ],
+      "article_count": 3,
+      "id": "WH_MUNICIPAL_REMESSA_XML"
+    },
+    {
+      "webhelp_path": "municipal/rest_goiania",
+      "webhelp_display": "Municipal > REST GoiÃ¢nia",
+      "menu_path_normalized": "MUNICIPAL > REST GOIANIA",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "REST GOIANIA"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_REST_GOIANIA"
+    },
+    {
+      "webhelp_path": "municipal/saatrinfse",
+      "webhelp_display": "Municipal > SAATRI.NFSE",
+      "menu_path_normalized": "MUNICIPAL > SAATRI.NFSE",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "SAATRI.NFSE"
+      ],
+      "article_count": 1,
+      "id": "WH_MUNICIPAL_SAATRINFSE"
+    },
+    {
+      "webhelp_path": "municipal/sao_paulo_financeiras",
+      "webhelp_display": "Municipal > SÃ£o Paulo Financeiras",
+      "menu_path_normalized": "MUNICIPAL > SAO PAULO FINANCEIRAS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "SAO PAULO FINANCEIRAS"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_SAO_PAULO_FINANCEIRAS"
+    },
+    {
+      "webhelp_path": "municipal/sao_paulo_nfts",
+      "webhelp_display": "Municipal > SÃ£o Paulo (NFTS)",
+      "menu_path_normalized": "MUNICIPAL > SAO PAULO (NFTS)",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "SAO PAULO (NFTS)"
+      ],
+      "article_count": 3,
+      "id": "WH_MUNICIPAL_SAO_PAULO_NFTS"
+    },
+    {
+      "webhelp_path": "municipal/sigiss",
+      "webhelp_display": "Municipal > SIGISS",
+      "menu_path_normalized": "MUNICIPAL > SIGISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "SIGISS"
+      ],
+      "article_count": 2,
+      "id": "WH_MUNICIPAL_SIGISS"
+    },
+    {
+      "webhelp_path": "municipal/simpliss",
+      "webhelp_display": "Municipal > SIMPLISS",
+      "menu_path_normalized": "MUNICIPAL > SIMPLISS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [
+        "SIMPLISS"
+      ],
+      "status": "covered",
+      "keywords": [
+        "MUNICIPAL",
+        "SIMPLISS"
+      ],
+      "article_count": 6,
+      "id": "WH_MUNICIPAL_SIMPLISS"
+    },
+    {
+      "webhelp_path": "municipal/todos_os_municipios",
+      "webhelp_display": "Municipal > Todos os MunicÃ­pios",
+      "menu_path_normalized": "MUNICIPAL > TODOS OS MUNICIPIOS",
+      "playwright_mapping_ids": [
+        "E2E_MUNICIPAL_ISS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "MUNICIPAL",
+        "TODOS OS MUNICIPIOS"
+      ],
+      "article_count": 6,
+      "id": "WH_MUNICIPAL_TODOS_OS_MUNICIPIOS"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/dapi_mg",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > DAPI - MG",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > DAPI - MG",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DAPI - MG",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 2,
+      "id": "WH_OBRIGACOES_ESTADUAIS_DAPI_MG"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/declan_rj",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > DECLAN RJ",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > DECLAN RJ",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_DECLAN_IPM_RJ"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DECLAN RJ",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 2,
+      "id": "WH_OBRIGACOES_ESTADUAIS_DECLAN_RJ"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/dime_sc",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > DIME SC",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > DIME SC",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_DIME_SC"
+      ],
+      "suite_automation_ids": [
+        "DIME_SC"
+      ],
+      "status": "covered",
+      "keywords": [
+        "DIME SC",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 3,
+      "id": "WH_OBRIGACOES_ESTADUAIS_DIME_SC"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/dot_es",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > DOT ES",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > DOT ES",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_DOT_ES"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DOT ES",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 1,
+      "id": "WH_OBRIGACOES_ESTADUAIS_DOT_ES"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/fci",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > FCI",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > FCI",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_FCI"
+      ],
+      "suite_automation_ids": [
+        "FCI"
+      ],
+      "status": "covered",
+      "keywords": [
+        "FCI",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 4,
+      "id": "WH_OBRIGACOES_ESTADUAIS_FCI"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/gia_mg",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > GIA MG",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > GIA MG",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+        "E2E_GIA_MG"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "GIA MG",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 3,
+      "id": "WH_OBRIGACOES_ESTADUAIS_GIA_MG"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/gia_pa",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > GIA PA",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > GIA PA",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "GIA PA",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 1,
+      "id": "WH_OBRIGACOES_ESTADUAIS_GIA_PA"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/gia_rs",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > GIA RS",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > GIA RS",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "GIA RS",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 1,
+      "id": "WH_OBRIGACOES_ESTADUAIS_GIA_RS"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/gia_sp",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > GIA-SP",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > GIA-SP",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "GIA-SP",
+        "OBRIGACOES ESTADUAIS"
+      ],
+      "article_count": 5,
+      "id": "WH_OBRIGACOES_ESTADUAIS_GIA_SP"
+    },
+    {
+      "webhelp_path": "obrigacoes_estaduais/ressarcimento_st",
+      "webhelp_display": "ObrigaÃ§Ãµes estaduais > Ressarcimento ST",
+      "menu_path_normalized": "OBRIGACOES ESTADUAIS > RESSARCIMENTO ST",
+      "playwright_mapping_ids": [
+        "E2E_CONTROLE_OBRIGACOES_ESTADUAIS"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "OBRIGACOES ESTADUAIS",
+        "RESSARCIMENTO ST"
+      ],
+      "article_count": 6,
+      "id": "WH_OBRIGACOES_ESTADUAIS_RESSARCIMENTO_ST"
+    },
+    {
+      "webhelp_path": "obrigacoes_federais/dctf",
+      "webhelp_display": "ObrigaÃ§Ãµes federais > DCTF",
+      "menu_path_normalized": "OBRIGACOES FEDERAIS > DCTF",
+      "playwright_mapping_ids": [
+        "E2E_OBRIG_TRIBUTOS_FED_OUTRAS"
+      ],
+      "suite_automation_ids": [
+        "DCTF_MIT"
+      ],
+      "status": "covered",
+      "keywords": [
+        "DCTF",
+        "OBRIGACOES FEDERAIS"
+      ],
+      "article_count": 3,
+      "id": "WH_OBRIGACOES_FEDERAIS_DCTF"
+    },
+    {
+      "webhelp_path": "obrigacoes_federais/dimp",
+      "webhelp_display": "ObrigaÃ§Ãµes federais > DIMP",
+      "menu_path_normalized": "OBRIGACOES FEDERAIS > DIMP",
+      "playwright_mapping_ids": [
+        "E2E_DIMP"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIMP",
+        "OBRIGACOES FEDERAIS"
+      ],
+      "article_count": 11,
+      "id": "WH_OBRIGACOES_FEDERAIS_DIMP"
+    },
+    {
+      "webhelp_path": "obrigacoes_federais/dirf",
+      "webhelp_display": "ObrigaÃ§Ãµes federais > DIRF",
+      "menu_path_normalized": "OBRIGACOES FEDERAIS > DIRF",
+      "playwright_mapping_ids": [
+        "E2E_OBRIG_TRIBUTOS_FED_DIRF"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "DIRF",
+        "OBRIGACOES FEDERAIS"
+      ],
+      "article_count": 6,
+      "id": "WH_OBRIGACOES_FEDERAIS_DIRF"
+    },
+    {
+      "webhelp_path": "obrigacoes_federais/irpj",
+      "webhelp_display": "ObrigaÃ§Ãµes federais > IRPJ",
+      "menu_path_normalized": "OBRIGACOES FEDERAIS > IRPJ",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "IRPJ",
+        "OBRIGACOES FEDERAIS"
+      ],
+      "article_count": 14,
+      "id": "WH_OBRIGACOES_FEDERAIS_IRPJ"
+    },
+    {
+      "webhelp_path": "obrigacoes_federais/perdcomp",
+      "webhelp_display": "ObrigaÃ§Ãµes federais > PERDCOMP",
+      "menu_path_normalized": "OBRIGACOES FEDERAIS > PERDCOMP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "PER_DCOMP"
+      ],
+      "status": "partial",
+      "keywords": [
+        "OBRIGACOES FEDERAIS",
+        "PERDCOMP"
+      ],
+      "article_count": 1,
+      "id": "WH_OBRIGACOES_FEDERAIS_PERDCOMP"
+    },
+    {
+      "webhelp_path": "obrigacoes_municipais",
+      "webhelp_display": "ObrigaÃ§Ãµes municipais",
+      "menu_path_normalized": "OBRIGACOES MUNICIPAIS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "OBRIGACOES MUNICIPAIS"
+      ],
+      "article_count": 17,
+      "id": "WH_OBRIGACOES_MUNICIPAIS__GERAL"
+    },
+    {
+      "webhelp_path": "obrigacoes_telecom/convenio115",
+      "webhelp_display": "ObrigaÃ§Ãµes Telecom > Convenio115",
+      "menu_path_normalized": "OBRIGACOES TELECOM > CONVENIO115",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "CONVENIO115",
+        "OBRIGACOES TELECOM"
+      ],
+      "article_count": 6,
+      "id": "WH_OBRIGACOES_TELECOM_CONVENIO115"
+    },
+    {
+      "webhelp_path": "oil_e_gas/i_simp",
+      "webhelp_display": "OIL e GAS > I_SIMP",
+      "menu_path_normalized": "OIL E GAS > I_SIMP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "I_SIMP",
+        "OIL E GAS"
+      ],
+      "article_count": 3,
+      "id": "WH_OIL_E_GAS_I_SIMP"
+    },
+    {
+      "webhelp_path": "oil_e_gas/scanc",
+      "webhelp_display": "OIL e GAS > SCANC",
+      "menu_path_normalized": "OIL E GAS > SCANC",
+      "playwright_mapping_ids": [
+        "E2E_COMBUSTIVEIS_REFINARIA"
+      ],
+      "suite_automation_ids": [
+        "SCANC"
+      ],
+      "status": "covered",
+      "keywords": [
+        "OIL E GAS",
+        "SCANC"
+      ],
+      "article_count": 4,
+      "id": "WH_OIL_E_GAS_SCANC"
+    },
+    {
+      "webhelp_path": "onesource_tax_one",
+      "webhelp_display": "ONESOURCE Tax One",
+      "menu_path_normalized": "ONESOURCE TAX ONE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ONESOURCE TAX ONE"
+      ],
+      "article_count": 1,
+      "id": "WH_ONESOURCE_TAX_ONE__GERAL"
+    },
+    {
+      "webhelp_path": "onesource_tax_one/ferramentas",
+      "webhelp_display": "ONESOURCE Tax One > Ferramentas",
+      "menu_path_normalized": "ONESOURCE TAX ONE > FERRAMENTAS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [
+        "FERRAMENTAS"
+      ],
+      "status": "partial",
+      "keywords": [
+        "FERRAMENTAS",
+        "ONESOURCE TAX ONE"
+      ],
+      "article_count": 1,
+      "id": "WH_ONESOURCE_TAX_ONE_FERRAMENTAS"
+    },
+    {
+      "webhelp_path": "onesource_tax_one/icms",
+      "webhelp_display": "ONESOURCE Tax One > ICMS",
+      "menu_path_normalized": "ONESOURCE TAX ONE > ICMS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ICMS",
+        "ONESOURCE TAX ONE"
+      ],
+      "article_count": 1,
+      "id": "WH_ONESOURCE_TAX_ONE_ICMS"
+    },
+    {
+      "webhelp_path": "onesource_tax_one/parametros",
+      "webhelp_display": "ONESOURCE Tax One > ParÃ¢metros",
+      "menu_path_normalized": "ONESOURCE TAX ONE > PARAMETROS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ONESOURCE TAX ONE",
+        "PARAMETROS"
+      ],
+      "article_count": 1,
+      "id": "WH_ONESOURCE_TAX_ONE_PARAMETROS"
+    },
+    {
+      "webhelp_path": "onesource_tax_one/sftp",
+      "webhelp_display": "ONESOURCE Tax One > SFTP",
+      "menu_path_normalized": "ONESOURCE TAX ONE > SFTP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "ONESOURCE TAX ONE",
+        "SFTP"
+      ],
+      "article_count": 1,
+      "id": "WH_ONESOURCE_TAX_ONE_SFTP"
+    },
+    {
+      "webhelp_path": "outros",
+      "webhelp_display": "Outros",
+      "menu_path_normalized": "OUTROS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [],
+      "article_count": 21,
+      "id": "WH_OUTROS__GERAL"
+    },
+    {
+      "webhelp_path": "sped/efd_contribuicoes",
+      "webhelp_display": "SPED > EFD - ContribuiÃ§Ãµes",
+      "menu_path_normalized": "SPED > EFD - CONTRIBUICOES",
+      "playwright_mapping_ids": [
+        "E2E_EFD_CONTRIB_FIN_ASSEMELHADA"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "EFD - CONTRIBUICOES",
+        "SPED"
+      ],
+      "article_count": 236,
+      "id": "WH_SPED_EFD_CONTRIBUICOES"
+    },
+    {
+      "webhelp_path": "sped/efd_contribuicoes_financeiraassemelhada",
+      "webhelp_display": "SPED > EFD - ContribuiÃ§Ãµes Financeira/Assemelhada",
+      "menu_path_normalized": "SPED > EFD - CONTRIBUICOES FINANCEIRA/ASSEMELHADA",
+      "playwright_mapping_ids": [
+        "E2E_EFD_CONTRIB_FIN_ASSEMELHADA"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "EFD - CONTRIBUICOES FINANCEIRA/ASSEMELHADA",
+        "SPED"
+      ],
+      "article_count": 1,
+      "id": "WH_SPED_EFD_CONTRIBUICOES_FINANCEIRAASSEMELHADA"
+    },
+    {
+      "webhelp_path": "sped/efd_ecd",
+      "webhelp_display": "SPED > EFD - ECD",
+      "menu_path_normalized": "SPED > EFD - ECD",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "EFD - ECD",
+        "SPED"
+      ],
+      "article_count": 90,
+      "id": "WH_SPED_EFD_ECD"
+    },
+    {
+      "webhelp_path": "sped/efd_reinf",
+      "webhelp_display": "SPED > EFD - REINF",
+      "menu_path_normalized": "SPED > EFD - REINF",
+      "playwright_mapping_ids": [
+        "E2E_REINF_CALCULO_CPRB",
+        "E2E_REINF_PARAMETROS",
+        "E2E_REINF_REINF",
+        "E2E_REINF_RELATORIO"
+      ],
+      "suite_automation_ids": [],
+      "status": "partial",
+      "keywords": [
+        "EFD - REINF",
+        "SPED"
+      ],
+      "article_count": 169,
+      "id": "WH_SPED_EFD_REINF"
+    },
+    {
+      "webhelp_path": "sped/sped_contabil",
+      "webhelp_display": "SPED > SPED ContÃ¡bil",
+      "menu_path_normalized": "SPED > SPED CONTABIL",
+      "playwright_mapping_ids": [
+        "E2E_ECD_GERACAO"
+      ],
+      "suite_automation_ids": [
+        "SPED_CONTABIL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "SPED",
+        "SPED CONTABIL"
+      ],
+      "article_count": 32,
+      "id": "WH_SPED_SPED_CONTABIL"
+    },
+    {
+      "webhelp_path": "sped/sped_fiscal",
+      "webhelp_display": "SPED > SPED Fiscal",
+      "menu_path_normalized": "SPED > SPED FISCAL",
+      "playwright_mapping_ids": [
+        "E2E_SPED_FISCAL_GERACAO"
+      ],
+      "suite_automation_ids": [
+        "SPED_FISCAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "BLOCO 0",
+        "BLOCO 1000",
+        "BLOCO B",
+        "BLOCO C",
+        "BLOCO D",
+        "BLOCO E",
+        "BLOCO G",
+        "BLOCO H",
+        "BLOCO K",
+        "PARAMETROS"
+      ],
+      "article_count": 292,
+      "id": "WH_SPED_SPED_FISCAL"
+    },
+    {
+      "webhelp_path": "speds",
+      "webhelp_display": "Speds",
+      "menu_path_normalized": "SPEDS",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "SPEDS"
+      ],
+      "article_count": 9,
+      "id": "WH_SPEDS__GERAL"
+    },
+    {
+      "webhelp_path": "speds/sped_fiscal",
+      "webhelp_display": "Speds > Sped Fiscal",
+      "menu_path_normalized": "SPEDS > SPED FISCAL",
+      "playwright_mapping_ids": [
+        "E2E_SPED_FISCAL_GERACAO"
+      ],
+      "suite_automation_ids": [
+        "SPED_FISCAL"
+      ],
+      "status": "covered",
+      "keywords": [
+        "SPED FISCAL",
+        "SPEDS"
+      ],
+      "article_count": 2,
+      "id": "WH_SPEDS_SPED_FISCAL"
+    },
+    {
+      "webhelp_path": "tax_one/migracao_dw_para_tax_one",
+      "webhelp_display": "Tax One > MigraÃ§Ã£o DW para Tax One",
+      "menu_path_normalized": "TAX ONE > MIGRACAO DW PARA TAX ONE",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "MIGRACAO DW PARA TAX ONE",
+        "TAX ONE"
+      ],
+      "article_count": 1,
+      "id": "WH_TAX_ONE_MIGRACAO_DW_PARA_TAX_ONE"
+    },
+    {
+      "webhelp_path": "tecnico",
+      "webhelp_display": "TÃ©cnico",
+      "menu_path_normalized": "TECNICO",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "TECNICO"
+      ],
+      "article_count": 2,
+      "id": "WH_TECNICO__GERAL"
+    },
+    {
+      "webhelp_path": "tr_scanc_agent",
+      "webhelp_display": "TR SCANC Agent",
+      "menu_path_normalized": "TR SCANC AGENT",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "TR SCANC AGENT"
+      ],
+      "article_count": 1,
+      "id": "WH_TR_SCANC_AGENT__GERAL"
+    },
+    {
+      "webhelp_path": "tr_transfer_files_sftp",
+      "webhelp_display": "TR - Transfer Files - SFTP",
+      "menu_path_normalized": "TR - TRANSFER FILES - SFTP",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "TR - TRANSFER FILES (SFTP)",
+        "TR - TRANSFER FILES - SFTP"
+      ],
+      "article_count": 13,
+      "id": "WH_TR_TRANSFER_FILES_SFTP__GERAL"
+    },
+    {
+      "webhelp_path": "xsa",
+      "webhelp_display": "XSA",
+      "menu_path_normalized": "XSA",
+      "playwright_mapping_ids": [],
+      "suite_automation_ids": [],
+      "status": "gap",
+      "keywords": [
+        "XSA"
+      ],
+      "article_count": 1,
+      "id": "WH_XSA__GERAL"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "version": "1.0.0",
+  "description": "Mapa de configuracao de login/modulo para navegacao ate cada tela do TAX ONE. Usado pelo agente taxone-explorer para saber qual empresa, agrupamento e modulo selecionar antes de navegar pelo menu.",
+  "default_config": {
+    "empresa": "076 - DEMOSTRACAO TSL - TECNOLOGIA EM SISTEMAS DE LEGISLACAO S/A",
+    "estabelecimento": "0001 - ESTAB Testes chamados PATCH's",
+    "agrupamento": null,
+    "modulo": null
+  },
+  "navigation_configs": {
+    "BASICO > JOB SERVIDOR": {
+      "agrupamento": "Básicos",
+      "modulo": "Job Servidor"
+    },
+    "BASICO > DATA WAREHOUSE": {
+      "agrupamento": "Básicos",
+      "modulo": "Data Warehouse"
+    },
+    "BASICO > CADASTRO GERAL": {
+      "agrupamento": "Básicos",
+      "modulo": "Cadastro Geral"
+    },
+    "BASICO > CONFIGURACAO": {
+      "agrupamento": "Básicos",
+      "modulo": "Configuração"
+    },
+    "ESTADUAL > ICMS": {
+      "agrupamento": "Estadual",
+      "modulo": "ICMS"
+    },
+    "ESTADUAL > ICMS-ST": {
+      "agrupamento": "Estadual",
+      "modulo": "ICMS-ST"
+    },
+    "ESTADUAL > DIFAL": {
+      "agrupamento": "Estadual",
+      "modulo": "DIFAL"
+    },
+    "ESTADUAL > IPI": {
+      "agrupamento": "Estadual",
+      "modulo": "IPI"
+    },
+    "FEDERAL > PIS COFINS": {
+      "agrupamento": "Federal",
+      "modulo": "PIS/COFINS"
+    },
+    "FEDERAL > IRPJ CSLL": {
+      "agrupamento": "Federal",
+      "modulo": "IRPJ/CSLL"
+    },
+    "FEDERAL > RETENCOES": {
+      "agrupamento": "Federal",
+      "modulo": "Retenções"
+    },
+    "FEDERAL > CPRB": {
+      "agrupamento": "Federal",
+      "modulo": "CPRB"
+    },
+    "MUNICIPAL > ISS": {
+      "agrupamento": "Municipal",
+      "modulo": "ISS"
+    },
+    "SPED > EFD FISCAL": {
+      "agrupamento": "SPED",
+      "modulo": "EFD Fiscal"
+    },
+    "SPED > EFD CONTRIBUICOES": {
+      "agrupamento": "SPED",
+      "modulo": "EFD Contribuições"
+    },
+    "SPED > ECF": {
+      "agrupamento": "SPED",
+      "modulo": "ECF"
+    },
+    "SPED > ECD": {
+      "agrupamento": "SPED",
+      "modulo": "ECD"
+    },
+    "SPED > REINF": {
+      "agrupamento": "SPED",
+      "modulo": "REINF"
+    },
+    "OBRIGACOES > GIA": {
+      "agrupamento": "Obrigações",
+      "modulo": "GIA"
+    },
+    "OBRIGACOES > DCTF": {
+      "agrupamento": "Obrigações",
+      "modulo": "DCTF"
+    },
+    "OBRIGACOES > SINTEGRA": {
+      "agrupamento": "Obrigações",
+      "modulo": "Sintegra"
+    },
+    "OBRIGACOES > DIME": {
+      "agrupamento": "Obrigações",
+      "modulo": "DIME"
+    },
+    "OBRIGACOES > DECLAN": {
+      "agrupamento": "Obrigações",
+      "modulo": "DECLAN"
+    },
+    "OBRIGACOES > CAT 83/08": {
+      "agrupamento": "Obrigações",
+      "modulo": "CAT 83/08"
+    },
+    "OBRIGACOES > DES-IF": {
+      "agrupamento": "Obrigações",
+      "modulo": "DES-IF"
+    },
+    "RELATORIOS > RELATORIOS": {
+      "agrupamento": "Relatórios",
+      "modulo": "Relatórios"
+    }
+  },
+  "notes": {
+    "matching_strategy": "Usar prefixo mais longo. Ex: WI com menu_path 'ESTADUAL > ICMS > APURACAO' casa com config 'ESTADUAL > ICMS'. O restante ('APURACAO') eh navegado pelo menu.",
+    "empresa_override": "Para WIs que mencionam empresa especifica, sobrescrever o default_config.empresa.",
+    "estabelecimento_override": "Idem para estabelecimento."
+  }
+}

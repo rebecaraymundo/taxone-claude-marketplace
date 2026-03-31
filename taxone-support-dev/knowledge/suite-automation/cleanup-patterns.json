@@ -1,0 +1,4758 @@
+{
+  "APT_AQUISICAO": {
+    "delete_count": 5,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_estab = 'RSA10' and num_docfis in ('9856', '9857', '9858', '9859')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_estab = 'RSA10'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and num_docfis = '5904742' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "CAD_IMP_REGRA": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "nom_tab_work='SAFX07' and NOME_CAMPO='VLR_TOT_NOTA' and IND_SOBREPOE='S' and NUM_ORDEM='8840'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "CBT_ANEXO6M_QUADR4A15": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = '3465'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "CENTRAL_ESCRIT_CONTABIL": {
+    "delete_count": 38,
+    "unique_patterns": 8,
+    "examples": [
+      {
+        "where": "cod_estab_central = 'PISCOF'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "cod_estab_central = '3710'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "cod_estab_central = 'COFPIS'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "cod_estab_central = 'PC-GE'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "cod_estab in ('COFPIS','PC-GE','PISCOF')",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "COTEPE_DET_PERFIL": {
+    "delete_count": 19,
+    "unique_patterns": 13,
+    "examples": [
+      {
+        "where": "cod_layout = 'EFD117'",
+        "source": "ESTADUAL\\CT_RESS_MG.xml"
+      },
+      {
+        "where": "cod_layout='EF320A' AND COD_PERFIL='ALL' AND COD_BLOCO='0' AND COD_REGISTRO='0900'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "COD_LAYOUT = 'EFD116'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      },
+      {
+        "where": "COD_LAYOUT = 'EFD117'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      },
+      {
+        "where": "COD_LAYOUT = 'EFD118'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "DWT_CANAIS_DISTRIB": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_canal_distrib in ('123456789123499','CANALOBRA123499') and data_abertura between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_canal_distrib in ('123456789123456','CANALOBRA123456') and data_abertura between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "DWT_COD_AJUSTE_SPED": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_ajuste_sped = 'AM10010007'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "DWT_CONV_MEDIDA": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "GRUPO_MEDIDA = '02' AND COD_MEDIDA_ORIG = 'CX' AND COD_MEDIDA_DEST = 'UN'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "DW_IMPORTA_ARQUIVO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "ESTADUAL\\CT_DIA_AM.xml"
+      }
+    ]
+  },
+  "EFD_DADOS_INICIAIS_PISCOF": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = 'COFPIS'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "EFD_INF_ADIC_APUR": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_inf_adic = 'AC08' and dsc_inf = 'TESTE'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "EFD_REG_1400": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "data_ini between to_date('01/05/2025', 'dd/mm/yyyy') and",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "data_ini between to_date('01/02/2026', 'dd/mm/yyyy') and",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "data_ini between to_date('01/02/2026','dd/mm/yyyy') and",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "EPC_APUR_CRED_DISP": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_reg = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "EPC_LINHAS_ARQUIVO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "EPC_PER_DISPENSADOS": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and ano_calendario = 2025 and mes_apresent = '06'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and ano_calendario = 2025 and mes_apresent = '07'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "EPC_RATEIO_CRED_COMUM": {
+    "delete_count": 7,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND DATA_COMPET = '01/10/2011'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND DATA_COMPET = to_date('01/02/2011','dd/mm/yyyy')",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "DATA_COMPET = '01/01/2012'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND DATA_COMPET = to_date('01/08/2012','dd/mm/yyyy')",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "EPC_REG_AJT_M110_M510": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "ID_REG_M110_M510 IN (SELECT ID_REG_M110_M510 from epc_reg_ajt_m110_m510 WHERE ID_REG_M100_M500 IN",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      },
+      {
+        "where": "ID_REG_M100_M500 IN",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "ESP_SP_CEST_ST": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and ident_estado= '73' and COD_CEST = '0100100' and VALID_INICIAL = to_date('01-08-2019', 'dd-mm-yyyy')",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      },
+      {
+        "where": "ident_estado='73' and cod_cest in ('1001000', '1001400', '1003000', '1003001', '1004400') and VALID_INICIAL = to_date('01-01-2019', 'dd-mm-yyyy')",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      }
+    ]
+  },
+  "ESP_SP_NBM_ST": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and ident_estado='73' and COD_NBM in ('04022110','26063000') and VALID_INICIAL = to_date('01-08-2019', 'dd-mm-yyyy')",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      },
+      {
+        "where": "ident_estado='73' and cod_nbm in ('72279000') and VALID_INICIAL = to_date('01-01-2019', 'dd-mm-yyyy')",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      }
+    ]
+  },
+  "ESP_SP_PROD_ST": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and ident_estado= '73' and cod_produto in ('001','004') and VALID_INICIAL = to_date('01-08-2019', 'dd-mm-yyyy')",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      }
+    ]
+  },
+  "ESTABELECIMENTO": {
+    "delete_count": 3,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHT9'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'DDD'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "EST_DIA_AM_CAPA_DOC": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa ='076' and cod_estab = '754402' and NUM_AUTENTIC_NFE = '35250106103827000107550000000633421918461940'",
+        "source": "ESTADUAL\\CT_DIA_AM.xml"
+      }
+    ]
+  },
+  "EST_DIA_AM_ITEM_DOC": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa ='076' and cod_estab = '754402'and NUM_AUTENTIC_NFE =  '35250106103827000107550000000633421918461940'",
+        "source": "ESTADUAL\\CT_DIA_AM.xml"
+      }
+    ]
+  },
+  "EST_RJ_DECLAN_COD_MODELO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "tipo_codigo = '2' and codigo = '1' and grupo_modelo = '02' and cod_modelo in ('01')",
+        "source": "ESTADUAL\\CT_DECLAN_RJ.xml"
+      }
+    ]
+  },
+  "FDT_PFJ_FUNRURAL": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "GRUPO_FIS_JUR = 'GRP25'",
+        "source": "FEDERAL\\CT_FUNRURAL.xml"
+      }
+    ]
+  },
+  "FDT_PRD_FUNRURAL": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "GRUPO_PRODUTO = 'GRP25'",
+        "source": "FEDERAL\\CT_FUNRURAL.xml"
+      }
+    ]
+  },
+  "FPAR_PARAM_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'DDD'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "GUIA_RECOLHIMENTO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_guia_recol = '123'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_AM_DCR": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_AM_DCR_PRD": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_APUR_INCE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and cod_tipo_livro in('142','143') and sub_serie_livro='01' and dat_apuracao=TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_AP_CALC_INCE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and cod_tipo_livro in('142','143') and sub_serie_livro='01' and dat_apuracao=TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_AP_DISC_INCE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and cod_tipo_livro in('142','143') and sub_serie_livro='01' and dat_apuracao=TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_DEBITO_ESP": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA='077' AND COD_ESTAB = 'REPA' AND DAT_APURACAO = to_date('31/05/2024','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_DEBITO_ESP_AJ": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA='077' AND COD_ESTAB = 'REPA' AND DAT_APURACAO = to_date('31/05/2024','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_GNRE_OL_GUIA": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "COD_EMPRESA='076' AND COD_ESTAB='MF4626' AND SEQUENCIAL='1' AND DATA_APURACAO = TO_DATE('30/03/2025','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_GNRE.xml"
+      },
+      {
+        "where": "cod_empresa='077' and cod_estab='GNRE_S' and data_apuracao between to_date('01/12/2024','dd/mm/yyyy') and  to_date('31/12/2024','dd/mm/yyyy')",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "ICT_GNRE_OL_UF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "IDENT_ESTADO='59' AND COD_GNRE='100102' AND NUM_CAMPO_EXTRA1='102'",
+        "source": "ESTADUAL\\CT_GNRE.xml"
+      }
+    ]
+  },
+  "ICT_GNRE_OL_UF_REC": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "IDENT_ESTADO='59' AND COD_GNRE='100102' AND NUM_CONVENIO='93/2015'",
+        "source": "ESTADUAL\\CT_GNRE.xml"
+      }
+    ]
+  },
+  "ICT_GUIA_GNRE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and cod_gnre = '1234555'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ICT_GUIA_INCENT": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and serie_livro in ('A','B') and sub_serie_livro='01' and data_fiscal between TO_DATE('01/11/2021','DD/MM/YYYY') and TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_GUIA_REC_INCE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and cod_tipo_livro in('142','143') and sub_serie_livro='01' and dat_apuracao=TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_IT_AP_CAL_IES": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = '3114'",
+        "source": "ESTADUAL\\CT_CIAP.xml"
+      }
+    ]
+  },
+  "ICT_LVR_P3": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_Estab = '2933C' and data_movto between to_date('01/10/2013','dd/mm/yyyy') and to_date('31/10/2013','dd/mm/yyyy')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P3.xml"
+      }
+    ]
+  },
+  "ICT_PAR_APURAC": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "ICT_PAR_ICMS_UF": {
+    "delete_count": 9,
+    "unique_patterns": 5,
+    "examples": [
+      {
+        "where": "ident_estado = 69 and dsc_param = '67'",
+        "source": "ESTADUAL\\CT_DECLAN_RJ.xml"
+      },
+      {
+        "where": "ident_estado = 54 and dsc_param = '67'",
+        "source": "ESTADUAL\\CT_MEIO_MAG.xml"
+      },
+      {
+        "where": "ident_estado ='68' AND DSC_PARAM IN ('67','92')",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      },
+      {
+        "where": "IDENT_ESTADO = 55",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      },
+      {
+        "where": "ident_estado='76' and dsc_param = 67",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "ICT_RES_ALIQ_INCE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab='74877C' and cod_tipo_livro in('142','143') and sub_serie_livro='01' and dat_apuracao=TO_DATE('30/11/2021','DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "ICT_TC_CENTRALIZA": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_estab in ('36422A', '36422B', '36422C', '36422F') and dat_apuracao = to_date('31012022','ddmmyyyy') and cod_tipo_livro = '108'",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9.xml"
+      },
+      {
+        "where": "cod_estab  in ('36422D', '36422E') and dat_apuracao = to_date('31012022','ddmmyyyy') and cod_tipo_livro = '108'",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_DIFAL_NF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_REPORT_FISCAL.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_DISCR_AJUSTE": {
+    "delete_count": 9,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_estab = '513125'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_estab = 'CB001'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_DISCR_X113": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab in ('76802H','76802P') and data_fiscal BETWEEN TO_DATE('01/02/2022','DD/MM/YYYY') AND TO_DATE('28/02/2022','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_SUBST": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = 'OS4027'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_SUBST_AJUSTE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = 'OS4027'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "ITEM_APURAC_SUBST_X113": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND cod_estab ='001SC' AND DATA_FISCAL = '10/04/2024' AND NUM_DOCFIS ='77039'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "JOB_EXP_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'DDD'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "LIB_PROCESSO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "proc_id = 1",
+        "source": "FEDERAL\\CT_APURACAO_IPI.xml"
+      }
+    ]
+  },
+  "LIB_PROC_LOG": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "(upper(texto) like '%LOG DE PROCESSO:%' OR upper(texto) like '%DT. PROCESSAMENTO :%') and proc_id = #CAMPOINTEGER",
+        "source": "FEDERAL\\CT_APURACAO_IPI.xml"
+      }
+    ]
+  },
+  "LIB_PROC_SAIDA": {
+    "delete_count": 39,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "proc_id = #PROCID",
+        "source": "ESTADUAL\\CT_CONVENIO115.xml"
+      }
+    ]
+  },
+  "LOG_DET_PROC": {
+    "delete_count": 15,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "num_processo=#NOVOIDENT and cod_erro='999996'",
+        "source": "ESTADUAL\\CT_ICMS_LIVRO_P9_PRODEPE.xml"
+      }
+    ]
+  },
+  "PRT_CFO_MSAF": {
+    "delete_count": 8,
+    "unique_patterns": 6,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3465b' and cod_param = '108' and cod_cfo = '1603'",
+        "source": "ESPECIFICOS\\CT_SCANC.xml"
+      },
+      {
+        "where": "COD_EMPRESA ='076' AND COD_ESTAB ='OS2961' AND COD_PARAM = 447 AND COD_CFO ='1201'",
+        "source": "ESTADUAL\\CT_MEIO_MAG.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 730 AND COD_CFO = '1152'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 730 AND COD_CFO = '1409'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 734 AND COD_CFO = '5102'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      }
+    ]
+  },
+  "PRT_CFO_UF_MSAF": {
+    "delete_count": 7,
+    "unique_patterns": 6,
+    "examples": [
+      {
+        "where": "COD_EMPRESA ='076' and ident_estado = 76 and cod_param = 484",
+        "source": "ESTADUAL\\CT_MEIO_MAG.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 730 AND COD_CFO = '1152'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 731 AND COD_CFO = '1409'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 732 AND COD_CFO = '5102'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 730 AND COD_CFO = '1409'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      }
+    ]
+  },
+  "PRT_CIDADE_MSAF_OBRIG": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "VALID_INICIAL = '01/01/2024'",
+        "source": "ESPECIFICOS\\CT_ISIMP.xml"
+      }
+    ]
+  },
+  "PRT_EXTCFO_MSAF": {
+    "delete_count": 4,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "COD_EMPRESA ='076' AND COD_ESTAB ='OS2961' AND COD_PARAM =448 AND COD_CFO ='1201' AND GRUPO_NATUREZA_OP ='GRP01' AND COD_NATUREZA_OP ='999'",
+        "source": "ESTADUAL\\CT_MEIO_MAG.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 730 AND COD_CFO = '1152' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 730 AND COD_CFO = '1409' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'M28382' AND COD_PARAM = 734 AND COD_CFO = '5102' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      }
+    ]
+  },
+  "PRT_EXTCFO_UF_MSAF": {
+    "delete_count": 4,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 730 AND COD_CFO = '1152' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 730 AND COD_CFO = '1409' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076' AND IDENT_ESTADO = 76 AND COD_PARAM = 734 AND COD_CFO = '5102' AND GRUPO_NATUREZA_OP = '02' AND COD_NATUREZA_OP = '662'",
+        "source": "ESTADUAL\\CT_RESS_ICMS_ST_PORT42.xml"
+      },
+      {
+        "where": "cod_cfo = '1403'and ident_estado = 73 and cod_param = '770' and GRUPO_NATUREZA_OP = 'GRP24' and COD_NATUREZA_OP = '018'",
+        "source": "ESTADUAL\\CT_RESS_RS.xml"
+      }
+    ]
+  },
+  "PRT_IDENTIFICA_NAT_REND": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_nat_rend = '15012' and cod_servico_nat_rend = '1701'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "PRT_NBM_MSAF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "prt_nbm_msaf.cod_empresa = '076' and prt_nbm_msaf.cod_estab = 'LALUR3' and prt_nbm_msaf.cod_param =588",
+        "source": "FEDERAL\\CT_PER_DCOMP.xml"
+      }
+    ]
+  },
+  "PRT_NOTA_C_S_RETENCAO": {
+    "delete_count": 3,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "COD_VALIDADOR = 'NFSE ABACO' and COD_EMPRESA = '076'",
+        "source": "MUNICIPAL\\CT_NFSE_ABACO.xml"
+      },
+      {
+        "where": "COD_VALIDADOR = 'NOTA CARIOCA' and COD_EMPRESA = '076'",
+        "source": "MUNICIPAL\\CT_NOTA_CARIOCA.xml"
+      }
+    ]
+  },
+  "PRT_OPER_OBRIG_CFO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "valid_inicial between to_date('01/01/2025', 'dd/mm/yyyy') and",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "PRT_OPER_OBRIG_EXTCFO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "valid_inicial between to_date('01/01/2025', 'dd/mm/yyyy') and",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "PRT_PFJ_MSAF": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3465b' and cod_fis_jur = '543052' and cod_param = '104'",
+        "source": "ESPECIFICOS\\CT_SCANC.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3465b' and cod_fis_jur = 'MMC_SE' and cod_param = '104'",
+        "source": "ESPECIFICOS\\CT_SCANC.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076'",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "PRT_SERIE_MODELO_MSAF_OBRIG": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_MODULO = '310'",
+        "source": "MUNICIPAL\\CT_ISS_WEB.xml"
+      }
+    ]
+  },
+  "PRT_SERVICO_MUNIC_MSAF": {
+    "delete_count": 8,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076'",
+        "source": "MUNICIPAL\\CT_ATENDENET.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "MUNICIPAL\\CT_NOTA_CARIOCA.xml"
+      },
+      {
+        "where": "ident_estado = '59'",
+        "source": "MUNICIPAL\\CT_REST_GOI.xml"
+      }
+    ]
+  },
+  "PRT_TP_DOCTO_MSAF_OBRIG": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "VALID_INICIAL = '01/02/2025'",
+        "source": "MUNICIPAL\\CT_ATENDENET.xml"
+      }
+    ]
+  },
+  "REGISTRO_ESTADUAL": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa='076' and cod_estab='MF4626' and ident_estado='68'",
+        "source": "ESTADUAL\\CT_GNRE.xml"
+      }
+    ]
+  },
+  "REINF_CONF_PREVIDENCIARIA": {
+    "delete_count": 6,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA   = '077'",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_CONF_PREV_AJUSTE": {
+    "delete_count": 7,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149' and data_ini between to_date('01/03/2025','dd/mm/yyyy') and to_date('01/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '077'",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_CONF_PREV_NF": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077'",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_APUR": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_ESTAB": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_LIMPA_EVENTOS": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_LOG_MSG": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R1000_CONTRIB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "ID_PGER_ESTAB   = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R1050_ENT": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "ID_PGER_ESTAB   = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R1070_PROC_ADJ": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "ID_PGER_ESTAB   = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R2010_TOM": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R2020_PREST": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R2020_TOM": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "ID_R2020_PREST = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      },
+      {
+        "where": "ID_R2020_TOM in (#CAMPOINTEGER,#CAMPOINTEGER -1)",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R2050_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R2055_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R4010_ESTAB": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R4020_ESTAB": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R4040_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R4080_ESTAB": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "id_pger_apur = #CAMPOINTEGER",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "REINF_PGER_R9000_OC": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "SAFX01": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = '43202O2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '077' and cod_estab = '4302O2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX02": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX03": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX04": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX05": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX06": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX07": {
+    "delete_count": 52,
+    "unique_patterns": 18,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001PR'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX08": {
+    "delete_count": 45,
+    "unique_patterns": 11,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001PR'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa IN ('077') AND cod_estab in ('M89634')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX09": {
+    "delete_count": 13,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('01')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '077' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX10": {
+    "delete_count": 11,
+    "unique_patterns": 5,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA2' and data_movto between '01/04/2025' and '30/04/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX100": {
+    "delete_count": 6,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_estado = 'SE' and cod_produto = '51009'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_produto like 'PRODUTO 60 POSI%'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX101": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'OS3055'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX102": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'OS3055'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX103": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'WOO'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX104": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_produto = 'L80143-5087'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX106": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'ISSMAR'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX108": {
+    "delete_count": 5,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX109": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX110": {
+    "delete_count": 5,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3351' and num_docfis = '6565'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '4757'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX112": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa='077'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF2549'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX113": {
+    "delete_count": 7,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='077'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('25601')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX114": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX116": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX119": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX120": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX125": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX13": {
+    "delete_count": 10,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '2931BA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX135": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX136": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX137": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX138": {
+    "delete_count": 5,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '4757'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX145": {
+    "delete_count": 7,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX147": {
+    "delete_count": 9,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX148": {
+    "delete_count": 6,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '603094'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX15": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX154": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX158": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX16": {
+    "delete_count": 10,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX160": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX161": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX162": {
+    "delete_count": 8,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX163": {
+    "delete_count": 6,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa IN ('077') AND cod_estab in ('M91843')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'WOO'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX169": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'C14286'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX17": {
+    "delete_count": 9,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX18": {
+    "delete_count": 8,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX183": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX185": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX187": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX19": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '603094'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX190": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX191": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX192": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX194": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001SP' and data_fiscal between '01/01/2018' and '31/01/2018'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX198": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('3582')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2001": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2002": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2003": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2004": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2005": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2006": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2007": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2009": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX201": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M45559'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa IN ('076')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_EXPORTA_SAFX_CSV.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3111'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2010": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2013": {
+    "delete_count": 22,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "DATA_PRODUTO='20140101' AND IND_PRODUTO||'-'||COD_PRODUTO='1-XJBR-01619'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2017": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2018": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX202": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M45559'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2020": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2024": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2043": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX205": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M28767'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2053": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2054": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3582' and cod_unid_imob = '435714'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2056": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX206": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2063": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2064": {
+    "delete_count": 8,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHT9'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'DDD'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX2081": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2086": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX21": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2101": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2103": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2104": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2113": {
+    "delete_count": 6,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'REINFP'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX2114": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2117": {
+    "delete_count": 6,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2118": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX2119": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '690007'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX213": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF6657'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX218": {
+    "delete_count": 14,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX219": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX223": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX224": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('INC')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX226": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4878'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX227": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4878'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX231": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4467'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX235": {
+    "delete_count": 7,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX236": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX25": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX252": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX253": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA1'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX254": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX261": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX266": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX267": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX268": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX271": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX274": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '547432'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX275": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX276": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX277": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX278": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX279": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX282": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX283": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX284": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX293": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA1'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX295": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX300": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX3007": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX3008": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX3009": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX301": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX3042": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX3043": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX305": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX309": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'REPA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX311": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'REPA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX312": {
+    "delete_count": 9,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX313": {
+    "delete_count": 8,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_FERRAMENTAS.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX314": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX316": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX319": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX320": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX322": {
+    "delete_count": 6,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX323": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'ISIMP2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX324": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX326": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3465b'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'TESTRS'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX327": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX328": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX329": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX330": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX331": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX332": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'NFCOM'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX333": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '00'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX334": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX335": {
+    "delete_count": 3,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_EXPORTA_SAFX_CSV.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '601224'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX336": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3248'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX337": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX338": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX339": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX34": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX340": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX341": {
+    "delete_count": 6,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX37": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX38": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX39": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX42": {
+    "delete_count": 22,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MKC1'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M45559'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX43": {
+    "delete_count": 12,
+    "unique_patterns": 5,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MKC1'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA10'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX431": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX432": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX44": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX47": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX48": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA1'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX481": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX49": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX50": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '6733'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX500": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX501": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX51": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'ZACRE'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX52": {
+    "delete_count": 12,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('077','076') AND cod_estab in ('A81320')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX520": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX53": {
+    "delete_count": 9,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX531": {
+    "delete_count": 8,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX532": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX533": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX534": {
+    "delete_count": 6,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX535": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX536": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+      }
+    ]
+  },
+  "SAFX537": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('526768')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'SCP001'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX539": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'SCP001'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX540": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'REINFP'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX62": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX63": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'REINFP'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX70": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX71": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_produto = '01'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX72": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001SC'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX75": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '603094'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX80": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'REINFP'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX82": {
+    "delete_count": 11,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX83": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX85": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SAFX91": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX96": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "SAFX994": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M77615'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'M77615'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "SPED_LIVRO_OFIC_CTR": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'TESTE' AND COD_LAYOUT = 'SPED_G' AND COD_LIVRO = 'G' AND IND_PERIODIC = 'M'",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "SPED_TERMOS_LIVRO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'TESTE' AND COD_LAYOUT = 'SPED_G' AND COD_LIVRO = 'G'",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "STG_EVENTOS_REINF_IN": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "STG_EVENTOS_REINF_OUT": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "TMP_CARGA_ARQUIVO": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "ESPECIFICOS\\CT_SCANC.xml"
+      }
+    ]
+  },
+  "TMP_MMAG_ISS_PFJ": {
+    "delete_count": 78,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "",
+        "source": "MUNICIPAL\\CT_REMESSAXML.xml"
+      }
+    ]
+  },
+  "X01_CONTABIL": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "a.cod_empresa = '076'",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "X02_SALDOS": {
+    "delete_count": 3,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = 'TESTE' AND DATA_SALDO = '31/01/2024' AND IDENT_CONTA IN (56172, 49437)",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '077' AND COD_ESTAB = 'SPDAN' AND DATA_SALDO = '31/01/2024' AND IDENT_CONTA = 70443",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      },
+      {
+        "where": "a.cod_empresa = '076'",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "X04_PESSOA_FIS_JUR": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "razao_social = 'SACHA CALMON DERZI CONS ADVOGADOS' and cod_fis_jur = 'SP10079000'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "razao_social in ('CENGAGE LEARNING EDICOES LTDA',",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "razao_social in ('SACHA CALMON DERZI CONS ADVOGADOS','TESTEEXCLUSAO','TESTEimportacao')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X06_PERDA_GANHO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076' AND COD_ESTAB = '3465b' AND DAT_APURACAO = TO_DATE('31/10/2023', 'DD/MM/YYYY') AND IND_PERDA_GANHO ='7'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X07_BASE_DOCFIS": {
+    "delete_count": 15,
+    "unique_patterns": 11,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456','1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab in ('007','00A3','0101') and data_fiscal between '01/04/2024' and '30/04/2024' and num_docfis in ('5397','4890','4920','4896','4073','5420','4092','4914')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/11/2023' and '30/11/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X07_DOCTO_FISCAL": {
+    "delete_count": 15,
+    "unique_patterns": 11,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456','1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab in ('007','00A3','0101') and data_fiscal between '01/04/2024' and '30/04/2024' and num_docfis in ('5397','4890','4920','4896','4073','5420','4092','4914')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/11/2023' and '30/11/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X07_TRIB_DOCFIS": {
+    "delete_count": 15,
+    "unique_patterns": 11,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456','1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab in ('007','00A3','0101') and data_fiscal between '01/04/2024' and '30/04/2024' and num_docfis in ('5397','4890','4920','4896','4073','5420','4092','4914')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/11/2023' and '30/11/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X08_BASE_MERC": {
+    "delete_count": 9,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456', '1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/12/2023' and '31/12/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='076' and cod_estab='001PR' and num_docfis='784653' and data_fiscal between '01/02/2025' and '20/02/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X08_ITENS_MERC": {
+    "delete_count": 9,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456','1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/12/2023' and '31/12/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='076' and cod_estab='001PR' and num_docfis='784653' and data_fiscal between '01/02/2025' and '20/02/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X08_TRIB_MERC": {
+    "delete_count": 9,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_docfis in ('123456', '1234567') and serie_docfis in ('1','2','3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/12/2023' and '31/12/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='076' and cod_estab='001PR' and num_docfis='784653' and data_fiscal between '01/02/2025' and '20/02/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X09_BASE_SERV": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X09_ITENS_SERV": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X09_TRIB_SERV": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and data_fiscal between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X100_PARAM_REG75MM": {
+    "delete_count": 3,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_estado = 'EX'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_estado = 'SE'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_produto like 'PRODUTO 60 POSI%'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X108_CAPA_OP": {
+    "delete_count": 4,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dt_ini_op between '02/05/2023' and '31/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dt_ini_op = '02/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dt_ini_op between '02/05/2023' and '31/05/2023'  AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X109_ITEM_OP": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dt_saida = '02/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X10_ESTOQUE": {
+    "delete_count": 6,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA2' and data_movto between '01/04/2025' and '30/04/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_movto = '02/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X110_ITEM_ROMANEIO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '4757'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X112_OBS_DOCFIS": {
+    "delete_count": 7,
+    "unique_patterns": 5,
+    "examples": [
+      {
+        "where": "cod_empresa='077' and cod_estab in ('76802H','76802P') and data_fiscal BETWEEN TO_DATE('01/02/2022','DD/MM/YYYY') AND TO_DATE('28/02/2022','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_fiscal = '02/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF2549' and data_fiscal between '01/08/2024' and '31/08/2024'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' AND cod_estab = 'GHQA2' AND data_fiscal BETWEEN TO_DATE('01/01/2027', 'DD/MM/YYYY') AND TO_DATE('31/01/2027', 'DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_LANC_AUT_ICMS.xml"
+      },
+      {
+        "where": "cod_empresa='076' AND cod_estab='6677' AND data_fiscal between to_date('01/09/2017','dd/mm/yyyy') and to_date('30/09/2017','dd/mm/yyyy')",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "X113_AJUSTE_APUR": {
+    "delete_count": 7,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='077' and cod_estab in ('76802H','76802P') and data_fiscal BETWEEN TO_DATE('01/02/2022','DD/MM/YYYY') AND TO_DATE('28/02/2022','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' AND cod_estab = 'GHQA2' AND data_fiscal BETWEEN TO_DATE('01/01/2027', 'DD/MM/YYYY') AND TO_DATE('31/01/2027', 'DD/MM/YYYY')",
+        "source": "ESTADUAL\\CT_LANC_AUT_ICMS.xml"
+      },
+      {
+        "where": "cod_empresa='076' AND cod_estab='6677' AND data_fiscal between to_date('01/09/2017','dd/mm/yyyy') and to_date('30/09/2017','dd/mm/yyyy')",
+        "source": "SPED\\CT_SPED_FISCAL.xml"
+      }
+    ]
+  },
+  "X114_PROC_REF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X116_DOCFIS_REF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4991'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X119_ITENS_MEDICAMENTO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA='077' AND  COD_ESTAB='SAF119' AND NUM_FAB_LOTE !='3' AND DATA_FISCAL = to_date('16/12/2025','DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X138_ITEM_CUPOM_REF": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_estab = '4757'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X13_BEM_ATIVO": {
+    "delete_count": 3,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '077' AND COD_ESTAB = 'H73000' AND VALID_BEM = TO_DATE('20/05/2025', 'DD/MM/YYYY')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X145_CONTRIB_RET_FONTE": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X147_OPER_CRED": {
+    "delete_count": 5,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'F100' and desc_compl='TESTE IMPORTACAO SAFX147'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa IN ('076','077') and cod_estab IN ('MBAHIA','001SP','01') AND DATA_OPER BETWEEN '01/12/2022' AND '31/12/2022'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X148_BENS_ATIVO_IMOB": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_estab = 'SCP001'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X154_PROD_TERC_INSUMO": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('001SP') and DAT_PRODUCAO BETWEEN '01/07/2025' AND '31/07/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X156_CAD_INSC_MUN": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '076'",
+        "source": "MUNICIPAL\\CT_DDS_NATAL.xml"
+      }
+    ]
+  },
+  "X161_DOC_TELECOM_CONS": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA' and data_doc_inicial between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA' and data_doc_inicial between to_date('01/10/2025','dd/mm/yyyy') and to_date('31/10/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X162_ITM_TELECOM_CONS": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA' and data_doc_inicial between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA' and data_doc_inicial between to_date('01/10/2025','dd/mm/yyyy') and to_date('31/10/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X16_PROD_ACABADO": {
+    "delete_count": 9,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_movto between '02/05/2023' and '31/05/2023' and NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X17_PROD_INSUMO": {
+    "delete_count": 7,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_movto between '02/05/2023' and '31/05/2023' and NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_movto between '01/05/2023' and '31/05/2023' and NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X183_PJ_APUR_LP": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEAA' and data_oper between to_date('01/12/2024','dd/mm/yyyy') and to_date('31/12/2024','dd/mm/yyyy') AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "COD_EMPRESA = '076'AND COD_ESTAB = 'CH2390' AND desc_compl_comp_rec = 'Teste 186 do suite SPED CONTRIB'",
+        "source": "SPED\\CT_SPED_CONTRIBUICOES.xml"
+      }
+    ]
+  },
+  "X185_CONTRIB_PREV": {
+    "delete_count": 7,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149' and data_ini between to_date('01/03/2025','dd/mm/yyyy') and to_date('01/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '077'",
+        "source": "SPED\\CT_SPED_REINF.xml"
+      }
+    ]
+  },
+  "X18_PROD_EMBALAG": {
+    "delete_count": 5,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_movto between '02/05/2023' and '31/05/2023' and NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_movto between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X194_ITENS_REF": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001SP' and data_fiscal between '01/01/2018' and '31/01/2018'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2001_OPERACAO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2002_PLANO_CONTAS": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "ident_conta=1 and grupo_conta='GRUPO'",
+        "source": "BASICOS\\CT_PARAMETROS.xml"
+      }
+    ]
+  },
+  "X2005_TIPO_DOCTO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2006_NATUREZA_OP": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2007_MEDIDA": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2009_OBSERVACAO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_observacao in ('55629999', '55629992')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2010_NAT_ESTOQUE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2013_PRODUTO": {
+    "delete_count": 6,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "cod_produto = 'PRODUTO_60_POSICOES_1234567891234567891234567891231313212133'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "VALID_PRODUTO ='01/01/2014' AND IND_PRODUTO||'-'||COD_PRODUTO='1-XJBR-01619'  AND GRUPO_PRODUTO IN (SELECT GRUPO_ESTAB FROM RELAC_TAB_GRUPO WHERE COD_EMPRESA='077' AND COD_ESTAB='M4878A' AND COD_TABELA='2013')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "VALID_PRODUTO BETWEEN '01/01/2028' AND '31/01/2028'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2017_UND_PADRAO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X201_CAPA_CUPOM_CFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M45559'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2020_HIST_PADRAO": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_HISTPADRAO  in ('999ABC', '999AB1', '999AB2', '999AB3')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2024_MODELO_DOCTO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X202_ITEM_CUPOM_CFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'M45559'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2043_COD_NBM": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_NBM in('8535909000')  and valid_nbm = to_date('01/02/2022', 'dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2053_GRUPO_BENS_ATIVO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2056_HIST_FATO_CONTABIL": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "descricao in ('Variacao cambial','PL_TESTE') and COD_HIST_FATO_CONTABIL = 'BR001'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2081_EXTENSAO_CFO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X2098_ALIQ_SERVICO": {
+    "delete_count": 6,
+    "unique_patterns": 3,
+    "examples": [
+      {
+        "where": "COD_MUNIC_ISS = '3808'",
+        "source": "MUNICIPAL\\CT_ATENDENET.xml"
+      },
+      {
+        "where": "COD_MUNIC_ISS = '1606'",
+        "source": "MUNICIPAL\\CT_ATENDENET.xml"
+      },
+      {
+        "where": "COD_MUNIC_ISS = '9401'",
+        "source": "MUNICIPAL\\CT_ATENDENET.xml"
+      }
+    ]
+  },
+  "X2101_CONTAS_REF_CCUSTO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "ident_conta||'-'||ident_conta_ref in(",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "X2113_INFOPROC_CPRB": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '747149' and data_ini between to_date('01/03/2025','dd/mm/yyyy') and to_date('01/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X2114_CAD_RUBRICA": {
+    "delete_count": 3,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "grupo_rubrica = '02' and cod_tab_rubrica = 'FRB1' and cod_rubrica = '9A03D' and valid_ini = '01/jan/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X223_GUIA_RECOL_DIFAL": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('9001') and num_guia_recol = '12'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X224_GUIA_REC_DIFAL_IES": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('INC') and insc_estadual = '123456'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X235_CAPA_COR_APONT": {
+    "delete_count": 5,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_ini_apur = '01/03/2023' and periodo_ref = '052023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4991' and dat_fim_apur='31/01/2020'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_ini_apur = '01/03/2023'  AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_ini_apur = '01/03/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X236_ITEM_COR_APONT": {
+    "delete_count": 2,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_ini_apur = '01/03/2023'  and periodo_ref = '052023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_ini_apur = '01/03/2023'  AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X254_TERM_TEL_NFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/12/2023' and '31/12/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X266_PRODUCAO_CONJUNTA": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'REPA' and periodo_refer = to_date('01/06/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X267_ITEM_PRODUZIDO": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'REPA' and periodo_refer = to_date('01/06/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X268_ITEM_CONSUMIDO": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '077' and cod_estab = 'REPA' and periodo_refer = to_date('01/06/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X271_RURAL_PROC_SUSP": {
+    "delete_count": 7,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and  cod_estab = 'ESOC1'\tand   data_movto = '15/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1'\tand   data_movto = '15/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and  cod_estab = 'ESOC1'\tand   data_movto = '21/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1'\tand   data_movto = '21/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and  cod_estab = 'ESOC1'\tand   data_movto = '18/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X3007_DOCTO_FISCAL_RT": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01' and data_fiscal between to_date('01/09/2025','dd/mm/yyyy') and to_date('30/09/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X3008_ITENS_MERC_RT": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01' and data_fiscal between to_date('01/09/2025','dd/mm/yyyy') and to_date('30/09/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X3009_ITENS_SERV_RT": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01' and data_fiscal between to_date('01/09/2025','dd/mm/yyyy') and to_date('30/09/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X3042_CAPA_TELECOM_RT": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01' and dat_fiscal between to_date('01/09/2025','dd/mm/yyyy') and to_date('30/09/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X3043_ITEM_TELECOM_RT": {
+    "delete_count": 4,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '01' and dat_fiscal between to_date('01/09/2025','dd/mm/yyyy') and to_date('30/09/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X312_DIMP_MCAPT": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X313_DIMP_MOV": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X314_DIMP_AUTORIZACAO_IP": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('076') AND cod_estab in ('0001')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X316_DIMP_TRANSACOES_VAN": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X331_PROG_FIDEL_FAT_NFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/12/2023' and '31/12/2023'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X333_PART_UF_DEST_NFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '00' and data_fiscal = to_date('10/07/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X334_FUND_TRIB_FED_NFE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and data_fiscal between '01/01/2024' and '31/01/2024'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X336_PROD_DISP_COLETA": {
+    "delete_count": 2,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '3248' and periodo_ref = '102024'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X38_FORNECEDOR_OBRA": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_canal_distrib in ('123456789123499','CANALOBRA123499') and valid_fornec_obra between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_canal_distrib in ('123456789123456','CANALOBRA123456') and valid_fornec_obra between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X42_CAPA_TELECOM": {
+    "delete_count": 15,
+    "unique_patterns": 8,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and dat_fiscal between to_date('01/10/2024','dd/mm/yyyy') and to_date('31/10/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='076' and cod_estab='MKC1' and dat_fiscal between '01/04/2025' and '30/04/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and dat_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF4991'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X431_ITEM_TELECOM_NEG": {
+    "delete_count": 3,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and dat_fiscal between to_date('01/12/2025','dd/mm/yyyy') and to_date('31/12/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X432_ITEM_TELECOM_PROC": {
+    "delete_count": 3,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'RSA2' and dat_fiscal between to_date('01/12/2025','dd/mm/yyyy') and to_date('31/12/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X43_ITEM_TELECOM": {
+    "delete_count": 10,
+    "unique_patterns": 6,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and dat_fiscal between to_date('01/10/2024','dd/mm/yyyy') and to_date('31/10/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa='076' and cod_estab='MKC1' and dat_fiscal between '01/04/2025' and '30/04/2025'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '001SP' and dat_fiscal = '14/01/2020' and num_docfis = '1103'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and dat_fiscal = '02/05/2023' AND NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X47_DEBITO_IMP": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'GHQA'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X49_OPER_IMP": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'MF8814' and dat_nf  = '18/09/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X51_ITENS_FRETE": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'ZACRE' and data_escr_fiscal between '01/01/2021' and '31/01/2021' and num_docfis in ('3108', '3109')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X52_INVENT_PRODUTO": {
+    "delete_count": 11,
+    "unique_patterns": 7,
+    "examples": [
+      {
+        "where": "cod_empresa IN ('077','076') AND cod_estab in ('A81320')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '590474' and data_inventario = '30/05/2023' and NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_inventario between to_date('01/03/2024','dd/mm/yyyy') and to_date('31/03/2024','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = '757594' and data_inventario between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  },
+  "X533_RIMUN_RISEN": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = '6677' and (data_movto = '01/01/2020' or data_movto = '31/03/2016')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X63_FUNRURAL": {
+    "delete_count": 7,
+    "unique_patterns": 4,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1' and   data_movto = '15/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1' and   data_movto = '21/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1' and   data_movto = '18/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and   cod_estab = 'ESOC1' and   data_movto = '17/04/2019'",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X80_SALDOS_CCUSTO": {
+    "delete_count": 1,
+    "unique_patterns": 1,
+    "examples": [
+      {
+        "where": "COD_EMPRESA = '077' AND COD_ESTAB = 'SPDAN' AND DAT_SALDO = '31/01/2024' AND IDENT_CONTA = 70443",
+        "source": "SPED\\CT_SPED_CONT.xml"
+      }
+    ]
+  },
+  "X91_SUBEMPREIT_ISS": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and dat_fiscal between to_date('01/03/2025','dd/mm/yyyy') and to_date('31/03/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "cod_empresa = '076' and cod_estab = 'FEDEQQ' and dat_fiscal between to_date('01/08/2025','dd/mm/yyyy') and to_date('31/08/2025','dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+      }
+    ]
+  },
+  "X96_GRP_COMB_PROD": {
+    "delete_count": 4,
+    "unique_patterns": 2,
+    "examples": [
+      {
+        "where": "valid_grp_comb_prd = to_date('01/05/2021', 'dd/mm/yyyy')",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      },
+      {
+        "where": "NUM_PROCESSO = #CAMPOINTEGER",
+        "source": "BASICOS\\CT_JOB_SERVIDOR_BAT.xml"
+      }
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "_version": "1.0",
+  "_description": "Roster do time TAX ONE Suporte com capacidades por sprint (2 semanas). Especializacoes de modulo sao descobertas automaticamente pelo SM via historico ADO.",
+  "_generated": "2026-03-11",
+  "_capacity_formula": "max_sprint_points = wis_per_week * 2 * 5 (default SP per WI)",
+
+  "developers": [
+    {
+      "name": "Eduardo Sa",
+      "email": "Eduardo.Sa@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    },
+    {
+      "name": "Daniel Oliveira",
+      "email": "Daniel.OliveiradaSilva@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    },
+    {
+      "name": "Eduardo Cruz",
+      "email": "eduardo.cruz@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    },
+    {
+      "name": "Renato Ramos",
+      "email": "renato.ramos@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    },
+    {
+      "name": "Marcus Britto",
+      "email": "marcus.britto@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    },
+    {
+      "name": "Michel Paiva",
+      "email": "Michel.Paiva@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Luiz Castro",
+      "email": "Luiz.Castro@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Everton Zamarioli",
+      "email": "Everton.Zamarioli@thomsonreuters.com",
+      "capacity_wis_per_week": 2,
+      "max_sprint_points": 20,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Gustavo Severi",
+      "email": "Gustavo.Severi@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Carlos Wolak",
+      "email": "Carlos.Wolak@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Adriano Baviera",
+      "email": "Adriano.Baviera@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": ["PLSQL"]
+    },
+    {
+      "name": "Alexandre Braga",
+      "email": "A.Braga@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": ["PB", "JAVA/Angular", "PLSQL"]
+    }
+  ],
+
+  "testers": [
+    {
+      "name": "Henrique Silva",
+      "email": "LuizHenrique.Silva@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Lara Paulo",
+      "email": "lara.paulo@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Murielle Soares",
+      "email": "Murielle.Queriqueri@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Camila Bittencourt",
+      "email": "Camila.Bittencourt@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Danielle Meirelles",
+      "email": "Danielle.Meireles@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Raquel Carvalho",
+      "email": "Raquel.Carvalho@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Elaine Costa",
+      "email": "Elaine.Costa@thomsonreuters.com",
+      "capacity_wis_per_week": 3.5,
+      "max_sprint_points": 35,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Marco Santos",
+      "email": "MarcoBarbosa.Santos@thomsonreuters.com",
+      "capacity_wis_per_week": 2,
+      "max_sprint_points": 20,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Ryan Lins",
+      "email": "Ryan.Lins@thomsonreuters.com",
+      "capacity_wis_per_week": 2,
+      "max_sprint_points": 20,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Renan Alipio",
+      "email": "Renan.alipio@thomsonreuters.com",
+      "capacity_wis_per_week": 2,
+      "max_sprint_points": 20,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Diego Alves",
+      "email": "diego.alvespereira@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": []
+    },
+    {
+      "name": "Juliano Speers",
+      "email": "Juliano.Speers@thomsonreuters.com",
+      "capacity_wis_per_week": 1,
+      "max_sprint_points": 10,
+      "availability": 1.0,
+      "specializations": []
+    }
+  ],
+
+  "complexity_thresholds": {
+    "_description": "Mapeamento de metricas de complexidade (mediana de files_changed + additions + deletions) para story points na escala Fibonacci",
+    "1": { "max_files": 1, "max_changes": 20, "label": "Trivial" },
+    "2": { "max_files": 2, "max_changes": 50, "label": "Simples" },
+    "3": { "max_files": 3, "max_changes": 100, "label": "Pequeno" },
+    "5": { "max_files": 5, "max_changes": 200, "label": "Medio" },
+    "8": { "max_files": 8, "max_changes": 400, "label": "Grande" },
+    "13": { "max_files": 12, "max_changes": 800, "label": "Muito Grande" },
+    "21": { "max_files": 999, "max_changes": 9999, "label": "Epico" }
+  },
+
+  "type_multipliers": {
+    "_description": "Multiplicador de story points por tipo de work item",
+    "Bug": 1.0,
+    "User Story": 1.2,
+    "Feature": 1.5,
+    "Task": 0.8
+  },
+
+  "estimate_formula": {
+    "_description": "OriginalEstimate = max(14, story_points * hours_per_sp)",
+    "hours_per_sp": 2.8,
+    "min_hours": 14
+  }
+}

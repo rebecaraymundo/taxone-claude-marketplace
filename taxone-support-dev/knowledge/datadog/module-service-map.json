@@ -1,0 +1,152 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-03-29",
+  "app_id": "56ad1497-3dd2-451b-95b7-906544ca1b09",
+  "app_name": "[PROD][TAXONE][RUM] Frontend-Backend App",
+  "service": "taxone",
+  "host": "www.onesourcetax.com",
+  "sdk_version": "5.4.0",
+  "modules": {
+    "ICMS": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safic/*", "/oms-*/home/oms-*/safic/*"],
+      "resource_patterns": ["/oms-taxone/ws/safic*", "/oms-*/safic/*"],
+      "rum_view_patterns": ["*/safic/*", "*/saficp9d/*"],
+      "menu_paths": [
+        "DATA MART > Apuracao do ICMS > Emissao",
+        "DATA MART > Apuracao do ICMS > Geracao"
+      ],
+      "db_prefix": "ICT",
+      "keywords": ["icms", "apuracao", "data mart", "saficp9d", "emissao icms"]
+    },
+    "Data Warehouse": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safdw/*", "/oms-*/home/oms-*/safdw/*", "/oms-*/t1dw/*"],
+      "resource_patterns": ["/oms-taxone/ws/safdw*", "/oms-*/t1dw/*"],
+      "rum_view_patterns": ["*/safdw/*", "*/t1dw/*"],
+      "menu_paths": [
+        "Manutencao > Documento Fiscal > Doc. Fiscal de Mercadoria e Servico",
+        "Manutencao > Documento Fiscal > Novo Documento Fiscal"
+      ],
+      "db_prefix": "DWT",
+      "keywords": ["data warehouse", "documento fiscal", "manutencao", "invoice", "nota fiscal", "DWT"]
+    },
+    "Job Servidor": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/genericas/safgnfw1/*", "/oms-*/genericas/safgnfw1/*"],
+      "resource_patterns": ["/oms-taxone/ws/safilcm*", "/oms-taxone/ws/safgnfw*"],
+      "rum_view_patterns": ["*job*servidor*", "*importacao*execucao*", "*safgnfw*"],
+      "menu_paths": [
+        "Importacao > Importacao > Execucao",
+        "Job Servidor"
+      ],
+      "db_prefix": "SAFX",
+      "keywords": ["importacao", "batch", "job servidor", "SAFX", "importa", "carga", "processamento"]
+    },
+    "Escrituracao Fiscal": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safge/*", "/oms-*/safge/*", "/oms/home/oms/safuf/*", "/oms-*/safuf/*"],
+      "resource_patterns": ["/oms-taxone/ws/safge*", "/oms-taxone/ws/safuf*"],
+      "rum_view_patterns": ["*safge*", "*safuf*", "*escrituracao*"],
+      "menu_paths": [
+        "Escrituracao Fiscal",
+        "Escrituracao > Apuracao"
+      ],
+      "db_prefix": "EST",
+      "keywords": ["escrituracao", "apuracao", "SPED", "EFD", "bloco", "registro"]
+    },
+    "SPED": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safsped/*", "/oms-*/safsped/*"],
+      "resource_patterns": ["/oms-taxone/ws/safsped*"],
+      "rum_view_patterns": ["*safsped*", "*sped*"],
+      "menu_paths": [
+        "SPED > SPED Contabil",
+        "SPED > SPED Fiscal",
+        "SPED > ECD",
+        "SPED > ECF"
+      ],
+      "db_prefix": "EPC",
+      "keywords": ["sped", "ecd", "ecf", "efd", "sped contabil", "sped fiscal"]
+    },
+    "Federal": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safft/*", "/oms-*/safft/*"],
+      "resource_patterns": ["/oms-taxone/ws/safft*"],
+      "rum_view_patterns": ["*safft*", "*federal*"],
+      "menu_paths": [
+        "Federal > Obrigacoes Federais",
+        "Federal > REINF",
+        "Federal > DCTF"
+      ],
+      "db_prefix": "FDT",
+      "keywords": ["federal", "reinf", "dctf", "dirf", "obrigacoes federais"]
+    },
+    "Estadual": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safuf/*", "/oms-*/safuf/*"],
+      "resource_patterns": ["/oms-taxone/ws/safuf*"],
+      "rum_view_patterns": ["*safuf*", "*estadual*"],
+      "menu_paths": [
+        "Estadual > CIAP",
+        "Estadual > Bloco G",
+        "Estadual > GIA"
+      ],
+      "db_prefix": "EST",
+      "keywords": ["estadual", "ciap", "bloco g", "gia", "obrigacoes estaduais"]
+    },
+    "Municipal": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safmu/*", "/oms-*/safmu/*"],
+      "resource_patterns": ["/oms-taxone/ws/safmu*"],
+      "rum_view_patterns": ["*safmu*", "*municipal*"],
+      "menu_paths": [
+        "Municipal > ISS",
+        "Municipal > DMS"
+      ],
+      "db_prefix": "IST",
+      "keywords": ["municipal", "iss", "dms", "obrigacoes municipais"]
+    },
+    "Basicos": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safbs/*", "/oms-*/safbs/*"],
+      "resource_patterns": ["/oms-taxone/ws/safbs*", "/oms-taxone/ws/safil*"],
+      "rum_view_patterns": ["*safbs*", "*safil*", "*basico*"],
+      "menu_paths": [
+        "Basicos > Cadastros",
+        "Basicos > Importacao"
+      ],
+      "db_prefix": "SAFX",
+      "keywords": ["basico", "cadastro", "importacao", "interface", "SAFX"]
+    },
+    "Especificos": {
+      "service": "taxone",
+      "url_path_patterns": ["/oms/home/oms/safes/*", "/oms-*/safes/*"],
+      "resource_patterns": ["/oms-taxone/ws/safes*"],
+      "rum_view_patterns": ["*safes*", "*especifico*"],
+      "menu_paths": [
+        "Especificos"
+      ],
+      "db_prefix": "ESP",
+      "keywords": ["especifico", "oil", "gas", "telecom"]
+    }
+  },
+  "rum_keywords_screen": [
+    "tela", "erro na tela", "nao abre", "nao carrega", "branco", "travou tela",
+    "500", "404", "click", "botao", "salvar", "gravar", "consultar", "campo",
+    "combo", "grid", "nao exibe", "desapareceu", "sumiu", "frontal", "interface",
+    "UI", "angular"
+  ],
+  "rum_keywords_performance": [
+    "importa", "importacao", "lentidao", "lento", "timeout", "performance",
+    "demora", "batch", "job servidor", "erro importacao", "travou", "demorado",
+    "processamento", "carga", "SAFX", "rejeita", "desconsidera", "ignora registros"
+  ],
+  "fallback_service": "taxone",
+  "fallback_query_template": "service:taxone @type:{type}",
+  "notes": {
+    "architecture": "RUM data is embedded in APM traces (ingestion_reason:rum). Primary source: search_datadog_spans, fallback: search_datadog_rum_events.",
+    "url_patterns": "TAX ONE uses /oms/ or /oms-NN/ prefix. Module-specific URLs contain safXX prefixes (safic=ICMS, safdw=DW, safge=Escrituracao, etc.)",
+    "user_attributes": "usr.module, usr.menuPath, usr.firmId, usr.dbSchema, usr.email, usr.name, usr.version, usr.storageId"
+  }
+}

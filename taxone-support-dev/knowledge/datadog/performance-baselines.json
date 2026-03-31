@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-03-29",
+  "data_window_days": 7,
+  "baselines": {
+    "/oms-taxone/ws/safilcm2/w_lib_proc_safil_imp_online": {
+      "description": "Importacao online (Job Servidor)",
+      "module": "Job Servidor",
+      "p50_ms": 5000,
+      "p95_ms": 28000,
+      "p99_ms": 45000,
+      "error_rate_pct": 2.1,
+      "sample_count": null
+    },
+    "/oms/home/oms/safic/home": {
+      "description": "Home ICMS",
+      "module": "ICMS",
+      "p50_ms": 800,
+      "p95_ms": 3000,
+      "p99_ms": 8000,
+      "error_rate_pct": 1.0,
+      "sample_count": null
+    },
+    "/oms/home/oms/safdw/home": {
+      "description": "Home Data Warehouse",
+      "module": "Data Warehouse",
+      "p50_ms": 600,
+      "p95_ms": 2500,
+      "p99_ms": 6000,
+      "error_rate_pct": 0.8,
+      "sample_count": null
+    }
+  },
+  "thresholds": {
+    "anomaly_deviation_pct": 50,
+    "slow_page_load_ms": 10000,
+    "critical_page_load_ms": 30000,
+    "high_error_rate_pct": 5.0
+  },
+  "notes": {
+    "generation": "Baselines iniciais estimados. Rodar 'python scripts/rum_enricher.py --mode refresh-baselines --days 7' para atualizar com dados reais do Datadog.",
+    "refresh_frequency": "Recomendado atualizar semanalmente ou apos deploys significativos."
+  }
+}

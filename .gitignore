@@ -1,0 +1,34 @@
+# Environment
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Tests output
+tests/
+Arquivos/esperado/
+Arquivos/Obtido/
+
+# Suite properties
+*.properties
+!*.properties.template
+
+# Logs
+log/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+*.bak
+~$*

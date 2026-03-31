@@ -1,0 +1,5116 @@
+{
+  "extracted_at": "2026-03-21T20:59:44.503040+00:00",
+  "procedures": {
+    "limpa_apt_aquisicao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ],
+      "purpose": "PROCEDURES DE EXCLUSAO"
+    },
+    "limpa_dwt_canais_distrib": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_canal_distrib",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "limpa_safx50": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "limpa_x38_fornecedor_obra": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ind_fis_jur",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_canal_distrib",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "limpa_x50_transp_docfis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "limpa_x68_impressao_aidf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_apt_aquisicao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_apt_cfo_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_tipo_mov",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_apt_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_apt_extcfo_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_tipo_mov",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_apuracao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_TIPO_LIVRO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_DAT_APURACAO",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_att_res_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_dat_apuracao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_calc_valor_dacon": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_calend_obrigacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_dat_apuracao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_central_escrit_contabil": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_cotepe_det_perfil": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_layout",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_perfil",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_bloco",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_registro",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_cotepe_perfil": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_layout",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_perfil",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dac_param_cred": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": []
+    },
+    "remove_dct_dados_gerais": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ano_compet",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_trim_compet",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_tp_declaracao",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_periodicidade",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dct_ficha_deb": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ANO_COMPET",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_TRIM_COMPET",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_IND_TP_DECLARACAO",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_IND_PERIODICIDADE",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_det_job_import": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_det_job_load": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_detalhe_operacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_det_oper",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_det_operacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_est_insumo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_est_insumo_a": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_est_prod": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_est_prod_a": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_insumo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_insumo",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_par_empr": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_prd_insumo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dif_beb_produto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_amparo_legal": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_amparo_legal",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_cod_ajuste_sped": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_ajuste_sped",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_cod_iata": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_municipio",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_iata",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_conv_medida": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_medida",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_medida_orig",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_conv_medida2": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_dwt_pfj_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_efd_dados_iniciais": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_efd_par_ind_prod_0200": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_efd_par_ncm_0200": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_efd_par_prod_0200": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_empresa": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_esp_sp_gia_cfop": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_esp_sp_prod_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_esp_sp_prod_st_ass": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_calc_lanc_ipi": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_cfo_ctrl_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_ctrl_ope_aux": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_ctrl_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_ctrl_oper",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_dcip_par_incent": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_dcip_par_mod_docto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_diefce_dd_inic": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_diefce_pr": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_gia_receita_mes": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_mm_cotepe_inic": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_mov_ctrl_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_par_conv_gnre": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_par_ctrl_oper": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_ctrl_oper",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_par_rel": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_classe_rel",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_rel",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_par_rel_nbm": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_rj_declan_par": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_rj_declan_qde": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_codigo",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_ro_inf_classe": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_inf_complementar",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_oper_apur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_classe",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_ro_rec_cfo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_sc_cod_receita": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ident_receita_est",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_sc_dime_dd_ini": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_sc_guia_recol": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_est_sp_gia_reg30": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_DAT_APURACAO",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_DIPAM_B",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_MUNICIPIO_DEST",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_estabelecimento": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_est_cfo_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_est_custo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_est_extcf_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_lancto_p8": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_par_lancto_p8": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_par_lancto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fdt_uf_amoc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fpar_param_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_fpar_parametros": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_id_parametros",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_grupo_produto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_grupo_prod",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_grupo_prod",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_grupo_selo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_grupo_selo",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_guia_rec_subst": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_guia_recolhimento": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_hist_export": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_num_job",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ibt_controle": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tabela",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ibt_prog": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_prog",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ica_param_ger_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tp_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_icp_gia_st_uf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_icp_insc_est_centr": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_agencia_gnre": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_ajuste_icms": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_ajuste_icms",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_ap_e_s": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_ap_prd": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_cfo_ap": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_comp_ap": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_estr_ap": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_it_estr_ap": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_linhap": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_linhap_tpprd": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_am_par_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_ap_cfo_ies": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_apur_insc_est": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_apur_uf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_apuracao_ince": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_calen_insc_est": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_calend_ince": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_cod_gnre": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_gnre",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_estab_iestad": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_et_lv_insc_est": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_faixa_incent": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_gia_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_grp_incent": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_guia_gnre": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_guia_gnre_con": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_it_ap_cal_ies": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_it_ap_dscr_ies": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_obrig_insc_est": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_obrigacao_ince": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_apurac": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_apurac_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_cred_pres": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_icms_am": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_icms_uf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_dsc_param",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_incent": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_meio_mag": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_PERFIL",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_mm_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_PERFIL",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_tc_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_par_tipo_docto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ict_regra_incent": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_int_det_prog": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_int_prog": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_prog",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_tip_in",
+          "type": "CHAR",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ipt_calend_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ipt_principal_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ident_calend_apur",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_entrada_saida",
+          "type": "CHAR",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ipt_prt_geral_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ipt_resumo_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ident_calend_apur",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_tipo_linha",
+          "type": "CHAR",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_irp_tp_inss": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_tp_fis_jur",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_vlr_aliq_inss",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fonte_avulso",
+          "type": "CHAR",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_retencao",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_ind_movto",
+          "type": "CHAR",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_ind_ret_emis_cpag_cindiv",
+          "type": "CHAR",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_irt_par_ced_c": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_irt_sefip_param": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_ist_guia_recolh": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_MUNIC_ISS",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_calc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_discr": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_discr_aj": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_discr_proc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_subst": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_subst_aj": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_item_apurac_subst_proc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_job_exp_estab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_job_exp_tab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_num_job",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_arquivo",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_numero_arquivo",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_dsc_diretorio",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_job_export": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_num_job",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_job_importacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_num_job",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_obrigacao_fiscal": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_TIPO_LIVRO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_cfo_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_param",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_cfo_uf_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_datamart_autom": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_extcfo_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_nbm_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_param",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_nbm",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_oper_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_par3_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_perc_prod_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_prt_prd_obrig_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_valid_inicial",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_modulo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto_obrig",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_prt_prod_msaf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_registro_estadual": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estado",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_registro_instituicao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_instituicao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_relac_dacon_regra": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_ficha",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_linha",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ident_regra",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_mercado",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_versao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_regime",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto_dacon",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_det_separ",
+          "type": "CHAR",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_relac_tab_grupo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_resp_contador": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_responsavel",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_resp_informacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_responsavel",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_resumo_apur_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_resumo_apuracao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_tipo_livro",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_rgr_regra": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ident_regra",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_regra",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_rgr_relac_parametro": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ident_regra",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_regra",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ident_param",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_safx04": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": []
+    },
+    "remove_safx07": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        }
+      ]
+    },
+    "remove_safx08": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        }
+      ]
+    },
+    "remove_safx112": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx113": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx114": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx115": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx116": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx117": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx118": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx2013": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_data_produto",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx2097": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_MUNIC_ISS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx37": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": []
+    },
+    "remove_safx38": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": []
+    },
+    "remove_safx42": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx43": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_safx49": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "NULL"
+        }
+      ]
+    },
+    "remove_safx50": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_safx68": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_safx82": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_safx92": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_sct_class_prd": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_tipo_obrigacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_class_prd",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_sct_tp_obrigacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_sped_dados_dem_contab": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_sped_dados_ini": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_sped_livro_razao_layout": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_speddadosdemcontabarq": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_subgrupo_selo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_grupo_selo",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_subgrupo_selo",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_transf_dacon_regra": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": []
+    },
+    "remove_x02_saldos": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x03_tit_pagar": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x04_pessoa_fis_jur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x05_tit_receber": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x07_base_docfis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x07_docto_fiscal": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x07_trib_docfis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x08_base_merc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x08_itens_merc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x08_trib_merc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x09_base_serv": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_DATA_FISCAL",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_MOVTO_E_S",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NORM_DEV",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_DOCTO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_SUB_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_GRUPO_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_VALID_SERVICO",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_ITEM",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_TRIBUTO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_TRIBUTACAO",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x09_itens_serv": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_DATA_FISCAL",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_MOVTO_E_S",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NORM_DEV",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_DOCTO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_SUB_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_GRUPO_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_VALID_SERVICO",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_ITEM",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x09_trib_serv": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_DATA_FISCAL",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_MOVTO_E_S",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NORM_DEV",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_DOCTO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_SUB_SERIE_DOCFIS",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_GRUPO_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_VALID_SERVICO",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_NUM_ITEM",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_TRIBUTO",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x103_remessa_exp": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x106_movto_aidf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x10_estoque": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x112_obs_docfis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x113_ajuste_apur": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x114_proc_ref": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x115_doc_arrcd_ref": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x116_docfis_ref": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x117_cupom_ref": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x118_coleta_entrg": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x13_bem_ativo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x15_funcionario": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x16_prod_acabado": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x17_prod_insumo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2001_operacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_operacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_operacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_operacao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2002_plano_contas": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_conta",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_conta",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_conta",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2003_centro_custo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_custo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_custo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_custo",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2005_tipo_docto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2006_natureza_op": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_natureza_op",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_natureza_op",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_natureza_op",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2007_medida": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_medida",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_medida",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_medida",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2009_observacao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_observacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_observacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_observacao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2010_nat_estoque": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_nat_estoque",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_nat_estoque",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_nat_estoque",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2012_cod_fiscal": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_cfo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_cfo",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2013_prod_cselo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_grupo_selo",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_subgrupo_selo",
+          "type": "NUMBER",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2013_produto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_produto",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2017_und_padrao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_und_padrao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_und_padrao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_und_padrao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2018_servicos": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_GRUPO_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_COD_SERVICO",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        },
+        {
+          "name": "p_VALID_SERVICO",
+          "type": "DATE",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_x2019_cod_darf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_darf",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_darf",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_darf",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2020_hist_padrao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_histpadrao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_histpadrao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_histpadrao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2023_verbas": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_verba",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_verba",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_verba",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2024_modelo_docto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_modelo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_modelo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_modelo",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2027_tipo_admis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_admissao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_admissao",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_admissao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2029_cod_cbo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_cbo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_cbo",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_cbo",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2030_vinc_empreg": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_vinculo_emp",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_vinculo_emp",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_vinculo_emp",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2036_funcao": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_funcao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_funcao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_funcao",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2037_setor": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_setor",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_setor",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_setor",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2043_cod_nbm": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_nbm",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_nbm",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2047_via_transp": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_via_transp",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_via_transporte",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_via_transp",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2080_cod_rec_uf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_grupo_receita_est",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_receita_est",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_receita_est",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2081_extensao_cfo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_cfo",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_cfo",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_natureza_op",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_natureza_op",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_natureza_op",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2097_munic_iss": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_MUNIC_ISS",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "P_DATA_VALID_FIM",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "P_DATA_VALID_INI",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2098_aliq_servico": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_munic_iss",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_servico",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_servico",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_dat_valid_aliq",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x2099_equipamento": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x21_ficha_financ": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x26_saldos_est_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x27_mov_est_st": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x281_item_nota_ecf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x28_capa_ecf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x29_item_ecf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x301_tit_pagar_parc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x34_movto_insumo": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_movto_e_s",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_norm_dev",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_contagem",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_data_movto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_sub_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        }
+      ]
+    },
+    "remove_x42_capa_telecom": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x43_item_telecom": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x44_itens_chassi": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_data_fiscal",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_movto_e_s",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_norm_dev",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_docto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_docto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_sub_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_discri_item",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_chassi",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x48_oper_exp": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x49_oper_imp": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "P_COD_EMPRESA",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "P_COD_ESTAB",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x501_tit_receber_parc": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x50_transp_docfis": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x52_invent_produto": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_data_inventario",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_contagem",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_produto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_nat_estoque",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_nat_estoque",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_nat_estoque",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_discri_inventario",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "null"
+        }
+      ]
+    },
+    "remove_x53_retencao_irrf": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_data_movto",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_fis_jur",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_fis_jur",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_fis_jur",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ident_docto",
+          "type": "NUMBER",
+          "direction": "IN"
+        },
+        {
+          "name": "p_num_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_sub_serie_docfis",
+          "type": "VARCHAR2",
+          "direction": "IN",
+          "default": "' '"
+        },
+        {
+          "name": "p_grupo_operacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_operacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_operacao",
+          "type": "DATE",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_darf",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_darf",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_darf",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x56_indice_conv": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_indice",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_data_ini",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x701_voo_passag": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x702_desemb_passag": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x70_mov_subst_cont": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x71_param_subst": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_tipo_obrigacao",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_ind_produto",
+          "type": "CHAR",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_grupo_produto",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_valid_produto",
+          "type": "DATE",
+          "direction": "IN"
+        }
+      ]
+    },
+    "remove_x72_saldo_subst": {
+      "package": "MSAF_UTIL_REMOVE",
+      "params": [
+        {
+          "name": "p_cod_empresa",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        },
+        {
+          "name": "p_cod_estab",
+          "type": "VARCHAR2",
+          "direction": "IN"
+        }
+      ]
+    }
+  }
+}

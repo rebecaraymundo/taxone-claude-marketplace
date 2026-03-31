@@ -1,0 +1,286 @@
+# MTZ-Ferramentas-Exclusao_Tabelas_Definitivas-Relatório
+
+- **Fonte:** MTZ-Ferramentas-Exclusao_Tabelas_Definitivas-Relatório.docx
+- **Modificado:** 2023-10-04
+- **Tamanho:** 89 KB
+
+---
+
+THOMSON REUTERS
+
+__Módulo Básicos \- Ferramentas__
+
+__Relatório dos Processos de Exclusão Tabelas Definitivas __
+
+__Localização__: Menu Rotinas Acessórias 🡪 Inicialização 🡪 Exclusão de Tabelas Definitivas 🡪 Relatório dos Processos de Exclusão Tabelas Definitivas
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+__Data__
+
+MFS573091
+
+Liliane Assaf
+
+Este documento tem como objetivo criar o Relatório dos Processos de Exclusão Tabelas Definitivas
+
+03/10/2023
+
+REGRAS DE NEGÓCIO
+
+__RN00__
+
+__Regras Gerais__
+
+ 
+
+O objetivo do relatório é disponibilizar um relatório em Excel, com informação das Exclusão de Tabelas Definitivas realizadas nas opções: Documentos Fiscais, Cadastros, Movimentos e Cadastros Parâmetros\. Através desse relatório é possível identificar o processo, a data da execução do processo de exclusão e o usuário responsável pela exclusão nas tabelas definitivas\. 
+
+__RN01__
+
+__Parâmetros de Tela__
+
+                                                ![](data:image/png;base64,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)
+
+__Campo__
+
+__Regra__
+
+__Demanda__
+
+Período de Execução
+
+Neste campo serão informadas as datas inicial e final, para recuperação dos processos executados nesse período\.
+
+Data Inicial é obrigatória\.
+
+__Data final não obrigatória\.__
+
+Caso a data final seja preenchida, a Data inicial deve ser menor ou igual à final\.
+
+Caso a Data Inicial não seja preenchida, a Data Final menor que a Data Inicial, exibir mensagens e não prosseguir com a execução\.
+
+MFS573091
+
+Período da Parametrização
+
+Nesse campo serão informadas as datas inicial e final para recuperação dos processos parametrizados dentro desse período \(Datas Inicial e Final parametrizados nas telas de Exclusão de Tabelas Definitivas, opções Documentos Fiscais, Cadastros e Movimentos\)\.
+
+Campo de preenchimento não obrigatório\.
+
+As seguintes configurações são permitidas:
+
+\- Data Inicial e Data final não preenchidas\.
+
+\- Data Inicial e Data final preenchidas\. Nesse caso a Data inicial deve ser menor ou igual à final\.
+
+\- Data Inicial preenchida e Data final não preenchida\.
+
+Não é permitido preencher apenas a data final\. 
+
+Nas duas situações abaixo, exibir mensagens e não prosseguir com a execução:
+
+\- Data Final preenchida e a Inicial não preenchida\.
+
+\- Ambas preenchidas e a Data Final menor que a Data Inicial\.
+
+MFS573091
+
+Usuário
+
+Campo texto para livre digitação\.
+
+Se for possível ao invés do campo texto, exibir uma lista fixa com os usuários da aplicação
+
+Tabela : pl\_usr???
+
+Campo de preenchimento não obrigatório\.
+
+MFS573091
+
+Número do Processo
+
+Caso deseje emitir o relatório de um determinado processo, informar aqui o número do processo\.
+
+Campo de preenchimento não obrigatório\.
+
+MFS573091
+
+Tipo da Tabela
+
+Lista fixa demonstrando as seguintes opções:
+
+\- Cadastros
+
+\- Cadastros Parâmetros
+
+\- Documentos Fiscais
+
+\- Movimentos
+
+Campo de preenchimento não obrigatório\.
+
+MFS573091
+
+Nome Tabela
+
+Apresentar a lista das tabelas relacionadas ao tipo selecionado no campo “Tipo da Tabela”\.
+
+Campo só deve ser habilitado caso o usuário selecione um tipo no campo “Tipo da Tabela”\.
+
+Mesmas as listas presentes nas telas de Exclusão de Tabelas Definitivas, opções Documentos Fiscais, Cadastros, Movimentos e Cadastros Parâmetros\.
+
+Campo de preenchimento não obrigatório\. Mas caso o “Tipo da Tabela” seja selecionado, o campo Nome Tabela deve ser preenchido\.
+
+MFS573091
+
+Período do Dado Excluído
+
+Campo a ser implementado futuramente:
+
+Neste campo serão informadas as datas inicial e final, formando o período em que os dados excluídos pertenciam\.
+
+Data inicial deve ser menor ou igual à final\.
+
+Campo só deve ser habilitado caso o usuário selecione o Tipo da Tabela =\. Cadastros ou Documentos Fiscais ou Movimentos\.
+
+Campo de preenchimento não Obrigatório\.
+
+Estabelecimento
+
+Lista de estabelecimentos\.
+
+Selecionar o estabelecimento ao qual os dados excluídos pertenciam\.
+
+Campo só deve ser habilitado caso o usuário selecione o Tipo da Tabela =\. Cadastros Parâmetros ou Documentos Fiscais ou Movimentos\.
+
+Campo de preenchimento não Obrigatório\.
+
+MFS573091
+
+Mostrar Tabelas Vinculadas Excluídas
+
+Campo a ser implementado futuramente:
+
+__RN02__
+
+__                                                Relatório \- Preenchimento dos Dados __
+
+O relatório disponibiliza informações que permitem auditar os processos de exclusão nas tabelas definitivas\.
+
+O Relatório de Histórico deverá ser disponibilizado no formato XLS para gravação na Aba “Arquivos”\.
+
+Nome do Arquivo: REL\_EXCLUSÃO\_TABELA\.xls
+
+O Relatório irá recuperar os processos das tabelas FTR\_PROCESSO e LIB\_PROC\_PARAM que atendam aos seguintes critérios:
+
+- Data Inicial da Execução do Processo compreendida no Período de Execução informado na tela;
+
+DATA\_INICIO da FTR\_PROCESSO
+
+- Data Final da Execução do Processo compreendida no Período de Execução informado na tela;
+
+DATA\_FIM da FTR\_PROCESSO
+
+- Se Usuário for informado em tela, considerar apenas os processos do Usuário informado;
+
+COD\_USUARIO da FTR\_PROCESSO
+
+- Se Número do Processo for informado em tela, considerar apenas o processo do Número informado;
+
+PROC\_ID da FTR\_PROCESSO
+
+- Se Período da Parametrização for informado em tela, então considerar os processos que atendam aos critérios abaixo:
+- Data Inicial da Parametrização do Processo compreendida no Período da Parametrização informado na tela;
+- Data Final da Parametrização do Processo compreendida no Período da Parametrização informado na tela;
+
+\(\*\) As Datas Inicial e Final da Parametrização do Processo são aquelas presentes nas telas de Exclusão de Tabelas Definitivas\.
+
+\(\*\*\) Data Inicial da Parametrização do Processo é gravada na tabela LIB\_PROC\_PARAM no registro com campo NOME = "Data Inicial"\.
+
+\(\*\*\*\) Data Final da Parametrização do Processo é gravada na tabela LIB\_PROC\_PARAM no registro com campo NOME = "Data Final"\.
+
+Atenção ao caso em que a data final não está preenchida\.
+
+- Se o Nome da Tabela for informado em tela, então considerar os processos cujo Nome da Tabela Parametrizada seja igual ao informado;
+
+\(\*\) O Nome da Tabela Parametrizada do processo de exclusão está gravado na tabela LIB\_PROC\_PARAM no registro com campo NOME = "Nome Tabela"\.
+
+- Se o Estabelecimento for informado em tela, então considerar os processos cujo Estabelecimento Parametrizado seja igual ao informado;
+
+\(\*\) O Estabelecimento Parametrizado do processo de exclusão está gravado na tabela LIB\_PROC\_PARAM no registro com campo NOME = "Estabelecimento"\.
+
+O resultado deverá ser disponibilizado conforme layout abaixo:
+
+__Campos do Relatório__
+
+__Regra de recuperação__
+
+__Campo                             Tabela__
+
+Número do Processo
+
+PROC\_ID
+
+FTR\_PROCESSO
+
+Data Inicial da Execução do Processo
+
+DATA\_INICIO
+
+FTR\_PROCESSO
+
+Data Final da Execução do Processo
+
+DATA\_FIM
+
+FTR\_PROCESSO
+
+Data Inicial da Parametrização
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "Data Inicial"
+
+Data Final da Parametrização
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "Data Final"
+
+Usuário
+
+COD\_USUÁRIO
+
+FTR\_PROCESSO
+
+Nome Tabela Excluída
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "Nome Tabela"
+
+Estabelecimento
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "Estabelecimento"
+
+Grupo de Cadastro
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "Grupo"
+
+LIMPAR também os dados de TABELAS VINCULADAS à tabela selecionada?
+
+VALOR\_APRESENTA
+
+LIB\_PROC\_PARAM, recuperar o registro com campo NOME = "LIMPAR também os dados de TABELAS VINCULADAS à tabela selecionada?"
+

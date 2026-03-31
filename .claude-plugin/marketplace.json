@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "taxone-marketplace",
+  "version": "1.0.0",
+  "description": "Plugins do Claude Code para o time TAX ONE (Mastersaf Fiscal Solutions). Pipelines automatizados de correcao de bugs, implementacao de features, testes E2E, observabilidade Datadog e gestao de sprints.",
+  "owner": {
+    "name": "TAX ONE Support Engineering",
+    "email": "jorge.neto@thomsonreuters.com"
+  },
+  "plugins": [
+    {
+      "name": "taxone-support-dev",
+      "description": "Plugin multi-agente para suporte e desenvolvimento TAX ONE. 21 agentes especializados (PL/SQL, Java, Angular, DBA, PM, QA), 9 pipelines automatizados, base de conhecimento com 4028 tabelas documentadas, integracao ADO + Datadog + Playwright.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Jorge Washington da Silva Neto",
+        "email": "jorge.neto@thomsonreuters.com"
+      },
+      "source": "./taxone-support-dev",
+      "category": "development"
+    }
+  ]
+}

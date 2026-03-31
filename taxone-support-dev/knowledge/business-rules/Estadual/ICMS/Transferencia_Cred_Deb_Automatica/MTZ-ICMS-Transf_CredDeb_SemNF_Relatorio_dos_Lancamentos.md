@@ -1,0 +1,254 @@
+# MTZ-ICMS-Transf_CredDeb_SemNF_Relatorio_dos_Lancamentos
+
+- **Fonte:** MTZ-ICMS-Transf_CredDeb_SemNF_Relatorio_dos_Lancamentos.docx
+- **Modificado:** 2020-03-11
+- **Tamanho:** 89 KB
+
+---
+
+THOMSON REUTERS
+
+Módulo ICMS – Transferência de Crédito/Débito \(Centralização\) \- Sem emissão de NF
+
+Relatório dos Lançamentos
+
+__Localização__: Menu Estadual, Módulo ICMS, item Datamart 🡪 Transferência de Crédito/Débito Automática 🡪 Transferência de Crédito/Débito \(Centralização\) – Sem emissão de NF 🡪 Relatórios dos Lançamentos de Transferência
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+__Data__
+
+MFS1853
+
+Nova modalidade de transferência de crédito/débito sem notas fiscais
+
+Relatório dos lançamentos de transferência\.
+
+14/10/2015 \(criação do documento\)
+
+Sumário
+
+[1\.	Parâmetros da Tela	2](#_Toc431999980)
+
+[2\.	Origem e Recuperação dos Dados	4](#_Toc431999981)
+
+[3\.	Processamento	5](#_Toc431999982)
+
+[4\.	Preenchimento dos Dados do Relatório	5](#_Toc431999983)\]
+
+# <a id="_Toc431999980"></a>Parâmetros da Tela 
+
+![](data:image/png;base64,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)__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__OS/CH__
+
+Estabelecimento Centralizador
+
+Alfanumérico
+
+S
+
+S
+
+Listbox
+
+Este campo é uma lista onde será exibida a relação de todos os estabelecimentos centralizadores da empresa do login\.
+
+A centralização dos estabelecimentos é cadastrada no Módulo ICMS, menu “Manutenção 🡪 Parâmetros  Transferência de Crédito/Débito Automática 🡪 Estabelecimentos Centralizadores”\.
+
+Data da Apuração
+
+Data
+
+\(99/99/9999\)
+
+S
+
+S
+
+Neste campo o usuário informará uma data para emissão do relatório da apuração desejada\.
+
+Crítica de existência da apuração:
+
+Antes de iniciar a emissão do relatório, será verificado se existe a apuração do estabelecimento centralizador para a data informada e livro fiscal = 108\.
+
+Caso não exista, será exibida a seguinte mensagem: *“Não existe apuração para o estabelecimento centralizador e data  informados”*
+
+__OBS__: Diferente das outras telas de geração para este tipo de transferência, neste menu o campo fica aberto para digitação\.
+
+# <a id="_Toc350763252"></a><a id="_Toc431999981"></a>Origem e Recuperação dos Dados
+
+__Origem dos Dados__: Tabela dos Lançamentos Complementares da Apuração do ICMS \(ITEM\_APURAC\_DISCR\)
+
+Serão recuperados os lançamentos complementares de transferência de crédito/débito \(apenas da modalidade “Sem Emissão de NF”\) de todos os estabelecimentos envolvidos na centralização, ou seja, o estabelecimento centralizador informado na tela, e todos os seus Estabelecimentos centralizados\.
+
+A centralização dos estabelecimentos é cadastrada no Módulo ICMS, menu “Manutenção 🡪 Parâmetros  Transferência de Crédito/Débito Automática 🡪 Estabelecimentos Centralizadores”\.
+
+Critérios para recuperação dos lançamentos:
+
+COD\_EMPRESA             = código da empresa do login            
+
+COD\_ESTAB                   = estabelecimentos envolvidos na centralização \(deve ser = estabelecimento centralizador ou = um dos seus centralizados\)              
+
+COD\_TIPO\_LIVRO          = “108”’      
+
+DAT\_APURACAO            = data da apuração informada em tela      
+
+IND\_DIG\_CALCULADO  =  “__B__”          
+
+\(o indicador “__B__” é específico dos lançamentos de transferência gerados pela modalidade “Sem Emissão de NF”\)
+
+Caso não exista nenhum lançamento conforme os critérios acima, o relatório não será gerado e será exibida a seguinte mensagem na tela da geração:
+
+*                                                “Não foram identificados lançamentos de transferência p/o período informado”*
+
+# Processamento
+
+Os lançamentos recuperados serão demonstrados no relatório da seguinte forma:
+
+__Primeira parte__ \(lançamentos do __centralizador__\):
+
+Na primeira parte do relatório aparecerão todos os lançamentos do estabelecimento __Centralizador__ \(estabelecimento informado na tela da geração\)\.
+
+Ordenação dos lançamentos:
+
+Os lançamentos aparecerão ordenados pelo código do estabelecimento de origem\. Esta informação será obtida na descrição do lançamento, considerando a regra de geração deste campo na gravação do lançamento __\(\*\)__\.
+
+__\(\*\)__ Ao gerar os lançamentos do estabelecimento centralizador, a descrição parametrizada é concatenada com a identificação do estabelecimento de origem, conforme consta na regra de gravação do campo “Descrição do Lançamento” no documento das regras da geração dos lançamentos\.
+
+Se o lançamento for um débito \(itens apuração 002 ou 003\) 🡪 o valor será lançado na coluna “Débito” e a coluna “Crédito” ficará em branco
+
+Se o lançamento for um crédito \(itens apuração 006, 007 ou 012\) 🡪 o valor será lançado na coluna “Crédito” e a coluna “Débito” ficará em branco
+
+__Segunda parte__ \(lançamentos dos __centralizados__\):
+
+Na segunda parte aparecerão todos os lançamentos dos estabelecimentos __Centralizados__\.
+
+Ordenação dos lançamentos: código do estabelecimento
+
+Se o lançamento for um débito \(itens apuração 002 ou 003\) 🡪 o valor será lançado na coluna “Débito” \(a coluna “Crédito” ficará em branco\)
+
+Se o lançamento for um crédito \(itens apuração 006, 007 ou 012\) 🡪 o valor será lançado na coluna “Crédito” \(a coluna “Débito” ficará em branco\)
+
+# <a id="_Toc431999983"></a>Preenchimento dos Dados do Relatório
+
+Ordenação dos dados:  conforme descrito no item  anterior
+
+Layout:  ver planilha “Layout Relatório dos Lançamentos de Transferência”
+
+ Preenchimento dos dados:
+
+Primeira linha do cabeçalho
+
+Razão social da empresa
+
+Campo “Data”: data da geração do relatório
+
+Campo “Pág\.”: página do relatório
+
+Segunda linha do cabeçalho
+
+Campo “Filial”: Código e razão social do estabelecimento centralizador informado na tela
+
+Campo “CNPJ”: CNPJ do estabelecimento centralizador informado na tela
+
+Terceira linha do cabeçalho
+
+Nesta linha será impresso o título do relatório: “Relatório dos Lançamentos de Transferência” 
+
+Quarta linha do cabeçalho
+
+Nesta linha será demonstrada a data da apuração utilizada na emissão do relatório\.
+
+__                                                                         Primeira parte do relatório:__
+
+__                                                     __\(vide conteúdo da primeira parte no item 3\-Processamento\)
+
+Estabelecimento Centralizador
+
+Código e razão social do estabelecimento __centralizador__\.
+
+Esta coluna só será preenchida *na linha do primeiro lançamento* do estabelecimento centralizador, ou, na quebra de página, quando for o caso\.
+
+\(vide exemplo na planilha do layout\)
+
+Item Apuração
+
+Item da apuração do lançamento \(COD\_OPER\_APUR\)
+
+Descrição do Lançamento
+
+Descrição do lançamento \(DSC\_ITEM\_APURACAO\)
+
+Débito
+
+Esta coluna será preenchida com o valor do lançamento quando o mesmo for um débito \(COD\_OPER\_APUR = 002 ou 003\)\. Caso contrário, a coluna ficará em branco\.
+
+Crédito
+
+Esta coluna será preenchida com o valor do lançamento quando o mesmo for um crédito \(COD\_OPER\_APUR = 006, 007 ou 012\)\. Caso contrário, a coluna ficará em branco\.
+
+Estab\. Origem
+
+Código do estabelecimento de origem do lançamento\.
+
+*\(Esta informação será obtida na descrição do lançamento, considerando a regra de geração deste campo na gravação do lançamento\. Ao gerar os lançamentos do estabelecimento centralizador, a descrição parametrizada é concatenada com a identificação do estabelecimento de origem, conforme consta na regra de gravação do campo “Descrição do Lançamento” no documento das regras da geração dos lançamentos\)*
+
+Linha “Total dos Valores Recebidos por Transferência”
+
+Nesta linha será preenchido o resultado da totalização das duas colunas de valor: Débito e Crédito\.
+
+No caso de resultado zero, a coluna respectiva ficará em branco\.
+
+__                                                                           Segunda parte do relatório:__
+
+                                                                    \(vide conteúdo da segunda parte no item 3\-Processamento\)
+
+                                                                \(observar que a segunda parte não tem a coluna “Estab\. Origem”\)
+
+Estabelecimentos Centralizados
+
+Código e razão social do estabelecimento __centralizado__\.
+
+Item Apuração
+
+Item da apuração do lançamento \(COD\_OPER\_APUR\)
+
+Descrição do Lançamento
+
+Descrição do lançamento \(DSC\_ITEM\_APURACAO\)
+
+Débito
+
+Esta coluna será preenchida com o valor do lançamento quando o mesmo for um débito \(COD\_OPER\_APUR = 002 ou 003\)\. Caso contrário, a coluna ficará em branco\.
+
+Crédito
+
+Esta coluna será preenchida com o valor do lançamento quando o mesmo for um crédito \(COD\_OPER\_APUR = 006, 007 ou 012\)\. Caso contrário, a coluna ficará em branco\.
+
+Linha “Total dos Valores Transferidos p/o Centralizador”
+
+Nesta linha será preenchido o resultado da totalização das duas colunas de valor: Débito e Crédito\.
+
+No caso de resultado zero, a coluna respectiva ficará em branco\.
+
+= = = = = =
+
+ 
+

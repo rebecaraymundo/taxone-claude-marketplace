@@ -1,0 +1,128 @@
+# MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_1250_1255
+
+> Fonte: MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_1250_1255.docx
+
+
+
+
+
+
+
+THOMSON REUTERS
+
+Módulo Sped Fiscal
+
+Processamento do Cálculo ICMS-ST – Registros 1250 e 1255
+
+
+Localização: Menu Sped, Módulo: Escrituração Fiscal Digital à Pré-Geraçãoà Ressarcimento ICMS-ST (Específico MG) à Cálculo ICMS-ST
+
+Sumário
+
+1.	CONTROLE DE ALTERAÇÕES	2
+2.	INTRODUÇÃO	3
+3.	DOCUMENTOS DE REFERÊNCIA	3
+4.	DEFINIÇÃO DAS REGRAS	4
+
+
+
+
+
+
+
+## CONTROLE DE ALTERAÇÕES
+
+
+
+
+
+
+
+
+
+
+## INTRODUÇÃO
+
+Este documento contém as regras de geração dos registros 1250 e 1255.
+
+## DOCUMENTOS DE REFERÊNCIA
+
+MTZ-EFD_Tela_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST.docx
+MTZ-EFD_Parametrizacao_Ressarcimento_ICMSST_NCM.docx
+MTZ-EFD_Parametrizacao_Ressarcimento_ICMSST_Produtos.docx
+MTZ-EFD_Parametrizacao_Ressarcimento_ICMSST_Saida_CFOP.docx
+MTZ-EFD_Parametrizacao_Ressarcimento_ICMSST_Saida_Natureza_Operacao.docx
+
+## DOCUMENTOS DA PRE-GERAÇÃO
+
+
+A especificação da Pré-Geração foi criada em um único arquivo (MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST.docx). Mas com o tempo este documento ficou bastante grande, dificultando sua manutenção. Sendo assim, segregamos as regras nos seguintes documentos:
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST.docx
+- Documento principal, contém as seguintes regras: RP00 – regra geral, RP00A - regra de cálculo para Valores Médios do Inventário e RP00B - Regra da Média Ponderada dos Valores Médios do Produto no Período.
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C180_C185.docx
+- Documento que contém as regras de geração dos registros C180 e C185 (RP01, RP02, RP03, RP04, RP05).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C330.docx
+- Documento que contém as regras de geração dos registros C330 (RP05, RP06, RP07, RP08).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C430.docx
+- Documento que contém as regras de geração dos registros C430 (RP05, RP09, RP10, RP11).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_1250_1255.docx
+- Documento que contém as regras de geração dos registros 1250/1255 (RP05, RP12, RP13, RP14).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_H030.docx
+- Documento que contém as regras de geração dos registros H030 (RP05, RP15, RP16, RP17).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C181.docx
+- Documento que contém as regras de geração dos registros C181 (RP18).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C186.docx
+- Documento que contém as regras de geração dos registros C186 (RP19).
+
+- MTZ_EFD_Pre_Geracao_Ressarcimento_ICMSST_MG_Calculo_ICMS_ST_C195_C197_Lancto_P9_ST.docx
+- Documento que contém as regras de geração dos registros C195, C197 e lançamentos complementares na Apuração do ICMS-ST.
+
+
+## DEFINIÇÃO DAS REGRAS
+
+
+
+
+
+
+| Data | Demanda | Descrição | Autor |
+| --- | --- | --- | --- |
+| 17/03/2020 | MFS-33977 | Criação do processamento de cálculo das informações de ICMS-ST para a geração dos registros C180/C185 da EFD. (RP00,RP01, RP02,RP03,RP04 e RP05) | Alessandra Cristina Navatta |
+| 03/04/2020 | MFS-35339 | Inclusão do cálculo para a geração do registro C430 da EFD. (RP00, RP05, RP09, RP10, RP11) | Alessandra Cristina Navatta |
+| 07/04/2020 | MFS-35340 | Inclusão do cálculo para a geração do registro 1250 e 1255 da EFD. (RP00, RP05, RP012, RP13, RP14, RP18) | Alessandra Cristina Navatta |
+| 16/04/2020 | MFS-36146 | Inclusão do cálculo para a geração do registro H030 da EFD. (RP00, RP05, RP015, RP16, RP17 e RP18) | Alessandra Cristina Navatta |
+| 12/06/2020 | MFS-38251 | DW - SPED - EFD Fiscal - Declaração de Informações Complementares sujeitas à ST - MG - Ajustes para mercadorias em mais de um estoque (RP01,RP02) | Alessandra Cristina Navatta |
+| 25/06/2020 | MFS-39378 | Ajustes realizados na demanda: - Considerar na RP02, a data limite para a recuperação das notas de entrada, ‘campo ‘Pesquisar Notas de Entrada até’). Esta data afeta os registros C185, C330, C430 e H030) e foi criada na tela Ressarcimento ICMS-ST (Específico MG). - Criação de log para os registros de Saída (C185, C330 e C430) e o de inventário (H030) - RP05; - Considerar na recuperação das notas de entrada, para os registros de saída C185, C330, C430 e o de inventário H030, o campo para o cenário de ICMS Não destacado – (RP02). | Alessandra Cristina Navatta |
+| 25/03/2020 08/07/2020 | MFS-35337 | Inclusão do cálculo para a geração do registro C330 da EFD. (RP00, RP05, RP06, RP07 e RP08).  Foi necessário considerar na recuperação das notas de saída o mesmo agrupamento que é realizado para os registros C321 (detalhes em RP06) | Alessandra Cristina Navatta |
+| 27/11/2020 | MFS46686 | RP03: Registros C180, C185: Alteração na regra de preenchimento do campo 18 - VLR_UNIT_CONV da x296_info_compl_st_itens_merc | Liliane Assaf |
+| 30/11/2020 | MFS47079 | Inclusão do tratamento das notas de saídas para fatos geradores presumidos não realizados. Antes desta MFS, essa rotina contemplava apenas Saídas internas pra Consumidor Final, com regras baseadas no manual do Aspécto Quantitativo. Segundo o Anexo XV do RICMS/02 (artigos 22 a 31), as notas fiscais de saídas de fato gerador presumido não realizado são operações de: I - saída para outra unidade da Federação II - saída amparada por isenção ou não-incidência; III - perecimento, furto, roubo ou qualquer outro tipo de perda  Nas operações de saídas de fato gerador presumido não realizado, o contribuinte emissor da nota de saída terá direito a ressarcimento.  Fazendo um comparativo com as notas fiscais de saídas de operações internas para consumidor final, essas podem gerar ressarcimento ou complemento, dependendo de qual seja o maior valor, o da entrada ou da saída, e são apresentadas no registro C185 com código do motivo MG100 ou MG300. Para notas de saídas de fato gerador presumido não realizado o fisco estabeleceu que sempre haverá ressarcimento baseado no valor médio ponderado imposto das entradas, independente de qual valor tenha sido maior (entrada ou saída). Essas notas serão apresentadas no registro C185 com código do motivo MG200.  A solução já utiliza as parametrizações por CFOP e CFOP/Natureza da Operação para identificar as saída sujeitas a ICMS-ST. Mas esta está sendo alterada para que o relacionamento dos CFOP e Naturezas da Operação sejam feitos por operação: - Saída Interna para Consumidor Final (art 31-A - Anexo XV do RICMS/02)  - Saída para Outras Unidade da Federação  (art 23 - Anexo XV do RICMS/02)  - Saída com Isenção ou não Incidência (art 23 - Anexo XV do RICMS/02)  - Perecimento, Furto, Roubo ou qualquer outro Tipo de Perda (art 23 - Anexo XV do RICMS/02)  Com base nessa parametrização, a pré-geração irá aplicar os tratamentos específicos na geração do C185:  para Saída Interna para Consumidor Final (art 31-A - Anexo XV do RICMS/02) com base no Manual Aspécito Quantitativo; para Saídas de fator gerador presumido não realizado, com base no “Manual de Escrituração – Restituição do ICMS ST – Fato Gerador Presumido Não Realizado”. | Liliane Assaf |
+| 08/12/2020 | MFS47958 | RP02, RP03: Alteração na regra de preenchimento do campo 19-VLR_ICMS_CONV da X296, para considerar o % de Redução de BC parametrizado no produto ou NCM.  Essa solicitação veio do Carrefour e em call com CAN, foi dado aceite para realizarmos a alteração. Carrefour pediu alteração no campo 10-VL_UNIT_ICMS_NA_OPERACAO_CONV do C185, para usar o "% de Redução de BC”.  No no 06 - VL_UINT_ICMS_OP_CONV do C180 faremos uso dos campos de Valores de ICMS da SAFX08 (43, 80, 225), que foi solicitado em call dia 14/12. Link da gravação: 01/12: https://web.microsoftstream.com/video/ecc22357-1f2f-417e-9661-a6e487dd5b15 14/12: | Liliane Assaf |
+| 09/12/2020 | MFS47248 | RP01, RP02: Utilização do campo 137 – Quantidade Convertida da SAFX08, na geração dos registros C180 e C185. | Liliane Assaf |
+| 04/01/2021 | MFS57863 | RP03: Registro C180 – VLR_UNIT_CONV: Alteração na regra de preenchimento do campo 18 - VLR_UNIT_CONV da x296_info_compl_st_itens_merc, para subtrair o valor do ICMS-ST (notas de entradas). Link da gravação do call com Carrefour em 22/12: https://web.microsoftstream.com/video/f2cd7ef3-db6d-4dae-ba40-5a1c3b4e5e06                                                                 em 04/01: https://web.microsoftstream.com/video/a3a4ea77-2e36-4e67-b6c9-d202c778e60f (no 36min) Base Legal: Guia Prático do Sped Fiscal: Registro C180, explicação do campo 05: “Campo 05 (VL_UNIT_CONV) – Preenchimento: informar o valor unitário líquido do item/produto (considerando descontos e acréscimos incondicionais aplicados sobre o valor bruto). O valor unitário do campo 05 não inclui o ICMS ST na aquisição de participante substituto ou nas hipóteses em que o informante é responsável pela substituição.” | Liliane Assaf |
+| 09/06/2021 | MFS-67654 | Alteração no Cálculo das Médias Diárias + relatório (RP00B) Ajuste na regra de ressarcimento/complemento dos registros: -  C185 (RP02, RP03, RP05) – passar a considerar o novo Cálculo da Média Ponderada e passa a gerar o código motivo MG000. -  C330 (RP06, RP07) -  C430 (RP09, RP10) Base Legal: Manual Aspecto Quantitativo versão 05 – 2021 e Manual Fato Gerador Presumido Não Realizado versão 02 – 2021. | Liliane Assaf |
+| 09/06/2021 | MFS-62563 | Inclusão do registro C181 (geração e relatório) (RP18) Base Legal: Manual Aspecto Quantitativo versão 05 – 2021 e Manual Fato Gerador Presumido Não Realizado versão 02 – 2021. | Liliane Assaf |
+| 18/06/2021 | MFS-67660 | Alteração no 1255 – RP13. Base Legal: Manual Aspecto Quantitativo versão 05 – 2021 e Manual Fato Gerador Presumido Não Realizado versão 02 – 2021. | Liliane Assaf |
+| 18/06/2021 | MFS-64570 | Inclusão do registro C186 (geração e relatório) (RP19) Base Legal: Manual Aspecto Quantitativo versão 05 – 2021 e Manual Fato Gerador Presumido Não Realizado versão 02 – 2021. | Liliane Assaf |
+| 27/07/2021 | MFS-67658 | Inclusão da geração dos registros C195/C197 e Lançamentos na Apuração do ICMS-ST   Base Legal: Manual Aspecto Quantitativo versão 05 – 2021 e Manual Fato Gerador Presumido Não Realizado versão 02 – 2021. | Liliane Assaf |
+| 24/03/2022 | MFS82792 | Alteração da regra dos campo 8 e 9 da SAFX304, para fato gerador presumido não realizado. A alteração está sendo feita para atender uma crítica do PVA, que não aceita que os campos estejam vazios nos campos 6 e 7 do registro 1255. | Andréa Rocha |
+| 29/03/2022 | MFS83323 | Inclusão da geração do registro 1255 para o código de motivo igual a MG000.  A geração do registro 1255 para este código se faz necessária, por causa de um erro na validação do arquivo no PVA. | Andréa Rocha |
+| 20/04/2022 | MFS83559 | Alteração na regra de preenchimento do campo 05 da SAFX304, para preencher com zero ao invés de nulo, quando o Código de Motivo for MG100, MG300, MG600, MG800. Base Legal: versão 2022.01 do Manual de Escrituração - Complemento e Restituição do ICMS ST – Aspecto Quantitativo | Liliane Assaf |
+
+
+| Número | Regra | Demanda |
+| --- | --- | --- |
+| RP12 | Quando o parâmetro 1250/1255: Informações consolidadas de saldos de restituição, ressarcimento e complementação do ICMS,  estiver marcado na tela: Todos os cálculos realizados por este processo serão armazenados na tabela x304_saldo_cons_res_comp_icms e serão utilizados para a geração dos registros 1250/1255 do SPED FISCAL.  Validações  Considerar as validações na RP05 (Mensagens que devem ser apresentadas no Log do processamento e Mensagens que devem ser apresentadas no Log do processamento (1250/1255)) | MFS-35340 |
+| RP13 | [MFS47079] Cria o tratamento para o código motivo MG200, referente às notas de saída de fato gerador não realizado que são armazenadas na tabela x296_info_compl_st_itens_merc.  [MFS-67660] Passar a considerar os códigos motivos MG600 e MG800 oriundos das devoluções de saídas gravadas na tabela X308_INFO_COMPL_ST_IT_MERC_DEV.  [MFS83323]  Inclusão da geração do registro 1255 para o código de motivo igual a MG000  Gravar os registros na tabela x304_saldo_cons_res_comp_icms, conforme regras indicadas nos respectivos campos indicado na tabela abaixo.   Para os registros 1250/1255, apresentar o somatório dos valores dos respectivos campos que estão nas tabelas x296_info_compl_st_itens_merc (C185),  x299_inf_comp_st_res_mod_02 (C330) e  x302_inf_comp_st_res_it_ecf (C430). Os registros devem ser recuperados e agrupados pelo código do motivo (campo 24 - COD_MOTIVO_SAI), que devem estar preenchidos com MG000, MG100 ou MG300 ou MG200, MG600, MG800, cuja data fiscal deve estar compreendida dentro do período de processamento (campo período, indicado na tela).  Recuperar os registros da tabela x296_info_compl_st_itens_merc (C185) com código de motivo MG000, MG100, MG200 e MG300. Recuperar os registros da tabela x299_inf_comp_st_res_mod_02 (C330) com código de motivo  MG000, MG100 e MG300. Recuperar os registros da tabela x302_inf_comp_st_res_it_ecf (C430) com código de motivo  MG000, MG100 e MG300. Recuperar os X308_INFO_COMPL_ST_IT_MERC_DEV com código de motivo MG600 e MG800.  Não deve ser considerado o código MG500 do registro C181.  Os dados calculados e gravados podem ser consultados na tela SPEDàEFD – Escrituração Fiscal Digital àGeração àManutenção àRegistro 1255.  (Tabela de Gravação dos Registros 1255) | MFS-35340 [MFS47079] MFS-67660 MFS-82792 MFS-83323 |
+| RP14 | Todos os registros gravados na tabela x304_saldo_cons_res_comp_icms, através deste processo (RP13), devem ser identificados que foram calculados pelo sistema, pois os registros importados (SAFX304) não podem ser alterados (por esse processo).  Considerar a mesma sugestão proposta na RP04 (campo ind_gravacao). | MFS-35340 |
+| RP05 | Mensagens que devem ser apresentadas no Log do processamento (qualquer registro):   Se o período indicado na tela de cálculo for menor que 01/2020, apresentar a mensagem: “O cálculo não foi realizado, pois o período a ser calculado deve ser a partir de janeiro de 2020. Períodos anteriores a janeiro de 2020 devem ser entregues pelo arquivo Sintegra, Registro 88STITNF”.   Demonstrar no log os registros que sofreram alteração (já tinham sido calculado e foram reprocessados). Exibir os campos chaves.  Se a Unidade de Medida do produto é diferente da Unidade de Medida do Inventário e não for encontrado registro correspondente na tabela de Conversão de Unidades (Padrão ou por Produto) apresentar a mensagem “Conversão de Unidade não cadastrada.  Unidade do Produto: (14 – COD_MEDIDA), Unidade do Estoque: (12 – COD_MEDIDA), por isso, o cálculo não foi realizado.  O log deve demonstrar as informações necessárias para permitir a identificação do inventário, exibindo o estabelecimento, a data, produto, indicador do produto, etc ...)    Se a Unidade de Medida do item de saída é diferente da Unidade de Medida do Produto e não for encontrado registro correspondente na tabela de Conversão de Unidades (Padrão ou por Produto) apresentar a mensagem “Conversão de Unidade não cadastrada. Unidade do Item de Saída: (25 – COD_MEDIDA/ 137 – QUANTIDADE_CONV), Unidade do Item de Entrada: (25 – COD_MEDIDA, por isso, o cálculo não foi realizado. O log deve demonstrar as informações necessárias para permitir a identificação do item do documento, exibindo o estabelecimento, a data, o número do documento, pessoa fis/jur, o número do item, produto,indicador, etc). [MFS47079] Aplicável a todas as notas de entradas e saídas.  Ao calcular o valor médio do registro do inventário e existir divergência em algum campo dos valores médios, exibir a mensagem “Foi necessário realizar o cálculo dos valores médios do inventário e encontramos divergências em pelo menos um dos campos:  Valor ICMS Médio, Valor ICMS-ST Médio ou Valor Base ICMS-ST Médio: O log deve demonstrar as informações necessárias para permitir a identificação do inventário, exibindo o estabelecimento, a data, produto, indicador do produto, etc ).   Ao recuperar o inventário de Produtos ou NCMs sujeito ao ICMS-ST, se nenhum registro possuir motivo 06 (na tabela de inventário), apresentar a mensagem por registro e produto/ncm: “Não foi localizado inventário com motivo 06 para os Produtos ou NCMs cadastrados nas telas de Parametrização localizados em SPED / Escrituração Fiscal Digital / Parâmetros /Ressarcimento ICMS-ST.  Se existir mais de um registro de inventário para o mesmo produto, período e Motivo do Inventário (Campo 40 – IND_MOT_INV) = “06”, com GRUPO_CONTAGEM = ‘1’ e ‘2’ e a unidade de medida destes registros for diferente, exibir a mensagem no log: “ O produto possui mais de um registro de inventário, para o mesmo período. Estes registros estão com unidades diferentes. Favor rever o cadastro".”. O log deve demonstrar as informações necessárias para permitir a identificação inventário, exibindo o estabelecimento, a data, produto,indicador,grupo de contagem etc).  Se não existir notas de entrada (para a realização do cálculo de valores médios do inventário), para todos os produtos sujeitos ao ICMS-ST, exibir a mensagem (para cada produto): “Não foram encontradas notas de entrada, para conseguirmos realizar o cálculo dos valores médios do registro de inventário. As notas de entrada foram consultadas até: << informar a data preenchida no campo ‘Pesquisar Notas de Entrada até’”.O log deve demonstrar as informações necessárias para permitir a identificação inventário, exibindo o estabelecimento, a data, produto,indicador, etc).  Se for encontrado o registro de inventário  na tabela x52_invent_produto, para a realização do cálculo, e não foram encontradas notas de entrada suficientes para compor a quantidade deste inventário, realizar o cálculo deste produto com a quantidade encontrada e exibir a mensagem: “Não foram encontradas notas de entrada suficientes para atingirmos a quantidade do inventário. As notas de entrada foram consultadas até: << informar a data preenchida no campo ‘Pesquisar Notas de Entrada até’”. Favor rever esta situação.” O log deve demonstrar as informações necessárias para permitir a identificação inventário, exibindo o estabelecimento, a data, produto,indicador, etc).   Mensagens que devem ser apresentadas no Log do processamento (C180/C185):  Se existir informações no período para a tabela x296_info_compl_st_itens_merc (registros de origem via importação), o cálculo não será realizado. Exibir a mensagem: “Existem dados importados através da SAFX296 – Informações Complementares das Operações Sujeitas ao ST (C180, C185 e C380) para o período, por isso, o cálculo não será realizado”.[MFS47079] Aplicável a todas as notas de entradas e saídas.  Caso exista dados de Inventário no período e para a geração do registro C180 seja necessário buscar notas de entrada do período anterior a 01/01/2020 (para compor a quantidade do inventário), exibir a mensagem: “Conforme orientação do Guia Prático, favor entregar o arquivo Sintegra, Registro 88STITNF.  Trecho do Manual: Se as notas fiscais que acobertam o estoque inicial declarado no ‘Bloco H’ tiverem sido escrituradas em data anterior a 01/01/2020, o contribuinte deverá apresentar o Registro 88STITNF do arquivo Sintegra para tais notas”.  [MFS-67654]: Se a nota de saída não tiver restituição e nem complemento, exibir a mensagem no Log: “Não foi calculado complemento e nem restituição para o item da nota de saída. Motivo MG000 não solicita esta informação.”   O log deve demonstrar as informações necessárias para permitir a identificação do item do documento, exibindo o estabelecimento, a data, o número do documento, pessoa fis/jur, o número do item, produto,indicador, etc).[MFS47079] Aplicável apenas as Notas de Saídas Internas a Consumidor Final.  [MFS-67654]: Se os Códigos de Motivo de Restituição/Complementação de ICMS MG000, MG100, MG300 e MG200 não estiverem cadastrados. Dar mensagem orientando para que se realize o cadastro no módulo Básicos > Data Warehouse, menu Manutenção >> Cadastros >> Códigos de Motivo de Restituição/Complementação de ICMS (SPED FISCAL). [MFS47079] Aplicável a todas as notas de saídas    Mensagens que devem ser apresentadas no Log do processamento (C330):  Se existir informações no período para a tabela x299_inf_comp_st_res_mod_02 (registros de origem via importação), o cálculo não será realizado. Exibir a mensagem: “Existem dados importados através da SAFX299 – Informações Complementares das Operações Sujeitas ao ST (C330) para o período, por isso, o cálculo não será realizado”. Se o valor unitário da saída da mercadoria for igual a somatória da Base de Cálculo de ICMS-ST unitária das entradas (valor médio), não teremos restituição e nem complemento. Para este cenário, exibir a mensagem no Log: “Não foi calculado complemento e nem restituição para a sequência dos itens da nota de saída. Motivo MG000 não solicita esta informação.” O log deve demonstrar as informações necessárias para permitir a identificação das sequências dos itens dos documentos, exibindo o estabelecimento, a data, o número do documento, pessoa fis/jur, o número do item, produto,indicador, etc).    Mensagens que devem ser apresentadas no Log do processamento (C430):  Se existir informações no período para a tabela x302_inf_comp_st_res_it_ecf (registros de origem via importação), o cálculo não será realizado. Exibir a mensagem: “Existem dados importados através da SAFX302 – Informações Complementares das Operações Sujeitas ao ST (C430) para o período, por isso, o cálculo não será realizado”. Se o valor unitário da saída da mercadoria for igual a somatória da Base de Cálculo de ICMS-ST unitária das entradas (valor médio), não teremos restituição e nem complemento. Para este cenário, exibir a mensagem no Log: “Não foi calculado complemento e nem restituição para o item da nota de saída. Motivo MG000 não solicita esta informação.” O log deve demonstrar as informações necessárias para permitir a identificação do item do documento, exibindo o estabelecimento, a data, o número do documento, pessoa fis/jur, o número do item, produto,indicador, etc). Ao gravar o registro calculado, se não existir informação no campo NUM_CRZ para este cupom, o mesmo não será gravado na tabela  x302_inf_comp_st_res_it_ecf e a mensagem deve ser exibida: “O registro calculado não foi gravado na tabela, pois não há informação no campo NUM_CRZ. ” O log deve demonstrar as informações necessárias para permitir a identificação do cupom, exibindo o estabelecimento, a data, o modelo, o número do item, produto,indicador, etc).     Mensagens que devem ser apresentadas no Log do processamento (1250/1255):  Se existir informações no período para a tabela x304_saldo_cons_res_comp_icms (registros de origem via importação), o cálculo não será realizado. Exibir a mensagem: “Existem dados importados através da SAFX304 – Saldo Consolidado da Restituição/Complemento de ICMS (1250/1255) para o período, por isso, o cálculo não será realizado”. Se não existir informações na tabela x296_info_compl_st_itens_merc (tanto pela importação, manutenção ou até mesmo pelo cálculo), referente aos campos de saída (campos 24 ao 32), exibir a mensagem: Não há dados referente ao registro “c185”: Saída de mercadorias sujeitas à substituição tributária (01, 1B, 04, 55 e 65), desta maneira, o cálculo dos registros 1250/1255 não será realizado.  Mensagens que devem ser apresentadas no Log do processamento (H030):  Se não existir informações na tabela x52_invent_produto, para a realização do cálculo, exibir a mensagem: Não há dados na tabela de inventário para o cálculo ser executado. O inventário recuperado para conseguirmos efetuar o cálculo é o inventário do período anterior ao informado na tela. Exibir no log, os registros que não foram atualizados, pois já existiam dados nos campos 21-VLR_ICMS_MEDIO, 22-VLR_ICMSS_MEDIO, 43-VLR_BASE_ICMSS_MEDIO e 44-VLR_FCP_MEDIO e a opção ‘Sobrepor os valores calculados na tabela de inventário (Registro H030)’ estava desmarcada. Neste cenário, exibir a mensagem: Registro não foi atualizado, pois existia valores nos campos de valores médios.  O log deve demonstrar as informações necessárias para permitir a identificação inventário, exibindo o estabelecimento, a data, produto,indicador, etc). | MFS-33977 MFS-35337 MFS-35339 MFS-35340 MFS-39378 [MFS47079] MFS-67654 |
+|  |  |  |
+|  |  |  |
+|  |  |  |

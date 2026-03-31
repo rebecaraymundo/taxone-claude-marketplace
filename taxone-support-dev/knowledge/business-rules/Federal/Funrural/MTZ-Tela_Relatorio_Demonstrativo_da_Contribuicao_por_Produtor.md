@@ -1,0 +1,216 @@
+# MTZ-Tela_Relatorio_Demonstrativo_da_Contribuicao_por_Produtor
+
+- **Fonte:** MTZ-Tela_Relatorio_Demonstrativo_da_Contribuicao_por_Produtor.docx
+- **Modificado:** 2020-03-11
+- **Tamanho:** 77 KB
+
+---
+
+THOMSON REUTERS
+
+Relatório Demonstrativo da Contribuição por Produtor
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+OS4585
+
+Elenilson Coutinho
+
+Alteração na seleção de Estabelecimentos, inclusão da opção “Todos”\.
+
+Sumário
+
+[1\.	TELA A SER DESENVOLVIDA	3](#_Toc397954379)
+
+[1\.1\.	Diagrama de Casos de Uso	3](#_Toc397954380)
+
+[1\.1\.1\.	UC001 – Manutenção da Estrutura Padrão	3](#_Toc397954381)
+
+[1\.1\.1\.1\.1\.	Fluxo Principal	3](#_Toc397954382)
+
+[1\.1\.1\.1\.2\.	Fluxo Alternativo 1 – Localizar registros \(Exemplo\)	4](#_Toc397954383)
+
+[2\.	REGRAS DOS CAMPOS	5](#_Toc397954384)
+
+[2\.1\.	Layout da Tela	5](#_Toc397954385)
+
+[3\.	REGRAS DE GERAÇÃO DO RELATÓRIO	6](#_Toc397954386)
+
+[3\.1\.	Layout do Relatório	7](#_Toc397954387)
+
+# <a id="_Toc397954379"></a>TELA A SER DESENVOLVIDA
+
+\[Incluir o diagrama de caso de uso e casos de uso correspondentes, conforme exemplos a seguir\]
+
+## <a id="_Toc350763243"></a><a id="_Toc397954380"></a>Diagrama de Casos de Uso 
+
+__ __
+
+__UC Estrutura Padrão__
+
+__Usuário __
+
+__UC001 – Manutenção da   __
+
+__Estrutura Padrão__
+
+Manutenção Padrão
+
+## <a id="_Toc350763244"></a><a id="_Toc397954381"></a>UC001 – Manutenção da Estrutura Padrão
+
+\[Descrever a ação deste caso de uso\. 
+
+Ex\.: Este caso de uso descreve o processo de Cadastro de Estrutura Padrão\.\]
+
+__Documentação do Caso de Uso__
+
+__Ator Principal__
+
+__Pré\- Condições__
+
+__Pós\-Condições__
+
+### <a id="_Toc332809652"></a><a id="_Toc332888915"></a><a id="_Toc350763245"></a><a id="_Toc397954382"></a>Fluxo Principal 
+
+\[Descrever a ação principal que será realizada na tela especificada\.
+
+ Ex\.: O usuário deseja realizar o cadastro de uma estrutura padrão\.
+
+__Ações do Ator__
+
+__Ações do Sistema__
+
+### <a id="_Toc332809666"></a><a id="_Toc332888929"></a><a id="_Toc350763246"></a>
+
+### <a id="_Toc397954383"></a>Fluxo Alternativo 1 – Localizar registros \(Exemplo\)
+
+__Ações do Ator__
+
+__Ações do Sistema__
+
+# <a id="_Toc350763252"></a><a id="_Toc397954384"></a>REGRAS DOS CAMPOS 
+
+__Localização da tela:__ Módulo: Federal🡪 Funrural🡪 Emissão
+
+__Título da tela: __Relatório Demonstrativo da Contribuição por Produtor
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__OS/CH__
+
+Estabelecimento
+
+Dropdown
+
+S
+
+S
+
+Código \- Descrição
+
+Deverá ficar habilitada a lista com todos os Estabelecimentos para seleção conforme perfil do usuário, e exibir a descrição “Todos”\. 
+
+Caso campo não preenchido retornar a mensagem “Campo Estabelecimento não preenchido”\.
+
+OS4585
+
+## <a id="_Toc397954385"></a>Layout da Tela
+
+![](data:image/png;base64,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)
+
+# <a id="_Toc397954386"></a>REGRAS DE GERAÇÃO DO RELATÓRIO 
+
+__Origem das informações para geração:__ \[indicação das origens de geração do relatório\]
+
+__Regra de seleção: __\[regra geral de seleção das informações\]
+
+__Regra de agrupamento: __\[regra de agrupamento das informações do relatório\]
+
+__Ordenação: __\[regra de ordenação das informações do relatório\]
+
+__Campo/Coluna__
+
+__Tipo__
+
+__Formato/Default__
+
+__Regra__
+
+__OS/CH__
+
+Dados do Cabeçalho
+
+\[Campo/Coluna especificado no relatório\]
+
+Ex\.: Estabelecimento
+
+Tipo da informação
+
+Ex\.:
+
+Texto,
+
+Numérico,
+
+Data\]
+
+Formato: 
+
+DD/MM/AA, 0,000, 
+
+Default: 0,000
+
+Definições do campo\. 
+
+Ex\.: Demonstrar a razão social do Estabelecimento
+
+\[OS / CH\]
+
+Corpo do Relatório
+
+\[Campo/Coluna especificado no relatório\]
+
+Ex\.: Código do Material\]
+
+Tipo da informação
+
+Ex\.:
+
+Texto,
+
+Numérico,
+
+Data\]
+
+Formato: 
+
+DD/MM/AA, 0,000, 
+
+Default: 0,000
+
+Definições do campo\. 
+
+Ex\.: Demonstrar o código do material
+
+\[OS / CH\]
+
+## <a id="_Toc397954387"></a>Layout do Relatório
+
+\[sugestão de layout do relatório\]
+

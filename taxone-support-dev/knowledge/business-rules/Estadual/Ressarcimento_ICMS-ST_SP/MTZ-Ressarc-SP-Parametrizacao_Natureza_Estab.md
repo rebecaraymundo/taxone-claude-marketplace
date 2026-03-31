@@ -1,0 +1,208 @@
+# MTZ-Ressarc-SP-Parametrizacao_Natureza_Estab
+
+- **Fonte:** MTZ-Ressarc-SP-Parametrizacao_Natureza_Estab.docx
+- **Modificado:** 2023-05-02
+- **Tamanho:** 83 KB
+
+---
+
+THOMSON REUTERS
+
+Módulo Ressarcimento / Complemento ICMS ST – SP \(Port CAT 42/2018\)
+
+Parametrização de Naturezas de Operação por Estabelecimento para a Ficha 3
+
+__Localização__: Menu Estadual, Módulo: Ressarcimento/Complemento ICMS\-ST \- SP, item Parâmetros 🡪 CFOP/Natureza para a Ficha 3 🡪 por Natureza de Operação \(Por Estabelecimento\)
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+__Data__
+
+MFS525055
+
+Andréa Rocha
+
+Criação do documento\.
+
+19/04/2023
+
+Sumário
+
+[1\.	Regras Gerais	2](#_Toc451940535)
+
+[2\.	Layout da Tela	2](#_Toc451940536)
+
+[3\.	Regras de Funcionamento dos Campos	4](#_Toc451940537)
+
+# <a id="_Toc451940535"></a>Regras Gerais
+
+Esta é uma parametrização de CFOP/Natureza por Estabelecimento e Operação \(operações tratadas na Ficha 3 do Módulo Ressarc/Compl da Port\. CAT 42/18\)\.
+
+Seu objetivo é definir as operações a serem consideradas para cada uma das colunas da Ficha 3, que são:
+
+- Entradas \(e Devoluções\) 
+- Saída a Consumidor ou Usuário Final \(e Devoluções\) – Cód\. Enq\. Legal = 1
+- Fato Gerador não Realizado \(e Devoluções\) – Cód\. Enq\. Legal = 2
+- Saída ou Saída Subsequente com Isenção ou não Incidência \(e Devoluções\) – Cód\. Enq\. Legal = 3
+- Saída para outro Estado \(e Devoluções\) – Cód\. Enq\. Legal = 4
+- Saída para Comercialização Subsequente e Demais Saídas \(e Devoluções\) – Cód\. Enq\. Legal = 0
+
+Para cada uma destas operações o usuário deve informar os CFOP’s/Naturezas da entrada ou saída, conforme o caso, e também o CFOP’s/Naturezas de suas respectivas devoluções\. 
+
+Assim, para cada Operação são disponibilizados para seleção tanto os CFOP’s/Naturezas de entrada como de saída, para que o usuário possa informar os CFOP’s/Naturezas da operação principal, e também os CFOP’s/Naturezas referentes à sua devolução\.
+
+A parametrização é utilizada na rotina de geração dos movimentos a partir das notas fiscais\.
+
+# <a id="_Toc451940536"></a>Layout da Tela
+
+![Graphical user interface, application
+
+Description automatically generated](data:image/png;base64,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)
+
+__Botões da barra de menu__:
+
+CONFIRMA
+
+Opção para salvar os dados informados para a parametrização da Natureza e Operação\.
+
+RELATÓRIO
+
+Esta opção permite imprimir os dados da parametrização\. Trata\-se de opção padrão das telas de manutenção do sistema\. 
+
+FECHA
+
+Fecha a tela da manutenção\.
+
+  
+
+# <a id="_Toc451940537"></a>Regras de Funcionamento dos Campos
+
+<a id="OLE_LINK17"></a>Na abertura da tela, a janela de seleção do GRUPO será aberta automaticamente, obrigando o usuário a selecionar o grupo desejado\. Os critérios para exibição dos grupos são os mesmos descritos acima para a opção “GRUPO” da barra de menu\. 
+
+Após a escolha do Grupo, serão exibidos o Estabelecimento e o Grupo escolhido, e o usuário poderá selecionar a Operação desejada \(campo Operação\)\.
+
+Após escolher a Operação, serão exibidos os dados dos CFOP’s/Naturezas da SAFX2081\. As naturezas já parametrizadas para a Operação escolhida aparecerão marcadas nos botões à esquerda do quadro\.
+
+Segue detalhamento do funcionamento dos campos:
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/__
+
+__Default__
+
+__Regra__
+
+<a id="_Hlk517437550"></a>Estabelecimento
+
+Alfanumérico 
+
+__S__
+
+N
+
+Neste campo será exibido o Estabelecimento selecionado pelo usuário na abertura da tela\.
+
+O campo não é habilitado para edição
+
+Grupo
+
+Alfanumérico
+
+__S__
+
+N
+
+Neste campo será exibido o Grupo selecionado pelo usuário na abertura da tela, ou através da opção “GRUPO” da barra de menu\.
+
+O campo não é habilitado para edição
+
+Operação
+
+Alfanumérico 
+
+__S__
+
+S
+
+Listbox
+
+Este campo é uma lista com as seguintes opções para seleção do usuário:
+
+- Entradas \(e Devoluções\)
+- Saída a Consumidor ou Usuário Final \(e Devoluções\) – Cód\. Enq\. Legal = 1
+- Fato Gerador não Realizado \(e Devoluções\) – Cód\. Enq\. Legal = 2
+- Saída ou Saída Subsequente com Isenção ou não Incidência \(e Devoluções\) \-
+
+Cód\. Enq\. Legal = 3
+
+- Saída para outro Estado \(e Devoluções\) – Cód\. Enq\. Legal = 4
+- Saída para Comercialização Subsequente e Demais Saídas \(e Devoluções\) – Cód\. Enq\. Legal = 0
+
+CFOP / Natureza de Operação
+
+Alfanumérico
+
+__S__
+
+S
+
+Neste campo é exibida a lista da combinação CFOP \+ Natureza de Operação da tabela SAFX2081, para seleção do usuário\.
+
+Os critérios para filtro dos dados da SAFX2081 são:
+
+- CFOP \- tanto os CFOP’s de entrada como de saída, para que o usuário informe os CFOP’s da operação principal e também de suas devoluções;
+- Natureza de Operação \- serão consideradas apenas as Natureza do GRUPO escolhido pelo usuário;
+
+Como facilitador, poderá ser utilizado o botão “Marcar todos” que marca ou desmarca todos os CFOP’s/Naturezas simultaneamente\.
+
+Ver abaixo \(__RN01__\) a crítica efetuada ao salvar a operação\.
+
+ 
+
+Replicar para os Estabelecimentos
+
+Alfanumérico
+
+__S__
+
+N
+
+Ao clicar nesta opção, o usuário poderá selecionar os estabelecimentos desejados para realizar a replicação dos dados parametrizados\.
+
+Serão exibidos para seleção *apenas* os estabelecimentos da mesma empresa do estabelecimento parametrizado\.
+
+Como facilitador, poderão ser utilizados os botões “Selecionar todos” e “Desmarcar todos”\.
+
+Ao salvar os dados será feita a seguinte verificação:
+
+__RN01 – CFOP/Natureza já parametrizado para outra operação:__
+
+O CFOP/Natureza a ser incluído *não* pode constar na parametrização de outra operação \(campo “Operação”\)\. 
+
+Quando ocorrer esta situação, a inclusão será efetuada apenas para os CFOP’s/Naturezas “corretos” \(não parametrizados para outra operação\)\.
+
+Os CFOP’s/Naturezas inválidos *não* serão incluídos, e será exibida a seguinte mensagem:
+
+                                                            *“O CFOP/Natureza XXXX\-XXX  já foi parametrizado para outra operação” *
+
+ 
+
+Onde “*XXXX\-XXX”* é o código do CFOP/Natureza inválido\.
+
+OBS: Caso existam vários CFOP’s/Naturezas inválidos a mensagem deve exibir o código de apenas um deles, já que não haveria como mostrar todos simultaneamente\. 
+
+= = = = = =
+

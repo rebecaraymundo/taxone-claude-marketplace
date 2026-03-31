@@ -1,0 +1,101 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-03-29",
+  "errors": [
+    {
+      "id": "storage_test_json_parse",
+      "pattern": "Unexpected token '_', \"__storage_test__\" is not valid JSON",
+      "regex": "__storage_test__.*not valid JSON",
+      "type": "frontend",
+      "error_type": "SyntaxError",
+      "source_file": "home.js",
+      "root_cause": "localStorage test in home.js attempts JSON.parse on raw string '__storage_test__' instead of a JSON value. Happens when browser localStorage has stale/corrupt entries.",
+      "action": "Ignorar — nao e bug de codigo da aplicacao. Erro cosmetic do SDK de deteccao de storage. Nao impacta funcionalidade.",
+      "severity": "ignore",
+      "first_seen": "2022-08-10",
+      "issue_id": "ef3b65a8-181f-11ed-949d-da7ad0900002",
+      "frequency": "very_high"
+    },
+    {
+      "id": "chunk_load_error",
+      "pattern": "ChunkLoadError",
+      "regex": "ChunkLoadError|Loading chunk \\d+ failed",
+      "type": "frontend",
+      "error_type": "ChunkLoadError",
+      "root_cause": "Bundle desatualizado no cache do browser apos deploy de nova versao. Lazy-loaded chunk nao encontrado.",
+      "action": "Limpar cache do browser ou forcar reload (Ctrl+Shift+R). Nao e bug de codigo. Se recorrente, verificar CDN/cache headers.",
+      "severity": "low",
+      "frequency": "medium"
+    },
+    {
+      "id": "null_property_read",
+      "pattern": "Cannot read properties of null",
+      "regex": "Cannot read propert(y|ies) of (null|undefined)",
+      "type": "frontend",
+      "error_type": "TypeError",
+      "root_cause": "Elemento DOM nao encontrado — possivel race condition no lifecycle Angular ou componente destruido antes do callback.",
+      "action": "Investigar o lifecycle hook Angular e timing de renderizacao. Verificar se ha ngOnDestroy/unsubscribe faltando. Capturar view.name e action context do RUM para reproduzir.",
+      "severity": "medium",
+      "frequency": "medium"
+    },
+    {
+      "id": "gateway_timeout_504",
+      "pattern": "504 Gateway Timeout",
+      "regex": "504|Gateway Timeout",
+      "type": "backend",
+      "error_type": "HttpError",
+      "root_cause": "Request ao backend Java/PL/SQL excedeu timeout do gateway (tipicamente 60s ou 120s). Geralmente causado por query Oracle lenta ou lock de tabela.",
+      "action": "Investigar performance do procedure Oracle chamado. Verificar traces APM para identificar query lenta. Checar locks via DBA.",
+      "severity": "high",
+      "frequency": "low"
+    },
+    {
+      "id": "gateway_timeout_502",
+      "pattern": "502 Bad Gateway",
+      "regex": "502|Bad Gateway",
+      "type": "backend",
+      "error_type": "HttpError",
+      "root_cause": "Backend Java nao respondeu ao gateway. Pode ser OOM, crash do container, ou deploy em andamento.",
+      "action": "Verificar logs do container Java via search_datadog_logs. Checar metricas de memoria/CPU do pod. Se durante deploy, transiente.",
+      "severity": "high",
+      "frequency": "low"
+    },
+    {
+      "id": "network_error",
+      "pattern": "Failed to fetch",
+      "regex": "Failed to fetch|NetworkError|net::ERR_",
+      "type": "network",
+      "error_type": "TypeError",
+      "root_cause": "Falha de rede entre browser e servidor. Pode ser VPN instavel, proxy corporativo, ou DNS timeout.",
+      "action": "Verificar se usuario estava em rede corporativa/VPN. Se isolado (1 usuario), nao e bug. Se recorrente, investigar infraestrutura.",
+      "severity": "low",
+      "frequency": "medium"
+    },
+    {
+      "id": "cors_error",
+      "pattern": "CORS",
+      "regex": "CORS|Access-Control-Allow-Origin|cross-origin",
+      "type": "frontend",
+      "error_type": "SecurityError",
+      "root_cause": "Request cross-origin bloqueado. Geralmente causado por URL incorreta ou configuracao de CORS no backend.",
+      "action": "Verificar URL do request. Se endpoint interno, checar configuracao CORS no gateway/backend Java.",
+      "severity": "medium",
+      "frequency": "low"
+    },
+    {
+      "id": "session_expired",
+      "pattern": "401 Unauthorized",
+      "regex": "401|Unauthorized|session.*expir",
+      "type": "auth",
+      "error_type": "HttpError",
+      "root_cause": "Sessao do usuario expirou. TAX ONE usa SAML SSO — token pode ter expirado apos periodo de inatividade.",
+      "action": "Nao e bug. Usuario precisa re-autenticar. Se muito frequente, verificar timeout de sessao no IdP.",
+      "severity": "low",
+      "frequency": "medium"
+    }
+  ],
+  "notes": {
+    "matching": "Usar regex para match. Se multiplos patterns casam, priorizar pelo severity (high > medium > low > ignore).",
+    "update_frequency": "Atualizar quando novos patterns recorrentes forem identificados via RUM error tracking."
+  }
+}

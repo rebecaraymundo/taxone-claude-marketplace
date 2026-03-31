@@ -1,0 +1,1432 @@
+{
+  "version": "2.0.0",
+  "description": "Mapeamento FINO de telas TAX ONE para specs E2E Playwright. Cada mapping representa uma TELA/MENU especifica, nao um modulo inteiro. Matching por menu_path (caminho de menu exato), screen_keywords (tela especifica), keywords (dominio), file_paths (arquivos modificados) e packages (PL/SQL). O campo menu_path replica a hierarquia dos test.describe dos specs.",
+  "playwright_repo": "${PLAYWRIGHT_REPO}",
+  "default_env": "qa",
+  "scoring": {
+    "menu_path_match": 7,
+    "screen_keyword_match": 5,
+    "keyword_match": 3,
+    "file_path_match": 5,
+    "package_match": 4,
+    "min_score_to_include": 3,
+    "max_specs": 5
+  },
+  "smoke_specs": [
+    "e2e/smokingTesting/"
+  ],
+  "mappings": [
+    {
+      "id": "E2E_DW_ASSISTENTE_DADOS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/dataWarehouse/assistenteDados/assistenteDados.spec.ts"],
+      "menu_path": "BASICO > DATA WAREHOUSE > ASSISTENTE DE DADOS",
+      "screen_keywords": ["ASSISTENTE DE DADOS", "ASSISTENTE DADOS"],
+      "keywords": ["ASSISTENTE", "DATAWAREHOUSE", "DW"],
+      "file_paths": ["basico/dw/assistente"],
+      "packages": ["DW_ASSISTENTE_FPROC"],
+      "suite_automation_id": "DW"
+    },
+    {
+      "id": "E2E_DW_DATAMART",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/dataWarehouse/dataMart/dataMart.spec.ts"],
+      "menu_path": "BASICO > DATA WAREHOUSE > DATA MART",
+      "screen_keywords": ["DATA MART", "DATAMART", "CARGA DADOS"],
+      "keywords": ["DATAMART", "DATA MART", "CARGA DADOS"],
+      "file_paths": ["basico/datamart", "basico/dw/datamart"],
+      "packages": ["DATAMART_FPROC"],
+      "suite_automation_id": "DATAMART"
+    },
+    {
+      "id": "E2E_DW_MANUTENCAO",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/dataWarehouse/manutencao/manutencao.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao1.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao2.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao3.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao4.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao5.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao6.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao7.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao8.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao9.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao10.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao11.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao12.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao13.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao14.spec.ts",
+        "e2e/basicos/dataWarehouse/manutencao/manutencao15.spec.ts"
+      ],
+      "menu_path": "BASICO > DATA WAREHOUSE > MANUTENCAO",
+      "screen_keywords": ["MANUTENCAO DW", "CONF_DOCFISCAL", "EQUALIZACAO", "DUPLICATAS"],
+      "keywords": ["MANUTENCAO DW", "CONF_DOCFISCAL", "EQUALIZACAO", "DUPLICATAS", "DATA WAREHOUSE MANUTENCAO"],
+      "file_paths": ["basico/dw", "basico/datawarehouse"],
+      "packages": ["CONF_DOCFISCAL_UTIL_FPROC", "DW_FPROC", "DW_MANUT_FPROC"],
+      "suite_automation_id": "DW"
+    },
+    {
+      "id": "E2E_DW_RELATORIOS",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/dataWarehouse/relatorios/relatorios.spec.ts",
+        "e2e/basicos/dataWarehouse/relatorios/relatorios2.spec.ts"
+      ],
+      "menu_path": "BASICO > DATA WAREHOUSE > RELATORIOS",
+      "screen_keywords": ["RELATORIO DW", "RELATORIO DATA WAREHOUSE"],
+      "keywords": ["RELATORIO DW", "RELATORIO DATA WAREHOUSE"],
+      "file_paths": ["basico/dw/relatorios", "basico/relatorios"],
+      "packages": ["DW_REL_FPROC"],
+      "suite_automation_id": "DW"
+    },
+    {
+      "id": "E2E_FERRAMENTAS_PARAMETROS_SISTEMA",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/ferramentas/parametrosSistema/parametroSistema.spec.ts"],
+      "menu_path": "BASICO > FERRAMENTAS > PARAMETROS DO SISTEMA",
+      "screen_keywords": ["PARAMETROS SISTEMA", "PARAMETROS DO SISTEMA"],
+      "keywords": ["PARAMETROS SISTEMA", "CONFIG SISTEMA"],
+      "file_paths": ["basico/ferramentas/parametros"],
+      "packages": ["FERRAMENTAS_FPROC"],
+      "suite_automation_id": "FERRAMENTAS"
+    },
+    {
+      "id": "E2E_FERRAMENTAS_RELATORIOS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/ferramentas/relatorios/relatorios.spec.ts"],
+      "menu_path": "BASICO > FERRAMENTAS > RELATORIOS",
+      "screen_keywords": ["RELATORIO FERRAMENTAS", "IDT DETALHES DOCUMENTOS"],
+      "keywords": ["FERRAMENTAS RELATORIOS", "IDT"],
+      "file_paths": ["basico/ferramentas/relatorios"],
+      "packages": ["FERRAMENTAS_FPROC"],
+      "suite_automation_id": "FERRAMENTAS"
+    },
+    {
+      "id": "E2E_FERRAMENTAS_ROTINAS_ACESSORIAS",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/ferramentas/rotinasAcessorias/rotinasAcessorias.spec.ts",
+        "e2e/basicos/ferramentas/rotinasAcessorias/rotinasAcessorias1.spec.ts",
+        "e2e/basicos/ferramentas/rotinasAcessorias/rotinasAcessorias2.spec.ts"
+      ],
+      "menu_path": "BASICO > FERRAMENTAS > ROTINAS ACESSORIAS",
+      "screen_keywords": ["ROTINAS ACESSORIAS", "ROTINA ACESSORIA", "INICIALIZACAO CIAP", "EXCLUSAO TABELAS"],
+      "keywords": ["ROTINAS ACESSORIAS", "INICIALIZACAO", "CIAP INIT"],
+      "file_paths": ["basico/ferramentas/rotinas"],
+      "packages": ["FERRAMENTAS_FPROC"],
+      "suite_automation_id": "FERRAMENTAS"
+    },
+    {
+      "id": "E2E_FERRAMENTAS_TABELAS_INTERNAS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/ferramentas/tabelasInternas/tabelasInternas.spec.ts"],
+      "menu_path": "BASICO > FERRAMENTAS > TABELAS INTERNAS",
+      "screen_keywords": ["TABELAS INTERNAS", "TABELA INTERNA"],
+      "keywords": ["TABELAS INTERNAS"],
+      "file_paths": ["basico/ferramentas/tabelas"],
+      "packages": ["FERRAMENTAS_FPROC"],
+      "suite_automation_id": "FERRAMENTAS"
+    },
+    {
+      "id": "E2E_JOB_SERVIDOR_AGENDAMENTO",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/jobServidor/agendamentoTributario/agendamentoTributario.spec.ts"],
+      "menu_path": "BASICO > JOB SERVIDOR > AGENDAMENTO TRIBUTARIO",
+      "screen_keywords": ["AGENDAMENTO TRIBUTARIO", "AGENDAMENTO"],
+      "keywords": ["AGENDAMENTO TRIBUTARIO", "AGENDAMENTO JOB"],
+      "file_paths": ["basico/job_servidor/agendamento"],
+      "packages": ["JOB_SERVIDOR_FPROC", "JOB_AGENDAMENTO"],
+      "suite_automation_id": "JOB_SERVIDOR_BAT"
+    },
+    {
+      "id": "E2E_JOB_SERVIDOR_CONTROLE",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/jobServidor/controle/controle.spec.ts"],
+      "menu_path": "BASICO > JOB SERVIDOR > CONTROLE",
+      "screen_keywords": ["CONTROLE JOB", "STATUS JOB"],
+      "keywords": ["JOB SERVIDOR", "CONTROLE", "STATUS JOB"],
+      "file_paths": ["basico/job_servidor", "basico/controle"],
+      "packages": ["JOB_SERVIDOR_FPROC", "JOB_BAT"],
+      "suite_automation_id": "JOB_SERVIDOR_BAT"
+    },
+    {
+      "id": "E2E_JOB_SERVIDOR_EXPORTACAO",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/jobServidor/exportacaoDados/exportacaoDados.spec.ts"],
+      "menu_path": "BASICO > JOB SERVIDOR > EXPORTACAO DADOS",
+      "screen_keywords": ["EXPORTACAO DADOS", "EXPORTACAO"],
+      "keywords": ["EXPORTACAO", "EXPORT"],
+      "file_paths": ["basico/job_servidor/exportacao"],
+      "packages": ["JOB_SERVIDOR_FPROC", "SAF_EXP"],
+      "suite_automation_id": "JOB_SERVIDOR_BAT"
+    },
+    {
+      "id": "E2E_JOB_SERVIDOR_IMPORTACAO",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/jobServidor/importacao/importacao.spec.ts",
+        "e2e/basicos/jobServidor/importacao/importacao1.spec.ts"
+      ],
+      "menu_path": "BASICO > JOB SERVIDOR > IMPORTACAO",
+      "screen_keywords": ["IMPORTACAO", "SAFX07", "SAFX08", "SAFX09"],
+      "keywords": ["JOB SERVIDOR", "IMPORTACAO", "SAFX07", "SAFX08", "SAFX09"],
+      "file_paths": ["basico/il/import", "basico/job_servidor"],
+      "packages": ["SAF_IMP_X07", "SAF_IMP_X08", "SAF_IMP_X09"],
+      "suite_automation_id": "JOB_SERVIDOR_BAT"
+    },
+    {
+      "id": "E2E_PARAMETROS_FUNCIONAIS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/parametros/funcionais/funcionais.spec.ts"],
+      "menu_path": "BASICO > PARAMETROS > FUNCIONAIS",
+      "screen_keywords": ["PARAMETROS FUNCIONAIS", "RELACOES FUNCIONAIS"],
+      "keywords": ["PARAMETROS FUNCIONAIS", "RELACOES FUNCIONAIS"],
+      "file_paths": ["basico/parametros/funcionais"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PARAMETROS_PRELIMINARES",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/parametros/preliminares/preliminares.spec.ts"],
+      "menu_path": "BASICO > PARAMETROS > PRELIMINARES",
+      "screen_keywords": ["PARAMETROS PRELIMINARES", "EMPRESA ESTABELECIMENTO", "INSCRICOES TRIBUTARIAS"],
+      "keywords": ["PARAMETROS PRELIMINARES", "EMPRESA", "ESTABELECIMENTO"],
+      "file_paths": ["basico/parametros/preliminares"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PARAMETROS_REQUISITOS_LEGAIS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/parametros/requisitosLegais/requisitosLegais.spec.ts"],
+      "menu_path": "BASICO > PARAMETROS > REQUISITOS LEGAIS",
+      "screen_keywords": ["REQUISITOS LEGAIS", "ATIVIDADES ECONOMICAS"],
+      "keywords": ["REQUISITOS LEGAIS", "ATIVIDADES ECONOMICAS"],
+      "file_paths": ["basico/parametros/requisitos"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PROCESSOS_CUSTOMIZADOS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/processosCustomizados/processosCustomizados.spec.ts"],
+      "menu_path": "BASICO > PROCESSOS CUSTOMIZADOS",
+      "screen_keywords": ["PROCESSOS CUSTOMIZADOS"],
+      "keywords": ["PROCESSOS CUSTOMIZADOS", "CUSTOMIZACAO"],
+      "file_paths": ["basico/processos_customizados"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_REPORT_FISCAL_GERENCIAIS",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais.spec.ts",
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais1.spec.ts",
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais2.spec.ts",
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais3.spec.ts",
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais4.spec.ts",
+        "e2e/basicos/reportFiscal/gerenciais/gerenciais5.spec.ts"
+      ],
+      "menu_path": "BASICO > REPORT FISCAL > GERENCIAIS",
+      "screen_keywords": ["REPORT FISCAL GERENCIAIS", "RELATORIO GERENCIAL"],
+      "keywords": ["REPORT FISCAL", "RELATORIO GERENCIAL", "GERENCIAIS"],
+      "file_paths": ["basico/report_fiscal/gerenciais"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_REPORT_FISCAL_OBRIG_ACESSORIAS",
+      "category": "BASICOS",
+      "spec_files": [
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias1.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias2.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias3.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias4.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias5.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias6.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias7.spec.ts",
+        "e2e/basicos/reportFiscal/obrigacoesAcessorias/obrigacoesAcessorias8.spec.ts"
+      ],
+      "menu_path": "BASICO > REPORT FISCAL > OBRIGACOES ACESSORIAS",
+      "screen_keywords": ["OBRIGACOES ACESSORIAS", "OBRIGACAO ACESSORIA"],
+      "keywords": ["OBRIGACOES ACESSORIAS", "REPORT FISCAL"],
+      "file_paths": ["basico/report_fiscal/obrigacoes"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_REPORT_FISCAL_OPERACIONAIS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/reportFiscal/operacionais/operacionais.spec.ts"],
+      "menu_path": "BASICO > REPORT FISCAL > OPERACIONAIS",
+      "screen_keywords": ["REPORT FISCAL OPERACIONAIS", "RELATORIO OPERACIONAL"],
+      "keywords": ["REPORT FISCAL", "RELATORIO OPERACIONAL", "OPERACIONAIS"],
+      "file_paths": ["basico/report_fiscal/operacionais"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_REPORT_FISCAL_RELATORIOS",
+      "category": "BASICOS",
+      "spec_files": ["e2e/basicos/reportFiscal/relatorios/relatorios.spec.ts"],
+      "menu_path": "BASICO > REPORT FISCAL > RELATORIOS",
+      "screen_keywords": ["REPORT FISCAL RELATORIOS"],
+      "keywords": ["REPORT FISCAL", "RELATORIOS"],
+      "file_paths": ["basico/report_fiscal/relatorios"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+
+    {
+      "id": "E2E_ICMS_APURACAO",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/icms/apuracao/apuracao.spec.ts",
+        "e2e/estadual/icms/apuracao/apuracao1.spec.ts",
+        "e2e/estadual/icms/apuracao/apuracao3.spec.ts",
+        "e2e/estadual/icms/apuracao/apuracao4.spec.ts",
+        "e2e/estadual/icms/apuracao/apuracao5.spec.ts",
+        "e2e/estadual/icms/apuracao/apuracao6.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > ICMS > APURACAO",
+      "screen_keywords": ["APURACAO", "APURACAO ICMS", "SUB-APURACOES", "GUIAS RECOLHIMENTO", "GNRE"],
+      "keywords": ["APURACAO ICMS", "ICMS P3", "LIVRO P3", "GUIA RECOLHIMENTO", "GNRE"],
+      "file_paths": ["estadual/icms/livro_p3", "estadual/apuracao", "estadual/icms/apuracao"],
+      "packages": ["ICMS_LVR_P3_FPROC", "ICMS_APURACAO", "EST_ICMS_P3"],
+      "suite_automation_id": "ICMS_LIVRO_P3"
+    },
+    {
+      "id": "E2E_ICMS_DATAMART",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/icms/dataMart/dataMart.spec.ts",
+        "e2e/estadual/icms/dataMart/dataMart1.spec.ts",
+        "e2e/estadual/icms/dataMart/dataMart2.spec.ts",
+        "e2e/estadual/icms/dataMart/dataMart3.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > ICMS > DATA MART",
+      "screen_keywords": ["ICMS DATA MART", "ICMS DATAMART", "REEMISSAO LIVROS"],
+      "keywords": ["ICMS DATAMART", "REEMISSAO LIVROS ICMS"],
+      "file_paths": ["estadual/icms/datamart"],
+      "packages": ["EST_ICMS_P3", "ICMS_LVR_P3_FPROC"],
+      "suite_automation_id": "ICMS_LIVRO_P3"
+    },
+    {
+      "id": "E2E_ICMS_LIVROS_BATCH",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/icms/livrosBatch/livrosBatch.spec.ts"],
+      "menu_path": "ESTADUAL > ICMS > LIVROS BATCH",
+      "screen_keywords": ["LIVROS BATCH", "PROCESSAMENTO BATCH"],
+      "keywords": ["LIVROS BATCH", "ICMS BATCH", "PROCESSAMENTO BATCH"],
+      "file_paths": ["estadual/icms/livros_batch"],
+      "packages": ["ICMS_LVR_P3_FPROC", "JOB_BAT"],
+      "suite_automation_id": "ICMS_LIVRO_P3"
+    },
+    {
+      "id": "E2E_ICMS_MANUTENCAO",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/icms/manutencao/manutencao.spec.ts"],
+      "menu_path": "ESTADUAL > ICMS > MANUTENCAO",
+      "screen_keywords": ["MANUTENCAO ICMS", "ICMS MANUTENCAO"],
+      "keywords": ["MANUTENCAO ICMS"],
+      "file_paths": ["estadual/icms/manutencao"],
+      "packages": ["EST_ICMS_P3", "ICMS_LVR_P3_FPROC"],
+      "suite_automation_id": "ICMS_LIVRO_P3"
+    },
+    {
+      "id": "E2E_ICMS_OPERACIONAL",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/icms/operacional/operacional.spec.ts"],
+      "menu_path": "ESTADUAL > ICMS > OPERACIONAL",
+      "screen_keywords": ["ICMS OPERACIONAL", "OPERACIONAL ICMS"],
+      "keywords": ["ICMS OPERACIONAL", "LIVRO P9"],
+      "file_paths": ["estadual/icms/operacional"],
+      "packages": ["ICMS_LVR_P9_FPROC", "EST_ICMS_P9"],
+      "suite_automation_id": "ICMS_LIVRO_P9"
+    },
+    {
+      "id": "E2E_ICMS_RELATORIOS",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/icms/relatorios/relatorios.spec.ts",
+        "e2e/estadual/icms/relatorios/relatorios2.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > ICMS > RELATORIOS",
+      "screen_keywords": ["RELATORIOS ICMS", "ICMS RELATORIOS"],
+      "keywords": ["RELATORIO ICMS"],
+      "file_paths": ["estadual/icms/relatorios"],
+      "packages": ["EST_ICMS_P3", "ICMS_LVR_P3_FPROC"],
+      "suite_automation_id": "ICMS_LIVRO_P3"
+    },
+    {
+      "id": "E2E_ATIVO_PERMANENTE",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/ativoPermanente/cadastros/cadastro.spec.ts",
+        "e2e/estadual/ativoPermanente/movimento/movimento.spec.ts",
+        "e2e/estadual/ativoPermanente/movimento/movimento1.spec.ts",
+        "e2e/estadual/ativoPermanente/movimento/movimento2.spec.ts",
+        "e2e/estadual/ativoPermanente/relatorios/relatorios.spec.ts",
+        "e2e/estadual/ativoPermanente/relatorios/relatorios2.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > ATIVO PERMANENTE",
+      "screen_keywords": ["ATIVO PERMANENTE", "CIAP", "CREDITO ATIVO"],
+      "keywords": ["ATIVO PERMANENTE", "CIAP", "CREDITO ATIVO PERMANENTE"],
+      "file_paths": ["estadual/ativo_permanente", "estadual/ciap"],
+      "packages": ["EST_CIAP_FPROC", "CIAP"],
+      "suite_automation_id": "CIAP"
+    },
+    {
+      "id": "E2E_CONTROLE_MERCADORIAS",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/controleMercadoriasRemessaRetorno/movimento/movimento.spec.ts",
+        "e2e/estadual/controleMercadoriasRemessaRetorno/relatorios/relatorios.spec.ts",
+        "e2e/estadual/controleMercadoriasRemessaRetorno/relatorios/relatorios1.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > CONTROLE DE MERCADORIAS REMESSA/RETORNO",
+      "screen_keywords": ["CONTROLE MERCADORIAS", "REMESSA RETORNO", "REMESSA/RETORNO"],
+      "keywords": ["CONTROLE MERCADORIAS", "REMESSA", "RETORNO"],
+      "file_paths": ["estadual/controle_mercadorias"],
+      "packages": ["EST_CTRL_MERC_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_CONTROLE_OBRIGACOES_ESTADUAIS",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/controleObrigacoesEstaduais/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > OBRIGACOES",
+      "screen_keywords": ["CONTROLE OBRIGACOES ESTADUAIS", "OBRIGACOES ESTADUAIS"],
+      "keywords": ["OBRIGACOES ESTADUAIS", "CONTROLE OBRIGACOES"],
+      "file_paths": ["estadual/obrigacoes"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_ARQUIVO_INJECAO_ENERGIA",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/arquivoInjecaoEnergiaEletrica/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > ARQUIVO DE INJECAO DE ENERGIA ELETRICA > OBRIGACOES",
+      "screen_keywords": ["INJECAO ENERGIA", "ENERGIA ELETRICA"],
+      "keywords": ["ENERGIA ELETRICA", "INJECAO ENERGIA"],
+      "file_paths": ["estadual/energia_eletrica"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DAC_AL",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/dacAL/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > DAC AL > OBRIGACOES",
+      "screen_keywords": ["DAC AL", "DAC ALAGOAS"],
+      "keywords": ["DAC AL", "ALAGOAS"],
+      "file_paths": ["estadual/dac_al"],
+      "packages": ["EST_DAC_AL_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DECLAN_IPM_RJ",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/declanIpmRJ/declaracao.spec.ts"],
+      "menu_path": "ESTADUAL > DECLAN IPM RJ > DECLARACAO",
+      "screen_keywords": ["DECLAN", "DECLAN IPM", "DECLAN RJ"],
+      "keywords": ["DECLAN", "IPM RJ"],
+      "file_paths": ["estadual/declan_ipm"],
+      "packages": ["EST_DECLAN_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIA_AM",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/diaAM/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/diaAM/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > DIA-AM",
+      "screen_keywords": ["DIA-AM", "DIA AM", "AMAZONAS"],
+      "keywords": ["DIA AM", "AMAZONAS"],
+      "file_paths": ["estadual/dia_am"],
+      "packages": ["EST_DIA_AM_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIAP_AP",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/diapAP/declaracao/declaracao.spec.ts"],
+      "menu_path": "ESTADUAL > DIAP-AP > DECLARACAO",
+      "screen_keywords": ["DIAP-AP", "DIAP AP", "AMAPA"],
+      "keywords": ["DIAP AP", "AMAPA"],
+      "file_paths": ["estadual/diap_ap"],
+      "packages": ["EST_DIAP_AP_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIEF_ES",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/diefES/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/diefES/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > DIEF-ES",
+      "screen_keywords": ["DIEF-ES", "DIEF ES", "ESPIRITO SANTO"],
+      "keywords": ["DIEF ES", "ESPIRITO SANTO"],
+      "file_paths": ["estadual/dief_es"],
+      "packages": ["EST_DIEF_ES_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIEF_PA",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/diefPA/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > DIEF-PA > OBRIGACOES",
+      "screen_keywords": ["DIEF-PA", "DIEF PA", "PARA"],
+      "keywords": ["DIEF PA", "PARA"],
+      "file_paths": ["estadual/dief_pa"],
+      "packages": ["EST_DIEF_PA_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIF_TO",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/difTO/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > DIF-TO > OBRIGACOES",
+      "screen_keywords": ["DIF-TO", "DIF TO", "TOCANTINS"],
+      "keywords": ["DIF TO", "TOCANTINS"],
+      "file_paths": ["estadual/dif_to"],
+      "packages": ["EST_DIF_TO_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DIME_SC",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/dimeSC/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/dimeSC/obrigacoes/obrigacoes1.spec.ts",
+        "e2e/estadual/dimeSC/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > DIME-SC",
+      "screen_keywords": ["DIME-SC", "DIME SC", "SANTA CATARINA"],
+      "keywords": ["DIME", "SANTA CATARINA", "DIME SC"],
+      "file_paths": ["estadual/dime_sc", "estadual/sc"],
+      "packages": ["EST_DIME_SC_FPROC", "DIME_SC"],
+      "suite_automation_id": "DIME_SC"
+    },
+    {
+      "id": "E2E_DIMP",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/dimp/geracao/geracao.spec.ts",
+        "e2e/estadual/dimp/parametros/parametros.spec.ts",
+        "e2e/estadual/dimp/relatorios/relatoiros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > DIMP",
+      "screen_keywords": ["DIMP"],
+      "keywords": ["DIMP"],
+      "file_paths": ["estadual/dimp"],
+      "packages": ["EST_DIMP_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DMD_BA",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/dmdBA/geracao/geracao.spec.ts"],
+      "menu_path": "ESTADUAL > DMD BA > GERACAO",
+      "screen_keywords": ["DMD BA", "DMD BAHIA"],
+      "keywords": ["DMD BA", "BAHIA"],
+      "file_paths": ["estadual/dmd_ba"],
+      "packages": ["EST_DMD_BA_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_DOT_ES",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/dotES/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > DOT-ES > OBRIGACOES",
+      "screen_keywords": ["DOT-ES", "DOT ES"],
+      "keywords": ["DOT ES"],
+      "file_paths": ["estadual/dot_es"],
+      "packages": ["EST_DOT_ES_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_ESTORNO_DEBITOS",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/estornoDebitosmodelos2122/meioMagnetico/meioMagnetico.spec.ts"],
+      "menu_path": "ESTADUAL > ESTORNO DE DEBITOS > MEIO MAGNETICO",
+      "screen_keywords": ["ESTORNO DEBITOS", "MODELOS 21 22"],
+      "keywords": ["ESTORNO DEBITOS", "MODELO 21", "MODELO 22"],
+      "file_paths": ["estadual/estorno_debitos"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_FCI",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/fci/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/fci/parametros/parametros.spec.ts",
+        "e2e/estadual/fci/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > FCI - FICHA DE CONTEUDO DE IMPORTACAO",
+      "screen_keywords": ["FCI", "FICHA CONTEUDO IMPORTACAO"],
+      "keywords": ["FCI", "FICHA CONTEUDO IMPORTACAO"],
+      "file_paths": ["estadual/fci"],
+      "packages": ["EST_FCI_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_FOMENTAR_PRODUZIR_GO",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/fomentarProduzirMicroproduzirGO/manutencao/manutencao.spec.ts"],
+      "menu_path": "ESTADUAL > FOMENTAR PRODUZIR MICROPRODUZIR GO > MANUTENCAO",
+      "screen_keywords": ["FOMENTAR", "PRODUZIR", "MICROPRODUZIR", "GOIAS"],
+      "keywords": ["FOMENTAR", "PRODUZIR", "GOIAS"],
+      "file_paths": ["estadual/fomentar_go"],
+      "packages": ["EST_FOMENTAR_GO_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_GIA_BA",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/giaBA/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/giaBA/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > GIAM BA",
+      "screen_keywords": ["GIA BA", "GIAM BA", "GIA BAHIA"],
+      "keywords": ["GIA BA", "GIAM BA", "BAHIA"],
+      "file_paths": ["estadual/gia_ba"],
+      "packages": ["EST_GIA_BA_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_GIA_MG",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/giaMG/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > GIA MG > OBRIGACOES",
+      "screen_keywords": ["GIA MG", "GIA MINAS"],
+      "keywords": ["GIA MG", "MINAS GERAIS"],
+      "file_paths": ["estadual/gia_mg"],
+      "packages": ["EST_GIA_MG_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_GIA_SP",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/giaSP/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/giaSP/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > GIA SP",
+      "screen_keywords": ["GIA SP", "GIA-ST", "GIA SAO PAULO"],
+      "keywords": ["GIA", "GIA SP", "GIA-ST", "SUBSTITUICAO TRIBUTARIA"],
+      "file_paths": ["estadual/gia_st", "estadual/gia_sp"],
+      "packages": ["EST_GIA_ST_FPROC", "GIA_ST"],
+      "suite_automation_id": "GIA_ST"
+    },
+    {
+      "id": "E2E_GIAM_TO",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/giamTO/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > GIAM TO > OBRIGACOES",
+      "screen_keywords": ["GIAM TO", "TOCANTINS"],
+      "keywords": ["GIAM TO", "TOCANTINS"],
+      "file_paths": ["estadual/giam_to"],
+      "packages": ["EST_GIAM_TO_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_GIM_RR",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/gimRR/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > GIM RR > OBRIGACOES",
+      "screen_keywords": ["GIM RR", "RORAIMA"],
+      "keywords": ["GIM RR", "RORAIMA"],
+      "file_paths": ["estadual/gim_rr"],
+      "packages": ["EST_GIM_RR_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_INFORMATIVO_FISCAL_RN",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/informativoFiscalRN/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > INFORMATIVO FISCAL - RN > OBRIGACOES",
+      "screen_keywords": ["INFORMATIVO FISCAL", "RIO GRANDE NORTE"],
+      "keywords": ["INFORMATIVO FISCAL RN", "RIO GRANDE NORTE"],
+      "file_paths": ["estadual/informativo_fiscal_rn"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_LANCAMENTOS_AUTO_ICMS",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/lancamentosAutomaticosICMS/paramentros/parametros.spec.ts",
+        "e2e/estadual/lancamentosAutomaticosICMS/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > LANCAMENTOS AUTOMATICOS ICMS",
+      "screen_keywords": ["LANCAMENTOS AUTOMATICOS ICMS", "LANC AUTO ICMS"],
+      "keywords": ["LANCAMENTOS AUTOMATICOS ICMS", "LANC AUTO ICMS"],
+      "file_paths": ["estadual/lanc_auto_icms"],
+      "packages": ["EST_LANC_AUTO_ICMS_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_MEIO_MAGNETICO",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/meioMagnetico/meioMagnetico/meioMagnetico.spec.ts",
+        "e2e/estadual/meioMagnetico/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > MEIO MAGNETICO",
+      "screen_keywords": ["MEIO MAGNETICO ESTADUAL", "MM ESTADUAL"],
+      "keywords": ["MEIO MAGNETICO", "MM_115"],
+      "file_paths": ["estadual/meio_magnetico"],
+      "packages": ["EST_MM_115_FPROC", "EST_MM"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_MEIO_MAGNETICO_ATO_COTEPE",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/meioMagneticoAtoCotepe7005/geracao/geracao.spec.ts"],
+      "menu_path": "ESTADUAL > MEIO MAGNETICO ATO COTEPE 7005 > GERACAO",
+      "screen_keywords": ["ATO COTEPE", "COTEPE 7005"],
+      "keywords": ["ATO COTEPE", "COTEPE 7005"],
+      "file_paths": ["estadual/ato_cotepe"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PORTARIA_CAT_156",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/portariaCAT1562010/geracao.spec.ts"],
+      "menu_path": "ESTADUAL > PORTARIA CAT 156/2010 > GERACAO",
+      "screen_keywords": ["PORTARIA CAT 156", "CAT 156/2010"],
+      "keywords": ["PORTARIA CAT 156", "CAT 156"],
+      "file_paths": ["estadual/portaria_cat_156"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PORTARIA_CAT_5504",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/portariaCAT5504Convenio3004/meioMagnetico.spec.ts"],
+      "menu_path": "ESTADUAL > PORTARIA CAT 55/04 - Convenio 30/04 > MEIO MAGNETICO",
+      "screen_keywords": ["PORTARIA CAT 55", "CAT 55/04", "CONVENIO 30/04"],
+      "keywords": ["PORTARIA CAT 55", "CONVENIO 30"],
+      "file_paths": ["estadual/portaria_cat_55"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PORTARIA_CAT_8706",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/portariaCAT8706ProtocoloECF0401/obrigacoes/obrigacoes.spec.ts"],
+      "menu_path": "ESTADUAL > Portaria CAT87/06 - Protocolo ECF 04/01 > OBRIGACOES",
+      "screen_keywords": ["PORTARIA CAT 87", "CAT 87/06", "PROTOCOLO ECF"],
+      "keywords": ["PORTARIA CAT 87", "ECF 04/01"],
+      "file_paths": ["estadual/portaria_cat_87"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PRODEPE",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/prodepe/obrigacoes/obrigacoes.spec.ts",
+        "e2e/estadual/prodepe/obrigacoes/obrigacoes1.spec.ts",
+        "e2e/estadual/prodepe/obrigacoes/obrigacoes2.spec.ts",
+        "e2e/estadual/prodepe/parametros/parametros.spec.ts",
+        "e2e/estadual/prodepe/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > PRODEPE",
+      "screen_keywords": ["PRODEPE", "PERNAMBUCO"],
+      "keywords": ["PRODEPE", "PERNAMBUCO"],
+      "file_paths": ["estadual/prodepe"],
+      "packages": ["EST_PRODEPE_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_REGIME_ESPECIAL",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/regimeEspecial/manutencao/manutencao.spec.ts",
+        "e2e/estadual/regimeEspecial/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > REGIME ESPECIAL",
+      "screen_keywords": ["REGIME ESPECIAL"],
+      "keywords": ["REGIME ESPECIAL"],
+      "file_paths": ["estadual/regime_especial"],
+      "packages": ["EST_REGIME_ESP_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_RESSARCIMENTO_ICMS_ST_PR",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/ressarcimentoIcmsStPR/geracao/geracao.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStPR/parametros/parametros.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStPR/relatorio/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > RESSARCIMENTO ICMS-ST PR",
+      "screen_keywords": ["RESSARCIMENTO ICMS-ST PR", "RESSARCIMENTO PR", "ICMS-ST PARANA"],
+      "keywords": ["RESSARCIMENTO ICMS ST PR", "ICMS-ST PARANA"],
+      "file_paths": ["estadual/ressarcimento_icms_st_pr"],
+      "packages": ["EST_RESSARC_PR_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_RESSARCIMENTO_ICMS_ST_RS",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/ressarcimentoIcmsStRS/geracao/geracao.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStRS/parametros/parametros.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStRS/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > RESSARCIMENTO ICMS-ST RS",
+      "screen_keywords": ["RESSARCIMENTO ICMS-ST RS", "RESSARCIMENTO RS", "IN-RE 048/2018"],
+      "keywords": ["RESSARCIMENTO ICMS ST RS", "ICMS-ST RIO GRANDE SUL"],
+      "file_paths": ["estadual/ressarcimento_icms_st_rs"],
+      "packages": ["EST_RESSARC_RS_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_RESSARCIMENTO_ICMS_ST_SC",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/ressarcimentoIcmsStSC/geracao/geracao.spec.ts"],
+      "menu_path": "ESTADUAL > RESSARCIMENTO ICMS-ST SC",
+      "screen_keywords": ["RESSARCIMENTO ICMS-ST SC", "RESSARCIMENTO SC", "PORT.SEF 378/2018"],
+      "keywords": ["RESSARCIMENTO ICMS ST SC"],
+      "file_paths": ["estadual/ressarcimento_icms_st_sc"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_RESSARCIMENTO_ICMS_ST_SP",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/ressarcimentoIcmsStSP/geracao/geracao.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStSP/parametros/parametros.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStSP/relatorio/relatorio.spec.ts",
+        "e2e/estadual/ressarcimentoIcmsStSP/relatorio/relatorio1.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > RESSARCIMENTO DO ICMS ST - SP (CAT 42/2018)",
+      "screen_keywords": ["RESSARCIMENTO ICMS-ST SP", "RESSARCIMENTO SP", "CAT 42/2018"],
+      "keywords": ["RESSARCIMENTO ICMS ST SP", "CAT 42/2018"],
+      "file_paths": ["estadual/ressarcimento_icms_st_sp"],
+      "packages": ["EST_RESSARC_SP_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_SEF_II_PE",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/sefIIPE/geracao/geracao.spec.ts"],
+      "menu_path": "ESTADUAL > SEF II - PE > GERACAO",
+      "screen_keywords": ["SEF II", "SEF II PE", "PERNAMBUCO SEF"],
+      "keywords": ["SEF II PE", "PERNAMBUCO"],
+      "file_paths": ["estadual/sef_ii_pe"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_SISCRED_PR",
+      "category": "ESTADUAL",
+      "spec_files": [
+        "e2e/estadual/siscredPR/geracao/geracao.spec.ts",
+        "e2e/estadual/siscredPR/manutencao/manutencao.spec.ts"
+      ],
+      "menu_path": "ESTADUAL > SISCRED PR",
+      "screen_keywords": ["SISCRED", "SISCRED PR"],
+      "keywords": ["SISCRED", "SISCRED PR"],
+      "file_paths": ["estadual/siscred_pr"],
+      "packages": ["EST_SISCRED_PR_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_VAF_MG",
+      "category": "ESTADUAL",
+      "spec_files": ["e2e/estadual/valorAdicionadoFiscal/damef/damef.spec.ts"],
+      "menu_path": "ESTADUAL > VAF - Valor Adicionado Fiscal - MG",
+      "screen_keywords": ["VAF", "VALOR ADICIONADO FISCAL", "DAMEF"],
+      "keywords": ["VAF", "VALOR ADICIONADO", "DAMEF", "MINAS GERAIS"],
+      "file_paths": ["estadual/vaf_mg", "estadual/damef"],
+      "packages": ["EST_VAF_MG_FPROC"],
+      "suite_automation_id": null
+    },
+
+    {
+      "id": "E2E_IPI_APURACAO",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/ipi/apuracaoIpi/apuracaoIpi.spec.ts",
+        "e2e/federal/ipi/apuracaoIpi/apuracaoIpi1.spec.ts"
+      ],
+      "menu_path": "FEDERAL > IPI > APURACAO IPI",
+      "screen_keywords": ["APURACAO IPI", "IPI APURACAO"],
+      "keywords": ["APURACAO IPI", "IPI"],
+      "file_paths": ["federal/apuracao_ipi", "federal/ipi/apuracao"],
+      "packages": ["FED_APUR_IPI_FPROC", "APURACAO_IPI"],
+      "suite_automation_id": "APURACAO_IPI"
+    },
+    {
+      "id": "E2E_IPI_DATAMART",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/ipi/dataMart/dataMart.spec.ts"],
+      "menu_path": "FEDERAL > IPI > DATA MART",
+      "screen_keywords": ["IPI DATA MART", "IPI DATAMART", "REEMISSAO LIVROS IPI"],
+      "keywords": ["IPI DATAMART", "REEMISSAO IPI"],
+      "file_paths": ["federal/ipi/datamart"],
+      "packages": ["FED_APUR_IPI_FPROC"],
+      "suite_automation_id": "APURACAO_IPI"
+    },
+    {
+      "id": "E2E_IPI_MEIO_MAGNETICO",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/ipi/meioMagnetico/meioMagnetico.spec.ts"],
+      "menu_path": "FEDERAL > IPI > MEIO MAGNETICO",
+      "screen_keywords": ["IPI MEIO MAGNETICO", "IN 320/03", "PER/DCOMP"],
+      "keywords": ["IPI MEIO MAGNETICO", "IN 320"],
+      "file_paths": ["federal/ipi/meio_magnetico"],
+      "packages": ["FED_APUR_IPI_FPROC"],
+      "suite_automation_id": "APURACAO_IPI"
+    },
+    {
+      "id": "E2E_IPI_PARAMETROS",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/ipi/parametros/parametros.spec.ts"],
+      "menu_path": "FEDERAL > IPI > PARAMETROS",
+      "screen_keywords": ["IPI PARAMETROS", "LANCAMENTOS AUTOMATICOS IPI"],
+      "keywords": ["IPI PARAMETROS"],
+      "file_paths": ["federal/ipi/parametros"],
+      "packages": ["FED_APUR_IPI_FPROC"],
+      "suite_automation_id": "APURACAO_IPI"
+    },
+    {
+      "id": "E2E_IPI_RELATORIO",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/ipi/relatorio/relatorio.spec.ts"],
+      "menu_path": "FEDERAL > IPI > RELATORIO",
+      "screen_keywords": ["IPI RELATORIO", "RESSARCIMENTO IPI"],
+      "keywords": ["IPI RELATORIO", "RESSARCIMENTO IPI"],
+      "file_paths": ["federal/ipi/relatorio"],
+      "packages": ["FED_APUR_IPI_FPROC"],
+      "suite_automation_id": "APURACAO_IPI"
+    },
+    {
+      "id": "E2E_CREDPIS",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/credPis/geracao/geracao.spec.ts",
+        "e2e/federal/credPis/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "FEDERAL > CRED PIS",
+      "screen_keywords": ["CRED PIS", "CREDPIS", "CREDITO PIS", "CREDITO COFINS"],
+      "keywords": ["CREDPIS", "CREDITO PIS", "CREDITO COFINS", "PIS COFINS"],
+      "file_paths": ["federal/credpis", "federal/pis_cofins"],
+      "packages": ["FED_CREDPIS_FPROC", "CREDPIS"],
+      "suite_automation_id": "CREDPIS"
+    },
+    {
+      "id": "E2E_DMED",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/dmed/obricacoes/obrigacoes.spec.ts",
+        "e2e/federal/dmed/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "FEDERAL > DMED",
+      "screen_keywords": ["DMED"],
+      "keywords": ["DMED"],
+      "file_paths": ["federal/dmed"],
+      "packages": ["FED_DMED_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_FUNRURAL",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/funrural/Emissao/emissao.spec.ts",
+        "e2e/federal/funrural/movimento/movimento.spec.ts"
+      ],
+      "menu_path": "FEDERAL > FUNRURAL",
+      "screen_keywords": ["FUNRURAL", "CONTRIBUICAO RURAL"],
+      "keywords": ["FUNRURAL", "CONTRIBUICAO RURAL"],
+      "file_paths": ["federal/funrural"],
+      "packages": ["FED_FUNRURAL_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_LANCAMENTOS_AUTO_IPI",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/lancamentoAutomaticoIpi/parametros/parametros.spec.ts",
+        "e2e/federal/lancamentoAutomaticoIpi/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "FEDERAL > LANCAMENTOS AUTOMATICOS IPI",
+      "screen_keywords": ["LANCAMENTOS AUTOMATICOS IPI", "LANC AUTO IPI"],
+      "keywords": ["LANCAMENTOS AUTOMATICOS IPI", "COMPOSICAO CUSTO"],
+      "file_paths": ["federal/lanc_auto_ipi"],
+      "packages": ["FED_LANC_AUTO_IPI_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_OBRIG_TRIBUTOS_FED_DIRF",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/obrigacoesTributosFederais/dirf/dirf.spec.ts"],
+      "menu_path": "FEDERAL > OBRIGACOES DE TRIBUTOS FEDERAIS > DIRF",
+      "screen_keywords": ["DIRF", "DECLARACAO IMPOSTO RENDA"],
+      "keywords": ["DIRF", "DECLARACAO IMPOSTO RENDA FONTE"],
+      "file_paths": ["federal/obrigacoes/dirf"],
+      "packages": ["FED_DIRF_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_OBRIG_TRIBUTOS_FED_OUTRAS",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/obrigacoesTributosFederais/outrasObrigacoes/outrasObrigacoes1.spec.ts",
+        "e2e/federal/obrigacoesTributosFederais/outrasObrigacoes/outrasObrigacoes2.spec.ts",
+        "e2e/federal/obrigacoesTributosFederais/outrasObrigacoes/outrasObrigacoes3.spec.ts"
+      ],
+      "menu_path": "FEDERAL > OBRIGACOES DE TRIBUTOS FEDERAIS > OUTRAS OBRIGACOES",
+      "screen_keywords": ["OUTRAS OBRIGACOES FEDERAIS", "INSS RETENCAO", "CFEM", "DCTF"],
+      "keywords": ["OUTRAS OBRIGACOES", "INSS", "CFEM", "DCTF"],
+      "file_paths": ["federal/obrigacoes/outras"],
+      "packages": ["FED_OBRIG_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_OBRIG_TRIBUTOS_FED_RELATORIOS",
+      "category": "FEDERAL",
+      "spec_files": [
+        "e2e/federal/obrigacoesTributosFederais/relatorios/relatorios.spec.ts",
+        "e2e/federal/obrigacoesTributosFederais/relatorios/relatorios1.spec.ts"
+      ],
+      "menu_path": "FEDERAL > OBRIGACOES DE TRIBUTOS FEDERAIS > RELATORIOS",
+      "screen_keywords": ["RELATORIOS TRIBUTOS FEDERAIS"],
+      "keywords": ["RELATORIOS FEDERAIS", "OBRIGACOES TRIBUTOS"],
+      "file_paths": ["federal/obrigacoes/relatorios"],
+      "packages": ["FED_OBRIG_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_OBRIG_TRIBUTOS_FED_RENDIMENTOS",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/obrigacoesTributosFederais/rendimentos/rendimentos.spec.ts"],
+      "menu_path": "FEDERAL > OBRIGACOES DE TRIBUTOS FEDERAIS > RENDIMENTOS",
+      "screen_keywords": ["RENDIMENTOS", "DECLARACAO RENDIMENTOS"],
+      "keywords": ["RENDIMENTOS", "DECLARACAO RENDIMENTOS"],
+      "file_paths": ["federal/obrigacoes/rendimentos"],
+      "packages": ["FED_OBRIG_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PORTARIA_63",
+      "category": "FEDERAL",
+      "spec_files": ["e2e/federal/portaria63/parametros/parametros.spec.ts"],
+      "menu_path": "FEDERAL > PORTARIA 63 - SECRETARIA DA RECEITA PREVIDENCIARIA > PARAMETROS",
+      "screen_keywords": ["PORTARIA 63", "RECEITA PREVIDENCIARIA"],
+      "keywords": ["PORTARIA 63", "RECEITA PREVIDENCIARIA"],
+      "file_paths": ["federal/portaria_63"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+
+    {
+      "id": "E2E_ECD_GERACAO",
+      "category": "SPED",
+      "spec_files": ["e2e/sped/ecdEscrituracaoContabilDigital/geracao/geracao.spec.ts"],
+      "menu_path": "SPED > ECD - ESCRITURACAO CONTABIL DIGITAL > GERACAO",
+      "screen_keywords": ["ECD GERACAO", "ESCRITURACAO CONTABIL GERACAO"],
+      "keywords": ["ECD", "ESCRITURACAO CONTABIL DIGITAL", "SPED CONTABIL"],
+      "file_paths": ["SPED/ECD", "sped/ecd"],
+      "packages": ["EPC_ECD_FPROC"],
+      "suite_automation_id": "SPED_ECD"
+    },
+    {
+      "id": "E2E_ECD_MANUTENCAO",
+      "category": "SPED",
+      "spec_files": ["e2e/sped/ecdEscrituracaoContabilDigital/manutencao/manutencao.spec.ts"],
+      "menu_path": "SPED > ECD - ESCRITURACAO CONTABIL DIGITAL > MANUTENCAO",
+      "screen_keywords": ["ECD MANUTENCAO"],
+      "keywords": ["ECD MANUTENCAO"],
+      "file_paths": ["SPED/ECD", "sped/ecd"],
+      "packages": ["EPC_ECD_FPROC"],
+      "suite_automation_id": "SPED_ECD"
+    },
+    {
+      "id": "E2E_ECD_PARAMETROS",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/ecdEscrituracaoContabilDigital/parametros/parametros.spec.ts",
+        "e2e/sped/ecdEscrituracaoContabilDigital/parametros/parametros2.spec.ts"
+      ],
+      "menu_path": "SPED > ECD - ESCRITURACAO CONTABIL DIGITAL > PARAMETROS",
+      "screen_keywords": ["ECD PARAMETROS"],
+      "keywords": ["ECD PARAMETROS"],
+      "file_paths": ["SPED/ECD", "sped/ecd"],
+      "packages": ["EPC_ECD_FPROC"],
+      "suite_automation_id": "SPED_ECD"
+    },
+    {
+      "id": "E2E_ECD_RELATORIO",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/ecdEscrituracaoContabilDigital/relatorio/relatorio.spec.ts",
+        "e2e/sped/ecdEscrituracaoContabilDigital/relatorio/relatorio1.spec.ts"
+      ],
+      "menu_path": "SPED > ECD - ESCRITURACAO CONTABIL DIGITAL > RELATORIO",
+      "screen_keywords": ["ECD RELATORIO"],
+      "keywords": ["ECD RELATORIO"],
+      "file_paths": ["SPED/ECD", "sped/ecd"],
+      "packages": ["EPC_ECD_FPROC"],
+      "suite_automation_id": "SPED_ECD"
+    },
+    {
+      "id": "E2E_EFD_CONTRIB_FIN_ASSEMELHADA",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdContribuicoesFinanceiraAssemelhada/obrigacoes/obrigacoes.spec.ts",
+        "e2e/sped/efdContribuicoesFinanceiraAssemelhada/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "SPED > EFD - CONTRIBUICOES FINANCEIRA ASSEMELHADA",
+      "screen_keywords": ["CONTRIBUICOES FINANCEIRA ASSEMELHADA", "EFD FINANCEIRA"],
+      "keywords": ["CONTRIBUICOES FINANCEIRA", "EFD FINANCEIRA"],
+      "file_paths": ["SPED/EFD-CONTRIB-FIN"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_SPED_FISCAL_GERACAO",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigital/geracao/geracao.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/geracao/geracao1.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/geracao/geracao2.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/geracaoConvICMS5205/geracaoConvICMS5205.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/geracaoPIM/geracaoPIM.spec.ts"
+      ],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL > GERACAO",
+      "screen_keywords": ["EFD GERACAO", "SPED FISCAL GERACAO", "CONV ICMS 52/05", "GERACAO PIM"],
+      "keywords": ["SPED FISCAL", "EFD ICMS", "EFD IPI", "SPED ICMS", "BLOCO H", "BLOCO K"],
+      "file_paths": ["SPED/EFD-ICMS-IPI", "sped/fiscal", "sped/efd_icms"],
+      "packages": ["EST_MM_115_FPROC", "EST_MM_SPED_FISCAL", "EPC_SPED_FPROC"],
+      "suite_automation_id": "SPED_FISCAL"
+    },
+    {
+      "id": "E2E_SPED_FISCAL_PARAMETROS",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigital/parametros/parametros.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/parametros/parametros2.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/parametros/parametros3.spec.ts"
+      ],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL > PARAMETRO",
+      "screen_keywords": ["EFD PARAMETROS", "SPED FISCAL PARAMETROS"],
+      "keywords": ["SPED FISCAL PARAMETROS", "EFD PARAMETROS"],
+      "file_paths": ["SPED/EFD-ICMS-IPI", "sped/fiscal"],
+      "packages": ["EPC_SPED_FPROC"],
+      "suite_automation_id": "SPED_FISCAL"
+    },
+    {
+      "id": "E2E_SPED_FISCAL_PRE_GERACAO",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigital/preGeracao/preGeracao.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/preGeracao/preGeracao1.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigital/preGeracao/preGeracao2.spec.ts"
+      ],
+      "menu_path": "SPED > EFD - ESCRITURACAO FISCAL DIGITAL > PRE GERACAO",
+      "screen_keywords": ["EFD PRE GERACAO", "PRE GERACAO SPED"],
+      "keywords": ["PRE GERACAO SPED", "EFD PRE GERACAO"],
+      "file_paths": ["SPED/EFD-ICMS-IPI"],
+      "packages": ["EPC_SPED_FPROC"],
+      "suite_automation_id": "SPED_FISCAL"
+    },
+    {
+      "id": "E2E_SPED_CONTRIBUICOES_MANUTENCAO",
+      "category": "SPED",
+      "spec_files": ["e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/manutencao/manutencao.spec.ts"],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL CONTRIBUICOES > MANUTENCAO",
+      "screen_keywords": ["EFD CONTRIBUICOES MANUTENCAO"],
+      "keywords": ["SPED CONTRIBUICOES MANUTENCAO"],
+      "file_paths": ["SPED/EFD-PIS-COFINS"],
+      "packages": ["EPC_SPED_FPROC", "SPED_CONTRIB_FPROC"],
+      "suite_automation_id": "SPED_CONTRIBUICOES"
+    },
+    {
+      "id": "E2E_SPED_CONTRIBUICOES_OBRIGACOES",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes2.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes3.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes4.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes5.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes6.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes7.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoes/obrigacoes8.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/obrigacoesSCP/obrigacoesSCP.spec.ts"
+      ],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL CONTRIBUICOES > OBRIGACOES",
+      "screen_keywords": ["EFD CONTRIBUICOES OBRIGACOES", "SPED CONTRIBUICOES", "PIS COFINS"],
+      "keywords": ["SPED CONTRIBUI", "EFD CONTRIBUI", "EFD-PIS", "PIS.COFINS", "COFINS"],
+      "file_paths": ["SPED/EFD-PIS-COFINS", "sped/efd_pis_cofins", "sped/contribuicoes"],
+      "packages": ["EPC_SPED_FPROC", "EPC_MEIO_MAGNETICO", "SPED_CONTRIB_FPROC"],
+      "suite_automation_id": "SPED_CONTRIBUICOES"
+    },
+    {
+      "id": "E2E_SPED_CONTRIBUICOES_PARAMETROS",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/parametros/parametros.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/parametros/parametros1.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/parametros/parametros2.spec.ts"
+      ],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL CONTRIBUICOES > PARAMETROS",
+      "screen_keywords": ["EFD CONTRIBUICOES PARAMETROS"],
+      "keywords": ["SPED CONTRIBUICOES PARAMETROS"],
+      "file_paths": ["SPED/EFD-PIS-COFINS"],
+      "packages": ["SPED_CONTRIB_FPROC"],
+      "suite_automation_id": "SPED_CONTRIBUICOES"
+    },
+    {
+      "id": "E2E_SPED_CONTRIBUICOES_RELATORIOS",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/relatorios/relatorios.spec.ts",
+        "e2e/sped/efdEscrituracaoFiscalDigitalContribuicoes/relatorios/relatorios2.spec.ts"
+      ],
+      "menu_path": "SPED > EFD ESCRITURACAO FISCAL DIGITAL CONTRIBUICOES > RELATORIOS",
+      "screen_keywords": ["EFD CONTRIBUICOES RELATORIOS"],
+      "keywords": ["SPED CONTRIBUICOES RELATORIOS"],
+      "file_paths": ["SPED/EFD-PIS-COFINS"],
+      "packages": ["SPED_CONTRIB_FPROC"],
+      "suite_automation_id": "SPED_CONTRIBUICOES"
+    },
+    {
+      "id": "E2E_REINF_CALCULO_CPRB",
+      "category": "SPED",
+      "spec_files": ["e2e/sped/efdReinf/calculoCPRB/calculoCPRB.spec.ts"],
+      "menu_path": "SPED > EFD - REINF > CALCULO CPRB",
+      "screen_keywords": ["CALCULO CPRB", "CPRB"],
+      "keywords": ["CPRB", "REINF CPRB"],
+      "file_paths": ["SPED/REINF"],
+      "packages": ["REINF_FPROC", "REINF_CPRB"],
+      "suite_automation_id": "SPED_REINF"
+    },
+    {
+      "id": "E2E_REINF_PARAMETROS",
+      "category": "SPED",
+      "spec_files": ["e2e/sped/efdReinf/parametros/parametros.spec.ts"],
+      "menu_path": "SPED > EFD - REINF > PARAMETROS",
+      "screen_keywords": ["REINF PARAMETROS"],
+      "keywords": ["REINF PARAMETROS"],
+      "file_paths": ["SPED/REINF"],
+      "packages": ["REINF_FPROC"],
+      "suite_automation_id": "SPED_REINF"
+    },
+    {
+      "id": "E2E_REINF_REINF",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdReinf/reinf/reinf1.spec.ts",
+        "e2e/sped/efdReinf/reinf/reinf2.spec.ts",
+        "e2e/sped/efdReinf/reinf/reinf3.spec.ts",
+        "e2e/sped/efdReinf/reinf/reinf4.spec.ts"
+      ],
+      "menu_path": "SPED > EFD - REINF > REINF",
+      "screen_keywords": ["REINF", "EFD-REINF", "R-2010", "R-2020", "R-4010", "R-4020", "R-2055"],
+      "keywords": ["REINF", "EFD-REINF", "SPED REINF", "R-2010", "R-2020", "R-4010", "R-4020"],
+      "file_paths": ["SPED/REINF", "sped/reinf"],
+      "packages": ["REINF_FPROC", "EPC_REINF", "REINF_UTIL"],
+      "suite_automation_id": "SPED_REINF"
+    },
+    {
+      "id": "E2E_REINF_RELATORIO",
+      "category": "SPED",
+      "spec_files": [
+        "e2e/sped/efdReinf/relatorio/relatorio.spec.ts",
+        "e2e/sped/efdReinf/relatorio/relatorio1.spec.ts",
+        "e2e/sped/efdReinf/relatorio/relatorio2.spec.ts",
+        "e2e/sped/efdReinf/relatorio/relatorio3.spec.ts",
+        "e2e/sped/efdReinf/relatorio/relatorio4.spec.ts"
+      ],
+      "menu_path": "SPED > EFD - REINF > RELATORIO",
+      "screen_keywords": ["REINF RELATORIO"],
+      "keywords": ["REINF RELATORIO"],
+      "file_paths": ["SPED/REINF"],
+      "packages": ["REINF_FPROC"],
+      "suite_automation_id": "SPED_REINF"
+    },
+
+    {
+      "id": "E2E_COMBUSTIVEIS_DISTRIBUIDORA",
+      "category": "ESPECIFICOS",
+      "spec_files": ["e2e/especificos/combustiveisDerivadosPetroleo/movimentoDistribuidora/movimentoDistribuidora.spec.ts"],
+      "menu_path": "ESPECIFICOS > COMBUSTIVEIS E DERIVADOS DE PETROLEO > MOVIMENTO DE DISTRIBUIDORA",
+      "screen_keywords": ["MOVIMENTO DISTRIBUIDORA", "DISTRIBUIDORA COMBUSTIVEL"],
+      "keywords": ["COMBUSTIVEIS", "DISTRIBUIDORA", "PETROLEO"],
+      "file_paths": ["especificos/combustiveis"],
+      "packages": ["ESP_COMB_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_COMBUSTIVEIS_REFINARIA",
+      "category": "ESPECIFICOS",
+      "spec_files": ["e2e/especificos/combustiveisDerivadosPetroleo/movimentoRefinaria/movimentoRefinaria.spec.ts"],
+      "menu_path": "ESPECIFICOS > COMBUSTIVEIS E DERIVADOS DE PETROLEO > MOVIMENTO DE REFINARIA",
+      "screen_keywords": ["MOVIMENTO REFINARIA", "REFINARIA", "SCANC"],
+      "keywords": ["REFINARIA", "SCANC", "COMBUSTIVEIS"],
+      "file_paths": ["especificos/combustiveis"],
+      "packages": ["ESP_COMB_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_COMBUSTIVEIS_PARAMETROS",
+      "category": "ESPECIFICOS",
+      "spec_files": ["e2e/especificos/combustiveisDerivadosPetroleo/parametros/parametros.spec.ts"],
+      "menu_path": "ESPECIFICO > COMBUSTIVEL DERIVADO E PETROLEO > PARAMETROS",
+      "screen_keywords": ["COMBUSTIVEIS PARAMETROS"],
+      "keywords": ["COMBUSTIVEIS PARAMETROS"],
+      "file_paths": ["especificos/combustiveis"],
+      "packages": ["ESP_COMB_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_COMBUSTIVEIS_RELATORIOS",
+      "category": "ESPECIFICOS",
+      "spec_files": ["e2e/especificos/combustiveisDerivadosPetroleo/relatorios/relatorios.spec.ts"],
+      "menu_path": "ESPECIFICOS > COMBUSTIVEIS E DERIVADOS DE PETROLEO > RELATORIOS",
+      "screen_keywords": ["COMBUSTIVEIS RELATORIOS"],
+      "keywords": ["COMBUSTIVEIS RELATORIOS"],
+      "file_paths": ["especificos/combustiveis"],
+      "packages": ["ESP_COMB_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_ISIMP",
+      "category": "ESPECIFICOS",
+      "spec_files": [
+        "e2e/especificos/i_Simp/geracao/geracao.spec.ts",
+        "e2e/especificos/i_Simp/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "ESPECIFICOS > I-SIMP",
+      "screen_keywords": ["I-SIMP", "ISIMP", "DPMP", "ANP"],
+      "keywords": ["I-SIMP", "DPMP", "ANP"],
+      "file_paths": ["especificos/i_simp"],
+      "packages": ["ESP_ISIMP_FPROC"],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_PIM_GESTAO",
+      "category": "ESPECIFICOS",
+      "spec_files": [
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/apuracao/apuracao.spec.ts",
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/apuracao/apuracao1.spec.ts",
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/cadastro/cadastro.spec.ts",
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/obrigacoes/obrigacao.spec.ts",
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/parametros/parametros.spec.ts",
+        "e2e/especificos/pimGestaoControleIncentivosFiscaisPoloIndustrialManaus/relatorios/relatorios.spec.ts"
+      ],
+      "menu_path": "ESPECIFICOS > PIM - GESTAO DO CONTROLE DE INCENTIVOS FISCAIS DO POLO INDUSTRIAL DE MANAUS",
+      "screen_keywords": ["PIM", "POLO INDUSTRIAL MANAUS", "PIM GESTAO", "SUFRAMA"],
+      "keywords": ["PIM", "POLO INDUSTRIAL MANAUS", "PIM AM", "PIM GESTAO", "SUFRAMA"],
+      "file_paths": ["especificos/pim_am", "especificos/pim_gestao"],
+      "packages": ["ESP_PIM_AM_FPROC", "PIM_AM"],
+      "suite_automation_id": "PIM_AM"
+    },
+    {
+      "id": "E2E_PIN_SINAL",
+      "category": "ESPECIFICOS",
+      "spec_files": ["e2e/especificos/pinSinal/geracao.spec.ts"],
+      "menu_path": "ESPECIFICOS > PIM SINAL > GERACAO",
+      "screen_keywords": ["PIN SINAL", "PIM SINAL"],
+      "keywords": ["PIN SINAL"],
+      "file_paths": ["especificos/pin_sinal"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_SUBSTANCIAS_CONTROLADAS",
+      "category": "ESPECIFICOS",
+      "spec_files": [
+        "e2e/especificos/substancaisControladas/atendimento/atendimento.spec.ts",
+        "e2e/especificos/substancaisControladas/atendimento/atendimento1.spec.ts",
+        "e2e/especificos/substancaisControladas/cadastro/cadastro.spec.ts",
+        "e2e/especificos/substancaisControladas/movimento/movimento.spec.ts"
+      ],
+      "menu_path": "ESPECIFICOS > SUBSTANCIAS CONTROLADAS",
+      "screen_keywords": ["SUBSTANCIAS CONTROLADAS", "POLICIA", "IBAMA", "EXERCITO"],
+      "keywords": ["SUBSTANCIAS CONTROLADAS", "IBAMA"],
+      "file_paths": ["especificos/substancias_controladas"],
+      "packages": ["ESP_SUBST_CTRL_FPROC"],
+      "suite_automation_id": null
+    },
+
+    {
+      "id": "E2E_GISS_ONLINE",
+      "category": "MUNICIPAL",
+      "spec_files": ["e2e/gissOnline/**/*.spec.ts"],
+      "menu_path": "GISS ONLINE",
+      "screen_keywords": ["GISS", "GISS ONLINE"],
+      "keywords": ["GISS", "GISS ONLINE", "ISS GISS"],
+      "file_paths": ["municipal/giss", "municipal/giss_online"],
+      "packages": ["MUN_GISS_FPROC", "GISS_ONLINE"],
+      "suite_automation_id": "GISS_ONLINE"
+    },
+    {
+      "id": "E2E_MUNICIPAL_ISS",
+      "category": "MUNICIPAL",
+      "spec_files": ["e2e/municipal/**/*.spec.ts"],
+      "menu_path": "MUNICIPAL > OBRIGACOES",
+      "screen_keywords": ["ISS", "ISS DIGITAL", "WEBISS", "SIMPLISS", "NOTA CARIOCA", "DES SP", "MUNICIPAL"],
+      "keywords": ["ISS", "MUNICIPAL", "ISS DIGITAL", "WEBISS", "SIMPLISS", "NOTA CARIOCA", "DES SP"],
+      "file_paths": ["municipal/iss", "municipal/webiss", "municipal/simpliss", "municipal/nota_carioca"],
+      "packages": ["MUN_ISS_DIGITAL_FPROC", "MUN_WEBISS_FPROC", "MUN_SIMPLISS_FPROC"],
+      "suite_automation_id": "ISS_DIGITAL",
+      "_note": "250 municipios. Para match especifico por cidade, usar --grep com nome do municipio"
+    },
+
+    {
+      "id": "E2E_ADMINISTRATION",
+      "category": "ADMINISTRATION",
+      "spec_files": ["e2e/administration/companyInfo/companyInfo.spec.ts"],
+      "menu_path": "ADMNISTRATION > COMPANY INFO",
+      "screen_keywords": ["COMPANY INFO", "ADMINISTRACAO", "USUARIOS"],
+      "keywords": ["ADMINISTRACAO", "COMPANY INFO"],
+      "file_paths": ["admin"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+    {
+      "id": "E2E_CONEXAO_ONESOURCE_BR",
+      "category": "CONEXAO_ONESOURCE",
+      "spec_files": [
+        "e2e/conexaoOneSourceBR/ecfEscrituracaoContabil/geracao/geracao.spec.ts",
+        "e2e/conexaoOneSourceBR/ecfEscrituracaoContabil/parametros/parametros.spec.ts"
+      ],
+      "menu_path": "CONEXAO ONESOURCE BR > ECF - ESCRITURACAO CONTABIL",
+      "screen_keywords": ["CONEXAO ONESOURCE", "ECF", "ESCRITURACAO CONTABIL"],
+      "keywords": ["CONEXAO ONESOURCE", "ECF"],
+      "file_paths": ["conexao_onesource"],
+      "packages": [],
+      "suite_automation_id": null
+    },
+
+    {
+      "id": "E2E_SMOKE",
+      "category": "SMOKE",
+      "spec_files": ["e2e/smokingTesting/**/*.spec.ts"],
+      "menu_path": null,
+      "screen_keywords": [],
+      "keywords": [],
+      "file_paths": [],
+      "packages": [],
+      "suite_automation_id": null
+    }
+  ]
+}

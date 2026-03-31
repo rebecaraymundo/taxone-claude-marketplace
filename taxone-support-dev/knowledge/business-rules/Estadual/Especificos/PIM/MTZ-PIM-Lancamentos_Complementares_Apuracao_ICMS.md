@@ -1,0 +1,627 @@
+# MTZ-PIM-Lancamentos_Complementares_Apuracao_ICMS
+
+- **Fonte:** MTZ-PIM-Lancamentos_Complementares_Apuracao_ICMS.docx
+- **Modificado:** 2021-01-19
+- **Tamanho:** 104 KB
+
+---
+
+THOMSON REUTERS
+
+PIM \- Gestão do Controle de Incentivos Fiscais do Pólo Industrial de Manaus
+
+Tela Lançamentos Complementares – Apuração ICMS
+
+__Localização da tela:__ Específicos, Módulo PIM \- Gestão de Controle de Incentivos Fiscais do Polo Industrial de Manaus, menu Apuração 🡪 Apuração dos Saldos de Impostos e Taxas 🡪 Lançamentos Complementares 🡪 Apuração ICMS
+
+##### DOCUMENTO DE REQUISITO
+
+__MFS/CH__
+
+__Nome__
+
+__Descrição__
+
+OS4593\-A
+
+Vânia Mattos
+
+Este documento tem como objetivo incluir tratamento das subapurações do Sped Fiscal no módulo PIM, para possibilitar a geração dos registros 1900 \(e “filhos”\) do Sped Fiscal\.
+
+MFS2006
+
+Julyana Perrucini
+
+Este documento tem como objetivo incluir o parâmetro “Considerar Lançamento para Cálculo de Transp\. Saldos/ Crédito Estímulo” na aba Lançamento de Valores da Apuração ICMS\.
+
+MFS27264
+
+Vânia Mattos
+
+Inclusão da opção “Copiar Lançamentos” na barra de menu \(ver item “3\-Aba Lançamento de Valores” e item “6\-Cópia dos Lançamentos”\)
+
+MFS41832
+
+Liliane Assaf
+
+Yamaha
+
+Inclusão do campo Cód\. Linha Produto na aba Lançamento de Valores da Apuração ICMS\. Esse campo deve estar num quadrinho junto com o campo “Considerar Lançamento para Cálculo de Transp\. Saldos/ Crédito Estímulo”\. 
+
+MFS32612
+
+Andréa Rocha
+
+Alteração na tela dos Documentos Fiscais Vinculados \(lançamentos do tipo “2”\) para mudar o filtro de recuperação das notas fiscais para seleção do usuário \(vide aba “Lançamento de Valores”\), incluindo o mesmo tratamento existente para o módulo ICMS\.
+
+Sumário
+
+[1\.	Regras dos Campos	4](#_Toc61962682)
+
+[2\.	Aba APURAÇÃO	4](#_Toc61962683)
+
+[3\.	Aba LANÇAMENTO DE VALORES	5](#_Toc61962684)
+
+[4\.	Aba GUIA	8](#_Toc61962685)
+
+[5\.	Aba DÉBITOS ESPECIAIS	9](#_Toc61962686)
+
+[6\.	CÓPIA DE LANÇAMENTOS	10](#_Toc61962687)
+
+[7\.	Tela de Documentos Fiscais Vinculados	14](#_Toc61962688)
+
+# <a id="_Toc350763252"></a><a id="_Toc61962682"></a>Regras dos Campos 
+
+__Regras Gerais:__
+
+As regras desta manutenção estão definidas separadamente para cada uma das abas desta tela: 
+
+     \- Aba __Apuração__
+
+  
+     \- Aba __Lançamentos de Valores__
+
+     \- Aba __Guia__
+
+     \- Aba __Débitos Especiais__
+
+__OS4593\-A__: Esta manutenção foi alterada para inclusão do campo “SubaApuração do Sped Fiscal” em cada uma das três abas: “Lançamento de Valores”, “Guia” e “Débitos Especiais” \(ver detalhes nas regras específicas de cada aba\)\.
+
+# <a id="_Toc61962683"></a>Aba APURAÇÃO
+
+# <a id="_Toc61962684"></a>Aba LANÇAMENTO DE VALORES 
+
+__MFS27264__: Incluída a opção __<*Copiar Lançamentos*>__ na barra de menu da aba Lançamento de Valores\. Consultar o funcionamento desta opção no item “__6\-Cópia de Lançamentos__”\.
+
+![](data:image/png;base64,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)__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__MFS/CH__
+
+Tipo de Lançamento
+
+Texto
+
+N
+
+S
+
+Formato: 
+
+Combo Box
+
+Default: 
+
+Habilitado e Branco
+
+Este campo é uma lista dos tipos de lançamento do Sped Fiscal \+ opção “branco”, conforme o exemplo abaixo:
+
+ 1\-Lançamento referente aos ajustes demonstrados no registro  C197 \(SAFX113\)
+
+ 2\-Lançamento associado a outros documentos fiscais
+
+ 3\-Outros lançamentos
+
+Default    <branco> 
+
+O campo é de preenchimento não obrigatório, e internamente, poderá ter os valores: nulo, 1, 2 ou 3\.
+
+MFS32612
+
+Subapuração do Sped Fiscal
+
+Texto
+
+N
+
+S
+
+Formato: 
+
+Combo Box
+
+Default: 
+
+Habilitado e Branco
+
+Este campo é uma lista das subapurações do Sped Fiscal \(conforme Ato Cotepe 22/2010\) \+ opção “branco”, conforme o exemplo abaixo:
+
+ Subapuração 1
+
+ Subapuração 2
+
+ Subapuração 3
+
+ Subapuração 4
+
+ Subapuração 5
+
+ Subapuração 6
+
+Default    <branco> 
+
+O campo é de preenchimento não obrigatório, e internamente, poderá ter os valores: nulo, 1, 2, 3, 4, 5 ou 6\.
+
+OS4593\-A
+
+Considerar Lançamento para Cálculo de Transp\. Saldos/ Crédito Estímulo
+
+Texto
+
+N
+
+S
+
+Formato: 
+
+Check Box
+
+Default: 
+
+Habilitado e Desmarcado
+
+Permitir o usuário marcar a opção de considerar o lançamento no cálculo do Crédito Estímulo da rotina de Transporte de Saldos/ Crédito Estímulo\.
+
+MFS2006
+
+Cód\. Linha Produto
+
+Alfanumérico
+
+\(005\)
+
+N
+
+Pastinha, Código e Descrição
+
+Campo para informar o Código da Linha de Produto Incentivado cadastrado para o Estabelecimento e Inscrição Estadual\.
+
+Origem: Cadastro das Linhas de Produtos Incentivados \(tabela  ICT\_AM\_LINHAP\)\. 
+
+__Funcionamento:__
+
+O campo Cód\. Linha Produto está dretamente relacionado ao flag “Considerar Lançamento para Cálculo de Transp\. Saldos/ Crédito Estímulo “\.
+
+Se o campo “Considerar Lançamento para Cálculo de Transp\. Saldos/ Crédito Estímulo “ for marcado, então habilitar o campo Cód\. Linha Produto\. 
+
+Se for desmarcado o campo Cód\. Linha Produto deve ser limpo e desabilitado\.
+
+MFS41832
+
+# <a id="_Toc61962685"></a>Aba GUIA 
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__MFS/CH__
+
+Subapuração do Sped Fiscal
+
+Texto
+
+N
+
+S
+
+Formato: 
+
+Combo Box
+
+Default: 
+
+Habilitado e Branco
+
+Este campo é uma lista das subapurações do Sped Fiscal \(conforme Ato Cotepe 22/2010\) \+ opção “branco”, conforme o exemplo abaixo:
+
+ Subapuração 1
+
+ Subapuração 2
+
+ Subapuração 3
+
+ Subapuração 4
+
+ Subapuração 5
+
+ Subapuração 6
+
+Default    <branco> 
+
+O campo é de preenchimento não obrigatório, e internamente, poderá ter os valores: nulo, 1, 2, 3, 4, 5 ou 6\.
+
+OS4593\-A
+
+# <a id="_Toc61962686"></a>Aba DÉBITOS ESPECIAIS 
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__MFS/CH__
+
+Subapuração do Sped Fiscal
+
+Texto
+
+N
+
+S
+
+Formato: 
+
+Combo Box
+
+Default: 
+
+Habilitado e Branco
+
+Este campo é uma lista das subapurações do Sped Fiscal \(conforme Ato Cotepe 22/2010\) \+ opção “branco”, conforme o exemplo abaixo:
+
+ Subapuração 1
+
+ Subapuração 2
+
+ Subapuração 3
+
+ Subapuração 4
+
+ Subapuração 5
+
+ Subapuração 6
+
+Default    <branco> 
+
+O campo é de preenchimento não obrigatório, e internamente, poderá ter os valores: nulo, 1, 2, 3, 4, 5 ou 6\.
+
+OS4593\-A
+
+# <a id="_Toc61962687"></a>CÓPIA DE LANÇAMENTOS 
+
+A opção__ __<*Copiar Lançamentos*> foi incluída na barra de menu da aba “__LANÇAMENTO DE VALORES__” na __MFS27264__\. Trata\-se da mesma opção existente no Módulo ICMS, cujo objetivo é permitir a cópia de lançamentos já existentes para o período em questão \(apuração selecionada na aba “Apuração”\)\.
+
+A opção <*Copiar Lançamentos*> ficará habilitada somente após o usuário selecionar uma apuração na aba “APURAÇÃO”\.
+
+Funcionamento:
+
+- Ao clicar nesta opção será aberta uma janela de pesquisa dos lançamentos complementares \(ICT\_IT\_AP\_DSCR\_IES\);
+- A princípio a janela aparecerá vazia, com as opções __<PESQUISAR>__ e __<CANCELAR>__, e o usuário poderá:
+
+\- Informar um critério para filtro, e clicar na opção <PESQUISAR>;
+
+\- Não informar critério nenhum, e clicar na opção <PESQUISAR>;
+
+\- Clicar na opção <CANCELAR>,  e nesse caso a janela será fechada;
+
+__Selecionar Lançamentos__
+
+DAT\_APURACAO
+
+IND\_INCENTIVO
+
+COD\_OPER\_APUR
+
+NUM\_DISCRIMINACAO
+
+VAL\_ITEM\_DISCRIM
+
+__\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.__
+
+                                                                                        <<<  =  >>>
+
+      __<PESQUISAR>    <CANCELAR>__
+
+- Ao clicar na opção <Pesquisar>, será efetuada a pesquisa de todos os lançamentos que atendam aos critérios informados pelo usuário;
+- Serão exibidos apenas os lançamentos que atendam as condições abaixo, e mais o filtro informado pelo usuário \(quando for o caso\);
+
+\- Lançamentos da Empresa e Estabelecimento em questão \(apuração selecionada na aba “Apuração”\); 
+
+\- Lançamentos com IND\_INCENTIVO = “I” ou “N”; 
+
+- Os lançamentos recuperados na pesquisa serão exibidos na janela de seleção, com as opções __<CRITÉRIO>__, __<CANCELAR>__ e __<OK>__;
+
+__Selecionar Lançamentos__
+
+DAT\_APURACAO
+
+IND\_INCENTIVO
+
+COD\_OPER\_APUR
+
+NUM\_DISCRIMINACAO
+
+VAL\_ITEM\_DISCRIM
+
+__\.\.\.\.\.\.\.\.\.\.\.\.\.\.\.__
+
+                                                                                    <<<  =  >>>
+
+      __<CRITÉRIO>    <CANCELAR>   <OK>__
+
+- Nesse momento, o usuário poderá selecionar os lançamentos desejados;
+- Para selecionar mais de um lançamento, será utilizada a tecla <CTRL>;
+- Após a seleção dos lançamentos o usuário poderá clicar em uma das seguintes opções da janela:
+
+__Critério__
+
+Nesse caso a janela será limpa, e o usuário poderá informar um outro critério desejado\. 
+
+__Cancelar__
+
+Nesse caso a janela de seleção dos lançamentos será fechada
+
+__OK__
+
+Nesse caso, todos os lançamentos selecionados serão “copiados” conforme descrito abaixo, no item “*Gravação dos Lançamentos Selecionados para cópia*”\.
+
+Ao finalizar o procedimento da cópia, a janela de pesquisa será fechada
+
+ 
+
+__Gravação dos lançamentos selecionados para cópia: __
+
+Todos os lançamentos selecionados pelo usuário serão “copiados” para a apuração em questão, considerando os campos descritos no quadro abaixo\.
+
+Cada lançamento a ser “copiado”, dará origem a dois lançamentos na verdade\. Isso porque a manutenção dos lançamentos da Apuração do ICMS do Módulo PIM trabalha da seguinte forma:
+
+Cada lançamento incluído na tela da manutenção origina 2 lançamentos:
+
+     \- Um com o indicador de incentivo informado em tela, no campo “Incentivado” e “Não Incentivado” \(I/N\);
+
+     \- Outro com o indicador de incentivo = “C” \(= Consolidado\)\. 
+
+*\(A apuração do ICMS do PIM é separada em três:  “Incentivada”, “Não Incentivada” e “Consolidada”, que globaliza a incentivada \+ não incentivada\. Todo lançamento inserido via tela de manutenção, seja incentivado ou não incentivado, é automaticamente replicado para a apuração consolidada\) *
+
+Da mesma forma que é feito na inclusão manual de um lançamento, para cada lançamento a ser “copiado”, será feito o mesmo procedimento: 
+
+__Campos da ICT\_IT\_AP\_DSCR\_IES__
+
+__Conteúdo a ser gravado no primeiro lançamento__
+
+__Conteúdo a ser gravado no segundo lançamento__
+
+COD\_EMPRESA
+
+Dados da apuração para a qual o lançamento será copiado
+
+ 
+
+\(apuração selecionada na aba “Apuração”\)
+
+Idem
+
+COD\_ESTAB
+
+INSC\_ESTADUAL
+
+COD\_TIPO\_LIVRO
+
+DAT\_APURACAO
+
+IND\_INCENTIVO
+
+Conteúdo do IND\_INCENTIVO do lançamento a ser copiado 
+
+\(Será “I” quando for lançamento incentivado, ou “N” quando se tratar de lançamento não incentivado\)
+
+“__C__”
+
+COD\_OPER\_APUR
+
+Conteúdo do COD\_OPER\_APUR do lançamento a ser copiado
+
+Idem
+
+NUM\_DISCRIMINACAO
+
+Esta coluna é um sequencial calculado pelo sistema\. Para cada indicador de incentivo e código da operação do lançamento, é gerada uma sequência de numeração a partir do 1\.
+
+Assim, para cada novo lançamento a ser gravado, será verificado *o maior sequencial já existente* \(NUM\_DISCRIMINACAO\) para:
+
+\-Empresa \(COD\_EMPRESA\)
+
+\-Estabelecimento \(COD\_ESTAB\)
+
+\-Inscrição Estadual \(INSC\_ESTADUAL\)
+
+\-Código do Tipo do Livro \(COD\_TIPO\_LIVRO\)
+
+\-Data da Apuração \(DAT\_APURACAO\)
+
+\-Indicador de Incentivo \(IND\_INCENTIVO\)
+
+\-Código de Operação da Apuração \(COD\_OPER\_APUR\)
+
+O sequencial a ser gravado será = número recuperado \+ 1 
+
+Esta coluna é um sequencial calculado pelo sistema\. Para cada indicador de incentivo e código da operação do lançamento, é gerada uma sequência de numeração a partir do 1\.
+
+Assim, para cada novo lançamento a ser gravado, será verificado *o maior sequencial já existente* \(NUM\_DISCRIMINACAO\) para:
+
+\-Empresa \(COD\_EMPRESA\)
+
+\-Estabelecimento \(COD\_ESTAB\)
+
+\-Inscrição Estadual \(INSC\_ESTADUAL\)
+
+\-Código do Tipo do Livro \(COD\_TIPO\_LIVRO\)
+
+\-Data da Apuração \(DAT\_APURACAO\)
+
+__\-Indicador de Incentivo = “C” \(IND\_INCENTIVO\)__
+
+\-Código de Operação da Apuração \(COD\_OPER\_APUR\)
+
+O sequencial a ser gravado será = número recuperado \+ 1 
+
+VLR\_ITEM\_DISCRIM’
+
+*O valor do lançamento será gravado sempre com zero*
+
+Idem
+
+IND\_TIPO\_DEDUÇÃO
+
+Conteúdo do IND\_TIPO\_DEDUÇÃO do lançamento a ser copiado
+
+Idem
+
+DSC\_ITEM\_APURACAO
+
+Conteúdo do DSC\_ITEM\_APURACAO do lançamento a ser copiado
+
+Idem
+
+IND\_DIG\_CALC
+
+Conteúdo do IND\_DIG\_CALC do lançamento a ser copiado
+
+Idem
+
+COD\_CLASSE
+
+Conteúdo do COD\_CLASSE do lançamento a ser copiado
+
+Idem
+
+NUM\_PROCESSO
+
+*Esta coluna não será preenchida\.*
+
+Idem
+
+COD\_AJUSTE\_ICMS
+
+Conteúdo do COD\_AJUSTE\_ICMS do lançamento a ser copiado
+
+Idem
+
+IND\_TIPO\_LANC
+
+Conteúdo do IND\_TIPO\_LANC do lançamento a ser copiado
+
+Idem
+
+NUM\_PROC
+
+*Esta coluna não será preenchida \(\*\*\*\)\.*
+
+Idem
+
+ORIGEM\_PROC
+
+*Esta coluna não será preenchida \(\*\*\*\)\.*
+
+Idem
+
+COD\_AJUSTE
+
+*Esta coluna não será preenchida \(\*\*\*\)\.*
+
+Idem
+
+IND\_SUB\_APUR
+
+Conteúdo do IND\_SUB\_APUR do lançamento a ser copiado
+
+Idem
+
+IND\_CRED\_ESTIMULO
+
+Conteúdo do IND\_CRED\_ESTIMULO do lançamento a ser copiado
+
+Idem
+
+\(\*\*\*\) As colunas NUM\_PROC, ORIGEM\_PROC e COD\_AJUSTE da tabela não são utilizadas na manutenção dos lançamentos\.  
+
+# <a id="_Toc61962688"></a>Tela de Documentos Fiscais Vinculados
+
+__\[MFS32612\] Alteração da regra de recuperação dos documentos fiscais, para passar a considerar notas fiscais com ajustes na SAFX113\. Tratamento já   adotado no módulo do ICMS\.__
+
+Esta opção é específica para os tipos de lançamentos igual a “2”\. Clicando nesta opção será possível selecionar documentos fiscais \(SAFX07\) a serem associados ao lançamento, considerando somente os documentos do estabelecimento e inscrição estadual em questão\.
+
+O filtro das notas fiscais a serem disponibilizadas para seleção do usuário foi alterado em relação à condição da nota ter ou não ajustes na SAFX113 \(tabela “filha” da SAFX07\), da seguinte forma:
+
+Na janela de seleção dos documentos fiscais serão consideradas:
+
+ \- Notas fiscais __SEM__ ajustes na SAFX113 __ou__
+
+ \- Notas fiscais __COM__ ajustes na SAFX113, mas que sejam de períodos anteriores \(data fiscal < data inicial do período \(\*\)\) __ou__ 
+
+ \- Notas fiscais __COM__ ajustes na SAFX113, desde que o terceiro caractere do Código de Ajuste informado na SAFX113 seja igual a ‘9’ \(campo 13
+
+ da SAFX113\), e compreendendo o período da apuração em questão __ou__
+
+ \- Notas fiscais __COM__ ajustes na SAFX113, desde que o campo Sub\-Apuração do Sped Fiscal \(campo 24 da SAFX216\) da aba de Lançamentos de Valores esteja preenchido, e compreendendo o período da apuração em questão\.
+
+\(\*\) A data inicial do período será obtida a partir da data da apuração em questão \(data exibida na aba “Apuração”, campo “Data Apuração”\), considerando a periodicidade da apuração\.  
+
+Obs\.: Originalmente só eram disponibilizadas para seleção do usuário as notas fiscais *sem* ajustes\.
+
+Funcionamento da tela:
+
+- Ao selecionar um documento, deverão ser exibidos os dados das seguintes colunas: Data Fiscal,  E/S, Número/Série/Subsérie e Pessoa fis/Jur;
+- O campo “N\. Item da NF” deve ser um listbox que exibirá a lista dos itens existentes para a nota selecionada\. Importante: na lista deve existir uma linha em branco, pois a informação do item da nota não é obrigatória;
+
+ 
+
+- O valor do ajuste deverá ser informado pelo usuário, pois é uma informação que não consta no documento fiscal, já que nem sempre se trata do próprio valor do ICMS\.
+- Ao confirmar a operação, deve\-se verificar:
+
+1\)Verificar se em algum dos documentos informados, o usuário não digitou o valor do ajuste\. Neste caso, exibir a mensagem abaixo:
+
+*         “Informar o conteúdo do campo “Valor do Ajuste” para todos os documentos fiscais selecionados\.”*
+
+2\)Verificar se o total dos valores informados confere com o valor do lançamento complementar\. Caso não, exibir a mensagem abaixo:
+
+*        “O total geral dos ajustes informados não confere com o valor informado no lançamento\. Favor verificar\.”*
+
+3\)Verificar se foram informados documentos fiscais repetidos\. Para isso, pode ser utilizado como critério de comparação as cinco primeiras colunas do quadro “Documentos Fiscais” \(Data Fiscal, E/S,  NF/Série/Subsérie, Pessoa Fis/Jur e N\.Item\)\. Se existirem documentos ou itens de documentos repetidos, exibir a mensagem abaixo:
+
+*      “Existem documentos fiscais ou itens de documentos fiscais repetidos\. Favor verificar\.”*
+

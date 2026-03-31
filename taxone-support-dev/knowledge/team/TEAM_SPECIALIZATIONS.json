@@ -1,0 +1,387 @@
+{
+  "_generated": "2026-03-11",
+  "_source": "ADO history (6 months)",
+  "_wi_count": 104,
+  "Eduardo.Sa@thomsonreuters.com": {
+    "total_wis": 10,
+    "modules": {
+      "Basicos": 10
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 10
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Daniel.OliveiradaSilva@thomsonreuters.com": {
+    "total_wis": 13,
+    "modules": {
+      "Federal": 1,
+      "Basicos": 12
+    },
+    "top_modules": [
+      "Basicos",
+      "Federal"
+    ],
+    "verticals": {
+      "federal": 1,
+      "basicos": 12
+    },
+    "top_verticals": [
+      "basicos",
+      "federal"
+    ]
+  },
+  "Michel.Paiva@thomsonreuters.com": {
+    "total_wis": 11,
+    "modules": {
+      "Basicos": 9,
+      "Federal": 1,
+      "SPED": 1
+    },
+    "top_modules": [
+      "Basicos",
+      "Federal",
+      "SPED"
+    ],
+    "verticals": {
+      "basicos": 9,
+      "federal": 1,
+      "sped": 1
+    },
+    "top_verticals": [
+      "basicos",
+      "federal",
+      "sped"
+    ]
+  },
+  "Luiz.Castro@thomsonreuters.com": {
+    "total_wis": 12,
+    "modules": {
+      "Municipal": 2,
+      "Basicos": 10
+    },
+    "top_modules": [
+      "Basicos",
+      "Municipal"
+    ],
+    "verticals": {
+      "municipal": 2,
+      "basicos": 10
+    },
+    "top_verticals": [
+      "basicos",
+      "municipal"
+    ]
+  },
+  "eduardo.cruz@thomsonreuters.com": {
+    "total_wis": 14,
+    "modules": {
+      "MasterSAF_DW": 3,
+      "Basicos": 11
+    },
+    "top_modules": [
+      "Basicos",
+      "MasterSAF_DW"
+    ],
+    "verticals": {
+      "basicos": 14
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "renato.ramos@thomsonreuters.com": {
+    "total_wis": 12,
+    "modules": {
+      "Basicos": 12
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 12
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "marcus.britto@thomsonreuters.com": {
+    "total_wis": 14,
+    "modules": {
+      "MasterSAF_DW": 3,
+      "Basicos": 11
+    },
+    "top_modules": [
+      "Basicos",
+      "MasterSAF_DW"
+    ],
+    "verticals": {
+      "basicos": 14
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Everton.Zamarioli@thomsonreuters.com": {
+    "total_wis": 12,
+    "modules": {
+      "Basicos": 12
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 12
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Gustavo.Severi@thomsonreuters.com": {
+    "total_wis": 2,
+    "modules": {
+      "Basicos": 2
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 2
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Carlos.Wolak@thomsonreuters.com": {
+    "total_wis": 1,
+    "modules": {
+      "Basicos": 1
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 1
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "A.Braga@thomsonreuters.com": {
+    "total_wis": 3,
+    "modules": {
+      "Basicos": 3
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 3
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Adriano.Baviera@thomsonreuters.com": {
+    "total_wis": 0,
+    "modules": {},
+    "top_modules": [],
+    "verticals": {},
+    "top_verticals": []
+  },
+  "LuizHenrique.Silva@thomsonreuters.com": {
+    "total_wis": 6,
+    "modules": {
+      "Basicos": 5,
+      "MasterSAF_DW": 1
+    },
+    "top_modules": [
+      "Basicos",
+      "MasterSAF_DW"
+    ],
+    "verticals": {
+      "basicos": 6
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "lara.paulo@thomsonreuters.com": {
+    "total_wis": 7,
+    "modules": {
+      "Basicos": 7
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 7
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Murielle.Queriqueri@thomsonreuters.com": {
+    "total_wis": 6,
+    "modules": {
+      "Basicos": 6
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 6
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Camila.Bittencourt@thomsonreuters.com": {
+    "total_wis": 15,
+    "modules": {
+      "Basicos": 15
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 15
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Danielle.Meireles@thomsonreuters.com": {
+    "total_wis": 14,
+    "modules": {
+      "Municipal": 2,
+      "Basicos": 11,
+      "SPED": 1
+    },
+    "top_modules": [
+      "Basicos",
+      "Municipal",
+      "SPED"
+    ],
+    "verticals": {
+      "municipal": 2,
+      "basicos": 11,
+      "sped": 1
+    },
+    "top_verticals": [
+      "basicos",
+      "municipal",
+      "sped"
+    ]
+  },
+  "Raquel.Carvalho@thomsonreuters.com": {
+    "total_wis": 15,
+    "modules": {
+      "Federal": 2,
+      "MasterSAF_DW": 3,
+      "Basicos": 10
+    },
+    "top_modules": [
+      "Basicos",
+      "MasterSAF_DW",
+      "Federal"
+    ],
+    "verticals": {
+      "federal": 2,
+      "basicos": 13
+    },
+    "top_verticals": [
+      "basicos",
+      "federal"
+    ]
+  },
+  "Elaine.Costa@thomsonreuters.com": {
+    "total_wis": 10,
+    "modules": {
+      "Basicos": 9,
+      "MasterSAF_DW": 1
+    },
+    "top_modules": [
+      "Basicos",
+      "MasterSAF_DW"
+    ],
+    "verticals": {
+      "basicos": 10
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "MarcoBarbosa.Santos@thomsonreuters.com": {
+    "total_wis": 7,
+    "modules": {
+      "Basicos": 7
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 7
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Ryan.Lins@thomsonreuters.com": {
+    "total_wis": 7,
+    "modules": {
+      "Basicos": 7
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 7
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "Renan.Alipio@thomsonreuters.com": {
+    "total_wis": 4,
+    "modules": {
+      "Basicos": 4
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 4
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  },
+  "diego.alvespereira@thomsonreuters.com": {
+    "total_wis": 0,
+    "modules": {},
+    "top_modules": [],
+    "verticals": {},
+    "top_verticals": []
+  },
+  "Juliano.Speers@thomsonreuters.com": {
+    "total_wis": 7,
+    "modules": {
+      "Basicos": 7
+    },
+    "top_modules": [
+      "Basicos"
+    ],
+    "verticals": {
+      "basicos": 7
+    },
+    "top_verticals": [
+      "basicos"
+    ]
+  }
+}

@@ -1,0 +1,6795 @@
+# MTZ_REINF_Tela_Conferencia_Previa_Movimentos
+
+- **Fonte:** MTZ_REINF_Tela_Conferencia_Previa_Movimentos.docx
+- **Modificado:** 2025-05-12
+- **Tamanho:** 220 KB
+
+---
+
+THOMSON REUTERS
+
+Conferência Prévia dos Movimentos
+
+SPED – Reinf
+
+##### DOCUMENTO DE REQUISITO
+
+__MFS/CH__
+
+__Nome__
+
+__Descrição__
+
+MFS8958
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2010\) do EFD – Reinf
+
+MFS8959
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2020\) do EFD – Reinf
+
+MFS9074
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2060\) do EFD – Reinf
+
+MFS9901
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2070\) do EFD – Reinf
+
+MFS10357
+
+Elenilson Coutinho
+
+Alteração na Tela de Conferência Prévia dos Eventos \(R\-2010\) do EFD – Reinf
+
+MFS10414
+
+Elenilson Coutinho
+
+Alteração na Tela de Conferência Prévia dos Eventos \(R\-2020\) do EFD – Reinf
+
+MFS10589
+
+Elenilson Coutinho
+
+Inclusão de Campo na Tela de Conferência Prévia dos Eventos \(R\-2020\) do EFD – Reinf
+
+MFS10415
+
+Elenilson Coutinho
+
+Inclusão de Campo na Tela de Conferência Prévia dos Eventos \(R\-2070\) do EFD – Reinf
+
+MFS9073
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2050\) do EFD – Reinf
+
+MFS11487
+
+Elenilson Coutinho
+
+<a id="OLE_LINK103"></a><a id="OLE_LINK104"></a><a id="OLE_LINK105"></a>Inclusão da aba “Ocorrencia” evento \(R\-2010\) do EFD Reinf
+
+MFS11398
+
+Elenilson Coutinho
+
+Inclusão da aba “Ocorrencia” evento \(R\-2020\) do EFD Reinf
+
+MFS11400
+
+Elenilson Coutinho
+
+Inclusão da aba “Ocorrencia” evento \(R\-2060\) do EFD Reinf
+
+MFS11399
+
+Elenilson Coutinho
+
+Inclusão da aba “Ocorrencia” evento \(R\-2070\) do EFD Reinf
+
+MFS11670
+
+Elenilson Coutinho
+
+Inclusão na Tela de Conferência Prévia s Evento \(R\-2040\) do EFD – Reinf
+
+MFS11892
+
+Elenilson Coutinho
+
+Alteração evento R\-2070 – Layout V 1\.1
+
+MFS13362
+
+Lara Aline
+
+Alteração na posição dos quadros: O quadro “Identificador do Prestador de Serviços” passou para o segundo nível com somente a informação do CNPJ do Prestador\. Todos os valores foram passados para o quadro de “Ocorrências”\. \(R\-2010\)\. E exclusão dos campos\. 
+
+MFS13631
+
+Lara Aline
+
+Alteração na posição dos quadros: O quadro “Identificador doTomador de Serviços” passou para o segundo nível com somente a informação do tipo, numero de inscrição\. Todos os valores foram passados para o quadro de “Ocorrências”\. \(R\-2020\)\. E exclusão dos campos
+
+MFS13861
+
+Lara Aline
+
+Alteração evento R\-2040 – Layout V 1\.2
+
+MFS13897
+
+Lara Aline
+
+Alteração evento R\-2050 – Layout V 1\.2
+
+MFS14002
+
+Lara Aline
+
+Alteração evento R\-2060 – Layout V 1\.2
+
+MFS14462
+
+Lara Aline 
+
+Inclusão do campo Versão
+
+MFS17628
+
+Vânia Mattos
+
+Inclusão de novas abas \(“Totais R\-5001”\) para exibir os valores calculados pelo Fisco \(informações enviadas pelo Fisco através do evento R\-5001\) 
+
+MFS20732
+
+Lara Aline
+
+Inclusão do campo “Data Fiscal” na aba Notas Fiscais de Serviços
+
+MFS20930
+
+Lara Aline
+
+Exclusão do evento R\-2070 e ajuste na numeração dos campos do R\-5001 – Conforme Layout 1\.4
+
+MFS\-58345
+
+Alessandra Cristina Navatta
+
+Reestruturação do Menu
+
+MFS\-58348
+
+Alessandra Cristina Navatta
+
+Inclusão do Evento R\-2055
+
+MFS\-69588
+
+Alessandra Cristina Navatta
+
+Mudança do nome do quadro de estabelecimento do evento R\-2060 de ‘Identificação do Estabelecimento de Comercialização da Produção’ para ‘Identificação do Estabelecimento que Auferiu a Receita Bruta’
+
+MFS\-79878
+
+Alessandra Cristina Navatta
+
+Exclusão do campo Retificação S\-1250, a partir da versão 2\.1 do REINF\.
+
+MFS\-79885
+
+Alessandra Cristina Navatta
+
+Inclusão do evento R\-4010 para atendimento à versão 2\.1\. do REINF\.
+
+MFS\-79893
+
+Alessandra Cristina Navatta
+
+Inclusão do evento R\-4040 para atendimento à versão 2\.1\. do REINF\.
+
+MFS\-79907
+
+Alessandra Cristina Navatta
+
+Inclusão do evento R\-4080 para atendimento à versão 2\.1\. do REINF\.
+
+[MFS\-90863](https://jira.thomsonreuters.com/browse/MFS-90863)
+
+Alessandra Cristina Navatta
+
+Alteração da versão 2\.1 para 2\.1\.1\. 
+
+Não há regras a serem ajustada neste arquivo\.
+
+MFS\-79890
+
+Alessandra Cristina Navatta
+
+Inclusão do evento R\-4020 para atendimento à versão 2\.1\.1 do REINF\.
+
+MFS\-79960
+
+Alessandra Cristina Navatta
+
+Exclusão das abas \(“Totais R\-5001”\) para exibir os valores calculados pelo Fisco \(informações enviadas pelo Fisco através do evento R\-5001\), a partir da versão 2\.1\.1, para a família 2000 \(Eventos R\-2010, R\-2020, R\-2040, R\-2050, R\-2055 e R\-2060\)\. Não faz sentido ter essas informações na conferência prévia, uma vez que se referem ao retorno do fisco \(informação gerada posteriormente\)\. Essas informações serão disponibilizadas em relatório\.
+
+MFS\-535745
+
+Alessandra Cristina Navatta
+
+Inclusão dos campos ideEvtAdic \(no agrupamento Ocorrência/Identificação do Beneficiário\), e dos campos dtEscrCont, observ no agrupamento \(Informações Relativas ao Rendimento\) no evento R\-4010, a partir da versão 2\.1\.2\.
+
+MFS\-537195
+
+Alessandra Cristina Navatta
+
+Inclusão dos campos ideEvtAdic \(no agrupamento Ocorrência/Identificação do Beneficiário do Rendimento\), e dos campos dtEscrCont, observ no agrupamento \(Informações Relativas ao Pagamento\), no evento R\-4020, a partir da versão 2\.1\.2\.
+
+MFS\-549365
+
+Alessandra Cristina Navatta
+
+Mudança de domínio no campo Tipo de Isenção\.  Atendimento ao layout 2\.1\.2 
+
+MFS\-537211
+
+Alessandra Cristina Navatta
+
+Inclusão dos campos ideEvtAdic \(no agrupamento Ocorrência/Identificação do Estabelecimento\), e do campo dtEscrCont, no agrupamento \(Informações do Pagamento a Beneficiários não Identificados\) no evento R\-4040, a partir da versão 2\.1\.2\.
+
+MFS\-537238
+
+Alessandra Cristina Navatta
+
+Inclusão do campo Observ \(no agrupamento Informações Relativas ao Recebimento do Rendimento\), no evento R\-4080, a partir da versão 2\.1\.2
+
+__MFS\-566870__
+
+Alessandra Cristina Navatta
+
+Ajustes referente a nota técnica 03/2023, conforme INFOLEGIS 1740/23 \- Z \- 084 \- EFD REINF\_NT 03/2023 \- DW/T1
+
+Alterações nos campos do evento R\-4010:
+
+Tipo Dedução \- inclusão do tipo de dedução “8 – Desconto simplificado mensal” nos agrupamentos ‘Informações Relativas às Deduções do Rendimento Tributável’ \(tag detDed\) e ’Detalhamento das Deduções Suspensas’ \(tag dedSusp\)\. 
+
+MFS\-805178
+
+Alessandra Cristina Navatta
+
+Ajustes referente a nota técnica 01/2025, conforme INFOLEGIS 1740/25 \- Z \- 104 \- EFD REINF\_NT 01/2025 \- DW/T1
+
+Inclusão da opção 3 – Sem Processo no campo Tipo de Processo \(tag infoRRA\), do evento  R\-4010
+
+Sumário
+
+[1\.	Regras dos Campos	4](#_Toc493860420)
+
+# <a id="_Toc350763252"></a><a id="_Toc493860420"></a>Regras dos Campos 
+
+__Localização da tela:__ Módulo: SPED >> EFD – Reinf
+
+__                                   __Menu: REINF >> Conferência Prévia >> Movimentos
+
+__Título da tela: __Conferência Prévia dos Eventos
+
+Obs: Ao abrir a tela de conferência deverá abrir uma subtela para seleção do período de geração\.
+
+![](data:image/png;base64,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skghq4ykQwcSlQ49pAUBEACBTBIoLCyklxm1atUq+4dHyXhIBaHiUKECM4osXlUxejR+0jAwQCQEARAAgdQIxPlJwzlz5tDP1A4ePJje+pqa0ayMvXXr1ilTptCPCPcO9JOGY8eOhURlZcXCKRAAgfASiP/D8LNnz96+fXvw31jKJm40fmrQoEGfPn0COEW/uiskauPo0WPww/ABCCIJCIAACAQgEF+iAhgMZRL1w/ChLBwKBQIgAAIgkPsEsFwi9+sQJQABEACBkBLIs/B6iZBWLYoFAiAAArlOAKOoXK9B+A8CIAACoSUAiQpt1aJgIAACIJDrBCBRuV6D8B8EQAAEwkkgYll5eBQVzrpFqUAABEAgxwmQPGEUleN1CPdBAARAILwEIFHhrVuUDARAAARynAAkKscrEO6DAAiAQEgJsGdRIS0aigUCIAACIJDzBCBROV+FKAAIgAAIhJUAJCqsNYtygQAIgEDOE4BE5XwVogAgAAIgEFYCkKiw1izKBQIgAAI5TwASlfNViAKAAAiAQFgJQKLCWrMoFwiAAAjkOoEIJCrXqxD+gwAIgEBICUTwvaiQ1iyKBQIgAAIhIIBRVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgXASgESFs15RKhAAARAIAQFIVAgqEUUAARAAgTASiEYhUWGsV5QJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjAQgUWGsVZQJBEAABEJBABIVimpEIUAABEAgjATyrGgYi4UygQAIgAAI5D6BPChU7lciSgACIAAC4SSAib5w1itKBQIgAAIhIACJCkElogggAAIgEE4CkKhw1itKBQIgAAIhIACJCkElogggAAIgEE4C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)
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__MFS/CH__
+
+Estabelecimento 
+
+TextBox
+
+S
+
+N
+
+Irá demonstrar o estabelecimento selecionado na chamada da subtela de seleção\.
+
+MFS\-8958
+
+Período \(MM/AAAA\)
+
+Texto
+
+S
+
+N
+
+MFS\-8958
+
+Versão
+
+TextBox
+
+S
+
+N
+
+Irá demostrar a versão de Leiaute da EFD\-REINF
+
+MFS\-14462
+
+Eventos\-Reinf 
+
+Pasta
+
+MFS\-8958
+
+__R\-2010 – Retenção Contribuição Previdenciária – Prestadores Serviços__
+
+Identificação do Estabelecimento / Obra Contratante de Serviços
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento tomador de serviços\.
+
+1\-CNPJ
+
+4\-CNO
+
+MFS\-8958
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o número de inscrição do estabelecimento tomador de serviços, CNPJ ou CNO\.
+
+MFS\-8958
+
+Identificação do Prestador dos Serviços
+
+<a id="_Hlk484541133"></a>CNPJ do Prestador de Serviços
+
+Textbox
+
+S
+
+N
+
+\.
+
+MFS\-8958
+
+Ocorrências
+
+<a id="_Hlk484554909"></a>Data Ocorrência
+
+<a id="OLE_LINK6"></a><a id="OLE_LINK7"></a><a id="OLE_LINK8"></a><a id="OLE_LINK83"></a><a id="OLE_LINK84"></a>Textbox
+
+S
+
+N
+
+MFS\-11487
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11487
+
+Indicador de Obra
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o indicador de preatação de serviço em obra
+
+1. Não é obra de construção civil ou não está sujeita a matrícula
+2. Obrad de construção civil empreitada Total 
+3. Obra de construção civil Empreitada Parcial
+
+MFS\-11487
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS\-11487
+
+Valor Total Bruto
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor Total da Base de Cálculo da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor Total da Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor Total da Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor Total da Retenção Principal Não Efetuada ou Depositada em Juízo da Decisão Judicial
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor Total da Retenção Adicional Não Efetuada ou Depositada em Juízo da Decisão Judicial
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Código da Conta Analítica
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+MFS13362
+
+Indicador CPRB
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o indicador do prestador de serviço quanto a incidência da CPRB\.
+
+0 \- Não é serviço ou CNAE sujeito a incidência da Contribuição Previdenciária sobre a Receita Bruta\(CPRB\) \- Retenção 11%;
+
+1 – Serviço ou CNAE sujeito a incidência da Contribuição Previdenciária sobre a Receita Bruta\(CPRB\) \- Retenção 3,5%;
+
+MFS10357
+
+Notas Fiscais de Serviços
+
+Número Documento
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Série 
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Data Emissão da Nota Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Data Fiscal 
+
+Textbox
+
+S
+
+N
+
+MFS20732
+
+Valor Bruto
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Observação
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Informações de Tipo de Serviços
+
+Tipo de Serviço
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Código da Atividade Econômica
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+MFS13362
+
+Valor Material ou Equipamento
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+MFS13362
+
+Valor Dedução Alimentação
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+MFS13362
+
+Valor Dedução Transporte
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+MFS13362
+
+Valor Base de Cálculo da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor da Retenção da Subcontratada
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor da Retenção Principal Não Efetuada ou Depositada em Juízo da Decisão Judicial/Administrativa
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor dos Serviços/Aposentadoria Especial \- 15 anos
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor dos Serviços/Aposentadoria Especial \- 20 anos
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor dos Serviços/Aposentadoria Especial \- 25 anos
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor da Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Valor da Retenção Adicional Não Efetuada ou Depositada em Juízo da Decisão Judicial/Administrativa
+
+Textbox
+
+S
+
+N
+
+MFS\-8958
+
+Informações de Processo Retenção Principal
+
+Tipo do Processo Retenção Principal
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo do processo retenção principal\.
+
+1. Administrativo do Tomador
+2. Judicial do Tomador
+3. Judicial do Prestador
+
+MFS10357
+
+Número do Processo Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Código da Suspensão Principal
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Valor Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Informações de Processo Retenção Adicional
+
+Tipo do Processo Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo do processo retenção adicional\.
+
+1. Administrativo do Tomador
+2. Judicial do Tomador
+3. Judicial do Prestador
+
+MFS10357
+
+Número do Processo Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Código da Suspensão Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+Valor Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10357
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidas informações geradas pelo Fisco via evento R\-5001 \(evento enviado pelo Fisco no ato do recebimento do evento R\-2010\)\. Estas informações só existirão no caso dos eventos __R\-2010__ já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Informações exibidas:
+
+1\-Valor total da base de cálculo da retenção do evento \(ocorrência única\)\. Trata\-se do campo “32\-vlrTotalBaseRet” do evento R\-5001;
+
+2\-Valores calculados por Código de Receita \(*pode existir mais de uma ocorrência*\)\. Trata\-se dos campos da tag “infoCRTom” do R\-5001;
+
+Total Base de Cálculo da Retenção
+
+Numérico
+
+N
+
+N
+
+Conteúdo campo “32\-vlrTotalBaseRet” do evento R\-5001 referente ao R\-2010 em questão
+
+MFS17628
+
+MFS20930
+
+Código de Receita
+
+Alfanumérico
+
+N
+
+N
+
+Formato: 9999\-99
+
+Conteúdo do campo “34\-CRTom” do evento R\-5001 referente ao R\-2010 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária 
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “35\-vlrCRTom” do evento R\-5001 referente ao R\-2010 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária Exigibilidade Suspensa
+
+Numérico
+
+N
+
+N
+
+Conteúdo campo “36\-vlrCRTomSusp” do evento R\-5001 referente ao R\-2010 em questão\.
+
+MFS17628
+
+MFS20930
+
+__R\-2020 – Retenção Contribuição Previdenciária – Tomadores de Serviços__
+
+Identificação do Estabelecimento / Prestador de Serviços
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento prestador de serviços\.
+
+1\-CNPJ
+
+MFS\-8959
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Identificação do Tomador de Serviço
+
+Tipo Inscrição do Tomador
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Número Inscrição Tomador
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS\-11398
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11398
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS\-11398
+
+Indicador de Obra
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total Bruto
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total da Base de Cálculo da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total da Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total da Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total da Retenção Principal Não Efetuada ou Depositada em Juízo da Decisão Judicial
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Valor Total da Retenção Adicional Não Efetuada ou Depositada em Juízo da Decisão Judicial
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Código da Conta Analítica
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+MFS13631
+
+Notas Fiscais de Serviços
+
+Série 
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Número Documento
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Data Emissão da Nota Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Data Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS20732
+
+Valor Bruto
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Observação
+
+Textbox
+
+S
+
+N
+
+MFS\-8959
+
+Informação do Tipo de Serviço
+
+Tipo de Serviço
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Código da Atividade Econômica
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+MFS13631
+
+Valor Material ou Equipamento
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+MFS13631
+
+Valor Dedução Alimentação
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+MFS13631
+
+Valor Dedução Transporte
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+MFS13631
+
+Valor Base de Cálculo da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor da Retenção do INSS
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor da Retenção da Subcontratada
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor da Retenção Principal Não Efetuada ou Depositada em Juízo da Decisão Judicial/Administrativa
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor dos Serviços/Aposentadoria Especial \- 15 anos
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor dos Serviços/Aposentadoria Especial \- 20 anos
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor dos Serviços/Aposentadoria Especial \- 25 anos
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor da Retenção Adicional Não Efetuada ou Depositada em Juízo da Decisão Judicial/Administrativa
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Informações de Processo Retenção Principal
+
+Tipo do Processo Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Número do Processo Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Código da Suspensão Principal
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor Retenção Principal
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Informações de Processo Retenção Adicional
+
+Tipo do Processo Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo do processo retenção adicional\.
+
+1. Administrativo do Tomador
+2. Judicial do Tomador
+
+MFS10414
+
+Número do Processo Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Código da Suspensão Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+Valor Retenção Adicional
+
+Textbox
+
+S
+
+N
+
+MFS10414
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidos os totais das bases e retenções calculados pelo Fisco\. Trata\-se dos campos da tag “RPrest” do evento R\-5001, enviado pelo Fisco no ato do recebimento do evento R\-2020\. Estas informações só existirão no caso dos eventos já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Total Base de Cálculo da Retenção 
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “40\-vlrTotalBaseRet” do evento R\-5001 referente ao R\-2020 em questão\.
+
+MFS17628
+
+MFS20930
+
+Total Valor Retenção
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “41\-vlrTotalRetPrinc” do evento R\-5001 referente ao R\-2020 em questão\.
+
+MFS17628
+
+MFS20930
+
+Total Valor Retenção Adicional 
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “42\-vlrTotalRetAdic” do evento R\-5001 referente ao R\-2020 em questão\.
+
+MFS17628
+
+MFS20930
+
+Total Valor Retenção não efetuada
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “43\-vlrTotalNRetPrinc” do evento R\-5001 referente ao R\-2020 em questão\.
+
+MFS17628
+
+MFS20930
+
+Total Valor Retenção Adicional não efetuada
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “44\-vlrTotalNRetAdic” do evento R\-5001 referente ao R\-2020 em questão\.
+
+MFS17628
+
+MFS20930
+
+__R\-2040 – Recursos Repassados para Associação Desportiva__
+
+Identificação do Estabelecimento de Repasse dos Recursos
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento\.
+
+1\-CNPJ
+
+MFS\-11670
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11670
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Informação dos Repasses Efetuados a Associação Desportiva
+
+CNPJ da Associação Desportiva
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Valor Total do Repasse
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Valor Total da Retenção
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Valor Total da Retenção não Efetuada
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Tipo do Processo
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+MFS13861
+
+Número do Processo
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+MFS13861
+
+Código de Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+MFS13861
+
+Código da Conta Analítica
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+MFS13861
+
+Detalhamento dos Recursos Repassados a Associação Desportiva
+
+Tipo do Repasse
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Valor Bruto
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Valor da Apuração da Retenção
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+Descrição do Recurso Repassado
+
+Textbox
+
+S
+
+N
+
+MFS13861
+
+Valor da Retenção não Efetuada
+
+Textbox
+
+S
+
+N
+
+MFS\-11670
+
+MFS13861
+
+Informações de Processos relacionados a não Retenção de Contribuição Previdenciária
+
+Tipo do Processo
+
+Textbox
+
+S
+
+N
+
+MFS13861
+
+Número do Processo
+
+Textbox
+
+S
+
+N
+
+MFS13861
+
+Código de Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS13861
+
+Valor da Retenção não Efetuada
+
+Textbox
+
+S
+
+N
+
+MFS13861
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidos os totais de cada associação desportiva \(cada CNPJ\) calculados pelo Fisco\. Trata\-se dos campos da tag “RRecRepAD” do evento R\-5001, enviado pelo Fisco no ato do recebimento do evento R\-2040\. Estas informações só existirão no caso dos eventos já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Valor Total do Repasse
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “47\-vlrTotalRep” do evento R\-5001 referente ao R\-2040 em questão, e para o CNPJ da associação em foco\.
+
+MFS17628
+
+MFS20930
+
+Código de Receita
+
+Alfanumérico
+
+N
+
+N
+
+Formato: 9999\-99
+
+Conteúdo do campo “48\-CRRecRepAD” do evento R\-5001 referente ao R\-2040 em questão, e para o CNPJ da associação em foco\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “49\-vlrCRRecRepAD” do evento R\-5001 referente ao R\-2040 em questão, e para o CNPJ da associação em foco\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária não efetuada
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “50\-vlrCRRecRepADSusp” do evento R\-5001 referente ao R\-2040 em questão, e para o CNPJ da associação em foco\.
+
+MFS17628
+
+MFS20930
+
+__R\-2050 – Comercialização da Produção por Produtor Rural PJ/Agroindústria__
+
+Informação da Comercialização da Produção
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento\.
+
+1\-CNPJ
+
+MFS\-9073
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Ocorrência
+
+Data da Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS13897
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Valor Receita Bruta Total
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Valor da Contribuição Previdenciária
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Valor da Contribuição Previdenciária GILRAT
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Valor da Contribuição Previdenciária SENAR
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Valor da Contribuição Exigibilidade Suspensa
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Valor da Contribuição Previdenciária GILRAT Exigibilidade Suspensa
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Valor da Contribuição Previdenciária SENAR Exigibilidade Suspensa
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Receita por Tipo de Comercialização
+
+Indicativo de Comercialização
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o Indicativo de Comercialização: 
+
+1 \- Comercialização da Produção por Prod\. Rural PJ/Agroindústria, exceto para entidades executoras do PAA; 
+
+7 \- Comercialização da Produção com Isenção de Contribuição Previdenciária, de acordo com a Lei n° 13\.606/2018;
+
+8 \- Comercialização da Produção para Entidade do Programa de Aquisição de Alimentos \- PAA; 
+
+9 \- Comercialização da Produção no Mercado Externo\.
+
+MFS\-9073
+
+MFS20930
+
+Valor Receita Bruta por Indicativo de Comercialização
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+Conta Analítica
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+MFS13897
+
+Detalhamento da Receita Bruta por Nota Fiscal
+
+Nota Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+MFS13897
+
+Data Emissão 
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+MFS13897
+
+Valor Bruto Nota Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS\-9073
+
+MFS13897
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidos os totais calculados pelo Fisco por Código de Receita \(*pode existir mais de uma ocorrência*\)\. Trata\-se dos campos da tag “RComl” do evento R\-5001, enviado pelo Fisco no ato do recebimento do evento R\-2050\. Estas informações só existirão no caso dos eventos já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Código de Receita
+
+Alfanumérico
+
+N
+
+N
+
+Formato: 9999\-99
+
+Conteúdo do campo “52\-CRComl” do evento R\-5001 referente ao R\-2050 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “53\-vlrCRComl” do evento R\-5001 referente ao R\-2050 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária Exigibilidade Suspensa
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “54\-vlrCRComlSusp” do evento R\-5001 referente ao R\-2050 em questão\.
+
+MFS17628
+
+MFS20930
+
+Informações de Processos Administrativos/Judiciais
+
+Tipo do Processo
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Número do Processo
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+Código de Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS13897
+
+__R\-2055 – Aquisição de Produção Rural__
+
+Identificação do Estabelecimento Adquirente da Produção
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento\.
+
+1\-CNPJ
+
+MFS\-58348
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o número de inscrição do estabelecimento\.
+
+MFS\-58348
+
+Ocorrência
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-2055 em questão\.
+
+MFS\-58348
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-58348
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-2055 em questão\.
+
+MFS\-58348
+
+Retificação S\-1250
+
+Texto
+
+S
+
+N
+
+Por definição do Fisco, neste momento, não será validado este campo\.
+
+__\[ALTERAÇÃO MFS\-79878\] \- __
+
+Este campo não deve ser gerado a partir da versão 2\.1 do REINF
+
+MFS\-58348
+
+[MFS\-7987](https://jira.thomsonreuters.com/browse/MFS-79874)8
+
+Identificação do Produtor Rural
+
+Tipo de Inscrição
+
+Texto
+
+S
+
+N
+
+1 – CNPJ
+
+ ou 
+
+2 \- CPF
+
+Conteúdo do campo 20\-tpInscProd do R\-2055 em questão\.
+
+MFS\-58348
+
+Número de Inscrição
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 21\- nrInscProd do R\-2055 em questão\.
+
+MFS\-58348
+
+Indicador OpcCP
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 22 – indOpcCP do R\-2055 em questão\.
+
+MFS\-58348
+
+Detalhamento da Aquisição de Produção Rural
+
+Indicador de Aquisição
+
+Texto
+
+S
+
+N
+
+Irá demonstrar:
+
+ 1 \- Aquisição de produção de produtor rural pessoa física ou segurado especial em geral; 
+
+2 \- Aquisição de produção de produtor rural pessoa física ou segurado especial em geral por entidade executora do Programa de Aquisição de Alimentos \- PAA; 
+
+3 \- Aquisição de produção de produtor rural pessoa jurídica por entidade executora do PAA; 
+
+4 \- Aquisição de produção de produtor rural pessoa física ou segurado especial em geral \- Produção isenta \(Lei 13\.606/2018\); 5 \- Aquisição de produção de produtor rural pessoa física ou segurado especial em geral por entidade executora do PAA \- Produção isenta \(Lei 13\.606/2018\); 6 \- Aquisição de produção de produtor rural pessoa jurídica por entidade executora do PAA \- Produção isenta \(Lei 13\.606/2018\); 7 \- Aquisição de produção de produtor rural pessoa física ou segurado especial para fins de exportação
+
+MFS\-58348
+
+Valor da Receita Bruta Total
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo “25\-vlrBruto” referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária 
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo “26\- vlrCPDescPR” referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária GILRAT
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo “27\- vlrRatDescPR” referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária SENAR
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo “28\- vlrSenarDesc” referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidos os totais calculados pelo Fisco por Código de Receita \(*pode existir mais de uma ocorrência*\)\. Trata\-se dos campos da tag “RAquis” do evento R\-5001, enviado pelo Fisco no ato do recebimento do evento R\-2055\. Estas informações só existirão no caso dos eventos já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Código de Receita
+
+Alfanumérico
+
+N
+
+N
+
+Formato: 9999\-99
+
+Conteúdo do campo “56\-CRAquis” do evento R\-5001 referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor Contribuição Previdenciária
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “57\-vlrCRAquis” do evento R\-5001 referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor Contribuição Previdenciária Exigibilidade Suspensa
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “58\-vlrCRAquisSusp” do evento R\-5001 referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Informação do Processo Judicial do Produtor Rural
+
+Número do Processo Judicial
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 30 – nrProcJud referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Código da Suspensão
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 31 – CodSusp referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária 
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 32 – vlrCPNRet referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária GILRAT
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 33 – vlrRatNRet referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+Valor da Contribuição Previdenciária SENAR
+
+Texto
+
+S
+
+N
+
+Conteúdo do campo 34 – vlrSenarNRet referente ao R\-2055 em questão\.
+
+MFS\-58348
+
+__R\-2060 – Contribuição Previdenciária Sobre a Receita Bruta__
+
+ Identificação do Estabelecimento que Auferiu a Receita Bruta
+
+Tipo de Inscrição 
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento tomador de serviços\.
+
+1\-CNPJ
+
+4\-CNO
+
+MFS\-9074
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS\-9074
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+<a id="OLE_LINK123"></a><a id="OLE_LINK124"></a><a id="OLE_LINK125"></a><a id="OLE_LINK126"></a><a id="OLE_LINK127"></a><a id="OLE_LINK128"></a><a id="OLE_LINK129"></a><a id="OLE_LINK130"></a><a id="OLE_LINK131"></a>MFS\-11400
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11400
+
+Valor Receita Bruta
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+Valor da Contribuição Previdenciária 
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+Valor da Contribuição Previdenciária com exigibilidade Suspensa
+
+Textbox
+
+S
+
+N
+
+MFS14002
+
+Tipo do Processo
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+MFS14002
+
+Número do Processo
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+MFS14002
+
+Código Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+MFS14002
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS\-11400
+
+Identificação do Valor Total da Receita por Tipo de Código de Atividade
+
+Código de Atividade Econômica
+
+Textbox
+
+S
+
+N
+
+MFS\-9074
+
+Valor Receita Bruta Atividade
+
+Textbox
+
+S
+
+N
+
+MFS\-9074
+
+Valor Exclusão da Receita Bruta
+
+Textbox
+
+S
+
+N
+
+MFS\-9074
+
+Valor Adição Receita Bruta
+
+Textbox
+
+S
+
+N
+
+MFS\-9074
+
+Valor da Base de Cálculo da Contribuição Previdenciária
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Valor Contribuição Previdenciária
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Código da Conta Analítica
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS14002
+
+Identificação do Detalhamento da Receita Bruta
+
+Série
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS14002
+
+Número Documento
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS14002
+
+Data Emissão Nota Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS14002
+
+Valor Bruto do Documento Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS14002
+
+__Totais R\-5001__
+
+__\[ALTERAÇÃO MFS\-79960\]__ – Não gerar essa aba a partir da versão 2\.1\.1
+
+Nesta aba são exibidos os totais calculados pelo Fisco por Código de Receita \(*pode existir mais de uma ocorrência*\)\. Trata\-se dos campos da tag “RCPRB” do evento R\-5001, enviado pelo Fisco no ato do recebimento do evento R\-2060\. Estas informações só existirão no caso dos eventos já recepcionados pelo Fisco com sucesso \(ou advertência\), e são obtidas no XML de retorno enviado pelo integrador do Onesource\.
+
+Código de Receita
+
+Alfanumérico
+
+N
+
+N
+
+Formato: 9999\-99
+
+Conteúdo do campo “56\-CRCPRB” do evento R\-5001 referente ao R\-2060 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “57\-vlrCRCPRB” do evento R\-5001 referente ao R\-2060 em questão\.
+
+MFS17628
+
+MFS20930
+
+Valor Contribuição Previdenciária Exigibilidade Suspensa
+
+Numérico
+
+N
+
+N
+
+Conteúdo do campo “58\-vlrCRCPRBSusp” do evento R\-5001 referente ao R\-2060 em questão\.
+
+MFS17628
+
+MFS20930
+
+Informações de Processos relacionados à Suspenção de CPRB
+
+Tipo do Processo
+
+Textbox
+
+S
+
+N
+
+MFS14002
+
+Número do Processo
+
+Textbox
+
+S
+
+N
+
+MFS14002
+
+Código de Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS14002
+
+Ajuste da Contribuição Apurada
+
+Tipo de Ajuste 
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Código do Ajuste
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Valor de Ajuste
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Descrição do Ajuste 
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+Data Ajuste
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+__R\-2070 – Retenções na Fonte – IR, CSLL, Cofins, PIS/PASEP – Pagamentos Diversos__
+
+Identificação Beneficiário Pessoa Física 
+
+Código do Pagamento 
+
+Textbox
+
+S
+
+N
+
+ 
+
+<a id="OLE_LINK9"></a><a id="OLE_LINK10"></a><a id="OLE_LINK11"></a><a id="OLE_LINK12"></a><a id="OLE_LINK13"></a><a id="OLE_LINK14"></a><a id="OLE_LINK15"></a><a id="OLE_LINK16"></a><a id="OLE_LINK17"></a><a id="OLE_LINK18"></a><a id="OLE_LINK19"></a><a id="OLE_LINK20"></a><a id="OLE_LINK21"></a><a id="OLE_LINK22"></a><a id="OLE_LINK23"></a><a id="OLE_LINK24"></a><a id="OLE_LINK25"></a><a id="OLE_LINK26"></a><a id="OLE_LINK27"></a><a id="OLE_LINK28"></a><a id="OLE_LINK29"></a><a id="OLE_LINK30"></a><a id="OLE_LINK31"></a><a id="OLE_LINK32"></a><a id="OLE_LINK33"></a><a id="OLE_LINK34"></a><a id="OLE_LINK35"></a><a id="OLE_LINK36"></a><a id="OLE_LINK37"></a><a id="OLE_LINK38"></a><a id="OLE_LINK39"></a><a id="OLE_LINK40"></a><a id="OLE_LINK41"></a><a id="OLE_LINK42"></a><a id="OLE_LINK43"></a><a id="OLE_LINK44"></a><a id="OLE_LINK45"></a><a id="OLE_LINK46"></a><a id="OLE_LINK47"></a><a id="OLE_LINK48"></a><a id="OLE_LINK49"></a><a id="OLE_LINK50"></a><a id="OLE_LINK51"></a><a id="OLE_LINK52"></a><a id="OLE_LINK53"></a><a id="OLE_LINK54"></a><a id="OLE_LINK55"></a><a id="OLE_LINK56"></a><a id="OLE_LINK57"></a><a id="OLE_LINK58"></a><a id="OLE_LINK59"></a><a id="OLE_LINK60"></a><a id="OLE_LINK61"></a><a id="OLE_LINK62"></a><a id="OLE_LINK63"></a><a id="OLE_LINK64"></a><a id="OLE_LINK65"></a><a id="OLE_LINK66"></a><a id="OLE_LINK67"></a><a id="OLE_LINK68"></a><a id="OLE_LINK69"></a><a id="OLE_LINK70"></a><a id="OLE_LINK71"></a><a id="OLE_LINK72"></a><a id="OLE_LINK73"></a><a id="OLE_LINK74"></a><a id="OLE_LINK75"></a><a id="OLE_LINK76"></a><a id="OLE_LINK77"></a><a id="OLE_LINK78"></a><a id="OLE_LINK79"></a><a id="OLE_LINK80"></a><a id="OLE_LINK81"></a><a id="OLE_LINK82"></a>MFS9901
+
+MFS20930
+
+Tipo de Insc\. do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. do Beneficiário
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11399
+
+MFS20930
+
+Nome do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS11399
+
+MFS20930
+
+Data do Laudo Moléstia Grave
+
+Textbox
+
+N
+
+N
+
+MFS11399
+
+MFS20930
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS11399
+
+MFS20930
+
+Estabelecimentos
+
+Tipo de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS11892
+
+MFS20930
+
+Número de Inscrição
+
+Textbox
+
+S
+
+N
+
+MFS11892
+
+MFS20930
+
+Informações de Pagamento Residente ou Domiciliado no Brasil 
+
+Data de Pagamento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Indicador de Exig\. Suspensa
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Indicador de 13° Salário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor do Rendimento Tributável
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor do IRRF
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+<a id="OLE_LINK88"></a><a id="OLE_LINK89"></a><a id="OLE_LINK90"></a>Valor Comp\. Judicial Ano Calendário
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+<a id="OLE_LINK94"></a><a id="OLE_LINK95"></a><a id="OLE_LINK96"></a>Valor Comp\. Judicial Ano Anteriores
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+<a id="OLE_LINK100"></a><a id="OLE_LINK101"></a><a id="OLE_LINK102"></a>Valor Depósito Judicial
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Detalhamento das Deduções
+
+Indicador do Tipo de Dedução
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Dedução
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Rendimentos Isentos/Não Tributáveis
+
+Tipo de Isenção
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor Isenção
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Desc\. Do Rendimento Isento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Detalhamento das Competências
+
+Ind\. De Período de Referência
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Período de referência do Pag\.
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor do Rendimento Tributável
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Informações RRA
+
+Tipo de Processo
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número do Processo
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Código Suspensão
+
+Textbox
+
+N
+
+N
+
+MFS10415
+
+MFS20930
+
+Natureza RRA
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Quantidade de Meses
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Desp\. Com Custas Judiciais
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação do Advogado
+
+Tipo de Inscrição do advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. Do Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Informação Processo Judicial
+
+Número do Processo Judicial
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Código Suspensão
+
+Textbox
+
+N
+
+N
+
+MFS10415
+
+MFS20930
+
+Indicador da Origem dos Recursos
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Desp\. Com Custas Judiciais
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação Origem dos Recursos
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação do Advogado
+
+Tipo de Inscrição do advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. Do Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação do Beneficiário Pessoa Jurídica 
+
+Código do Pagamento 
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Tipo de Insc\. do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11399
+
+MFS20930
+
+Nome do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS11399
+
+MFS20930
+
+Data Moléstia
+
+Textbox
+
+S
+
+N
+
+MFS11892
+
+MFS20930
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS11399
+
+MFS20930
+
+Informações de Pagamento Residente ou Domiciliado no Brasil 
+
+Data de Pagamento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor do Rendimento Tributável
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Retenção na Fonte
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Informação Processo Judicial
+
+Número do Processo Judicial
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Indicador da Origem dos Recursos
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Desp\. Com Custas Judiciais
+
+Textbox
+
+S
+
+N
+
+MFS9074
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação Origem dos Recursos
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Código Suspensão
+
+Textbox
+
+S
+
+N
+
+MFS11892
+
+MFS20930
+
+Identificação do Advogado
+
+Tipo de Inscrição do advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. Do Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Despesa com Advogado
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Identificação do Beneficiário Exterior
+
+Código do Pagamento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Tipo de Insc\. Do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Insc\. Do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Ocorrência
+
+Data Ocorrência
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Operação
+
+Textbox
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-11399
+
+MFS20930
+
+Nome/Razão Social do Beneficiário
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Data do Laudo Moléstia Grave
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Situação
+
+Textbox
+
+S
+
+N
+
+MFS\-11399
+
+MFS20930
+
+Informações de Beneficiário Residente ou Domiciliado no Exterior
+
+Código do País
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Descrição do Logradouro
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Número do Logradouro
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Complemento do Logradouro
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Nome do Bairro/Distrito
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Nome da Cidade
+
+Textbox
+
+N
+
+N
+
+MFS9901 MFS20930
+
+Código de End\. Postal
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Ind\. Do Número de Ident\. Fiscal
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Número de Ident\. Fiscal
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Relação Fonte pagadora PJ e BPJ
+
+Textbox
+
+N
+
+N
+
+MFS9901
+
+MFS20930
+
+Informações de Pagamentos Residente ou Domiciliado no Exterior
+
+Data de Pagamento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Tipo de Rendimento
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Forma de Tributação
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor Pago
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+Valor da Retenção na Fonte
+
+Textbox
+
+S
+
+N
+
+MFS9901
+
+MFS20930
+
+__R\-4010 \- Pagamentos/Créditos a Beneficiário Pessoa Física__
+
+__Identificação do Estabelecimento__
+
+Tipo de Inscrição 
+
+Texto
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento 
+
+1\-CNPJ
+
+MFS\-79885
+
+Número de Inscrição
+
+Texto
+
+S
+
+N
+
+MFS\-79885
+
+__Ocorrência/Identificação do Beneficiário__
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-4010 em questão\.
+
+MFS\-79885
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-79885
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-4010 em questão\.
+
+MFS\-79885
+
+CPF
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+CPF do Beneficiário
+
+MFS\-79885
+
+Nome
+
+Texto
+
+S
+
+N
+
+Nome do Beneficiário
+
+MFS\-79885
+
+ideEvtAdic
+
+Texto
+
+S
+
+N
+
+Identificador de evento adicional por beneficiário, a critério do declarante\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-535745
+
+__Identificação dos Dependentes__
+
+CPF
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+Neste campo deve ser considerado o somatório do valor bruto do rendimento R\-4010, independente da data do recebimento e sim do período de apuração\.
+
+MFS\-79885
+
+Relação de Dependência
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar a Relação de Dependência
+
+MFS\-79885
+
+Descrição
+
+Texto
+
+S
+
+N
+
+Descrição
+
+Descrição da Dependência, quando o tipo de relação de dependência for igual a ‘99 – Outros’
+
+MFS\-79885
+
+__Identificação dos Rendimentos__
+
+Natureza do Rendimento
+
+Texto
+
+S
+
+N
+
+Natureza de Rendimento
+
+MFS\-79885
+
+Observação
+
+Texto
+
+S
+
+N
+
+Descrição
+
+Observação
+
+MFS\-79885
+
+__Informações Relativas ao Rendimento__
+
+Fato Gerador
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data do Fato Gerador
+
+MFS\-79885
+
+Comp\.
+
+Texto
+
+S
+
+N
+
+MM/AAAA
+
+Mês e Ano da Competência
+
+MFS\-79885
+
+13º
+
+Texto
+
+S
+
+N
+
+Código
+
+Indicador de 13º
+
+Lista de Valor Válido:
+
+S
+
+MFS\-79885
+
+Rend\. Bruto
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do rendimento bruto
+
+MFS\-79885
+
+Rend\. Tributável
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor tributável
+
+MFS\-79885
+
+Valor IR
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do IR
+
+MFS\-79885
+
+RRA
+
+Texto
+
+S
+
+N
+
+Código
+
+Indicador de Rendimento Recebido Acumuladamente\.
+
+Lista de Valor Válido:
+
+S
+
+MFS\-79885
+
+FCI\_SCP
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+ 
+
+Indicador de FCI e SCP
+
+Lista de Valores Válidos:
+
+1\-FCI; 
+
+2\-SCP
+
+MFS\-79885
+
+Núm\. Insc\. FCI\_SCP
+
+Texto
+
+S
+
+N
+
+XX\.XXX\.XXX/XXXX\-XX
+
+Número da Inscrição de FCI/SCP
+
+MFS\-79885
+
+% SCP
+
+Texto
+
+S
+
+N
+
+999
+
+Percentual de SCP
+
+MFS\-79885
+
+IndJud
+
+Texto
+
+S
+
+N
+
+Código 
+
+Informar o Indicativo exclusivo de rendimento de natureza diversa de RRA e que seja oriundo de decisão judicial
+
+Lista de Valores Válidos:
+
+S;
+
+N
+
+MFS\-79885
+
+País Resid\. Exterior
+
+Texto
+
+S
+
+N
+
+999
+
+Informar o código do país de destino da remessa do pagamento a residente ou domiciliado no exterior\.
+
+MFS\-79885
+
+dtEscrCont
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data da escrituração contábil\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-535745
+
+observ
+
+Texto
+
+S
+
+N
+
+Observações
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-535745
+
+__Informações Relativas às Deduções do Rendimento Tributável__
+
+Tipo Dedução
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo do tipo de dedução
+
+__\[ALTERAÇÃO__ __ MFS\-566870\]__ Inclusão da opção 8
+
+Lista de valores válidos:
+
+1 \- Previdência oficial;
+
+2 \- Previdência privada;
+
+3 \- Fundo de aposentadoria programada individual \- Fapi; 
+
+4 \- Fundação de previdência complementar do servidor público \- Funpresp;
+
+5 \- Pensão alimentícia;
+
+7 – Dependentes;
+
+8 – Desconto simplificado mensal\.
+
+MFS\-79885
+
+__MFS\-566870__
+
+Valor Dedução
+
+Texto
+
+S
+
+N
+
+0,00
+
+	Valor da Dedução
+
+MFS\-79885
+
+Inform\. Entidade
+
+Texto
+
+S
+
+N
+
+Código
+
+Informar se há informações da entidade de previdência complementar
+
+Lista de valores válidos:
+
+S \- Sim; 
+
+N \- Não\.
+
+MFS\-79885
+
+Núm\. Inscr\. Previdencia Compl\.
+
+Texto
+
+S
+
+N
+
+Número da inscrição da entidade da previdência complementar
+
+MFS\-79885
+
+Valor Patroc\. FUNPRESP
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da contribuição do ente público patrocinador da Fundação de Previdência do Servidor Público \(Funpresp\)\. 
+
+MFS\-79885
+
+__Dependentes e Beneficiários da Pensão Alimentícia__
+
+CPF
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+CPF do dependente ou beneficiário da pensão alimentícia\.
+
+MFS\-79885
+
+Valor Dedução
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da dedução referente ao dependente ou do beneficiário da pensão alimentícia\.
+
+MFS\-79885
+
+__Rendimentos Isentos ou não Tributáveis__
+
+Tipo Isenção
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Infomar o Tipo de Isenção:
+
+Lista de valores válidos: 
+
+1 \- Parcela isenta 65 anos;
+
+2 \- Diária de viagem; 
+
+3 \- Indenização e rescisão de contrato, inclusive a título de PDV e acidentes de trabalho; 
+
+4 \- Abono pecuniário; 
+
+5 \- Valores pagos a titular ou sócio de microempresa ou empresa de pequeno porte, exceto pró\-labore, aluguéis e serviços prestados; 
+
+6 \- Pensão, aposentadoria ou reforma por moléstia grave ou acidente em serviço; 
+
+7 \- Complementação de aposentadoria, correspondente às contribuições efetuadas no período de 01/01/1989 a 31/12/1995; 
+
+8 \- Ajuda de custo;
+
+\[EXCLUSÃO MFS\-549365\] 9 \- Rendimentos pagos sem retenção do IR na fonte \- Lei 10\.833/2003; 
+
+\[INCLUSÃO MFS\-549365\] – 10 \- Juros de mora recebidos, devidos pelo atraso no pagamento de remuneração por exercício de emprego, cargo ou função;
+
+\[INCLUSÃO MFS\-549365\] – 11\- Resgate de previdência complementar por portador de moléstia grave;
+
+99 \- Outros \(especificar\)\. 
+
+MFS\-79885
+
+MFS\-549365
+
+Valor Isento
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da parcela isenta\.
+
+MFS\-79885
+
+Descrição do Rendimento
+
+Texto
+
+S
+
+N
+
+Descrição do rendimento isento/não tributável\.
+
+MFS\-79885
+
+Data Laudo
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data da moléstia grave atribuída pelo laudo\.
+
+MFS\-79885
+
+__Processos Relacionados a não Retenção de Tributos__
+
+Tipo Processo
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Preencher com o código correspondente ao tipo de processo
+
+Lista de Valores Válidos:
+
+1 \- Administrativo; 
+
+2 \- Judicial\.
+
+MFS\-79885
+
+Núm\. Processo
+
+Texto
+
+S
+
+N
+
+Informar o número do processo administrativo/judicial\.
+
+MFS\-79885
+
+Cód\. Suspensão
+
+Texto
+
+S
+
+N
+
+Informar o código indicativo da suspensão
+
+MFS\-79885
+
+Valor Retenção que Deixou de ser Efetuada
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção que deixou de ser efetuada em função de processo administrativo ou judicial\. 
+
+MFS\-79885
+
+Valor Depósito Judicial
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do depósito judicial em função de processo administrativo ou judicial\.
+
+MFS\-79885
+
+Valor Comp\. Ano Calendário
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da compensação relativa ao ano calendário em função de processo judicial\. 
+
+MFS\-79885
+
+Valor Comp\. Anos Anteriores
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da compensação relativa a anos anteriores, em função de processo judicial\. 
+
+MFS\-79885
+
+Valor Rend\. Exigibilidade Suspensa
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do rendimento com exigibilidade suspensa\. 
+
+MFS\-79885
+
+__Detalhamento das Deduções Suspensas__
+
+Tipo Dedução
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo do tipo de dedução: 
+
+__\[ALTERAÇÃO__ __ MFS\-566870\]__ Inclusão da opção 8
+
+Lista de Valores Válidos:
+
+1 \- Previdência oficial; 
+
+2 \- Previdência privada; 
+
+3 \- Fundo de aposentadoria programada individual \- Fapi; 
+
+4 \- Fundação de previdência complementar do servidor público \- Funpresp; 
+
+5 \- Pensão alimentícia; 
+
+7 – Dependentes;
+
+8 – Desconto simplificado mensal\.
+
+MFS\-79885
+
+__MFS\-566870__
+
+Valor Dedução Suspensa
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da dedução da base de cálculo do imposto de renda, com exigibilidade suspensa\. 
+
+MFS\-79885
+
+__Deduções Suspensas por Dependentes e Beneficiários da Pensão Alimentícia__
+
+CPF
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+CPF do dependente ou beneficiário da pensão alimentícia\.
+
+MFS\-79885
+
+Valor Dedução Exigibilidade Suspensa
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da dedução relativa a dependentes ou a pensão alimentícia com exigibilidade suspensa
+
+MFS\-79885
+
+__Informações Complementares \- RRA__
+
+Tipo Processo
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o código e descrição correspondente ao tipo de processo: 
+
+Lista de Valores Válidos:
+
+1 \- Administrativo; 
+
+2 – Judicial;
+
+3 – Sem Processo
+
+MFS\-79885
+
+MFS\-805178
+
+Núm\. Processo
+
+Texto
+
+S
+
+N
+
+Informar o número do processo/requerimento administrativo/judicial\.
+
+MFS\-79885
+
+Origem dos Recursos
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo da origem dos recursos\.
+
+Lista de Valores Válidos: 
+
+1\-Recursos do próprio declarante; 
+
+2\-Recursos de terceiros \- Declarante é a instituição financeira responsável pelo repasse dos valores
+
+MFS\-79885
+
+Descrição
+
+Texto
+
+S
+
+N
+
+Descrição dos Rendimentos Recebidos Acumuladamente \- RRA\.
+
+MFS\-79885
+
+Qtd Meses
+
+Texto
+
+S
+
+N
+
+0,0
+
+Informar o número de meses relativo aos Rendimentos Recebidos Acumuladamente \- RRA
+
+MFS\-79885
+
+CNPJ Origem Recursos
+
+Texto
+
+S
+
+N
+
+XX\.XXX\.XXX/XXXX\-XX
+
+CNPJ da empresa que repassou os recursos\.
+
+MFS\-79885
+
+__Despesas com Processo Judicial__
+
+Valor Despesas Custas Judiciais
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com custas judiciais
+
+MFS\-79885
+
+Valor Despesa Advogados
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com advogado\(s\)\.
+
+MFS\-79885
+
+__Identificação do Advogado__
+
+Tipo Inscrição
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Tipo de inscrição do advogado\.
+
+Lista de Valores Válidos:
+
+1\-CNPJ; 
+
+2\-CPF
+
+MFS\-79885
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+Informar o número de inscrição do advogado\.
+
+MFS\-79885
+
+Valor Advogado
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da despesa com o advogado\.
+
+MFS\-79885
+
+__Informações de Processo Judicial__
+
+Núm\. Processo
+
+Texto
+
+S
+
+N
+
+Informar o número do processo judicial
+
+MFS\-79885
+
+Origem Recurso
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo da origem dos recursos: 
+
+Lista de Valores Válidos:
+
+1 \- Recursos do próprio declarante; 
+
+2 \- Recursos de terceiros \- Declarante é a instituição financeira responsável pelo repasse dos valores\.
+
+MFS\-79885
+
+CNPJ Origem Recurso
+
+Texto
+
+S
+
+N
+
+Informar o CNPJ da empresa que repassou os recursos\.
+
+MFS\-79885
+
+Descrição
+
+Texto
+
+S
+
+N
+
+Descrição
+
+MFS\-79885
+
+__Despesas com Processo Judicial__
+
+Valor Despesas Custas Judiciais
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com custas judiciais
+
+MFS\-79885
+
+Valor Despesa Advogados
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com advogado\(s\)\.
+
+MFS\-79885
+
+__Identificação do Advogado__
+
+Tipo Inscrição
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Tipo de inscrição do advogado\.
+
+Lista de Valores Válidos:
+
+1\-CNPJ; 
+
+2\-CPF
+
+MFS\-79885
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+Informar o número de inscrição do advogado\.
+
+MFS\-79885
+
+Valor Advogado
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da despesa com o advogado\.
+
+MFS\-79885
+
+__Informações Complementares Relativas a Pagamentos no Exterior__
+
+Ind\. Núm\. Identificação Fiscal
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo do Número de Identificação Fiscal \- NIF: 
+
+Lista de Valores Válidos:
+
+1\-Beneficiário com NIF;
+
+2\-Beneficiário dispensado do NIF; 
+
+3\-País não exige NIF\.
+
+MFS\-79885
+
+Núm\. Identificação Fiscal
+
+Texto
+
+S
+
+N
+
+Informar o número de Identificação Fiscal \- NIF\.
+
+MFS\-79885
+
+Forma de Tributação
+
+Texto
+
+S
+
+N
+
+Informar a forma de tributação\.
+
+MFS\-79885
+
+__Endereço do Beneficiário Residente ou Domiciliado no Exterior__
+
+Logradouro
+
+Texto
+
+S
+
+N
+
+Informar o logradouro
+
+MFS\-79885
+
+Núm\.
+
+Texto
+
+S
+
+N
+
+Informar o número do logradouro\.
+
+MFS\-79885
+
+Complemento
+
+Texto
+
+S
+
+N
+
+Informar o complemento do logradouro\.
+
+MFS\-79885
+
+Bairro
+
+Texto
+
+S
+
+N
+
+Informar o bairro
+
+MFS\-79885
+
+Cidade
+
+Texto
+
+S
+
+N
+
+Informar a cidade
+
+MFS\-79885
+
+Estado
+
+Texto
+
+S
+
+N
+
+Informar o estado
+
+MFS\-79885
+
+Cód\. Postal
+
+Texto
+
+S
+
+N
+
+Informar o código postal \(CEP\)
+
+MFS\-79885
+
+Telefone
+
+Texto
+
+S
+
+N
+
+Informar o telefone\.
+
+MFS\-79885
+
+__Identificação da Operadora do Plano Privado Coletivo Empresarial de Assistência à Saúde__
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+Informar o número do CNPJ da operadora de plano privado coletivo empresarial de assistência à saúde\.
+
+MFS\-79885
+
+Registro ANS
+
+Texto
+
+S
+
+N
+
+Informar o Registro na Agência Nacional de Saúde \- ANS\.
+
+MFS\-79885
+
+Valor Saúde
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do titular
+
+MFS\-79885
+
+__Informação de Reembolso do Titular do Plano de Saúde Coletivo Empresarial__
+
+Tipo Inscrição
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Tipo de Inscrição
+
+Lista de Valores Válidos
+
+1 \- Pessoa jurídica; 
+
+2 \- Pessoa física\.
+
+MFS\-79885
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+XX\.XXX\.XXX/XXXX\-XX ou
+
+XXX\.XXX\.XXX\-XX
+
+Número de Inscrição
+
+MFS\-79885
+
+Valor Reembolso
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do Reembolso relativo ao período da apuração
+
+MFS\-79885
+
+Valor Reembolso Anos Anteriores
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do Reembolso relativo aos anos anteriores
+
+MFS\-79885
+
+__Informações de Dependente do Plano de Saúde Coletivo Empresarial__
+
+CPF
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+CPF do dependente
+
+MFS\-79885
+
+Valor Saúde
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor relativo a dedução do rendimento tributável correspondente a pagamento a plano de saúde do dependente
+
+MFS\-79885
+
+__Informação de Reembolso do Dependente do Plano de Saúde Coletivo Empresarial__
+
+Tipo Inscrição
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o tipo de inscrição do prestador de serviços
+
+Lista de Valores Válidos
+
+1 \- Pessoa jurídica; 
+
+2 \- Pessoa física\.
+
+MFS\-79885
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+XX\.XXX\.XXX/XXXX\-XX ou
+
+XXX\.XXX\.XXX\-XX
+
+Informar o número de inscrição do prestador de serviços de assistência médica\.
+
+MFS\-79885
+
+Valor Reembolso Per\. Apur,
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor do reembolso relativo ao período\.
+
+MFS\-79885
+
+Valor Reembolso Anos Anteriores
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor do reembolso relativo aos anos anteriores\.
+
+MFS\-79885
+
+__R\-4020 \- Pagamentos/Créditos a Beneficiário Pessoa Jurídica__
+
+__Identificação do Estabelecimento__
+
+Tipo de Inscrição 
+
+Texto
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento 
+
+1\-CNPJ
+
+MFS\-79890
+
+Número de Inscrição
+
+Texto
+
+S
+
+N
+
+MFS\-79890
+
+__Ocorrência/ Identificação do Beneficiário do Rendimento__
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-4010 em questão\.
+
+MFS\-79890
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-79890
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-4010 em questão\.
+
+MFS\-79890
+
+CNPJ
+
+Texto
+
+S
+
+N
+
+XXX\.XXX\.XXX\-XX
+
+CNPJ do Beneficiário
+
+MFS\-79890
+
+Nome
+
+Texto
+
+S
+
+N
+
+Nome do Beneficiário
+
+MFS\-79890
+
+IsenImun
+
+Texto
+
+S
+
+N
+
+Código\-Descrição
+
+Informações sobre isenção e imunidade: 1 \- Entidade não isenta/não imune \- Tributação normal; 2\- Instituição de educação e de assistência social sem fins lucrativos, a que se refere o art\. 12 da Lei nº 9\.532, de 10 de dezembro de 1997; 3\- Instituição de caráter filantrópico, recreativo, cultural, científico e às associações civis, a que se refere o art\. 15 da Lei nº 9\.532, de 1997\.
+
+MFS\-79890
+
+ideEvtAdic
+
+Texto
+
+S
+
+N
+
+Identificador de evento adicional por beneficiário, a critério do declarante\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-537195
+
+__Identificação do Rendimento__
+
+Natureza do Rendimento
+
+Texto
+
+S
+
+N
+
+Natureza de Rendimento
+
+MFS\-79890
+
+Observação
+
+Texto
+
+S
+
+N
+
+Descrição
+
+Observação
+
+MFS\-79890
+
+__Ocorrência__
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-4020 em questão\.
+
+MFS\-79890
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-79890
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-4020 em questão\.
+
+MFS\-79890
+
+__Informações Relativas ao Pagamento__
+
+Fato Gerador
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data do Fato Gerador
+
+MFS\-79890
+
+Valor Bruto
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do rendimento bruto
+
+MFS\-79890
+
+FCI\_SCP
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+ 
+
+Indicador de FCI e SCP
+
+Lista de Valores Válidos:
+
+1\-FCI; 
+
+2\-SCP
+
+MFS\-79890
+
+Núm\. Insc\. FCI\_SCP
+
+Texto
+
+S
+
+N
+
+XX\.XXX\.XXX/XXXX\-XX
+
+Número da Inscrição de FCI/SCP
+
+MFS\-79890
+
+% SCP
+
+Texto
+
+S
+
+N
+
+999
+
+Percentual de SCP
+
+MFS\-79890
+
+IndJud
+
+Texto
+
+S
+
+N
+
+Código 
+
+Informar o Indicativo exclusivo de rendimento de natureza diversa de RRA e que seja oriundo de decisão judicial
+
+Lista de Valores Válidos:
+
+S;
+
+N
+
+MFS\-79890
+
+País Resid\. Exterior
+
+Texto
+
+S
+
+N
+
+999
+
+Informar o código do país de destino da remessa do pagamento a residente ou domiciliado no exterior\.
+
+MFS\-79890
+
+dtEscrCont
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data da escrituração contábil\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-537195
+
+observ
+
+Texto
+
+S
+
+N
+
+Observações
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-537195
+
+__Informações Relativas a Retenções na Fonte__
+
+__Valor Base IR__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da Base de retenção do Imposto de Renda\. 
+
+MFS\-79890
+
+__Valor IR__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção do Imposto de Renda\. 
+
+MFS\-79890
+
+__Valor Base Agreg__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da Base de retenção de tributos de forma agregada\.
+
+MFS\-79890
+
+__Valor Agreg__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção em valor agregado de tributos\.
+
+MFS\-79890
+
+__Valor Base CSLL__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da Base de retenção de CSLL\.
+
+MFS\-79890
+
+__Valor CSLL__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção da CSLL\.
+
+MFS\-79890
+
+__Valor Base COFINS__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da Base de retenção de COFINS
+
+MFS\-79890
+
+__Valor COFINS__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção da COFINS\.
+
+MFS\-79890
+
+__Valor Base PIS/PASEP__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da Base de retenção da PIS/PASEP\.
+
+MFS\-79890
+
+__Valor PIS/PASEP__
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção da PIS/PASEP\.
+
+MFS\-79890
+
+__Processos Relacionados a não Retenção de Tributos ou Depósitos Judiciais__
+
+Tipo Processo
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Preencher com o código correspondente ao tipo de processo
+
+Lista de Valores Válidos:
+
+1 \- Administrativo; 
+
+2 \- Judicial\.
+
+MFS\-79890
+
+Núm\. Processo
+
+Texto
+
+S
+
+N
+
+Informar o número do processo administrativo/judicial\.
+
+MFS\-79890
+
+Cód\. Suspensão
+
+Texto
+
+S
+
+N
+
+Informar o código indicativo da suspensão
+
+MFS\-79890
+
+Valor Base Susp IR
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da base do IR com exigibilidade suspensa\. 
+
+MFS\-79890
+
+Valor N IR
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção que deixou de ser efetuada relativo ao Imposto de Renda\.
+
+MFS\-79890
+
+Valor Dep IR
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do depósito judicial de IR\.
+
+MFS\-79890
+
+Valor Base Susp CSLL
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da base de CSLL com exigibilidade suspensa\.
+
+MFS\-79890
+
+Valor N CSLL
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção que deixou de ser efetuada relativo a CSLL\.
+
+MFS\-79890
+
+Valor Dep CSLL
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do depósito judicial de CSLL\.
+
+MFS\-79890
+
+Valor Base Susp COFINS
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da base de COFINS com exigibilidade suspensa\.
+
+MFS\-79890
+
+Valor N COFINS
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção que deixou de ser efetuada relativo a COFINS\.
+
+MFS\-79890
+
+Valor Dep COFINS
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do depósito judicial de COFINS\.
+
+MFS\-79890
+
+Valor Base Susp PIS/PASEP
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da base de PIS/PASEP com exigibilidade suspensa\.
+
+MFS\-79890
+
+Valor N PIS/PASEP
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da retenção que deixou de ser efetuada relativo a PIS/PASEP\.
+
+MFS\-79890
+
+Valor Dep PIS/PASEP
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor do depósito judicial de PIS/PASEP\.
+
+MFS\-79890
+
+__Informações Complementares Relativas a Rendimentos Decorrentes de Decisão Judicial__
+
+Núm\. Processo
+
+Texto
+
+S
+
+N
+
+Informar o número do processo judicial
+
+MFS\-79890
+
+Origem Recurso
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo da origem dos recursos: 
+
+Lista de Valores Válidos:
+
+1 \- Recursos do próprio declarante; 
+
+2 \- Recursos de terceiros \- Declarante é a instituição financeira responsável pelo repasse dos valores\.
+
+MFS\-79890
+
+CNPJ Origem Recurso
+
+Texto
+
+S
+
+N
+
+Informar o CNPJ da empresa que repassou os recursos\.
+
+MFS\-79890
+
+Descrição
+
+Texto
+
+S
+
+N
+
+Descrição
+
+MFS\-79890
+
+__Despesas com Processo Judicial__
+
+Valor Despesas Custas Judiciais
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com custas judiciais
+
+MFS\-79890
+
+Valor Despesa Advogados
+
+Texto
+
+S
+
+N
+
+0,00
+
+Informar o valor da despesa com advogado\(s\)\.
+
+MFS\-79890
+
+__Identificação do Advogado__
+
+Tipo Inscrição
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Tipo de inscrição do advogado\.
+
+Lista de Valores Válidos:
+
+1\-CNPJ; 
+
+2\-CPF
+
+MFS\-79890
+
+Núm\. Inscrição
+
+Texto
+
+S
+
+N
+
+Informar o número de inscrição do advogado\.
+
+MFS\-79890
+
+Valor Advogado
+
+Texto
+
+S
+
+N
+
+0,00
+
+Valor da despesa com o advogado\.
+
+MFS\-79890
+
+__Informações Complementares Relativas a Pagamentos no Exterior__
+
+Ind\. Núm\. Identificação Fiscal
+
+Texto
+
+S
+
+N
+
+Código \- Descrição
+
+Informar o indicativo do Número de Identificação Fiscal \- NIF: 
+
+Lista de Valores Válidos:
+
+1\-Beneficiário com NIF;
+
+2\-Beneficiário dispensado do NIF; 
+
+3\-País não exige NIF\.
+
+MFS\-79890
+
+Núm\. Identificação Fiscal
+
+Texto
+
+S
+
+N
+
+Informar o número de Identificação Fiscal \- NIF\.
+
+MFS\-79890
+
+Rel\. Fonte Pagadora 
+
+Texto
+
+S
+
+N
+
+Informar a relação da fonte pagadora do beneficiário\.
+
+MFS\-79890
+
+Forma de Tributação
+
+Texto
+
+S
+
+N
+
+Informar a forma de tributação\.
+
+MFS\-79890
+
+__Endereço do Beneficiário Residente ou Domiciliado no Exterior__
+
+Logradouro
+
+Texto
+
+S
+
+N
+
+Informar o logradouro
+
+MFS\-79890
+
+Núm\.
+
+Texto
+
+S
+
+N
+
+Informar o número do logradouro\.
+
+MFS\-79890
+
+Complemento
+
+Texto
+
+S
+
+N
+
+Informar o complemento do logradouro\.
+
+MFS\-79890
+
+Bairro
+
+Texto
+
+S
+
+N
+
+Informar o bairro
+
+MFS\-79890
+
+Cidade
+
+Texto
+
+S
+
+N
+
+Informar a cidade
+
+MFS\-79890
+
+Estado
+
+Texto
+
+S
+
+N
+
+Informar o estado
+
+MFS\-79890
+
+Cód\. Postal
+
+Texto
+
+S
+
+N
+
+Informar o código postal \(CEP\)
+
+MFS\-79890
+
+Telefone
+
+Texto
+
+S
+
+N
+
+Informar o telefone\.
+
+MFS\-79890
+
+__R\-4040 \- Pagamentos/créditos a beneficiários não identificados__
+
+__Identificação do Estabelecimento__
+
+Tipo de Inscrição 
+
+Texto
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento 
+
+1\-CNPJ
+
+MFS\-79893
+
+Número de Inscrição
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+ideEvtAdic
+
+Texto
+
+S
+
+N
+
+Identificador de evento adicional por beneficiário, a critério do declarante\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-537211
+
+__Identificação da Natureza do Rendimento__
+
+Natureza do Rendimento
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+__Ocorrência__
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-4040 em questão\.
+
+MFS\-79893
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-79893
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-4040 em questão\.
+
+MFS\-79893
+
+__Informações do Pagamento a Beneficiários Não Identificados__
+
+Data do Movimento
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor Líquido
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor Reajustado
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor do Imposto de Renda Retido na Fonte
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+dtEscrCont
+
+Texto
+
+S
+
+N
+
+DD/MM/AAAA
+
+Data da escrituração contábil\.
+
+Apresentar este campo a partir da versão 2\.1\.2
+
+MFS\-537211
+
+Descrição
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+__Informações de Processos Relacionados a não Retenção de Tributos ou a Depósitos Judiciais__
+
+Tipo de Processo
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Número do Processo Judicial
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Código de Suspensão
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor da Base com Exigibilidade Suspensa
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor da Retenção que Deixou de ser Efetuada
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+Valor do Depósito Judicial
+
+Texto
+
+S
+
+N
+
+MFS\-79893
+
+__R\-4080 – Retenção no Recebimento__
+
+__Identificação do Estabelecimento__
+
+Tipo de Inscrição 
+
+Texto
+
+S
+
+N
+
+Irá demonstrar o tipo de inscrição do estabelecimento 
+
+1\-CNPJ
+
+MFS\-79907
+
+Número de Inscrição
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+__Identificação do Rendimento __
+
+Natureza do Rendimento
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Observações
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+__Ocorrência/ Identificação da Fonte Pagadora do Rendimento__
+
+Data da Ocorrência
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a data da ocorrência do R\-4080 em questão\.
+
+MFS\-79907
+
+Operação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar 
+
+\- Original
+
+\- Retificadora
+
+MFS\-79907
+
+Situação
+
+Texto
+
+S
+
+N
+
+Irá demonstrar a situação do R\-4080 em questão\.
+
+MFS\-79907
+
+CNPJ da Fonte Pagadora
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+__Informações Relativas ao Recebimento do Rendimento__
+
+Data do Recebimento
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor Bruto
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor Base IR
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor do Imposto de Renda Retido na Fonte
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Observ
+
+Texto
+
+S
+
+N
+
+MFS\-537238
+
+<a id="_Hlk126162671"></a>__Informações de Processos Relacionados a não Retenção de Tributos ou a Depósitos Judiciais__
+
+Tipo de Processo
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Número do Processo Judicial
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Código de Suspensão
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor da Base com Exigibilidade Suspensa
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor da Retenção que Deixou de ser Efetuada
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+
+Valor do Depósito Judicial
+
+Texto
+
+S
+
+N
+
+MFS\-79907
+

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SPED Fiscal - Documentação Visual (TAX ONE)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f5f6fa; color: #2c3e50; }
+        .header { background: #1a5276; color: #fff; padding: 30px 40px; }
+        .header h1 { font-size: 28px; margin-bottom: 5px; }
+        .header p { font-size: 14px; opacity: 0.8; }
+        .nav { background: #2e86c1; padding: 10px 40px; display: flex; gap: 10px; flex-wrap: wrap; position: sticky; top: 0; z-index: 100; }
+        .nav a { color: #fff; text-decoration: none; padding: 6px 14px; border-radius: 4px; font-size: 13px; background: rgba(255,255,255,0.15); }
+        .nav a:hover { background: rgba(255,255,255,0.3); }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px 40px; }
+        .section { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 30px; overflow: hidden; page-break-inside: avoid; }
+        .section-header { background: #eaf2f8; padding: 16px 24px; border-bottom: 2px solid #2e86c1; }
+        .section-header h2 { font-size: 18px; color: #1a5276; }
+        .section-header p { font-size: 13px; color: #5d6d7e; margin-top: 4px; }
+        .diagram { padding: 24px; display: flex; justify-content: center; overflow-x: auto; }
+        .diagram .mermaid { min-width: 600px; }
+        table { border-collapse: collapse; width: 100%; margin: 0; }
+        th { background: #2e86c1; color: #fff; padding: 10px 16px; text-align: left; font-size: 13px; }
+        td { padding: 8px 16px; border-bottom: 1px solid #eee; font-size: 13px; }
+        tr:hover td { background: #eaf2f8; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+        .badge-blue { background: #d6eaf8; color: #1a5276; }
+        .badge-green { background: #d5f5e3; color: #1e8449; }
+        .badge-purple { background: #e8daef; color: #6c3483; }
+        .badge-orange { background: #fdebd0; color: #a04000; }
+        .print-btn { position: fixed; bottom: 20px; right: 20px; background: #2e86c1; color: #fff; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 200; }
+        .print-btn:hover { background: #1a5276; }
+        @media print {
+            .nav, .print-btn { display: none !important; }
+            .section { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
+            body { background: #fff; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>SPED Fiscal - Documentação Visual</h1>
+    <p>TAX ONE (Thomson Reuters) — ~280 tabelas, ~16 packages PL/SQL, 45 specs E2E</p>
+</div>
+
+<div class="nav">
+    <a href="#visao-geral">1. Visão Geral</a>
+    <a href="#efd-fiscal">2. EFD ICMS/IPI</a>
+    <a href="#efd-contrib">3. EFD Contribuições</a>
+    <a href="#ecd">4. ECD Contábil</a>
+    <a href="#tabelas-bloco">5. Tabelas por Bloco</a>
+    <a href="#packages">6. Packages PL/SQL</a>
+    <a href="#menus">7. Menus TAX ONE</a>
+    <a href="#volumetria">8. Volumetria</a>
+</div>
+
+<div class="container">
+
+<!-- 1. Visão Geral -->
+<div class="section" id="visao-geral">
+    <div class="section-header">
+        <h2>1. Visão Geral — Submódulos do SPED</h2>
+        <p>Sistema Público de Escrituração Digital: obrigações fiscais e contábeis digitais</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+graph TB
+    SPED["SPED\nSistema Público de\nEscrituração Digital"]
+
+    SPED --> ECD["ECD\nEscrituração Contábil Digital\n37 tabelas SPED_*"]
+    SPED --> EFD["EFD ICMS/IPI\nEscrituração Fiscal Digital\n73 tabelas EFD_*"]
+    SPED --> EPC["EFD Contribuições\nPIS/COFINS\n88 tabelas EPC_*"]
+    SPED --> ECF["ECF\nEscrituração Contábil Fiscal\n7 tabelas"]
+    SPED --> REINF["EFD-Reinf\nRetenções e Informações\nPrevidenciárias"]
+
+    EFD --> CIAP["CIAP\nCrédito Ativo Permanente\n35 tabelas APT_*"]
+    EFD --> COTEPE["COTEPE\nAdministração Tributária\nEstadual - 20 tabelas"]
+
+    style SPED fill:#1a5276,color:#fff,stroke:#1a5276
+    style ECD fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style EFD fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style EPC fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style ECF fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style REINF fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style CIAP fill:#5dade2,color:#fff,stroke:#5dade2
+    style COTEPE fill:#5dade2,color:#fff,stroke:#5dade2
+        </pre>
+    </div>
+</div>
+
+<!-- 2. EFD ICMS/IPI -->
+<div class="section" id="efd-fiscal">
+    <div class="section-header">
+        <h2>2. Fluxo Principal — EFD ICMS/IPI (SPED Fiscal)</h2>
+        <p>Da entrada de documentos fiscais até a geração dos blocos do arquivo digital</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+flowchart LR
+    subgraph ENTRADA ["1. ENTRADA"]
+        direction TB
+        NF["Notas Fiscais\nX07 / SAFX07"]
+        CF["Cupons Fiscais\nECF"]
+        CT["Conhecimentos\nTransporte X46"]
+        ENERGY["Energia/Telecom\nX08"]
+    end
+
+    subgraph DWT ["2. DATA WAREHOUSE"]
+        direction TB
+        DWT_DOC["DWT_DOCTO_FISCAL\n355 colunas"]
+        DWT_ITEM["DWT_ITEM_DOCTO_FISCAL"]
+        DWT_IMP["DWT_IMPOSTO_DOCTO_FISCAL"]
+    end
+
+    subgraph CONFIG ["3. CONFIGURAÇÃO"]
+        direction TB
+        EFD_INI["EFD_DADOS_INICIAIS_ESTAB"]
+        EFD_CAD["EFD_CAD_*\nCadastros"]
+        EFD_AJUST["EFD_AJUSTES_AUTO_REGRAS\nRegras de Ajuste"]
+    end
+
+    subgraph PROC ["4. PROCESSAMENTO PL/SQL"]
+        direction TB
+        FPROC["EFD_SPED_FPROC\nOrquestrador"]
+        EFD71["EFD71_GERA\nBloco E/G Init"]
+        EFD72["EFD72_GERA\nAjustes Bloco E"]
+        EFD79["EFD79_GERA\nBloco H Inventário"]
+        EFD82["EFD82_GERA\nBloco K Produção"]
+        EFD88["EFD88_GERA\nBloco 1 Complementar"]
+        FPROC --> EFD71
+        FPROC --> EFD72
+        FPROC --> EFD79
+        FPROC --> EFD82
+        FPROC --> EFD88
+    end
+
+    subgraph SAIDA ["5. BLOCOS DO ARQUIVO"]
+        direction TB
+        B0["Bloco 0\nCadastros"]
+        BC["Bloco C\nMercadorias"]
+        BD["Bloco D\nServiços"]
+        BE["Bloco E\nApuração ICMS/IPI"]
+        BG["Bloco G - CIAP"]
+        BH["Bloco H - Inventário"]
+        BK["Bloco K - Produção"]
+        B1["Bloco 1 - Complementar"]
+        B9["Bloco 9 - Encerramento"]
+    end
+
+    ENTRADA --> DWT
+    DWT --> PROC
+    CONFIG --> PROC
+    PROC --> SAIDA
+
+    style ENTRADA fill:#f9e79f,stroke:#f1c40f
+    style DWT fill:#fadbd8,stroke:#e74c3c
+    style CONFIG fill:#d5f5e3,stroke:#27ae60
+    style PROC fill:#d6eaf8,stroke:#2e86c1
+    style SAIDA fill:#e8daef,stroke:#8e44ad
+        </pre>
+    </div>
+</div>
+
+<!-- 3. EFD Contribuições -->
+<div class="section" id="efd-contrib">
+    <div class="section-header">
+        <h2>3. Fluxo — EFD Contribuições (PIS/COFINS)</h2>
+        <p>Escrituração digital das contribuições PIS, COFINS e INSS</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+flowchart LR
+    subgraph ENTRADA2 ["1. ENTRADA"]
+        direction TB
+        NF2["Notas Fiscais\nDWT_DOCTO_FISCAL"]
+        SERV["Serviços\nPrestados/Tomados"]
+        REC["Receitas\nFinanceiras"]
+    end
+
+    subgraph CONFIG2 ["2. CONFIGURAÇÃO"]
+        direction TB
+        EPC_INI["EPC_DADOS_INICIAIS_*"]
+        EPC_DIC["EPC_DICIONARIO\n53 refs - Mapeamento"]
+    end
+
+    subgraph PROC2 ["3. PROCESSAMENTO"]
+        direction TB
+        EPC_FPROC["EPC_SPED_FPROC\nGeração Principal"]
+        EPC_SCP["EPC_SPED_SCP_FPROC\nSociedade Conta\nParticipação"]
+    end
+
+    subgraph APUR ["4. APURAÇÃO"]
+        direction TB
+        EPC_APUR["EPC_APURACAO"]
+        EPC_CRED["EPC_APUR_CRED_DISP\nCréditos"]
+        EPC_RET["EPC_APUR_RET_DISP\nRetenções"]
+    end
+
+    subgraph SAIDA2 ["5. BLOCOS"]
+        direction TB
+        S0["Bloco 0 - Abertura"]
+        SA["Bloco A - Serviços"]
+        SC2["Bloco C - Mercadorias"]
+        SF["Bloco F - Outras Receitas"]
+        SM["Bloco M - Apuração\nPIS/COFINS"]
+        S1["Bloco 1 - Complementar"]
+    end
+
+    ENTRADA2 --> PROC2
+    CONFIG2 --> PROC2
+    PROC2 --> APUR
+    APUR --> SAIDA2
+
+    style ENTRADA2 fill:#f9e79f,stroke:#f1c40f
+    style CONFIG2 fill:#d5f5e3,stroke:#27ae60
+    style PROC2 fill:#d6eaf8,stroke:#2e86c1
+    style APUR fill:#fadbd8,stroke:#e74c3c
+    style SAIDA2 fill:#e8daef,stroke:#8e44ad
+        </pre>
+    </div>
+</div>
+
+<!-- 4. ECD Contábil -->
+<div class="section" id="ecd">
+    <div class="section-header">
+        <h2>4. Fluxo — ECD (SPED Contábil)</h2>
+        <p>Escrituração Contábil Digital: livros contábeis, balanço patrimonial e DRE</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+flowchart LR
+    subgraph ENTRADA3 ["1. ENTRADA"]
+        direction TB
+        LANC["Lançamentos\nContábeis"]
+        PLANO["Plano de Contas\nReferencial"]
+        CCUSTO["Centros de Custo"]
+    end
+
+    subgraph CONFIG3 ["2. CONFIGURAÇÃO"]
+        direction TB
+        SPED_INI["SPED_DADOS_INI"]
+        SPED_SIG["SPED_DADOS_SIGNATARIO"]
+        SPED_AUD["SPED_DADOS_AUDITOR"]
+        SPED_LIVRO["SPED_LIVRO_*\nConfig. Livros"]
+    end
+
+    subgraph PROC3 ["3. PROCESSAMENTO"]
+        direction TB
+        SAF_CONT["SAF_SPED_CONTABIL_FPROC\n120 refs - Orquestrador"]
+        SAF_BPDRE["SAF_SPED_CONTABIL_BPDRE_FPROC\n60 refs - Balanço/DRE"]
+        WORK["Tabelas WORK\nI050, I075, I100\nI310, I355"]
+        SAF_CONT --> WORK
+        SAF_CONT --> SAF_BPDRE
+    end
+
+    subgraph SAIDA3 ["4. BLOCOS"]
+        direction TB
+        E0["Bloco 0 - Abertura"]
+        EI["Bloco I\nI050 Plano Contas\nI075 Hist.Padronizado\nI100 Centro Custo\nI200 Lançamentos\nI250 Partidas\nI310/I355 Diário Aux."]
+        EJ["Bloco J\nJ100 Balanço\nJ150 DRE\nJ800 DRA/DMPL\nJ900 Termos"]
+        E9["Bloco 9 - Encerramento"]
+    end
+
+    ENTRADA3 --> PROC3
+    CONFIG3 --> PROC3
+    PROC3 --> SAIDA3
+
+    style ENTRADA3 fill:#f9e79f,stroke:#f1c40f
+    style CONFIG3 fill:#d5f5e3,stroke:#27ae60
+    style PROC3 fill:#d6eaf8,stroke:#2e86c1
+    style SAIDA3 fill:#e8daef,stroke:#8e44ad
+        </pre>
+    </div>
+</div>
+
+<!-- 5. Tabelas por Bloco -->
+<div class="section" id="tabelas-bloco">
+    <div class="section-header">
+        <h2>5. Mapa de Tabelas por Bloco (EFD ICMS/IPI)</h2>
+        <p>Qual tabela alimenta qual bloco do arquivo SPED Fiscal</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+graph TB
+    subgraph B0 ["Bloco 0 - Cadastros"]
+        P1["EFD_CAD_PARTIC\n0150 Participantes"]
+        P2["EFD_CAD_PROD_SERV\n0200 Produtos"]
+        P3["EFD_CAD_CCUSTO\n0600 C.Custo"]
+        P4["EFD_CAD_NAT_OP\n0400 Nat.Operação"]
+        P5["EFD_CAD_CONTA\n0500 Plano Contas"]
+    end
+
+    subgraph BC2 ["Bloco C - Mercadorias"]
+        C1["DWT_DOCTO_FISCAL\nC100 NF-e"]
+        C2["DWT_ITEM_DOCTO_FISCAL\nC170 Itens"]
+        C3["EFD_C197_TEMP\nC197 Ajustes ICMS"]
+    end
+
+    subgraph BE2 ["Bloco E - Apuração"]
+        E1["EST_APUR_ICMS\nE110 Apuração ICMS"]
+        E2["EFD_AJUSTES_AUTO_REGRAS\nE111/E116 Ajustes"]
+        E3["EFD_APURACAO_ASSISTIDA"]
+    end
+
+    subgraph BG2 ["Bloco G - CIAP"]
+        G1["APT_AQUISICAO\nG125 Bens"]
+        G2["EFD_BEM_CIAP\nG126 Parcelas ICMS"]
+    end
+
+    subgraph BH2 ["Bloco H - Inventário"]
+        H1["SAFX35\nH010 Inventário Físico"]
+    end
+
+    subgraph BK2 ["Bloco K - Produção"]
+        K1["Controle Produção\nK100 a K260"]
+    end
+
+    style B0 fill:#d5f5e3,stroke:#27ae60
+    style BC2 fill:#f9e79f,stroke:#f1c40f
+    style BE2 fill:#fadbd8,stroke:#e74c3c
+    style BG2 fill:#d6eaf8,stroke:#2e86c1
+    style BH2 fill:#e8daef,stroke:#8e44ad
+    style BK2 fill:#fdebd0,stroke:#e67e22
+        </pre>
+    </div>
+</div>
+
+<!-- 6. Packages PL/SQL -->
+<div class="section" id="packages">
+    <div class="section-header">
+        <h2>6. Packages PL/SQL — Dependências</h2>
+        <p>Árvore de packages por submódulo SPED</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+graph TD
+    subgraph EFD_F ["EFD ICMS/IPI"]
+        EF["EFD_SPED_FPROC\nOrquestrador 32 tabs"]
+        E71["EFD71_GERA\nInit E/G 40 refs"]
+        E72["EFD72_GERA\nAjustes E 47 refs"]
+        E73["EFD73_GERA\nDetalhes E"]
+        E79["EFD79_GERA\nInventário H"]
+        E82["EFD82_GERA\nProdução K"]
+        E88["EFD88_GERA\nComplementar 1"]
+        ESP["EFD_SPED_ESP_FPROC\nEstados Especiais 34 refs"]
+        EIES["EFD_SPED_IES_FPROC\nInstituições 31 refs"]
+        ECONV["EFD_SPED_CONV_FPROC\nConversão 23 refs"]
+        EF --> E71
+        EF --> E72
+        EF --> E73
+        EF --> E79
+        EF --> E82
+        EF --> E88
+        EF --> ESP
+        EF --> EIES
+        EF --> ECONV
+    end
+
+    subgraph ECD_C ["ECD SPED Contábil"]
+        SC["SAF_SPED_CONTABIL_FPROC\nOrquestrador 120 refs"]
+        SB["SAF_SPED_CONTABIL_BPDRE_FPROC\nBalanço/DRE 60 refs"]
+        SR["SAF_SPED_CONTABIL_REL_FPROC\nRelatórios 26 refs"]
+        SC --> SB
+        SC --> SR
+    end
+
+    subgraph EPC_C ["EFD Contribuições"]
+        EP["EPC_SPED_FPROC\nOrquestrador 39 refs"]
+        ES["EPC_SPED_SCP_FPROC\nSCP 36 refs"]
+        ED["EPC_DICIONARIO\nMapeamento 53 refs"]
+        EP --> ES
+        EP --> ED
+    end
+
+    style EFD_F fill:#d6eaf8,stroke:#2e86c1
+    style ECD_C fill:#d5f5e3,stroke:#27ae60
+    style EPC_C fill:#e8daef,stroke:#8e44ad
+        </pre>
+    </div>
+</div>
+
+<!-- 7. Menus -->
+<div class="section" id="menus">
+    <div class="section-header">
+        <h2>7. Menus do TAX ONE — Navegação SPED</h2>
+        <p>Estrutura de menus do módulo SPED no sistema</p>
+    </div>
+    <div class="diagram">
+        <pre class="mermaid">
+graph LR
+    MENU["TAX ONE"]
+
+    MENU --> SM["SPED"]
+
+    SM --> EFM["EFD Fiscal\nICMS/IPI"]
+    SM --> ECM["EFD Contribuições\nPIS/COFINS"]
+    SM --> ECDM["ECD\nContábil"]
+    SM --> ECFM["ECF"]
+    SM --> RM["EFD-Reinf"]
+
+    EFM --> EFP["Parâmetros"]
+    EFM --> EFC["Cadastros"]
+    EFM --> EFG["Geração"]
+    EFM --> EFV["Validação"]
+    EFM --> EFT["Transmissão"]
+
+    EFC --> CP["Participantes"]
+    EFC --> CPR["Produtos/Serviços"]
+    EFC --> CB["Bens CIAP"]
+    EFC --> CA["Regras de Ajuste"]
+
+    EFG --> GA["Gerar Arquivo"]
+    EFG --> GR["Relatório Analítico"]
+
+    ECDM --> DI["Dados Iniciais"]
+    ECDM --> LV["Livros"]
+    ECDM --> DM["Demonstrações\nBalanço/DRE"]
+    ECDM --> GE["Geração"]
+
+    ECM --> EPP["Parâmetros"]
+    ECM --> ECC["Cadastros"]
+    ECM --> EPA["Apuração"]
+    ECM --> EPG["Geração"]
+
+    style MENU fill:#1a5276,color:#fff,stroke:#1a5276
+    style SM fill:#2e86c1,color:#fff,stroke:#2e86c1
+    style EFM fill:#5dade2,color:#fff,stroke:#5dade2
+    style ECM fill:#5dade2,color:#fff,stroke:#5dade2
+    style ECDM fill:#5dade2,color:#fff,stroke:#5dade2
+    style ECFM fill:#5dade2,color:#fff,stroke:#5dade2
+    style RM fill:#5dade2,color:#fff,stroke:#5dade2
+        </pre>
+    </div>
+</div>
+
+<!-- 8. Volumetria -->
+<div class="section" id="volumetria">
+    <div class="section-header">
+        <h2>8. Volumetria e Referências</h2>
+        <p>Números consolidados do módulo SPED no TAX ONE</p>
+    </div>
+    <div style="padding: 24px; overflow-x: auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Submódulo</th>
+                    <th>Prefixo</th>
+                    <th>Tabelas</th>
+                    <th>Packages PL/SQL</th>
+                    <th>Refs PL/SQL</th>
+                    <th>E2E Specs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="badge badge-blue">EFD ICMS/IPI</span></td>
+                    <td>EFD_*</td>
+                    <td><strong>73</strong></td>
+                    <td>EFD_SPED_FPROC + 9 blocos</td>
+                    <td>~300</td>
+                    <td>efdFiscal/</td>
+                </tr>
+                <tr>
+                    <td><span class="badge badge-purple">EFD Contribuições</span></td>
+                    <td>EPC_*</td>
+                    <td><strong>88</strong></td>
+                    <td>EPC_SPED_FPROC + 2</td>
+                    <td>~128</td>
+                    <td>efdContribuicoes/</td>
+                </tr>
+                <tr>
+                    <td><span class="badge badge-green">ECD Contábil</span></td>
+                    <td>SPED_*</td>
+                    <td><strong>37</strong></td>
+                    <td>SAF_SPED_CONTABIL_* (3)</td>
+                    <td>~206</td>
+                    <td>ecdEscrituracaoContabilDigital/</td>
+                </tr>
+                <tr>
+                    <td><span class="badge badge-blue">CIAP</span></td>
+                    <td>APT_*</td>
+                    <td><strong>35</strong></td>
+                    <td>Integrado ao EFD (Bloco G)</td>
+                    <td>~50</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><span class="badge badge-orange">COTEPE</span></td>
+                    <td>COTEPE_*</td>
+                    <td><strong>20</strong></td>
+                    <td>SAF_MM_COTEPE_FPROC</td>
+                    <td>~57</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td><span class="badge badge-blue">ECF</span></td>
+                    <td>ECF_*</td>
+                    <td><strong>7</strong></td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr style="background: #eaf2f8; font-weight: 600;">
+                    <td>TOTAL SPED</td>
+                    <td></td>
+                    <td><strong>~280</strong></td>
+                    <td><strong>~16 packages</strong></td>
+                    <td><strong>~741</strong></td>
+                    <td><strong>45 specs</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+
+<button class="print-btn" onclick="window.print()">Imprimir / Salvar PDF</button>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'default',
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis' },
+        securityLevel: 'loose'
+    });
+</script>
+
+</body>
+</html>

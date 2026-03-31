@@ -1,0 +1,352 @@
+# MTZ-Job-Servidor-Importacao_SAFX224
+
+- **Fonte:** MTZ-Job-Servidor-Importacao_SAFX224.docx
+- **Modificado:** 2022-07-22
+- **Tamanho:** 75 KB
+
+---
+
+THOMSON REUTERS
+
+Job Servidor \- Importação da SAFX224
+
+      Tabela das Guias de Recolhimento do ICMS Dif\. Alíquota UF Orig/Dest \(EC 87/15\) do Módulo PIM 
+
+__Localização__: Menu Básicos, Módulo: Job Servidor, itens de menu:
+
+\- Importação 🡪 Execução
+
+\- Importação Batch 🡪 Programação 🡪 Execução
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+MFS2405
+
+Atendimento ao Ato Cotepe/ICMS 44/2015
+
+Criação da nova tabela SAFX224 para a importação das guias de recolhimento da Apuração do ICMS Diferencial de Alíquota UF Origem/Destino \(EC 87/15\) __do Módulo PIM__\. 
+
+MFS90023
+
+Sped Fiscal 2023
+
+Aumento do tamanho do campo Número do Processo para 60 posições \(RN14\)
+
+REGRAS DE NEGÓCIO
+
+__CÓD__
+
+__DESCRIÇÃO__
+
+__OS/CH__
+
+__RN00__
+
+Estrutura da tabela SAFX224 🡪 vide manual de layout
+
+Campos que compõe a chave da tabela:
+
+ __Código da Empresa__ \+ __Código do Estabelecimento__ \+ __Inscrição Estadual__ \+ __Obrigação Fiscal__ \+ __Data da Apuração__ \+ __UF__ \+ __Número da Guia de Recolhimento__
+
+Tabela definitiva:
+
+Tabela das guias de recolhimento da aba “Guias de Recolhimento” da rotina de manutenção dos lançamentos complementares específica da Apuração do ICMS Diferencial de Alíquota UF Origem/Destino, localizada no módulo __PIM__, menu “Apuração 🡪 Apuração dos Saldos de Impostos e Taxas 🡪 Lançamentos Complementares 🡪 Apuração do ICMS Dif\. Aliq\. UF Origem/Destino \(EC 87/15\)”\.
+
+ 
+
+*\(ver estrutura da tabela definitiva no documento de regras da manutenção citada acima\)*
+
+Conforme padrão, a tabela definitiva tem os campos de controle da importação de tabelas SAFX:
+
+\- Indicador de Gravação \(IND\_GRAVACAO\) 
+
+\- Número do Processo da Importação \(NUM\_PROCESSO\) 
+
+Para as guias importadas 🡪 o IND\_GRAVACAO será gravado com “1” 
+
+Para as guias alteradas pela importação 🡪 o IND\_GRAVACAO será gravado com “2” 
+
+Mensagens de erro:
+
+Sempre que o registro a ser importado for rejeitado, será gerada uma mensagem no log, e os dados de identificação da guia \(campos chave\) serão demonstrados corretamente, para possibilitar ao usuário identificar o registro rejeitado\.   
+
+ 
+
+__RN01__
+
+__Campo Código da Empresa__
+
+Campo de preenchimento obrigatório\.
+
+Quando o campo não estiver preenchido,* *o registro não será importado e no log de erros será gravada mensagem de erro padrão:
+
+*                                                      “O código da empresa deve ser preenchido”*
+
+__RN02__
+
+__Campo Código do Estabelecimento__
+
+Campo de preenchimento obrigatório\.
+
+Quando o campo não estiver preenchido,* *o registro não será importado e no log de erros será gravada mensagem de erro padrão:
+
+*                                                      “O código do estabelecimento deve ser preenchido”*
+
+__RN03__
+
+__Campo Inscrição Estadual__
+
+Campo de preenchimento obrigatório\.
+
+Deve ser preenchido com uma inscrição estadual cadastrada para o estabelecimento no Módulo PIM, no menu “Cadastros 🡪 Inscrição Estadual por Estabelecimento” \(tabela ICT\_ESTAB\_IESTAD\)\.
+
+Caso contrário, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                “Inscrição Estadual não cadastrada na Tabela de Inscrições Estaduais do Módulo PIM”*
+
+*OBS: Não será utilizada a mensagem de erro 91070 porque esta mensagem não explica claramente que trata\-se do cadastro do Módulo PIM\.*
+
+__RN04__
+
+__Campo Obrigação Fiscal__
+
+Campo de preenchimento obrigatório\.
+
+Deve ser preenchido com o código do livro fiscal “108” \(Livro de Apuração\)\.
+
+Caso contrário, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                        “O código da obrigação fiscal deve ser 108”*
+
+__RN05__
+
+__Campo Data da Apuração__
+
+Campo de preenchimento obrigatório\.
+
+Quando não preenchido, ou quando for uma data inválida, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                        “Data da apuração não preenchida ou inválida”*
+
+Serão consideradas apenas as apurações agendadas \(CALEN\_OBRIGACAO\) e já registradas na tabela APURACAO, e ainda não validadas\. Por isso serão realizadas as seguintes críticas:
+
+Crítica da existência da apuração: Será verificada a existência da apuração em questão, ou seja, se já existe uma apuração gerada para a Empresa, Estabelecimento, Inscrição Estadual, Obrigação Fiscal e Data da Apuração \(tabela ICT\_APUR\_INSC\_EST\)\. 
+
+Caso não exista, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                  “Não existe apuração gerada p/o estabelecimento/inscrição estadual e data informados”*
+
+Crítica do status da apuração: Se o status da apuração for = “Válido”, então o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                       “Não é permitida a importação de guias para apurações já validadas”*
+
+__RN06__
+
+__Campo UF __
+
+Campo de preenchimento obrigatório\.
+
+O conteúdo deve ser uma UF válida, de acordo com a lista das UF’s da tabela ESTADOS\. 
+
+Quando não preenchido ou inválido, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                   * *“Código da Unidade da Federação não preenchido ou inválido”*
+
+__RN07__
+
+__Campo Número da Guia de Recolhimento __
+
+Campo de preenchimento obrigatório\.
+
+Quando não preenchido, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                  * *“O número da guia de recolhimento é de preenchimento obrigatório\. Consultar orientações no manual de layout”*
+
+__RN08__
+
+__Campo Valor __
+
+Campo de preenchimento obrigatório\.
+
+Quando não preenchido ou = zero, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                         “Valor da guia não informado ou igual à zero”*
+
+__RN09__
+
+__Campo Data Vencimento __
+
+Campo de preenchimento obrigatório\.
+
+Quando não preenchido, ou quando for uma data inválida, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                        “Data do vencimento não preenchida ou inválida”*
+
+__RN10__
+
+__Campo Mês/Ano Referência __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+Se preenchido, será verificada a validade do mês e do ano informados, e quando a informação for inválida, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                                                     “Mês/Ano Referência inválido”*
+
+__RN11__
+
+__Campo Código Obrigação __
+
+Campo de preenchimento obrigatório\.
+
+Deve ser um código válido de acordo com a tabela “5\.4\-Tabela de Códigos do ICMS a Recolher” do Sped Fiscal:
+
+   000\-ICMS a Recolher
+
+   001\-ICMS da substituição tributária pelas entradas
+
+   002\-ICMS da substituição tributária pelas saídas p/o estado
+
+   003\-Antecipação do diferencial de alíquota do ICMS
+
+   004\-Antecipação do ICMS da importação
+
+   005\-Antecipação tributária
+
+   006\- ICMS resultante da alíquota adicional dos itens incluídos no Fundo de Combate a Pobreza
+
+   090\-Outras obrigações do ICMS 
+
+   999\-ICMS da substituição tributária pelas saídas p/outro estado
+
+Quando não preenchido ou inválido, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*     “O Código Obrigação deve ser preenchido de acordo com a tabela “5\.4\-Tabela de Códigos do ICMS a Recolher” do Sped Fiscal”*
+
+__RN12__
+
+__Campo Código da Receita__
+
+Campo de preenchimento obrigatório\.
+
+Deve ser um código válido de acordo com a Tabela de Códigos de Receita Estadual \(SAFX2080\)\.
+
+O código informado deve atender as seguintes condições:
+
+  \- Deve ser da mesma UF informada na guia, ou seja, a UF da SAFX2080 deve ser a mesma informada no campo “05\-UF” da guia;
+
+  \- Deve ser um código válido para o período da apuração em questão, ou seja, a data de validade da SAFX2080 deve ser < = data da
+
+    apuração informada no campo “04\-Data da Apuração” da guia;\.
+
+Quando o código não for preenchido, ou não atender as regras descritas acima, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                              “Código da Receita não preenchido, inexistente para a UF, ou inválido para a data da apuração”*
+
+__RN13__
+
+__Campo Descrição Complementar __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+__RN14__
+
+__Campo Número do Processo__
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+Quando o número do processo é preenchido, a origem do processo também deve ser informada\. Caso o número seja informado e a origem não, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+                                    *“Ao informar o número do processo, a origem do processo também deve ser informada”*
+
+__RN15__
+
+__Campo Origem do Processo __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+Se preenchido, deve ser uma das opções descritas abaixo\. Caso contrário, o registro não será importado, e no log de erros será gravada a seguinte mensagem: *“Origem do Processo inválida \(deve ser = 0, 1, 2 ou 9\)”*
+
+                    = “0” \(Sefaz\)
+
+                    = “1” \(Justiça Federal\)
+
+                    = “2” \(Justiça Estadual\)
+
+                    = “9” \(Outros\)
+
+ 
+
+Quando a origem do processo é preenchida, o número do processo também deve ser informado\. Caso a origem seja informada e o número não, o registro não será importado, e no log de erros será gravada a seguinte mensagem:
+
+                                    *“Ao informar a origem do processo, o número do processo também deve ser informado”*
+
+__RN16__
+
+__Campo Descrição do Processo __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+__RN17__
+
+__Campo Classe de Vencimento \(SC\) __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+Quando preenchido, serão feitas as seguintes críticas:
+
+   \- Este campo deve ser utilizado apenas quando a UF da Guia for = SC\. Quando a UF não for SC, o registro não será importado, e 
+
+     no log de erros será gravada a seguinte mensagem:
+
+*                     “O campo Classe de Vencimento \(SC\) deve ser utilizado apenas quando a UF informada for SC”*
+
+   \- O código informado deve existir na TACES80 \(Tabela das Classes de Vencimento\), e ser um código da UF de SC\. Caso o código
+
+     não exista na tabela, não seja de SC, ou tenha data de validade incompatível com a data da apuração da Guia __\(\*\)__, o registro não 
+
+     será importado, e no log de erros será gravada a seguinte mensagem:
+
+*                                       “Classe de Vencimento \(SC\) inexistente ou inválida p/a data da apuração”*
+
+__\(\*\)__ A data de validade inicial da TACES80 deve ser menor ou igual à data da apuração da guia, e a data de validade final deve ser maior ou igual à data da apuração da guia\.
+
+__RN18__
+
+__Campo Código de Identificação do Débito \(RJ\) __
+
+Campo de preenchimento __*não*__ obrigatório\.
+
+Quando preenchido, serão feitas as seguintes críticas:
+
+   \- Este campo deve ser utilizado apenas quando a UF da Guia for = RJ\. Quando a UF não for RJ, o registro não será importado, e 
+
+     no log de erros será gravada a seguinte mensagem:
+
+*                   “O campo Código de Identificação do Débito \(RJ\) deve ser utilizado apenas quando a UF informada for RJ”*
+
+   \- O código informado deve existir na TACES60 \(Tabela de Identificação de Débitos de ICMS\-RJ\)\. Caso o código não exista na 
+
+     tabela, ou tenha data de validade incompatível com a data da apuração da Guia __\(\*\)__, o registro não será importado, e no log de erros
+
+     será gravada a seguinte mensagem:
+
+*                                       “Código de Identificação do Débito \(RJ\) inexistente ou inválido p/a data da apuração”*
+
+__\(\*\)__ A data de validade da TACES60 deve ser menor ou igual à data da apuração da guia\.
+
+Considerações deste modelo:
+
+__Quando uma Regra de Negócio for Excluída, deverá ser indicada, em sua posição original, uma observação conforme exemplo abaixo descrito abaixo:__
+
+__RN01__
+
+__\[EXCLUÍDA – OSXPTO\]__ Descrição da Regra de Negócio 01
+
+OSNNNN
+

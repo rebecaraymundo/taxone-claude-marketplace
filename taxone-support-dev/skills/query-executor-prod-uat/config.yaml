@@ -1,0 +1,35 @@
+# =============================================================================
+# Query Executor - Configuração
+# =============================================================================
+# Preencha os valores abaixo conforme seu ambiente.
+# Tokens/senhas devem ser configurados via variáveis de ambiente:
+#   - JFROG_TOKEN   → Token de autenticação do JFrog Artifactory
+#   - GITHUB_TOKEN  → Token do GitHub com permissão para disparar workflows
+# =============================================================================
+
+jfrog:
+  # URL base do JFrog Artifactory (ex: https://empresa.jfrog.io)
+  url: "https://tr1.jfrog.io"
+
+  # Repositório no Artifactory
+  repo: "generic-local"
+
+  # Pasta de destino no Artifactory (sem o nome do arquivo)
+  dest_folder: "taxone/Custom"
+
+  # Usuário do JFrog (obrigatório no modo basic) - ALTERE para seu ID corporativo
+  user: "0146436"
+
+  # Modo de autenticação: basic, bearer, apikey
+  auth_mode: "basic"
+
+github:
+  # URL base dos workflows no GitHub Actions
+  base_url: "https://github.com/tr/a202606_mastersafdevops-tools-dbscripts/actions/workflows"
+
+  # Sufixo do nome do arquivo de workflow
+  workflow_suffix: "querycustom-single.yml"
+
+user:
+  # Email para receber notificação com resultado da query - ALTERE para seu email
+  email: "jorge.neto@thomsonreuters.com"

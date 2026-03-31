@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Root Cause Entry",
+  "description": "Registro estruturado de causa raiz de uma Work Item analisada",
+  "type": "object",
+  "required": ["wi_id", "title", "analysis_date", "root_cause", "affected_modules", "verdict"],
+  "properties": {
+    "wi_id": {
+      "type": "string",
+      "description": "ID da Work Item no Azure DevOps"
+    },
+    "title": {
+      "type": "string",
+      "description": "Titulo resumido do problema"
+    },
+    "analysis_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data da analise (YYYY-MM-DD)"
+    },
+    "analyst": {
+      "type": "string",
+      "description": "Quem realizou a analise (ex: Claude AI, nome do dev)"
+    },
+    "root_cause": {
+      "type": "object",
+      "required": ["category", "summary"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "enum": [
+            "recompilation_gap",
+            "code_bug",
+            "performance",
+            "config_error",
+            "data_quality",
+            "design_gap",
+            "regression",
+            "environment"
+          ],
+          "description": "Categoria da causa raiz"
+        },
+        "summary": {
+          "type": "string",
+          "description": "Resumo de 1 linha da causa raiz"
+        },
+        "detail": {
+          "type": "string",
+          "description": "Descricao detalhada da causa raiz"
+        },
+        "originating_change": {
+          "type": "object",
+          "description": "Alteracao que originou o erro",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["DDL", "PR", "PATCH", "CONFIG", "MIGRATION", "NONE"],
+              "description": "Tipo da alteracao originadora"
+            },
+            "reference": {
+              "type": "string",
+              "description": "Referencia (ex: DDL_MFS848597, PR #12291)"
+            },
+            "wi_id": {
+              "type": "string",
+              "description": "WI que originou a alteracao (se conhecida)"
+            },
+            "date": {
+              "type": "string",
+              "description": "Data aproximada da alteracao"
+            },
+            "description": {
+              "type": "string",
+              "description": "O que a alteracao fez"
+            }
+          }
+        }
+      }
+    },
+    "affected_modules": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Modulos afetados (ex: Basicos, Federal, Estadual)"
+    },
+    "affected_objects": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Objetos PL/SQL, tabelas, etc. afetados"
+    },
+    "verdict": {
+      "type": "string",
+      "enum": [
+        "BUG_CONFIRMED",
+        "NOT_A_BUG",
+        "NEEDS_INFO",
+        "DESIGN_GAP",
+        "CONFIG_ISSUE",
+        "ENVIRONMENT_ISSUE"
+      ]
+    },
+    "solution_type": {
+      "type": "string",
+      "enum": ["code_fix", "recompilation", "config_change", "ddl", "data_fix", "documentation", "no_action"],
+      "description": "Tipo de solucao aplicada"
+    },
+    "pattern": {
+      "type": "string",
+      "description": "Pattern recorrente identificado (ex: desalinhamento_posicional_pos_ddl)"
+    },
+    "pr": {
+      "type": ["integer", "null"],
+      "description": "Numero da PR no GitHub (null se nao houver)"
+    },
+    "zendesk": {
+      "type": ["string", "null"],
+      "description": "Ticket Zendesk associado (ex: TKT175589)"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# MTZ_FEDERAL_OTF_Geracao_Relatorio_Conferencia_Tributos_Federais
+
+> Fonte: MTZ_FEDERAL_OTF_Geracao_Relatorio_Conferencia_Tributos_Federais.docx
+
+
+
+
+
+
+THOMSON REUTERS
+
+Relatório de Conferência de Tributos Federais
+Geração Relatório de Conferência
+
+Localização:
+- Federal >> Obrigações dos Tributos Federais >> Relatórios >> Relatório de Tributos Federais >> Relatório de Conferência de Tributos Federais
+
+- SPED>> EFD-REINF >> Relatórios >> Federais>> Relatório de Conferência de Tributos Federais
+
+Este relatório também está disponível no Federal >> Obrigações dos Tributos Federais >> Relatórios >> Relatório de Tributos Federais Qualquer manutenção, deve ser feita no documento ‘MTZ_FEDERAL_OTF_Geracao_Relatorio_Conferencia_Tributos_Federais.docx’, disponível em Requisitos - Mastersaf DW TaxOne\Documento_Matriz\Federal\Obrigacoes_de_Tributos_Federais\RELATORIOS\‘MTZ_FEDERAL_OTF_Geracao_Relatorio_Conferencia_Tributos_Federais.docx’

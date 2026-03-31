@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TAX ONE Impact Assessment",
+  "description": "Avaliacao formal de impacto gerada pelo taxone-architect antes da implementacao. Inspirado no Impact.md do TaxPillot-Patagonia.",
+  "version": "1.0.0",
+  "type": "object",
+  "required": ["wi_id", "generated_at", "generated_by", "risk_score", "files_affected", "tables_affected", "test_instructions"],
+  "properties": {
+    "wi_id": {
+      "type": "string",
+      "description": "ID da Work Item no ADO"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp ISO 8601 da geracao"
+    },
+    "generated_by": {
+      "type": "string",
+      "const": "taxone-architect",
+      "description": "Agente que gerou o assessment"
+    },
+    "risk_score": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+      "description": "Score de risco geral da mudanca. LOW=1 arquivo/1 package. MEDIUM=2-3 packages. HIGH=cross-module ou DDL. CRITICAL=tabelas core ou >5 packages."
+    },
+    "summary": {
+      "type": "string",
+      "description": "Resumo em 1-2 frases do impacto da mudanca"
+    },
+    "structural": {
+      "type": "boolean",
+      "description": "true se a mudanca e estrutural (novo modulo, migracao de camada, novo pattern). Usado pelo gate estrutural para decidir se architect deve ser invocado."
+    },
+    "files_affected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "impact_type", "change_description"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "Caminho relativo do arquivo no repo taxone_dw"
+          },
+          "impact_type": {
+            "type": "string",
+            "enum": ["DIRECT", "INDIRECT"],
+            "description": "DIRECT=arquivo sera modificado. INDIRECT=depende do modificado."
+          },
+          "change_description": {
+            "type": "string",
+            "description": "O que precisa mudar neste arquivo"
+          },
+          "layer": {
+            "type": "string",
+            "enum": ["PLSQL", "PB", "JAVA", "ANGULAR", "DDL", "CONFIG"],
+            "description": "Camada tecnologica do arquivo"
+          }
+        }
+      }
+    },
+    "tables_affected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["table_name", "operation"],
+        "properties": {
+          "table_name": {
+            "type": "string",
+            "description": "Nome da tabela Oracle"
+          },
+          "operation": {
+            "type": "string",
+            "enum": ["SELECT", "INSERT", "UPDATE", "DELETE", "DDL"],
+            "description": "Tipo de operacao afetada"
+          },
+          "columns": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Colunas especificas afetadas (se conhecidas)"
+          }
+        }
+      }
+    },
+    "dependencies_cross_module": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_module": { "type": "string" },
+          "target_module": { "type": "string" },
+          "dependency_type": {
+            "type": "string",
+            "enum": ["CALLS", "READS", "WRITES", "FK", "VIEW"]
+          },
+          "description": { "type": "string" }
+        }
+      },
+      "description": "Dependencias entre modulos diferentes (via MODULE_MAP.md)"
+    },
+    "ddl_required": {
+      "type": "boolean",
+      "description": "true se a mudanca requer DDL (ALTER TABLE, CREATE INDEX, etc.)"
+    },
+    "ddl_scripts": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Lista de DDL scripts necessarios (ex: DDL_MFS{WI_ID}.sql)"
+    },
+    "test_instructions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["description", "type"],
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "O que testar"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["SQL_VALIDATION", "SUITE", "E2E", "EXPLORATORY", "PERFORMANCE"],
+            "description": "Tipo de teste recomendado"
+          },
+          "sql_hint": {
+            "type": "string",
+            "description": "Query SQL sugerida (se SQL_VALIDATION)"
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["HIGH", "MEDIUM", "LOW"]
+          }
+        }
+      },
+      "description": "Instrucoes especificas de teste derivadas da analise de impacto"
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["description", "severity", "mitigation"],
+        "properties": {
+          "description": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+          },
+          "mitigation": { "type": "string" }
+        }
+      }
+    },
+    "architect_recommendation": {
+      "type": "string",
+      "enum": ["PROCEED", "PROCEED_WITH_CAUTION", "NEEDS_REVIEW", "BLOCKED"],
+      "description": "Recomendacao do architect: PROCEED=seguro, PROCEED_WITH_CAUTION=testar bem, NEEDS_REVIEW=TechLead deve revisar, BLOCKED=impedimento tecnico"
+    }
+  }
+}

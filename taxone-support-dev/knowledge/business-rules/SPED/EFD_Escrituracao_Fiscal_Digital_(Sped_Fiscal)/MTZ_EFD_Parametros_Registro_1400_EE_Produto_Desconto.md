@@ -1,0 +1,453 @@
+# MTZ_EFD_Parametros_Registro_1400_EE_Produto_Desconto
+
+- **Fonte:** MTZ_EFD_Parametros_Registro_1400_EE_Produto_Desconto.docx
+- **Modificado:** 2021-06-28
+- **Tamanho:** 102 KB
+
+---
+
+THOMSON REUTERS
+
+Módulo Sped Fiscal
+
+Parâmetros de Produtos com Desconto p/ Geração do Registro 1400 \(Energia Elétrica\)
+
+__Localização__: Menu Sped, Módulo: Escrituração Fiscal Digital, item Parâmetros 🡪 Registro 1400  🡪 Serviço de Energia Elétrica 🡪 Produto com Desconto
+
+##### DOCUMENTO DE REQUISITO
+
+__OS/CH__
+
+__Nome__
+
+__Descrição__
+
+__Data__
+
+__MFS58137__
+
+Liliane Assaf
+
+Criação da parametrização de produtos para geração do 1400 formato Padrão em atendimento a Energia Elétrica 
+
+04/03/2021
+
+__MFS62640__
+
+Aline Melo
+
+Ajuste do item de menu de parametrização de produtos para geração do 1400 formato Padrão, para ser disponibilizado para a geração Específico por UF, em atendimento a Energia Elétrica
+
+16/06/2021
+
+Sumário
+
+[1\.	Introdução	2](#_Toc2189877)
+
+[2\.	Layout da Tela	2](#_Toc2189878)
+
+[3\.	Funcionamento da Tela	3](#_Toc2189879)
+
+[4\.	Botões da barra de menu:	5](#_Toc2189880)
+
+[5\.	Regras de Funcionamento dos Campos	5](#_Toc2189881)
+
+[6\.	Validações	8](#_Toc2189882)
+
+# <a id="_Toc2189877"></a>Introdução
+
+Esta tela tem objetivo de promover a parametrização dos produtos a serem utilizados na rotina de geração do registro 1400, formato Padrão e Específico por UF \(Estado do Paraná\) para Energia Elétrica, realizada no menu “Geração 🡪 Meio Magnético” do módulo Sped Fiscal\.
+
+Essa parametrização trabalha com uma faixa de produtos determinada pelo Código do Produto Inicial e Final, significando que todos os códigos contidos nessa faixa são considerados com Desconto ST\.
+
+A tela permite excluir alguns produtos dessa faixa deixando\-os de forma da parametrização\.
+
+A faixa de produtos parametrizada é armazenada na tabela PRT\_PROD\_MSAF, cuja chave de identificação é formada pelos campos:
+
+- __Empresa__
+- __Estabelecimento__
+- __Código Parâmetro__
+- __Grupo do Produto__
+- __Indicador do Produto__
+- __Código do Produto Inicial__
+
+Os produtos excluídos da faixa são armazenados na tabela PRT\_PROD\_EXC\_MSAF, cuja chave de identificação é formada pelos campos:
+
+- __Empresa__
+- __Estabelecimento__
+- __Código Parâmetro__
+- __Grupo do Produto__
+- __Indicador do Produto__
+- __Código do Produto Inicial__
+- __Código do Produto Excluído__
+
+# <a id="_Toc2189878"></a>Layout da Tela
+
+![](data:image/png;base64,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)# <a id="_Funcionamento_da_Tela"></a><a id="_Toc2189879"></a>Funcionamento da Tela
+
+__Passo__
+
+__Acionador__
+
+__Descrição__
+
+1
+
+Usuário
+
+Usuário seleciona o item de menu Parâmetros 🡪 Registro 1400  🡪 Padrão 🡪 Serviço de Energia Elétrica 🡪 Produto com Desconto\.
+
+2
+
+Sistema
+
+Verifica o usuário informou estabelecimento no login do Manager\.
+
+3
+
+Sistema
+
+Sistema abre a tela de seleção dos grupos cadastrados no Relacionamento entre Tabela e Grupos \(Relac\_Tab\_Grupo\)\.
+
+Se no login foi informado estabelecimento, então:
+
+Sistema disponibilizados apenas os grupos relacionados ao estabelecimento em questão, relacionados a Tabela Produto\.
+
+Senão
+
+Sistema exibe os grupos dos estabelecimentos da empresa, relacionados a Tabela Produto\.
+
+4
+
+Usuário
+
+Usuário seleciona um registro de grupo/estabelecimento do Relacionamento entre Tabela e Grupo\. 
+
+5
+
+Sistema
+
+Abre a tela de Parametrização dos Produtos, com os campos Estabelecimento e Grupo preenchidos e bloqueados\.
+
+Os campos Indicador, Código Inicial, Código Final são apresentados “em branco”\.
+
+6
+
+Usuário
+
+Usuário seleciona um indicador do produto na lista do campo “Indicador”\.
+
+7
+
+Sistema
+
+Sistema habilida os campos Código Inicial, Código Final\.
+
+8
+
+Usuário
+
+Digita ou seleciona na pastinha o Código Inicial\.
+
+9
+
+Sistema
+
+Valida o Código Inicial no Cadastro de Produtos \(SAFX2013\)\.
+
+Vide regra do campo “Início Validade” descrita no tópico “[5 – Regras de Funcionamento dos Campos](#_Regras_de_Funcionamento)”\.
+
+10
+
+Usuário
+
+Digita ou seleciona na pastinha o Código Final\.
+
+11
+
+Sistema
+
+Valida o Código Final no Cadastro de Produtos \(SAFX2013\)\.
+
+Vide regra do campo “Início Validade” descrita no tópico “[5 – Regras de Funcionamento dos Campos](#_Regras_de_Funcionamento)”\.
+
+12
+
+Usuário
+
+Usuário escolhe “Informar Exclusões”\.
+
+13
+
+Sistema
+
+Sistema apresenta o conjunto de produtos cujo código está compreendido entre os Códigos Inicial e Final informados\.
+
+14
+
+Usuário 
+
+Seleciona alguns produtos a serem excluídos da faixa\.
+
+15
+
+Usuário 
+
+Seleciona botão confirma\.
+
+16
+
+Sistema
+
+Executa validações descritas no tópico [6\- Validações](#_Validações)\. 
+
+Caso os dados estejam consistentes, grava as parametrizações na tabela definitiva\.
+
+17
+
+Usuário
+
+Seleciona outras ações disponíveis na barra de menu da janela\.
+
+Vide tópico “[4 \- Botões da barra de menu](#_Botões_da_barra)”
+
+# <a id="_Botões_da_barra"></a><a id="_Toc2189880"></a>Botões da barra de menu:
+
+SELECIONAR GRUPO
+
+Ao clicar nesta opção será aberta a janela de seleção dos grupos de relacionamento \(relacionamento Tabela x Grupos\), e o usuário poderá selecionar o grupo desejado\.
+
+Se no login foi informado estabelecimento, então:
+
+Sistema disponibilizados apenas os grupos relacionados ao estabelecimento em questão, relacionados a Tabela Produto\.
+
+Senão
+
+Sistema exibe os grupos dos estabelecimentos da empresa, relacionados a Tabela Produto\. 
+
+Seguir o *passo 4* do fluxo descrito no tópico [3 – Funcionamento da Tela](#_Funcionamento_da_Tela)\.
+
+NOVO
+
+Ao clicar nesta opção, as informações dos campos serão limpas \(exceto os campos Estabelecimento e Grupo que mantém preenchidos e bloqueados\) e o usuário poderá incluir uma nova parametrização\.
+
+ABRE
+
+Ao clicar nesta opção, será aberta a janela para seleção das parametrizações já cadastradas para consulta ou manutenção\. 	
+
+EXCLUI
+
+Esta opção permite a exclusão das parametrizações do estabelecimento, grupo, Data Início Validade e Código em questão\. 
+
+CONFIRMA
+
+Opção para salvar as informações da parametrização incluída ou alterada\.
+
+RELATÓRIO
+
+Esta opção permite imprimir os dados da parametrização\. Trata\-se de opção padrão das telas de manutenção do sistema\. 
+
+FECHA
+
+Fecha a tela da manutenção\.
+
+  
+
+# <a id="_Regras_de_Funcionamento"></a><a id="_Toc2189881"></a>Regras de Funcionamento dos Campos
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__OS/CH__
+
+Estabelecimento
+
+Alfanumérico 
+
+__S__
+
+__N__
+
+Neste campo será exibido o código e a razão social do estabelecimento do Grupo selecionado pelo usuário na abertura da tela, ou através da opção “SELECIONAR GRUPO” da barra de menu\.* *
+
+Grupo
+
+Alfanumérico
+
+__S__
+
+__N__
+
+Neste campo será exibido o Grupo selecionado pelo usuário na abertura da tela, ou através da opção “SELECIONAR GRUPO” da barra de menu\.
+
+Indicador
+
+Alfanumérico
+
+__S__
+
+__N__
+
+Lista
+
+Este campo é uma lista dos indicadores de produto da SAFX2013:
+
+1 \- Produto
+
+2 \- Matéria Prima/Insumo
+
+3 \- Embalagem
+
+4 \- Material Uso/Consumo
+
+5 \- Outros
+
+6 \- Em Elaboração
+
+7 \- Intermediário
+
+8 \- Miscelâneas
+
+Código Inicial
+
+Alfanumérico
+
+__S__
+
+S
+
+Pasta – Código – Descrição 
+
+Este campo trabalha com janela de seleção dos produtos da SAFX2013, considerando apenas os produtos do Grupo selecionado e também do indicador de produto selecionado\. 
+
+Após informar o código inicial, caso o campo “Código Final” ainda não tenha sido informado, o campo do código final será inicializado com o mesmo conteúdo do produto inicial\.
+
+Quando o código for digitado, será verificada a existência do produto na tabela de produtos \(SAFX2013\), considerando o Grupo e o indicador informados\. Caso não exista, será exibida mensagem a mensagem “*Produto não Cadastrado*” no campo destinado a descrição do produto\.
+
+Código Final
+
+Alfanumérico
+
+__S__
+
+S
+
+Pasta – Código – Descrição
+
+Este campo será inicializado com o mesmo código de produto informado no campo “Código Inicial”, mas o usuário poderá alterar este conteúdo através da janela de seleção da SAFX2013 ou de digitação, assim como é feito no campo do código inicial\.
+
+Quando o código for digitado, será verificada a existência do produto na tabela de produtos \(SAFX2013\), considerando o Grupo e o indicador informados\. Caso não exista, será exibida a mesma mensagem já definida para o código inicial\.
+
+Informar Exclusão
+
+Alfanumérico
+
+N
+
+S
+
+Checkbox
+
+Através deste parâmetro o usuário poderá selecionar alguns produtos da faixa escolhida para desconsiderar da parametrização\. 
+
+Ao clicar nesta opção, todos os produtos da faixa informada \(código inicial ao final\) serão exibidos no quadro “Produtos Excluídos da Faixa”\.
+
+Ao desmarcar a opção, todo o conteúdo do quadro “Produtos Excluídos da Faixa” será apagado\.
+
+Produtos Excluídos da Faixa
+
+Radio Button
+
+N
+
+S
+
+Neste quadro serão demonstrados todos os produtos da faixa informada \(código inicial ao final\), e o usuário poderá selecionar os produtos que desejar para que sejam desconsiderados da parametrização\. 
+
+O conteúdo deste quadro será automaticamente apagado sempre que o usuário desmarcar a opção “Informar Exclusões”\.
+
+Replicar para os Estabelecimentos
+
+Alfanumérico
+
+N
+
+S
+
+Ao clicar nesta opção, o usuário poderá selecionar os estabelecimentos desejados para realizar a replicação dos dados parametrizados\.
+
+Serão exibidos para seleção *apenas* os estabelecimentos da mesma empresa do estabelecimento parametrizado e do mesmo Grupo informado\.
+
+Para selecionar os estabelecimentos, poderão ser utilizados os botões “Selecionar todos” e “Desmarcar todos”\.
+
+COD\_PARAM
+
+Alfanumérico
+
+Esse campo não deve ser demonstrado na tela nem no relatório\.
+
+Gravar o registro com COD\_PARAM = 789\.
+
+Esse código é carregado pela TFIX31\.
+
+# <a id="_Validações"></a><a id="_Toc517344573"></a>
+
+# <a id="_Toc2189882"></a>Validações
+
+No momento de salvar a operação, serão realizadas algumas críticas, como descrito a seguir:
+
+__Critica 1: Campos Obrigatórios__
+
+Validações de Campos Obrigatórios não preenchidos\.
+
+Quando o campo é obrigatório e não estiver preenchido, exibir mensagem padrão\.
+
+A obrigatoriedade dos campos está definida no tópico “[5 – Regras de Funcionamento dos Campos](#_Regras_de_Funcionamento)”\.
+
+__Crítica 2: Código Final x Código Inicial__
+
+Verifica se o código final é realmente >= código inicial\. Caso não, será exibida a mensagem abaixo, e a operação não será salva:
+
+                                *“Código do produto final deve ser maior ou igual ao código do produto inicial”*
+
+__Crítica 3: Faixas de Códigos intercaladas__
+
+Verifica se já existe outro registro na parametrização que contenha o produto informado, __ou__ a faixa de produtos, quando for o caso \(ou seja, se haverá faixas de produtos intercalados\)\.
+
+Exemplo I:
+
+Registro 1 🡪  Código inicial = 1000500  Código final = 1000599
+
+Registro 2 🡪  Código inicial = 1000600  Código final = 1000699
+
+Registro a ser incluído 🡪  Código inicial = 1000540  Código final = 1000545
+
+Neste exemplo, teríamos um erro na parametrização, pois a faixa do registro a ser importado já se encontra contida na faixa do registro 1\.
+
+ 
+
+Exemplo II:
+
+Registro 1 🡪  Código inicial = 1000500  Código final = 1000599
+
+Registro 2 🡪  Código inicial = 1000600  Código final = 1000900
+
+Registro a ser incluído 🡪  Código inicial = 1000000  Código final = 1000800
+
+Neste exemplo, também teríamos erro na parametrização, pois a faixa do registro a ser gravada engloba  toda faixa do registro 1, e além disso, se intercala com a faixa do registro 2\.
+
+Quando ocorrer este tipo de problema, a operação não será salva, e será exibida a mensagem abaixo:
+
+*                                             “Código Inicial e/ou Final já contido em outra faixa de produtos”*
+
+       = = = = = =
+

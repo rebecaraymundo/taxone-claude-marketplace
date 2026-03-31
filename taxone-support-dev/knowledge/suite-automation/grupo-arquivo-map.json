@@ -1,0 +1,3713 @@
+{
+  "28|2": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_FERRAMENTAS.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX313"
+  },
+  "2|2": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX02"
+  },
+  "5|1": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX07"
+  },
+  "5|2": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX08"
+  },
+  "5|3": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX09"
+  },
+  "3|2": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX53"
+  },
+  "5|105": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 105,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX271"
+  },
+  "20|2": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX49"
+  },
+  "5|17": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 17,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX42"
+  },
+  "5|29": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 29,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX116"
+  },
+  "6|12": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 12,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX235"
+  },
+  "5|38": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 38,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX147"
+  },
+  "3|10": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 10,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX533"
+  },
+  "5|18": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 18,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX43"
+  },
+  "5|84": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 84,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX192"
+  },
+  "6|5": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX108"
+  },
+  "6|6": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX109"
+  },
+  "5|121": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 121,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX319"
+  },
+  "5|122": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 122,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX320"
+  },
+  "5|75": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 75,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX218"
+  },
+  "5|25": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 25,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX112"
+  },
+  "5|26": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 26,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX113"
+  },
+  "17|9": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 9,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX163"
+  },
+  "5|62": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 62,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX198"
+  },
+  "21|6": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX994"
+  },
+  "6|1": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX10"
+  },
+  "1|134": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 134,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2118"
+  },
+  "28|1": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX312"
+  },
+  "28|6": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX324"
+  },
+  "5|125": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 125,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX322"
+  },
+  "6|17": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 17,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX323"
+  },
+  "20|5": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX481"
+  },
+  "5|126": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 126,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX325"
+  },
+  "5|127": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 127,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX326"
+  },
+  "30|1": {
+    "grupo_arquivo": 30,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX537"
+  },
+  "2|1": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX01"
+  },
+  "21|9": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 9,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX201"
+  },
+  "27|1": {
+    "grupo_arquivo": 27,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX274"
+  },
+  "1|124": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 124,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX276"
+  },
+  "1|125": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 125,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX277"
+  },
+  "1|65": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 65,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX13"
+  },
+  "15|1": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX82"
+  },
+  "15|2": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX83"
+  },
+  "15|4": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX85"
+  },
+  "5|39": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 39,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX148"
+  },
+  "5|128": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 128,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX327"
+  },
+  "24|3": {
+    "grupo_arquivo": 24,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX135"
+  },
+  "24|4": {
+    "grupo_arquivo": 24,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX136"
+  },
+  "5|46": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 46,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX158"
+  },
+  "5|124": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 124,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX278"
+  },
+  "2|11": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 11,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2104"
+  },
+  "1|88": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 88,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX39"
+  },
+  "2|3": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX80"
+  },
+  "1|3": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2002"
+  },
+  "1|2": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2003"
+  },
+  "1|4": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2004"
+  },
+  "1|13": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 13,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2018"
+  },
+  "1|60": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 60,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX04"
+  },
+  "3|7": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 7,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX145"
+  },
+  "5|13": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 13,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX63"
+  },
+  "5|130": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 130,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX432"
+  },
+  "2|8": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 8,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX101"
+  },
+  "2|9": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 9,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX102"
+  },
+  "1|97": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 97,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2101"
+  },
+  "10|1": {
+    "grupo_arquivo": 10,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX19"
+  },
+  "3|4": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX75"
+  },
+  "7|1": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX16"
+  },
+  "7|2": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX17"
+  },
+  "7|3": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX18"
+  },
+  "6|2": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX52"
+  },
+  "6|13": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 13,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX236"
+  },
+  "1|1": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2001"
+  },
+  "1|6": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2005"
+  },
+  "1|7": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 7,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2006"
+  },
+  "1|8": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 8,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2007"
+  },
+  "1|87": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 87,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2009"
+  },
+  "1|9": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 9,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2010"
+  },
+  "1|12": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 12,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2017"
+  },
+  "1|5": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2020"
+  },
+  "1|18": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 18,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2024"
+  },
+  "1|43": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 43,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2081"
+  },
+  "1|64": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 64,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2053"
+  },
+  "5|97": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 97,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX253"
+  },
+  "5|107": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 107,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX293"
+  },
+  "1|70": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 70,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX15"
+  },
+  "9|2": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX21"
+  },
+  "1|32": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 32,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2043"
+  },
+  "1|44": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 44,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX25"
+  },
+  "31|1": {
+    "grupo_arquivo": 31,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX335"
+  },
+  "5|40": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 40,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2054"
+  },
+  "5|67": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 67,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX213"
+  },
+  "30|2": {
+    "grupo_arquivo": 30,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX539"
+  },
+  "27|2": {
+    "grupo_arquivo": 27,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX540"
+  },
+  "5|134": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 134,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX333"
+  },
+  "17|12": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 12,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX336"
+  },
+  "5|133": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 133,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX332"
+  },
+  "5|24": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 24,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX110"
+  },
+  "2|14": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 14,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX169"
+  },
+  "5|86": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 86,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX205"
+  },
+  "2|21": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 21,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX231"
+  },
+  "2|16": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 16,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX226"
+  },
+  "2|17": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 17,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX227"
+  },
+  "5|89": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 89,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2113"
+  },
+  "33|20": {
+    "grupo_arquivo": 33,
+    "numero_arquivo": 20,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2119"
+  },
+  "20|1": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX48"
+  },
+  "5|6": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX50"
+  },
+  "5|4": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX51"
+  },
+  "12|1": {
+    "grupo_arquivo": 12,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX71"
+  },
+  "12|3": {
+    "grupo_arquivo": 12,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX72"
+  },
+  "13|2": {
+    "grupo_arquivo": 13,
+    "numero_arquivo": 2,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX100"
+  },
+  "20|3": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX103"
+  },
+  "1|86": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 86,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX104"
+  },
+  "11|6": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 6,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX106"
+  },
+  "1|42": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 42,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2013"
+  },
+  "5|120": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 120,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX160"
+  },
+  "20|4": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX47"
+  },
+  "5|56": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 56,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX183"
+  },
+  "5|57": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 57,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX187"
+  },
+  "5|109": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 109,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX295"
+  },
+  "5|37": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 37,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX138"
+  },
+  "28|5": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX316"
+  },
+  "5|55": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 55,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX185"
+  },
+  "5|90": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 90,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX252"
+  },
+  "7|4": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX96"
+  },
+  "0|1": {
+    "grupo_arquivo": 0,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX2064"
+  },
+  "1|101": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 101,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2103"
+  },
+  "7|5": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX06"
+  },
+  "1|76": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 76,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2097"
+  },
+  "5|58": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 58,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX194"
+  },
+  "5|76": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 76,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX219"
+  },
+  "3|1": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX03"
+  },
+  "4|1": {
+    "grupo_arquivo": 4,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX05"
+  },
+  "6|4": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 4,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX34"
+  },
+  "5|20": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 20,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX44"
+  },
+  "6|3": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX62"
+  },
+  "5|33": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 33,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX120"
+  },
+  "22|5": {
+    "grupo_arquivo": 22,
+    "numero_arquivo": 5,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX125"
+  },
+  "6|7": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 7,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX137"
+  },
+  "5|49": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 49,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX162"
+  },
+  "5|51": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 51,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX190"
+  },
+  "5|52": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 52,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX191"
+  },
+  "5|87": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 87,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX206"
+  },
+  "5|100": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 100,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX261"
+  },
+  "5|34": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 34,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX300"
+  },
+  "5|35": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 35,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX500"
+  },
+  "6|11": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 11,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX520"
+  },
+  "29|1": {
+    "grupo_arquivo": 29,
+    "numero_arquivo": 1,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX2117"
+  },
+  "5|92": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 92,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2114"
+  },
+  "1|128": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 128,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2086"
+  },
+  "1|129": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 129,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX2063"
+  },
+  "6|10": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 10,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX154"
+  },
+  "6|14": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 14,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX266"
+  },
+  "6|15": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 15,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX267"
+  },
+  "6|16": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 16,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX268"
+  },
+  "28|3": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 3,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX314"
+  },
+  "1|84": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 84,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX37"
+  },
+  "1|85": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 85,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX38"
+  },
+  "5|15": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 15,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX91"
+  },
+  "5|71": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 71,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX431"
+  },
+  "5|136": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 136,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX337"
+  },
+  "1|135": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 135,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX338"
+  },
+  "5|140": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 140,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX3042"
+  },
+  "5|141": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 141,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX3043"
+  },
+  "1|136": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 136,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX339"
+  },
+  "5|48": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 48,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX161"
+  },
+  "5|137": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 137,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX3007"
+  },
+  "5|138": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 138,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX3008"
+  },
+  "5|139": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 139,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX3009"
+  },
+  "1|140": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 140,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX341"
+  },
+  "5|129": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 129,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX328"
+  },
+  "5|32": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 32,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX119"
+  },
+  "5|116": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 116,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX309"
+  },
+  "5|118": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 118,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX311"
+  },
+  "1|137": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 137,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_OL.xml"
+    ],
+    "safx_table": "SAFX340"
+  },
+  "1|123": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 123,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX275"
+  },
+  "1|126": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 126,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX279"
+  },
+  "1|131": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 131,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX282"
+  },
+  "1|132": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 132,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX283"
+  },
+  "1|133": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 133,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX284"
+  },
+  "3|8": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 8,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX531"
+  },
+  "3|9": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 9,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX532"
+  },
+  "3|11": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 11,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX534"
+  },
+  "3|12": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 12,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml",
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX535"
+  },
+  "3|13": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 13,
+    "sources": [
+      "BASICOS\\CT_JOB_SERVIDOR_REINF.xml"
+    ],
+    "safx_table": "SAFX536"
+  },
+  "1|10": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX2011",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|11": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 11,
+    "safx_table": "SAFX2012",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|14": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 14,
+    "safx_table": "SAFX2019",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|15": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 15,
+    "safx_table": "SAFX2021",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|16": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 16,
+    "safx_table": "SAFX2022",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|17": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 17,
+    "safx_table": "SAFX2023",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|19": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 19,
+    "safx_table": "SAFX2027",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|20": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 20,
+    "safx_table": "SAFX2028",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|21": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 21,
+    "safx_table": "SAFX2029",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|22": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 22,
+    "safx_table": "SAFX2030",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|23": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 23,
+    "safx_table": "SAFX2031",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|24": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 24,
+    "safx_table": "SAFX2032",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|25": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 25,
+    "safx_table": "SAFX2033",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|26": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 26,
+    "safx_table": "SAFX2034",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|27": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 27,
+    "safx_table": "SAFX2035",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|28": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 28,
+    "safx_table": "SAFX2036",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|29": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 29,
+    "safx_table": "SAFX2037",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|30": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 30,
+    "safx_table": "SAFX2042",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|31": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 31,
+    "safx_table": "SAFX2088",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|33": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 33,
+    "safx_table": "SAFX2044",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|34": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 34,
+    "safx_table": "SAFX2045",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|35": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 35,
+    "safx_table": "SAFX2047",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|36": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 36,
+    "safx_table": "SAFX2048",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|37": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 37,
+    "safx_table": "SAFX2080",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|38": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 38,
+    "safx_table": "SAFX2082",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|39": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 39,
+    "safx_table": "SAFX2083",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|40": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 40,
+    "safx_table": "SAFX2084",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|41": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 41,
+    "safx_table": "SAFX58",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|45": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 45,
+    "safx_table": "SAFX56",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|46": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 46,
+    "safx_table": "SAFX2015",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|47": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 47,
+    "safx_table": "SAFX2016",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|48": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 48,
+    "safx_table": "SAFX23",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|49": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 49,
+    "safx_table": "SAFX24",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|71": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 71,
+    "safx_table": "SAFX2091",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|72": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 72,
+    "safx_table": "SAFX2092",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|73": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 73,
+    "safx_table": "SAFX2094",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|74": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 74,
+    "safx_table": "SAFX2095",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|75": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 75,
+    "safx_table": "SAFX2096",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|77": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 77,
+    "safx_table": "SAFX2098",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|78": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 78,
+    "safx_table": "SAFX2099",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|80": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 80,
+    "safx_table": "SAFX2008",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|82": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 82,
+    "safx_table": "SAFX2014",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|83": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 83,
+    "safx_table": "SAFX2085",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|89": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 89,
+    "safx_table": "SAFX2049",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|91": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 91,
+    "safx_table": "SAFX2050",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|92": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 92,
+    "safx_table": "SAFX2087",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|93": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 93,
+    "safx_table": "SAFX2060",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|94": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 94,
+    "safx_table": "SAFX2061",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|95": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 95,
+    "safx_table": "SAFX2062",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|96": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 96,
+    "safx_table": "SAFX2025",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|98": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 98,
+    "safx_table": "SAFX127",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|99": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 99,
+    "safx_table": "SAFX128",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|100": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 100,
+    "safx_table": "SAFX2102",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|102": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 102,
+    "safx_table": "SAFX2051",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|103": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 103,
+    "safx_table": "SAFX142",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|104": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 104,
+    "safx_table": "SAFX156",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|106": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 106,
+    "safx_table": "SAFX164",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|107": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 107,
+    "safx_table": "SAFX2055",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|108": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 108,
+    "safx_table": "SAFX146",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|109": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 109,
+    "safx_table": "SAFX2056",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|110": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 110,
+    "safx_table": "SAFX2057",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|111": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 111,
+    "safx_table": "SAFX2105",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|112": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 112,
+    "safx_table": "SAFX2058",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|113": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 113,
+    "safx_table": "SAFX2059",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|114": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 114,
+    "safx_table": "SAFX2106",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|115": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 115,
+    "safx_table": "SAFX2107",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|116": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 116,
+    "safx_table": "SAFX2108",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|117": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 117,
+    "safx_table": "SAFX2109",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|118": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 118,
+    "safx_table": "SAFX2110",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|119": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 119,
+    "safx_table": "SAFX2111",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|120": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 120,
+    "safx_table": "SAFX2112",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|122": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 122,
+    "safx_table": "SAFX273",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|127": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 127,
+    "safx_table": "SAFX2116",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "1|130": {
+    "grupo_arquivo": 1,
+    "numero_arquivo": 130,
+    "safx_table": "SAFX318",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|4": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX81",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|6": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX40",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|7": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX41",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|10": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX129",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|12": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 12,
+    "safx_table": "SAFX188",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|13": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 13,
+    "safx_table": "SAFX189",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|15": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 15,
+    "safx_table": "SAFX225",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|18": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 18,
+    "safx_table": "SAFX228",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|19": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 19,
+    "safx_table": "SAFX229",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|20": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 20,
+    "safx_table": "SAFX230",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|22": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 22,
+    "safx_table": "SAFX232",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|23": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 23,
+    "safx_table": "SAFX179",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|24": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 24,
+    "safx_table": "SAFX240",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|25": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 25,
+    "safx_table": "SAFX241",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|26": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 26,
+    "safx_table": "SAFX242",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|27": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 27,
+    "safx_table": "SAFX243",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|28": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 28,
+    "safx_table": "SAFX244",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|29": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 29,
+    "safx_table": "SAFX257",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "2|33": {
+    "grupo_arquivo": 2,
+    "numero_arquivo": 33,
+    "safx_table": "SAFX262",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "3|3": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX79",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "3|5": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX22",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "3|6": {
+    "grupo_arquivo": 3,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX301",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "4|2": {
+    "grupo_arquivo": 4,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX501",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|7": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX502",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|8": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX59",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|12": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 12,
+    "safx_table": "SAFX64",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|14": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 14,
+    "safx_table": "SAFX65",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|16": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 16,
+    "safx_table": "SAFX57",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|19": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 19,
+    "safx_table": "SAFX46",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|21": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 21,
+    "safx_table": "SAFX701",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|22": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 22,
+    "safx_table": "SAFX702",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|23": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 23,
+    "safx_table": "SAFX107",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|27": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 27,
+    "safx_table": "SAFX114",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|28": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 28,
+    "safx_table": "SAFX115",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|30": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 30,
+    "safx_table": "SAFX117",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|31": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 31,
+    "safx_table": "SAFX118",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|36": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 36,
+    "safx_table": "SAFX130",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|41": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 41,
+    "safx_table": "SAFX149",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|42": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 42,
+    "safx_table": "SAFX150",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|43": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 43,
+    "safx_table": "SAFX151",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|44": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 44,
+    "safx_table": "SAFX152",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|45": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 45,
+    "safx_table": "SAFX155",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|47": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 47,
+    "safx_table": "SAFX159",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|50": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 50,
+    "safx_table": "SAFX165",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|53": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 53,
+    "safx_table": "SAFX181",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|54": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 54,
+    "safx_table": "SAFX168",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|59": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 59,
+    "safx_table": "SAFX193",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|60": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 60,
+    "safx_table": "SAFX195",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|61": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 61,
+    "safx_table": "SAFX197",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|63": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 63,
+    "safx_table": "SAFX199",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|64": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 64,
+    "safx_table": "SAFX200",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|65": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 65,
+    "safx_table": "SAFX196",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|66": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 66,
+    "safx_table": "SAFX176",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|68": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 68,
+    "safx_table": "SAFX215",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|69": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 69,
+    "safx_table": "SAFX144",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|70": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 70,
+    "safx_table": "SAFX203",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|72": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 72,
+    "safx_table": "SAFX157",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|73": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 73,
+    "safx_table": "SAFX216",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|74": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 74,
+    "safx_table": "SAFX217",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|77": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 77,
+    "safx_table": "SAFX220",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|78": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 78,
+    "safx_table": "SAFX175",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|79": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 79,
+    "safx_table": "SAFX223",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|80": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 80,
+    "safx_table": "SAFX224",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|81": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 81,
+    "safx_table": "SAFX237",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|82": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 82,
+    "safx_table": "SAFX238",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|83": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 83,
+    "safx_table": "SAFX239",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|85": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 85,
+    "safx_table": "SAFX245",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|88": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 88,
+    "safx_table": "SAFX246",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|91": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 91,
+    "safx_table": "SAFX251",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|93": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 93,
+    "safx_table": "SAFX247",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|94": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 94,
+    "safx_table": "SAFX248",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|95": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 95,
+    "safx_table": "SAFX249",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|96": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 96,
+    "safx_table": "SAFX250",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|98": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 98,
+    "safx_table": "SAFX259",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|99": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 99,
+    "safx_table": "SAFX260",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|101": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 101,
+    "safx_table": "SAFX263",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|102": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 102,
+    "safx_table": "SAFX264",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|103": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 103,
+    "safx_table": "SAFX269",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|104": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 104,
+    "safx_table": "SAFX270",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|106": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 106,
+    "safx_table": "SAFX272",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|108": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 108,
+    "safx_table": "SAFX294",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|110": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 110,
+    "safx_table": "SAFX296",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|111": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 111,
+    "safx_table": "SAFX299",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|112": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 112,
+    "safx_table": "SAFX304",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|113": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 113,
+    "safx_table": "SAFX305",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|114": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 114,
+    "safx_table": "SAFX306",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|115": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 115,
+    "safx_table": "SAFX307",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|117": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 117,
+    "safx_table": "SAFX310",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|119": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 119,
+    "safx_table": "SAFX308",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|123": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 123,
+    "safx_table": "SAFX321",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|131": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 131,
+    "safx_table": "SAFX254",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|132": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 132,
+    "safx_table": "SAFX331",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|135": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 135,
+    "safx_table": "SAFX334",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|142": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 142,
+    "safx_table": "SAFX342",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|143": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 143,
+    "safx_table": "SAFX343",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|144": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 144,
+    "safx_table": "SAFX433",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|145": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 145,
+    "safx_table": "SAFX345",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|146": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 146,
+    "safx_table": "SAFX346",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|147": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 147,
+    "safx_table": "SAFX347",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "5|148": {
+    "grupo_arquivo": 5,
+    "numero_arquivo": 148,
+    "safx_table": "SAFX344",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "6|8": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX139",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "6|9": {
+    "grupo_arquivo": 6,
+    "numero_arquivo": 9,
+    "safx_table": "SAFX153",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "7|6": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX111",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "7|7": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX170",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "7|8": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX180",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "7|86": {
+    "grupo_arquivo": 7,
+    "numero_arquivo": 86,
+    "safx_table": "SAFX45",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "8|1": {
+    "grupo_arquivo": 8,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX11",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "8|2": {
+    "grupo_arquivo": 8,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX12",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|1": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX14",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|3": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX55",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|4": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX54",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|5": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX211",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|6": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX212",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|7": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX207",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|8": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX208",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "9|9": {
+    "grupo_arquivo": 9,
+    "numero_arquivo": 9,
+    "safx_table": "SAFX209",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "11|1": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX68",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "11|2": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX66",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "11|3": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX67",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "11|4": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX69",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "11|5": {
+    "grupo_arquivo": 11,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX97",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "12|2": {
+    "grupo_arquivo": 12,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX70",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "12|4": {
+    "grupo_arquivo": 12,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX98",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "12|5": {
+    "grupo_arquivo": 12,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX700",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "13|1": {
+    "grupo_arquivo": 13,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX90",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|1": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX2089",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|2": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX2090",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|3": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX2093",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|10": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX76",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|15": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 15,
+    "safx_table": "SAFX77",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "14|20": {
+    "grupo_arquivo": 14,
+    "numero_arquivo": 20,
+    "safx_table": "SAFX78",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|3": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX84",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|5": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX86",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|6": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX87",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|7": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX88",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|8": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX233",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "15|9": {
+    "grupo_arquivo": 15,
+    "numero_arquivo": 9,
+    "safx_table": "SAFX234",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|1": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX26",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|2": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX27",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|3": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX28",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|4": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX29",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|5": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX30",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|6": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX281",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|7": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX291",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|8": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX280",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|9": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 9,
+    "safx_table": "SAFX292",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|10": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX265",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "16|90": {
+    "grupo_arquivo": 16,
+    "numero_arquivo": 90,
+    "safx_table": "SAFX210",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "17|1": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX32",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "17|8": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX60",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "17|10": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX329",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "17|11": {
+    "grupo_arquivo": 17,
+    "numero_arquivo": 11,
+    "safx_table": "SAFX330",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "19|1": {
+    "grupo_arquivo": 19,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX35",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "19|2": {
+    "grupo_arquivo": 19,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX36",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "19|3": {
+    "grupo_arquivo": 19,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX105",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "20|6": {
+    "grupo_arquivo": 20,
+    "numero_arquivo": 6,
+    "safx_table": "SAFX214",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|1": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX996",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|2": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX99",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|3": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX991",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|4": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX992",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|5": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX993",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|7": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 7,
+    "safx_table": "SAFX126",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|8": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 8,
+    "safx_table": "SAFX995",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|10": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 10,
+    "safx_table": "SAFX202",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|11": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 11,
+    "safx_table": "SAFX204",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|12": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 12,
+    "safx_table": "SAFX297",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|13": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 13,
+    "safx_table": "SAFX298",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|14": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 14,
+    "safx_table": "SAFX302",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|15": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 15,
+    "safx_table": "SAFX303",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|16": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 16,
+    "safx_table": "SAFX317",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|17": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 17,
+    "safx_table": "SAFX285",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "21|18": {
+    "grupo_arquivo": 21,
+    "numero_arquivo": 18,
+    "safx_table": "SAFX286",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "22|1": {
+    "grupo_arquivo": 22,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX121",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "22|2": {
+    "grupo_arquivo": 22,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX122",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "22|3": {
+    "grupo_arquivo": 22,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX123",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "22|4": {
+    "grupo_arquivo": 22,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX124",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "23|1": {
+    "grupo_arquivo": 23,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX131",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "23|2": {
+    "grupo_arquivo": 23,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX132",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "23|3": {
+    "grupo_arquivo": 23,
+    "numero_arquivo": 3,
+    "safx_table": "SAFX140",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "23|4": {
+    "grupo_arquivo": 23,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX141",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "23|5": {
+    "grupo_arquivo": 23,
+    "numero_arquivo": 5,
+    "safx_table": "SAFX143",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "24|1": {
+    "grupo_arquivo": 24,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX133",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "24|2": {
+    "grupo_arquivo": 24,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX134",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "25|1": {
+    "grupo_arquivo": 25,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX182",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "26|1": {
+    "grupo_arquivo": 26,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX221",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "26|2": {
+    "grupo_arquivo": 26,
+    "numero_arquivo": 2,
+    "safx_table": "SAFX222",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "28|4": {
+    "grupo_arquivo": 28,
+    "numero_arquivo": 4,
+    "safx_table": "SAFX315",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  },
+  "32|1": {
+    "grupo_arquivo": 32,
+    "numero_arquivo": 1,
+    "safx_table": "SAFX538",
+    "sources": [
+      "CAT_PRIOR_IMP"
+    ]
+  }
+}

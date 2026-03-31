@@ -1,0 +1,470 @@
+# MTZ_Report_Fiscal_Tela_Conferencia_Movimento_Registro_Saida_Modelos_P2_PA
+
+- **Fonte:** MTZ_Report_Fiscal_Tela_Conferencia_Movimento_Registro_Saida_Modelos_P2_PA.docx
+- **Modificado:** 2022-02-08
+- **Tamanho:** 100 KB
+
+---
+
+THOMSON REUTERS
+
+Report Fiscal
+
+Tela Conferencia do Movimento do Registro de Saídas Modelos P2/P2A
+
+##### DOCUMENTO DE REQUISITO
+
+__MFS/CH__
+
+__Nome__
+
+__Descrição__
+
+MFS\-5333
+
+Registro de Saídas Modelos P2/P2A
+
+Tela Conferencia do Movimento do Registro de Saída Modelos P2/P2A
+
+Sumário
+
+[1\.	TELA A SER DESENVOLVIDA	1](#_Toc95244743)
+
+[1\.1\.	Diagrama de Casos de Uso	1](#_Toc95244744)
+
+[1\.1\.1\.	UC001 – Manutenção da Estrutura Padrão	1](#_Toc95244745)
+
+[1\.1\.1\.1\.1\.	Fluxo Principal	1](#_Toc95244746)
+
+[1\.1\.1\.1\.2\.	Fluxo Alternativo 1 – Localizar registros \(Exemplo\)	1](#_Toc95244747)
+
+[2\.	Regras dos Campos	1](#_Toc95244748)
+
+[3\.	Recuperação dos dados:	1](#_Toc95244749)
+
+[4\.	Itens do Relatório	1](#_Toc95244750)
+
+[4\.1 – Principal	1](#_Toc95244751)
+
+[3\.2 – Resumo por Decendio	1](#_Toc95244752)
+
+[3\.3 – Resumo por Quinzena	1](#_Toc95244753)
+
+[3\.4 – Resumo da Observação	1](#_Toc95244754)
+
+[3\.5 – Resumo por UF	1](#_Toc95244755)
+
+[3\.6 – Resumo por Alíquota	1](#_Toc95244756)
+
+[3\.7 – Resumo por CFO	1](#_Toc95244757)
+
+[5\.	Tratamento dos Parâmetros p/ UF	1](#_Toc95244758)
+
+[6\.	Tramentos de Situações especiais	1](#_Toc95244759)
+
+# <a id="_Toc95244743"></a>TELA A SER DESENVOLVIDA
+
+\[Incluir o diagrama de caso de uso e casos de uso correspondentes, conforme exemplos a seguir\]
+
+## <a id="_Toc350763243"></a><a id="_Toc95244744"></a>Diagrama de Casos de Uso 
+
+__ __
+
+__UC Estrutura Padrão__
+
+__Usuário __
+
+__UC001 – Manutenção da   __
+
+__Estrutura Padrão__
+
+Manutenção Padrão
+
+## <a id="_Toc350763244"></a><a id="_Toc95244745"></a>UC001 – Manutenção da Estrutura Padrão
+
+\[Descrever a ação deste caso de uso\. 
+
+Ex\.: Este caso de uso descreve o processo de Cadastro de Estrutura Padrão\.\]
+
+__Documentação do Caso de Uso__
+
+__Ator Principal__
+
+__Pré\- Condições__
+
+__Pós\-Condições__
+
+### <a id="_Toc332809652"></a><a id="_Toc332888915"></a><a id="_Toc350763245"></a><a id="_Toc95244746"></a>Fluxo Principal 
+
+\[Descrever a ação principal que será realizada na tela especificada\.
+
+ Ex\.: O usuário deseja realizar o cadastro de uma estrutura padrão\.
+
+__Ações do Ator__
+
+__Ações do Sistema__
+
+\[Descrever a interação do ator com o sistema\. 
+
+Ex\.: O usuário acessa a tela de estrutura padrão\]\.
+
+\[Descrever a ação esperada do sistema
+
+Ex\.:O sistema apresenta a tela, conforme as regras definidas no tópico “Regras dos Campos”\.\]
+
+\[Ex\.:O usuário preenche os campos da Manutenção de Estrutura do Produto\.
+
+__<<Fluxo Alternativo 1>>__
+
+\[Ex\.:O sistema apresenta os campos preenchidos\.\]
+
+### <a id="_Toc332809666"></a><a id="_Toc332888929"></a><a id="_Toc350763246"></a>
+
+### <a id="_Toc95244747"></a>Fluxo Alternativo 1 – Localizar registros \(Exemplo\)
+
+__Ações do Ator__
+
+__Ações do Sistema__
+
+O usuário clica no botão “Localizar”\.
+
+O sistema apresenta os registros cadastrados, de acordo com os parâmetros informados\.
+
+__Fim do fluxo Alternativo__
+
+<a id="_Hlk95213265"></a>
+
+# <a id="_Toc350763252"></a><a id="_Toc95244748"></a>Regras dos Campos 
+
+__Localização da tela:__ Básicos >> Report Fiscal
+
+__Título da tela: __Gerenciais >> Documentos Fiscais >> Conferencia dos Documentos p/ DataMart Movimentos de Saídas >> Ajuste SINIEF\.
+
+__Campo__
+
+__Tipo__
+
+__Obrig__
+
+__Ed__
+
+__Formato/Default__
+
+__Regra__
+
+__MFS/CH__
+
+Estab\. Centralizador
+
+Lista todos os estabelecimentos da empresa de login\.
+
+Caso o estabelecimento seja um estabelecimento Centralizador pertencente a uma Central de Escrituração \(Módulo Controle de Obrigações Estaduais, menu Obrigações >> Central de Escrituração\), ao selecionar este estabelecimento, os estabelecimentos centralizados serão apresentados marcados na lista de Estabelecimentos\.
+
+Obrigação Fiscal
+
+Lista composta pelos livros
+
+\- 102
+
+\- 104
+
+Período
+
+Composto pela Data Inicial e Final
+
+Observação Capa
+
+Check box
+
+Se esta opção for selecionada as observações de ICMS, ICMS\-ST e IPI constantes na Capa do Documento Fiscal \(SAFX07 – itens 37, 41 e 49\) são apresentadas no Resumo da Observação\.
+
+Exibir
+
+Radio Button
+
+S
+
+S
+
+Default: CPF/CNPJ
+
+Este parâmetro se aplica no preenchimento do campo Código do Destinatário da parte Principal do relatório\.
+
+Caso selecionado “CPF/CNPJ”, recuperar a informação do campo CPF\_CGC __\(campo 06\)__ da tabela __X04\_PESSOA\_FIS\_JUR, __vinculado à nota fiscal\.
+
+Deve conter __11 posições \(para CPF\) e 14 \(para CNPJ\) __
+
+Caso selecionado “Código do Destinatário”, recuperar a informação do campo COD\_FIS\_JUR __\(campo 02\) __da tabela __X04\_PESSOA\_FIS\_JUR, __vinculado à nota fiscal\.
+
+Deve conter __14 posições\.__
+
+MFS\-5333
+
+Emite ‘ISENTO’ se Exterior
+
+Checkbox
+
+N
+
+S
+
+Default: Não Selecionado
+
+Este parâmetro se aplica no preenchimento do campo Código do Destinatário da parte Principal do relatório\.
+
+Caso selecionado irá emitir o conteúdo “ISENTO” no campo ‘Código do Destinatário’ para CPF/CNPJ do exterior\.
+
+Obs:
+
+Este campo será desabilitado caso selecionada a opção “Código do Destinatário” no campo “Exibir”\.
+
+MFS\-5333
+
+Campo a ser exibido
+
+radiobutton
+
+Este parâmetro se aplica no preenchimento do campo Codificação da parte Principal do relatório\.
+
+Campo composto pelas opções:
+
+\- Conta Contábil
+
+\- No de Controle
+
+Caso seja escolhida a opção Conta Contábil, na parte Principal do relatório será demonstrada na coluna “Codificação” a Conta Contábil da Capa do Documento Fiscal\.
+
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAABmCAIAAACBX35EAAAAAXNSR0IArs4c6QAAGuJJREFUeF7tXQlc1NX2P7PvG9vAMCzjsMgmIgJKLqCpac/MUl97PtteWa/l3/JafNqrrOxVRpZLbmlmYpaQuGCmIooisguyDMsAM8DMMPu+/e8gIpXFQINizRH5cH+/c+8993x/9577+51z78VkZmaCl0aTBjAffPDBtm3b+Hz+rFmzRpNgfzlZ+lHAOJ3OO+64Izk5eeXKlX85NYymBvejgB1NUnllcWnAC8moew68kPwSEsWZjZ++8vd7l7++vkjduP+NT/adPFSrvZ64jYwt0Uk19Sc+yanSGKyuxlC4dMHUh5ck8WhE4hAapxEX/1Tf3GNOemAmu+zY990YgXDc7IgAvaQs+8tTzTqTTzCbzidJKanPzhQyyfQhlPxbrA4AVfEnnxZIOlqYHFaXRV7XwX5w+W0z0zKDyB4o/neLGEFbYlE0ic4e3bv7+NmmVlGHi0S1ZUWHdnxztKpRprMMoWV6SdVPZw/tLxA7TWaDWq7WaE1Wm9bUXXl4yw+FJRcbZTKZXKXoVBvtDqRLD5Ed5z9h0twHHlw0J5mptAVMT40VxIw8HgOFx3uoJf3FmGQV+Yd2HVpXO+W9nH9O5TJ8ARR1x05t/de/s0h0xuOsaWODCXaHzdAj7tba7FYgk+lMPx6bAoBxlWE16zXKDoUOwEHUd2tMNpe9IwBnwuyH44GCJyrFHcVnCi9Fp73z0LwF46MIBLPawWSQqb/IC0Qam8PyYdFxDrBp5V0qjcGMisLi8HT/UA4NT8KhDEgMfY9Y1isGnkRlsrl+DLx/8pJMdY9aqdJzHnotHoDm68tAXZ2A+J0ARpVErtGZTEDA4Rn+oT40PNZVkmcJTYLnz5+/atUq9IcnqCzvrddeuvX/1l00qSwOR2+JDrta1f7juvn8lz49kNeILnSrpXtWRIXGMhBNzVyy8aTTaeqru7Hq4OpHGQwuupO84JbpqU88PP/lfJ2ybvsbt7+2cvW6nQfffoRKYmIIJErSgkeeWbF6zZ1RK76TqLpd2QfkZSQvfOnLPKnTadM5W1De1LGuuhjc0KhHv5FU9XIjMVSSb66IMTb19je2tzh1NqdTmvflSwuTe/kRLVx98KBLZkRIxpMbl2ROdV2ODY1a8U1fvZ5Q2wAUPG3e66tqjVAXkZg+hkTBY3offMBgafSAiXet3vPEnZPSeKAS1RTvWHtx7mvPbczOXb/krljxytfz6tTo0YOOovzSC+cVT2zanL0/97kJSX72YnFvEQ6r2Wg2W/xDxs14dM2yRPbtj694+YnHZiQzzEad2Yp0Aoqag/sKf6qivZm7bV9u7v9mC0C8JzuvUXn28+U/4if986VdubnZGze/NleRtbO0RtQBGmn1qbz31qmWZr22Izd3/WP3TzCuz9rfqD3zzf+Oi02pD2zLzd2fnbvpiaDzFyryi+pR/9Vryzb+tyo8Y9b7u3J3vJa1VLXuvbxT1VKNZ7sIgKcHLq1GR6VZ6KFjyAOLxuEIrKD49F7h5aJ2aWkeJ2HlrdOSQ6MdHHze0ZwPj1184BYuRd5aoZY0hKa/OHc6eqp78J2Nld2lA60Phc4ODEsScgiYiPjYiEhDd0V1n0I0ooZSeV1rcMIzGdOCgSZnE+t17U4Wk0yM/dsCcvrksKjgIFxHT6MpZ1WpUaM3GGz6upaTJ9jRm29Jj/MTmENCYtoIYpY/iWm5ZSafFRyUliCkGEFrLPryvL1brgWdxSg6u5cQcF/alLnTM1hSeXDX5kdPtkyLlY4JYvaOm54iT/cSCpVKobJwOAT15S7yS7J0qbp7ahviEsb6cljISAT5+HOTTSKp2mbQtEjEIFdGTkhgEQlY4I6LjhSkhbjXUn2nXM/QEmMTQtEwD8Adnz51ypJpCQH06Ix/LoqiiFpO7t797YHvj9d2mW2uWaBJqddaxY60sSFEFlIoRyickPHknUk8ijBl4W2J0Rjj+d2793y7+2BpAzJoiN+msarqK2siuf5BfGTtqSxiyNg0h9iq1Stdtz1JnobEnxtgs/t3dLRawYbMYR85HHajWiKSqfR6tcGi1cjRUNR3i0KiMHyDkeEF0Gn0RqP6auvoVBqFwXK7tUwa0Y/F+dnbLzLgGnmTqPzQFzvWrVr1n/fffW/PcY1BeblIChHL8+XgsAPm5Uhig0oiri3Y9/3mVatW/nfV61/sv9TWhpitFrtSKXc4rvRZIhbH8eVhiWha4mnyNCR+ARyjglhTXiwBy9WZqcmoqtz/wuy1uwsK1GyqX0D41RFTbdDIxDWAJj2A8rJYQVdbKFcp1bJOt1vcpTS2dHWgidTVHD1a2aGsuTO+Uy6cvbqkpDDnx61PTPOhMy8zaAz22tYOq914lR8pvCT7+aU7jwDnqZKS4lMluW88lDImEDGQKXhecDgOd2WIMtqtHa21doPHLYnnP6hgohNSeCGBDZ8v31io1Kl6W6sSlRZuePEz2Sx/QcjYYL5vIDtx6uHcYy3tUhN0tHZKOo9Hp8fySRxKdFi0gcUv2JfXaTDZof7kuQvVP7S4B4nvWMEYPY9+7mwZmJFiFWcOfrrlvRe+Pi/tvqhODY7ij4lgMOh0OhWHx7QpFEiTIb5h7OTQ/LIqkwJJqampPrDz5YWfn6iurVIKSdyouATEj37IRJxcq1HJe3yI1Pi0WScrRTWVNRpQKUxVZfmhyeww3xCGexK6zeVp8w6MoKSMGWYwHi7bvrouB4tFj5VBp1eowjPuv3dKQkgQheIQCFPvSTu9bd3mAhrV4bBSguY8Oy/On0zDEcLSJiealU3frXj7GAODMYub1Ew6za22EINjZkxW244feffFVTzAmrRWYnRYYjLfB26be+58wdasC9kcPMaGsZL9alV6rcrgGxGXNPeRlH073t+Qg8VjjHanDyElw5fNmpreeE6cv/XNC3nIGDIIXbYGKiapS04ghgemLZtV8dWPB8+fKmIRHGpMyiN3J8UF+bpeWTxJOPRGsnv3bh6Pl5GR4ZGC8YwAbnBgfKCq6LxIpVBptVoT3p+duGT5Q5Oj/GjouwSBRmUE8awllRKNqssWGBST/uCy9HACDjWNzAmgU2j4pnNVEp2SHiUMD7llwtiQ2MlxHL1KTQuKFUaO9WNaLXIVKyYzNiyAhDOilwXfxDlxQRSaX4AvjYRXny1uRBo3+0VOnT5jYUY8xzfMRyISyyQdPVobycqOSo/FBY/LHMMLEfBYfmF+2qPZx2q7W7XM0ISUuY8vGM/lhTHlKk13Q2O31mDWMmISxpAjExODw2Ij/XCssBBbXatCKmkzUYCT9tBTmQkBDPcemcFV24/CyHzjGlyA0cFhN4A0b1eFkMcXZia6P5EYEeFH8BvXiMg7QoXiKMC7c8mcxKnxfSZ/hOoZUrF9vaSqqio8PHxIOb3MntUAggB9qEEo9EFiNptnz57t2TpuutI0Gs3atWsXLVoUGxt7/YXfunUrioBwoeDpz46e+QZ3Q0pBfgQ0zcnNzb0htfd//PX0q+L1f7r+dDV6IRl1kHoh8UIy6jQw6gTy9hIvJKNOA6NOIG8v+ZNAgr6R3hQ/o07d7gjk7SXuaOm68nghua7qdqcyLyTuaOm68nghua7qdqcyLyTuaOm68nghua7qdqcyz0GCYqB0UHYM9u+CXbtgz7dwphlUQwo7M4LFAgNCeK7Ij6KAuqBMBCIU/tVPPSBqdl00d8DJepChuO6RI22HrO50/hUqOFdbUydVNZQ1qCw6Vxi5u2Rsr5dIOtqv0cKfleAxSFDQmawU9q2HD96Ct96Cd96DL3KgRgIo+sdNUjVDZyeofs2Nmn0Rdh+HE40D7kmhrAp+PA/aUvjoKNTL3KxkWGydpfXHNr+9dtPmLVvRIs/sA2fOnBPJLvx4QWZWofAzu91htVmtyPN0uXC0tOIXSSsi5INRlR4tLy8tvUYLRwYSbQ9kLQPBfbChBEpK4PA34PcJFJyAKreDz7K/hlPH3VZZDCyYB89Oc5v/DzL6RbPmv/3RZ18g39//3njooXsnC+9+9m4hnYcibjQaU5tcIoEri1w0JtMvkm0SicTh9hoYD8VxKcFWB413w7QoiKADisokh8KTuwEfBmwGSKsgfx1ki0DPg7vugfsnA1yAx7NA0YtWTDo8sgICfoJjp6CiEkqJ8J8EWLMCKpWA1qOFJ8HiZ2EGCpysgu3fwk4TMH3hmY0wsQeKWkGsh0WeX99xLfSwFidWrlJRMGY88pAT9bLW80erEh4Y03S0w2xsM2HC6itywv9xe2BpnUxdpiakhhlycsbfHtlYpyOVqTnJYYpPc0jJDik2KnTQkFXPDFwWPajEQE0EDseFByI8EcZMgtAgwHdAw0U4TYLpcyCDC4pWOFoOFiWcNUFECtw6HgKccK4F8DwICoAJAhgf5gq5j5gFM+9w3eXhoVICVjt0YyEwBu6YAdP4kH8BJC0g7YKmgdblD/aD389uNto7xR3tbWKxuFOjUZr0emmzVG9TyySNl5pKmo2dnCh/AVPe3GUw4QLj4gWC+ISEIFYoz49J4dl6NE2Xqk+3yxSm3nWCg5BnIEHDqN0BOCz0rShxjagum9xjgvYW6JYCfjY89jQ8dyegRVmlVYBCo33SYPE/4Kl7IF0IYilQYyFSAHPGwa3JQGBDTAyEhkKAD5DxoFK7xgRbIKTOgxeehqV3QH05igAdrGWeve/AYRwUChktDEAxrPj+aGeKTwiPiwJu2eRwnt1p6ZTYaezA8ZOThYKJKbFchx1LJeGFYWyWnz/fiaVcjVv/PeE8AwmJCij6XVkPPT1g7LXnyNqrCqGiHeqRNbNBlADweKDzgOIafAGPBRT8TL9WH0a2XKWHqq9g0xp4/wvILe6T3o8FrmUcKCQShcCh2PehLHr0ADoUJj4kKTYhEZEwMJB9pUQGb+z4tMQZSRiuLPfbbytlapPTYtK0tco7KutKJbX788rL6kS0EFbChOhAIBMd7sx1PAMJ+AAuBsK3Qck5qO61EEYD5OyGI/mgRNNTIpwqdkVPy2tAjewD9/dUpGyAku1geQI+yoPvPoLHkOHppZZO6EJIoFk1iqUPBvDoKpthYyavOZ6z68C69edLi9t4XG7y7QJHS/WRf729e+2HX13SmphBDiyu9kx54cd7jlVfqjUYBizV+M06PWTeMUD3hSc/gs17YMVWMBGAQIHo2bBgGozzh64yEH4O9+0AHRWmLIDFUwAGTmevyBYAcKAILhjg6TB469+w0wqRAcAUQo8E7Fzgd8KBj+EnI1oWArOzgK+FS83D1uQQM/LT49njV9v8WeS+uQQ5SCi44wlfFEMeMJ+fapltcTAxBiMljMcMDx2THjPbSCLbUdIXw7UC5hY7nmicNNsEdAaQ2L6DrgYfXkzwtRZYofFVB6fy4ZLYNVNCkERkQEoY+FFBLYHaE3BBBmYWJE2E1DGA7YR8DaQIwMcAnQpoY0EqD9rPuGZZWH+YyYavT4DOCFwucPhgZcFsJpQ09JasBQodMu6DMD009YDSDhOpfUXxrhHT697gfQUgNFVNSUnZsGEDCqkaImgeYL+6k82wQutcr0U3w8/QYuS8oXUeeLL+lEV4yLz/KXVzgxrlheQGKf63qx0eJMhs3hQ/o07d7gg0PEjcKdnLM0wNeCEZpuJGLpsXkpHT7TBL9kIyTMWNXDYvJCOn22GW7IVkmIobuWyY2trap556Ki4ubvny5SNXzU1Rcnd39+LFi9HeDDdkh/F+FDA0Gs1kMmGxWOKQtsK8KXQ8RCHRFzGj0UgikXC46+M9/pl8/ShgTp48OUTJvewjooFXX301Ojp66dKlro/zI1KDt9AhaiAnJ4fL5U6aNMkLyRA1N/LsrhlXW1ubXH7dYj1Gvk3DrcFmszU0NOh0Ixo5+ZvC9aPgguSFF17YtGnTcBvy58mHtoKeN2/eqVOnbkiT+lFwQYI2UEERkjdEjlFVKTKrBrQ1qm0ocb6ea0A/Ct5XxaEpte1iYV723u27C882gKUPO4NCcunY3n3r954ouKSQGww6xaXyY3s3rt9bUCH5VXLw6ryQDK6jyxxOm1XXWFbZIK2TKCRScVVto9Lq6lAWeVuXqLpSqpZrmivO1VcXlTXUV59t1sh6pA2VosaynyXFbfLBAucB650Cu4mJ3WSQ5H9zSR8QNDlj5rRAh75c7XQN98YOqVlr4i9c9OSdvo76+rJ9Ryqr2jvGLn3mxbt5GnHdgf3nBiS76usGnUdhr3PUoJvtH4VsdjugnaVZrdkFO9Z98lUdLvXOICIFxWsyE6Ymzpk/j9Ny8YdCpT8Kc2JQ1dJQHg6P4/mDWqlsEg1IokDNQZddYFFNXnJPAyaHM7/bN3XSomWPTg+yrvuiXKdD8ZcYLA6LoxNJIdzxqWSbTKPW60ncYB7gcChAGs0YWKQBSTT+DTosYW1eSNwDpHf3BRLFjx8aHRsdwuXoWjRoaQ/aclfeKmm71IxjBoxJi8a3E63tEjtJb0CnUvSowYKhExiMq0m9G3VhHYOi5kYpfwUWLJ4YGJlMU8l6yisaWxTdKBpeVtnaKGkTt8qaLhQdK26/eEnrNDNCfNgkfMvhorqiw00WEiNUGEa9mnSQ0WqAQQh77c36B8v2F7xPIJNi52bSJeL2Q4dKqlvqfJIi2wobypukOiCbDOKdeRfydpZShEHT5s8U+psOHyo/dLiHIhQm3ZbEvpoMCBgrGFR3Oqtnj5QZWsznqOIePADVYbWaLRaT2WJGv2wOG3rFRm+WNrvNgo5XQf9NFtcFu8112gpKWiyumz9L2i+fsnMNurq3441wDQz6nIxWBgweTyQQSEQCEf3CYXBEPB75VpB5JxDJ6CKZRHBdQMc7XU4SCK6bP0u6MSphCd6Ra5Q9ACNwutYoa+FNJ473g8qog8wLiReSUaeBUSeQt5d4IRl1Ghh1Anl7iReSUaeBUSeQt5d4IRl1GhiaQG3VhQf2ZG//eqDv3VWCzWhp+OFsrUQhQwfkuXzv2Rs+z0a+d1mfK74/OXh1A3aHMCmN0pqD58XoGG5fQaIwZlw02oOmj7TK9u7Gc+rAefH+FCIZzLpucVPJ2Vpl73mWvgK+MCazl1tRd7xW1N6scB3WHZoyLzaIwiGjw1fbpTXHz4vBdb43+PrxhUmZ0f4ANyDwdnCF/CYH8r3rW6oqG6X1nT1mu91a2yjgh/vi0dYwZp2ys7G0smB/NZfnE0904hqQ712rUBoaK0UEHZaMlZ67kkTnNNKj/X5//yf8FXeJxdR1qeG7z978qsao6wlPXzbnXj7/Nh+0UwkGTFpZdUnuqV3vKOZPHjOVQiQYO5vLD25b83GBgmpCR73yJqXMuTc2eJYfyM8f3px9uPicGEuk0cffE/Xk3ZHjwwiq1tKCz5a/W8GzO3BEbOy4jLt8MqOR2+DmgqTX977nEmsuLy1BgO+oaKhQO4OZrt169D2y6tPHsk9LKJkWk7quSV3d3hH3zIsPdp7ZfKL+QLkxPLg/2VWP9Y/2+/1zh/t97+LG6gtbP9bf/9GB3O8/Wsyy1WzaW9K3n0/tqU0bs57fdKh3UxlEmqrjxRcqvpu44dujZ0pKDm9bzIqr2ZR1Rqc7k7VJmRny+PclJUcP7XnFP2t7bXVjG2iMeotaM+2xTT/mFpaUlHy1/ePFKa6tbm4yuuJ734t871k763GpC3i9vndEPhHjM57/cGk8O5QGGmWPXvNz3/uA5FB87xqVzmRvi7plYgQrKCIxIoIe4dPeJrXb7dLT689rfITT3npwJvJz9krAiJl7+wOv7n16cjDaAIwSHBERER7hI+rS2uKXvb1s/iPThWjjKvSdGmO1od3zHBqxvFlcVC/gBtPYbAqFQiIR0d5PNyMh3/sRl+99ybJHM12+97Je3zsKiKBg/fkEIgnr2o3M6WSTPeN7V6u0RoNIGBlKw9PIPP9Au6+PuE2CsdlpQQkTxk9LS4oJ7R/98QxuYEhkajirV7ddnWKcuiMsNYlJ9BfEhnL9tJVFe9atWrNPPX9mSBjPXyNXqZuK8R2F7/9nzYvPP//hV5sLXUdD34SEFE6mIt97VGw0/6rvHe3QhwNkX/uISifQBjjb/4Dv3WQ0WU0yHxYNiyUAjUyxESlKlRp55pljpkwcGydAOzP9ilAgRWfd8YLKeqeTN/m2eCYZHdLuCkEzmfRmjY4SGN9tspt0Rh8/QdTUuQKaUatTKCSi8rrq4tJOsNxsYRgu33tUMhWdVl9W3tCs6HL53iuQ771dbh6oGRaXRaPimw+dqTtzCPnemaER4QOSQ/G99/rGyGarDZxo0z67HeOwu5Zl/aZ/y2G1G7ra6gsOfVHSTeElPH4rOonw8vnBNOH0zGXvr//wv7d2vXu2tLTEPi4p87EtKAh5y5asHTvWPxQzA1e0o8JqsN5kcRgu3/ttMxjS9o4jh0svtjT4It/7mcaKpkaJy8JicDhaQACdTOYEh7HZAZb8wxWH85VU4ZgJc5IGJAO47vven5lzKvvjuQs2l8h0eqf07JY1a5e/uEnkRJ75XqqvyN36L97L33Uouy5f0DfLiz5YFDrnlc9PnO6y2X7lUbbqZKJNf1u+du+Wsz0ufmRUevMpijbvXbt8weYW2ZWiR4/73S3fu8WCHO+9v5Dv/bKrvbdlDocdudrRnsHoD5sNueatZuSJv+x7H5Acgu+dyaYRsbzqwtI2c097bXOjvqErqDc+7Fpjvqam6kj+m68rM9av+vvCpAQfFEWGJmc6KF3/ypaDW0+3ozwoBqCzvZ5JI7A1lacPblm4oUyh6wuspFLIIUHcG7Ie8I8aMOR7JxCQ4733F/K9X3a19w4lGAwWudqxyMSjWDsccs3jicgTf9n3PiA5BN87IShEEDF/piEna+WKNz7O73b6ZN46jgzX9MzLGorPH9uee+5I3ndfrn/vPytefO7V9z7bXKzVs+LCeo6Wfv3Gc88998qqNXsdixOixyZFhjKIEFjxzluvv4CurzksEbFm/H0cmep1+v/GA9Lve2f7hSdMf3iGkIKmepyQieOnzRvHv/o2x+TwI1IWTQiluqYWDhyLEx45/e44f6vBrHSRWqPV2QkO/pR5SaHxfk50RWO0sZIfTh4bLkD/oic8mES3GrToupkuCIhKn8IH0s31ovhH+9dQ8g9rI8HRM/57UpLBbYkna/tlWd4zeofy2F5f3pvzPfr66ug61+aF5DorfPDq/h88zbu9H1yNAAAAAABJRU5ErkJggg==)
+
+Caso seja escolhida a opção No de Controle, na parte Principal será demonstrada na coluna “Codificação” o No de Controle, que é uma composição do número do documento \+ código do estabelecimento\.
+
+![](data:image/png;base64,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)
+
+ICMS Retido/Outras
+
+Este parâmetro se aplica a Base Outras de ICMS demonstrada na Parte Principal, nos Resumos p/ Decêndio, p/ Quinzena, p/ UF  e p/ CFOP\.
+
+Caso seja selecionado, o Valor do ICMS\-ST será somado à Base Outras de ICMS, nas seguintes condições:
+
+\- Se o campo Apropria ICMS\-ST da NF estiver marcado e o parâmetro 25 dos Parâmetros p/ UF do módulo ICMS desmarcado\.
+
+\- Se o campo Apropria ICMS\-ST da NF estiver desmarcado e o parâmetro 26 dos Parâmetros p/ UF do módulo ICMS desmarcado\.
+
+Parâmetros p/ UF do módulo ICMS:
+
+![](data:image/png;base64,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)
+
+Quando os parâmetros 25 e 26 são marcados, o valor do ICMS\-ST é demonstrado no Resumo da Observação e não irá compor a Base Outras de ICMS\.
+
+OBS de Redução
+
+Esse parâmetro se aplica ao Resumo da Observação\. 
+
+Se marcado, é atribuída uma observação às notas fiscais que tenham Base Reduzida de ICMS, demonstrando o valor da base reduzida de ICMS\.
+
+Observação: “Redução de R$9999,99 na Base do ICMS\.
+
+Onde R$9999,99 é o valor da base reduzida\.
+
+<a id="_Hlk95218263"></a>
+
+# <a id="_Toc95244749"></a>Recuperação dos dados:
+
+__Origem dos Dados__: Tabelas de Documento Fiscal \(SAFX07, SAFX08, SAFX09\)\.
+
+Critérios de Seleção:
+
+\- Codigo da Empresa de login
+
+\- Estabelecimento informado na tela
+
+\- Data fiscal compreendida no período da geração
+
+\- Classificação do Documento Fiscal = 1, 2, 3, 4
+
+São recuperada notas fiscais com e sem itens\.
+
+# <a id="_Toc95244750"></a>Itens do Relatório
+
+## <a id="_Toc95244751"></a>4\.1 – Principal
+
+Os livros de saída do modelo Ajuste SINIEF \(P2 e P2A\), que apresentam os valores das bases \(tributada, isenta/redução e outras\) em linhas distintas, devem fazer o lançamento das bases da seguinte forma:
+
+Consolidação dos valores por documento fiscal:
+
+As bases tributadas devem ser totalizadas por Imposto \(ICMS, IPI ou ST\), CFOP e Alíquota
+
+As demais bases \(isenta/redução e outras\) devem ser totalizadas por Imposto \(ICMS, IPI ou ST\) e CFOP\. Neste caso, a alíquota não precisa ser considerada, uma vez que ela não aparece nas linhas referentes a estes valores\.
+
+__ __
+
+__Exemplo__: Supondo uma nota com os seguintes itens:
+
+__   Aliq ICMS__
+
+__      ICMS__
+
+__      BASE 1 __
+
+__      BASE 2__
+
+__       BASE 3__
+
+__      BASE 4__
+
+Item 1 \(cfop 5101\)
+
+0,00
+
+0,00
+
+0,00
+
+100,00
+
+0,00
+
+0,00
+
+Item 2 \(cfop 5101\)
+
+10,00
+
+8,00
+
+80,00
+
+20,00
+
+0,00
+
+0,00
+
+Item 3 \(cfop 5101\)
+
+12,00
+
+48,00
+
+400,00
+
+0,00
+
+0,00
+
+0,00
+
+A demonstração das bases no livro deve será feita da seguinte forma:
+
+__CFOP__
+
+__ICMS / IPI__
+
+__Cod__
+
+__Base de Cálculo__
+
+__Alíquota__
+
+__Imposto Creditado__
+
+5101
+
+ICMS
+
+1
+
+80,00
+
+10,00
+
+8,00
+
+5101
+
+ICMS
+
+1
+
+400,00
+
+12,00
+
+48,00
+
+5101
+
+ICMS
+
+2
+
+120,00
+
+## <a id="_Toc95244752"></a>3\.2 – Resumo por Decendio
+
+## <a id="_Toc95244753"></a>3\.3 – Resumo por Quinzena
+
+## <a id="_Toc95244754"></a>3\.4 – Resumo da Observação
+
+## <a id="_Toc95244755"></a>3\.5 – Resumo por UF
+
+## <a id="_Toc95244756"></a>3\.6 – Resumo por Alíquota
+
+## <a id="_Toc95244757"></a>3\.7 – Resumo por CFO
+
+# <a id="_Toc95244758"></a>Tratamento dos Parâmetros p/ UF 
+
+Parâmetro
+
+Regra
+
+6 – Observação Redução Base Cálculo
+
+Gera uma observação no Resumo da Observação com o valor da Base de Redução de ICMS\.
+
+29\- Observação Capa/Item \(P1/P2\)
+
+44 – Cálculo do ICMS c/ base na Resolução SEFCON n 4055
+
+Zera Alíquota do ICMS, Valor do ICMS e bases tributada, isenta e outras de ICMS\.
+
+# <a id="_Toc95244759"></a>Tramentos de Situações especiais
+
+Situação
+
+Regra
+
+Nota Cancelada
+
+Zera valor contábil, ICMS, Alíquota
+
+      pItem\.VLR\_CONTAB\_ITEM    := 0;
+
+        pItem\.VLR\_BASE\_ICMS\_1    := 0;
+
+        pItem\.VLR\_BASE\_ICMS\_2    := 0;
+
+        pItem\.VLR\_BASE\_ICMS\_3    := 0;
+
+        pItem\.ALIQ\_TRIBUTO\_ICMS  := 0;
+
+        pItem\.VLR\_TRIBUTO\_ICMS   := 0;
+
+        pItem\.COD\_CFO            := null;
+
+Transferência de Crédito de ICMS
+
+Zera valor contábil,
+
+    	 pItem\.VLR\_CONTAB\_ITEM    := 0;
+
+          pItem\.VLR\_BASE\_ICMS\_1    := 0;
+
+          pItem\.VLR\_BASE\_ICMS\_2    := 0;
+
+          pItem\.VLR\_BASE\_ICMS\_3    := 0;
+
+          pItem\.ALIQ\_TRIBUTO\_ICMS  := 0;
+
+          pItem\.VLR\_TRIBUTO\_ICMS   := 0;
+

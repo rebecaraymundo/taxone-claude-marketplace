@@ -1,0 +1,2779 @@
+# Sped_Fiscal_Regras_Bloco_H
+
+- **Fonte:** Sped_Fiscal_Regras_Bloco_H.docx
+- **Modificado:** 2025-10-09
+- **Tamanho:** 100 KB
+
+---
+
+<a id="OLE_LINK109"></a>Quadro de Revisões
+
+__                                                Revisões realizadas a partir de 30/09/2009 \(entrega do Sped Fiscal\)__
+
+__Data__
+
+__OS / Chamado__
+
+__Descrição__
+
+__Responsável__
+
+06/11/2009
+
+OS2388\-E14  
+
+Gravação das notas denegadas / inutilizadas nos registros C100 e D100 a partir da nova tabela SAFX130
+
+Vânia Dias Mattos
+
+25/11/2009
+
+CH72944
+
+Alteração na regra de preenchimento do campo 13, registro D100
+
+Vânia Dias Mattos
+
+30/11/2009
+
+OS2931\-A
+
+Geração do novo registro 0500, conforme Ato Cotepe 38/2009
+
+Vânia Dias Mattos
+
+10/12/2009
+
+OS2931\-Cge
+
+Geração dos novos registros 1700, 1710 e 1800
+
+Camila Orlandi
+
+22/12/2009
+
+CH74570
+
+Alterar regra de geração do campo 03 do registro H010
+
+Camila Orlandi
+
+28/12/2009
+
+OS2388\-E18
+
+Geração do novo registro C105
+
+Vânia Dias Mattos
+
+12/02/2010
+
+CH77581
+
+Alteração na geração das Classes de Consumo \(Registros C500, C600 e 1500\)
+
+Camila Orlandi
+
+24/03/2010
+
+CH78835
+
+Alteração na regra de recuperação dos documentos cancelados/inutilizados, para geração do registro 1710
+
+Liliane V\. Assaf
+
+14/03/2010
+
+OS2388\-E20
+
+Alterar regra de geração do campo 24 do registro D500
+
+Luis Pessoto
+
+31/03/2010
+
+OS2931\-E
+
+Atendimento ao PIM registros 1700 e 1710, e alterações no registro 1800
+
+Anderson Lopes
+
+08/04/2010
+
+OS2931\-B5
+
+Geração do novos registros 0300, 0305, 0600 e registros do Bloco G \(AC 38/2009 e alterações feitas no AC 47/2009\) 
+
+Vânia Dias Mattos
+
+08/07/2010
+
+OS2931\-B9
+
+Alterações do Bloco G \(Guia Prático vrs 2\.0\.1 de Maio/2010\) \.
+
+Vânia Dias Mattos
+
+21/07/2010
+
+OS2931\-B11
+
+Alterações Geração Bloco G \(etapa de testes no validador\)
+
+Vânia Dias Mattos
+
+23/07/2010
+
+CH86865
+
+Contemplação do Convênio ICMS 51/00 nos registros C105 e E210
+
+Marcos Roberto de Oliveira
+
+26/07/2010
+
+OS2931\-B2
+
+Alterar tratamento que compõe o Valor de Crédito do ICMS\-ST 
+
+Juliana Garcia
+
+11/08/2010
+
+OS2931\-B7
+
+Tratamento dos Bens Resultantes x Componentes
+
+Vânia Dias Mattos
+
+26/08/2010
+
+OS2388\-E19
+
+Alterações publicadas no Ato Cotepe 47 de Julho/2010\. Incluir o modelo 29 – Água Canalizada no bloco C500, C510 e C590\.
+
+Juliana Garcia
+
+10/09/2010
+
+OS2931\-B12
+
+Geração do Bloco G p/a opção “Geração – PIM” \(YAMAHA\)
+
+Vânia Dias Mattos
+
+22/09/2010
+
+OS2931\-B10
+
+Cálculo dos Créditos Extemporâneos p/ Geração do G126
+
+Vânia Dias Mattos
+
+15/10/2010
+
+OS2931\-B13
+
+Totalização das Aquisições de mesmo Código de Bem;
+
+Ajustes G125 \(campo 10\-VL\_PARC\_PASS\) e G130;
+
+Vânia Dias Mattos
+
+02/11/2010
+
+CH87096\-A
+
+Ajustar campo 05 – Registro C790 para itens de desconto
+
+Camila Orlandi
+
+25/11/2010
+
+OS3169\-DW1
+
+Alteração no critério do Registro C110 devido o novo módulo EFD\-PIS/COFINS utilizar outro tipo de observação\.
+
+Juliana Garcia
+
+03/12/2010
+
+OS2931\-F
+
+Regras p/ geração dos novos registros das Sub Apurações \(1900\);
+
+Alteração de regras do Bloco E devido às Sub Apurações; 
+
+Vânia Dias Mattos
+
+06/12/2010
+
+OS2931\-B16
+
+Alteração na geração do registro G125 \(tipo movimento = “CI”\)
+
+Vânia Dias Mattos
+
+07/12/2010
+
+OS2388\-E19
+
+Alteradas as regras de geração do novo campo MÊS\_REF \(registros E116 e E250\)\.
+
+Vânia Dias Mattos
+
+10/01/2011
+
+OS2388\-Sge
+
+Alteradas as regras de geração dos registros D100, D160, D161 e D162\.
+
+Criadas as regras de geração dos registros D170 e D180
+
+Natália Resino
+
+22/02/2011
+
+CH99933
+
+Alterada a regra de geração do Registro 0305\.
+
+Juliana Garcia
+
+01/03/2011
+
+CH98286
+
+Alteração na regra do Registro 0500 para atendimento do Guia Prático 2\.0\.3
+
+Juliana Garcia
+
+11/03/2011
+
+CH99471
+
+Alteração na regra do campo 07 do Registro G130\. O campo informava a chave de NFE para qualquer tipo de documento fiscal sendo que é somente para documento de emissão própria\.
+
+Juliana Garcia
+
+11/03/2011
+
+CH94166
+
+Alterada a regra do campo 09 do Registro C100\. O campo era preenchido quando a nota eletrônica era de emissão própria, porém no Guia Prático 2\.0\.3 do Sped Fiscal, a regra de validação informa ser facultativo o preenchimento do campo quando for emissão de terceiro\. Será obrigatório para Emissão Própria, e se houver a informação no campo será também preenchido para Emissão de Terceiros\.
+
+Juliana Garcia
+
+21/03/2011
+
+CH99945
+
+Correção na regra do Campo 04  \- Registro C420\. 
+
+Juliana Garcia
+
+29/03/2011
+
+OS3114\-E
+
+Alteradas regras as do Bloco G para o tratamento dos dados do CIAP a partir dos cálculos feitos por Estabelecimento __e__ IE\-PIM\.   
+
+Vânia Dias Mattos
+
+13/04/2011
+
+CH103152
+
+Alterado tamanho do campo 06 “Nome empresarial da entidade” no registro 0000\. De acordo com a nova versão do Guia Prático \(Versão 2\.0\.4\), este campo pode possuir até 100 caracteres\.
+
+Tatiane Lima
+
+12/05/2011
+
+OS2768\-P
+
+Ajustes na geração do C700 e 1500 p/as empresas que apuram o ICMS das NF’s de EE pelo vencimento, ao invés da emissão\.
+
+Vânia Dias Mattos
+
+13/05/2011
+
+CH96507\-A
+
+Novo LOG de erro e tratamento para o registro 0300 quando a conta contábil ultrapassar o tamanho limite de 60 caracteres
+
+Tatiane Lima
+
+17/05/2011
+
+CH103949
+
+Correção na geração do campo 05 \(Código do Município do local de coleta\) do registro D161\.
+
+Tatiane Lima
+
+17/05/2011
+
+CH103949
+
+Correção na geração do campo 08 \(Código do Município do local de entrega\) do registro D161\.
+
+Tatiane Lima
+
+17/05/2011
+
+CH92772
+
+Alteração da geração do registro D100 para notas fiscais conjugadas \(mercadoria e serviço\) de serviço de transporte \(modelo 07\)\.
+
+Tatiane Lima
+
+17/05/2011
+
+OS\-CH107481
+
+Alteração na regra do registro G130 onde quando o tipo de movimento for igual a perda, então não gerar o registro G130
+
+Tatiane Lima
+
+18/05/2011
+
+CH99308\-A
+
+Alteração na mensagem de Log quando não encontrado o livro de apuração ICMS P9,  referente ao código 108\.
+
+Tatiane Lima
+
+20/05/2011
+
+CH104488
+
+Criação de Log de erro para o registro 0305\.
+
+Tatiane Lima
+
+30/05/2011
+
+OS2388\-E22
+
+Alteração da regra do campo 15 do registro E110 para atender nova versão do guia prático\.
+
+Tatiane Lima
+
+30/05/2011
+
+OS2388\-E22
+
+Alteração nas regras de geração do G125 para mostrar as baixas dos Bens “Informativos”, p/ atender nova versão do guia prático\.
+
+Tatiane Lima
+
+13/06/2011
+
+OS3065\-DW
+
+Alteração no preenchimento dos campos 03\-CNPJ e 05\-CNPJ do registro 0100
+
+Vânia Dias Mattos
+
+13/06/2011
+
+OS2388\-E17
+
+Criação da regra de geração dos registros 0400 e C170 referente ao código da natureza de operação quando ultrapassar 3 caracteres\.
+
+Tatiane Lima
+
+16/06/2011
+
+OS3168
+
+Criação da regra de geração dos registros 0305 e 0600 referente ao código do centro de custo quando ultrapassar 28 caracteres\.
+
+Tatiane Lima
+
+22/06/2011
+
+OS3335\-A
+
+Alterações na geração do D697 
+
+Vânia Dias Mattos
+
+28/06/2011
+
+OS3471
+
+Alterações na geração dos registros D590 e D690 \(GP vrs 2\.0\.5\) 
+
+Vânia Dias Mattos
+
+11/07/2011
+
+OS3230
+
+Alteração da regra dos campos NRO\_RE e DT\_RE referente ao registro 1100\.
+
+Tatiane Lima
+
+14/07/2011
+
+CH105713
+
+Criada regra do campo 15 do registro 0000 para quando o tipo de atividade da empresa for comércio\.
+
+Tatiane Lima
+
+11/08/2011
+
+3471\-A
+
+Alterada a regra para IND\_FRT de documentos a partir de Jan/2012 para atendimento do guia prático 2\.0\.5\.
+
+Tatiane Lima
+
+22/08/2011
+
+3217\-A
+
+Alterada a geração dos registros 0200, C170, C425, C470, C495, C510, C610, D510, D610, 1510, para que passem a buscar as informações de código da natureza do serviço e descrição a partir dos novos campos da SAFX2018, quando houver preenchimento\.
+
+Tatiane Lima
+
+02/09/2011
+
+CH112840
+
+Alterada a regra do registro D300 para que seja gerado por Inscrição Estadual única\.
+
+Tatiane Lima
+
+22/09/2011
+
+CH103884
+
+Alterada a regra do registro C495\.
+
+Vanessa W\. Bravo
+
+27/09/2011
+
+OS3227
+
+Alteração no tratamento de notas extemporâneas de SAIDA\.
+
+Tatiane Lima
+
+29/09/2011
+
+CH108997
+
+Altera a regra de geração do Campo 09 do C100 para que verifique o parâmetro “Gerar Chave de acesso NFE para notas fiscais emitidas por terceiros”\.
+
+Tatiane Lima
+
+07/11/2011
+
+CH117570
+
+Alterada a regra do campo 03 \(DESCR\_COMPL\_AJ\) do registro C197 para que sejam consideradas todas descrições complementares\.
+
+Tatiane Lima
+
+10/11/2011
+
+CH106717
+
+Alterada a regra de geração do registro E200 para que não considere a UF do estabelecimento quando não houver operações internas de ICMS\-ST\.
+
+Tatiane Lima
+
+01/12/2011
+
+OS3423
+
+Alteração da tabela de versão de leiaute, nova versão 1\.0\.4 – início da obrigatoriedade 01/01/2012\);
+
+Tatiane Lima
+
+13/12/2011
+
+OS3401\-A
+
+Inscrição Estadual Especial do Paraná para o registro 0015
+
+Tatiane Lima
+
+22/12/2011
+
+CH121480
+
+O objetivo dessa demanda é realizar a correta geração do campo 15 – IND\_ATV do Registro 0000\.
+
+Natália Resino
+
+27/12/2011
+
+OS3516
+
+Atualizações do Ato Cotepe 52 de 29/11/2011 referente aos campos IND\_FRT, IND\_PGTO e obrigatoriedade dos registros D400 e D411 saídas do perfil B\.
+
+Tatiane Lima
+
+04/01/2011
+
+OS3526\-B
+
+Alteração no tratamento de documentos fiscais com situação especial “D – Operação de Compra/Venda para entrega Futura”
+
+Tatiane Lima
+
+12/01/2011
+
+OS3423\-B
+
+Novo campo para o Bloco H005 e inclusão do novo registro H020, conforme alteração legal descrita no Guia Prático 2\.0\.7 para junho/2012\.
+
+Tatiane Lima
+
+16/01/2011
+
+OS3423\-A
+
+Criação dos blocos D195 e D197, conforme alteração legal descrita no Guia Prático 2\.0\.7 para Junho/2012
+
+Tatiane Lima
+
+19/01/2012
+
+CH234\_2012
+
+Alteração no tratamento do campo 07 do registro C945 para UF = ‘BA’
+
+Cynthia Gomes
+
+20/01/2012
+
+OS3547
+
+Atualização legal – Santa Catarina
+
+Vanessa W\. Bravo
+
+23/01/2012
+
+Ch115852
+
+Alteração no tratamento dos campos VL\_ ICMS\_UF e VL\_BC\_ICMS\_UF
+
+Cynthia Gomes
+
+31/01/2012
+
+CH1117\_2012
+
+Correção no tratamento de CT\-e \(Conhecimento de transporte eletrônico\) – D100\.
+
+Tatiane Lima
+
+08/02/2012
+
+OS3543\-A
+
+Alteração no tratamento de concatenação do campo COD\_ITEM \- 0200
+
+Tatiane Lima
+
+15/02/2012
+
+CH3935\_2012
+
+Alteração no tratamento de CT\-e \(Conhecimento de transporte eletrônico\) –D100
+
+Tatiane Lima
+
+06/03/2011
+
+OS3557
+
+Incluído o código de classe de consumo 08 para os documentos de modelo 28 e 06\.
+
+Tatiane Lima
+
+22/03/2011
+
+OS3417
+
+Alterada a regra do registro 1400 para considerar produtos dos itens de documentos de conhecimento de frete\.
+
+Tatiane Lima
+
+13/04/2012
+
+CH8720\-A\_2012
+
+Alterada a regra de geração do registro 0150
+
+Tatiane Lima
+
+26/04/2012
+
+OS3423\-C
+
+Criação dos Registros 1010, 1390 e 1391, conforme alteração legal descrita no Guia Prático 2\.0\.7 para Julho/2012
+
+Tatiane Lima
+
+30/04/2012
+
+OS3598
+
+Alteração no parâmetro de geração da CHV\_NFE do C100 
+
+Vânia Mattos
+
+09/05/2012
+
+OS3352
+
+Alteração na recuperação do Registro E250 para as GNREs automáticas
+
+Juliana Garcia
+
+14/05/2012
+
+CH9664\_2012
+
+Alterada a regra de geração do campo “Chave CTE” para dos documentos de transporte \(D100\) conforme publicado no novo guia prático VRS 2\.0\.8\.
+
+Tatiane Lima
+
+23/05/2012
+
+OS3423\-D
+
+Aumento do campo OBS do registro 1391
+
+Tatiane Lima
+
+01/06/2012
+
+OS3851
+
+Correção dos registros de Telecom \(campos VL\_BC\_ICMS\_UF e VL\_ICMS\_UF\)
+
+Vânia Mattos
+
+06/07/2012
+
+CH11564\_2012
+
+Correção no tratamento no registro D100 para Chave\-Nfe\.
+
+Vanessa W\. Bravo / Tatiane Lima
+
+16/07/2012
+
+CH17962\_2012
+
+Alterada a regra de geração do campo 16 do registro 1391 para que busque as informações da tabela de movimento de estoque
+
+Tatiane Lima
+
+27/07/2012
+
+CH11475\_2012
+
+Alterada a regra do C100 campo 03\. 
+
+Juliana Garcia
+
+02/05/2012
+
+CH16797\_2012
+
+Alterada a regra do campo 15 do 1391 para considerar Álcool Anidro e Hidratado
+
+Tatiane Lima
+
+09/08/2012
+
+OS3701\-A
+
+Alterada a regra de geração do registro H020
+
+Tatiane Lima
+
+20/08/2012
+
+CH21598\-A\_2012
+
+Adicionado uma regra dentro dos campos 14 e 15 para considerar as outras entradas de mel residual
+
+Tatiane Lima
+
+04/09/2012
+
+OS3736
+
+Atualiza a regra de geração do campo 04 do registro 1391 para que busque as informações do inventário considerando a data do saldo inicial parametrizada na tela de geração do SPED Fiscal
+
+Marcos G\. de Paula
+
+13/09/2012
+
+CH23602\_2012
+
+Atualiza a regra de geração do campo 04 do registro 1391 para que gere o Estoque Inicial com zero considerando que não há registros de Inventário\.
+
+Marcos G\. de Paula
+
+18/09/2012
+
+OS\-3747
+
+Realizados ajustes no registro 1391 para o tratamento do reprocessamento do açúcar\.
+
+Tatiane Lima
+
+19/09/2012
+
+OS3736\-A
+
+Atualiza a regra de geração do campo 04 do registro 1391 para que busque as informações do inventário considerando a data do saldo inicial parametrizada na tela de geração do SPED Fiscal Meio Magnético Especial 
+
+Juliana Garcia
+
+27/08/2012
+
+CH18537\_2012
+
+Geração do campo C110
+
+Henrique Francisco
+
+25/09/2012
+
+CH23730\_2012
+
+Inserido um log na geração do registro D400 para quando não houver sido informado ao menos um registro D410\.
+
+Tatiane Lima
+
+05/10/2012
+
+OS3701\-C
+
+Geração do Motivo do inventário do H005
+
+Tatiane Lima
+
+17/10/2012
+
+CH25861\_2012
+
+Correção na geração do registro 1391, campo 12
+
+Vanessa Bravo
+
+29/10/2012
+
+CH24703\-A\_2012
+
+Atualiza regra de geração do registro C115 passando a gerar o mesmo apenas quando o modelo da NF que deu origem ao registro pai, C110, for diferente de 55
+
+Marcos
+
+30/10/2012
+
+CH8770\_2012
+
+Alteração de regra do Registro D100
+
+Henrique Francisco
+
+30/10/2012
+
+OS3785
+
+Atualização Legal/ Ato Cotepe 50 Ago/2012
+
+Juliana Garcia
+
+31/10/2012
+
+CH25861\-A\_2012
+
+Correção na geração do registro 1391, campo 12
+
+Vanessa Bravo
+
+09/11/2012
+
+CH25861\-B\_2012
+
+Correção na geração do registro 1391, campos 04 e 13
+
+Marcos
+
+05/12/2012
+
+OS\-3838
+
+Atualização legal – Ato cotepe 57 de Nov/2012 – Novo Código de leiaute e alteração na obrigatoriedade do campo EMAIL do registro 0100
+
+Tatiane Lima
+
+26/12/2012
+
+OS3744
+
+Atualização dos códigos de Classe de consumo
+
+Tatiane Lima
+
+28/12/2012
+
+OS3369
+
+Alteração para Geração por Inscrição Estadual Única
+
+Tatiane Lima
+
+28/01/2013
+
+OS3865
+
+Criação de campo na tabela Estabelecimento para atendimento ao registro 005
+
+Vanessa W\. Bravo
+
+31/01/2013
+
+CH31859\_2012
+
+Atualiza geração dos registros 0460, C590 e D590 passando a gerar o campo COD\_OBS\.
+
+Marcos G\. de Paula
+
+06/\-2/2013
+
+OS3726
+
+Atualização da geração do Registro 1105 para demonstrar itens de serviços
+
+Marcos G\. de Paula
+
+03/04/2013
+
+OS3520\-D
+
+Alteração SPED p/utilizar guias da GNRE Online \(reg E250\) 
+
+Vânia Dias Mattos
+
+22/02/2013
+
+OS3928
+
+Atualização na geração dos registros E116 e E250, para UF SC
+
+Vanessa W\. Bravo
+
+26/04/2013
+
+OS3983
+
+Atualização legal: inclusão do layout 1\.0\.7\.
+
+Impactos nas regras: RN0000\-02, RNC100, RNC100\-04, RNC100\-06, RNC100\-09, RNC190, RNC400, RNC405, RNC420, RNC460, RNC465 e RNC490
+
+Marcos G\. de Paula
+
+09/05/2013
+
+OS2931\-H1
+
+Geração dos registros de Cupom Fiscal Eletrônico \(CF\-e\)
+
+\(C116, C800, C850, C860 e C890\)
+
+Vânia Dias Mattos
+
+28/05/2013
+
+OS4045
+
+Alteração na geração do registro 1400 p/considerar as operações especiais de venda de energia elétrica de modelo 55\. 
+
+Vânia Dias Mattos
+
+27/06/2013
+
+CH5209\-A/2013
+
+Ajustes na regra de geração do E500 e filhos para geração através do módulo PIM
+
+Marcos G\. de Paula
+
+22/07/2013
+
+OS4070
+
+Tratamento para conversão de unidade de medida nas quantidades do Registro 1391 
+
+Vânia Dias Mattos
+
+11/09/2013
+
+OS4043
+
+Alteração na regra do campo Valor Unitário quando o Estabelecimento possui IEU\.
+
+Juliana Garcia Vilas Boas
+
+18/10/2013
+
+CH26284/2013
+
+Ajustar a regra de seleção do registro 0205 para que passe a gerar alterações na descrição do item realizadas em período anterior à movimentação atual, desde que não tenham sido registradas movimentações no intervalo entre a atualização e o período de geração\.
+
+Marcos G\. De Paula
+
+21/10/2013
+
+CH26274\_2013
+
+Ajustar a regra de seleção do registro 0175 para que desconsidere a Inscrição Estadual do participante
+
+Julyana Perrucini
+
+29/10/2013
+
+CH26996\-A/2013
+
+Ajustar a regra de seleção do registro 0200 para que seja gerado em função do 0220 quando há movimentação no período, mesmo que a movimentação do produto não seja demonstrada\.
+
+Marcos G\. de Paula
+
+31/10/2013
+
+OS4139
+
+Alteração nas regras de geração dos registros 1350/1370  \(Postos de Combustível\)
+
+Vânia Dias Mttos
+
+05/11/2013
+
+OS4261
+
+Alterações do Ato Cotepe 43/2013\. Aumento na qdt das sub\-apurações\.
+
+Vânia Dias Mttos
+
+06/12/2013
+
+OS4261
+
+Alterações do Ato Cotepe 52/2013\. Nova versão de layout \(RN0000\-02\)
+
+Marcos G\. de Paula
+
+23/12/2013
+
+CH11204\-B
+
+Alteração na gravação do código do Bem \(regsitros 0200, C170 e G140\)
+
+Vânia Dias Mttos
+
+14/01/2013
+
+CH31293\_2013
+
+Alteração do campo 08 do Registro H010 para preenchê\-lo apenas quando o proprietário/possuidor que não seja o informante do arquivo\.
+
+Julyana Perrucini
+
+28/01/2014
+
+CH1701\_2014
+
+Alteração na regra de geração do campo VL\_ICMS do registro C490
+
+Vânia Dias Mattos
+
+04/02/2014
+
+CH2034\_2014
+
+Correção de duplicidade na geração do registro 1105
+
+Vânia Dias Mattos
+
+11/02/2014
+
+OS4350
+
+Tratamento para truncar informação do campo 03 – TXT\_COMPL dos Registros 0450 e C110
+
+Julyana Perrucini
+
+27/02/2014
+
+CH11946\_2013
+
+Alteração na regra de totalização do valor das operações do período e da totalização dos valores de deduções do Registro 1400 para Telecom / Energia Elétrica / Água
+
+Julyana Perrucini
+
+13/03/2014
+
+OS4416
+
+Ajuste na geração do campo 03\-QTD\_MOID do registro 1391
+
+Vânia Dias Mattos
+
+07/03/2014
+
+OS4342
+
+Geração do Bloco K \(registros K200/K220\)
+
+Vânia Dias Mattos
+
+20/03/2014
+
+Ch5218/2014
+
+Correção na geração do D197 
+
+Vânia Dias Mattos
+
+27/03/2014
+
+OS4461
+
+Ateração de Regra de Negócio Registro 0175
+
+Marcelo Souza
+
+28/03/2014
+
+OS4342\-A
+
+Geração do Bloco K \(registros 0210/K230/K235\)
+
+Vânia Dias Mattos
+
+01/04/2014
+
+OS4342\-B
+
+Geração do Bloco K \(registros K250/K255\) 
+
+Vânia Dias Mattos
+
+11/04/2014
+
+OS4459\-A
+
+Alterações no Modelo C para mostrar os resultados separados por fração
+
+Vânia Dias Mattos
+
+22/04/2014
+
+OS4342\-C
+
+Inclusão do novo campo VL\_ITEM\_IR do registro H010
+
+Vânia Dias Mattos
+
+05/06/2014
+
+OS4533
+
+Alteração geração do campo 05\-COD\_REC dos registros E116 e E250
+
+Vânia Dias Mattos
+
+01/07/2014
+
+OS4535
+
+Inlusão da versão 1\.0\.8 \(Ato Cotepe 22/2014\) \(ver __RN0000\-02__\)
+
+Vânia Dias Mattos
+
+03/07/2014
+
+OS4540
+
+Criação de parâmetro p/a geração do campo VLR\_ICMS do registro C490 \(__RNC490\-07\)__
+
+Vânia Dias Mattos
+
+18/07/2014
+
+OS4567
+
+<a id="OLE_LINK1"></a><a id="OLE_LINK2"></a><a id="OLE_LINK3"></a>Alteração do Registro 0205 para gravar a informação  quando houver alteração do código de item \(__RN0205/RN0200\-05__\)\.
+
+Julyana Perrucini
+
+18/07/2014
+
+OS3655
+
+Alteração geração do campo BAIRRO do registro 0005 para utilizar o novo campo “Bairro” incluído no cadastro dos Estabelecimentos \(ver __RN0005\-07__\)
+
+Vânia Dias Mattos
+
+04/08/2014
+
+OS4578
+
+Alteração na geração do campo 05\-COD\_REC do registro E250
+
+Vânia Dias Mattos
+
+14/08/2014
+
+CH31337\_2013
+
+Alteração na recuperação do Registro E210 a partir do módulo PIM \(ver __RNE210__\)
+
+Julyana Perrucini
+
+03/09/2014
+
+OS4508
+
+Alteração da geração para multiempresa \(apenas o menu da geração “normal”\)
+
+\(C800, C860, E510\)\. Foi realizado apenas um ajuste nessas regras para não causar confusão\. Na verdade, as regras da geração não se alteram p/a geração multiempresa\.
+
+Vânia Dias Mattos
+
+18/09/2014
+
+OS4593\-B
+
+Alteração da geração da opção “Geração\-PIM” para gravar as subapurações \(1900 e filhos\) 
+
+Vânia Dias Mattos
+
+22/09/2014
+
+CH20470\-A\_2014
+
+Alteração na regra de geração do registro 0205 para demonstrar alterações para períodos maiores ou iguais a 01/01/2000\.
+
+Marcos G\. de Paula
+
+29/09/2014
+
+CH13937/2014
+
+Alteração na regra de geração do campo IND\_PGTO do registro C100, para considerar a versão do layout parametrizada ao invés da data fiscal na geração do campo\.
+
+Marcos G\. de Paula
+
+21/11/2014
+
+CH23229\_2014
+
+Este documento tem como objetivo alterar a regra o campo 05 – Código de Receita do Registro E250 para UF favorecida de SC quando não houver preenchimento da Classe de Vencimento\.
+
+Julyana Perrucini
+
+24/11/2014
+
+CH26523\_2014
+
+Este documento tem como objetivo incluir tratamento para o campo 11 – Código do serviço do Registro 0200 em atendimento ao Ato Cotepe nº 59/2014\.
+
+Julyana Perrucini
+
+05/12/2014
+
+OS4609
+
+Inlusão da versão 1\.0\.9 \(Ato Cotepe 49/2014\) \(ver __RN0000\-02__\)
+
+Vânia Dias Mattos
+
+22/01/2015
+
+CH706/2015
+
+Este documento tem como objetivo alterar a geração do Registro H010 para contemplar o campo 11\-Valor do item para efeitos do Imposto de Renda para inventários que devem ser entregues em 2015\. Obs\.: Lembrando que em via de regra o inventário ocorre em data anterior\.
+
+Julyana Perrucini
+
+23/01/2015
+
+CH16777\_2014
+
+Este documento tem como objetivo alterar a geração do campo 15\-Valores recolhidos ou a recolher, extraapuração do Registro E210 contemplando débito especial de serviços de transportes\.
+
+Julyana Perrucini
+
+04/02/2015
+
+CH28472\_2014
+
+Este documento tem como objetivo ajustar o tratamento para o campo 11 – Código do serviço do Registro 0200 em atendimento ao Ato Cotepe nº 59/2014\.
+
+Julyana Perrucini
+
+11/02/2015
+
+CH1938\_2015
+
+Este documento tem como objetivo ajustar o tratamento para o campo 11 – Código do serviço do Registro 0200 em atendimento ao Ato Cotepe nº 59/2014\.
+
+Julyana Perrucini
+
+01/04/2015
+
+OS4747
+
+Alteração na geração dos registros 0150, C100, C113, C160, C165, C176, C500, C510, D100, D130, D140, D170, D400, D500, D510, E113, E240, G130, H010, K200, 1110, 1500, 1510, 1600 e 1923\.
+
+Marcos G\. de Paula
+
+09/04/2015
+
+CH7058\_2015
+
+Tratamento na geração do campo 07\-SER dos Registros C100 e D100 para considerar o preenchimento obrigatório das três posições exigidas pelo layout para NF\-e, NFC\-e e CT\-e\.
+
+Julyana Perrucini
+
+29/04/2015
+
+CH8390\_2015
+
+Ajuste na geração do registro 0150 para que seja considerado apenas o cadastro de participante correspondente a última nota que houve movimentação no período\.
+
+Lara Aline
+
+06/05/2015
+
+CH28561\-B
+
+Alteração na geração do campo 15\-DEB\_ESP\_ST do registro E210\. 
+
+Vânia Dias Mattos
+
+21/05/2015
+
+OS’s4728
+
+OS’s4735
+
+Alteração na geração do registro 1400 para atendimento à Resolução 4730/14\-MG e  Portaria CAT 137/2014\-SP\. Consultar as observações descritas no cabeçalho do reg\. 1400, e as regras específicas de MG e SP: __RN1400\-MG\-“nn” e RN1400\-SP\-“nn”__\.
+
+Vânia Dias Mattos
+
+25/05/2015
+
+OS4786
+
+Alteração na geração do Convênio 115 p/tratamento do modelo \(ver RNC700, RNC790, RNC791, RND695, RND696 e RND697\)
+
+Vânia Dias Mattos
+
+18/06/2015
+
+CH2489\_2015
+
+Alteração na geração do Registro 0210 p/ tratamento de recursividade \(Ver RN0210 e RN0210\-02\)\.
+
+Julyana Perrucini
+
+30/06/2015
+
+CH13043\_2015
+
+Alteração de regra G130 para geração de TIPO\_MOV = CI
+
+Marcos G\. de Paula
+
+30/06/2015
+
+CH4543\_3015
+
+Alteração da regra do G130 para atender à geração especial\.
+
+Marcos G\. de Paula
+
+22/07/2015
+
+CH14943\_2015
+
+Alteração da gravação do campo Município do Registro 1400 referente a regra específica de SP \(DIPAM 31, 35 e 36\)\.
+
+Julyana Perrucini
+
+27/07/2015
+
+CH15998\_2015
+
+Observação sobre a geração do Registro 1900 e “filhos” para outras UFs que não estão especificadas no GUIA PRÁTICO\.
+
+Julyana Perrucini
+
+30/07/2015
+
+CH16703\_2015
+
+Melhoria na especificação da regra de negócio do Registro 0175\.
+
+Julyana Perrucini
+
+11/08/2015
+
+OS4821
+
+Atualização da Geração do Registro C178, para contemplar geração das informações “Ad Valorem”\.
+
+Marcos de Paula
+
+13/08/2015
+
+CH13043\-B/2015
+
+Atualização da regra de geração do campo Chave da Nfe do registro G130, considerando regra do GP 2\.0\.16\.
+
+Marcos de Paula
+
+21/08/2015
+
+CH16394 / 2015
+
+Alterada regra de geração do campo 03\-DT\_FIN\_OP do K230  
+
+Vânia Dias Mattos
+
+08/09/2015
+
+MFS1507
+
+Alteração na geração do registro 1400 para atendimento à Portaria N\. 34\-R, de 26/08/2015 – Sefaz\-ES\. Ver as observações descritas no cabeçalho do reg\. 1400, e as regras específicas do ES: __RN1400\-ES e RN1400\-ES\-“nn”__\.
+
+Vânia Dias Mattos
+
+11/09/2015
+
+MFS1513
+
+Alteração na geração do registro 1400 para atendimento à Portaria N\. 34\-R, de 26/08/2015 – Sefaz\-ES\. Geração auitomática dos códigos 01, 02,  03 e 06\. 
+
+\(ver __RN1400\-ES\-01__,__  RN1400\-ES\-02, RN1400\-ES\-03 __e__ RN1400\-ES\-06\)__
+
+Vânia Dias Mattos
+
+14/09/2015
+
+MFS1566
+
+Alteração na geração do registro 1400 para atendimento à Portaria N\. 34\-R, de 26/08/2015 – Sefaz\-ES\. Geração auitomática dos códigos 05, 07, 09  e 10\. 
+
+\(ver __RN1400\-ES\-05__,__  RN1400\-ES\-07__,__ RN1400\-ES\-09  __e__ RN1400\-ES\-10\)__
+
+Vânia Dias Mattos
+
+15/09/2015
+
+CH21311\_2015
+
+Alteração na seleção das informações a partir da SAFX130 para geração do Registro C100 \(ver __RNC100__\)\.
+
+Julyana Perrucini
+
+22/09/2015
+
+MFS1401
+
+Alterou a geração do registro 1390/1391 para que os saldos sejam demonstrados diariamente, mesmo qdo não houver movimentação \(ver __RN1390 __e__ RN1391__\)\.
+
+Vânia Dias Mattos
+
+22/10/2015
+
+MFS1858 \(CH23338 e 23915\)
+
+Alteração na geração do H020 \(só gerar qdo o MOT\_INV do H005  <> 01\) 
+
+Vânia Dias Mattos
+
+28/10/2015
+
+MFS1993
+
+Alteração na geração do K230, campo 04\-COD\_DOC\_OP \(ver __RNK230\-04__\)\. 
+
+Ajuste no K220, K230 e K50 quanto ao tipo do item \(__RNK220, RNK230 __e__ RNK250 __\)
+
+Ajuste no 0210 quanto a identificação do tipo do item nos componentes “subprodutos”\. \(ver __RN0210\-02__\)\.
+
+Vânia Dias Mattos
+
+06/11/2015
+
+MFS2068 \(CH25342\_2015\)
+
+Alteração na geração do K200 para que não seja recuperado registros de inventários igual a zero \(ver RNK200\)\. 
+
+Lara Aline
+
+10/11/2015
+
+MFS2159
+
+\(CH 25797/15\)
+
+Ajustes na geração do 0210 sobre recuperação dos dados da lista técnica \(ver __RN0210__\)\.
+
+Ajustes na geração do COD\_DOC\_OP do K230 \(ver __RNK230\-04__\)
+
+Vânia Dias Mattos
+
+10/11/2015
+
+MFS2128 \(CH16250\_2015\)
+
+Alteração na geração do 0206 para os Postos de Combustíveis sejam considerados como Classe de atividade do Estabelecimento \(ver RN0206\)\. 
+
+Lara Aline
+
+13/11/2015
+
+CH24790\_2015
+
+Alteração dos campos 05 e 14 do Registro 1391 e recuperação do grupo de contagem 3 quando for a partir de estoque \(Ver __RN1391, RN1391\-05 e RN1391\-14__\)
+
+Julyana Perrucini
+
+27/11/2015
+
+MFS2133
+
+Geração dos Registros do Ato Cotepe/ICMS 44/2015 \(ver RNC101, RND101, RNE300, RNE311, RNE312, RNE313 e RNE316\)
+
+Vânia Dias Mattos
+
+14/12/2015
+
+CH24790\-C\_2015
+
+Alteração do campo 05 do Registro 1391 para considerar a Operação parametrizada \(Ver __RN1391\-05__\)
+
+Julyana Perrucini
+
+17/12/2015
+
+MFS2413 \(CH25930/15\)
+
+Altera geração do K230/K235 para permitir produção sem insumos associados, nos casos em que a produção for iniciada em períodos anteriores \(ver __RNK235__\)
+
+Vânia Dias Mattos
+
+22/12/2015
+
+CH28328\_2015
+
+Este documento tem como objetivo alterar a geração do campo 04\-Valor total do ICMS ST de devolução de Mercadorias e do campo 06\-Valor total de Ajustes "Outros créditos ST" e “Estorno de débitos ST” do Registro E210 da obrigação acessória SPED Fiscal\.
+
+Julyana Perrucini
+
+11/01/2016
+
+CH165\_2016
+
+Alteração do campo 04 do Registro 1391 para considerar o grupo de contagem 3 \(Ver __RN1391\-04__\)
+
+Julyana Perrucini
+
+08/12/2015
+
+MFS2406
+
+Geração dos Registros do Ato Cotepe/ICMS 44/2015 a partir do Módulo PIM
+
+Vânia Dias Mattos
+
+18/01/2016
+
+MFS2901
+
+Geração dos Registros do Ato Cotepe/ICMS 44/2015 a aprtir do livro “165”
+
+Vânia Dias Mattos
+
+25/01/2016
+
+MFS2232
+
+Alteração da geração do campo 02 do Registro 1390 e do campo 03 do Registro 1391 para considerar também as informações da SAFX10 via parametrização\.
+
+Julyana Perrucini
+
+25/01/2016
+
+MFS2714
+
+Alteração no Módulo CIAP: Nova parametrização de regras específicas no formato “Por Estabelecimento” \(ver __RN0300\-07__\)\.
+
+Vânia Dias Mattos
+
+16/02/2016
+
+MFS3132
+
+Alteração na geração do registro 1400 para atendimento à Orientação Técnica EFD nº 011/2016 – Versão 1\.10, de 11/02/2016 – SET\-RN\. Ver as observações descritas no cabeçalho do reg\. 1400, e as regras específicas de RN: RN1400\-RN e RN1400\-RN\-“nn”\.
+
+Lara Aline
+
+21/03/2016
+
+MFS3615
+
+Criação do cálculo dos créditos extemporâneos de Bens com prazo de apropriação “normal” já ultrapassado \(opção de menu “Cálculo Créditos Extemporâneos\-Integral”\)\. Ver __RNG110\-10, RNG125__, __RNG125\-ESP__,__ RNG126__, __RNG130__ e __RNG140__\.
+
+Vânia Dias Mattos
+
+05/04/2016
+
+CH5111\_2016
+
+Alterada a regra de geração do registro E300 e E310 para que sejam gerados para todas as UF’s geradas no registro “0015\-Dados do Contribuinte Substituto”\. Ver __RNE300 e RNE310\.__
+
+Lara Aline
+
+03/05/2016
+
+MFS\-1661
+
+Alterada regra de geração do registro 0200 campo COD\_ITEM\.
+
+Elenilson Coutinho
+
+06/05/2016
+
+MFS4106
+
+Alterada regra de geração do registro H005\.
+
+Lara Aline
+
+20/05/2016
+
+CH10645\_2016
+
+<a id="OLE_LINK115"></a><a id="OLE_LINK116"></a><a id="OLE_LINK117"></a>Alterada regra de preenchimento do campo 03\-SERIE do Registro 1105\.
+
+Julyana Perrucini
+
+24/06/2016
+
+MFS4992
+
+Ato Cotepe 7/2016 – Novos Registros Bloco K \(K210, K215, K260 e K265\)
+
+Vânia Dias Mattos
+
+28/06/2016
+
+MFS4993
+
+Ato Cotepe 7/2016 – Novos Registros Bloco K \(K270, K275 e K280\)
+
+Vânia Dias Mattos
+
+04/10/2016
+
+MFS5904
+
+Alteração na geração da classe de consumo do registro 1500 \(ver __RN1500\-09__\)
+
+Vânia Dias Mattos
+
+11/11/2016
+
+MFS3248
+
+Alteração na geração do registro 1400 para atendimento à Orientação Técnica EFD nº 011/2016 – Versão 1\.10, de 11/02/2016 – SET\-RN\. Para periodicidade Anual\. Ver as observações descritas no cabeçalho do reg\. 1400, e as regras específicas de RN: RN1400\-RN e RN1400\-RN\-“nn”\.
+
+Lara Aline
+
+29/11/2016
+
+MFS7082
+
+Inclusão do campo CHV\_DOCe nos registros 1210 e 1923 \(ver __RN1210\-05__ e __RN1923\-10__\)\.
+
+Vânia Mattos
+
+09/12/2016
+
+MFS7944
+
+Alteração na geração do registro 1400 para o estado do RS\. Ver as observações descritas no cabeçalho do registro 1400, e as regras específicas do RS\.
+
+Vânia Mattos
+
+12/12/2016
+
+MFS8332 \(ch24201\)
+
+Alteração na geração do K220 \(informar fator de conversão entre produto origem e produto destino\) 
+
+Vânia Mattos
+
+16/12/2016
+
+MFS8625
+
+Alteração na geração do registro 1400 para o estado do RS: geração automática dos códigos 01, 02, 03 e 05\.
+
+Vânia Mattos
+
+03/01/2017
+
+MFS8933
+
+Alteração GP vrs 2\.0\.20: alterada chave do K235 e K255\. Para atender as novas regras, foi alterada a consolidação dos dados para a geração dos registros K235 e K255  \(ver __RNK235 __/ __RNK235\-05, __e__ RNK255 __/__ RNK255\-05__\)
+
+Vânia Mattos
+
+25/01/2017
+
+MFS7449
+
+Alteração do 1400 para SP\. Os códigos SPDIPAM23 e SPDIPAM24 passaram a tratar as deduções, para ficar de acordo com a GIA\-SP\. 
+
+Vânia Mattos
+
+02/02/2017
+
+MFS6919
+
+\(ch18552/16\)
+
+Alteração na geração padrão do 1400 para o segmento de EE \(modelo 06\)\.
+
+\(ver RN1400 e RN1400\-02\)
+
+Vânia Mattos
+
+03/03/2017
+
+MFS8937
+
+Alteração GP vrs 2\.0\.20: Alterado registro 1923 \(campo 10\) p/ o mod 67 \(RN1923\-10\)\.
+
+Andréa Rocha
+
+07/03/2017
+
+MFS9912
+
+\(Ch 25325\_2016\)
+
+Alteração na geração dos registros 1100 e 1105 em relação ao modelo do documento \(campo 17 da SAFX48\)\.
+
+Vânia Mattos
+
+16/03/2017
+
+MFS10054
+
+Alteração na geração dos registros do Bloco K, para usar o novo parâmetro que define se a concatenação Cód OP \+ Cód Dif OP será feita ou não\. 
+
+Vânia Mattos
+
+20/03/2017
+
+MFS10057 \(CH3814\_2017\)
+
+Alteração na geração do campo 03\-COD\_ITEM do registro K280 para que seja verificado o tipo do item na geração do mesmo \(ver RNK280\-03\)\. 
+
+Lara Aline
+
+28/03/2017
+
+MFS9659
+
+\(CH 1411/17\)
+
+Ajuste na geração do registro 1110 devido à alteração no campo 22 da SAFX103\.
+
+Vânia Mattos
+
+04/05/2017
+
+MFS10558
+
+Ajustes na geração do registro 1100 devido à nova vrs 2\.3\.4 do PVA 
+
+Vânia Mattos
+
+10/03/2016
+
+MFS2437
+
+Alterada a geração do registro 1400 \(código SPDIPAM25\) para as empresas distribuidoras de energia elétrica \(ver __RN1400\-SP__, __RN1400\-SP\-07\-A __e__ RN1400\-SP\-07\-B__\)\.
+
+Vânia Dias Mattos
+
+07/08/2017
+
+CH13531\_2017 \(MFS12315\)
+
+Alteração do 1400 para RS\. O código 01 passa a tratar as deduções por conta da regra da SEFAZ que prevê a dedução das aquisições de serviço\.
+
+Julyana Perrucini
+
+23/08/2017
+
+CH14722\_2017 \(MFS13143\)
+
+Esse documento tem como objetivo alterar a geração dos Registros da obrigação SPED Fiscal que possuam o campo 03 \(Texto Livre\) para respeitar o limite de até 255 caracteres\. Para o Registro H010 as informações de Observação constantes no campo TXT\_COMPL deverão ter um tamanho máximo de 255 caracteres\. Caso a informação a ser recuperada possua mais do que 255 caracteres, o restante da informação deve ser “truncada”\.
+
+Julyana Perrucini
+
+13/09/2017
+
+CH14084\_2017 \(MFS13293\)
+
+Utilizar município de destino para o registro 1400 Energia Elétrica quando UF= SC
+
+Jorge Neto
+
+18/09/2017
+
+MFS13290
+
+Ato Cotepe 48/2017: inclusão do campo 06\-QTD\_DEST no registro K220\.
+
+Vânia Mattos
+
+22/11/2017
+
+MFS11655
+
+Tratamento para itens de energia elétrica, telecom ou água para composição do Registro 1400 \(Ver __RN1400__\) a partir da parametrização de Exclusão\.
+
+Julyana Perrucini
+
+23/11/2017
+
+MFS14303
+
+Inclusão do código SPDIPAM27 a geração do registro 1400 para as empresas que fazem vendas presenciais com saídas em outro estabelecimento \(ver __RN1400\-SP__ e __RN1400\-SP\-12__\)\.
+
+Julyana Perrucini
+
+15/02/2018
+
+MFS16603
+
+Essa correção tem como finalidade permitir a geração do registro H020 \- Informação Complementar do Inventário mesmo quando o Motivo do Inventário for igual '01 \- No final do período' para os estabelecimentos do estado do 'RS'\.
+
+João Henrique
+
+26/02/2018
+
+MFS14605
+
+Alteração do 1400 para MG\. O código Produtos Agropecuários passa a tratar as deduções por conta da regra da SEFAZ que prevê a diferença a maior apurada entre os valores constantes da Nota Fiscal relativa à entrada dos produtos agropecuários no estabelecimento destinatário e a Nota Fiscal de Produtor ou Nota Fiscal Avulsa de Produtor, exceto quando ele emitir a nota fiscal complementar \(Ver __RN1400\-MG\-01__\)\.
+
+Julyana Perrucini
+
+<a id="_Hlk512847287"></a>29/03/2018
+
+MFS16811
+
+<a id="OLE_LINK163"></a><a id="OLE_LINK164"></a><a id="OLE_LINK165"></a>Alteração na geração do registro 1400 para o estado da BA: geração automática dos códigos BAE01, BAS01, BAE02, BAS02, BAE03, BAS03, BAE04 e BAS04\. 
+
+Julyana Perrucini
+
+03/04/2018
+
+MFS17478
+
+Criação de Parâmetro para inibir a geração das informações de PIS e COFINS
+
+Andréa Rocha
+
+17/04/2018
+
+CH7744\_2018
+
+MFS\-17914
+
+Inclusão de modelo de documento fiscal para geração do registro SPDIPAM23 seguindo a legislação no que diz respeito ao segmento de transporte\.
+
+João Henrique
+
+24/04/2018
+
+CH9368\_2018 \(MFS\-18062\)
+
+Alteração do 1400 para SP\. O código DIPAM\-35 passa a considerar outros ajustes com relação ao CFOP 5927 \(Ver __RN1400\-SP\-10__\)\.
+
+Julyana Perrucini
+
+<a id="_Hlk512847593"></a>30/04/2018
+
+MFS17764
+
+Alteração na geração do registro 1400 para o estado de TO: geração automática dos códigos <a id="OLE_LINK87"></a><a id="OLE_LINK88"></a>TOIPME04, TOIPMS04, TOIPME06, TOIPMS06, TOIPME07, TOIPMS07, TOIPME08 e TOIPMS08\.
+
+Julyana Perrucini
+
+12/06/2018
+
+MFS18797
+
+Alteração na geração do registro 1400 para o estado de SP: criadas novas regras para o código SPDIPAM25 para as empresas geradoras de energia \(ver RN1400\-SP\-07\-C\)\.
+
+Vânia Mattos
+
+14/06/2018
+
+MFS19151
+
+Alteração na geração do registro 1400 para o estado de SP: alteração da regra para o código SPDIPAM22 para a forma de cálculo igual a “Valor Total NF – Revendedor Autônomo” \(ver RN1400\-SP\-04\)\.
+
+Andréa Rocha
+
+13/08/2018
+
+MFS20147
+
+Alteração na geração Padrão do Registro 1400 para Telecom, Energia Elétrica e Água para incluir filtro do novo parâmetro de exclusão de itens sem receita \(ver __RN1400__\) e alteração na geração específica por UF do RS para incluir filtro do novo parâmetro de exclusão de itens sem receita mais a seleção por CFOP ou CFOP/Natureza na totalização dos valores para o código 02 \(ver __RN1400\-RS\-02__\)\.
+
+Julyana Perrucini
+
+23/08/2018
+
+MFS20216
+
+Alteração na geração padrão do 1400 para o segmento de Telecom \(modelos 21 e 22\) \(ver RN1400 e RN1400\-02\)\.
+
+Andréa Rocha
+
+05/11/2018
+
+MFS21914
+
+Novos Campos no registro 1010 \(Guai Prático Vrs 3\.0\.1\)
+
+Vânia Mattos
+
+19/12/2018
+
+MFS\-22404
+
+Alteração na geração padrão do 1400 para operações de EPPP aos estabelecidos no Paraná \(ver __RN1400__ e __RN1400\-02__\)\.
+
+Julyana Perrucini
+
+14/01/2019
+
+MFS23500
+
+Alteração na geração do registro 1400 para o estado de RJ\.
+
+Andréa Rocha
+
+21/03/2019
+
+MFS25285
+
+Alteração na geração do registro 1923, campo 02\-COD\_PART\.
+
+Andréa Rocha
+
+15/05/2019
+
+MFS26339
+
+Alteração na geração padrão do 1400 \- Aquisição de Produtos Primários para considerar o novo parâmetro
+
+Andréa Rocha
+
+29/05/2019
+
+MFS14138
+
+Alteração na geração do registro H010 para calcular o valor unitário na geração “normal”, da mesma forma já realizada para a geração por I\.E\.U\.
+
+Vânia Mattos
+
+30/05/2019
+
+MFS27727
+
+Alteração na geração do registro 1923, campo 04\-SER\.
+
+Andréa Rocha
+
+06/08/2019
+
+MFS\-28753
+
+Alteração na geração do registro 1400, para a UF MG, para operação “Produtos Agropecuários” \(__RN1400\-MG\-01\)\.__
+
+Inclusão no filtro das notas de entrada, notas com o campo MOVTO\_E\_S = “1”\.
+
+Alessandra Cristina Navatta
+
+16/08/2019
+
+MFS29417
+
+Alteração da regra do registro 1400 para a UF BA, para tratar valores negativos
+
+Andréa Rocha
+
+21/08/2019
+
+MFS25117
+
+Alteração na geração padrão do 1400 para operações de EPPP aos estabelecidos no Paraná
+
+Andréa Rocha
+
+06/09/2019
+
+MFS30223
+
+Alteração na geração do registro 1400 para o estado de PE\.
+
+Andréa Rocha
+
+16/09/2019
+
+MFS22946
+
+Ressarcimento do ICMS ST \- RS \- Alteração na Geração dos registros 1920, 1921, 1923
+
+Liliane Assaf
+
+30/09/2019
+
+MFS21172
+
+Alteração na geração padrão do registro 1400 para a UF BA, para recuperar os valores da geração específica para Empresas de Água
+
+Andréa Rocha
+
+08/10/2019
+
+MFS30891
+
+Alteração na geração padrão e específica por UF do registro 1400, para utilizar a parametrização de deduções de CST x Produto, para energia elétrica\. E retirar a utilização da parametrização de CST x Produto da exclusão de itens sem receita\.
+
+Andréa Rocha
+
+28/10/2019
+
+MFS31044
+
+Alteração na geração específica do registro 1400 para a UF TO, para gerar o código TOIPME10 automaticamente\.
+
+Andréa Rocha
+
+20/12/2019
+
+MFS33054
+
+Inclusão de um Campo novo no registro 1010 \(Guia Prático Vrs 3\.0\.3\)
+
+Andréa Rocha
+
+23/12/2019
+
+MFS31418
+
+Alteraões no Bloco H para a versão 1\.13, a partir de JAN/2020: 
+
+\- Geração do novo registro H030;
+
+\- Inventário Mensal para o Motivo de Inventário = 6;
+
+Vânia Mattos
+
+07/01/2020
+
+MFS31423
+
+Inclusão da geração dos registros 1250 e 1255 \(Guia Prático Vrs 3\.0\.3\)
+
+Andréa Rocha
+
+11/02/2020
+
+MFS31407
+
+Atualização versão 1\.13 \(JAN/2020\): Inclusão dos novos campos do registro 1391 \(Produção Diária da Usina\)
+
+Vânia Mattos
+
+12/02/2020
+
+MFS33701
+
+Alteração na geração do campo 05\-COD\_REC do registro 1926, para tratar as regras específicas de algumas UF’s, conforme é feito na geração do COD\_REC do E116\.
+
+Vânia Mattos
+
+13/02/2020
+
+MFS34187
+
+Alteração da regra do registro 1400 SP\-DIPAM31
+
+Andréa Rocha
+
+15/02/2020
+
+MFS33871
+
+Alteração na geração do registro 1400 para o estado de SC\.
+
+Andréa Rocha
+
+05032020
+
+MFS34598
+
+Ajuste na geração do H005 do inventário Motivo “06” \(ver __RNH005__\)
+
+Vânia Mattos
+
+09/03/2020
+
+MFS34479
+
+Ajuste na geração do 1391 – Campo 3 \- QTD\_MOID
+
+Andréa Rocha
+
+21/03/202
+
+MFS\-34707
+
+Ajuste nos campos 19 e 20 do 1391  \(RN1391\-19, RN1391\-20,\)
+
+Ajuste no ampo 02 do 1390 \(RN1390, RN1390\-02\)
+
+Liliane Assaf
+
+11/05/2020
+
+MFS36578
+
+Alteração no registro 1923 p/atendimento ao regime especial RS \(Apuração Assistida – RS\): Não gerar os registros “filhos” \(1923\) referentes ao ajuste \(1921\) dos valores do ICMS Efetivo das NFC\-e \(Mod 65\), caso existam \(ver RN1923\)\. 
+
+Vânia Mattos’
+
+03/06/2020
+
+MFS35568
+
+Alteração na geração do registro 1400, Energia Elétrica, Geração Padrão e Geração Específica por UF para o RS, Código 02\. Para efetuar a dedução do valor do Desconto dos itens de dedução, não será mais utilizada a parametrização Dedução à Por CST x Produto\. 
+
+Vânia Mattos
+
+22/06/2020
+
+MFS35133
+
+Alteração na geração do registro 1400, estado do Tocantis, geração automática para os códigos TOIPME05 e TOIPMS05\.
+
+Vânia Mattos
+
+25/06/2020
+
+MFS39109
+
+Alteração no registro 1255, nos campos de valores que não possuem informação na tabela\.  \(ver RN1250, RN1255 , RN1255\-3, RN1255\-4, RN1255\-5, RN1255\-6 e RN1255\-7\)
+
+Alessandra Cristina Navatta
+
+23/09/2020
+
+MFS42592
+
+Alterada a geração do H020 p/os estabelecimentos do RS \(RNH020\)
+
+Vânia Mattos
+
+09/11/2020
+
+Sped\_Fiscal\_Regras\_atual\.doc que continha a especificação dos blocos H e 1, foi dividido em dois documentos:
+
+- Sped\_Fiscal\_Regras\_Bloco\_H\.doc
+- Sped\_Fiscal\_Regras\_Bloco\_1\.doc
+
+Liliane Assaf
+
+11/12/2020
+
+MFS47427
+
+Alteração da geração do registro H005 e H010– guia prático versão 3\.0\.5
+
+Andréa Rocha
+
+11/032021
+
+MFS61841
+
+Alterada a geração do H020 para os estabelecimentos do RS \(RNH020\), para gerações a partir do ano de 2021
+
+Andréa Rocha
+
+15/03/2021
+
+MFS61989
+
+Alterada a geração do H020 para calcular os valores unitários para os campos 03 e 04 \(BC\_ICMS e VL\_ICMS\), conforme indicação do guia prático
+
+Andréa Rocha
+
+28/03/2022
+
+MFS82673
+
+Alteração na geração do registro H005 para retirar o filtro para não considerar o Motivo 6, na geração quando o campo de data do Inventário for preenchido\.
+
+Rogério Ohashi
+
+03/05/2022
+
+MFS85393
+
+Alteração da regra de geração do Registro H005, para passar a utilizar o novo parâmetro criado na tela de Dados Iniciais\.  Esse parâmetro vai indicar a forma de gerar o registro quando o campo de Motivo do Inventário não estiver preenchido\.
+
+Andréa Rocha
+
+23/11/2022
+
+MFS97585
+
+Alteração da regra de geração do Registro H010, para não gerar quando o campo 03\-VL\_INV do Registro H005 for igual a zero, conforme regra do guia prático\.
+
+Andréa Rocha
+
+27/03/2023
+
+MFS522363
+
+Alteração da regra de geração do Registro H005, para passar a utilizar o novo parâmetro criado na tela de Dados Iniciais\.  Esse parâmetro vai indicar se deve ser gerado o registro H005, com o motivo de inventário igual a ‘01’, para a geração do mês de fevereiro, para os produtos que possuem outro motivo cadastrado na SAFX52\.
+
+Andréa Rocha
+
+#### Bloco H – Inventário Físico 
+
+__Registro H001 – Abertura do Bloco H__
+
+RNH001
+
+Um registro por arquivo\.
+
+__Registro H005 – Totais do Inventário__
+
+RNH005
+
+__\[ALTERADO MFS4106\]__
+
+Os dados do Inventário serão gerados a partir da data informada no campo “Data do Inventário” na tela de geração do Sped Fiscal e da data informada na parametrização Data do Inventário Adicional no menu Parâmetros > Registros \(Bloco H\) > Data do Inventário Adicional caso houver parametrização para o período de geração e estabelecimento \. Estas datas serviram para obtenção dos dados na SAFX52\.
+
+Os valores de inventário de cada produto serão gravados no registro H010, e no registro H005 deve ser gravado um único registro com o valor total do inventário na data solicitada \(data informada na tela da geração ou na parametrização Data do Inventário Adicional\)\.    
+
+\[OS\-3701\-C\]
+
+Com a inclusão do campo 04, o agrupamento deste registro também deve considerar a informação do motivo do inventário como chave de agrupamento, campo 40 da SAFX52\.
+
+Caso não existam registros na SAFX52 para a data informada, o procedimento deve ser:
+
+- gravar o registro H005 com o campo VL\_INV = zero;
+- gravar mensagem no log de erros \(mensagem de número 338 da planilha de erros\);
+
+__OBS1__: Na geração por inscrição estadual única, deve\-se recuperar os dados de todos os estabelecimentos envolvidos na centralização\.
+
+__OBS2__: Na geração da opção “Geração – PIM” devem ser considerados apenas os registros em que o campo “23\-Inscrição Estadual” da SAFX52 seja = inscrição estadual em questão \(ver detalhes nas __OS2388\-AM\*1__, que definiram a geração do Sped Fiscal para o PIM\)\.
+
+__\[ALTERADO MFS522363\]__ Tratamento do parâmetro para indicar se deve ser gerado o registro H005, com o motivo de inventário igual a ‘01’, para a geração do mês de fevereiro, para os produtos que possuem outro motivo cadastrado na SAFX52\.  Retirada da regra criada pela MFS82673, porque o motivo de inventário igual a ‘06’ só deve ser gerado com o campo “DT\_INV” igual ao dia imediatamente anterior ao campo “DT\_INI” informado no registro 0000\.  Ou seja, o motivo de inventário igual a ‘06’ não deve ser gerado no arquivo de fevereiro, com a data de inventário de dezembro\.
+
+__Se__ o parâmetro "Gerar registro com Motivo do Inventário igual a ‘01’ para EFD de fevereiro” 
+
+     da tela de dados iniciais \(menu “Parâmetros > Dados Iniciais”\) estiver marcado __E__ se o 
+
+     mês da geração for igual a fevereiro __E__ o Campo de Data de Inventário estiver preenchido   
+
+     na tela de geração
+
+      Deverá ser gerado considerando __TODOS__ os motivos \(exceto ‘03’\), dessa forma o sistema deverá passar a considerar o inventário do período de Dezembro na sua totalidade, mas gravando o motivo de inventário igual a ´01’__ __para todos os produtos, mesmo para aqueles produtos que têm o motivo preenchido com ‘02’, ‘04’, ‘05’ ou ‘06’ \(exceto ‘03’\)\.
+
+__Obs__\.: Para essa situação de trocar o motivo de inventário, os registros filhos do H005 devem ser gerados como se o motivo de inventário fosse igual a “01”\. Ou seja, se o motivo de inventário estava cadastrado com “06” e passou a gerar com “01”, o registro H030 não deve ser gerado\.  A mesma situação ocorre para os registros cujo motivo de inventário estejam cadastrados com “02” ou “05”, que vão passar a gerar com “01”, não devem gerar o registro H020\.
+
+__\[ALTERADO MFS82673\] __Retirar o filtro para o motivo de inventário igual à 6, quando for informado o Campo de Data do Inventário na tela de geração\.
+
+__Se__ o Campo de Data de Inventário estiver preenchido na tela de geração;
+
+   Considerar __*TODOS*__ os motivos de inventário\.
+
+Confome reunião realizada com a equipe de Informações, os valores de inventário referente ao fechamento anual, informado até o segundo mês subsequente ao evento \(fevereiro\), deverá ser gerado considerando __TODOS__ os motivos, dessa forma o sistema deverá passar a considerar o inventário do período de Dezembro na sua totalidade, considerando também o __motivo igual à 6__\. \(Participantes: CAN, Tatiana Assis, Caroline Salgueiro, Liliane Assaf, Rogério Ohashi e Vanda Castilho\)\.
+
+__\[ALTERADO MFS4106\]__
+
+__OBS3__: Se no período de geração e estabelecimento for encontrado a parametrização de Data do Inventário Adicional, deverá ser gravado um registro H005 para cada data de inventário encontrada além do registro H005 padrão gravado pela data de inventário informada na tela de geração\.
+
+__\[MFS\-85393\]__ Tratamento do novo parâmetro para indicar a forma de gerar o registro H005, quando o campo “40\-Motivo do Inventário” da SAFX52 não estiver preenchido\.  
+
+__Se__ o parâmetro "Não gerar o registro quando Motivo do Inventário estiver sem preenchimento na SAFX52" da tela de dados iniciais \(menu “Parâmetros > Dados Iniciais”\) estiver marcado
+
+__E se__ o campo “Motivo do inventário” da SAFX52 não estiver preenchido
+
+      Não considerar o registro da SAFX52 para gerar o H005\.
+
+__Inventário Motivo “06” \(MFS31418 – Atualização legal da EFD, VRS\. 1\.13\):__
+
+__\[MFS47427\] Inclusão dos registros C181 e C186__
+
+A partir de Janeiro/2020 será gerado um Inventário mensal, com Motivo do Inventário = “06”, para todos os produtos sujeitos ao ICMS\-ST, que apresentarem dados nos registros das “Informações Complementares das Mercadorias Sujeitas ao Regime de Substituição Tributária”\.  São os registros: C180, C181, C185, C186, C330, C380, C430, C480, C815, C870 e C880\.
+
+*\(O C870 esta incluído nesta lista devido ao comportamento do PVA, mas na verdade, este não é um registro de informações complementares de ST, como são os demais\. No entanto, o PVA exige o Inventário 06 na presença deste registro\)  *
+
+Trata\-se de uma inventário restrito aos produtos com dados nestes registros, e que será gerado sempre da seguinte forma:
+
+\-Campo 02\-DT\_INV = data do dia anterior ao primeiro dia do período \(DT\_INI do reg\. 0000\);
+
+\-Campo 04\-MOT\_INV = “06”;
+
+Os dados serão recuperados da SAFX52 apenas para esta Data e Motivo \(ver detalhes sobre a recuperação e processamento dos dados na regra __H010\-Motivo\-de\-Inventário\-06__\)\.
+
+__\(MFS34598\):__
+
+Caso não existam registros na SAFX52 para o motivo de inventário “06”  \(conforme a recuperação dos dados descrita na __RNH010\-A__\), o procedimento será:
+
+\- Gravar o regitro H005 com o campo VL\_INV = zero;   
+
+Este Inventário do Motivo = “06” é independente dos demais exigidos pela legislação\. Desta forma, ele não depende da data do inventário informada na tela da geração do Sped, e nem da parametrização do menu “*Parâmetros > Registro \(Bloco H\) > Data do Inventário Adicional*”\.
+
+RNH005\-02
+
+Campo DT\_INV:
+
+__\[MFS4106\] __Inclusão da parametrização “Data do Inventário Adicional”
+
+__\[MFS31418\] __Inclusão do Inventário Motivo “06” \(Vrs\. 1\.13, Jan/2020\);
+
+A data do inventário é gerada de acordo com o tipo de Inventário:
+
+Data informada na tela da geração do Sped \(campo “Data do inventário”\) __ou__
+
+Data informada na parametrização “Data do Inventário Adicional” __ou__
+
+Data do dia imediatamente anterior ao primeiro dia do período \(DT\_INI do registro 0000\);
+
+RNH005\-03
+
+Campo VL\_INV:
+
+O conteúdo deste campo será o valor total do Inventário\. Este valor será o resultado da totalização do campo 06\-VL\_ITEM de todos os registros H010\.
+
+RNH005\-04
+
+Campo MOT\_INV:
+
+\[OS3701\-C – Alteração\]
+
+Campo deve ser gerado apenas para as gerações a partir de 07/2012\.
+
+__\[MFS\-85393\]__ Tratamento do novo parâmetro para indicar a forma de gerar o registro H005, quando o campo “40\-Motivo do Inventário” da SAFX52 não estiver preenchido
+
+Considerar a informação cadastrada no campo “Motivo do inventário” da tela de geração do SPED FISCAL
+
+__Se__ o parâmetro "Não gerar o registro quando Motivo do Inventário estiver sem preenchimento na SAFX52" da tela de dados iniciais \(menu “Parâmetros > Dados Iniciais”\) estiver marcado
+
+     __Se__ o campo “Motivo do inventário” da SAFX52 não estiver preenchido
+
+            O registro H005 não será gerado
+
+     __Senão__
+
+            Considerar a informação cadastrada no campo “Motivo do inventário” da SAFX52    
+
+            \(campo “40\-Motivo do Inventário”\)
+
+__Senão__ \(Parâmetro desmarcado\)
+
+      __Se__ o campo “Motivo do inventário” da SAFX52 não estiver preenchido
+
+            Gravar “01”
+
+      __Senão__
+
+            Considerar a informação cadastrada no campo “Motivo do inventário” da SAFX52    
+
+            \(campo “40\-Motivo do Inventário”\)\.
+
+*Se o campo não estiver preenchido,  emitir seguinte mensagem de crítica no log de geração: *
+
+*===H005=== Campo MOV\_INV não encontrado no arquivo – Registro obrigatório”\.*
+
+__Registro H010 – Inventário__
+
+RNH010
+
+__\[MFS\-85393\]__ Tratamento do novo parâmetro para indicar a forma de gerar o registro H005, quando o campo “40\-Motivo do Inventário” da SAFX52 não estiver preenchido\.  Como o registro H010 é “filho” do registro H005, seguirá a regra de geração do registro H005 para o novo parâmetro\.
+
+__\[MFS97585\] __Alteração da regra de geração do Registro H010, para não gerar quando o campo 03\-VL\_INV do Registro H005 for igual a zero, conforme regra do guia prático\.
+
+__Origem dos dados:__ SAFX52
+
+__Filtro__:
+
+COD\_EMPRESA à código da Empresa informante
+
+COD\_ESTAB à código do Estabelecimento informante \(ver OBS 1\)
+
+DATA\_INVENTARIO à data do Inventário \(campo DT\_INV do registro H005\)
+
+GRUPO\_CONTAGEM à 1, 2, 3 e 5 \(ver OBS 2\)
+
+__Se__ o parâmetro "Não gerar o registro quando Motivo do Inventário estiver sem preenchimento na SAFX52" da tela de dados iniciais \(menu “Parâmetros > Dados Iniciais”\) estiver marcado
+
+__E se__ o campo “Motivo do inventário” da SAFX52 não estiver preenchido
+
+      Não considerar o registro\.
+
+  
+
+__Obs\.:__  O registro H010 só deve ser gerado se o campo 03\-VL\_INV do registro H005 for maior que zero\. Ou seja, quando o somatório do campo 06\-VL\_ITEM \(Campo 14\-Custo Total da SAFX52\) de todos as linhas do registro H010 for maior que zero\.
+
+__\(MFS31418\) \(MFS47427\)__
+
+Para geração do inventário mensal do Motivo de Inventário = “__06__”, as regras gerais da recuperação e processamento dos dados da SAFX52, estão descritas na regra __RNH010\-A__\.
+
+ 
+
+= = =
+
+OBS 1 \- Na geração por inscrição estadual única, deve\-se recuperar os dados de todos os estabelecimentos envolvidos na centralização\.
+
+OBS 2 \- Conforme consulta realizada à Receita, o grupo 4 \(estoque de terceiros em poder de terceiros\) não deve ser considerado, e o grupo 5 \(estoque em depósito fechado\) deve ser apresentado junto com o grupo 1 \(ver documento “Respostas\_Tutomo\_16\-05\-2008\.doc”\)\.
+
+= = =
+
+__Gerar um registro para cada combinação dos seguintes dados__:
+
+<a id="_Hlk28261537"></a>\- Produto                             \(campos 06/07 SAFX52\)
+
+\- Grupo de Contagem          \(campo 03 SAFX52\)
+
+\- Proprietário da mercadoria \(campos  24/25 da SAFX52\)    \(ver OBS 1\)
+
+\- Unidade de Medida            \(campo 13\)                               \(ver OBS 2\)
+
+O grupamento é necessário pois a SAFX52 tem na sua chave a informação da *Natureza do Estoque*, o que permite a existência de registros onde todos os campos chave sejam os mesmos, exceto a natureza do estoque\. Assim, algumas possibilidades de erros serão tratadas, como por exemplo a ocorrência de registros de mesmo produto, mas unidades de medida diferentes\.  
+
+ 
+
+OBS 1 \- <a id="_Hlk28262234"></a>Para os registros com grupo de contagem = 1 ou 5, *não é necessário* considerar o proprietário no grupamento\. Já quando for grupo de contagem 2 ou 3, é preciso considerar o proprietário
+
+OBS 2 \- A unidade de medida esta sendo considerada no grupamento por uma questão de segurança, ou seja, apenas para evitar que uma situação de erro passe despercebida\. Se acontecer de existirem registros de mesmo produto, grupo de contagem e proprietário iguais, mas unidades diferentes, a geração irá propositalmente agrupar separado e gravar separado no registro H010, o que provocará uma mensagem de erro tanto no log da geração, como no PVA \(ver mensagem definida na RNH010\-03\)\. Esta situação é possível na SAFX52, desde que os registros usem naturezas de estoque diferentes\. 
+
+OBS 3 \- Os campos “18\-Código da Conta” e o “15\-Valor Unitário” eram originalmente usados no grupamento, mas foram retirados \(__CH66965 e MFS14138__\)\. Ver RNH010\-05/RNH010\-10\.
+
+__Tratamento da pessoa fis/jur no grupamento: __
+
+Grupo de Contagem
+
+Utilização da pessoa fis/jur proprietária
+
+\(campos 24 e 25\)
+
+1 \(estoque próprio, em poder do estabelecimento\)
+
+Não usar
+
+2 \(estoque próprio em poder de terceiros\)
+
+Usar
+
+3 \(estoque de terceiros em poder do estab\.\)
+
+Usar
+
+5 \(estoque em depósito fechado\)
+
+Não usar
+
+Sobre a Pessoa fis/Jur: Observar que o proprietário da mercadoria *não é campo obrigatório* na SAFX52\. No Sped ele é obrigatório apenas para os grupos de contagem 2 e 3 \(IND\_PROP = 1 ou 2\)\. Por isso, devemos ter o cuidado de prever esta situação da seguinte forma: quando se tratar dos grupos do contagem 2 e 3, mas a pessoa fis/jur proprietária não estiver preenchida na SAFX52, deve\-se considerar uma pessoa em branco, e este registro deverá ser gravado com o campo COD\_PART vazio \(||\)\. Este recurso é para evitar que o produto seja desconsiderado no Inventário\. O log trará mensagem de erro para estas situações\.
+
+__Valores a serem totalizados:__
+
+Totalizar os valores de quantidade, custo total e valor total p/o IR \(campos 13, 14 e 42\), para cada combinação de produto, grupo de contagem, pessoa fis/jur proprietária, e unidade de medida, conforme as regras de grupamento já descritas acima\.
+
+RNH010\-A
+
+\(Motivo\-de\-Inventário\-06\)
+
+__Regra específica para geração do Inventário de Motivo de Inventário = “06”:__
+
+Para geração do inventário mensal do Motivo “__06__” \(conforme definido na RNH005, pela __MFS31418__\), os dados da SAFX52 serão recuperados  da seguinte forma:
+
+\- COD\_EMPRESA à código da Empresa informante
+
+\- COD\_ESTAB à código do Estabelecimento informante \(ver OBS 1\)
+
+\- DATA\_INVENTARIO à data do dia anterior ao primeiro dia do período \(DT\_INI do 0000\);
+
+\- GRUPO\_CONTAGEM à 1, 2, 3 e 5 \(ver OBS 2\)
+
+Para este inventário *não* é feito nenhum agrupamento de dados\. 
+
+Para cada registro recuperado, conforme os critérios acima, será gerado um registro __H010__\.
+
+Para isso, existe uma orientação ao usuário específica sobre a carga dos dados da SAFX52 para este tipo de Inventário \(ver Manual de Layout, campo “40\-Motivo do Inventário”, e informações do Roteiro Operacional, no item “12\-Para gerar os registros do Inventário”\)\.
+
+A orientação é carregar um único registro para cada:
+
+\- Produto
+
+\- Grupo de Contagem 
+
+\- Pessoa Física/Jurídica \(considerada apenas p/os Grupos de Contagem 2 e 3\)
+
+Caso ocorra duplicidade de linhas, por haver diferentes registros na SAFX52 de mesmo Produto, Grupo de Contagem e Pessoa Fis/Jur \(qdo for o caso\), estes registros serão desconsiderados, e será gravada a seguinte mensagem no log:
+
+*===H010=== “Para o inventário mensal do motivo 06, não deve existir registros na SAFX52 de mesmo Produto, Grupo de Contagem e Pessoa Fis/Jur \(quando for o caso\)\. Os registros nestas condições serão desconsiderados\. Ver orientações do Manual de Layout e Roteiro Operacional;*
+
+Para que o usuário possa identificar o erro, o log deve demonstrar as informações do Indicador e Código do Produto, Grupo de Contagem e Pessoa Fis/Jur, quando for o caso\.
+
+Havendo várias linhas duplicadas, será gerada uma única mensagem de erro para cada caso\.
+
+RNH010\-02
+
+Campo 02\-COD\_ITEM:
+
+Preencher com o produto do grupamento \(campos 6 e 7 da SAFX52\), conforme a regra RNH010\.
+
+Para preencher o campo, aplicar a mesma regra de concatenação já definida para os demais registros:   \[Indicador de Produto  \+  "\-"  \+  Código do produto\]
+
+\[OS3543\-A\]
+
+Se parâmetro ‘Considerar o Indicador no Código do Item’, não concatenar o código, utilizando a mesma regra descrita no campo 02 do registro 0200
+
+RNH010\-03
+
+Campo 03\-UNID:
+
+Preencher com a unidade de medida do grupamento, conforme o grupamento definido na RNH010\.
+
+Caso o grupamento retorne mais de um registro de mesmo produto, grupo de contagem e pessoa fis/jur proprietária, mas com unidades diferentes, o procedimento deve ser:
+
+\- Gravar normalmente os dois registros no Sped;
+
+\- Gravar mensagem no log de erros alertando o usuário sobre a existência do problema\. Utilizar a mensagem de número 335 da planilha de erros \(Sped\_Fiscal\_Log\_Erros\)\. A mensagem pode ser associada ao segundo registro gravado \(ou do segundo em diante, quando for o caso\); 
+
+ 
+
+__Importante:  __Originalmente, foi definido que os registros do Inventário trabalhariam com a unidade de medida padrão \(campo 08 da SAFX52\), por se tratar da unidade de estoque dos produtos \(conforme definição do Manual de Layout da SAFX08\)\. Depois, foi verificado o seguinte cenário do Mastersaf:
+
+-  Livro de Estoque \(P3\) à utiliza a unidade padrão \(SAFX2017\)
+-  Livro do Inventário \(P7\) à utiliza a unidade de medida \(SAFX2007\)
+-  Ato Cotepe 70 à utiliza nos registros de inventário a unidade padrão
+
+Para garantir que os valores do Bloco H  sejam os mesmos demonstrados no Livro do Inventário \(P7\) do Mastersaf,  a definição original foi alterada para passa a usar a unidade de medida \(campo 13 da SAFX52\), ao invés da unidade padrão\.
+
+__Alteração feita pelo CH74570:__ para a geração deste campo, o sistema deverá recuperar o valor do campo unidade de medida padrão \(campo 08 da SAFX52\), por se tratar da unidade de estoque dos produtos\. O PVA não está mais aceitando a unidade medida: está aparecendo erro por cruzar esta unidade com o registro 0200\.
+
+RNH010\-05
+
+Campo 05\-VL\_UNIT:
+
+Preencher com o valor unitário, conforme o agrupamento definido na RNH010\.
+
+Alteração __MFS14138__: O valor unitário deixou de fazer parte do agrupamento descrito na RNH010\. 
+
+O valor unitário será calculado a partir dos totais apurados no agrupamento definido na RNH010, da seguinte forma:
+
+             Total do campo “14\-Custo Total” / Total do campo “13\-Quantidade”
+
+= = = = =
+
+Originalmente, o valor unitário era considerado no grupamento definido na RNH010, seguindo a mesma lógica da unidade de medida\. Nesse caso, quando retornasse mais de um registro de mesmo produto, grupo de contagem, pessoa fis/jur proprietária e medida, *mas com valores unitários diferentes*, o procedimento era o seguinte: gravar as diferentes linhas do arquivo, e gravar uma mensagem de erro no log \(mensagem de número 337 da planilha de erros\)\.
+
+Na __OS4043__ foi alterada a geração para não considerar o valor unitário no agrupamento, e calcular o Valor Unitário\. Mas na época, a alteração foi definida apenas para a geração por Inscrição Estadual Única\. 
+
+Posteriormente, na __MFS14138__, a mesma lógica passou a ser utilizada também para a geração “normal”\.
+
+= = = = =
+
+RNH010\-07
+
+Campo 07\-IND\_PROP:
+
+Gravar o grupo de contagem do grupamento, conforme a regra RNH010,  fazendo o seguinte de\-para entre o grupo de contagem da SAFX52 e o campo IND\_PROP do Sped:
+
+__SAFX52__
+
+__IND\_PROP__
+
+1 – Estoque próprio em poder do Estabelecimento
+
+0
+
+2 – Estoque próprio em poder de terceiros
+
+1
+
+3 – Estoque de terceiros em poder do Estabelecimento
+
+2
+
+5 – Estoque em Depósito Fechado
+
+0
+
+Obs: a opção “4 \- Estoque de terceiros em poder de terceiros” da SAFX52 não consta deste de\-para porque não será contabilizada, conforme regra definida na RNH010\.
+
+Exceto: Quando Notas Fiscais Eletrônicas – NF\-e, modelo 55, emitidas com inscrição estadual única e CNPJs dos demais estabelecimentos pelo contribuinte quando indicado no § 2º\-A do art\. 4º, sempre gravar com “1” \(2 – Estoque próprio em poder de terceiros\)\. 
+
+Obs\.:  Na geração por inscrição estadual única, deve\-se recuperar os dados de todos os estabelecimentos envolvidos na centralização\.
+
+RNH010\-08
+
+Campo 08\-COD\_PART
+
+Gravar o código da pessoa fís/jur do grupamento \(campos 24 e 25 da SAFX52\), conforme a regra RNH010\.
+
+__\[ALTERADA – CH31293\_2013\]__
+
+Se o campo 07\-IND\_PROP desse registro for igual a “0” \(SAFX52 igual  a “1 – Estoque próprio em poder do Estabelecimento”\), não preencher esse campo, gerar || \(pipes\)\.
+
+\[OS4747\] Quando o parâmetro "Considerar o Indicador no Código do Participante" da tela de Dados Iniciais __estiver__ selecionado, este campo será gerado com o Código de identificação da pessoa fis/jur, concatenando o Indicador \(IND\_FIS\_JUR\) com o Código da PFJ \(COD\_FIS\_JUR\), considerando a formatação: Indicador \+ "\-" \+ Código\.
+
+Se o parâmetro "Considerar o Indicador no Código do Participante" da tela de Dados Iniciais __NÃO estiver__ selecionado, este campo será gerado apenas com o Código da PFJ \(COD\_FIS\_JUR\)\.
+
+Para o código aqui informado, será demonstrado o Cadastro no registro 0150\.
+
+RNH010\-10
+
+Campo 10\-COD\_CTA
+
+Preencher com o código da conta \(campo 18 da SAFX52\)\.
+
+__Regra alterada a partir do chamado 66965__:
+
+Caso o grupamento retorne mais de um registro de mesmo produto, grupo de contagem e pessoa fis/jur proprietária, mas com códigos de conta diferentes, o procedimento deve ser:
+
+- Gravar normalmente os dois registros no Sped;
+- Gravar mensagem no log de erros alertando o usuário sobre a existência do problema\. Utilizar a mensagem de número 339 da planilha de erros \(Sped\_Fiscal\_Log\_Erros\)\. A mensagem pode ser associada ao segundo registro gravado \(ou do segundo em diante, quando for o caso\); 
+
+Caso existam mais de um registro de mesmo produto, grupo de contagem e pessoa fis/jur proprietária, mas com códigos de conta diferentes, devemos totalizar os valores num único registro e considerar a conta do item de maior valor de inventário \(campo 14 da SAFX52\)\.
+
+\(ao invés de gerar linhas com as diferentes contas como era feito na versão anterior ao chamado 66965\) 
+
+Esta nova regra segue as orientações do Guia Prático \(a partir da vrs 1\.0\.4\), que diz para quando ocorrer esta situação, utilizarmos a conta do item de maior relevância\. 
+
+RNH010\-11
+
+Campo 11\-VL\_ITEM\_IR
+
+Verificar a regra deste campo no documento Sped\_Fiscal\_DEPARA\.xls, em que a totalização do valor total do IR \(campo 42\-Valor Total p/o IR da SAFX52\) deve ocorrer conforme o agrupamento definido na RNH010 deste documento\. 
+
+__\[ALTERADA – CH706\_2015\]__
+
+Este campo constará no layout do H010 apenas para referências a partir de Jan/2015, ou seja, Data Inicial e Data Final preenchida na tela de geração do arquivo magnético que compreenda a partir dessa data e mesmo que não possua valor do Imposto de Renda, pois o mesmo deverá gerar pipe\-pipe, lembrando que por via de regra a data do inventário pode ser de ano anterior\.
+
+__Registro H020 – Informação Complementar do Inventário__
+
+__RNH020__
+
+__Regra Geral__
+
+Gerar um registro H020 sempre para cada registro de inventário \(H010\)\.
+
+Para a geração deste registro, a data do inventário \(Campo 03 da SAFX50/52\) deve estar contemplada no período de geração do arquivo\.
+
+= = =
+
+__MFS1858 __\(ch 23338/23915\): Não gravar H020 qdo MOT\_INV do H005 = “01”;
+
+__MFS16603 __\(Fev/2018\):
+
+Quando MOT\_INV do registro “pai” H005 = “01”, o H020 não será gerado\. Exceto quando a UF do Estabelecimento for igual a “RS”\. *\(regra definida baseado em consulta à Sefaz em 09/02/2018\) *
+
+__MFS42592 \(Set/2020\)__: __Regra válida para geração do arquivo do ano de 2020__
+
+ A regra de geração do H020 para os estabelecimentos do RS foi alterada devido à nova consulta feita à Sefaz\-RS, que orienta a geração do H020 p/o MOT\_INV = “01”, *apenas* no arquivo da EFD de Janeiro\. Desta forma, a nova regra p/o RS é: 
+
+Quando MOT\_INV do H005 = “01” e  UF do Estabelecimento = “RS”, o H020 será gerado, mas __*apenas*__ quando o mês de referência do arquivo = Janeiro \(DT\_INI do registro 0000 pertence à janeiro\)\.
+
+ 
+
+__MFS61841 \(Mar/2021\) – Regra válida para geração do arquivo a partir do ano de 2021__
+
+ A regra de geração do H020 para os estabelecimentos do RS foi alterada devido à nova consulta feita à Sefaz\-RS, que orienta a geração do H020 p/o MOT\_INV = “01”, *apenas* no arquivo da EFD de FEVEREIRO\. Desta forma, a nova regra p/o RS é: 
+
+Quando MOT\_INV do H005 = “01” e  UF do Estabelecimento = “RS”, o H020 será gerado, mas __*apenas*__ quando o mês de referência do arquivo = Fevereiro \(DT\_INI do registro 0000 pertence à fevereiro\)\.
+
+__MFS31418__: Quando MOT\_INV \(H005\) = “06”, o registro H020 não será gerado;
+
+= = = 
+
+O registro é obrigatório quando o motivo do inventário, informado no campo MOT\_INV do registro H005 for de “02” a “05”, exceto quando não existir estoque \(Campo 03 \- VL\_INV do H005 = 0\)\. 
+
+*\(OS\-3701\-C – incluiu a validação do valor do inventário, H005, VL\_INV\)*
+
+Se o Registro H020 estiver desmarcado na parametrização por perfil, e o MOT\_INV do registro H005 for de “02” a “05”, e o valor do estoque do H005 for maior zero, emitir a seguinte mensagem de crítica no Log de Geração:
+
+====H020==========
+
+“Registro obrigatório não encontrado no arquivo\. Quando o Campo MOT\_INV do Registro H005 for de “02” á “05”__ __e estoque maior que zero, este registro torna\-se obrigatório\.
+
+\[Alteração OS3701\-A\]
+
+Registro tem relacionamento 1:N, ou seja, podem existir N registros de H020 para o movimento de inventário H010\.
+
+Se houver informação de situação estadual  "A" e "B" \(código A \+ código B\) na SAFX520, então desconsiderar o código de situação tributária do inventário \(SAFX52\), onde o sistema apenas deve considerar os valores de CST na SAFX52 quando não existir informação na SAFX520\.
+
+Registro deve ser gerado apenas a partir da versão EFD105 do leiaute \(Julho/2012\)
+
+__RNH020\-02__
+
+__CST\_ICMS__
+
+à Quando a origem de dados for SAFX52
+
+Concatenação dos códigos das tabelas de situação estadual  "A" e "B" \(código A \+ código B\)\. Campos 38 e 39 da SAFX52\.
+
+àQuando a origem de dados for SAFX520 \(Tabela filha\)
+
+Concatenação dos códigos das tabelas de situação estadual  "A" e "B" \(código A \+ código B\)\. Campos 15 e 16 da SAFX520\.
+
+Se os campos de situação tributária A ou B não forem preenchidos, gerar esta informação como NULO\. Este campo é obrigatório e devem ser apresentadas as seguintes mensagens de críticas no LOG de geração caso sejam nulos:
+
+Em ambas tabelas, quando a situação tributaria estadual da tabela A for nula, emitir mensagem:
+
+===H020================================================
+
+“O Codigo de Situacao Tributaria Estadual Tabela A nao esta cadastrado\.”
+
+Em ambas tabelas, quando a situação tributaria estadual da tabela A for nula, emitir mensagem:
+
+===H020================================================
+
+“O Codigo de Situacao Tributaria Estadual Tabela B nao esta cadastrado\.”
+
+__RNH020\-03__
+
+__BC\_ICMS__
+
+__\[MFS61989\]__ Inclusão do cálculo da base ICMS unitária e do valor do ICMS unitário
+
+à Quando a origem de dados for SAFX52
+
+Se o campo 26 da SAFX52 estiver preenchido, então considerar a informação cadastrada neste campo para fazer o cálculo da base ICMS unitária\.
+
+             
+
+         Total do campo “26\-Base ICMS” / Total do campo “13\-Quantidade \(SAFX52\)”
+
+àQuando a origem de dados for SAFX520 \(Tabela filha\)
+
+Se o campo 17 da SAFX520 estiver preenchido, então considerar a informação cadastrada neste campo para fazer o cálculo da base ICMS unitária\.
+
+         Total do campo “17\-Base ICMS” / Total do campo “13\-Quantidade \(SAFX52\)”
+
+Se não estiver preenchido, gravar zero\.
+
+__RNH020\-04__
+
+__VL\_ICMS__
+
+__\[MFS61989\]__ Inclusão do cálculo da base ICMS unitária e do valor do ICMS unitário
+
+à Quando a origem de dados for SAFX52
+
+Se o campo 17 da SAFX52 estiver preenchido, então considerar a informação cadastrada neste campo para fazer o cálculo do valor do ICMS unitário\.
+
+Total do campo “17\-Valor do ICMS” / Total do campo “13\-Quantidade \(SAFX52\)”
+
+àQuando a origem de dados for SAFX520 \(Tabela filha\)
+
+Se o campo 18 da SAFX520 estiver preenchido, então considerar a informação cadastrada neste campo para fazer o cálculo do valor do ICMS unitário\.
+
+Total do campo “18\-Valor do ICMS” / Total do campo “13\-Quantidade \(SAFX52\)”
+
+Se não estiver preenchido, gravar zero\.
+
+__Registro H030 – Informações Complementares do Inventário das Mercadorias__
+
+__Sujeitas ao Regime de Substituição Tributária__
+
+__RNH030__
+
+__Regra Geral__
+
+Novo registro da versão 1\.13, Jan/2020 \(MFS31418\)\.
+
+Este registro é gerado nas seguintes condições:
+
+\- A partir da versão EFD113 do leiaute \(Janeiro/2020\);
+
+\- Apenas para o inventário mensal do MOT\_INV = “06”;
+
+__ __
+
+Trata\-se de um registro “filho” do H010\.
+
+Para cada registro H010 será gerado um único registro H030, com os valores descrito nas regras a seguir\.
+
+__RNH030\-02__
+
+__Campo 02\-VL\_ICMS\_OP:__
+
+Campo “21\-Valor de ICMS Médio” da SAFX52\.
+
+\(Se o campo não estiver preenchido, gravar zeros\)
+
+__RNH030\-03__
+
+__Campo 03\-VL\_BC\_ICMS\_ST:__
+
+Campo “43\-Valor de Base de ICMS\-ST Médio” da SAFX52\.
+
+\(Se o campo não estiver preenchido, gravar zeros\)
+
+__RNH030\-04__
+
+__Campo 04\-VL\_ICMS\_ST:__
+
+Campo “22\-Valor de ICMS\-ST Médio” da SAFX52\.
+
+\(Se o campo não estiver preenchido, gravar zeros\)
+
+__RNH030\-05__
+
+__Campo 05\-VL\_FCP:__
+
+Campo “44\-Valor FECEP Médio” da SAFX52\.
+
+\(Se o campo não estiver preenchido, gravar zeros\)
+

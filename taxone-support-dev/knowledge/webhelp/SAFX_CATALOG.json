@@ -1,0 +1,2562 @@
+{
+  "version": "1.0",
+  "generated": "2026-03-09",
+  "total_entries": 250,
+  "total_safx_codes": 41,
+  "total_error_codes": 193,
+  "files_scanned": 3213,
+  "by_safx_code": {
+    "SAFX01": {
+      "errors": {
+        "90001": {
+          "description": "Codigo de Empresa nao esta preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90001: 'Codigo de Empresa nao esta preenchido.', siga a orientação abaixo:",
+          "article_id": "19230841935885",
+          "article_path": "onesource-tax-one/faq/19230841935885.md",
+          "facet": "taxone"
+        },
+        "90002": {
+          "description": "Codigo de Estabelecimento deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90002: 'Codigo de Estabelecimento deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "19230939301389",
+          "article_path": "onesource-tax-one/faq/19230939301389.md",
+          "facet": "taxone"
+        },
+        "90009": {
+          "description": "O Campo Data de Movimento nao esta preenchido ou preenchido com zeros.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90009: 'O Campo Data de Movimento nao esta preenchido ou preenchido com zeros.', siga a orientação abaixo:",
+          "article_id": "16052996064141",
+          "article_path": "onesource-tax-one/faq/16052996064141.md",
+          "facet": "taxone"
+        },
+        "90011": {
+          "description": "Conta contábil deve ser preenchida.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90011: 'Conta contábil deve ser preenchida.', siga a orientação abaixo:",
+          "article_id": "16053316117133",
+          "article_path": "onesource-tax-one/faq/16053316117133.md",
+          "facet": "taxone"
+        },
+        "90012": {
+          "description": "Conta Contábil não cadastrada ou data de validade posterior a data do lançamento', siga as orientações abaixo:",
+          "solution": "Informe um código valido no arquivo TXT, ou",
+          "article_id": "20861690329485",
+          "article_path": "onesource-tax-one/faq/20861690329485.md",
+          "facet": "taxone"
+        },
+        "90020": {
+          "description": "O Campo Indice de Conversao ou Campo Valor Convertido nao esta preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90020: 'O Campo Indice de Conversao ou Campo Valor Convertido nao esta preenchido.', siga a orientação abaixo:",
+          "article_id": "19472111519501",
+          "article_path": "onesource-tax-one/faq/19472111519501.md",
+          "facet": "taxone"
+        },
+        "90027": {
+          "description": "?",
+          "solution": "Para corrigir o erro 90027 \\- O Código da Unidade da Federação é inválido, siga os passos abaixo:",
+          "article_id": "10889598870413",
+          "article_path": "onesource-tax-one/faq/10889598870413.md",
+          "facet": "taxone"
+        },
+        "90054": {
+          "description": "Codigo do Indice de Conversao nao cadastrado.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90054: 'Codigo do Indice de Conversao nao cadastrado.', siga a orientação abaixo:",
+          "article_id": "19472482721677",
+          "article_path": "onesource-tax-one/faq/19472482721677.md",
+          "facet": "taxone"
+        },
+        "90096": {
+          "description": "A Conta Contábil de Contra-Partida não esta cadastrada.', siga as orientações abaixo:",
+          "solution": "Informe um código valido no arquivo TXT, ou",
+          "article_id": "20861654587149",
+          "article_path": "onesource-tax-one/faq/20861654587149.md",
+          "facet": "taxone"
+        },
+        "90097": {
+          "description": "Para os Campos Centro de Custo/Despesa - deve ser preenchido somente um dos dados.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90097: 'Para os Campos Centro de Custo/Despesa - deve ser preenchido somente um dos dados.', siga a orientação abaixo:",
+          "article_id": "19231469800333",
+          "article_path": "onesource-tax-one/faq/19231469800333.md",
+          "facet": "taxone"
+        },
+        "90098": {
+          "description": "Os campos Código do Histórico e Histórico Complementar são relacionados, pelo menos um deve ser informado.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90098: 'Os campos Código do Histórico e Histórico Complementar são relacionados, pelo menos um deve ser informado.', siga a orientação abaixo:",
+          "article_id": "16053509883661",
+          "article_path": "onesource-tax-one/faq/16053509883661.md",
+          "facet": "taxone"
+        },
+        "90099": {
+          "description": "O campo Arquivamento é obrigatório - deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90099: 'O campo Arquivamento é obrigatório - deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "16053403478413",
+          "article_path": "onesource-tax-one/faq/16053403478413.md",
+          "facet": "taxone"
+        },
+        "90100": {
+          "description": "O campo Debito/Credito deve ser preenchido com D ou C.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90100: 'O campo Debito/Credito deve ser preenchido com D ou C.', siga a orientação abaixo:",
+          "article_id": "16053342459149",
+          "article_path": "onesource-tax-one/faq/16053342459149.md",
+          "facet": "taxone"
+        },
+        "90101": {
+          "description": "O campo Valor do Lançamento Contábil deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90101: 'O campo Valor do Lançamento Contábil deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "16054481787277",
+          "article_path": "onesource-tax-one/faq/16054481787277.md",
+          "facet": "taxone"
+        },
+        "90123": {
+          "description": "O Campo de Codigo de Operacao nao esta cadastrado.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90123: 'O Campo de Codigo de Operacao nao esta cadastrado.', siga a orientação abaixo:",
+          "article_id": "19472627391885",
+          "article_path": "onesource-tax-one/faq/19472627391885.md",
+          "facet": "taxone"
+        },
+        "90135": {
+          "description": "O Campo Código de Tipo de Serviço não esta cadastrado.', para solucionar o problema:",
+          "solution": "",
+          "article_id": "20859975472141",
+          "article_path": "onesource-tax-one/faq/20859975472141.md",
+          "facet": "taxone"
+        },
+        "90209": {
+          "description": "?",
+          "solution": "Para corrigir o erro 90209 \\- O campo de Data de Validade com formato inválido, siga os passos abaixo:",
+          "article_id": "10890735280909",
+          "article_path": "onesource-tax-one/faq/10890735280909.md",
+          "facet": "taxone"
+        },
+        "90381": {
+          "description": "O Campo Código de Centro de Custo não esta cadastrado.', siga as orientações abaixo:",
+          "solution": "Informe um código valido no arquivo TXT, ou",
+          "article_id": "20862164797325",
+          "article_path": "onesource-tax-one/faq/20862164797325.md",
+          "facet": "taxone"
+        },
+        "90382": {
+          "description": "O Campo Código de Centro de Despesa não esta cadastrado', siga as orientações abaixo:",
+          "solution": "Informe um código valido no arquivo TXT, ou",
+          "article_id": "20862013112717",
+          "article_path": "onesource-tax-one/faq/20862013112717.md",
+          "facet": "taxone"
+        },
+        "90383": {
+          "description": "O Campo Codigo de Historico Padrao nao esta cadastrado', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90383: 'O Campo Codigo de Historico Padrao nao esta cadastrado', siga a orientação abaixo:",
+          "article_id": "19472929401101",
+          "article_path": "onesource-tax-one/faq/19472929401101.md",
+          "facet": "taxone"
+        },
+        "90386": {
+          "description": "Data de movimento informada no registro esta fora do periodo definido para importacao.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90386: 'Data de movimento informada no registro esta fora do periodo definido para importacao.', siga a orientação abaixo:",
+          "article_id": "19231390686093",
+          "article_path": "onesource-tax-one/faq/19231390686093.md",
+          "facet": "taxone"
+        },
+        "90461": {
+          "description": "Valor Decimal ou Numerico com formato invalido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90461: 'Valor Decimal ou Numerico com formato invalido.', siga a orientação abaixo:",
+          "article_id": "19471990471181",
+          "article_path": "onesource-tax-one/faq/19471990471181.md",
+          "facet": "taxone"
+        },
+        "90468": {
+          "description": "Nao foi possivel recuperar para o estabelecimento o grupo de centralizacao do Codigo de Operacao.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90468: 'Nao foi possivel recuperar para o estabelecimento o grupo de centralizacao do Codigo de Operacao.', siga a orientação abaixo:",
+          "article_id": "16056603998477",
+          "article_path": "onesource-tax-one/faq/16056603998477.md",
+          "facet": "taxone"
+        },
+        "90477": {
+          "description": "Grupo de Centralizacao de Codigo de Historico Padrao nao esta preenchido ou invalido na data ou nao esta cadastrado ou Data nao preenchida.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90477: 'Grupo de Centralizacao de Codigo de Historico Padrao nao esta preenchido ou invalido na data ou nao esta cadastrado ou Data nao preenchida.', siga a orientação abaixo:",
+          "article_id": "19472726370189",
+          "article_path": "onesource-tax-one/faq/19472726370189.md",
+          "facet": "taxone"
+        },
+        "90549": {
+          "description": "?",
+          "solution": "Para corrigir o erro 90549 \\- O Código do Município não está cadastrado ou com informação alfanumérica no código, siga os passos abaixo:",
+          "article_id": "10889016624653",
+          "article_path": "onesource-tax-one/faq/10889016624653.md",
+          "facet": "taxone"
+        },
+        "91499": {
+          "description": "Pessoa FIS/JUR, participante vinculado, não cadastrado na classificação de Pessoa Física/Jurídica por Empresa.', siga a orientação abaixo:",
+          "solution": "",
+          "article_id": "20861145416333",
+          "article_path": "onesource-tax-one/faq/20861145416333.md",
+          "facet": "taxone"
+        },
+        "93185": {
+          "description": "Para o indicador de Lancamento igual a <X> (Lancamento Extemporaneo) o campo Data de Lancamento Extemporaneo deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "",
+          "article_id": "19473155832845",
+          "article_path": "onesource-tax-one/faq/19473155832845.md",
+          "facet": "taxone"
+        },
+        "93186": {
+          "description": "O campo Data de Lancamento Extemporaneo deve ser preenchido apenas quando o indicador de Lancamento for igual a <X> - Lancamento Extemporaneo",
+          "solution": "Para solucionar o problema deve-se verificar se o lançamento realmente é normal e então retirar a data no campo DAT_LANCTO_EXTEMP, caso contrario deve-se alterar o campo TIPO_LANCTO para \"X - Extemporâneo",
+          "article_id": "10365664499853",
+          "article_path": "mastersaf-dw/faq-dw/10365664499853.md",
+          "facet": "dw"
+        },
+        "93187": {
+          "description": "Indicador do tipo de lancamento deve ser <N>, <E> ou <X>.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 93187: 'Indicador do tipo de lancamento deve ser <N>, <E> ou <X>.', siga a orientação abaixo:",
+          "article_id": "19473068610061",
+          "article_path": "onesource-tax-one/faq/19473068610061.md",
+          "facet": "taxone"
+        },
+        "93310": {
+          "description": "?",
+          "solution": "Para corrigir o erro 93310 \\- Código do Evento não está cadastrado na Tabela de Eventos Contábeis (Anexo I) da DES-IF, siga os passos abaixo:",
+          "article_id": "10890022075149",
+          "article_path": "onesource-tax-one/faq/10890022075149.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX02": {
+      "errors": {
+        "90002": {
+          "description": "Código do estabelecimento deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90002: 'Código do estabelecimento deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "16052856416013",
+          "article_path": "onesource-tax-one/faq/16052856416013.md",
+          "facet": "taxone"
+        },
+        "90009": {
+          "description": "O campo Data de Movimento não esta preenchido ou esta preenchido com zeros.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90009: 'O campo Data de Movimento não esta preenchido ou esta preenchido com zeros.', siga a orientação abaixo:",
+          "article_id": "16059731585805",
+          "article_path": "onesource-tax-one/faq/16059731585805.md",
+          "facet": "taxone"
+        },
+        "90011": {
+          "description": "Conta Contabil deve ser preenchida",
+          "solution": "Para solucionar o problema basta informar um COD_CONTA valido",
+          "article_id": "10383489956365",
+          "article_path": "mastersaf-dw/faq-dw/10383489956365.md",
+          "facet": "dw"
+        },
+        "90012": {
+          "description": "Conta Contábil não cadastrada ou data de validade posterior a data de lançamento.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90012: 'Conta Contábil não cadastrada ou data de validade posterior a data de lançamento.', siga a orientação abaixo:",
+          "article_id": "16155964287501",
+          "article_path": "onesource-tax-one/faq/16155964287501.md",
+          "facet": "taxone"
+        },
+        "90100": {
+          "description": "O campo Debito/Credito deve ser preenchido com <D> ou <C>.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro Erro 90100: 'O campo Debito/Credito deve ser preenchido com <D> ou <C>.', siga a orientação abaixo:",
+          "article_id": "16156155628301",
+          "article_path": "onesource-tax-one/faq/16156155628301.md",
+          "facet": "taxone"
+        },
+        "90109": {
+          "description": "O Valor do Saldo Final nao confere com valores informados",
+          "solution": "Para solucionar o problema basta informar no campo VLR_SALDO_FIM o valor correto do calculo.",
+          "article_id": "10383747307917",
+          "article_path": "mastersaf-dw/faq-dw/10383747307917.md",
+          "facet": "dw"
+        },
+        "90110": {
+          "description": "?",
+          "solution": "Para corrigir o erro 90110 \\- O Indicador de Débito/Crédito do Saldo Final não confere, siga os passos abaixo:",
+          "article_id": "10888812882061",
+          "article_path": "onesource-tax-one/faq/10888812882061.md",
+          "facet": "taxone"
+        },
+        "90386": {
+          "description": "Data de movimento informada no registro esta fora do periodo definido para importação.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90386: 'Data de movimento informada no registro esta fora do periodo definido para importação.', siga a orientação abaixo:",
+          "article_id": "16156092625421",
+          "article_path": "onesource-tax-one/faq/16156092625421.md",
+          "facet": "taxone"
+        },
+        "90461": {
+          "description": "Valor Decimal ou Numerico com formato invalido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 90461: 'Valor Decimal ou Numerico com formato invalido.', siga a orientação abaixo:",
+          "article_id": "16156344419469",
+          "article_path": "onesource-tax-one/faq/16156344419469.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX03": {
+      "errors": {
+        "90054": {
+          "description": "Codigo do Indice de Conversao nao cadastrado.",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_INDICE com um valor valido ou cadastrar o código na tela Básicos > Dataware House > Manutenção > Códigos > Indice",
+          "article_id": "10910195438093",
+          "article_path": "mastersaf-dw/faq-dw/10910195438093.md",
+          "facet": "dw"
+        },
+        "90088": {
+          "description": "O Indicador de Pessoa Fisica/Juridica nao esta preenchido ou com informacao invalida.",
+          "solution": "Para solucionar o problema basta informar um dos valores validos no campo IND_FIS_JUR",
+          "article_id": "10470394426509",
+          "article_path": "mastersaf-dw/faq-dw/10470394426509.md",
+          "facet": "dw"
+        },
+        "90089": {
+          "description": "O Codigo da Pessoa Fisica/Juridica nao esta preenchido",
+          "solution": "Para solucionar o problema basta informar um código de cliente fornecedor valido no campo COD_FIS_JUR",
+          "article_id": "10470333996813",
+          "article_path": "mastersaf-dw/faq-dw/10470333996813.md",
+          "facet": "dw"
+        },
+        "90090": {
+          "description": "O Campo Data de Movimento nao esta preenchido ou preenchido com zeros.",
+          "solution": "Para solucionar o problema basta informar no campo DATA_MOVTO uma data valida",
+          "article_id": "10441860399117",
+          "article_path": "mastersaf-dw/faq-dw/10441860399117.md",
+          "facet": "dw"
+        },
+        "90099": {
+          "description": "O Campo Arquivamento e obrigatorio - deve ser preenchido",
+          "solution": "Para solucionar o problema basta informar o n° do arquivamento no campo ARQUIVAMENTO",
+          "article_id": "10470505979405",
+          "article_path": "mastersaf-dw/faq-dw/10470505979405.md",
+          "facet": "dw"
+        },
+        "90100": {
+          "description": "O Campo Debito/Credito deve ser preenchido com <D> ou <C>",
+          "solution": "Para solucionar o problema basta informar \"D - Débito\" ou \"C - Crédito\" no campo IND_DEB_CRE",
+          "article_id": "10470440415117",
+          "article_path": "mastersaf-dw/faq-dw/10470440415117.md",
+          "facet": "dw"
+        },
+        "90112": {
+          "description": "O Campo Numero do Documento nao esta preenchido.",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_DOCTO com um valor valido.",
+          "article_id": "10902540785933",
+          "article_path": "mastersaf-dw/faq-dw/10902540785933.md",
+          "facet": "dw"
+        },
+        "90115": {
+          "description": "O Campo Valor do Documento deve ser preenchido",
+          "solution": "Para solucionar o problema basta ajustar o campo VLR_MOVTO com valor maior que zero",
+          "article_id": "10903683340941",
+          "article_path": "mastersaf-dw/faq-dw/10903683340941.md",
+          "facet": "dw"
+        },
+        "90119": {
+          "description": "O Campo Codigo do Tipo de Documento nao esta preenchido.",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_DOCTO com um valor valido.",
+          "article_id": "10902443601037",
+          "article_path": "mastersaf-dw/faq-dw/10902443601037.md",
+          "facet": "dw"
+        },
+        "90122": {
+          "description": "O Campo de Codigo de Operacao nao esta preenchido.",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_OPERACAO com um valor valido.",
+          "article_id": "10902857900557",
+          "article_path": "mastersaf-dw/faq-dw/10902857900557.md",
+          "facet": "dw"
+        },
+        "90127": {
+          "description": "A Data de Vencimento nao pode ser menor que a Data de Emissao do Documento",
+          "solution": "Para solucionar o problema basta ajustar o campo DATA_VENCTO para uma data igual ou menor que a data de emissão:",
+          "article_id": "10902261276557",
+          "article_path": "mastersaf-dw/faq-dw/10902261276557.md",
+          "facet": "dw"
+        },
+        "90128": {
+          "description": "O Campo Data de Emissao do Documento nao esta preenchido ou preenchido com zeros.",
+          "solution": "Para solucionar o problema basta informar uma data valida no campo DATA_EMISSAO",
+          "article_id": "10442739918349",
+          "article_path": "mastersaf-dw/faq-dw/10442739918349.md",
+          "facet": "dw"
+        },
+        "90209": {
+          "description": "O Campo de Data de Validade com formato invalido.",
+          "solution": "Para solucionar o problema basta corrigir o formato da data no campo DATA_MOVTO:",
+          "article_id": "10442185787021",
+          "article_path": "mastersaf-dw/faq-dw/10442185787021.md",
+          "facet": "dw"
+        },
+        "90386": {
+          "description": "Data de movimento informada no registro esta fora do periodo definido para importacao.",
+          "solution": "Para solucionar o problema basta informar um período na programação que abrange o registro que deseja importar:",
+          "article_id": "10442458052493",
+          "article_path": "mastersaf-dw/faq-dw/10442458052493.md",
+          "facet": "dw"
+        },
+        "90461": {
+          "description": "Valor Decimal ou Numerico com formato invalido.",
+          "solution": "Para solucionar o problema basta ajustar o campo para numérico ou então nulo",
+          "article_id": "10470818358925",
+          "article_path": "mastersaf-dw/faq-dw/10470818358925.md",
+          "facet": "dw"
+        },
+        "90994": {
+          "description": "Erro na conversao de dados para numerico.",
+          "solution": "Para solucionar o problema basta ajustar o campo para numérico ou então nulo \"@",
+          "article_id": "10902126762637",
+          "article_path": "mastersaf-dw/faq-dw/10902126762637.md",
+          "facet": "dw"
+        },
+        "91399": {
+          "description": "A Descricao so sera preenchida se o tipo de titulo for igual a 99",
+          "solution": "Para solucionar o problema basta informar no campo IND_TIPO_TITULO o valor 99 - Outros ou então apagar a o conteudo do campo DSC_COMPL_TITULO.",
+          "article_id": "10441737247885",
+          "article_path": "mastersaf-dw/faq-dw/10441737247885.md",
+          "facet": "dw"
+        },
+        "91406": {
+          "description": "Tipo de Titulo Deve ser Preenchido com: (@), (00), (01), (02), (03) ou (99).",
+          "solution": "Para solucionar o problema basta informar no campo IND_TIPO_TITULO um dos valores validos:",
+          "article_id": "10440659501965",
+          "article_path": "mastersaf-dw/faq-dw/10440659501965.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX04": {
+      "errors": {
+        "90027": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90027 - O Código da Unidade da Federação é inválido:",
+          "article_id": "4415496830605",
+          "article_path": "onesource-tax-one/faq/4415496830605.md",
+          "facet": "taxone"
+        },
+        "90063": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Para corrigir o erro 90063 \\- Número de CPF informado não e válido conforme regras da Receita Federal, siga os passos abaixo:",
+          "article_id": "4415474814989",
+          "article_path": "onesource-tax-one/faq/4415474814989.md",
+          "facet": "taxone"
+        },
+        "90084": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90084 - O Número de CGC/CPF não deve ser preenchido para este Registro:",
+          "article_id": "4415487254029",
+          "article_path": "onesource-tax-one/faq/4415487254029.md",
+          "facet": "taxone"
+        },
+        "90085": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90085 - O Número de CGC/CPF deve ser preenchido para este Tipo de Registro:",
+          "article_id": "4415481658637",
+          "article_path": "onesource-tax-one/faq/4415481658637.md",
+          "facet": "taxone"
+        },
+        "90086": {
+          "description": "A razao social deve ser preenchida",
+          "solution": "",
+          "article_id": "4413802542349",
+          "article_path": "mastersaf-dw/faq-dw/4413802542349.md",
+          "facet": "dw"
+        },
+        "90088": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90088 - O indicador de Pessoa Física/Jurídica não está preenchido ou com informação inválida:",
+          "article_id": "4415475978509",
+          "article_path": "onesource-tax-one/faq/4415475978509.md",
+          "facet": "taxone"
+        },
+        "90089": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90089 - O Código da Pessoa Física/Jurídica não está preenchido:",
+          "article_id": "4415475844749",
+          "article_path": "onesource-tax-one/faq/4415475844749.md",
+          "facet": "taxone"
+        },
+        "90091": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Para corrigir o erro 90091 \\- O Indicador de Conteúdo de Código de CGC/CPF deve ser preenchido de acordo com <1>, <2>, <3> ou <4>, siga os passos abaixo:",
+          "article_id": "4415484550285",
+          "article_path": "onesource-tax-one/faq/4415484550285.md",
+          "facet": "taxone"
+        },
+        "90384": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90384 - O Campo Código de Atividade Econômica não está cadastrado:",
+          "article_id": "4415494528141",
+          "article_path": "onesource-tax-one/faq/4415494528141.md",
+          "facet": "taxone"
+        },
+        "90385": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Para corrigir o erro 90385 \\- O campo Código de País não está cadastrado, siga os passos abaixo:",
+          "article_id": "4415494054285",
+          "article_path": "onesource-tax-one/faq/4415494054285.md",
+          "facet": "taxone"
+        },
+        "90386": {
+          "description": "Data de movimento informada no registro está fora do período definido para importação",
+          "solution": "",
+          "article_id": "10981637524365",
+          "article_path": "mastersaf-dw/faq-dw/10981637524365.md",
+          "facet": "dw"
+        },
+        "90418": {
+          "description": "O Codigo de CBO nao esta cadastrado",
+          "solution": "",
+          "article_id": "4414742120461",
+          "article_path": "mastersaf-dw/faq-dw/4414742120461.md",
+          "facet": "dw"
+        },
+        "90461": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90461 \\- Valor Decimal ou Numérico com formato inválido:",
+          "article_id": "4415474465677",
+          "article_path": "onesource-tax-one/faq/4415474465677.md",
+          "facet": "taxone"
+        },
+        "90485": {
+          "description": "Grupo de Centralizacao de Codigo de CBO nao esta preenchido ou invalido na data ou nao esta cadastrado ou Data nao preenchida.",
+          "solution": "",
+          "article_id": "4414736311949",
+          "article_path": "mastersaf-dw/faq-dw/4414736311949.md",
+          "facet": "dw"
+        },
+        "90506": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90506 - O Campo Código de Pessoa Física/Jurídica deve ser preenchido e acordo com o Indicador de Conteúdo do Código:",
+          "article_id": "4415474935821",
+          "article_path": "onesource-tax-one/faq/4415474935821.md",
+          "facet": "taxone"
+        },
+        "90549": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 90549 - O Código do Município não está cadastrado ou com informação alfanumérica no código:",
+          "article_id": "4415493901069",
+          "article_path": "onesource-tax-one/faq/4415493901069.md",
+          "facet": "taxone"
+        },
+        "90666": {
+          "description": "CEP Inexistente",
+          "solution": "",
+          "article_id": "10980857288333",
+          "article_path": "mastersaf-dw/faq-dw/10980857288333.md",
+          "facet": "dw"
+        },
+        "90667": {
+          "description": "Erro na Recuperação de Informações do CEP / ORA-01422",
+          "solution": "",
+          "article_id": "26400337724685",
+          "article_path": "mastersaf-dw/faq-dw/26400337724685.md",
+          "facet": "dw"
+        },
+        "91166": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 91116 \\- O conteúdo da Classe de Pessoa Física Jurídica está inválido:",
+          "article_id": "4415493778701",
+          "article_path": "onesource-tax-one/faq/4415493778701.md",
+          "facet": "taxone"
+        },
+        "91167": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Para corrigir o erro 91167 \\- Classe de Empresa deve ser preenchido com <01> ou <02> ou <03> ou <04>, siga os passos abaixo:",
+          "article_id": "4415493596941",
+          "article_path": "onesource-tax-one/faq/4415493596941.md",
+          "facet": "taxone"
+        },
+        "91168": {
+          "description": "Indicador de Contribuinte deve ser preenchido com S ou N",
+          "solution": "Para solucionar o problema basta informar o valor \"S\" ou \"N\", no exemplo acima foi informado o valor \"1",
+          "article_id": "4414668827789",
+          "article_path": "mastersaf-dw/faq-dw/4414668827789.md",
+          "facet": "dw"
+        },
+        "91323": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 91323 \\- O campo Indicador de Cliente sem Identificação deve ser nulo, S ou N:",
+          "article_id": "4415492595981",
+          "article_path": "onesource-tax-one/faq/4415492595981.md",
+          "facet": "taxone"
+        },
+        "91350": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Para corrigir o erro 91350 \\- O campo IND_SCP deve ser nulo, N ou S, siga os passos abaixo:",
+          "article_id": "4415492117645",
+          "article_path": "onesource-tax-one/faq/4415492117645.md",
+          "facet": "taxone"
+        },
+        "91381": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 91381 \\- O campo Categoria do Trabalho não está cadastrado:",
+          "article_id": "4417233493133",
+          "article_path": "onesource-tax-one/faq/4417233493133.md",
+          "facet": "taxone"
+        },
+        "91382": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 91382 \\- O campo Ocorrência do Trabalhador não esta cadastrado.",
+          "article_id": "4417233401101",
+          "article_path": "onesource-tax-one/faq/4417233401101.md",
+          "facet": "taxone"
+        },
+        "91453": {
+          "description": "O campo Indicador de Fome Zero deve ser nulo, @ , S ou N .",
+          "solution": "Para solucionar o problema basta informar o valor \"S\" ou \"N\", no exemplo acima foi informado o valor \"1",
+          "article_id": "4414672924557",
+          "article_path": "mastersaf-dw/faq-dw/4414672924557.md",
+          "facet": "dw"
+        },
+        "91475": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 91475 \\- CEP pertencente a Unidade da Federação diferente da informada:",
+          "article_id": "4415504813581",
+          "article_path": "onesource-tax-one/faq/4415504813581.md",
+          "facet": "taxone"
+        },
+        "91510": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 91510 \\- E-mail inválido:",
+          "article_id": "4417210435981",
+          "article_path": "onesource-tax-one/faq/4417210435981.md",
+          "facet": "taxone"
+        },
+        "91683": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 91683 \\- A data de validade da pessoa física/jurídica é anterior a data de inicio de vigência do código de atividade econômica informada:",
+          "article_id": "4415494334093",
+          "article_path": "onesource-tax-one/faq/4415494334093.md",
+          "facet": "taxone"
+        },
+        "91684": {
+          "description": "O campo Indicador de Simples Nacional deve ser nulo, @ , S ou N .",
+          "solution": "Para solucionar o problema basta informar o valor \"S\" ou \"N\", no exemplo abaixo foi informado o valor \"2",
+          "article_id": "4414660731149",
+          "article_path": "mastersaf-dw/faq-dw/4414660731149.md",
+          "facet": "dw"
+        },
+        "91768": {
+          "description": "Funcao nao existe para o codigo",
+          "solution": "",
+          "article_id": "4414743140493",
+          "article_path": "mastersaf-dw/faq-dw/4414743140493.md",
+          "facet": "dw"
+        },
+        "91769": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91769 \\- O Campo de Data de Nascimento Autônomo com formato inválido:",
+          "article_id": "4415485331213",
+          "article_path": "onesource-tax-one/faq/4415485331213.md",
+          "facet": "taxone"
+        },
+        "91871": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 91871 \\- O conteúdo do campo Incentivo Cultural esta inválido:",
+          "article_id": "4417233585293",
+          "article_path": "onesource-tax-one/faq/4417233585293.md",
+          "facet": "taxone"
+        },
+        "91899": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 91899 \\- Campo com conteúdo invalido. Este campo somente poderá conter a informação Sim se a pessoa for jurídica. Verificar campo 06 (CPF_CGC):",
+          "article_id": "4417232745229",
+          "article_path": "onesource-tax-one/faq/4417232745229.md",
+          "facet": "taxone"
+        },
+        "92595": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 92595 \\- Código de Instalação 2 da Pessoa Física/Jurídica inválido:",
+          "article_id": "4417224315405",
+          "article_path": "onesource-tax-one/faq/4417224315405.md",
+          "facet": "taxone"
+        },
+        "92599": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 92599 \\- Indicador do Número de Identificação Fiscal invalido. Informe 1, 2 ou 3:",
+          "article_id": "4417209696141",
+          "article_path": "onesource-tax-one/faq/4417209696141.md",
+          "facet": "taxone"
+        },
+        "92622": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 92622 \\- O Campo de Data de Prestação de Serviço com formato inválido:",
+          "article_id": "4415485624973",
+          "article_path": "onesource-tax-one/faq/4415485624973.md",
+          "facet": "taxone"
+        },
+        "92843": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 92843 \\- O campo Indicação de Inclusão no Processo Conciliação de NFS de Corretores no Gerenciador de ISS deve ser preenchido com: S, N ou @.",
+          "article_id": "4417223952525",
+          "article_path": "onesource-tax-one/faq/4417223952525.md",
+          "facet": "taxone"
+        },
+        "93047": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 93047 \\- Código da Categoria do Trabalhador inválido:",
+          "article_id": "4417209466253",
+          "article_path": "onesource-tax-one/faq/4417209466253.md",
+          "facet": "taxone"
+        },
+        "93048": {
+          "description": "O campo Natureza da Atividade deve ser nulo, 0 ou 1.",
+          "solution": "",
+          "article_id": "4414774983565",
+          "article_path": "mastersaf-dw/faq-dw/4414774983565.md",
+          "facet": "dw"
+        },
+        "93167": {
+          "description": "Criado: 2021-12-03",
+          "solution": "Passo a passo para corrigir o Erro 93167 - CPF do campo (CPF do Proprietário da Fazenda SP - São Paulo) inválido:",
+          "article_id": "4415474644237",
+          "article_path": "onesource-tax-one/faq/4415474644237.md",
+          "facet": "taxone"
+        },
+        "93203": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 93203 \\- O campo Informações sobre Isenção e Imunidade deve ser preenchido com 1, 2 ou 3:",
+          "article_id": "4417223572109",
+          "article_path": "onesource-tax-one/faq/4417223572109.md",
+          "facet": "taxone"
+        },
+        "93277": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 93277 \\- O campo Contribuinte ICMS deve ser preenchido com: 1, 2 ou 9:",
+          "article_id": "4417223675789",
+          "article_path": "onesource-tax-one/faq/4417223675789.md",
+          "facet": "taxone"
+        },
+        "93385": {
+          "description": "Criado: 2021-12-20",
+          "solution": "Passo a passo para corrigir o Erro 93385 \\- Campo Produtor Rural inválido. Preencher com S ou N:",
+          "article_id": "4417205641229",
+          "article_path": "onesource-tax-one/faq/4417205641229.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX07": {
+      "errors": {
+        "90012": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90012 - Conta Contábil não cadastrada ou data de validade posterior a data do lançamento:",
+          "article_id": "10301973494413",
+          "article_path": "onesource-tax-one/faq/10301973494413.md",
+          "facet": "taxone"
+        },
+        "90041": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90041 - Código da Natureza da Operação não está cadastrado:",
+          "article_id": "10299731763725",
+          "article_path": "onesource-tax-one/faq/10299731763725.md",
+          "facet": "taxone"
+        },
+        "90063": {
+          "description": "Número de CPF informado não é válido, conforme regras da Receita Federal'.",
+          "solution": "Passo a passo para corrigir o erro 90063 - 'Numero de CPF informado nao e valido, conforme regras da Receita Federal:",
+          "article_id": "19681983454861",
+          "article_path": "onesource-tax-one/faq/19681983454861.md",
+          "facet": "taxone"
+        },
+        "90088": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90088 - O Indicador de Pessoa Física/Jurídica não está preenchido ou com informação inválida:",
+          "article_id": "10284030937997",
+          "article_path": "onesource-tax-one/faq/10284030937997.md",
+          "facet": "taxone"
+        },
+        "90112": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90112 - O campo número do documento não está preenchido:",
+          "article_id": "10285261229197",
+          "article_path": "onesource-tax-one/faq/10285261229197.md",
+          "facet": "taxone"
+        },
+        "90124": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90124 - O Código da pessoa Física/Jurídica não está cadastrado:",
+          "article_id": "10284454981261",
+          "article_path": "onesource-tax-one/faq/10284454981261.md",
+          "facet": "taxone"
+        },
+        "90125": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90125 - O código do tipo de documento não está cadastrado:",
+          "article_id": "10283726364941",
+          "article_path": "onesource-tax-one/faq/10283726364941.md",
+          "facet": "taxone"
+        },
+        "90128": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90128 - \\- O campo Data de Emissão do Documento não está preenchido ou preenchido com zeros:",
+          "article_id": "10300071621517",
+          "article_path": "onesource-tax-one/faq/10300071621517.md",
+          "facet": "taxone"
+        },
+        "90129": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90129 - O campo Data de Emissão do documento não está preenchido ou está preenchido com zeros:",
+          "article_id": "10035365620365",
+          "article_path": "onesource-tax-one/faq/10035365620365.md",
+          "facet": "taxone"
+        },
+        "90130": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90130 - O campo Tipo de Movimento de Entrada/Saída não esta preenchido ou com informação inválida:",
+          "article_id": "10283477230605",
+          "article_path": "onesource-tax-one/faq/10283477230605.md",
+          "facet": "taxone"
+        },
+        "90138": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90138 - O campo Classificação do Documento Fiscal não está preenchido ou está preenchido com informação inválida:",
+          "article_id": "10300218988941",
+          "article_path": "onesource-tax-one/faq/10300218988941.md",
+          "facet": "taxone"
+        },
+        "90713": {
+          "description": "Aviso: erro não tratado na gravação do Datamart de documentos fiscais",
+          "solution": "Backup dos Dados: Antes de iniciar qualquer procedimento, é altamente recomendável fazer um backup completo das tabelas envolvidas. Isso garante a segurança dos dados atuais e permite restaurá-los caso algo inesperado ocorra durante o processo de limpeza e reimportação.",
+          "article_id": "21689366783245",
+          "article_path": "mastersaf-dw/faq-dw/21689366783245.md",
+          "facet": "dw"
+        },
+        "90899": {
+          "description": "Código de estado não cadastrado",
+          "solution": "",
+          "article_id": "10958637423373",
+          "article_path": "mastersaf-dw/faq-dw/10958637423373.md",
+          "facet": "dw"
+        },
+        "90971": {
+          "description": "O campo código de município de ISS não está cadastrado",
+          "solution": "Para resolver essa questão, siga as orientações abaixo:",
+          "article_id": "21700839665933",
+          "article_path": "mastersaf-dw/faq-dw/21700839665933.md",
+          "facet": "dw"
+        },
+        "91316": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91316 - Erro na validação do CFOP:",
+          "article_id": "10301112843917",
+          "article_path": "onesource-tax-one/faq/10301112843917.md",
+          "facet": "taxone"
+        },
+        "91440": {
+          "description": "Criado: 2023-11-16",
+          "solution": "Para corrigir o erro:",
+          "article_id": "21395762925453",
+          "article_path": "onesource-tax-one/faq/21395762925453.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX08": {
+      "errors": {
+        "90012": {
+          "description": "Conta Contábil não cadastrada",
+          "solution": "Para resolver o Erro 90012: Conta Contábil não cadastrada, cadastre a Conta Contábil no módulo Data Warehouse.",
+          "article_id": "17121333381005",
+          "article_path": "onesource-tax-one/faq/17121333381005.md",
+          "facet": "taxone"
+        },
+        "90016": {
+          "description": "Criado: 2023-11-30",
+          "solution": "Para corrigir o erro 90016: Bem Patrimonial não Cadastrado ou Data Inválida, que indica que o código do bem patrimonial ou ativo fixo não está cadastrado ou que a data de validade do bem é posterior à data fiscal da nota, siga as orientações abaixo:",
+          "article_id": "21829567452429",
+          "article_path": "onesource-tax-one/faq/21829567452429.md",
+          "facet": "taxone"
+        },
+        "90029": {
+          "description": "Código Fiscal de Operação (CFOP) não cadastrado.",
+          "solution": "Para corrigir o erro 90029 - Código Fiscal de Operação (CFOP) não cadastrado, na SAFX08, faça o seguinte:",
+          "article_id": "17986167801741",
+          "article_path": "onesource-tax-one/faq/17986167801741.md",
+          "facet": "taxone"
+        },
+        "90034": {
+          "description": "O código do produto não está cadastrado",
+          "solution": "Para corrigi-lo, basta cadastrar o produto no módulo Data Warehouse.",
+          "article_id": "10563649630605",
+          "article_path": "onesource-tax-one/faq/10563649630605.md",
+          "facet": "taxone"
+        },
+        "90041": {
+          "description": "O código da Natureza da Operação não está cadastrado",
+          "solution": "Para corrigi-lo, faça o seguinte:",
+          "article_id": "17120765217421",
+          "article_path": "onesource-tax-one/faq/17120765217421.md",
+          "facet": "taxone"
+        },
+        "90112": {
+          "description": "O campo número do Documento não está preenchido'.",
+          "solution": "Para corrigir o erro 90112: 'O campo número do Documento não está preenchido' , preencha o campo do número do documento na SAFX.",
+          "article_id": "17123622261517",
+          "article_path": "onesource-tax-one/faq/17123622261517.md",
+          "facet": "taxone"
+        },
+        "90120": {
+          "description": "O campo tipo de movimento de Entrada/Saída não está preenchido ou com informação inválida'.",
+          "solution": "Para corrigir o erro 90120: 'O campo tipo de movimento de Entrada/Saída não está preenchido ou com informação inválida' , siga os passos abaixo:",
+          "article_id": "17121749514253",
+          "article_path": "onesource-tax-one/faq/17121749514253.md",
+          "facet": "taxone"
+        },
+        "90124": {
+          "description": "O código da pessoa Física/Jurídica não esta cadastrado' é gerado quando o sistema não consegue encontrar um código de pessoa física ou jurídica na ferramenta ou quando há uma discrepância no campo IND_FIS_JUR, indicando se o cadastro é de uma pessoa física ou jurídica.",
+          "solution": "Para corrigir o erro, é necessário cadastrar a pessoa física ou jurídica no Data Warehouse. Isso pode ser feito manualmente ou importando os dados corretos através da SAFX04.",
+          "article_id": "17113372865293",
+          "article_path": "onesource-tax-one/faq/17113372865293.md",
+          "facet": "taxone"
+        },
+        "90125": {
+          "description": "O código Tipo de Documento não está cadastrado'.",
+          "solution": "Para corrigir Erro 90125: 'O código Tipo de Documento não está cadastrado ', cadastre o código de Tipo de Documento em Básicos > Data Warehouse.",
+          "article_id": "17122674919053",
+          "article_path": "onesource-tax-one/faq/17122674919053.md",
+          "facet": "taxone"
+        },
+        "90130": {
+          "description": "O campo Normal ou Devolução não está preenchido ou preenchido com informação inválida'.",
+          "solution": "Para corrigir o erro 90130: O campo Normal ou Devolução não está preenchido ou preenchido com informação inválida , siga os passos abaixo:",
+          "article_id": "17122369654413",
+          "article_path": "onesource-tax-one/faq/17122369654413.md",
+          "facet": "taxone"
+        },
+        "90132": {
+          "description": "Número do Item do Documento Fiscal não preenchido",
+          "solution": "Para corrigi-lo, preencha o campo Número do item do documento fiscal, no módulo Data Warehouse.",
+          "article_id": "17126234279053",
+          "article_path": "onesource-tax-one/faq/17126234279053.md",
+          "facet": "taxone"
+        },
+        "90147": {
+          "description": "O campo Unidade Padrão não está preenchido'.",
+          "solution": "Para corrigir o Erro 90147: 'O campo Unidade Padrão não está preenchido', preencha o campo em Básicos > Data Warehouse > Manutenção > Códigos, com uma unidade que esteja cadastrada na ferramenta.",
+          "article_id": "17123933193357",
+          "article_path": "onesource-tax-one/faq/17123933193357.md",
+          "facet": "taxone"
+        },
+        "90163": {
+          "description": "O código NBM não esta cadastrado",
+          "solution": "Para corrigir o erro 90163 - O código NBM não está cadastrado, faça o seguinte",
+          "article_id": "17120921441933",
+          "article_path": "onesource-tax-one/faq/17120921441933.md",
+          "facet": "taxone"
+        },
+        "90388": {
+          "description": "Campo código Extensão CFOP (Código Fiscal + Natureza de Operação) não está cadastrado.",
+          "solution": "Para corrigir o erro 90388 - Campo código Extensão CFOP (Código Fiscal + Natureza de Operação) não está cadastrado , faça o seguinte:",
+          "article_id": "17988990964109",
+          "article_path": "onesource-tax-one/faq/17988990964109.md",
+          "facet": "taxone"
+        },
+        "90399": {
+          "description": "O código da Situação Tributária Federal não esta cadastrado",
+          "solution": "Para corrigir erro 90399 - O Código da Situação Tributária Federal não está cadastrado, faça o seguinte",
+          "article_id": "17121146841741",
+          "article_path": "onesource-tax-one/faq/17121146841741.md",
+          "facet": "taxone"
+        },
+        "90796": {
+          "description": "Criado: 2023-11-27",
+          "solution": "",
+          "article_id": "21689966103949",
+          "article_path": "onesource-tax-one/faq/21689966103949.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX10": {
+      "errors": {
+        "91954": {
+          "description": "Campo Tipo de Movimento com conteúdo inválido",
+          "solution": "",
+          "article_id": "11048401387021",
+          "article_path": "mastersaf-dw/faq-dw/11048401387021.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX102": {
+      "errors": {
+        "90109": {
+          "description": "O Valor do Saldo Final não confere com valores informados",
+          "solution": "Para solucionar, basta alimentar o campo VLR_SALDO_FIM com o valor correto do cálculo:",
+          "article_id": "10978838791693",
+          "article_path": "mastersaf-dw/faq-dw/10978838791693.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX108": {
+      "errors": {
+        "90999": {
+          "description": "ORA-01843: not a valid month",
+          "solution": "",
+          "article_id": "10836211136397",
+          "article_path": "mastersaf-dw/faq-dw/10836211136397.md",
+          "facet": "dw"
+        },
+        "92807": {
+          "description": "Para informar o retorno do produto ao estoque",
+          "solution": "",
+          "article_id": "11004981179021",
+          "article_path": "mastersaf-dw/faq-dw/11004981179021.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX109": {
+      "errors": {
+        "91968": {
+          "description": "Código da Linha/Fase/Processo inválido",
+          "solution": "",
+          "article_id": "11035995607565",
+          "article_path": "mastersaf-dw/faq-dw/11035995607565.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX112": {
+      "errors": {
+        "90807": {
+          "description": "Erro na recuperacao da Data de Fechamento do Grupo de Documentos Fiscais.",
+          "solution": "Para solucionar o problema basta excluir o fechamento do estabelecimento no menu Ferramentas > Rotinas Acessórias > Fechamento > Controle",
+          "article_id": "19413434647565",
+          "article_path": "mastersaf-dw/faq-dw/19413434647565.md",
+          "facet": "dw"
+        },
+        "101070": {
+          "description": "Não existe capa do Doc. Fiscal para esse registro.', é fundamental realizar validações precisas nos seguintes campos chave entre os arquivos SAFX07 e SAFX112. Estas validações visam assegurar que a capa do documento fiscal seja devidamente registrada e correspondente nos sistemas. Abaixo estão os campos a serem verificados:",
+          "solution": "",
+          "article_id": "21689069948685",
+          "article_path": "onesource-tax-one/faq/21689069948685.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX113": {
+      "errors": {
+        "90999": {
+          "description": "Erro não tratado pelo sistema.",
+          "solution": "Para corrigir a mensagem Erro não tratado pelo sistema , ao importar a SAFX113 , faça o seguinte:",
+          "article_id": "19263680093709",
+          "article_path": "onesource-tax-one/faq/19263680093709.md",
+          "facet": "taxone"
+        },
+        "91637": {
+          "description": "?",
+          "solution": "Para resolver o erro: '91637 - Ao menos um dos valores deve ser preenchido ou maior que zero.', siga a orientação:",
+          "article_id": "21850344661005",
+          "article_path": "onesource-tax-one/faq/21850344661005.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX119": {
+      "errors": {
+        "91778": {
+          "description": "Não existe item de mercadoria (SAFX08) para este complemento (Mercadoria)",
+          "solution": "Acesse os registros da tabela SAFX08 e da x07 no sistema.",
+          "article_id": "21827667953421",
+          "article_path": "mastersaf-dw/faq-dw/21827667953421.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX13": {
+      "errors": {
+        "90001": {
+          "description": "Codigo de Empresa nao esta preenchido', verifique se o campo Código da Empresa (COD_EMPRESA) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90001: 'Codigo de Empresa nao esta preenchido', verifique se o campo Código da Empresa (COD_EMPRESA) está preenchido corretamente na SAFX13.",
+          "article_id": "20865816456333",
+          "article_path": "onesource-tax-one/faq/20865816456333.md",
+          "facet": "taxone"
+        },
+        "90002": {
+          "description": "Codigo de Estabelecimento deve ser preenchido', verifique se o campo Código do Estabelecimento (COD_ESTAB) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90002: 'Codigo de Estabelecimento deve ser preenchido', verifique se o campo Código do Estabelecimento (COD_ESTAB) está preenchido corretamente na SAFX13.",
+          "article_id": "20865808244493",
+          "article_path": "onesource-tax-one/faq/20865808244493.md",
+          "facet": "taxone"
+        },
+        "90015": {
+          "description": "Codigo do Bem Patrimonal/Ativo Fixo deve esta preenchido', verifique se o campo Código do Bem (COD_BEM) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90015: 'Codigo do Bem Patrimonal/Ativo Fixo deve esta preenchido', verifique se o campo Código do Bem (COD_BEM) está preenchido corretamente na SAFX13.",
+          "article_id": "20865690188557",
+          "article_path": "onesource-tax-one/faq/20865690188557.md",
+          "facet": "taxone"
+        },
+        "90045": {
+          "description": "A Data de Aquisicao do Bem do Patrimonio/Ativo Fixo deve ser preenchida', verifique se o campo Data de Aquisição do Bem (DATA_AQUIS) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90045: 'A Data de Aquisicao do Bem do Patrimonio/Ativo Fixo deve ser preenchida', verifique se o campo Data de Aquisição do Bem (DATA_AQUIS) está preenchido corretamente na SAFX13.",
+          "article_id": "20865584992525",
+          "article_path": "onesource-tax-one/faq/20865584992525.md",
+          "facet": "taxone"
+        },
+        "90046": {
+          "description": "A Data de Inicio da Correcao Monetaria nao pode ser anterior a Data de Aquisicao', verifique se o campo Data Inicial da Correção Monetária (DATA_INI_CM) é menor que o campo Data de Aquisição do Bem (DATA_AQUIS) na SAFX13.",
+          "solution": "Para corrigir o erro 90046: 'A Data de Inicio da Correcao Monetaria nao pode ser anterior a Data de Aquisicao', verifique se o campo Data Inicial da Correção Monetária (DATA_INI_CM) é menor que o campo Data de Aquisição do Bem (DATA_AQUIS) na SAFX13.",
+          "article_id": "20865512272269",
+          "article_path": "onesource-tax-one/faq/20865512272269.md",
+          "facet": "taxone"
+        },
+        "90048": {
+          "description": "A Descricao do Bem Patrimonial/Ativo Fixo deve ser preenchida', verifique se o campo Descrição do Bem (DESCRICAO) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90048: 'A Descricao do Bem Patrimonial/Ativo Fixo deve ser preenchida', verifique se o campo Descrição do Bem (DESCRICAO) está preenchido corretamente na SAFX13.",
+          "article_id": "20865496497805",
+          "article_path": "onesource-tax-one/faq/20865496497805.md",
+          "facet": "taxone"
+        },
+        "90050": {
+          "description": "A Conta Contabil da Correcao/Depreciacao nao cadastrada', verifique se a Conta Analítica do Bem (COD_CONTA_CM) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "solution": "Para corrigir o erro 90050: 'A Conta Contabil da Correcao/Depreciacao nao cadastrada', verifique se a Conta Analítica do Bem (COD_CONTA_CM) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "article_id": "20864625085965",
+          "article_path": "onesource-tax-one/faq/20864625085965.md",
+          "facet": "taxone"
+        },
+        "90052": {
+          "description": "A Data da Baixa do Bem nao pode ser anterior a Data de Aquisicao', verifique se o campo Data da Baixa do Bem (DATA_BAIXA) é menor que o campo Data de Aquisição do Bem (DATA_AQUIS) na SAFX13.",
+          "solution": "Para corrigir o erro 90052: 'A Data da Baixa do Bem nao pode ser anterior a Data de Aquisicao', verifique se o campo Data da Baixa do Bem (DATA_BAIXA) é menor que o campo Data de Aquisição do Bem (DATA_AQUIS) na SAFX13.",
+          "article_id": "20864575332877",
+          "article_path": "onesource-tax-one/faq/20864575332877.md",
+          "facet": "taxone"
+        },
+        "90054": {
+          "description": "Codigo do Indice de Conversao nao cadastrado.', verifique se o Código do Índice Financeiro (COD_INDICE) preenchido na SAFX13 está cadastrada no menu abaixo:",
+          "solution": "Para corrigir o erro 90054: 'Codigo do Indice de Conversao nao cadastrado.', verifique se o Código do Índice Financeiro (COD_INDICE) preenchido na SAFX13 está cadastrada no menu abaixo:",
+          "article_id": "20864437850381",
+          "article_path": "onesource-tax-one/faq/20864437850381.md",
+          "facet": "taxone"
+        },
+        "90055": {
+          "description": "A Taxa de Depreciacao/Amortizacao/Exaustao nao pode ser superior a 1.200 %', verifique se o valor no campo Taxa de Depreciação do Bem (TAXA_DEPR) é maior que 1200 na SAFX13.",
+          "solution": "Para corrigir o erro 90055: 'A Taxa de Depreciacao/Amortizacao/Exaustao nao pode ser superior a 1.200 %', verifique se o valor no campo Taxa de Depreciação do Bem (TAXA_DEPR) é maior que 1200 na SAFX13.",
+          "article_id": "20864330003085",
+          "article_path": "onesource-tax-one/faq/20864330003085.md",
+          "facet": "taxone"
+        },
+        "90057": {
+          "description": "O Valor Convertido para o Indice deve ser preenchido', verifique se o campo Valor do Bem no Índice Financeiro (VLR_EM_INDICE) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90057: 'O Valor Convertido para o Indice deve ser preenchido', verifique se o campo Valor do Bem no Índice Financeiro (VLR_EM_INDICE) está preenchido corretamente na SAFX13.",
+          "article_id": "20864300945421",
+          "article_path": "onesource-tax-one/faq/20864300945421.md",
+          "facet": "taxone"
+        },
+        "90088": {
+          "description": "O Indicador de Pessoa Fisica/Juridica nao esta preenchido ou com informacao invalida.', verifique se o campo Indicador da Pessoa Física/Jurídica (IND_FIS_JUR) está preenchido corretamente na SAFX13.",
+          "solution": "Para corrigir o erro 90088: 'O Indicador de Pessoa Fisica/Juridica nao esta preenchido ou com informacao invalida.', verifique se o campo Indicador da Pessoa Física/Jurídica (IND_FIS_JUR) está preenchido corretamente na SAFX13.",
+          "article_id": "20864207584397",
+          "article_path": "onesource-tax-one/faq/20864207584397.md",
+          "facet": "taxone"
+        },
+        "90125": {
+          "description": "O Codigo do Tipo de Documento nao esta cadastrado', verifique se o Tipo de Documento (CODT_DOCTO) preenchido na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "solution": "Para corrigir o erro 90125: 'O Codigo do Tipo de Documento nao esta cadastrado', verifique se o Tipo de Documento (CODT_DOCTO) preenchido na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "article_id": "20863653940493",
+          "article_path": "onesource-tax-one/faq/20863653940493.md",
+          "facet": "taxone"
+        },
+        "90209": {
+          "description": "O Campo de Data de Validade com formato invalido.', verifique se o campo Data Início/Inclusão/Alteração (VALID_BEM) está no formato AAAAMMDD na SAFX13.",
+          "solution": "Para corrigir o erro 90209: 'O Campo de Data de Validade com formato invalido.', verifique se o campo Data Início/Inclusão/Alteração (VALID_BEM) está no formato AAAAMMDD na SAFX13.",
+          "article_id": "20863590915981",
+          "article_path": "onesource-tax-one/faq/20863590915981.md",
+          "facet": "taxone"
+        },
+        "90366": {
+          "description": "O Campo Codigo NCM nao esta cadastrado', verifique se o Código de NCM (COD_NBM) preenchido na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "solution": "Para corrigir o erro 90366: 'O Campo Codigo NCM nao esta cadastrado', verifique se o Código de NCM (COD_NBM) preenchido na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "article_id": "20863551685005",
+          "article_path": "onesource-tax-one/faq/20863551685005.md",
+          "facet": "taxone"
+        },
+        "90381": {
+          "description": "O Campo Codigo de Centro de Custo nao esta cadastrado.', verifique se o Centro de Custo (COD_CUSTO) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "solution": "Para corrigir o erro 90381: 'O Campo Codigo de Centro de Custo nao esta cadastrado.', verifique se o Centro de Custo (COD_CUSTO) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "article_id": "20863461209485",
+          "article_path": "onesource-tax-one/faq/20863461209485.md",
+          "facet": "taxone"
+        },
+        "90382": {
+          "description": "O Campo Codigo de Centro de Despesa nao esta cadastrado', verifique se o Centro de Despesa (COD_DESPESA) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "solution": "Para corrigir o erro 90382: 'O Campo Codigo de Centro de Despesa nao esta cadastrado', verifique se o Centro de Despesa (COD_DESPESA) preenchida na SAFX13 está cadastrada no menu abaixo, com uma data de validade igual ou maior que a data do registro na SAFX13:",
+          "article_id": "20863366269581",
+          "article_path": "onesource-tax-one/faq/20863366269581.md",
+          "facet": "taxone"
+        },
+        "90386": {
+          "description": "Data de movimento informada no registro esta fora do periodo definido para importacao.', verifique se a data no campo Data Início/Inclusão/Alteração (VALID_BEM) está dentro do período parametrizado na importação da SAFX13.",
+          "solution": "Para corrigir o erro 90386: 'Data de movimento informada no registro esta fora do periodo definido para importacao.', verifique se a data no campo Data Início/Inclusão/Alteração (VALID_BEM) está dentro do período parametrizado na importação da SAFX13.",
+          "article_id": "20863180566925",
+          "article_path": "onesource-tax-one/faq/20863180566925.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX145": {
+      "errors": {
+        "90124": {
+          "description": "Criado: 2023-04-25",
+          "solution": "Para corrigir o erro 90124: 'O cadastro de pessoa fisica jurídica não esta cadastrado.',siga a orientação abaixo:",
+          "article_id": "15211364348813",
+          "article_path": "onesource-tax-one/faq/15211364348813.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX147": {
+      "errors": {
+        "91499": {
+          "description": "?",
+          "solution": "",
+          "article_id": "25902955595021",
+          "article_path": "onesource-tax-one/faq/25902955595021.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX2013": {
+      "errors": {
+        "90033": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90033 \\- Código do Produto não está preenchido:",
+          "article_id": "10387027969165",
+          "article_path": "onesource-tax-one/faq/10387027969165.md",
+          "facet": "taxone"
+        },
+        "90035": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90035 \\- Indicador do Produto (Produto/Insumo/Embalagem/Consumo, etc.) não está preenchido ou com informação inválida:",
+          "article_id": "10634955818893",
+          "article_path": "onesource-tax-one/faq/10634955818893.md",
+          "facet": "taxone"
+        },
+        "90150": {
+          "description": "Unidade de medida não cadastrada.",
+          "solution": "",
+          "article_id": "20739025656845",
+          "article_path": "mastersaf-dw/faq-dw/20739025656845.md",
+          "facet": "dw"
+        },
+        "90163": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90163 \\- O Campo Código NBM não está cadastrado:",
+          "article_id": "10635284414221",
+          "article_path": "onesource-tax-one/faq/10635284414221.md",
+          "facet": "taxone"
+        },
+        "90209": {
+          "description": "O campo Data de Validade com formato inválido.",
+          "solution": "",
+          "article_id": "10637437695885",
+          "article_path": "mastersaf-dw/faq-dw/10637437695885.md",
+          "facet": "dw"
+        },
+        "90365": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90365 \\- O Campo Descrição do Produto deve ser preenchido:",
+          "article_id": "10635408984589",
+          "article_path": "onesource-tax-one/faq/10635408984589.md",
+          "facet": "taxone"
+        },
+        "90366": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90366 \\- O campo Código NCM não está cadastrado:",
+          "article_id": "10636128642061",
+          "article_path": "onesource-tax-one/faq/10636128642061.md",
+          "facet": "taxone"
+        },
+        "90368": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90368 \\- O Campo Regido por Substituição Tributária deve ser branco, S ou N:",
+          "article_id": "10636267347725",
+          "article_path": "onesource-tax-one/faq/10636267347725.md",
+          "facet": "taxone"
+        },
+        "90369": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90369 \\- O Campo IPI Controlado por Selo deve ser branco, S ou N:",
+          "article_id": "10636310299277",
+          "article_path": "onesource-tax-one/faq/10636310299277.md",
+          "facet": "taxone"
+        },
+        "90429": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90429 – Campos de Grupo e Sub-Grupo de Controle de Selo Especial não preenchido:",
+          "article_id": "10636428150285",
+          "article_path": "onesource-tax-one/faq/10636428150285.md",
+          "facet": "taxone"
+        },
+        "91025": {
+          "description": "Informações de Selo preenchida para produto não controlado por Selos:",
+          "solution": "Passo a passo para corrigir o Erro 91025 - Informações de Selo preenchida para produto não controlado por Selos:",
+          "article_id": "10636562631949",
+          "article_path": "onesource-tax-one/faq/10636562631949.md",
+          "facet": "taxone"
+        },
+        "91169": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91169 \\- Indicador de Serviços com Incidência de ICMS deve ser preenchido com <1> ou <2> ou <3>:",
+          "article_id": "10636611183117",
+          "article_path": "onesource-tax-one/faq/10636611183117.md",
+          "facet": "taxone"
+        },
+        "91170": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91170: Indicador de Fabricação pelo Estabelecimento deve ser preenchido com <S> ou <N>:",
+          "article_id": "10636780248845",
+          "article_path": "onesource-tax-one/faq/10636780248845.md",
+          "facet": "taxone"
+        },
+        "91171": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91171: Indicador de Classificação para o ICMS deve ser preenchido com 1 ou 2 ou 3:",
+          "article_id": "10636760163597",
+          "article_path": "onesource-tax-one/faq/10636760163597.md",
+          "facet": "taxone"
+        },
+        "91928": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 91928 \\- O campo Material Resultante de Perda/Sobra não está preenchido corretamente:",
+          "article_id": "10636908576141",
+          "article_path": "onesource-tax-one/faq/10636908576141.md",
+          "facet": "taxone"
+        },
+        "92026": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 92026 \\- Tabela de Incidência deve ser 01 ou 02 ou 03 ou 04 ou 05 ou 06 ou 07 ou 08 ou 09 ou 10 ou 11 ou 12:",
+          "article_id": "10636935970445",
+          "article_path": "onesource-tax-one/faq/10636935970445.md",
+          "facet": "taxone"
+        },
+        "92236": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 92236 \\- O Campo Indicador de Característica do Produto deve ser preenchido com @, 1, 2, 3, 4:",
+          "article_id": "10637025904909",
+          "article_path": "onesource-tax-one/faq/10637025904909.md",
+          "facet": "taxone"
+        },
+        "92840": {
+          "description": "O Código Especificador da Situação Tributária informado - CEST Não Encontrado",
+          "solution": "",
+          "article_id": "10981986900877",
+          "article_path": "mastersaf-dw/faq-dw/10981986900877.md",
+          "facet": "dw"
+        },
+        "911700": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 911700 - Indicador de Origem deve ser preenchido com 1 ou 2:",
+          "article_id": "10637093600141",
+          "article_path": "onesource-tax-one/faq/10637093600141.md",
+          "facet": "taxone"
+        },
+        "912036": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 912036 \\- Classificação do item deve ser: 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10 ou 99:",
+          "article_id": "10637022044045",
+          "article_path": "onesource-tax-one/faq/10637022044045.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX2018": {
+      "errors": {
+        "90384": {
+          "description": "O Campo Código de Atividade Econômica não está cadastrado",
+          "solution": "",
+          "article_id": "11047995788685",
+          "article_path": "mastersaf-dw/faq-dw/11047995788685.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX2064": {
+      "errors": {
+        "90999": {
+          "description": "?",
+          "solution": "Passo a passo para corrigir o Erro 90999 - Erro não tratado pelo Sistema:",
+          "article_id": "10302423937165",
+          "article_path": "onesource-tax-one/faq/10302423937165.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX2101": {
+      "errors": {
+        "90011": {
+          "description": "Conta Contabil deve ser preenchida",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_CONTA no arquivo txt com um valor valido já cadastrado no plano de contas, que pode ser verificado através do menu Básicos > Dataware house > Manutenção > Códigos > Plano de Contas",
+          "article_id": "21278550222733",
+          "article_path": "mastersaf-dw/faq-dw/21278550222733.md",
+          "facet": "dw"
+        },
+        "90321": {
+          "description": "O Campo Indicador da Conta Contabil deve ser A ou S",
+          "solution": "",
+          "article_id": "21279281699853",
+          "article_path": "mastersaf-dw/faq-dw/21279281699853.md",
+          "facet": "dw"
+        },
+        "91856": {
+          "description": "E permitido apenas importar contas contabeis analiticas",
+          "solution": "Para resolver o problema, basta informar o COD_ENTIDADE_RESP igual a 20.",
+          "article_id": "21279583057805",
+          "article_path": "mastersaf-dw/faq-dw/21279583057805.md",
+          "facet": "dw"
+        },
+        "91858": {
+          "description": "Codigo da Entidade diferente da informada no Manual Layout. Campo deve conter: 00 - SUSEP, 10 - SRF ou 20 - COSIF.",
+          "solution": "",
+          "article_id": "21279035798669",
+          "article_path": "mastersaf-dw/faq-dw/21279035798669.md",
+          "facet": "dw"
+        },
+        "91860": {
+          "description": "Plano de Contas não encontrado. (mesmo existindo)",
+          "solution": "",
+          "article_id": "21143042437645",
+          "article_path": "onesource-tax-one/faq/21143042437645.md",
+          "facet": "taxone"
+        },
+        "91861": {
+          "description": "Centro de Custo nao encontrado.",
+          "solution": "Para solucionar o problema você pode ajustar o COD_CUSTO para um código existente na tabela X2003_CENTRO_CUSTO ou então cadastrar manualmente na tela Dataware House >>Manutencao >> Codigos >> Centro de Custo",
+          "article_id": "21387400520717",
+          "article_path": "mastersaf-dw/faq-dw/21387400520717.md",
+          "facet": "dw"
+        },
+        "91862": {
+          "description": "Plano de Contas referencial nao encontrado.",
+          "solution": "Para solucionar o problema nesse caso de dados incorretos no arquivo SAFX2101 basta ajustar conforme o arquivo TFIX64.txt",
+          "article_id": "21331340373517",
+          "article_path": "mastersaf-dw/faq-dw/21331340373517.md",
+          "facet": "dw"
+        },
+        "91863": {
+          "description": "Conta Referencial deve ser preenchida",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_CONTA_REF no arquivo txt com um valor valido, Esta conta deve estar cadastrada na tabela TFIX64 - Plano de Contas Referencial (SPED Contábil).",
+          "article_id": "21329870611469",
+          "article_path": "mastersaf-dw/faq-dw/21329870611469.md",
+          "facet": "dw"
+        },
+        "91864": {
+          "description": "Versao da Conta referencial deve ser preenchida",
+          "solution": "Para solucionar o problema basta ajustar o campo VERSAO_REF no arquivo txt com um dos valores validos: 1.00 ou 3.00.",
+          "article_id": "21278639737485",
+          "article_path": "mastersaf-dw/faq-dw/21278639737485.md",
+          "facet": "dw"
+        },
+        "91865": {
+          "description": "Entidade Responsavel deve ser preenchida",
+          "solution": "Para solucionar o problema basta ajustar o campo COD_ENTIDADE_RESP no arquivo txt com um valor valido, se a VERSAO_REF for igual a 1.00 os códigos devem ser: '00', '10', '20",
+          "article_id": "21278946896141",
+          "article_path": "mastersaf-dw/faq-dw/21278946896141.md",
+          "facet": "dw"
+        },
+        "92677": {
+          "description": "Codigo da Entidade deve ser: 00, 10, 20, 1, 2, 3, 4, 5, 6, 7, 8 ou 9",
+          "solution": "",
+          "article_id": "21279159642893",
+          "article_path": "mastersaf-dw/faq-dw/21279159642893.md",
+          "facet": "dw"
+        },
+        "93264": {
+          "description": "Conta Contabil informada nao e do tipo analitica. Somente sao aceitas Contas Contabeis Analiticas para esta Associacao.",
+          "solution": "Para solucionar o problema é necessário avaliar se a conta está cadastrada corretamente no plano de contas ou então se a conta informada no arquivo TXT está correta.",
+          "article_id": "21331005860877",
+          "article_path": "mastersaf-dw/faq-dw/21331005860877.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX2102": {
+      "errors": {
+        "91937": {
+          "description": "Expressão e Ordem finalizada sem ponto-e-virgula;', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 91937: 'Expressão e Ordem finalizada sem ponto-e-virgula;', siga a orientação abaixo:",
+          "article_id": "16052409209357",
+          "article_path": "onesource-tax-one/faq/16052409209357.md",
+          "facet": "taxone"
+        },
+        "91939": {
+          "description": "Código de Aglutinação contido na Expressão de Ordem deve pertencer ao cadastro dos Códigos de Aglutinação do Balanço",
+          "solution": "",
+          "article_id": "19649610036365",
+          "article_path": "onesource-tax-one/faq/19649610036365.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX2103": {
+      "errors": {
+        "90011": {
+          "description": "Conta Contabil deve ser preenchida",
+          "solution": "Para solucionar o problema basta informar um código do plano de contas valido (SAFX2002) que se encontra na tela BÁSICOS > DATA WAREHOUSE > Manutenção > Códigos > Plano de Contas",
+          "article_id": "21582169648269",
+          "article_path": "mastersaf-dw/faq-dw/21582169648269.md",
+          "facet": "dw"
+        },
+        "90012": {
+          "description": "Conta Contabil nao cadastrada ou data de validade posterior a data do lancamento",
+          "solution": "",
+          "article_id": "21582487138061",
+          "article_path": "mastersaf-dw/faq-dw/21582487138061.md",
+          "facet": "dw"
+        },
+        "91861": {
+          "description": "Centro de Custo nao encontrado.",
+          "solution": "Para solucionar o problema é possivel cadastrar o COD_CUSTO na tela BÁSICOS > DATA WAREHOUSE > Manutenção > Códigos > Centro de Custo ou importar a SAFX2003 com esse código.",
+          "article_id": "21582719851533",
+          "article_path": "mastersaf-dw/faq-dw/21582719851533.md",
+          "facet": "dw"
+        },
+        "91930": {
+          "description": "Codigo de Aglutinacao deve ser preenchido",
+          "solution": "Para corrigir o problema basta informar uma código valido no campo COD_CONTA_AGLUT cadastrado na SAFX2102 ou através da tela: SPED > ECD - ESCRITURAÇÃO CONTÁBIL DIGITAL > Manutenção > Códigos de Aglutinação (B. Patrimonial/D. Resultado/DLPA/DMPL)",
+          "article_id": "21532655587213",
+          "article_path": "mastersaf-dw/faq-dw/21532655587213.md",
+          "facet": "dw"
+        },
+        "91943": {
+          "description": "Codigo de Aglutinacao nao cadastrado",
+          "solution": "Para solucionar o problema é necessário realizar uma das opções abaixo:",
+          "article_id": "21569525982477",
+          "article_path": "mastersaf-dw/faq-dw/21569525982477.md",
+          "facet": "dw"
+        },
+        "91944": {
+          "description": "Codigo de Aglutinacao relacionado a Conta Contabil deve pertencer ao cadastro dos Codigos de Aglutinacao do Balanco Patrimonial, com natureza Ativo ou Passivo/PL.",
+          "solution": "Para solucionar esse problema, basta ir na tela SPED > ECD - ESCRITURAÇÃO CONTÁBIL DIGITAL > Manutenção > Códigos de Aglutinação (B. Patrimonial/D. Resultado/DLPA/DMPL) e alterar o IND_NATUREZA para 2 ou 1.",
+          "article_id": "21569759876621",
+          "article_path": "mastersaf-dw/faq-dw/21569759876621.md",
+          "facet": "dw"
+        },
+        "91945": {
+          "description": "Codigo de Aglutinacao relacionado a Conta Contabil deve pertencer ao cadastro dos Codigos de Aglutinacao da Demonstracao de Resultado, com classificacao Receita/Despesa",
+          "solution": "Para solucionar esse problema, basta ir na tela SPED > ECD - ESCRITURAÇÃO CONTÁBIL DIGITAL > Manutenção > Códigos de Aglutinação (B. Patrimonial/D. Resultado/DLPA/DMPL) e alterar o IND_NATUREZA para diferente de 2",
+          "article_id": "21581951258509",
+          "article_path": "mastersaf-dw/faq-dw/21581951258509.md",
+          "facet": "dw"
+        },
+        "91946": {
+          "description": "Codigo de Aglutinacao do Balanco Patrimonial so pode ser relacionado a Conta Contabil cadastrada no Plano de Contas (SAFX2002) com Indicador de Natureza = 1,2,5,6,7, ou 9",
+          "solution": "Para solucionar o problema, basta ir em BÁSICOS > DATA WAREHOUSE > Manutenção > Códigos > Plano de Contas e alterar o campo IND_NATUREZA para uma das opções abaixo:",
+          "article_id": "21583392970893",
+          "article_path": "mastersaf-dw/faq-dw/21583392970893.md",
+          "facet": "dw"
+        },
+        "91949": {
+          "description": "O Centro de Custo somente pode ser utilizado no relacionamento da Conta Contabil com Codigos de Aglutinacao da Demonstracao de Resultado de Exercicio (DRE)",
+          "solution": "Para solucionar o problema, é necessário deixar o campo COD_CUSTO com @ (nulo)",
+          "article_id": "21583142614285",
+          "article_path": "mastersaf-dw/faq-dw/21583142614285.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX216": {
+      "errors": {
+        "92694": {
+          "description": "Criado: 2023-11-29",
+          "solution": "",
+          "article_id": "21795186789517",
+          "article_path": "onesource-tax-one/faq/21795186789517.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX218": {
+      "errors": {
+        "92652": {
+          "description": "O campo data da apuração não está preenchido.",
+          "solution": "",
+          "article_id": "20931540435597",
+          "article_path": "mastersaf-dw/faq-dw/20931540435597.md",
+          "facet": "dw"
+        },
+        "92657": {
+          "description": "Criado: 2023-11-29",
+          "solution": "",
+          "article_id": "21794757078029",
+          "article_path": "onesource-tax-one/faq/21794757078029.md",
+          "facet": "taxone"
+        },
+        "92658": {
+          "description": "Criado: 2023-11-29",
+          "solution": "Para solucionar o erro 92658: 'O campo UF e de procedimento obrigatório quando o indicador da apuracao = ICMS-ST' referente à abertura do layout SAFX218 e preenchimento do campo COD_ESTADO de forma simples, siga estes passos:",
+          "article_id": "21793917783181",
+          "article_path": "onesource-tax-one/faq/21793917783181.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX227": {
+      "errors": {
+        "91860": {
+          "description": "Plano de Contas não encontrado",
+          "solution": "",
+          "article_id": "11048650691725",
+          "article_path": "mastersaf-dw/faq-dw/11048650691725.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX235": {
+      "errors": {
+        "92823": {
+          "description": "A Data do Estoque Final deve ser uma data anterior ao período de referência informado",
+          "solution": "",
+          "article_id": "11013016901901",
+          "article_path": "mastersaf-dw/faq-dw/11013016901901.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX236": {
+      "errors": {
+        "92815": {
+          "description": "Tipo de Correção não preenchido ou inválido",
+          "solution": "",
+          "article_id": "11009532578061",
+          "article_path": "mastersaf-dw/faq-dw/11009532578061.md",
+          "facet": "dw"
+        },
+        "92816": {
+          "description": "Data Inicial do Período de Apuração inválida",
+          "solution": "",
+          "article_id": "11005781908749",
+          "article_path": "mastersaf-dw/faq-dw/11005781908749.md",
+          "facet": "dw"
+        },
+        "92833": {
+          "description": "Não existe registro de correção de apontamento na Tabela de Correções de Apontamento - SAFX235",
+          "solution": "",
+          "article_id": "11009378678925",
+          "article_path": "mastersaf-dw/faq-dw/11009378678925.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX279": {
+      "errors": {
+        "90010": {
+          "description": "A Data de Movimento nao e valida",
+          "solution": "Para corrigir o problema, basta informar a data no formato AAAAMMDD",
+          "article_id": "21498669005453",
+          "article_path": "mastersaf-dw/faq-dw/21498669005453.md",
+          "facet": "dw"
+        },
+        "90117": {
+          "description": "O Campo Data do Movimento deve ser preenchido",
+          "solution": "Para corrigir o problema basta informar uma data valida.",
+          "article_id": "21498555778957",
+          "article_path": "mastersaf-dw/faq-dw/21498555778957.md",
+          "facet": "dw"
+        },
+        "93228": {
+          "description": "Campo obrigatorio deve ser preenchido. Favor verificar o layout.",
+          "solution": "Para solucionar o problema, basta preencher o campo com um dos códigos abaixo:",
+          "article_id": "21494072472333",
+          "article_path": "mastersaf-dw/faq-dw/21494072472333.md",
+          "facet": "dw"
+        },
+        "93261": {
+          "description": "O campo Natureza do Rendimento deve ser preenchido com uma das opcoes validas: 19001 ou 19009",
+          "solution": "Para solucionar o problema, basta informar um dos códigos validos abaixo, conforme manual de layout de SAFX.",
+          "article_id": "21495096668045",
+          "article_path": "mastersaf-dw/faq-dw/21495096668045.md",
+          "facet": "dw"
+        },
+        "93262": {
+          "description": "O campo Valor Liquido deve ser preenchido com um valor maior que zero.",
+          "solution": "Para solucionar o problema, basta informar um valor maior que zero ou então um IND_NAT_REND diferente de 19001 ou 19009",
+          "article_id": "21500320703501",
+          "article_path": "mastersaf-dw/faq-dw/21500320703501.md",
+          "facet": "dw"
+        },
+        "93263": {
+          "description": "O campo Valor Reajustado deve ser preenchido com o valor igual ao Resultado da expressao: (Valor Liquido/0,65).",
+          "solution": "Para corrigir o problema basta ajustar o campo VLR_REAJ",
+          "article_id": "21501162670605",
+          "article_path": "mastersaf-dw/faq-dw/21501162670605.md",
+          "facet": "dw"
+        },
+        "93600": {
+          "description": "Campo Data da Escrituracao Contabil deve ser informada",
+          "solution": "Para solucionar o problema basta informar uma data valida, no formato AAAAMMDD, no campo DATA_ESCR_CONT",
+          "article_id": "21505278326285",
+          "article_path": "mastersaf-dw/faq-dw/21505278326285.md",
+          "facet": "dw"
+        },
+        "93601": {
+          "description": "A data da escrituracao contabil deve estar compreendida no periodo da apuracao",
+          "solution": "Para solucionar o problema, basta ajustar um dos dois campos para compreender o período.",
+          "article_id": "21505697528845",
+          "article_path": "mastersaf-dw/faq-dw/21505697528845.md",
+          "facet": "dw"
+        },
+        "93603": {
+          "description": "Campo Data Escrituracao Contabil deve ser preenchido quando a natureza de rendimento igual a 12052",
+          "solution": "Para corrigir o erro, basta alterar o campo DATA_ESCR_CONT para @ (nulo) ou então ajustar o código do campo IND_NAT_REND para 12052",
+          "article_id": "21505038113165",
+          "article_path": "mastersaf-dw/faq-dw/21505038113165.md",
+          "facet": "dw"
+        },
+        "93605": {
+          "description": "O campo Valor Liquido deve ser preenchido, quando a natureza de rendimento for igual a 19001 ou 19009",
+          "solution": "Para solucionar o problema, basta informar o IND_NAT_REND igual a 19001 ou 19009.",
+          "article_id": "21493829967629",
+          "article_path": "mastersaf-dw/faq-dw/21493829967629.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX317": {
+      "errors": {
+        "913182": {
+          "description": "O Código da Pessoa Física/Jurídica da Instituição Financeira e de Pagamento não esta cadastrado.' é necessário informar o Código do Intermediador da Transação (agenciador, plataforma de delivery, marketplace e similar) de acordo com a Tabela de Pessoa Física/Jurídica (SAFX04).",
+          "solution": "Para solucionar o erro 913182: 'O Código da Pessoa Física/Jurídica da Instituição Financeira e de Pagamento não esta cadastrado.' é necessário informar o Código do Intermediador da Transação (agenciador, plataforma de delivery, marketplace e similar) de acordo com a Tabela de Pessoa Física/Jurídi...",
+          "article_id": "21661443638157",
+          "article_path": "onesource-tax-one/faq/21661443638157.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX322": {
+      "errors": {
+        "92182": {
+          "description": "Divergência nas datas informadas, siga a orientação:",
+          "solution": "Para corrigir o erro 92182: Divergência nas datas informadas, siga a orientação:",
+          "article_id": "29043613192077",
+          "article_path": "onesource-tax-one/faq/29043613192077.md",
+          "facet": "taxone"
+        },
+        "92446": {
+          "description": "O produto informado não está na tabela de produtos, cadastre o produto ou altere a SAFX para um produto já cadastrado.",
+          "solution": "Para corrigir o erro 92446: O produto informado não está na tabela de produtos, cadastre o produto ou altere a SAFX para um produto já cadastrado.",
+          "article_id": "29806351288589",
+          "article_path": "onesource-tax-one/faq/29806351288589.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX42": {
+      "errors": {
+        "92839": {
+          "description": "O campo Situação da Nota está preenchido com a informação inválida",
+          "solution": "",
+          "article_id": "11022227105805",
+          "article_path": "mastersaf-dw/faq-dw/11022227105805.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX44": {
+      "errors": {
+        "90805": {
+          "description": "Um Processo de Equalização/Importação está sendo executado por outro usuário.",
+          "solution": "",
+          "article_id": "10959365285517",
+          "article_path": "mastersaf-dw/faq-dw/10959365285517.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX48": {
+      "errors": {
+        "90034": {
+          "description": "Código do produto não cadastrado",
+          "solution": "Para resolver o problema, basta cadastrar o produto através do Data Warehouse ou importando a SAFX2013.",
+          "article_id": "10021728149645",
+          "article_path": "mastersaf-dw/faq-dw/10021728149645.md",
+          "facet": "dw"
+        },
+        "90088": {
+          "description": "O indicador de Pessoa Física/Jurídica não está preenchido ou com informação inválida', siga os passos abaixo:",
+          "solution": "Para resolver o erro 90088 - 'O indicador de Pessoa Física/Jurídica não está preenchido ou com informação inválida', siga os passos abaixo:",
+          "article_id": "10888123579661",
+          "article_path": "onesource-tax-one/faq/10888123579661.md",
+          "facet": "taxone"
+        },
+        "90124": {
+          "description": "?",
+          "solution": "Para corrigir o erro 90124 \\- O código da pessoa Física/Jurídica não esta cadastrado, siga os passos abaixo:",
+          "article_id": "10888508527757",
+          "article_path": "onesource-tax-one/faq/10888508527757.md",
+          "facet": "taxone"
+        },
+        "91274": {
+          "description": "O campo Data do Registro de Exportação deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 91274: 'O campo Data do Registro de Exportação deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "16156733621773",
+          "article_path": "onesource-tax-one/faq/16156733621773.md",
+          "facet": "taxone"
+        },
+        "91275": {
+          "description": "O campo Data da nota Fiscal deve ser preenchido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 91275: 'O campo Data da nota Fiscal deve ser preenchido.', siga a orientação abaixo:",
+          "article_id": "16156863043469",
+          "article_path": "onesource-tax-one/faq/16156863043469.md",
+          "facet": "taxone"
+        },
+        "91287": {
+          "description": "O campo Data da DDE/DSE é inválido.', siga a orientação abaixo:",
+          "solution": "Para corrigir o erro 91287: 'O campo Data da DDE/DSE é inválido.', siga a orientação abaixo:",
+          "article_id": "16157017885965",
+          "article_path": "onesource-tax-one/faq/16157017885965.md",
+          "facet": "taxone"
+        },
+        "91352": {
+          "description": "Criado: 2023-11-01",
+          "solution": "",
+          "article_id": "20926995135757",
+          "article_path": "mastersaf-dw/faq-dw/20926995135757.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX481": {
+      "errors": {
+        "91717": {
+          "description": "Registro não encontrado na tabela de NF s 1 com fim exclusivo de Exportação. (X103_REMESSA_EXP).', siga as orientações:",
+          "solution": "Para solucionar o erro 91717: 'Registro não encontrado na tabela de NF s 1 com fim exclusivo de Exportação. (X103_REMESSA_EXP).', siga as orientações:",
+          "article_id": "21661706405645",
+          "article_path": "onesource-tax-one/faq/21661706405645.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX50": {
+      "errors": {
+        "92222": {
+          "description": "Indicador de Vagão ou Balsa deve ser preenchido quando o Código estiver preenchido",
+          "solution": "",
+          "article_id": "11039844768397",
+          "article_path": "mastersaf-dw/faq-dw/11039844768397.md",
+          "facet": "dw"
+        },
+        "92223": {
+          "description": "Código de Vagão ou Balsa deve ser preenchido quando o indicador estiver preenchido",
+          "solution": "",
+          "article_id": "11039554351501",
+          "article_path": "mastersaf-dw/faq-dw/11039554351501.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX52": {
+      "errors": {
+        "90403": {
+          "description": "O campo Data Inventário está fora do período solicitado",
+          "solution": "",
+          "article_id": "11000143189517",
+          "article_path": "mastersaf-dw/faq-dw/11000143189517.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX53": {
+      "errors": {
+        "90566": {
+          "description": "Criado: 2023-11-26",
+          "solution": "Para resolver o erro 90566: 'Código do Tributo não cadastrado' mesmo tendo o código cadastrado é necessário verificar os campos abaixo.",
+          "article_id": "21688556545165",
+          "article_path": "onesource-tax-one/faq/21688556545165.md",
+          "facet": "taxone"
+        },
+        "90999": {
+          "description": "Erro não tratado pelo sistema.",
+          "solution": "Para corrigir a mensagem Erro não tratado pelo sistema , ao importar a SAFX53 , faça o seguinte:",
+          "article_id": "19072624583565",
+          "article_path": "onesource-tax-one/faq/19072624583565.md",
+          "facet": "taxone"
+        },
+        "92189": {
+          "description": "Criado: 2023-11-27",
+          "solution": "",
+          "article_id": "21689688021261",
+          "article_path": "onesource-tax-one/faq/21689688021261.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX534": {
+      "errors": {
+        "93478": {
+          "description": "SAFX531 correspondente a SAFX534 não localizada.",
+          "solution": "Para o caso da SAFX534 , é obrigatório que o valor do campo IND_TIPO_REND seja 3 , pois só pode existir um registro X534 se houver um registro pai X531 com o Tipo de rendimento = 3.",
+          "article_id": "20168396936461",
+          "article_path": "onesource-tax-one/faq/20168396936461.md",
+          "facet": "taxone"
+        }
+      }
+    },
+    "SAFX700": {
+      "errors": {
+        "90598": {
+          "description": "Tipo de Operação deve ser preenchido",
+          "solution": "",
+          "article_id": "11038426535181",
+          "article_path": "mastersaf-dw/faq-dw/11038426535181.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX82": {
+      "errors": {
+        "91918": {
+          "description": "AVISO: Registro do CIAP sem a informação do código do Bem",
+          "solution": "",
+          "article_id": "10980380685581",
+          "article_path": "mastersaf-dw/faq-dw/10980380685581.md",
+          "facet": "dw"
+        }
+      }
+    },
+    "SAFX991": {
+      "errors": {
+        "91742": {
+          "description": "Criado: 2023-11-08",
+          "solution": "",
+          "article_id": "21154956673293",
+          "article_path": "onesource-tax-one/faq/21154956673293.md",
+          "facet": "taxone"
+        }
+      }
+    }
+  },
+  "by_error_code": {
+    "90001": [
+      "SAFX01",
+      "SAFX13"
+    ],
+    "90002": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX13"
+    ],
+    "90009": [
+      "SAFX01",
+      "SAFX02"
+    ],
+    "90010": [
+      "SAFX279"
+    ],
+    "90011": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX2101",
+      "SAFX2103"
+    ],
+    "90012": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX07",
+      "SAFX08",
+      "SAFX2103"
+    ],
+    "90015": [
+      "SAFX13"
+    ],
+    "90016": [
+      "SAFX08"
+    ],
+    "90020": [
+      "SAFX01"
+    ],
+    "90027": [
+      "SAFX01",
+      "SAFX04"
+    ],
+    "90029": [
+      "SAFX08"
+    ],
+    "90033": [
+      "SAFX2013"
+    ],
+    "90034": [
+      "SAFX08",
+      "SAFX48"
+    ],
+    "90035": [
+      "SAFX2013"
+    ],
+    "90041": [
+      "SAFX07",
+      "SAFX08"
+    ],
+    "90045": [
+      "SAFX13"
+    ],
+    "90046": [
+      "SAFX13"
+    ],
+    "90048": [
+      "SAFX13"
+    ],
+    "90050": [
+      "SAFX13"
+    ],
+    "90052": [
+      "SAFX13"
+    ],
+    "90054": [
+      "SAFX01",
+      "SAFX03",
+      "SAFX13"
+    ],
+    "90055": [
+      "SAFX13"
+    ],
+    "90057": [
+      "SAFX13"
+    ],
+    "90063": [
+      "SAFX04",
+      "SAFX07"
+    ],
+    "90084": [
+      "SAFX04"
+    ],
+    "90085": [
+      "SAFX04"
+    ],
+    "90086": [
+      "SAFX04"
+    ],
+    "90088": [
+      "SAFX03",
+      "SAFX04",
+      "SAFX07",
+      "SAFX13",
+      "SAFX48"
+    ],
+    "90089": [
+      "SAFX03",
+      "SAFX04"
+    ],
+    "90090": [
+      "SAFX03"
+    ],
+    "90091": [
+      "SAFX04"
+    ],
+    "90096": [
+      "SAFX01"
+    ],
+    "90097": [
+      "SAFX01"
+    ],
+    "90098": [
+      "SAFX01"
+    ],
+    "90099": [
+      "SAFX01",
+      "SAFX03"
+    ],
+    "90100": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX03"
+    ],
+    "90101": [
+      "SAFX01"
+    ],
+    "90109": [
+      "SAFX02",
+      "SAFX102"
+    ],
+    "90110": [
+      "SAFX02"
+    ],
+    "90112": [
+      "SAFX03",
+      "SAFX07",
+      "SAFX08"
+    ],
+    "90115": [
+      "SAFX03"
+    ],
+    "90117": [
+      "SAFX279"
+    ],
+    "90119": [
+      "SAFX03"
+    ],
+    "90120": [
+      "SAFX08"
+    ],
+    "90122": [
+      "SAFX03"
+    ],
+    "90123": [
+      "SAFX01"
+    ],
+    "90124": [
+      "SAFX07",
+      "SAFX08",
+      "SAFX145",
+      "SAFX48"
+    ],
+    "90125": [
+      "SAFX07",
+      "SAFX08",
+      "SAFX13"
+    ],
+    "90127": [
+      "SAFX03"
+    ],
+    "90128": [
+      "SAFX03",
+      "SAFX07"
+    ],
+    "90129": [
+      "SAFX07"
+    ],
+    "90130": [
+      "SAFX07",
+      "SAFX08"
+    ],
+    "90132": [
+      "SAFX08"
+    ],
+    "90135": [
+      "SAFX01"
+    ],
+    "90138": [
+      "SAFX07"
+    ],
+    "90147": [
+      "SAFX08"
+    ],
+    "90150": [
+      "SAFX2013"
+    ],
+    "90163": [
+      "SAFX08",
+      "SAFX2013"
+    ],
+    "90209": [
+      "SAFX01",
+      "SAFX03",
+      "SAFX13",
+      "SAFX2013"
+    ],
+    "90321": [
+      "SAFX2101"
+    ],
+    "90365": [
+      "SAFX2013"
+    ],
+    "90366": [
+      "SAFX13",
+      "SAFX2013"
+    ],
+    "90368": [
+      "SAFX2013"
+    ],
+    "90369": [
+      "SAFX2013"
+    ],
+    "90381": [
+      "SAFX01",
+      "SAFX13"
+    ],
+    "90382": [
+      "SAFX01",
+      "SAFX13"
+    ],
+    "90383": [
+      "SAFX01"
+    ],
+    "90384": [
+      "SAFX04",
+      "SAFX2018"
+    ],
+    "90385": [
+      "SAFX04"
+    ],
+    "90386": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX03",
+      "SAFX04",
+      "SAFX13"
+    ],
+    "90388": [
+      "SAFX08"
+    ],
+    "90399": [
+      "SAFX08"
+    ],
+    "90403": [
+      "SAFX52"
+    ],
+    "90418": [
+      "SAFX04"
+    ],
+    "90429": [
+      "SAFX2013"
+    ],
+    "90461": [
+      "SAFX01",
+      "SAFX02",
+      "SAFX03",
+      "SAFX04"
+    ],
+    "90468": [
+      "SAFX01"
+    ],
+    "90477": [
+      "SAFX01"
+    ],
+    "90485": [
+      "SAFX04"
+    ],
+    "90506": [
+      "SAFX04"
+    ],
+    "90549": [
+      "SAFX01",
+      "SAFX04"
+    ],
+    "90566": [
+      "SAFX53"
+    ],
+    "90598": [
+      "SAFX700"
+    ],
+    "90666": [
+      "SAFX04"
+    ],
+    "90667": [
+      "SAFX04"
+    ],
+    "90713": [
+      "SAFX07"
+    ],
+    "90796": [
+      "SAFX08"
+    ],
+    "90805": [
+      "SAFX44"
+    ],
+    "90807": [
+      "SAFX112"
+    ],
+    "90899": [
+      "SAFX07"
+    ],
+    "90971": [
+      "SAFX07"
+    ],
+    "90994": [
+      "SAFX03"
+    ],
+    "90999": [
+      "SAFX108",
+      "SAFX113",
+      "SAFX2064",
+      "SAFX53"
+    ],
+    "91025": [
+      "SAFX2013"
+    ],
+    "91166": [
+      "SAFX04"
+    ],
+    "91167": [
+      "SAFX04"
+    ],
+    "91168": [
+      "SAFX04"
+    ],
+    "91169": [
+      "SAFX2013"
+    ],
+    "91170": [
+      "SAFX2013"
+    ],
+    "91171": [
+      "SAFX2013"
+    ],
+    "91274": [
+      "SAFX48"
+    ],
+    "91275": [
+      "SAFX48"
+    ],
+    "91287": [
+      "SAFX48"
+    ],
+    "91316": [
+      "SAFX07"
+    ],
+    "91323": [
+      "SAFX04"
+    ],
+    "91350": [
+      "SAFX04"
+    ],
+    "91352": [
+      "SAFX48"
+    ],
+    "91381": [
+      "SAFX04"
+    ],
+    "91382": [
+      "SAFX04"
+    ],
+    "91399": [
+      "SAFX03"
+    ],
+    "91406": [
+      "SAFX03"
+    ],
+    "91440": [
+      "SAFX07"
+    ],
+    "91453": [
+      "SAFX04"
+    ],
+    "91475": [
+      "SAFX04"
+    ],
+    "91499": [
+      "SAFX01",
+      "SAFX147"
+    ],
+    "91510": [
+      "SAFX04"
+    ],
+    "91637": [
+      "SAFX113"
+    ],
+    "91683": [
+      "SAFX04"
+    ],
+    "91684": [
+      "SAFX04"
+    ],
+    "91717": [
+      "SAFX481"
+    ],
+    "91742": [
+      "SAFX991"
+    ],
+    "91768": [
+      "SAFX04"
+    ],
+    "91769": [
+      "SAFX04"
+    ],
+    "91778": [
+      "SAFX119"
+    ],
+    "91856": [
+      "SAFX2101"
+    ],
+    "91858": [
+      "SAFX2101"
+    ],
+    "91860": [
+      "SAFX2101",
+      "SAFX227"
+    ],
+    "91861": [
+      "SAFX2101",
+      "SAFX2103"
+    ],
+    "91862": [
+      "SAFX2101"
+    ],
+    "91863": [
+      "SAFX2101"
+    ],
+    "91864": [
+      "SAFX2101"
+    ],
+    "91865": [
+      "SAFX2101"
+    ],
+    "91871": [
+      "SAFX04"
+    ],
+    "91899": [
+      "SAFX04"
+    ],
+    "91918": [
+      "SAFX82"
+    ],
+    "91928": [
+      "SAFX2013"
+    ],
+    "91930": [
+      "SAFX2103"
+    ],
+    "91937": [
+      "SAFX2102"
+    ],
+    "91939": [
+      "SAFX2102"
+    ],
+    "91943": [
+      "SAFX2103"
+    ],
+    "91944": [
+      "SAFX2103"
+    ],
+    "91945": [
+      "SAFX2103"
+    ],
+    "91946": [
+      "SAFX2103"
+    ],
+    "91949": [
+      "SAFX2103"
+    ],
+    "91954": [
+      "SAFX10"
+    ],
+    "91968": [
+      "SAFX109"
+    ],
+    "92026": [
+      "SAFX2013"
+    ],
+    "92182": [
+      "SAFX322"
+    ],
+    "92189": [
+      "SAFX53"
+    ],
+    "92222": [
+      "SAFX50"
+    ],
+    "92223": [
+      "SAFX50"
+    ],
+    "92236": [
+      "SAFX2013"
+    ],
+    "92446": [
+      "SAFX322"
+    ],
+    "92595": [
+      "SAFX04"
+    ],
+    "92599": [
+      "SAFX04"
+    ],
+    "92622": [
+      "SAFX04"
+    ],
+    "92652": [
+      "SAFX218"
+    ],
+    "92657": [
+      "SAFX218"
+    ],
+    "92658": [
+      "SAFX218"
+    ],
+    "92677": [
+      "SAFX2101"
+    ],
+    "92694": [
+      "SAFX216"
+    ],
+    "92807": [
+      "SAFX108"
+    ],
+    "92815": [
+      "SAFX236"
+    ],
+    "92816": [
+      "SAFX236"
+    ],
+    "92823": [
+      "SAFX235"
+    ],
+    "92833": [
+      "SAFX236"
+    ],
+    "92839": [
+      "SAFX42"
+    ],
+    "92840": [
+      "SAFX2013"
+    ],
+    "92843": [
+      "SAFX04"
+    ],
+    "93047": [
+      "SAFX04"
+    ],
+    "93048": [
+      "SAFX04"
+    ],
+    "93167": [
+      "SAFX04"
+    ],
+    "93185": [
+      "SAFX01"
+    ],
+    "93186": [
+      "SAFX01"
+    ],
+    "93187": [
+      "SAFX01"
+    ],
+    "93203": [
+      "SAFX04"
+    ],
+    "93228": [
+      "SAFX279"
+    ],
+    "93261": [
+      "SAFX279"
+    ],
+    "93262": [
+      "SAFX279"
+    ],
+    "93263": [
+      "SAFX279"
+    ],
+    "93264": [
+      "SAFX2101"
+    ],
+    "93277": [
+      "SAFX04"
+    ],
+    "93310": [
+      "SAFX01"
+    ],
+    "93385": [
+      "SAFX04"
+    ],
+    "93478": [
+      "SAFX534"
+    ],
+    "93600": [
+      "SAFX279"
+    ],
+    "93601": [
+      "SAFX279"
+    ],
+    "93603": [
+      "SAFX279"
+    ],
+    "93605": [
+      "SAFX279"
+    ],
+    "101070": [
+      "SAFX112"
+    ],
+    "911700": [
+      "SAFX2013"
+    ],
+    "912036": [
+      "SAFX2013"
+    ],
+    "913182": [
+      "SAFX317"
+    ]
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "version": "1.0.0",
+  "description": "Mapeamento de componentes TAX ONE para XMLs de teste da SuiteAutomation. Matching por keywords (titulo WI), file_paths (arquivos modificados) e packages (PL/SQL packages referenciados).",
+  "suite_base_path": "${PROJECT_ROOT}/suite-automation",
+  "properties_file": "${PROJECT_ROOT}/suite-automation/config/suiteteste_LOCAL.properties",
+  "jar_path": "${PROJECT_ROOT}/suite-automation/jar/SuiteTeste.jar",
+  "scoring": {
+    "keyword_match": 3,
+    "file_path_match": 5,
+    "package_match": 4,
+    "min_score_to_include": 3,
+    "max_suites": 5
+  },
+  "mappings": [
+    {
+      "id": "SPED_CONTRIBUICOES",
+      "category": "SPED",
+      "xml_file": "SPED/CT_SPED_CONTRIBUICOES.xml",
+      "description": "SPED Contribuicoes (PIS/COFINS) e SPED Contrib. Financeira",
+      "keywords": ["SPED CONTRIBUI", "EFD CONTRIBUI", "EFD-PIS", "PIS.COFINS", "COFINS", "SAFEFDFIN", "SPED PIS", "EFD PIS/COFINS"],
+      "file_paths": ["SPED/EFD-PIS-COFINS", "sped/efd_pis_cofins", "sped/contribuicoes"],
+      "packages": ["EPC_SPED_FPROC", "EPC_MEIO_MAGNETICO", "SPED_CONTRIB_FPROC"]
+    },
+    {
+      "id": "SPED_FISCAL",
+      "category": "SPED",
+      "xml_file": "SPED/CT_SPED_FISCAL.xml",
+      "description": "SPED Fiscal (EFD ICMS/IPI)",
+      "keywords": ["SPED FISCAL", "EFD ICMS", "EFD IPI", "SPED ICMS", "BLOCO H", "BLOCO K", "BLOCO C", "BLOCO E"],
+      "file_paths": ["SPED/EFD-ICMS-IPI", "sped/fiscal", "sped/efd_icms"],
+      "packages": ["EST_MM_115_FPROC", "EST_MM_SPED_FISCAL", "EPC_SPED_FPROC"]
+    },
+    {
+      "id": "SPED_CONTABIL",
+      "category": "SPED",
+      "xml_file": "SPED/CT_SPED_CONT.xml",
+      "description": "SPED Contabil (ECD)",
+      "keywords": ["SPED CONTAB", "ECD", "SPED CONT", "ESCRITURACAO CONTABIL"],
+      "file_paths": ["SPED/ECD", "sped/contabil"],
+      "packages": ["SPED_CONT_FPROC", "EPC_SPED_CONT"]
+    },
+    {
+      "id": "SPED_REINF",
+      "category": "SPED",
+      "xml_file": "SPED/CT_SPED_REINF.xml",
+      "description": "SPED Reinf (EFD-Reinf)",
+      "keywords": ["REINF", "EFD-REINF", "SPED REINF", "R-2010", "R-2020", "R-4010", "R-4020"],
+      "file_paths": ["SPED/REINF", "sped/reinf"],
+      "packages": ["REINF_FPROC", "EPC_REINF", "REINF_UTIL"]
+    },
+    {
+      "id": "ICMS_LIVRO_P3",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_ICMS_LIVRO_P3.xml",
+      "description": "ICMS Livro P3 - Apuracao ICMS",
+      "keywords": ["LIVRO P3", "ICMS P3", "APURACAO ICMS", "ICT_LVR_P3"],
+      "file_paths": ["estadual/icms/livro_p3", "estadual/apuracao"],
+      "packages": ["ICMS_LVR_P3_FPROC", "ICMS_APURACAO", "EST_ICMS_P3"]
+    },
+    {
+      "id": "ICMS_LIVRO_P9",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_ICMS_LIVRO_P9.xml",
+      "description": "ICMS Livro P9 - CIAP e Creditos",
+      "keywords": ["LIVRO P9", "ICMS P9", "CIAP", "CREDITO ICMS"],
+      "file_paths": ["estadual/icms/livro_p9"],
+      "packages": ["ICMS_LVR_P9_FPROC", "EST_ICMS_P9"]
+    },
+    {
+      "id": "CIAP",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_CIAP.xml",
+      "description": "CIAP - Controle de Credito do Ativo Permanente",
+      "keywords": ["CIAP", "ATIVO PERMANENTE", "CREDITO ATIVO"],
+      "file_paths": ["estadual/ciap"],
+      "packages": ["CIAP_FPROC", "EST_CIAP"]
+    },
+    {
+      "id": "DIME_SC",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_DIME_SC.xml",
+      "description": "DIME SC - Declaracao ICMS Santa Catarina",
+      "keywords": ["DIME", "SANTA CATARINA", "DIME SC"],
+      "file_paths": ["estadual/dime_sc", "estadual/sc"],
+      "packages": ["EST_DIME_SC_FPROC", "DIME_SC"]
+    },
+    {
+      "id": "GIA_ST",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_GIA_ST.xml",
+      "description": "GIA-ST - Guia Nacional de Informacao e Apuracao ICMS-ST",
+      "keywords": ["GIA-ST", "GIA ST", "ICMS-ST", "SUBSTITUICAO TRIBUTARIA"],
+      "file_paths": ["estadual/gia_st"],
+      "packages": ["EST_GIA_ST_FPROC", "GIA_ST"]
+    },
+    {
+      "id": "GNRE",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_GNRE.xml",
+      "description": "GNRE - Guia Nacional de Recolhimento de Tributos Estaduais",
+      "keywords": ["GNRE", "GUIA RECOLHIMENTO"],
+      "file_paths": ["estadual/gnre"],
+      "packages": ["EST_GNRE_FPROC", "GNRE"]
+    },
+    {
+      "id": "MEIO_MAG",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_MEIO_MAG.xml",
+      "description": "Meio Magnetico Estadual - SINTEGRA e outros",
+      "keywords": ["MEIO MAGNETICO", "SINTEGRA", "MEIO MAG"],
+      "file_paths": ["estadual/meio_magnetico", "estadual/sintegra"],
+      "packages": ["EST_MM_FPROC", "EPC_MEIO_MAGNETICO"]
+    },
+    {
+      "id": "LANC_AUT_ICMS",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_LANC_AUT_ICMS.xml",
+      "description": "Lancamento Automatico ICMS",
+      "keywords": ["LANC AUT ICMS", "LANCAMENTO AUTOMATICO ICMS", "LANC_AUT_ICMS"],
+      "file_paths": ["estadual/lanc_aut_icms"],
+      "packages": ["LANC_AUT_ICMS_FPROC", "EST_LANC_AUT"]
+    },
+    {
+      "id": "FCI",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_FCI.xml",
+      "description": "FCI - Ficha de Conteudo de Importacao",
+      "keywords": ["FCI", "CONTEUDO IMPORTACAO", "FICHA CONTEUDO"],
+      "file_paths": ["estadual/fci"],
+      "packages": ["EST_FCI_FPROC", "FCI"]
+    },
+    {
+      "id": "INJECAO",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_INJECAO.xml",
+      "description": "Injecao Estadual - Carga de dados",
+      "keywords": ["INJECAO", "CARGA ESTADUAL", "INJECAO ESTADUAL"],
+      "file_paths": ["estadual/injecao"],
+      "packages": ["EST_INJECAO_FPROC"]
+    },
+    {
+      "id": "EST_DEB",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_EST_DEB.xml",
+      "description": "Debito Estadual",
+      "keywords": ["DEBITO ESTADUAL", "EST DEB"],
+      "file_paths": ["estadual/debito"],
+      "packages": ["EST_DEB_FPROC"]
+    },
+    {
+      "id": "RESS_MG",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_RESS_MG.xml",
+      "description": "Ressarcimento ICMS-ST MG",
+      "keywords": ["RESSARCIMENTO MG", "RESS MG", "ICMS-ST MG"],
+      "file_paths": ["estadual/ress_mg"],
+      "packages": ["EST_RESS_MG_FPROC"]
+    },
+    {
+      "id": "RESS_PR",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_RESS_PR.xml",
+      "description": "Ressarcimento ICMS-ST PR",
+      "keywords": ["RESSARCIMENTO PR", "RESS PR", "ICMS-ST PR"],
+      "file_paths": ["estadual/ress_pr"],
+      "packages": ["EST_RESS_PR_FPROC"]
+    },
+    {
+      "id": "RESS_RS",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_RESS_RS.xml",
+      "description": "Ressarcimento ICMS-ST RS",
+      "keywords": ["RESSARCIMENTO RS", "RESS RS", "ICMS-ST RS"],
+      "file_paths": ["estadual/ress_rs"],
+      "packages": ["EST_RESS_RS_FPROC"]
+    },
+    {
+      "id": "RESS_SC",
+      "category": "ESTADUAL",
+      "xml_file": "ESTADUAL/CT_RESS_SC.xml",
+      "description": "Ressarcimento ICMS-ST SC",
+      "keywords": ["RESSARCIMENTO SC", "RESS SC", "ICMS-ST SC"],
+      "file_paths": ["estadual/ress_sc"],
+      "packages": ["EST_RESS_SC_FPROC"]
+    },
+    {
+      "id": "DARF",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_DARF.xml",
+      "description": "DARF - Documento de Arrecadacao de Receitas Federais",
+      "keywords": ["DARF", "ARRECADACAO FEDERAL", "DOCUMENTO ARRECADACAO"],
+      "file_paths": ["federal/darf"],
+      "packages": ["SAF_X53_DARF", "FED_DARF_FPROC"]
+    },
+    {
+      "id": "APURACAO_IPI",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_APURACAO_IPI.xml",
+      "description": "Apuracao IPI",
+      "keywords": ["IPI", "APURACAO IPI", "IMPOSTO PRODUTOS"],
+      "file_paths": ["federal/apuracao_ipi", "federal/ipi"],
+      "packages": ["FED_APUR_IPI_FPROC", "APURACAO_IPI"]
+    },
+    {
+      "id": "CREDPIS",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_CREDPIS.xml",
+      "description": "Credito PIS/COFINS",
+      "keywords": ["CREDPIS", "CREDITO PIS", "CREDITO COFINS", "PIS COFINS"],
+      "file_paths": ["federal/credpis", "federal/pis_cofins"],
+      "packages": ["FED_CREDPIS_FPROC", "CREDPIS"]
+    },
+    {
+      "id": "ECF",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_ECF.xml",
+      "description": "ECF - Escrituracao Contabil Fiscal",
+      "keywords": ["ECF", "ESCRITURACAO CONTABIL FISCAL", "LALUR", "LACS"],
+      "file_paths": ["federal/ecf"],
+      "packages": ["FED_ECF_FPROC", "ECF"]
+    },
+    {
+      "id": "INSS",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_INSS.xml",
+      "description": "INSS - Contribuicao Previdenciaria",
+      "keywords": ["INSS", "PREVIDENCIARIA", "CONTRIBUICAO INSS"],
+      "file_paths": ["federal/inss"],
+      "packages": ["FED_INSS_FPROC", "INSS"]
+    },
+    {
+      "id": "LANC_AUT_IPI",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_LANC_AUT_IPI.xml",
+      "description": "Lancamento Automatico IPI",
+      "keywords": ["LANC AUT IPI", "LANCAMENTO AUTOMATICO IPI"],
+      "file_paths": ["federal/lanc_aut_ipi"],
+      "packages": ["FED_LANC_AUT_IPI_FPROC"]
+    },
+    {
+      "id": "OTF",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_OTF.xml",
+      "description": "OTF - Obrigacoes Tributarias Federais",
+      "keywords": ["OTF", "OBRIGACOES TRIBUTARIAS"],
+      "file_paths": ["federal/otf"],
+      "packages": ["FED_OTF_FPROC", "OTF"]
+    },
+    {
+      "id": "DCTF_MIT",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_DCTF_MIT.xml",
+      "description": "DCTF - Declaracao de Debitos e Creditos Tributarios Federais",
+      "keywords": ["DCTF", "DEBITOS CREDITOS TRIBUTARIOS"],
+      "file_paths": ["federal/dctf"],
+      "packages": ["FED_DCTF_FPROC", "DCTF"]
+    },
+    {
+      "id": "DIMOB",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_DIMOB.xml",
+      "description": "DIMOB - Declaracao de Informacoes sobre Atividades Imobiliarias",
+      "keywords": ["DIMOB", "ATIVIDADES IMOBILIARIAS"],
+      "file_paths": ["federal/dimob"],
+      "packages": ["FED_DIMOB_FPROC", "DIMOB"]
+    },
+    {
+      "id": "PER_DCOMP",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_PER_DCOMP.xml",
+      "description": "PER/DCOMP - Pedido de Restituicao/Declaracao de Compensacao",
+      "keywords": ["PER/DCOMP", "PERDCOMP", "RESTITUICAO", "COMPENSACAO"],
+      "file_paths": ["federal/per_dcomp"],
+      "packages": ["FED_PER_DCOMP_FPROC", "PER_DCOMP"]
+    },
+    {
+      "id": "FUNRURAL",
+      "category": "FEDERAL",
+      "xml_file": "FEDERAL/CT_FUNRURAL.xml",
+      "description": "FUNRURAL - Contribuicao Rural",
+      "keywords": ["FUNRURAL", "CONTRIBUICAO RURAL"],
+      "file_paths": ["federal/funrural"],
+      "packages": ["FED_FUNRURAL_FPROC", "FUNRURAL"]
+    },
+    {
+      "id": "DW",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_DW.xml",
+      "description": "DataWarehouse - Relatorios e Conferencia de Documentos Fiscais",
+      "keywords": ["DATAWAREHOUSE", "DW", "RELATORIO DW", "CONF_DOCFISCAL"],
+      "file_paths": ["basico/dw", "basico/relatorios", "basico/datawarehouse"],
+      "packages": ["CONF_DOCFISCAL_UTIL_FPROC", "DW_FPROC"]
+    },
+    {
+      "id": "DATAMART",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_DATAMART.xml",
+      "description": "DataMart - Carga de Dados para Consulta",
+      "keywords": ["DATAMART", "DATA MART", "CARGA DADOS"],
+      "file_paths": ["basico/datamart"],
+      "packages": ["DATAMART_FPROC"]
+    },
+    {
+      "id": "FERRAMENTAS",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_FERRAMENTAS.xml",
+      "description": "Ferramentas Basicas do Sistema",
+      "keywords": ["FERRAMENTAS", "TOOLS", "UTILIDADES"],
+      "file_paths": ["basico/ferramentas"],
+      "packages": ["FERRAMENTAS_FPROC"]
+    },
+    {
+      "id": "JOB_SERVIDOR_BAT",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_JOB_SERVIDOR_BAT.xml",
+      "description": "Job Servidor - Processamento Batch (inclui iBatch SAFX3007/3008/3009)",
+      "keywords": ["JOB SERVIDOR", "BATCH", "JOB BAT", "PROCESSAMENTO BATCH", "SAFX3007", "SAFX3008", "SAFX3009", "X3008", "X3007", "X3009", "ITENS_MERC_RT", "IBS_UF", "IBS_CBS", "IBATCH", "IMPORTACAO INVERTIDA"],
+      "file_paths": ["basico/job_servidor", "basico/batch", "il/ibatch/s_ib3007", "il/ibatch/s_ib3008", "il/ibatch/s_ib3009", "il/online/pix3008", "il/import/s_ix3008"],
+      "packages": ["JOB_SERVIDOR_FPROC", "JOB_BAT", "SAF_IB_X3007", "SAF_IB_X3008", "SAF_IB_X3009", "PKG_IMP_X3008", "SAF_IMP_X3008"]
+    },
+    {
+      "id": "JOB_SERVIDOR_OL",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_JOB_SERVIDOR_OL.xml",
+      "description": "Job Servidor - Online/Obrigacoes Acessorias",
+      "keywords": ["JOB SERVIDOR OL", "OBRIGACAO ACESSORIA", "JOB ONLINE"],
+      "file_paths": ["basico/job_servidor_ol"],
+      "packages": ["JOB_SERVIDOR_OL_FPROC"]
+    },
+    {
+      "id": "JOB_SERVIDOR_REINF",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_JOB_SERVIDOR_REINF.xml",
+      "description": "Job Servidor - REINF",
+      "keywords": ["JOB REINF", "JOB SERVIDOR REINF"],
+      "file_paths": ["basico/job_servidor_reinf"],
+      "packages": ["JOB_SERVIDOR_REINF_FPROC"]
+    },
+    {
+      "id": "JOB_SERVIDOR_EXPORTA_SAFX_CSV",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_JOB_SERVIDOR_EXPORTA_SAFX_CSV.xml",
+      "description": "Job Servidor - Exportacao SAFX para CSV",
+      "keywords": ["EXPORTA SAFX", "SAFX CSV", "EXPORTACAO CSV"],
+      "file_paths": ["basico/job_servidor_exporta"],
+      "packages": ["JOB_EXPORTA_SAFX_FPROC"]
+    },
+    {
+      "id": "PARAMETROS",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_PARAMETROS.xml",
+      "description": "Parametros do Sistema",
+      "keywords": ["PARAMETRO", "PARAMETRIZACAO", "CONFIG SISTEMA"],
+      "file_paths": ["basico/parametros"],
+      "packages": ["PARAMETROS_FPROC"]
+    },
+    {
+      "id": "REPORT_FISCAL",
+      "category": "BASICOS",
+      "xml_file": "BASICOS/CT_REPORT_FISCAL.xml",
+      "description": "Relatorios Fiscais",
+      "keywords": ["RELATORIO FISCAL", "REPORT FISCAL", "REL FISCAL"],
+      "file_paths": ["basico/report_fiscal", "basico/relatorios"],
+      "packages": ["REPORT_FISCAL_FPROC"]
+    },
+    {
+      "id": "GISS_ONLINE",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_GISS_ONLINE.xml",
+      "description": "GISS Online - Gerenciador de ISS",
+      "keywords": ["GISS", "GISS ONLINE", "ISS GISS"],
+      "file_paths": ["municipal/giss", "municipal/giss_online"],
+      "packages": ["MUN_GISS_FPROC", "GISS_ONLINE"]
+    },
+    {
+      "id": "FINTELISS",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_FINTELISS.xml",
+      "description": "Finteliss - ISS Eletronico",
+      "keywords": ["FINTELISS", "ISS ELETRONICO"],
+      "file_paths": ["municipal/finteliss"],
+      "packages": ["MUN_FINTELISS_FPROC", "FINTELISS"]
+    },
+    {
+      "id": "DESXML",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_DESXML.xml",
+      "description": "DES XML - Declaracao Eletronica de Servicos XML",
+      "keywords": ["DESXML", "DES XML", "DECLARACAO SERVICOS XML"],
+      "file_paths": ["municipal/desxml"],
+      "packages": ["MUN_DESXML_FPROC", "DESXML"]
+    },
+    {
+      "id": "DES_SP",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_DES_SP.xml",
+      "description": "DES Sao Paulo",
+      "keywords": ["DES SP", "DES SAO PAULO"],
+      "file_paths": ["municipal/des_sp"],
+      "packages": ["MUN_DES_SP_FPROC"]
+    },
+    {
+      "id": "NFTS_SP",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_NFTS_SP.xml",
+      "description": "NFTS SP - Nota Fiscal Tomador de Servicos SP",
+      "keywords": ["NFTS", "NOTA FISCAL TOMADOR", "NFTS SP"],
+      "file_paths": ["municipal/nfts_sp"],
+      "packages": ["MUN_NFTS_SP_FPROC", "NFTS"]
+    },
+    {
+      "id": "NOTA_CARIOCA",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_NOTA_CARIOCA.xml",
+      "description": "Nota Carioca - ISS Rio de Janeiro",
+      "keywords": ["NOTA CARIOCA", "ISS RJ", "ISS RIO"],
+      "file_paths": ["municipal/nota_carioca"],
+      "packages": ["MUN_NOTA_CARIOCA_FPROC"]
+    },
+    {
+      "id": "ISS_CURITIBA",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_ISS_CURITIBA.xml",
+      "description": "ISS Curitiba",
+      "keywords": ["ISS CURITIBA", "CURITIBA"],
+      "file_paths": ["municipal/iss_curitiba"],
+      "packages": ["MUN_ISS_CURITIBA_FPROC"]
+    },
+    {
+      "id": "ISS_DIGITAL",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_ISS_DIGITAL.xml",
+      "description": "ISS Digital",
+      "keywords": ["ISS DIGITAL"],
+      "file_paths": ["municipal/iss_digital"],
+      "packages": ["MUN_ISS_DIGITAL_FPROC"]
+    },
+    {
+      "id": "WEBISS",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_WEBISS.xml",
+      "description": "WebISS - ISS Web",
+      "keywords": ["WEBISS", "WEB ISS"],
+      "file_paths": ["municipal/webiss"],
+      "packages": ["MUN_WEBISS_FPROC", "WEBISS"]
+    },
+    {
+      "id": "SIMPLISS",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_SIMPLISS.xml",
+      "description": "SimplISS - Sistema Municipal ISS",
+      "keywords": ["SIMPLISS", "SIMPL ISS"],
+      "file_paths": ["municipal/simpliss"],
+      "packages": ["MUN_SIMPLISS_FPROC"]
+    },
+    {
+      "id": "ISS_NET",
+      "category": "MUNICIPAL",
+      "xml_file": "MUNICIPAL/CT_ISS_NET.xml",
+      "description": "ISS.NET - Geracao de arquivos ISS.NET municipais",
+      "keywords": ["ISS.NET", "ISSNET", "ISS NET", "ISS_NET", "GERA_TOMAD", "SERV_RECEB_TOMADOS"],
+      "file_paths": ["municipal/munic", "municip/munic"],
+      "packages": ["MUN_ISSNET_GERA_TOMAD", "MUN_ISSNET_MM_FPROC", "MUN_ISSNET_CC_MM_FPROC", "PKG_MMAG_ISSQN"]
+    },
+    {
+      "id": "ISIMP",
+      "category": "ESPECIFICOS",
+      "xml_file": "ESPECIFICOS/CT_ISIMP.xml",
+      "description": "ISIMP - Importacao Especifica",
+      "keywords": ["ISIMP", "IMPORTACAO ESPECIFICA"],
+      "file_paths": ["especificos/isimp"],
+      "packages": ["ESP_ISIMP_FPROC", "ISIMP"]
+    },
+    {
+      "id": "PIM_AM",
+      "category": "ESPECIFICOS",
+      "xml_file": "ESPECIFICOS/CT_PIM_AM.xml",
+      "description": "PIM AM - Polo Industrial de Manaus",
+      "keywords": ["PIM", "POLO INDUSTRIAL MANAUS", "PIM AM"],
+      "file_paths": ["especificos/pim_am"],
+      "packages": ["ESP_PIM_AM_FPROC", "PIM_AM"]
+    },
+    {
+      "id": "SCANC",
+      "category": "ESPECIFICOS",
+      "xml_file": "ESPECIFICOS/CT_SCANC.xml",
+      "description": "SCANC - Sistema de Captacao e Auditoria dos Anexos de Combustiveis",
+      "keywords": ["SCANC", "COMBUSTIVEL", "COMBUSTIVEIS"],
+      "file_paths": ["especificos/scanc"],
+      "packages": ["ESP_SCANC_FPROC", "SCANC"]
+    },
+    {
+      "id": "SUBS_CONTR",
+      "category": "ESPECIFICOS",
+      "xml_file": "ESPECIFICOS/CT_SUBS_CONTR.xml",
+      "description": "Substituicao de Contribuinte",
+      "keywords": ["SUBSTITUICAO CONTRIBUINTE", "SUBS CONTR"],
+      "file_paths": ["especificos/subs_contr"],
+      "packages": ["ESP_SUBS_CONTR_FPROC"]
+    }
+  ]
+}
