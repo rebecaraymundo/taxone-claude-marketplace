@@ -1,0 +1,185 @@
+POWERPOINT SLIDE STRUCTURE - TAX ONE RCA METHODOLOGIES
+===========================================================
+
+SLIDE 1: TITLE SLIDE
+---------------------
+Title: ANÁLISE DE CAUSA RAIZ
+Subtitle: Metodologias Clássicas: 5 PORQUÊS & ESPINHA DE PEIXE
+Project: TAX ONE - INC20260413-2
+Date: 20 de Abril de 2026
+Company: Thomson Reuters
+
+SLIDE 2: DADOS DO INCIDENTE
+---------------------------
+Title: 📋 RESUMO DO INCIDENTE
+
+• Incidente: INC20260413-2
+• Sistema: TAX ONE
+• Período: 13-16/04/2026 (4 dias consecutivos)
+• Problema: Lentidão nos processos
+• Impacto: 226+ sessões zumbis, 40+ clientes afetados
+• Status: RESOLVIDO - Causa raiz identificada
+
+SLIDE 3: METODOLOGIA 5 PORQUÊS - INTRODUÇÃO
+-------------------------------------------
+Title: 🔍 METODOLOGIA DOS 5 PORQUÊS
+
+O QUE É?
+• Técnica de análise que busca a causa raiz através de perguntas sequenciais
+• Desenvolvida por Sakichi Toyoda (Sistema Toyota)
+• Evita soluções superficiais focando na causa fundamental
+
+OBJETIVO:
+• Identificar a verdadeira causa raiz do problema
+• Prevenir recorrências futuras
+• Documentar a cadeia de causalidade
+
+SLIDE 4: OS 5 PORQUÊS - ANÁLISE SEQUENCIAL
+------------------------------------------
+Title: 🔍 CADEIA DE CAUSALIDADE - 5 PORQUÊS
+
+1️⃣ POR QUÊ TAX ONE ficou lento?
+   → Sessões presas em "PL/SQL lock timer"
+
+2️⃣ POR QUÊ sessões presas?
+   → Contenção job queue Oracle (162 ASH samples)
+
+3️⃣ POR QUÊ contenção job queue?
+   → 500-1000 queries/seg em all_scheduler_jobs
+
+4️⃣ POR QUÊ tantas queries?
+   → dbms_lock.sleep desabilitado (linha 12464)
+
+5️⃣ POR QUÊ sleep desabilitado?
+   → lib_proc alterado inadequadamente (13-14/04)
+
+SLIDE 5: CAUSA RAIZ - 5 PORQUÊS
+-------------------------------
+Title: 🎯 CAUSA RAIZ IDENTIFICADA
+
+RESULTADO DOS 5 PORQUÊS:
+Alteração inadequada da biblioteca lib_proc
+
+DETALHES:
+• Desabilitou sleep no loop EQUAL_DATAMART_FPROC
+• Criou spin loop infinito
+• Sobrecarregou job queue Oracle
+• Gerou lentidão sistêmica
+
+IMPACTO:
+• 4 dias de instabilidade
+• 226+ sessões afetadas
+• 40+ clientes impactados
+
+SLIDE 6: DIAGRAMA ESPINHA DE PEIXE - INTRODUÇÃO
+----------------------------------------------
+Title: 🐟 DIAGRAMA DE ISHIKAWA (ESPINHA DE PEIXE)
+
+O QUE É?
+• Ferramenta visual para análise de causa raiz
+• Criado por Kaoru Ishikawa (1968)
+• Organiza causas potenciais em categorias sistemáticas
+
+METODOLOGIA 6Ms:
+• MATERIAIS (Code/Components)
+• MÉTODOS (Procedures/Processes)
+• MÁQUINAS (Infrastructure)
+• PESSOAS (Human Factors)
+• MEDIÇÕES (Monitoring/Metrics)
+• MEIO AMBIENTE (Environment)
+
+SLIDE 7: ESPINHA DE PEIXE - CATEGORIAS 1-3
+------------------------------------------
+Title: 🐟 FATORES CONTRIBUINTES (Parte 1)
+
+📦 MATERIAIS (CODE)
+• lib_proc alterado inadequadamente
+• Loop EQUAL_DATAMART_FPROC comentado
+• Processos LIB_PROCESSO órfãos
+
+🔧 MÉTODOS (PROCEDURES)
+• Code review inadequado
+• Testes impacto insuficientes
+• Rollback parcial executado
+
+💻 MÁQUINAS (INFRA)
+• Oracle Cloud limitações
+• Threads sem Resource Manager
+• Infraestrutura não-SaaS
+
+SLIDE 8: ESPINHA DE PEIXE - CATEGORIAS 4-6
+------------------------------------------
+Title: 🐟 FATORES CONTRIBUINTES (Parte 2)
+
+👥 PESSOAS (HUMAN)
+• Pergunta Cristiane não respondida
+• Gap comunicação equipes
+• Validação técnica insuficiente
+
+📊 MEDIÇÕES (MONITORING)
+• Detecção tardia problema
+• Alertas performance inadequados
+• Correlação lib_proc não mapeada
+
+🌍 MEIO AMBIENTE
+• Deploy múltiplos ambientes
+• Timing coincidente alterações
+• Recorrência 3 dias consecutivos
+
+SLIDE 9: CONVERGÊNCIA DAS METODOLOGIAS
+--------------------------------------
+Title: 🔄 CONVERGÊNCIA - MESMA CAUSA RAIZ
+
+RESULTADO 5 PORQUÊS:
+Alteração inadequada lib_proc → spin loop → sobrecarga Oracle
+
+RESULTADO ISHIKAWA:
+Múltiplos fatores convergem → lib_proc como causa principal
+
+VALIDAÇÃO TÉCNICA:
+✅ Jorge Washington (20/04/2026)
+✅ Correlações confirmadas
+✅ Fix: 99,8% redução queries
+✅ Metodologias convergentes
+
+SLIDE 10: CONCLUSÕES E PRÓXIMOS PASSOS
+--------------------------------------
+Title: ✅ CONCLUSÕES E RECOMENDAÇÕES
+
+CAUSA RAIZ CONFIRMADA:
+• lib_proc alterado sem validação adequada
+• Criou spin loop em EQUAL_DATAMART_FPROC
+• Sobrecarregou job queue Oracle
+
+AÇÕES CORRETIVAS:
+✅ Fix implementado com sucesso
+✅ Redução 99,8% queries problemáticas
+✅ Sistema estabilizado
+
+PREVENÇÃO:
+• Melhorar processo code review
+• Implementar testes impacto obrigatórios
+• Monitoramento job queue Oracle
+• Validação técnica prévia alterações críticas
+
+SLIDE 11: ANEXOS E REFERÊNCIAS
+------------------------------
+Title: 📚 DOCUMENTAÇÃO E REFERÊNCIAS
+
+DOCUMENTOS RELACIONADOS:
+• Análise Completa INC20260413 TAX ONE
+• Teams Data INC20260413-2 (reunião técnica)
+• Kill Sessions Data (226+ processos)
+
+VALIDAÇÕES:
+• Jorge Washington - Correlações técnicas
+• Cristiane Fugii - Pergunta respondida
+• Equipe TAX ONE - Fix validado
+
+METODOLOGIAS APLICADAS:
+• 5 Whys (Sakichi Toyoda - Toyota)
+• Ishikawa Diagram (Kaoru Ishikawa)
+• ASH Analysis (Oracle Performance)
+
+GERADO EM: 20/04/2026
+DOCUMENTO: RCA_METODOLOGIAS_CLASSICAS_INC20260413

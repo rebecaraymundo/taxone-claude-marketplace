@@ -1,0 +1,104 @@
+{\rtf1\ansi\deff0 {\fonttbl {\f0 Times New Roman;}}
+\f0\fs24
+
+{\b\fs28 Relatório de Análise de Causa Raiz - INC20260401\par}
+\par
+
+{\b ID do Problema:} PRB0042148 | Problema | Thomson Reuters Enterprise\par
+{\b ID do Incidente Maior:} INC20260401 | Incidente | Thomson Reuters Enterprise\par
+\par
+
+{\b Status da ACR:} Causa Raiz Confirmada\par
+{\b Serviço / Produto Responsável:} Tax One (Mastersaf DW)\par
+{\b Serviços / Produtos Impactados:} Tax One - REL_DOCTO_ANLTCO (Relatório Analítico)\par
+{\b Data e Horário da Reunião:} 07 Abr 2026, 13:30–14:15 BRT\par
+{\b Facilitador:} Adriana Dorigao, Gerente de Incidentes\par
+\par
+
+{\b\fs26 Participantes\par}
+{\b Gerente de Problemas:} Adriana Dorigao (TR Technology)\par
+{\b Especialistas Técnicos (Aplicação):}\par
+\bullet Jorge Washington Silva Neto (TR Technology)\par
+\bullet Luiz Castro (TR Technology)\par
+\bullet Elaine Costa (TR Technology)\par
+\bullet Alceste Siqueira Junior (TR Technology)\par
+\bullet Bruno Vianna (TR Technology)\par
+\bullet Dennis Ruiz (TR Technology)\par
+\par
+
+{\b\fs26 Resultado\par}
+A reunião de revisão da ACR validou o serviço impactado, cronograma, causa raiz e principais ações preventivas/corretivas para o INC20260401. A equipe confirmou que o problema impactou o pacote de relatórios analíticos REL_DOCTO_ANLTCO_SERVLOC_FPROC do Tax One, causando grave degradação de performance. A causa raiz foi confirmada como consultas de banco de dados ineficientes com scalar subqueries, CTEs sem filtros e JOINs problemáticos causando saturação do banco de dados.\par
+\par
+
+{\b\fs26 Declaração do Problema\par}
+{\b Resumo do Problema:}\par
+Em 01 Abr 2026 entre 10:20 e 18:23 BRT, usuários do Tax One experimentaram problemas severos de performance ao gerar relatórios analíticos através do pacote REL_DOCTO_ANLTCO. Os tempos de geração de relatórios aumentaram drasticamente, com alguns processos levando mais de 30 minutos ou apresentando timeout. Isso impactou workflows críticos de análise de documentos fiscais para a região de Santa Cruz.\par
+\par
+
+{\b Impacto:} O problema causou significativa disrupção aos clientes durante o período de processamento fiscal. Alto volume de contatos de clientes ao suporte foi relatado, com degradação de performance afetando os workflows de processamento de documentos analíticos.\par
+\par
+
+{\b\fs26 Timeline Resumida\par}
+\bullet {\b T0:} 01 Abr 2026 10:20 BRT — primeiros problemas reportados\par
+\bullet {\b Detecção:} 01 Abr 2026 10:20 BRT — detectado via chamadas ao suporte\par
+\bullet {\b Escalação:} 01 Abr 2026 17:27 BRT — escalado para desenvolvimento\par
+\bullet {\b Resolução:} 01 Abr 2026 18:23 BRT — performance restaurada\par
+\par
+
+{\b\fs26 Causa Raiz\par}
+{\b Status:} Confirmada\par
+{\b Código da Causa:} Falha de Código/Design\par
+\par
+
+{\b Declaração da Causa Raiz:}\par
+A causa raiz foi o design ineficiente das consultas de banco de dados no pacote REL_DOCTO_ANLTCO_SERVLOC_FPROC, especificamente:\par
+\bullet 24 scalar subqueries por linha no cursor Resumo_C\par
+\bullet Contenção de latch (53% do tempo, 85.62s)\par
+\bullet CTEs sem filtros causando full table scans nas tabelas X07\par
+\bullet JOINs com LIKE impedindo uso de índices\par
+\par
+
+{\b Evidências:}\par
+\bullet Análise técnica confirmou 24 scalar subqueries por linha\par
+\bullet Wait statistics: 53% em latch cache buffers chains\par
+\bullet Performance estabilizou após otimização\par
+\bullet Commits GitHub documentaram correções\par
+\par
+
+{\b\fs26 Causas Contribuintes\par}
+{\b CC1:} Scalar subqueries excessivas no cursor - {\i Acordado}\par
+{\b CC2:} CTEs sem filtros de data - {\i Acordado}\par
+{\b CC3:} JOINs com LIKE impedindo índices - {\i Acordado}\par
+{\b CC4:} Monitoramento insuficiente - {\i Acordado}\par
+\par
+
+{\b\fs26 Soluções Implementadas\par}
+{\b Corretivas (Concluídas):}\par
+\bullet Otimização de scalar subqueries no cursor\par
+\bullet Adição de filtros de data às CTEs\par
+\bullet Refatoração de JOINs com LIKE\par
+\par
+
+{\b Preventivas (Planejadas):}\par
+\bullet Padrões de design de consulta\par
+\bullet Filtros obrigatórios para CTEs\par
+\bullet Monitoramento de performance aprimorado\par
+\par
+
+{\b\fs26 Ações de Acompanhamento\par}
+{\b A1:} Implementar monitoramento de wait events\par
+{\b Responsável:} Jorge Washington Silva Neto\par
+{\b Prazo:} 15 Abr 2026\par
+\par
+
+{\b A2:} Desenvolver padrões de design de consulta\par
+{\b Responsável:} Luiz Castro\par
+{\b Prazo:} 22 Abr 2026\par
+\par
+
+{\b A3:} Criar suite de testes de performance\par
+{\b Responsável:} Elaine Costa\par
+{\b Prazo:} 29 Abr 2026\par
+\par
+
+}

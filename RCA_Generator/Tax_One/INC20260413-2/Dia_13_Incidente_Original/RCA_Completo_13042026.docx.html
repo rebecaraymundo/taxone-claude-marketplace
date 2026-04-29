@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCA TAX ONE - INC20260413-2</title>
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.15;
+            margin: 2.54cm;
+            color: #000000;
+        }
+        h1 {
+            color: #1f4e79;
+            font-size: 18pt;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 3pt solid #1f4e79;
+            padding-bottom: 10pt;
+            margin-bottom: 20pt;
+            page-break-before: avoid;
+        }
+        h2 {
+            color: #1f4e79;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+            page-break-before: avoid;
+        }
+        h3 {
+            color: #2e75b6;
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 18pt;
+            margin-bottom: 6pt;
+            page-break-before: avoid;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 12pt 0;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 1pt solid #000000;
+            padding: 6pt;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #e7f3ff;
+            border: 2pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .critical-box {
+            background-color: #ffe6e6;
+            border: 2pt solid #dc3545;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .success-box {
+            background-color: #e6ffe6;
+            border: 2pt solid #28a745;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .timeline {
+            background-color: #f8f9fa;
+            border-left: 4pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+        }
+        ul, ol {
+            margin: 6pt 0;
+            padding-left: 18pt;
+        }
+        li {
+            margin: 3pt 0;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+        .no-break {
+            page-break-inside: avoid;
+        }
+        p {
+            margin: 6pt 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10pt;
+            color: #666666;
+            margin-top: 24pt;
+            border-top: 1pt solid #cccccc;
+            padding-top: 12pt;
+        }
+    </style>
+</head>
+<body>
+
+<h1>RELATÓRIO DE ANÁLISE DE CAUSA RAIZ (RCA)<br>
+INCIDENTE TAX ONE INC20260413-2<br>
+13 de Abril de 2026</h1>
+
+<div class="highlight-box no-break">
+<h2>📋 INFORMAÇÕES GERAIS DO INCIDENTE</h2>
+<table>
+    <tr><td width="30%"><strong>ID do Incidente</strong></td><td>INC20260413-2</td></tr>
+    <tr><td><strong>Produto</strong></td><td>TAX ONE (SPED/ECD)</td></tr>
+    <tr><td><strong>Data do Incidente</strong></td><td>13 de Abril de 2026 (Domingo)</td></tr>
+    <tr><td><strong>Período Crítico</strong></td><td>17:02 - 21:54 BRT</td></tr>
+    <tr><td><strong>Ambiente Afetado</strong></td><td>PROD01</td></tr>
+    <tr><td><strong>Status Final</strong></td><td>✅ RESOLVIDO</td></tr>
+    <tr><td><strong>Prioridade</strong></td><td>P1 - CRÍTICA</td></tr>
+    <tr><td><strong>Duração Total</strong></td><td>4 horas e 52 minutos</td></tr>
+    <tr><td><strong>Critério Abertura</strong></td><td>≥5 clientes afetados (total: 27)</td></tr>
+</table>
+</div>
+
+<h2>🎯 SUMÁRIO EXECUTIVO</h2>
+
+<div class="no-break">
+<p><strong>PROBLEMA:</strong> Lentidão extrema nos processos fiscais TAX ONE onde processos que normalmente executam em segundos passaram a levar mais de 3 minutos, afetando 27 clientes em ambiente produtivo.</p>
+
+<div class="critical-box">
+<h3>🔴 CAUSA RAIZ IDENTIFICADA</h3>
+<p><strong>Desenvolvedor não considerou cenário multi-tenant em ambiente produtivo</strong> na implementação de DBMS_LOCK.ALLOCATE_UNIQUE (procedure SAF_SPED_CONTABIL_FPROC). Adicionalmente, não temos estrutura de testes para concorrência multi-tenant.</p>
+</div>
+
+<div class="success-box">
+<h3>✅ SOLUÇÃO APLICADA</h3>
+<p><strong>Rollback executado às 21:54 BRT</strong> via arquivo PatchApply_PROD01_202604132154.zip, restaurando a performance imediatamente com validação de 8 SMEs técnicos.</p>
+</div>
+</div>
+
+<div class="page-break"></div>
+
+<h2>📅 LINHA DO TEMPO DO INCIDENTE</h2>
+
+<div class="timeline">
+<strong>DOMINGO, 13 DE ABRIL DE 2026</strong>
+
+17:02 BRT ████ <strong>INÍCIO DO INCIDENTE</strong>
+          │    • Primeiros relatos de lentidão crítica
+          │    • 27 clientes afetados em PROD01
+          │
+17:30 BRT ████ <strong>MOBILIZAÇÃO TÉCNICA</strong>
+          │    • Equipe técnica acionada
+          │    • Investigação inicial iniciada
+          │
+19:15 BRT ████ <strong>REUNIÃO EMERGENCIAL</strong>
+          │    • 8 SMEs técnicos convocados
+          │    • Análise técnica aprofundada
+          │
+20:00 BRT ████ <strong>CAUSA RAIZ IDENTIFICADA</strong>
+          │    • DBMS_LOCK.ALLOCATE_UNIQUE inadequado
+          │    • ServiceNow INC1240692 documentado
+          │
+21:06 BRT ████ <strong>DECISÃO UNÂNIME</strong>
+          │    • Rollback aprovado por consenso
+          │    • Solução técnica validada
+          │
+21:54 BRT ████ <strong>RESOLUÇÃO COMPLETA</strong>
+          │    • Performance restaurada
+          │    • 27 clientes operando normalmente
+</div>
+
+<h2>🔍 ANÁLISE TÉCNICA DETALHADA</h2>
+
+<div class="critical-box no-break">
+<h3>🎯 LOCALIZAÇÃO DA FALHA</h3>
+<table>
+    <tr><td width="25%"><strong>Procedure</strong></td><td>SAF_SPED_CONTABIL_FPROC</td></tr>
+    <tr><td><strong>Função</strong></td><td>DBMS_LOCK.ALLOCATE_UNIQUE</td></tr>
+    <tr><td><strong>Contexto</strong></td><td>Processamento fiscal SPED/ECD</td></tr>
+    <tr><td><strong>Problema</strong></td><td>DEV não considerou cenário multi-tenant em ambiente produtivo + ausência de estrutura de testes para concorrência</td></tr>
+    <tr><td><strong>Impacto</strong></td><td>Saturação de locks com 27 clientes simultâneos</td></tr>
+    <tr><td><strong>Evidência</strong></td><td>ServiceNow INC1240692</td></tr>
+</table>
+</div>
+
+<h3>📊 MÉTRICAS DE DEGRADAÇÃO</h3>
+
+<table class="no-break">
+    <thead>
+        <tr>
+            <th width="25%">Métrica</th>
+            <th width="20%">Normal</th>
+            <th width="25%">Durante Incidente</th>
+            <th width="30%">Degradação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tempo de processamento</td>
+            <td>Segundos</td>
+            <td>&gt; 3 minutos</td>
+            <td>&gt; 1.800% mais lento</td>
+        </tr>
+        <tr>
+            <td>Clientes simultâneos</td>
+            <td>Variável</td>
+            <td>27 confirmados</td>
+            <td>Saturação total</td>
+        </tr>
+        <tr>
+            <td>Critério abertura</td>
+            <td>≥ 5 clientes</td>
+            <td>27 clientes</td>
+            <td>CRÍTICO</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>🔗 CAUSAS CONTRIBUINTES</h3>
+
+<div class="no-break">
+<ul>
+    <li><strong>CC1:</strong> Implementação prévia inadequada de DBMS_LOCK em ECD (mesmo padrão replicado)</li>
+    <li><strong>CC2:</strong> Implementação inadequada do desenvolvimento sem considerar concorrência multi-tenant + Ausência de estrutura de testes no processo como um todo para simular o problema do cliente antecipadamente</li>
+</ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2>💡 EVIDÊNCIAS COLETADAS</h2>
+
+<div class="no-break">
+<table>
+    <tr><td width="25%"><strong>Azure DevOps</strong></td><td>Work item 1100920 (Jorge Washington Silva Neto)</td></tr>
+    <tr><td><strong>GitHub</strong></td><td>PR #1687 (MFS422192) - Alterações DBMS_LOCK</td></tr>
+    <tr><td><strong>ServiceNow</strong></td><td>INC1240692 - Query problemática documentada</td></tr>
+    <tr><td><strong>MS Teams</strong></td><td>Reunião técnica 19:15-21:06 BRT (8 SMEs)</td></tr>
+</table>
+</div>
+
+<h2>🛠️ SOLUÇÕES IMPLEMENTADAS</h2>
+
+<div class="success-box no-break">
+<h3>✅ RESOLUÇÃO IMEDIATA</h3>
+<ul>
+    <li><strong>Rollback:</strong> PatchApply_PROD01_202604132154.zip executado às 21:54 BRT</li>
+    <li><strong>Resultado:</strong> Performance restaurada imediatamente</li>
+    <li><strong>Validação:</strong> 27 clientes operando normalmente</li>
+    <li><strong>Consenso:</strong> Unanimidade dos 8 SMEs técnicos</li>
+</ul>
+</div>
+
+<h3>🔧 AÇÕES CORRETIVAS</h3>
+
+<div class="no-break">
+<table>
+    <tr>
+        <th width="20%">Prazo</th>
+        <th width="80%">Ação</th>
+    </tr>
+    <tr>
+        <td><strong>Curto Prazo<br>(14-20/04/2026)</strong></td>
+        <td>
+            <strong>1.</strong> Correção DBMS_LOCK.ALLOCATE_UNIQUE em SAF_SPED_CONTABIL_FPROC<br>
+            <strong>2.</strong> Criação de testes para validação multi-tenant (30+ clientes)
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Médio Prazo<br>(Maio-Jun/2026)</strong></td>
+        <td>
+            <strong>3.</strong> Revisão de procedures similares com DBMS_LOCK inadequado<br>
+            <strong>4.</strong> Testing multi-tenant obrigatório no processo de deploy
+        </td>
+    </tr>
+</table>
+</div>
+
+<h2>📊 IMPACTO QUANTIFICADO</h2>
+
+<table class="no-break">
+    <tr><td width="30%"><strong>Clientes afetados</strong></td><td>27 em ambiente PROD01</td></tr>
+    <tr><td><strong>Duração total</strong></td><td>4h 52min (17:02 - 21:54 BRT)</td></tr>
+    <tr><td><strong>Tempo para diagnóstico</strong></td><td>3h 04min</td></tr>
+    <tr><td><strong>Tempo para resolução</strong></td><td>48min (após aprovação)</td></tr>
+    <tr><td><strong>Eficácia da solução</strong></td><td>100% imediata</td></tr>
+    <tr><td><strong>SMEs mobilizados</strong></td><td>8 especialistas técnicos</td></tr>
+</table>
+
+<h2>📈 LIÇÕES APRENDIDAS</h2>
+
+<div class="success-box no-break">
+<h3>✅ PONTOS POSITIVOS</h3>
+<ul>
+    <li>Resposta técnica rápida (8 SMEs mobilizados em &lt; 2.5h)</li>
+    <li>Diagnóstico preciso com consenso unânime</li>
+    <li>Solução efetiva implementada rapidamente</li>
+</ul>
+</div>
+
+<div class="highlight-box no-break">
+<h3>⚠️ OPORTUNIDADES DE MELHORIA</h3>
+<ul>
+    <li><strong>Desenvolvimento</strong> não considerou concorrência multi-tenant em ambiente produtivo</li>
+    <li><strong>Estrutura de testes</strong> necessária para simular cenários reais de clientes antecipadamente</li>
+    <li><strong>Gates de qualidade</strong> no processo de desenvolvimento para avaliar impacto de concorrência</li>
+</ul>
+</div>
+
+<div class="page-break"></div>
+
+<h2>📋 APROVAÇÃO E STATUS FINAL</h2>
+
+<div class="success-box no-break">
+<h3>✅ CONSENSO TÉCNICO (13/04/2026 - 21:06 BRT)</h3>
+<ul>
+    <li>✅ <strong>Rollback aprovado</strong> por unanimidade (8 SMEs)</li>
+    <li>✅ <strong>Performance restaurada</strong> imediatamente</li>
+    <li>✅ <strong>27 clientes operando</strong> normalmente</li>
+    <li>✅ <strong>Incidente encerrado</strong> com sucesso</li>
+</ul>
+</div>
+
+<div class="footer">
+<hr>
+<p><strong>Thomson Reuters - Tax One</strong><br>
+Relatório de Análise de Causa Raiz (RCA)<br>
+Gerado em: 24 de Abril de 2026 | Versão: 3.0 (Word Export)<br>
+Incidente: INC20260413-2 | Status: ✅ RESOLVIDO</p>
+</div>
+
+</body>
+</html>

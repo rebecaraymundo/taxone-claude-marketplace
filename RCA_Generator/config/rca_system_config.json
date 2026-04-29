@@ -1,0 +1,253 @@
+{
+  "system_metadata": {
+    "version": "1.0",
+    "created_date": "2026-04-14",
+    "last_updated": "2026-04-14",
+    "author": "RCA Generation System",
+    "description": "Configuração do sistema de geração automática de RCAs Thomson Reuters"
+  },
+
+  "azure_devops": {
+    "organization_url": "https://dev.azure.com/thomsonreuters",
+    "default_project": "Tax One",
+    "api_version": "7.0",
+    "authentication": {
+      "method": "PAT",
+      "token_env_var": "ADO_PAT"
+    },
+    "queries": {
+      "incident_search": "SELECT [System.Id], [System.Title], [System.State], [System.CreatedDate], [Microsoft.VSTS.Common.Severity] FROM WorkItems WHERE [System.Title] CONTAINS '{incident_id}' OR [System.Tags] CONTAINS '{incident_id}'",
+      "related_work_items": "SELECT [System.Id], [System.Title], [System.WorkItemType] FROM WorkItemLinks WHERE [Source].[System.Id] = {work_item_id}",
+      "date_range_search": "SELECT [System.Id], [System.Title] FROM WorkItems WHERE [System.CreatedDate] >= '{start_date}' AND [System.CreatedDate] <= '{end_date}' AND ([System.Tags] CONTAINS 'incident' OR [System.WorkItemType] = 'Bug')"
+    },
+    "work_item_types": ["Bug", "Task", "Epic", "Feature", "Issue"],
+    "severity_mapping": {
+      "1 - Critical": "CRITICAL",
+      "2 - High": "HIGH",
+      "3 - Medium": "MEDIUM",
+      "4 - Low": "LOW"
+    }
+  },
+
+  "zendesk": {
+    "subdomain": "thomsonreuters",
+    "api_version": "v2",
+    "authentication": {
+      "method": "API_TOKEN",
+      "token_env_var": "ZENDESK_API_TOKEN",
+      "email_env_var": "ZENDESK_EMAIL"
+    },
+    "search_configuration": {
+      "timeframe_buffer_hours": 48,
+      "max_results": 100,
+      "priority_filters": ["urgent", "high"],
+      "status_filters": ["new", "open", "pending", "hold", "solved"]
+    },
+    "product_mapping": {
+      "tax_one": ["tax one", "sped", "ecd", "mastersaf", "fiscal"],
+      "onesource": ["onesource", "tax provision", "tax reporting"],
+      "checkpoint": ["checkpoint", "research", "catalyst"],
+      "practical_law": ["practical law", "legal solutions"],
+      "reuters": ["reuters", "news", "media"]
+    },
+    "customer_tiers": {
+      "tier_1": {
+        "description": "Enterprise customers (>$1M ARR)",
+        "priority_weight": 10,
+        "escalation_threshold": 1
+      },
+      "tier_2": {
+        "description": "Professional customers",
+        "priority_weight": 5,
+        "escalation_threshold": 3
+      },
+      "tier_3": {
+        "description": "Standard customers",
+        "priority_weight": 1,
+        "escalation_threshold": 10
+      }
+    }
+  },
+
+  "github": {
+    "authentication": {
+      "token_env_var": "GITHUB_TOKEN",
+      "requires_saml_sso": true,
+      "organization": "tr"
+    },
+    "repositories": {
+      "tax_one": {
+        "name": "taxone_dw",
+        "full_name": "tr/taxone_dw",
+        "primary_language": "SQL",
+        "critical_paths": [
+          "artifacts/sp/msaf/SPED/ECD/",
+          "artifacts/sp/msaf/basico/datamart/",
+          "artifacts/sp/msaf/SPED/EFD-PIS-COFINS/"
+        ],
+        "critical_files": [
+          "SAF_SPED_CONTABIL_FPROC.pck",
+          "EQUAL_DATAMART_FPROC.pck",
+          "SAF_LBAT_CHAMA",
+          "EpcNE_DicDados.pck"
+        ]
+      },
+      "mastersaf": {
+        "name": "mastersaf_core",
+        "full_name": "tr/mastersaf_core",
+        "primary_language": "PowerBuilder",
+        "critical_paths": [
+          "source/objects/",
+          "source/datawindows/",
+          "source/functions/"
+        ]
+      }
+    },
+    "analysis_patterns": {
+      "locking_issues": [
+        "DBMS_LOCK\\.ALLOCATE_UNIQUE",
+        "FOR UPDATE",
+        "DBMS_LOCK_ALLOCATED",
+        "SELECT.*LOCKID"
+      ],
+      "performance_issues": [
+        "CURSOR.*FOR.*SELECT",
+        "BULK COLLECT",
+        "FORALL",
+        "LOOP.*SELECT"
+      ],
+      "exception_handling": [
+        "EXCEPTION",
+        "WHEN OTHERS",
+        "ROLLBACK",
+        "COMMIT"
+      ],
+      "deadlock_patterns": [
+        "DEADLOCK",
+        "ORA-00060",
+        "enq: TX",
+        "row lock contention"
+      ]
+    },
+    "commit_analysis": {
+      "timeframe_hours": 72,
+      "exclude_authors": ["dependabot", "github-actions"],
+      "include_file_patterns": ["*.sql", "*.pck", "*.fnc", "*.trg"],
+      "keywords": ["fix", "bug", "issue", "deadlock", "performance", "lock"]
+    }
+  },
+
+  "rca_generation": {
+    "templates": {
+      "default": "../templates/rca_template_final.md",
+      "tax_one_specific": "../templates/rca_tax_one_template.md",
+      "critical_incident": "../templates/rca_critical_template.md"
+    },
+    "output_configuration": {
+      "base_directory": "../reports/",
+      "filename_pattern": "RCA_Report_{incident_id}_Final.md",
+      "backup_enabled": true,
+      "version_control": true
+    },
+    "language_settings": {
+      "primary_language": "pt-BR",
+      "date_format": "dd MMM yyyy",
+      "time_format": "HH:mm BRT",
+      "currency": "BRL"
+    },
+    "content_requirements": {
+      "minimum_sections": [
+        "declaracao_problema",
+        "timeline",
+        "causa_raiz",
+        "causas_contribuintes",
+        "solucoes",
+        "acoes"
+      ],
+      "required_tables": [
+        "causas_contribuintes",
+        "solucoes_preventivas",
+        "solucoes_corretivas",
+        "melhorias",
+        "acoes"
+      ],
+      "minimum_evidence_sources": 2,
+      "minimum_actions": 3
+    }
+  },
+
+  "correlation_settings": {
+    "timeline_tolerance_minutes": 15,
+    "evidence_confidence_threshold": 0.75,
+    "customer_impact_weight": 0.4,
+    "technical_evidence_weight": 0.4,
+    "stakeholder_confirmation_weight": 0.2
+  },
+
+  "quality_assurance": {
+    "validation_rules": {
+      "timeline_consistency": true,
+      "evidence_cross_reference": true,
+      "action_smart_criteria": true,
+      "customer_impact_quantified": true,
+      "technical_root_cause_identified": true
+    },
+    "completeness_requirements": {
+      "minimum_word_count": 2000,
+      "minimum_evidence_items": 5,
+      "minimum_contributing_causes": 3,
+      "minimum_preventive_actions": 2,
+      "minimum_corrective_actions": 1
+    },
+    "formatting_standards": {
+      "table_format": "markdown",
+      "date_consistency": true,
+      "proper_headings": true,
+      "numbered_actions": true,
+      "status_indicators": true
+    }
+  },
+
+  "notification_settings": {
+    "generation_start": {
+      "enabled": true,
+      "message": "Iniciando geração de RCA para {incident_id}"
+    },
+    "data_collection_complete": {
+      "enabled": true,
+      "message": "Coleta de dados concluída para {incident_id}"
+    },
+    "generation_complete": {
+      "enabled": true,
+      "message": "RCA gerado com sucesso: {output_file}"
+    },
+    "error_occurred": {
+      "enabled": true,
+      "message": "Erro na geração de RCA: {error_message}"
+    }
+  },
+
+  "logging": {
+    "log_level": "INFO",
+    "log_file": "~/.claude/logs/rca_generation.log",
+    "max_log_size_mb": 50,
+    "log_rotation_count": 5,
+    "include_timestamps": true,
+    "include_agent_names": true
+  },
+
+  "performance_settings": {
+    "max_concurrent_agents": 3,
+    "agent_timeout_minutes": 30,
+    "api_rate_limits": {
+      "github": 100,
+      "zendesk": 50,
+      "azure_devops": 200
+    },
+    "cache_settings": {
+      "enabled": true,
+      "ttl_minutes": 60,
+      "max_cache_size_mb": 100
+    }
+  }
+}

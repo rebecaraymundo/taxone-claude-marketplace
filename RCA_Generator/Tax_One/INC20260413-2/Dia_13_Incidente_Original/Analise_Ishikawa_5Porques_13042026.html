@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise Ishikawa + 5 Porquês - 13/04/2026</title>
+    <style>
+        body { font-family: 'Calibri', Arial, sans-serif; font-size: 11pt; line-height: 1.4; margin: 2cm; color: #333; }
+        h1 { color: #1f4e79; font-size: 16pt; font-weight: bold; text-align: center; border-bottom: 2px solid #1f4e79; padding-bottom: 10px; margin-bottom: 20px; }
+        h2 { color: #1f4e79; font-size: 14pt; font-weight: bold; margin-top: 25px; margin-bottom: 10px; }
+        h3 { color: #2e75b6; font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 8px; }
+        h4 { color: #44546a; font-size: 11pt; font-weight: bold; margin-top: 15px; margin-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d0d0d0; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .highlight-box { background-color: #e7f3ff; border: 1px solid #b3d9ff; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        .timeline { background-color: #f8f9fa; border-left: 4px solid #1f4e79; padding: 15px; margin: 15px 0; font-family: monospace; font-size: 10pt; }
+        .action-item { background-color: #f0f8e7; border-left: 4px solid #28a745; padding: 10px; margin: 10px 0; }
+        .risk-item { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; margin: 10px 0; }
+        .critical-item { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 10px; margin: 10px 0; }
+        ul, ol { margin: 10px 0; padding-left: 20px; }
+        .status-resolved { color: #28a745; font-weight: bold; }
+        .status-critical { color: #dc3545; font-weight: bold; }
+        .page-break { page-break-before: always; }
+        pre { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 15px; margin: 15px 0; font-family: monospace; font-size: 10pt; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+<p><h1>ANÁLISE ISHIKAWA + 5 PORQUÊS - INCIDENTE 13/04/2026
+<h2>TAX ONE - INC20260413
+</p><p>
+---
+</p><p>
+<h2>📅 <strong>ESCOPO DA ANÁLISE</strong>
+<li><strong>Data do Incidente:</strong> 13 de Abril de 2026
+<li><strong>Período Crítico:</strong> 17:02 - 21:54 BRT
+<li><strong>Ambiente:</strong> PROD01 TAX ONE
+<li><strong>Problema:</strong> Lentidão extrema nos processos fiscais SPED/ECD
+</p><p>
+---
+</p><p>
+<h2>🔍 <strong>RESUMO EXECUTIVO</strong>
+</p><p>
+<strong>Sintoma Principal:</strong> Processes que normalmente executam em segundos passaram a levar mais de 3 minutos, causando timeouts e interrupções nos workflows fiscais de 27 clientes.
+</p><p>
+<strong>Resolução Aplicada:</strong> Rollback executado às 21:54 BRT via PatchApply_PROD01_202604132154.zip, restaurando performance imediatamente.
+</p><p>
+---
+</p><p>
+<h2>🐟 <strong>DIAGRAMA DE ISHIKAWA (ESPINHA DE PEIXE)</strong>
+</p><p>
+<pre>
+                   LENTIDÃO EXTREMA 
+                 PROCESSOS TAX ONE
+                      13/04/2026
+                         |
+         PESSOAS         |         PROCESSO
+             <tr><td>           |           </td></tr>
+    Nelson Cartaxo ------+           +------ Implementação DBMS_LOCK
+    (Análise Técnica)    <tr><td>           </td></tr>       inadequada
+                         <tr><td>           </td></tr>
+    Jorge Washington ----+           +------ SAF_SPED_CONTABIL_FPROC
+    (Confirmação Código)  <tr><td>           </td></tr>       sem validação adequada
+                         <tr><td>           </td></tr>
+        MÉTODO           |         MÁQUINA
+             <tr><td>           |           </td></tr>
+    Testes de carga -----+           +------ 27 clientes simultâneos
+    insuficientes        <tr><td>           </td></tr>       em PROD01
+                         <tr><td>           </td></tr>
+    Monitoramento -------+           +------ Arquitetura não-SaaS
+    inadequado para      <tr><td>           </td></tr>       para múltiplos clientes
+    contenção de locks   <tr><td>           </td></tr>
+                         <tr><td>           </td></tr>
+      MATERIAL           |      MEIO AMBIENTE
+             <tr><td>           |           </td></tr>
+    DBMS_LOCK.ALLOCATE ---+          +------ ServiceNow INC1240692
+    _UNIQUE inadequado   <tr><td>           </td></tr>       query problemática
+                         <tr><td>           </td></tr>
+    Query problemática ---+          +------ Saturação com 27 clientes
+    identificada         <tr><td>           </td></tr>       simultâneos
+                                     |
+                                     +------ Consenso SMEs: Causa raiz
+                                             confirmada às 21:06 BRT
+<pre>
+</p><p>
+---
+</p><p>
+<h2>❓ <strong>ANÁLISE DOS 5 PORQUÊS</strong>
+</p><p>
+<h3><strong>1º PORQUÊ: Por que houve lentidão extrema nos processos fiscais?</strong>
+<strong>Resposta:</strong> Processes de segundos passaram a levar +3 minutos devido a lock contention no banco de dados.
+</p><p>
+<h3><strong>2º PORQUÊ: Por que houve lock contention no banco de dados?</strong>
+<strong>Resposta:</strong> A procedure SAF_SPED_CONTABIL_FPROC implementou inadequadamente DBMS_LOCK.ALLOCATE_UNIQUE.
+</p><p>
+<h3><strong>3º PORQUÊ: Por que a implementação do DBMS_LOCK.ALLOCATE_UNIQUE foi inadequada?</strong>
+<strong>Resposta:</strong> Não foi considerado o impacto de múltiplos clientes (27) executando simultaneamente a mesma procedure.
+</p><p>
+<h3><strong>4º PORQUÊ: Por que o impacto de múltiplos clientes não foi considerado?</strong>
+<strong>Resposta:</strong> Arquitetura atual não é SaaS - foi desenvolvida para cliente único, mas sendo usada em ambiente multi-tenant.
+</p><p>
+<h3><strong>5º PORQUÊ: Por que a arquitetura não-SaaS está sendo usada em ambiente multi-tenant?</strong>
+<strong>Resposta:** **CAUSA RAIZ FUNDAMENTAL:</strong> Falta de adequação arquitetural para o crescimento da base de clientes e modelo de negócio multi-tenant.
+</p><p>
+---
+</p><p>
+<h2>🎯 <strong>CAUSAS IDENTIFICADAS</strong>
+</p><p>
+<h3><strong>🔴 CAUSA RAIZ PRIMÁRIA</strong>
+<strong>Implementação inadequada de DBMS_LOCK.ALLOCATE_UNIQUE na procedure SAF_SPED_CONTABIL_FPROC</strong>
+<li><strong>Evidência:</strong> ServiceNow INC1240692 
+<li><strong>Validação:</strong> Nelson Cartaxo (análise técnica) + Jorge Washington (confirmação código)
+<li><strong>Impacto:</strong> Saturação com 27 clientes executando simultaneamente
+</p><p>
+<h3><strong>🟡 CAUSAS CONTRIBUINTES</strong>
+</p><p>
+<h4><strong>CC1: DBMS_LOCK inadequado em demanda ECD anterior</strong>
+<li>Implementação prévia sem consideração de concorrência
+</p><p>
+<h4><strong>CC2: Arquitetura não-SaaS para múltiplos clientes</strong>
+<li>Sistema desenvolvido para cliente único operando em ambiente multi-tenant
+</p><p>
+<h4><strong>CC3: Testes de carga insuficientes pré-deploy</strong>
+<li>Não simulou cenário de 27+ clientes simultâneos
+</p><p>
+<h4><strong>CC4: Monitoramento inadequado para contenção de locks</strong>
+<li>Ausência de alertas proativos para detectar lock contention
+</p><p>
+---
+</p><p>
+<h2>📊 <strong>EVIDÊNCIAS TÉCNICAS</strong>
+</p><p>
+<h3><strong>Fontes de Dados Validadas:</strong>
+<li><strong>Azure DevOps:</strong> 9 work items identificados relacionados ao incidente
+<li><strong>GitHub:</strong> PR #1687 (MFS422192) - Mudanças em DBMS_LOCK confirmadas
+<li><strong>MS Teams:</strong> Reunião técnica 13/04 19:15-21:06 BRT com consenso unânime dos SMEs
+</p><p>
+<h3><strong>Consensos Técnicos (Reunião 13/04/2026):</strong>
+<li><strong>Participantes:</strong> 8 SMEs técnicos
+<li><strong>Facilitadora:</strong> Adriana Dorigao
+<li><strong>Decisão:</strong> Causa raiz confirmada por unanimidade
+<li><strong>Solução:</strong> Rollback aprovado e executado às 21:54 BRT
+</p><p>
+---
+</p><p>
+<h2>⚡ <strong>LINHA DO TEMPO 13/04/2026</strong>
+</p><p>
+<pre>
+17:02 BRT ████ Primeiros relatos de lentidão (PROD01)
+          |
+17:30 BRT ████ Escalação: múltiplos clientes afetados
+          |
+19:15 BRT ████ Reunião técnica emergencial iniciada
+          |
+20:30 BRT ████ Nelson Cartaxo confirma análise técnica
+          |
+21:00 BRT ████ Jorge Washington valida código problemático
+          |
+21:06 BRT ████ Consenso unânime: DBMS_LOCK.ALLOCATE_UNIQUE
+          |
+21:54 BRT ████ Rollback executado - Performance restaurada
+<pre>
+</p><p>
+---
+</p><p>
+<h2>🛠️ <strong>SOLUÇÃO IMPLEMENTADA</strong>
+</p><p>
+<h3><strong>Ação Imediata (21:54 BRT)</strong>
+<li><strong>Rollback aplicado:</strong> PatchApply_PROD01_202604132154.zip
+<li><strong>Resultado:</strong> Performance restaurada imediatamente
+<li><strong>Validação:</strong> SMEs confirmaram estabilização do ambiente
+</p><p>
+<h3><strong>Impacto da Solução</strong>
+<li>✅ <strong>27 clientes</strong> - Performance restaurada
+<li>✅ <strong>Timeouts eliminados</strong>
+<li>✅ <strong>Workflows fiscais</strong> - Funcionamento normal
+<li>✅ <strong>SPED/ECD</strong> - Processamento estabilizado
+</p><p>
+---
+</p><p>
+<h2>📈 <strong>MÉTRICAS DE IMPACTO</strong>
+</p><p>
+<h3><strong>Clientes Afetados</strong>
+<li><strong>Total:</strong> 27 clientes em PROD01
+<li><strong>Tipo:</strong> Processamento fiscal SPED/ECD
+<li><strong>Duração:</strong> 4h 52min (17:02 - 21:54)
+<li><strong>Severidade:</strong> Crítica (processos de segundos → +3 minutos)
+</p><p>
+<h3><strong>Escalação Executiva</strong>
+<li><strong>Reunião emergencial:</strong> 8 SMEs técnicos mobilizados
+<li><strong>Tomada de decisão:</strong> Consenso unânime em 1h 51min
+<li><strong>Comunicação:</strong> Realizada via tickets específicos
+</p><p>
+---
+</p><p>
+<h2>🎓 <strong>LIÇÕES APRENDIDAS ESPECÍFICAS DO DIA 13/04</strong>
+</p><p>
+<h3><strong>✅ Pontos Positivos</strong>
+1. <strong>Resposta rápida:</strong> Mobilização técnica em < 2.5 horas
+2. <strong>Consenso técnico:</strong> 8 SMEs alinhados na causa raiz
+3. <strong>Solução efetiva:</strong> Rollback restaurou performance imediatamente
+4. <strong>Documentação:</strong> ServiceNow INC1240692 com evidências claras
+</p><p>
+<h3><strong>⚠️ Oportunidades de Melhoria</strong>
+1. <strong>Prevenção:</strong> Testes de carga com cenário 27+ clientes
+2. <strong>Monitoramento:</strong> Alertas para lock contention em DBMS_LOCK
+3. <strong>Arquitetura:</strong> Migração para modelo SaaS adequado
+4. <strong>Validação:</strong> Análise de impacto para múltiplos clientes pré-deploy
+</p><p>
+---
+</p><p>
+<h2>📋 <strong>AÇÕES CORRETIVAS IMEDIATAS</strong>
+</p><p>
+<h3><strong>Para Prevenir Recorrência</strong>
+1. ⚡ <strong>Implementar monitoramento</strong> de lock contention em procedures críticas
+2. ⚡ <strong>Executar testes de carga</strong> com 30+ clientes simultâneos
+3. ⚡ <strong>Revisar DBMS_LOCK.ALLOCATE_UNIQUE</strong> em todas as procedures
+4. ⚡ <strong>Validar arquitetura SaaS</strong> para crescimento da base
+</p><p>
+<h3><strong>Para Melhorar Resposta</strong>
+1. 📊 <strong>Automatizar detecção</strong> de performance degradation >2min
+2. 🚨 <strong>Criar runbook</strong> para rollback emergencial
+3. 👥 <strong>Definir escalation matrix</strong> para incidentes críticos
+4. 📞 <strong>Estabelecer bridge</strong> automático para SMEs
+</p><p>
+---
+</p><p>
+<h2>🔗 <strong>REFERÊNCIAS TÉCNICAS</strong>
+</p><p>
+<h3><strong>Documentação Principal:</strong>
+<li><strong>ServiceNow:</strong> INC1240692 - Query problemática identificada
+<li><strong>GitHub:</strong> PR #1687 (MFS422192) - DBMS_LOCK changes
+<li><strong>Azure DevOps:</strong> Work items 1100920, 1102771, 1106786, etc.
+<li><strong>MS Teams:</strong> Reunião técnica 13/04/2026 19:15-21:06 BRT
+</p><p>
+<h3><strong>SMEs Envolvidos:</strong>
+<li><strong>Nelson Cartaxo</strong> (TR Technology) - Análise técnica
+<li><strong>Jorge Washington</strong> (TR Technology) - Confirmação código  
+<li><strong>Bruno Fornari</strong> (Operations & Technology) - Comunicação clientes
+<li><strong>Adriana Dorigao</strong> - Facilitação reunião técnica
+</p><p>
+---
+</p><p>
+<strong>📝 Análise gerada em:</strong> 23 de Abril de 2026  
+<strong>🎯 Metodologia:</strong> Ishikawa + 5 Porquês  
+<strong>✅ Status:</strong> Validada por evidências Azure DevOps, GitHub e MS Teams</p></body></html>

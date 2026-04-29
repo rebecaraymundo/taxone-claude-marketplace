@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCA Recorrência TAX ONE - 14-15/04/2026</title>
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.15;
+            margin: 2.54cm;
+            color: #000000;
+        }
+        h1 {
+            color: #1f4e79;
+            font-size: 18pt;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 3pt solid #1f4e79;
+            padding-bottom: 10pt;
+            margin-bottom: 20pt;
+        }
+        h2 {
+            color: #1f4e79;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+        }
+        h3 {
+            color: #2e75b6;
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 18pt;
+            margin-bottom: 6pt;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 12pt 0;
+        }
+        th, td {
+            border: 1pt solid #000000;
+            padding: 8pt;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background-color: #e7f3ff;
+            border: 2pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .critical-box {
+            background-color: #ffe6e6;
+            border: 2pt solid #dc3545;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .success-box {
+            background-color: #e6ffe6;
+            border: 2pt solid #28a745;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .timeline {
+            background-color: #f8f9fa;
+            border-left: 4pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+        }
+        .code-box {
+            background-color: #f5f5f5;
+            border: 1pt solid #ddd;
+            padding: 10pt;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+            margin: 10pt 0;
+        }
+        ul, ol {
+            margin: 6pt 0;
+            padding-left: 18pt;
+        }
+        li {
+            margin: 3pt 0;
+        }
+        .no-break {
+            page-break-inside: avoid;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10pt;
+            color: #666666;
+            margin-top: 24pt;
+            border-top: 1pt solid #cccccc;
+            padding-top: 12pt;
+        }
+    </style>
+</head>
+<body>
+
+<h1>RELATÓRIO DE ANÁLISE DE CAUSA RAIZ (RCA)<br>
+RECORRÊNCIA TAX ONE<br>
+14-15 de Abril de 2026</h1>
+
+<div class="highlight-box no-break">
+<h2>📋 INFORMAÇÕES GERAIS</h2>
+<table>
+    <tr><td width="30%"><strong>ID do Incidente</strong></td><td>INC20260413-2 (Recorrência)</td></tr>
+    <tr><td><strong>Produto</strong></td><td>TAX ONE</td></tr>
+    <tr><td><strong>Data</strong></td><td>14-15 de Abril de 2026</td></tr>
+    <tr><td><strong>Ambientes Afetados</strong></td><td>PROD01, PROD03</td></tr>
+    <tr><td><strong>Status</strong></td><td>✅ Mitigado</td></tr>
+    <tr><td><strong>Prioridade</strong></td><td>P1 - Crítica</td></tr>
+</table>
+</div>
+
+<h2>🎯 SUMÁRIO EXECUTIVO</h2>
+
+<p><strong>Problema:</strong> Recorrência de lentidão extrema TAX ONE nos dias 14-15/04, com padrão distinto do incidente original (dia 13). Caracterizado por sessões zumbis e jobs de threading executando >24 horas.</p>
+
+<div class="critical-box">
+<p><strong>Causa Raiz:</strong> ❌ <strong>NÃO IDENTIFICADA</strong> nos dias 14-15/04. Ações reativas aplicadas com eliminação de sessões zumbis sem identificação definitiva da causa fundamental.</p>
+</div>
+
+<div class="success-box">
+<p><strong>Solução Reativa:</strong> 226+ processos zumbis eliminados manualmente. Causa raiz não identificada - problema resolvido temporariamente.</p>
+</div>
+
+<p><strong>Cliente Crítico:</strong> Shopee com job executando >24h (normal: <2h).</p>
+
+<h2>📅 LINHA DO TEMPO</h2>
+
+<div class="timeline">
+<strong>RECORRÊNCIA - 14-15 ABRIL 2026</strong>
+
+14/04 16:13 ████ Shopee: Job iniciado (executará >24h)
+     19:50 ████ Decisão: Adiamento manutenções PROD01/PROD03
+
+15/04 12:00 ████ Identificação: 226+ processos zumbis
+     14:00 ████ Início eliminação massiva processos
+     17:00 ████ 226+ processos zumbis eliminados completamente
+</div>
+
+<h2>🔍 ANÁLISE TÉCNICA</h2>
+
+<div class="critical-box no-break">
+<h3>❌ Status da Causa Raiz: NÃO IDENTIFICADA</h3>
+<ul>
+    <li><strong>Status Dia 14:</strong> Causa raiz não identificada</li>
+    <li><strong>Status Dia 15:</strong> Causa raiz não identificada</li>
+    <li><strong>Abordagem:</strong> Solução reativa com eliminação de sessões zumbis</li>
+    <li><strong>Evidências Coletadas:</strong> 162 samples ASH de <code>enq: JG queue lock</code></li>
+    <li><strong>Observação:</strong> Problema resolvido temporariamente sem identificação da causa fundamental</li>
+</ul>
+</div>
+
+<h3>Código Problemático</h3>
+<div class="code-box">
+WHILE Pkg_Mthread.Check_Job_Out_Process(Prefix_Task) >= Num_Thread_w LOOP
+   null;
+   --dbms_lock.sleep(30);   ← COMENTADO (PROBLEMA)
+END LOOP;
+</div>
+
+<h3>Métricas de Degradação</h3>
+<table class="no-break">
+    <thead>
+        <tr>
+            <th width="25%">Métrica</th>
+            <th width="25%">Normal</th>
+            <th width="25%">Incidente</th>
+            <th width="25%">Impacto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Query rate</td>
+            <td>2 queries/seg</td>
+            <td>500-1.000 queries/seg</td>
+            <td>99,8% aumento</td>
+        </tr>
+        <tr>
+            <td>Job duration (Shopee)</td>
+            <td>&lt;2 horas</td>
+            <td>&gt;24 horas</td>
+            <td>&gt;1.200%</td>
+        </tr>
+        <tr>
+            <td>Processos zumbis</td>
+            <td>0</td>
+            <td>226+</td>
+            <td>Massivo</td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Causas Contribuintes</h3>
+<ul>
+    <li><strong>CC1:</strong> Threading implementado em PL/SQL (não Java)</li>
+    <li><strong>CC2:</strong> Comportamento diferente Oracle Cloud vs On-Premise</li>
+    <li><strong>CC3:</strong> Ausência de alertas para jobs >10min em PL/SQL Lock Timer</li>
+</ul>
+
+<h2>💡 EVIDÊNCIAS</h2>
+
+<ul>
+    <li><strong>Azure DevOps:</strong> 9 work items identificados (1102771, 1106786, etc.)</li>
+    <li><strong>GitHub:</strong> PR #1687 - alterações em DBMS_LOCK timing</li>
+    <li><strong>MS Teams:</strong> Reunião técnica 16/04 (12 participantes)</li>
+    <li><strong>ASH Analysis:</strong> 162 samples de lock contention</li>
+</ul>
+
+<h2>🛠️ SOLUÇÕES IMPLEMENTADAS</h2>
+
+<div class="success-box no-break">
+<h3>Mitigação Imediata</h3>
+<ul>
+    <li><strong>226+ processos zumbis eliminados</strong> (15/04)</li>
+    <li><strong>8 tickets enviados</strong> aos clientes para reprocessamento</li>
+    <li><strong>Manutenções adiadas</strong> em PROD01/PROD03</li>
+</ul>
+</div>
+
+<h3>Fix Proposto (#3 - Baixo Risco)</h3>
+<div class="code-box">
+-- Restaurar sleep no loop:
+WHILE Pkg_Mthread.Check_Job_Out_Process(Prefix_Task) >= Num_Thread_w LOOP
+   dbms_lock.sleep(5);  ← RESTAURAR
+END LOOP;
+</div>
+<p><strong>Impacto:</strong> Redução de 99,8% na carga (500-1.000 → 2 queries/seg)</p>
+
+<h3>Ações Planejadas</h3>
+<ol>
+    <li><strong>Curto Prazo:</strong> Monitoramento proativo sessões zumbis &gt;10min (implementado)</li>
+    <li><strong>Médio Prazo:</strong> Consulta Oracle sobre scheduler Cloud + scripts resiliência (em andamento)</li>
+    <li><strong>Longo Prazo:</strong> Migração threading PL/SQL → Java + revisão arquitetural completa (planejado para Q3-Q4 2026)</li>
+</ol>
+
+<h2>📊 IMPACTO QUANTIFICADO</h2>
+
+<table class="no-break">
+    <thead>
+        <tr><th width="40%">Métrica</th><th width="60%">Valor</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><strong>Ambientes afetados</strong></td><td>PROD01, PROD03</td></tr>
+        <tr><td><strong>Processos zumbis eliminados</strong></td><td>226+</td></tr>
+        <tr><td><strong>Cliente crítico</strong></td><td>Shopee (job >24h)</td></tr>
+        <tr><td><strong>Tickets reprocessamento</strong></td><td>8</td></tr>
+        <tr><td><strong>Lock samples ASH</strong></td><td>162</td></tr>
+    </tbody>
+</table>
+
+<h2>📈 LIÇÕES APRENDIDAS</h2>
+
+<div class="success-box no-break">
+<h3>Pontos Positivos</h3>
+<ul>
+    <li>Padrão de recorrência identificado (2 dias consecutivos 14-15/04, ~16h cada dia)</li>
+    <li>Critério de intervenção estabelecido e implementado (PL/SQL Lock Timer &gt;10min)</li>
+    <li>Comunicação estruturada aos clientes (8 tickets de reprocessamento)</li>
+</ul>
+</div>
+
+<h3>Oportunidades de Melhoria</h3>
+<ul>
+    <li>Threading em PL/SQL inadequado para alta volumetria</li>
+    <li>Necessário monitoramento proativo de sessões zumbis</li>
+    <li>Comportamento Oracle Cloud requer ajustes específicos</li>
+</ul>
+
+<h2>🔗 REFERÊNCIAS</h2>
+
+<ul>
+    <li><strong>Azure DevOps:</strong> Work items 1102771, 1106786, 1103712</li>
+    <li><strong>GitHub PR #1687:</strong> Alterações DBMS_LOCK timing</li>
+    <li><strong>MS Teams:</strong> Reunião técnica 16/04/2026 (12 participantes)</li>
+    <li><strong>ASH Analysis:</strong> 162 samples enq: JG queue lock</li>
+</ul>
+
+<div class="success-box no-break">
+<h2>📋 STATUS FINAL</h2>
+<ul>
+    <li><strong>Mitigação Imediata:</strong> ✅ Completa (226+ sessões zumbis eliminadas)</li>
+    <li><strong>Monitoramento Proativo:</strong> ✅ Implementado (alertas &gt;10min PL/SQL Lock Timer)</li>
+    <li><strong>Scripts Resiliência:</strong> 🔄 Em desenvolvimento</li>
+    <li><strong>Longo Prazo:</strong> 📋 Planejado (Migração PL/SQL → Java Q3-Q4/2026)</li>
+</ul>
+</div>
+
+<div class="footer">
+<hr>
+<p><strong>Thomson Reuters - Tax One</strong><br>
+RCA Recorrência INC20260413-2<br>
+Gerado em: 24 de Abril de 2026 | Versão: 2.0 (Otimizada)<br>
+Tipo: Recorrência | Status: ✅ Mitigado</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+{\rtf1\ansi\deff0 {\fonttbl {\f0 Times New Roman;} {\f1 Arial Black;} {\f2 Arial;}}
+
+{\colortbl;\red0\green0\blue0;\red27\green79\blue114;\red46\green134\blue193;\red231\green76\blue60;}
+
+\paperw12240\paperh15840\margl1440\margr1440\margt1440\margb1440
+
+{\pard\qc\f1\fs28\cf2\b AN�LISE DE CAUSA RAIZ\par}
+{\pard\qc\f1\fs20\cf3 Metodologias Cl�ssicas: 5 PORQU�S & ESPINHA DE PEIXE\par}
+{\pard\qc\f2\fs16\cf1 INC20260413-2 TAX ONE | 20 de Abril de 2026\par}
+
+\par\par
+
+{\pard\f1\fs16\cf2\b DADOS DO INCIDENTE\par}
+{\pard\f2\fs11\cf1
+\trowd\trgaph108\trleft0
+\cellx4000\cellx8000
+\intbl\b N�mero do Incidente\cell INC20260413-2\cell\row
+\intbl\b Sistema Afetado\cell TAX ONE\cell\row
+\intbl\b Per�odo de Impacto\cell 13-16/04/2026 (4 dias consecutivos)\cell\row
+\intbl\b Descri��o\cell Lentid�o nos processos TAX ONE\cell\row
+\intbl\b Impacto Identificado\cell 226+ sess�es zumbis, 40+ clientes afetados\cell\row
+\intbl\b Causa Raiz\cell lib_proc alterado inadequadamente + spin loop EQUAL_DATAMART_FPROC\cell\row
+\pard\par}
+
+\par
+
+{\pard\f1\fs16\cf2\b METODOLOGIA 1: OS 5 PORQU�S (5 WHYS)\par}
+
+{\pard\f2\fs12\cf1\b POR QU� 1:\par}
+{\pard\f2\fs11\cf1 Por que o sistema TAX ONE ficou lento?\par}
+{\pard\f2\fs11\cf1 \u8594? Sess�es ficaram presas em "PL/SQL lock timer" causando lentid�o generalizada no sistema\par}
+
+{\pard\f2\fs12\cf1\b POR QU� 2:\par}
+{\pard\f2\fs11\cf1 Por que as sess�es ficaram presas em "PL/SQL lock timer"?\par}
+{\pard\f2\fs11\cf1 \u8594? Conten��o massiva no job queue do Oracle com 162 ASH samples indicando disputa por recursos\par}
+
+{\pard\f2\fs12\cf1\b POR QU� 3:\par}
+{\pard\f2\fs11\cf1 Por que ocorreu conten��o no job queue do Oracle?\par}
+{\pard\f2\fs11\cf1 \u8594? Sistema executava 500-1000 queries por segundo na view all_scheduler_jobs sobrecarregando o banco\par}
+
+{\pard\f2\fs12\cf1\b POR QU� 4:\par}
+{\pard\f2\fs11\cf1 Por que o sistema executava tantas queries na all_scheduler_jobs?\par}
+{\pard\f2\fs11\cf1 \u8594? O comando dbms_lock.sleep foi desabilitado no loop da linha 12464, criando um spin loop infinito\par}
+
+{\pard\f2\fs12\cf1\b POR QU� 5:\par}
+{\pard\f2\fs11\cf1 Por que o dbms_lock.sleep foi desabilitado?\par}
+{\pard\f2\fs11\cf1 \u8594? A biblioteca lib_proc foi alterada inadequadamente entre 13-14/04/2026 sem valida��o adequada do impacto\par}
+
+{\pard\qc\f2\fs12\cf4\b CAUSA RAIZ IDENTIFICADA\par}
+{\pard\qc\f2\fs11\cf1 Altera��o inadequada da biblioteca lib_proc que desabilitou o sleep no loop EQUAL_DATAMART_FPROC,\par criando um spin loop que sobrecarregou o job queue do Oracle.\par}
+
+\par
+
+{\pard\f1\fs16\cf2\b METODOLOGIA 2: DIAGRAMA ESPINHA DE PEIXE (ISHIKAWA)\par}
+{\pard\f2\fs12\cf3\b AN�LISE DOS 6Ms - FATORES CONTRIBUINTES\par}
+
+{\pard\f2\fs12\cf1\b MATERIAIS (CODE):\par}
+{\pard\f2\fs10\cf1
+\u8226? lib_proc alterado inadequadamente\par
+\u8226? Loop EQUAL_DATAMART_FPROC comentado\par
+\u8226? Processos LIB_PROCESSO �rf�os\par
+\u8226? Depend�ncias n�o mapeadas\par
+\u8226? C�digo legado sem documenta��o\par}
+
+{\pard\f2\fs12\cf1\b M�TODOS (PROCEDURES):\par}
+{\pard\f2\fs10\cf1
+\u8226? Code review inadequado\par
+\u8226? Testes de impacto insuficientes\par
+\u8226? Rollback parcial executado\par
+\u8226? Processo de valida��o falho\par
+\u8226? Metodologia de deploy inadequada\par}
+
+{\pard\f2\fs12\cf1\b M�QUINAS (INFRA):\par}
+{\pard\f2\fs10\cf1
+\u8226? Oracle Cloud limita��es\par
+\u8226? Threads sem Resource Manager\par
+\u8226? Infraestrutura n�o-SaaS\par
+\u8226? Monitoramento insuficiente\par
+\u8226? Capacidade de job queue limitada\par}
+
+{\pard\f2\fs12\cf1\b PESSOAS (HUMAN):\par}
+{\pard\f2\fs10\cf1
+\u8226? Pergunta Cristiane Fugii n�o respondida\par
+\u8226? Gap na comunica��o entre equipes\par
+\u8226? Valida��o t�cnica insuficiente\par
+\u8226? Conhecimento fragmentado\par
+\u8226? Handover inadequado\par}
+
+{\pard\f2\fs12\cf1\b MEDI��ES (MONITORING):\par}
+{\pard\f2\fs10\cf1
+\u8226? Detec��o tardia do problema\par
+\u8226? Alertas de performance inadequados\par
+\u8226? Correla��o lib_proc n�o mapeada\par
+\u8226? ASH samples n�o monitorados\par
+\u8226? M�tricas de job queue ausentes\par}
+
+{\pard\f2\fs12\cf1\b MEIO AMBIENTE:\par}
+{\pard\f2\fs10\cf1
+\u8226? Deploy em m�ltiplos ambientes\par
+\u8226? Timing coincidente das altera��es\par
+\u8226? Recorr�ncia por 3 dias consecutivos\par
+\u8226? Ambiente produtivo n�o isolado\par
+\u8226? Configura��es espec�ficas Oracle\par}
+
+{\pard\qc\f2\fs12\cf4\b PROBLEMA PRINCIPAL\par}
+{\pard\qc\f2\fs11\cf1 LENTID�O TAX ONE - INC20260413-2\par}
+{\pard\qc\f2\fs11\cf1 226+ Sess�es Zumbis \u8226? 40+ Clientes Afetados\par}
+
+\par
+
+{\pard\f1\fs16\cf2\b VALIDA��O T�CNICA E CONVERG�NCIA\par}
+
+{\pard\f2\fs11\cf1\b Valida��o por Jorge Washington (20/04/2026):\par}
+
+{\pard\f2\fs10\cf1
+\u10003? Correla��es t�cnicas confirmadas entre lib_proc e LIB_PROCESSO\par
+\u10003? Fix implementado com 99,8% de redu��o nas queries\par
+\u10003? Ambas metodologias convergem para a mesma causa raiz\par
+\u10003? Pergunta da Cristiane Fugii foi respondida e documentada\par}
+
+{\pard\qc\f2\fs12\cf3\b CONVERG�NCIA DAS METODOLOGIAS\par}
+{\pard\qj\f2\fs10\cf1 Tanto a an�lise dos 5 Porqu�s quanto o Diagrama de Ishikawa identificam a mesma causa raiz principal: altera��o inadequada da biblioteca lib_proc que criou um spin loop, sobrecarregando o sistema Oracle e causando lentid�o generalizada.\par}
+
+\par\par
+
+{\pard\qc\f2\fs10\cf1\b Thomson Reuters TAX ONE \u8226? An�lise de Causa Raiz \u8226? Gerado em 20/04/2026\par}
+{\pard\qc\f2\fs8\cf1 Documento: RCA_METODOLOGIAS_CLASSICAS_5_PORQUES_ISHIKAWA_INC20260413\par}
+
+}

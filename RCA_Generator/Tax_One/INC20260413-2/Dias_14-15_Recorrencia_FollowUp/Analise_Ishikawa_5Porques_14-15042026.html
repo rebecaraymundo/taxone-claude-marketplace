@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Análise Ishikawa + 5 Porquês - 14-15/04/2026</title>
+    <style>
+        body { font-family: 'Calibri', Arial, sans-serif; font-size: 11pt; line-height: 1.4; margin: 2cm; color: #333; }
+        h1 { color: #1f4e79; font-size: 16pt; font-weight: bold; text-align: center; border-bottom: 2px solid #1f4e79; padding-bottom: 10px; margin-bottom: 20px; }
+        h2 { color: #1f4e79; font-size: 14pt; font-weight: bold; margin-top: 25px; margin-bottom: 10px; }
+        h3 { color: #2e75b6; font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 8px; }
+        h4 { color: #44546a; font-size: 11pt; font-weight: bold; margin-top: 15px; margin-bottom: 5px; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #d0d0d0; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; font-weight: bold; }
+        .highlight-box { background-color: #e7f3ff; border: 1px solid #b3d9ff; padding: 15px; margin: 15px 0; border-radius: 5px; }
+        .timeline { background-color: #f8f9fa; border-left: 4px solid #1f4e79; padding: 15px; margin: 15px 0; font-family: monospace; font-size: 10pt; }
+        .action-item { background-color: #f0f8e7; border-left: 4px solid #28a745; padding: 10px; margin: 10px 0; }
+        .risk-item { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 10px; margin: 10px 0; }
+        .critical-item { background-color: #f8d7da; border-left: 4px solid #dc3545; padding: 10px; margin: 10px 0; }
+        ul, ol { margin: 10px 0; padding-left: 20px; }
+        .status-resolved { color: #28a745; font-weight: bold; }
+        .status-critical { color: #dc3545; font-weight: bold; }
+        .page-break { page-break-before: always; }
+        pre { background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 15px; margin: 15px 0; font-family: monospace; font-size: 10pt; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+<p><h1>ANÁLISE ISHIKAWA + 5 PORQUÊS - INCIDENTE 14-15/04/2026
+<h2>TAX ONE - INC20260413-2 (RECORRÊNCIA)
+</p><p>
+---
+</p><p>
+<h2>📅 <strong>ESCOPO DA ANÁLISE</strong>
+<li><strong>Datas do Incidente:</strong> 14-15 de Abril de 2026
+<li><strong>Tipo:</strong> Recorrência independente (causa raiz distinta)
+<li><strong>Ambientes:</strong> PROD01 e PROD03
+<li><strong>Problema:</strong> Sessões zumbis e spin loops em procedures de threading
+</p><p>
+---
+</p><p>
+<h2>🔍 <strong>RESUMO EXECUTIVO</strong>
+</p><p>
+<strong>Sintoma Principal:</strong> Jobs executando por mais de 24 horas (caso Shopee), sessões zumbis acumuladas em PL/SQL Lock Timer, e lock contention massivo causado por polling intensivo sem throttling.
+</p><p>
+<strong>Diferencial:** Este incidente apresentou uma **segunda causa raiz</strong> completamente distinta dos eventos anteriores, caracterizada por spin loops em procedures de threading.
+</p><p>
+<strong>Resolução:</strong> Eliminação de 226+ processos zumbis e proposta de fix para restaurar dbms_lock.sleep(5) no loop problemático.
+</p><p>
+---
+</p><p>
+<h2>🐟 <strong>DIAGRAMA DE ISHIKAWA (ESPINHA DE PEIXE)</strong>
+</p><p>
+<pre>
+                 SESSÕES ZUMBIS E JOBS >24H
+                 RECORRÊNCIA 14-15/04/2026
+                         |
+         PESSOAS         |         PROCESSO
+             <tr><td>           |           </td></tr>
+    Alceste Siqueira ----+           +------ Spin loop sem throttling
+    (Lead Técnico)       <tr><td>           </td></tr>       em EQUAL_DATAMART_FPROC
+                         <tr><td>           </td></tr>
+    Bruno Vianna --------+           +------ Threading em PL/SQL
+    (Arquitetura)        <tr><td>           </td></tr>       (inadequado p/ concorrência)
+                         <tr><td>           </td></tr>
+    Marcelo Pessanha ----+           +------ DBMS_SCHEDULER polling
+    (Oracle Specialist)  <tr><td>           </td></tr>       sem delay entre queries
+                         <tr><td>           </td></tr>
+        MÉTODO           |         MÁQUINA
+             <tr><td>           |           </td></tr>
+    Monitoramento -------+           +------ Cloud Oracle comportamento
+    inadequado para      <tr><td>           </td></tr>       diferente do on-premise
+    sessões zumbis       <tr><td>           </td></tr>
+                         <tr><td>           </td></tr>
+    Critério intervenção +           +------ 226+ processos zumbis
+    manual (>10min +     <tr><td>           </td></tr>       acumulados
+    acúmulo fila)        <tr><td>           </td></tr>
+                         <tr><td>           </td></tr>
+      MATERIAL           |      MEIO AMBIENTE
+             <tr><td>           |           </td></tr>
+    dbms_lock.sleep(30) -+           +------ Padrão recorrência:
+    COMENTADO (linha     <tr><td>           </td></tr>       3 dias, ~16h cada dia
+    12464)               <tr><td>           </td></tr>
+                         <tr><td>           </td></tr>
+    500-1.000 queries/---+           +------ 162 samples ASH de
+    segundo em           <tr><td>           </td></tr>       enq: JG queue lock
+    all_scheduler_jobs   <tr><td>           </td></tr>
+                                     |
+                                     +------ Shopee: Job >24h
+                                             (normalmente <2h)
+<pre>
+</p><p>
+---
+</p><p>
+<h2>❓ <strong>ANÁLISE DOS 5 PORQUÊS</strong>
+</p><p>
+<h3><strong>1º PORQUÊ: Por que houve sessões zumbis e jobs executando >24 horas?</strong>
+<strong>Resposta:</strong> Procedures de threading entraram em spin loop, consumindo recursos sem progresso e bloqueando outros processos.
+</p><p>
+<h3><strong>2º PORQUÊ: Por que as procedures de threading entraram em spin loop?</strong>
+<strong>Resposta:</strong> O loop de controle em EQUAL_DATAMART_FPROC.Proc_Job() linha 12464 estava executando sem delay (dbms_lock.sleep comentado).
+</p><p>
+<h3><strong>3º PORQUÊ: Por que o dbms_lock.sleep estava comentado no loop de controle?</strong>
+<strong>Resposta:</strong> Mudanças anteriores no código comentaram o sleep(30), eliminando o throttling necessário para evitar polling intensivo.
+</p><p>
+<h3><strong>4º PORQUÊ: Por que o polling intensivo sem throttling causou sessões zumbis?</strong>
+<strong>Resposta:</strong> 500-1.000 queries por segundo em all_scheduler_jobs causaram lock contention (enq: JG queue lock) e esgotamento de recursos.
+</p><p>
+<h3><strong>5º PORQUÊ: Por que a arquitetura permite polling intensivo sem controles adequados?</strong>
+<strong>Resposta:** **CAUSA RAIZ FUNDAMENTAL:</strong> Threading implementado em PL/SQL em ambiente Cloud Oracle, inadequado para alta concorrência, sem controles arquiteturais para evitar spinning descontrolado.
+</p><p>
+---
+</p><p>
+<h2>🎯 <strong>CAUSAS IDENTIFICADAS</strong>
+</p><p>
+<h3><strong>🔴 CAUSA RAIZ PRIMÁRIA</strong>
+<strong>Spin Loop sem throttling em EQUAL_DATAMART_FPROC.Proc_Job() linha 12464</strong>
+</p><p>
+<strong>Código Problemático:</strong>
+<pre>plsql
+WHILE Pkg_Mthread.Check_Job_Out_Process(Prefix_Task) >= Num_Thread_w LOOP
+   null;
+   --dbms_lock.sleep(30);   ← COMENTADO (PROBLEMA)
+END LOOP;
+<pre>
+</p><p>
+<strong>Impacto Quantificado:</strong>
+<li>500-1.000 queries/segundo em all_scheduler_jobs
+<li>162 samples ASH de enq: JG queue lock
+<li>Cada query: enq: JG – queue lock (job queue lock)
+<li>Cascata: latch: enqueue hash chains
+</p><p>
+<h3><strong>🟡 CAUSAS CONTRIBUINTES</strong>
+</p><p>
+<h4><strong>CC1: Arquitetura de Threading em PL/SQL</strong>
+<li>Threading implementado em linguagem inadequada para alta concorrência
+<li>Dependência de polling database tables para controle de fila
+<li>Ausência de controles nativos de throttling
+</p><p>
+<h4><strong>CC2: Cloud Oracle vs On-Premise</strong>
+<li>DBMS_SCHEDULER com comportamento diferente em Oracle Cloud
+<li>Limitações específicas do ambiente cloud não consideradas
+<li>AUTO_DROP default sem drop_job manual adequado
+</p><p>
+<h4><strong>CC3: Monitoramento Inadequado para Sessões Zumbis</strong>
+<li>Ausência de alertas para jobs em PL/SQL Lock Timer >10 min
+<li>Não detecção de acúmulo de fila de jobs
+<li>Critério de intervenção apenas manual
+</p><p>
+<h4><strong>CC4: Padrão de Recorrência Não Antecipado</strong>
+<li>3 dias consecutivos, horário consistente (~16h)
+<li>Alto potencial de repetição não prevenido
+<li>Reunião técnica reativa em vez de proativa
+</p><p>
+---
+</p><p>
+<h2>📊 <strong>EVIDÊNCIAS TÉCNICAS COLETADAS</strong>
+</p><p>
+<h3><strong>MS Teams - Reunião Técnica 16/04/2026</strong>
+<li><strong>12 participantes técnicos</strong> (Alceste, Bruno Vianna, Nelson Cartaxo)
+<li><strong>Queries específicas analisadas:</strong>
+  - `select * from lib_processo where num_job = 19526867`
+  - `select * from lib_processo where proc_id_orig = 246149`
+<li><strong>Arquivos AWR compartilhados:</strong> 3 ambientes (PROD01, PROD12, PROD19)
+</p><p>
+<h3><strong>Azure DevOps - Work Items</strong>
+<li><strong>1100920:</strong> INC20260413-2 - TAX ONE - Lentidão nos processos
+<li><strong>Status:</strong> Mitigado, Responsável: Jorge Washington Silva Neto
+<li><strong>8 work items relacionados</strong> identificados
+</p><p>
+<h3><strong>GitHub Repository</strong>
+<li><strong>EQUAL_DATAMART_FPROC:</strong> 38 linhas confirmadas
+<li><strong>lib_proc package:</strong> 48 linhas com DBMS_LOCK.SLEEP alterações
+<li><strong>PR #1687 (MFS422192):</strong> Evidência de mudanças em timing
+</p><p>
+<h3><strong>Métricas Quantificadas</strong>
+<li><strong>226+ processos zumbis</strong> eliminados em 15/04
+<li><strong>Shopee:</strong> Job >24h (normalmente <2h)
+<li><strong>ASH samples:</strong> 162 de enq: JG queue lock
+<li><strong>Fix estimado:</strong> Redução de 99,8% na carga (2 queries/seg vs 500-1.000)
+</p><p>
+---
+</p><p>
+<h2>⚡ <strong>LINHA DO TEMPO 14-15/04/2026</strong>
+</p><p>
+<h3><strong>14 de Abril de 2026 (Segunda-feira)</strong>
+<pre>
+14:00 BRT ████ Novos padrões de lentidão identificados (PROD01)
+          |
+15:21 BRT ████ Bruno Fornari: Monitoramento processo 95R
+          |
+16:13 BRT ████ SHOPEE: Job iniciado (executará >24h)
+          |
+16:30 BRT ████ Simone Costa (LatAm): Escalação executiva
+          |
+18:08 BRT ████ Confirmação: problema também em PROD03
+          |
+19:50 BRT ████ DECISÃO CRÍTICA: Adiamento manutenções
+<pre>
+</p><p>
+<h3><strong>15 de Abril de 2026 (Terça-feira)</strong>
+<pre>
+08:00 BRT ████ Shopee: Job continua (>16h acumuladas)
+          |
+12:00 BRT ████ Identificação: 226+ processos zumbis
+          |
+14:00 BRT ████ Início: eliminação massiva processos zumbis
+          |
+15:30 BRT ████ Reunião técnica (antecipada para 15:30)
+          |
+16:00 BRT ████ 8 tickets clientes: recomendação reprocessamento
+          |
+17:00 BRT ████ CONCLUÍDO: 226+ processos zumbis eliminados
+<pre>
+</p><p>
+---
+</p><p>
+<h2>🛠️ <strong>SOLUÇÕES APLICADAS E PROPOSTAS</strong>
+</p><p>
+<h3><strong>✅ Soluções Imediatas Implementadas</strong>
+</p><p>
+<h4><strong>Eliminação de Processos Zumbis (15/04)</strong>
+<li><strong>Quantidade:</strong> 226+ processos eliminados
+<li><strong>Critério:</strong> Jobs PL/SQL Lock Timer >10 min + acúmulo fila
+<li><strong>Responsáveis:</strong> Luis Fernando, Alceste, Bruno Vianna
+<li><strong>Resultado:</strong> Estabilização PROD01 e PROD03
+</p><p>
+<h4><strong>Comunicação Responsável (15/04)</strong>
+<li><strong>8 tickets específicos</strong> aos clientes impactados
+<li><strong>Mensagem:</strong> "Lentidão momentânea, reexecutar processos interrompidos"
+<li><strong>Sem afirmação</strong> de causa definitiva ou solução permanente
+<li><strong>Responsável:</strong> Bruno Fornari
+</p><p>
+<h3><strong>🔧 Fix Técnico Proposto (#3 - Baixo Risco)</strong>
+</p><p>
+<h4><strong>Restauração do Sleep no Loop</strong>
+<pre>plsql
+-- ANTES (Problemático):
+WHILE Pkg_Mthread.Check_Job_Out_Process(Prefix_Task) >= Num_Thread_w LOOP
+   null;
+   --dbms_lock.sleep(30);   ← COMENTADO
+END LOOP;
+</p><p>
+-- DEPOIS (Fix Proposto):
+WHILE Pkg_Mthread.Check_Job_Out_Process(Prefix_Task) >= Num_Thread_w LOOP
+   dbms_lock.sleep(5);      ← RESTAURADO (5s mais prático que 30s)
+END LOOP;
+<pre>
+</p><p>
+<h4><strong>Impacto do Fix</strong>
+<li><strong>Redução de carga:</strong> 99,8% (500-1.000 → 2 queries/segundo por processo)
+<li><strong>Tempo otimizado:</strong> 5 segundos (mais prático que 30s original)
+<li><strong>Risco:</strong> Baixo (restauração de funcionalidade, não implementação nova)
+</p><p>
+---
+</p><p>
+<h2>📈 <strong>IMPACTO QUANTIFICADO</strong>
+</p><p>
+<h3><strong>Clientes Críticos Afetados</strong>
+<tr><td> Cliente | Ambiente | Sintoma | Duração </td></tr>
+<tr><td>---------|----------|---------|---------</td></tr>
+<tr><td> <strong>Shopee</strong> | PROD01 | Job >24h | 16:13 (14/04) → 17:00 (15/04) </td></tr>
+<tr><td> Múltiplos | PROD01 | Lentidão generalizada | Intermitente 14-15/04 </td></tr>
+<tr><td> Múltiplos | PROD03 | Sessões zumbis | 18:08 (14/04) → 17:00 (15/04) </td></tr>
+</p><p>
+<h3><strong>Impacto Operacional</strong>
+<li><strong>Processos zumbis:</strong> 226+ eliminados
+<li><strong>Jobs afetados:</strong> Centenas em PL/SQL Lock Timer
+<li><strong>Escalação executiva:</strong> Simone Costa (LatAm) - 16:30, 14/04
+<li><strong>Decisão crítica:</strong> Adiamento manutenções PROD01/PROD03
+</p><p>
+<h3><strong>Métricas de Performance</strong>
+<li><strong>Lock contention:</strong> 162 samples ASH de enq: JG queue lock
+<li><strong>Polling intensivo:</strong> 500-1.000 queries/segundo (sem throttling)
+<li><strong>Fix esperado:</strong> 2 queries/segundo (com sleep restore)
+<li><strong>Redução:</strong> 99,8% na carga de all_scheduler_jobs
+</p><p>
+---
+</p><p>
+<h2>🚀 <strong>AÇÕES CORRETIVAS PRIORITÁRIAS</strong>
+</p><p>
+<h3><strong>⚡ Imediatas (14-15/04/2026)</strong>
+</p><p>
+1. ✅ <strong>Eliminação Massiva de Processos Zumbis</strong>
+   - 226+ processos eliminados com sucesso
+   - Critério estabelecido: PL/SQL Lock Timer >10 min + acúmulo fila
+</p><p>
+2. ✅ <strong>Comunicação Responsável aos Clientes</strong>
+   - 8 tickets para reprocessamento sem comprometimento inadequado
+   - Mensagem: lentidão momentânea, situação em análise
+</p><p>
+3. ✅ <strong>Decisão Executiva de Estabilidade</strong>
+   - Adiamento manutenções PROD01/PROD03 (19:50, 14/04)
+   - Priorização da resolução sobre cronograma
+</p><p>
+<h3><strong>⚡ Curto Prazo (Semana 16-22/04/2026)</strong>
+</p><p>
+4. <strong>Fix #3 - Restaurar dbms_lock.sleep(5)</strong>
+   - <strong>Prioridade:</strong> Alta (99,8% redução de carga)
+   - <strong>Risco:</strong> Baixo (restauração, não implementação nova)
+   - <strong>Responsáveis:</strong> Marcelo Pessanha, Alceste Siqueira Jr.
+</p><p>
+5. <strong>Monitoramento Proativo Sessões Zumbis</strong>
+   - Alertas automáticos: jobs PL/SQL Lock Timer >10 min
+   - Critério de intervenção antes do impacto cliente
+   - <strong>Responsáveis:</strong> Luis Fernando, Alceste, Bruno Vianna
+</p><p>
+6. <strong>Consulta Oracle sobre DBMS_SCHEDULER</strong>
+   - Configurações recomendadas para Oracle Cloud
+   - Diferenças vs on-premise, otimizações específicas
+   - <strong>Responsáveis:</strong> Marcelo Pessanha, Alceste
+</p><p>
+<h3><strong>🏗️ Médio Prazo (Maio 2026)</strong>
+</p><p>
+7. <strong>Scripts de Resiliência para Bases Clientes</strong>
+   - Executar em bases com processos derrubados
+   - Garantir status coerente na aplicação
+   - <strong>Responsáveis:</strong> Marcelo, Alceste
+</p><p>
+8. <strong>Avaliação Redução Jobs Simultâneos</strong>
+   - Considerar impacto em fila de clientes
+   - Balance entre throughput e estabilidade
+   - <strong>Responsáveis:</strong> Luis Fernando, Alceste, Marcelo
+</p><p>
+<h3><strong>🔮 Longo Prazo (Arquitetural)</strong>
+</p><p>
+9. <strong>Migração Threading PL/SQL → Java</strong>
+   - Solução estrutural para alta concorrência
+   - Eliminação dependência DBMS_SCHEDULER para threading
+</p><p>
+10. <strong>Implementação Controles Arquiteturais</strong>
+    - Throttling nativo em todas as procedures de polling
+    - Circuit breakers para proteção contra spin loops
+</p><p>
+---
+</p><p>
+<h2>🎓 <strong>LIÇÕES APRENDIDAS ESPECÍFICAS (14-15/04)</strong>
+</p><p>
+<h3><strong>✅ Pontos Positivos</strong>
+</p><p>
+1. <strong>Identificação de Padrão de Recorrência</strong>
+   - 3 dias consecutivos, ~16h cada dia
+   - Permite planejamento de reuniões técnicas antecipadas (15:30 vs 16:30)
+</p><p>
+2. <strong>Colaboração Técnica Estruturada</strong>
+   - 12 participantes em reunião técnica dedicada
+   - Análise de queries específicas (num_job, proc_id_orig)
+   - Compartilhamento de arquivos AWR de múltiplos ambientes
+</p><p>
+3. <strong>Critério de Intervenção Estabelecido</strong>
+   - PL/SQL Lock Timer >10 min + acúmulo fila
+   - Base para automação futura e prevenção
+</p><p>
+4. <strong>Decisão Executiva de Estabilidade</strong>
+   - Priorização da resolução sobre cronograma operacional
+   - Adiamento adequado de manutenções
+</p><p>
+<h3><strong>⚠️ Oportunidades de Melhoria</strong>
+</p><p>
+1. <strong>Arquitetura de Threading Inadequada</strong>
+   - PL/SQL inadequado para alta concorrência
+   - Necessária migração para tecnologias apropriadas
+</p><p>
+2. <strong>Monitoramento Reativo vs Proativo</strong>
+   - Detectar sessões zumbis antes de 226+ processos acumulados
+   - Implementar alertas automáticos para intervenção precoce
+</p><p>
+3. <strong>Conhecimento Cloud Oracle</strong>
+   - Diferenças vs on-premise não adequadamente consideradas
+   - Necessária consultoria Oracle para otimizações específicas
+</p><p>
+4. <strong>Controles de Throttling</strong>
+   - Ausência de proteções arquiteturais contra spin loops
+   - Sleep comentado sem controle de governança de código
+</p><p>
+---
+</p><p>
+<h2>📊 <strong>MATRIZ DE CAUSA E EFEITO</strong>
+</p><p>
+<tr><td> Causa | Efeito Direto | Efeito Secundário | Controle Proposto </td></tr>
+<tr><td>-------|---------------|-------------------|------------------</td></tr>
+<tr><td> Sleep comentado | Spin loop | 500-1.000 queries/seg | Fix #3 - Restore sleep(5) </td></tr>
+<tr><td> Threading PL/SQL | Polling intensivo | Lock contention JG | Migração Java </td></tr>
+<tr><td> Cloud Oracle | Comportamento diferente | AUTO_DROP inadequado | Consultoria Oracle </td></tr>
+<tr><td> Sem throttling | Sessões zumbis | 226+ processos | Monitoramento proativo </td></tr>
+</p><p>
+---
+</p><p>
+<h2>🔗 <strong>REFERÊNCIAS TÉCNICAS DETALHADAS</strong>
+</p><p>
+<h3><strong>MS Teams - Reunião 16/04/2026</strong>
+<li><strong>Link:</strong> https://teams.microsoft.com/meet/21363346455265?p=TrQCWOt27eyhwK7BE8
+<li><strong>Participantes:</strong> Alceste, Bruno Vianna, Eduardo Cunha, Nelson Cartaxo, Luis Fernando, Marcelo Pessanha, Rita Paniago, Adriane Salvatori, Adriana Dorigao, Rebeca Raymundo
+</p><p>
+<h3><strong>Arquivos Técnicos Analisados</strong>
+<li><strong>ListaKll.xlsx:</strong> Lista principal para eliminação processos zumbis
+<li><strong>ListaKll2.xlsx, ListaKll3.xlsx:</strong> Análises complementares
+<li><strong>awrrpt_1_58726_58728.html:</strong> AWR Report PROD01
+<li><strong>awrrpt_1_4374_4375_prod19.html:</strong> AWR Report PROD19
+<li><strong>awrrpt_1_4450_4451_prod12.html:</strong> AWR Report PROD12
+<li><strong>sorted-bubbling-fiddle.md:</strong> Análise específica DBMS_SCHEDULER
+</p><p>
+<h3><strong>Queries Específicas Analisadas</strong>
+<pre>sql
+-- Processo crítico Shopee
+select * from lib_processo where num_job = 19526867
+</p><p>
+-- Processo de origem para análise
+select * from lib_processo where proc_id_orig = 246149
+</p><p>
+-- Query problemática executada 500-1.000x/seg
+SELECT count(1) FROM all_scheduler_jobs
+WHERE job_name LIKE upper(ptask_name)<tr><td></td></tr>'%'
+<pre>
+</p><p>
+---
+</p><p>
+<h2>📋 <strong>STATUS FINAL DA ANÁLISE</strong>
+</p><p>
+<h3><strong>Causa Raiz Confirmada</strong>
+✅ <strong>Spin Loop sem throttling em EQUAL_DATAMART_FPROC.Proc_Job() linha 12464</strong>
+<li>Evidência: 162 samples ASH de enq: JG queue lock
+<li>Fix identificado: Restaurar dbms_lock.sleep(5)
+<li>Redução esperada: 99,8% na carga
+</p><p>
+<h3><strong>Diferenciação do Incidente 13/04</strong>
+✅ <strong>Segunda causa raiz independente confirmada</strong>
+<li>13/04: DBMS_LOCK.ALLOCATE_UNIQUE inadequado
+<li>14-15/04: Spin loop threading sem throttling
+<li>Naturezas técnicas completamente distintas
+</p><p>
+<h3><strong>Soluções Implementadas</strong>
+✅ <strong>226+ processos zumbis eliminados</strong>
+✅ <strong>8 tickets de comunicação aos clientes</strong>
+✅ <strong>Critério de intervenção estabelecido</strong>
+✅ <strong>Fix #3 proposto e aprovado</strong>
+</p><p>
+---
+</p><p>
+<strong>📝 Análise gerada em:</strong> 23 de Abril de 2026  
+<strong>🎯 Metodologia:</strong> Ishikawa + 5 Porquês  
+<strong>✅ Validação:</strong> Dados MS Teams, Azure DevOps, GitHub  
+<strong>👥 Equipe:</strong> 12 SMEs técnicos participantes da análise</p></body></html>

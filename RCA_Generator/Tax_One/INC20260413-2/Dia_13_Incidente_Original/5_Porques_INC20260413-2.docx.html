@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Porquês - INC20260413-2</title>
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            font-size: 12pt;
+            line-height: 1.15;
+            margin: 2.54cm;
+            color: #000000;
+        }
+        h1 {
+            color: #1f4e79;
+            font-size: 18pt;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 3pt solid #1f4e79;
+            padding-bottom: 10pt;
+            margin-bottom: 20pt;
+        }
+        h2 {
+            color: #1f4e79;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 24pt;
+            margin-bottom: 12pt;
+        }
+        h3 {
+            color: #2e75b6;
+            font-size: 14pt;
+            font-weight: bold;
+            margin-top: 18pt;
+            margin-bottom: 6pt;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 12pt 0;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 1pt solid #000000;
+            padding: 8pt;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .why-box {
+            border: 2pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+            page-break-inside: avoid;
+        }
+        .why-1 { border-color: #dc3545; background-color: #fff5f5; }
+        .why-2 { border-color: #fd7e14; background-color: #fff8f0; }
+        .why-3 { border-color: #ffc107; background-color: #fffdf0; }
+        .why-4 { border-color: #0d6efd; background-color: #f0f8ff; }
+        .why-5 { border-color: #6f42c1; background-color: #f8f5ff; }
+
+        .root-cause {
+            background-color: #e6f3ff;
+            border: 3pt solid #1f4e79;
+            padding: 15pt;
+            margin: 15pt 0;
+            text-align: center;
+        }
+        .chain-box {
+            background-color: #f8f9fa;
+            border-left: 4pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+            font-family: 'Courier New', monospace;
+            font-size: 10pt;
+        }
+        ul, ol {
+            margin: 6pt 0;
+            padding-left: 18pt;
+        }
+        li {
+            margin: 3pt 0;
+        }
+        .no-break {
+            page-break-inside: avoid;
+        }
+        .success-box {
+            background-color: #e6ffe6;
+            border: 2pt solid #28a745;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .info-box {
+            background-color: #e7f3ff;
+            border: 2pt solid #1f4e79;
+            padding: 12pt;
+            margin: 12pt 0;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10pt;
+            color: #666666;
+            margin-top: 24pt;
+            border-top: 1pt solid #cccccc;
+            padding-top: 12pt;
+        }
+    </style>
+</head>
+<body>
+
+<h1>ANÁLISE DOS 5 PORQUÊS<br>
+INCIDENTE TAX ONE INC20260413-2<br>
+13 de Abril de 2026</h1>
+
+<div class="info-box no-break">
+<h2>📋 INFORMAÇÕES DO INCIDENTE</h2>
+<table>
+    <tr><td width="30%"><strong>ID do Incidente</strong></td><td>INC20260413-2</td></tr>
+    <tr><td><strong>Data do Incidente</strong></td><td>13 de Abril de 2026 (Domingo)</td></tr>
+    <tr><td><strong>Produto</strong></td><td>TAX ONE (SPED/ECD)</td></tr>
+    <tr><td><strong>Ambiente</strong></td><td>PROD01</td></tr>
+    <tr><td><strong>Impacto</strong></td><td>27 clientes afetados</td></tr>
+    <tr><td><strong>Duração</strong></td><td>4h 52min (17:02 - 21:54 BRT)</td></tr>
+</table>
+</div>
+
+<h2>🎯 METODOLOGIA DOS 5 PORQUÊS</h2>
+<p>A técnica dos 5 porquês é uma ferramenta de análise de causa raiz que busca identificar a causa fundamental de um problema através de questionamentos sucessivos. Cada "porquê" aprofunda a análise até alcançar a causa raiz que, quando corrigida, previne a recorrência do problema.</p>
+
+<h2>🔍 ANÁLISE ESTRUTURADA</h2>
+
+<div class="why-box why-1">
+<h3>🔴 PORQUÊ #1</h3>
+<p><strong>PERGUNTA:</strong> Por que houve lentidão extrema nos processos fiscais TAX ONE?</p>
+<p><strong>RESPOSTA:</strong> Porque a função DBMS_LOCK.ALLOCATE_UNIQUE na procedure SAF_SPED_CONTABIL_FPROC causou saturação de locks quando 27 clientes executaram processamento simultaneamente.</p>
+<p><strong>EVIDÊNCIA:</strong></p>
+<ul>
+    <li>Processos que normalmente executam em segundos passaram para &gt;3 minutos</li>
+    <li>ServiceNow INC1240692 documentou a query problemática</li>
+    <li>27 clientes simultâneos confirmados em PROD01</li>
+</ul>
+</div>
+
+<div class="why-box why-2">
+<h3>🟠 PORQUÊ #2</h3>
+<p><strong>PERGUNTA:</strong> Por que DBMS_LOCK.ALLOCATE_UNIQUE causou saturação de locks com múltiplos clientes?</p>
+<p><strong>RESPOSTA:</strong> Porque a implementação da função foi desenvolvida considerando cenário de cliente único, não sendo adequada para ambiente multi-tenant com múltiplos clientes simultâneos.</p>
+<p><strong>EVIDÊNCIA:</strong></p>
+<ul>
+    <li>Implementação original assumia um único cliente</li>
+    <li>Ambiente produtivo opera com 27+ clientes simultâneos</li>
+    <li>Degradação de performance &gt;1.800% comprovada</li>
+</ul>
+</div>
+
+<div class="why-box why-3">
+<h3>🟡 PORQUÊ #3</h3>
+<p><strong>PERGUNTA:</strong> Por que a implementação não considerou o cenário multi-tenant em ambiente produtivo?</p>
+<p><strong>RESPOSTA:</strong> Porque o desenvolvedor não teve conhecimento ou consideração adequada sobre os requisitos de concorrência multi-tenant durante o desenvolvimento da funcionalidade.</p>
+<p><strong>EVIDÊNCIA:</strong></p>
+<ul>
+    <li>Padrão similar replicado de implementação prévia inadequada (ECD)</li>
+    <li>Ausência de documentação sobre requisitos multi-tenant</li>
+    <li>Consenso dos SMEs confirmou implementação inadequada</li>
+</ul>
+</div>
+
+<div class="why-box why-4">
+<h3>🔵 PORQUÊ #4</h3>
+<p><strong>PERGUNTA:</strong> Por que o desenvolvedor não teve conhecimento adequado sobre requisitos multi-tenant?</p>
+<p><strong>RESPOSTA:</strong> Porque não existe estrutura de processo de desenvolvimento que inclua análise obrigatória de impacto de concorrência e cenários multi-tenant.</p>
+<p><strong>EVIDÊNCIA:</strong></p>
+<ul>
+    <li>Ausência de guidelines de desenvolvimento multi-tenant</li>
+    <li>Falta de code review focado em concorrência</li>
+    <li>Implementação prévia com mesmo problema não foi tratada como lição aprendida</li>
+</ul>
+</div>
+
+<div class="why-box why-5">
+<h3>🟣 PORQUÊ #5</h3>
+<p><strong>PERGUNTA:</strong> Por que não existe estrutura de processo que inclua análise de concorrência multi-tenant?</p>
+<p><strong>RESPOSTA:</strong> Porque não temos estrutura de testes e gates de qualidade no processo como um todo para simular cenários reais de clientes e detectar problemas de concorrência antecipadamente.</p>
+<p><strong>EVIDÊNCIA:</strong></p>
+<ul>
+    <li>Ausência de testes de carga multi-tenant</li>
+    <li>Deploy realizado sem validação de cenário de 27+ clientes</li>
+    <li>Problema só foi detectado em ambiente produtivo</li>
+    <li>Falta de estrutura de testing que simule cenários reais</li>
+</ul>
+</div>
+
+<div class="root-cause">
+<h2>🎯 CAUSA RAIZ FUNDAMENTAL</h2>
+<p><strong>"Ausência de estrutura de processo de desenvolvimento e testes para simular e validar cenários reais de concorrência multi-tenant antecipadamente"</strong></p>
+</div>
+
+<h3>🔗 Cadeia Causal Identificada</h3>
+<div class="chain-box">
+<strong>CADEIA DE CAUSAS:</strong>
+
+Lentidão extrema (PROBLEMA)
+    ↓
+Saturação DBMS_LOCK (SINTOMA)
+    ↓
+Implementação inadequada multi-tenant (CAUSA IMEDIATA)
+    ↓
+Desenvolvedor sem conhecimento requisitos (CAUSA INTERMEDIÁRIA)
+    ↓
+Ausência de processo/estrutura de validação (CAUSA RAIZ FUNDAMENTAL)
+</div>
+
+<h2>💡 AÇÕES CORRETIVAS BASEADAS NA ANÁLISE</h2>
+
+<h3>🎯 Ações Direcionadas por Nível Causal</h3>
+<table class="no-break">
+    <tr>
+        <th width="20%">Nível</th>
+        <th width="40%">Ação Corretiva</th>
+        <th width="20%">Prazo</th>
+        <th width="20%">Responsável</th>
+    </tr>
+    <tr>
+        <td><strong>Sintoma</strong></td>
+        <td>Correção DBMS_LOCK.ALLOCATE_UNIQUE</td>
+        <td>14-20/04/2026</td>
+        <td>DEV Team</td>
+    </tr>
+    <tr>
+        <td><strong>Causa Imediata</strong></td>
+        <td>Revisão procedures similares</td>
+        <td>Maio/2026</td>
+        <td>Tech Lead</td>
+    </tr>
+    <tr>
+        <td><strong>Causa Intermediária</strong></td>
+        <td>Guidelines desenvolvimento multi-tenant</td>
+        <td>Maio/2026</td>
+        <td>Arquitetura</td>
+    </tr>
+    <tr>
+        <td><strong>Causa Fundamental</strong></td>
+        <td>Estrutura testes concorrência obrigatória</td>
+        <td>Jun/2026</td>
+        <td>QA/DevOps</td>
+    </tr>
+</table>
+
+<div class="success-box">
+<h3>🚀 PLANO DE PREVENÇÃO</h3>
+
+<h4>Curto Prazo (Abril 2026)</h4>
+<ol>
+    <li><strong>Correção imediata</strong> da implementação problemática</li>
+    <li><strong>Identificação</strong> de procedures similares com mesmo padrão</li>
+</ol>
+
+<h4>Médio Prazo (Maio-Junho 2026)</h4>
+<ol start="3">
+    <li><strong>Criação de guidelines</strong> de desenvolvimento multi-tenant</li>
+    <li><strong>Implementação de testes</strong> de carga multi-tenant obrigatórios</li>
+    <li><strong>Gates de qualidade</strong> para validação de concorrência</li>
+</ol>
+
+<h4>Longo Prazo (Q3-Q4 2026)</h4>
+<ol start="6">
+    <li><strong>Estrutura completa</strong> de testing multi-tenant</li>
+    <li><strong>Automação</strong> de validação de cenários reais</li>
+    <li><strong>Training</strong> da equipe de desenvolvimento</li>
+</ol>
+</div>
+
+<h2>📈 MÉTRICAS DE SUCESSO</h2>
+
+<table class="no-break">
+    <tr>
+        <th width="40%">Métrica</th>
+        <th width="30%">Meta</th>
+        <th width="30%">Prazo</th>
+    </tr>
+    <tr>
+        <td><strong>Zero recorrência</strong> de problemas similares</td>
+        <td>100%</td>
+        <td>Imediato</td>
+    </tr>
+    <tr>
+        <td><strong>Cobertura testes</strong> multi-tenant</td>
+        <td>95%</td>
+        <td>Jun/2026</td>
+    </tr>
+    <tr>
+        <td><strong>Time to detection</strong> problemas concorrência</td>
+        <td>&lt;30min</td>
+        <td>Set/2026</td>
+    </tr>
+    <tr>
+        <td><strong>Procedures revisadas</strong> com padrão similar</td>
+        <td>100%</td>
+        <td>Mai/2026</td>
+    </tr>
+</table>
+
+<div class="success-box no-break">
+<h2>📋 VALIDAÇÃO DOS 5 PORQUÊS</h2>
+<h3>✅ Critérios de Qualidade Atendidos</h3>
+<ul>
+    <li>✅ <strong>Cada "porquê" baseado em evidências factuais</strong></li>
+    <li>✅ <strong>Progressão lógica da causa superficial à fundamental</strong></li>
+    <li>✅ <strong>Causa raiz é específica e acionável</strong></li>
+    <li>✅ <strong>Ações corretivas direcionadas a cada nível causal</strong></li>
+    <li>✅ <strong>Consenso técnico validado (8 SMEs)</strong></li>
+</ul>
+</div>
+
+<div class="footer">
+<hr>
+<p><strong>Thomson Reuters - Tax One</strong><br>
+Análise dos 5 Porquês<br>
+Gerado em: 24 de Abril de 2026 | Versão: 1.0 (Word Export)<br>
+Base: RCA INC20260413-2 v3.0 | Metodologia: 5 Whys</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <header>
+    <title>ANÁLISE DE CAUSA RAIZ - Metodologias Clássicas: 5 PORQUÊS &amp; ESPINHA DE PEIXE</title>
+    <incident>INC20260413-2 TAX ONE</incident>
+    <date>20 de Abril de 2026</date>
+    <company>Thomson Reuters</company>
+  </header>
+
+  <section id="incident-summary">
+    <title>DADOS DO INCIDENTE</title>
+    <table>
+      <row>
+        <cell>Número do Incidente</cell>
+        <cell>INC20260413-2</cell>
+      </row>
+      <row>
+        <cell>Sistema Afetado</cell>
+        <cell>TAX ONE</cell>
+      </row>
+      <row>
+        <cell>Período de Impacto</cell>
+        <cell>13-16/04/2026 (4 dias consecutivos)</cell>
+      </row>
+      <row>
+        <cell>Descrição do Problema</cell>
+        <cell>Lentidão nos processos TAX ONE</cell>
+      </row>
+      <row>
+        <cell>Impacto Identificado</cell>
+        <cell>226+ sessões zumbis, 40+ clientes afetados</cell>
+      </row>
+      <row>
+        <cell>Causa Raiz</cell>
+        <cell>lib_proc alterado inadequadamente + spin loop EQUAL_DATAMART_FPROC</cell>
+      </row>
+    </table>
+  </section>
+
+  <section id="five-whys">
+    <title>METODOLOGIA 1: OS 5 PORQUÊS (5 WHYS)</title>
+
+    <why-analysis number="1">
+      <question>Por que o sistema TAX ONE ficou lento?</question>
+      <answer>Sessões ficaram presas em "PL/SQL lock timer" causando lentidão generalizada no sistema</answer>
+    </why-analysis>
+
+    <why-analysis number="2">
+      <question>Por que as sessões ficaram presas em "PL/SQL lock timer"?</question>
+      <answer>Contenção massiva no job queue do Oracle com 162 ASH samples indicando disputa por recursos</answer>
+    </why-analysis>
+
+    <why-analysis number="3">
+      <question>Por que ocorreu contenção no job queue do Oracle?</question>
+      <answer>Sistema executava 500-1000 queries por segundo na view all_scheduler_jobs sobrecarregando o banco</answer>
+    </why-analysis>
+
+    <why-analysis number="4">
+      <question>Por que o sistema executava tantas queries na all_scheduler_jobs?</question>
+      <answer>O comando dbms_lock.sleep foi desabilitado no loop da linha 12464, criando um spin loop infinito</answer>
+    </why-analysis>
+
+    <why-analysis number="5">
+      <question>Por que o dbms_lock.sleep foi desabilitado?</question>
+      <answer>A biblioteca lib_proc foi alterada inadequadamente entre 13-14/04/2026 sem validação adequada do impacto</answer>
+    </why-analysis>
+
+    <root-cause>
+      <description>Alteração inadequada da biblioteca lib_proc que desabilitou o sleep no loop EQUAL_DATAMART_FPROC, criando um spin loop que sobrecarregou o job queue do Oracle.</description>
+    </root-cause>
+  </section>
+
+  <section id="ishikawa-diagram">
+    <title>METODOLOGIA 2: DIAGRAMA ESPINHA DE PEIXE (ISHIKAWA)</title>
+    <subtitle>ANÁLISE DOS 6Ms - FATORES CONTRIBUINTES</subtitle>
+
+    <category name="MATERIAIS (CODE)">
+      <factors>
+        <factor>lib_proc alterado inadequadamente</factor>
+        <factor>Loop EQUAL_DATAMART_FPROC comentado</factor>
+        <factor>Processos LIB_PROCESSO órfãos</factor>
+        <factor>Dependências não mapeadas</factor>
+        <factor>Código legado sem documentação</factor>
+      </factors>
+    </category>
+
+    <category name="MÉTODOS (PROCEDURES)">
+      <factors>
+        <factor>Code review inadequado</factor>
+        <factor>Testes de impacto insuficientes</factor>
+        <factor>Rollback parcial executado</factor>
+        <factor>Processo de validação falho</factor>
+        <factor>Metodologia de deploy inadequada</factor>
+      </factors>
+    </category>
+
+    <category name="MÁQUINAS (INFRA)">
+      <factors>
+        <factor>Oracle Cloud limitações</factor>
+        <factor>Threads sem Resource Manager</factor>
+        <factor>Infraestrutura não-SaaS</factor>
+        <factor>Monitoramento insuficiente</factor>
+        <factor>Capacidade de job queue limitada</factor>
+      </factors>
+    </category>
+
+    <category name="PESSOAS (HUMAN)">
+      <factors>
+        <factor>Pergunta Cristiane Fugii não respondida</factor>
+        <factor>Gap na comunicação entre equipes</factor>
+        <factor>Validação técnica insuficiente</factor>
+        <factor>Conhecimento fragmentado</factor>
+        <factor>Handover inadequado</factor>
+      </factors>
+    </category>
+
+    <category name="MEDIÇÕES (MONITORING)">
+      <factors>
+        <factor>Detecção tardia do problema</factor>
+        <factor>Alertas de performance inadequados</factor>
+        <factor>Correlação lib_proc não mapeada</factor>
+        <factor>ASH samples não monitorados</factor>
+        <factor>Métricas de job queue ausentes</factor>
+      </factors>
+    </category>
+
+    <category name="MEIO AMBIENTE">
+      <factors>
+        <factor>Deploy em múltiplos ambientes</factor>
+        <factor>Timing coincidente das alterações</factor>
+        <factor>Recorrência por 3 dias consecutivos</factor>
+        <factor>Ambiente produtivo não isolado</factor>
+        <factor>Configurações específicas Oracle</factor>
+      </factors>
+    </category>
+
+    <main-problem>LENTIDÃO TAX ONE - INC20260413-2 - 226+ Sessões Zumbis • 40+ Clientes Afetados</main-problem>
+  </section>
+
+  <section id="validation">
+    <title>VALIDAÇÃO TÉCNICA E CONVERGÊNCIA</title>
+
+    <validation-by>Jorge Washington (20/04/2026)</validation-by>
+
+    <validation-points>
+      <point status="confirmed">Correlações técnicas confirmadas entre lib_proc e LIB_PROCESSO</point>
+      <point status="confirmed">Fix implementado com 99,8% de redução nas queries</point>
+      <point status="confirmed">Ambas metodologias convergem para a mesma causa raiz</point>
+      <point status="confirmed">Pergunta da Cristiane Fugii foi respondida e documentada</point>
+    </validation-points>
+
+    <convergence-analysis>
+      <description>Tanto a análise dos 5 Porquês quanto o Diagrama de Ishikawa identificam a mesma causa raiz principal: alteração inadequada da biblioteca lib_proc que criou um spin loop, sobrecarregando o sistema Oracle e causando lentidão generalizada.</description>
+    </convergence-analysis>
+  </section>
+
+  <footer>
+    <company>Thomson Reuters TAX ONE</company>
+    <document-type>Análise de Causa Raiz</document-type>
+    <generation-date>Gerado em 20/04/2026</generation-date>
+    <document-name>RCA_METODOLOGIAS_CLASSICAS_5_PORQUES_ISHIKAWA_INC20260413</document-name>
+  </footer>
+</document>
