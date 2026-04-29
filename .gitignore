@@ -32,3 +32,14 @@ Thumbs.db
 *.tmp
 *.bak
 ~$*
+
+# Corporate sensitive data
+*.pat
+*_token*
+*_secret*
+*credentials*
+
+# RCA sensitive data
+**/personal_data/
+**/customer_data/
+**/sensitive/
