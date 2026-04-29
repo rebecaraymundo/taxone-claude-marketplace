@@ -27,7 +27,7 @@ ANÁLISE REQUERIDA:
 3. Problemas não resolvidos: PROD03 sem diagnóstico
 4. Formato Thomson Reuters com tabelas estruturadas
 
-Token GitHub: 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"
+Token GitHub: [SEU_TOKEN_AQUI]"
 ```
 
 ```bash
