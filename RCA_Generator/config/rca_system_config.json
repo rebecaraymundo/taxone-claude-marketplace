@@ -2,7 +2,7 @@
   "system_metadata": {
     "version": "1.0",
     "created_date": "2026-04-14",
-    "last_updated": "2026-04-14",
+    "last_updated": "2026-04-29",
     "author": "RCA Generation System",
     "description": "Configuração do sistema de geração automática de RCAs Thomson Reuters"
   },
@@ -80,6 +80,7 @@
         "name": "taxone_dw",
         "full_name": "tr/taxone_dw",
         "primary_language": "SQL",
+        "description": "Sistema principal TAX ONE - Data Warehouse fiscal",
         "critical_paths": [
           "artifacts/sp/msaf/SPED/ECD/",
           "artifacts/sp/msaf/basico/datamart/",
@@ -96,10 +97,83 @@
         "name": "mastersaf_core",
         "full_name": "tr/mastersaf_core",
         "primary_language": "PowerBuilder",
+        "description": "Sistema core Mastersaf",
         "critical_paths": [
           "source/objects/",
           "source/datawindows/",
           "source/functions/"
+        ]
+      },
+      "occ_backend": {
+        "name": "msaf_dfe-ora-cloud-unificado",
+        "full_name": "tr/msaf_dfe-ora-cloud-unificado",
+        "primary_language": "Java",
+        "description": "Conector OCC - Backend para Oracle Cloud Commerce",
+        "critical_paths": [
+          "src/main/java/",
+          "src/main/resources/",
+          "config/"
+        ],
+        "use_cases": [
+          "Análise de problemas de integração OCC",
+          "Performance de APIs",
+          "Logs de transações Oracle Cloud"
+        ]
+      },
+      "occ_frontend": {
+        "name": "msaf_dfe-ora-cloud-frontend-2-0",
+        "full_name": "tr/msaf_dfe-ora-cloud-frontend-2-0",
+        "primary_language": "JavaScript",
+        "description": "Conector OCC - Frontend v2.0 para Oracle Cloud Commerce",
+        "critical_paths": [
+          "src/",
+          "public/",
+          "components/",
+          "services/"
+        ],
+        "use_cases": [
+          "Análise de problemas de UI",
+          "Integração frontend-backend",
+          "Experiência do usuário OCC"
+        ]
+      },
+      "conectores_erp": {
+        "name": "msaf-interfaces-erp_dfe-conectores-conectores",
+        "full_name": "tr/msaf-interfaces-erp_dfe-conectores-conectores",
+        "primary_language": "Java",
+        "description": "Conectores para SAP/EBS/FixaX/Infor/Retail",
+        "critical_paths": [
+          "conectores/sap/",
+          "conectores/ebs/",
+          "conectores/fixa/",
+          "conectores/infor/",
+          "conectores/retail/",
+          "shared/",
+          "config/"
+        ],
+        "use_cases": [
+          "Falhas de integração ERP",
+          "Problemas de sincronização de dados",
+          "Performance de conectores específicos",
+          "Mapeamento de dados entre sistemas"
+        ]
+      },
+      "dfe_sistema": {
+        "name": "MSaf_DFE3",
+        "full_name": "tr/MSaf_DFE3",
+        "primary_language": "Java",
+        "description": "Sistema principal de Documento Fiscal Eletrônico versão 3",
+        "critical_paths": [
+          "src/main/java/br/com/thomsonreuters/dfe/",
+          "src/main/resources/",
+          "schemas/",
+          "config/"
+        ],
+        "use_cases": [
+          "Problemas na geração de documentos fiscais",
+          "Falhas na comunicação com SEFAZ",
+          "Performance no processamento de NFe/NFCe/CTe",
+          "Problemas de validação fiscal"
         ]
       }
     },
